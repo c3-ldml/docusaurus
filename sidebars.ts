@@ -21,7 +21,6 @@ const sidebars: SidebarsConfig = {
   // Cognigy.AI sidebar - simple navbar item
   cognigySidebar: [
     'ai/about-cognigy-ai',
-    'ai/installation',
     {
       type: 'category',
       label: 'AI Agents',
@@ -46,6 +45,11 @@ const sidebars: SidebarsConfig = {
         'voice/verbs/overview',
       ],
     },
+  ],
+
+  // Webchat sidebar
+  webchatSidebar: [
+    'webchat/cognigy-webchat',
   ],
 
   // API Reference sidebar

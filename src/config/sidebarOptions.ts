@@ -14,5 +14,10 @@ export const sidebarOptions: SidebarOption[] = [
     value: 'voice',
     label: 'Voice Gateway',
     href: '/voice/intro'
+  },
+  {
+    value: 'webchat',
+    label: 'Webchat',
+    href: '/webchat/cognigy-webchat'
   }
 ]; 

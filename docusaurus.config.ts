@@ -67,7 +67,7 @@ const config: Config = {
       logo: {
         alt: 'Cognigy Logo',
         src: 'img/logo.svg',
-        srcDark: 'img/logo.svg',
+        srcDark: 'img/logo-white.svg',
       },
       items: [
         {
@@ -96,6 +96,10 @@ const config: Config = {
             {
               label: 'Voice Gateway',
               to: '/voice/intro',
+            },
+            {
+              label: 'Webchat',
+              to: '/webchat/index',
             },
           ],
         },

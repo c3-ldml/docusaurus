@@ -85,7 +85,11 @@ export default function DocSidebar(props: Props): React.ReactElement | null {
     navbar: {items},
   } = useThemeConfig();
 
-  const [selectedSidebar, setSelectedSidebar] = useState('cognigy');
+  // Initialize selectedSidebar based on the current pathname
+  const [selectedSidebar, setSelectedSidebar] = useState(() => {
+    return pathname.startsWith('/voice/') ? 'voice' : 'cognigy';
+  });
+
   const [expandedCategories, setExpandedCategories] = useState<string[]>([]);
 
   const sidebarOptions = [
@@ -99,14 +103,30 @@ export default function DocSidebar(props: Props): React.ReactElement | null {
       value: 'voice',
       description: 'Connect your voice applications to telephony networks'
     },
+    {
+      label: 'Webchat',
+      value: 'webchat',
+      description: 'Embed and customize chat widgets for your website'
+    },
   ];
 
   const handleSidebarChange = (value: string) => {
     setSelectedSidebar(value);
     // Navigate to the intro page of the selected product
-    const introPath = value === 'cognigy' ? '/cognigy/about-cognigy-ai' : '/voice/intro';
+    const introPath = value === 'cognigy' ? '/ai/about-cognigy-ai' : 
+                     value === 'voice' ? '/voice/intro' : 
+                     '/webchat/cognigy-webchat';
     window.location.href = introPath;
   };
+
+  // Update selectedSidebar when pathname changes
+  useEffect(() => {
+    setSelectedSidebar(
+      pathname.startsWith('/voice/') ? 'voice' : 
+      pathname.startsWith('/webchat/') ? 'webchat' : 
+      'cognigy'
+    );
+  }, [pathname]);
 
   const toggleCategory = (categoryLabel: string) => {
     setExpandedCategories(prev =>
