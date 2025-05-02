@@ -14,23 +14,29 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  */
 const sidebars: SidebarsConfig = {
   // Main sidebar for the home page
-  homeSidebar: [
-    'intro'
-  ],
 
   // Cognigy.AI sidebar - simple navbar item
   cognigySidebar: [
     'ai/about-cognigy-ai',
+    'ai/key-features',
     {
       type: 'category',
       label: 'AI Agents',
       items: [
         'ai/ai-agents/ai-workforce',
-        'ai/ai-agents/key-features',
         'ai/ai-agents/getting-started-with-ai-agents',
         'ai/ai-agents/getting-started-with-digital-agent',
         'ai/ai-agents/getting-started-with-voice-agent',
       ],
+    },
+    {
+      type: 'category',
+      label: 'User Interface',
+      items: [
+        'ai/user-interface/main-page',
+        'ai/user-interface/project-page',
+        'ai/user-interface/resource-pages',
+      ]
     }
   ],
 
@@ -49,7 +55,7 @@ const sidebars: SidebarsConfig = {
 
   // Webchat sidebar
   webchatSidebar: [
-    'webchat/cognigy-webchat',
+    'webchat/index',
   ],
 
   // API Reference sidebar

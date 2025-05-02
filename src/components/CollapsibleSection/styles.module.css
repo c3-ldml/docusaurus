@@ -1,0 +1,59 @@
+.collSection {
+  margin-bottom: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: var(--ifm-alert-shadow);
+}
+
+.title {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-content);
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-weight: var(--ifm-heading-font-weight);
+  cursor: pointer;
+  position: relative;
+  padding-right: 2rem;
+  list-style: none;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 24px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='24' viewBox='0 -9 3 24'%3E%3Cpath d='M0 0L3 3L0 6' fill='none' stroke='%23999' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.collSection[open] .title::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.content {
+  padding: 1rem;
+  color: var(--ifm-color-content);
+}
+
+/* Remove default details marker */
+.title::-webkit-details-marker {
+  display: none;
+}
+
+/* Dark mode styles */
+[data-theme='dark'] .collSection {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .title {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .title::after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='24' viewBox='0 -9 3 24'%3E%3Cpath d='M0 0L3 3L0 6' fill='none' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+} 

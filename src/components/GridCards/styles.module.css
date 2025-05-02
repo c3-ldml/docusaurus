@@ -54,7 +54,7 @@
 .linkItem {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   color: var(--ifm-link-color);
   text-decoration: none;
   margin-bottom: 0.25rem;

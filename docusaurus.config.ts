@@ -41,6 +41,10 @@ const config: Config = {
           editUrl: 'https://github.com/cognigy/docs/tree/main/',
           remarkPlugins: [],
           rehypePlugins: [],
+          admonitions: {
+            keywords: ['coll-section'],
+            extendDefaults: true,
+          },
         },
         blog: false,
         theme: {

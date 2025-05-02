@@ -1,0 +1,47 @@
+.admonition {
+  margin-bottom: 1em;
+  border: 1px solid var(--ifm-alert-border-color);
+  border-radius: var(--ifm-alert-border-radius);
+  box-shadow: var(--ifm-alert-shadow);
+}
+
+.collSection {
+  border-color: rgb(255, 255, 255);
+}
+
+.admonitionTitle {
+  background-color: rgb(250, 250, 250);
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-weight: var(--ifm-heading-font-weight);
+  cursor: pointer;
+  position: relative;
+  padding-right: 2rem;
+}
+
+.admonitionTitle::before {
+  content: '';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgb(150, 150, 150);
+  transition: transform 0.2s ease;
+}
+
+.collSection[open] .admonitionTitle::before {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.admonitionContent {
+  padding: 1rem;
+}
+
+/* Remove default details marker */
+.admonitionTitle::-webkit-details-marker {
+  display: none;
+} 

@@ -7,7 +7,7 @@
 
 /* eslint-disable global-require */
 
-import React from 'react';
+import * as React from 'react';
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
@@ -21,6 +21,7 @@ interface GridItem {
     text: string;
     href: string;
   }[];
+  key?: number;
 }
 
 interface Props {
@@ -41,7 +42,7 @@ function ArrowIcon() {
 
 function GridCard({icon, title, description, links}: GridItem) {
   return (
-    <div className="col col--4 margin-bottom--md" style={{ padding: '0 0.5rem' }}>
+    <div className="col col--6" style={{ padding: '0 1rem', marginBottom: '3rem' }}>
       <div className={styles.gridCard}>
         <div className={styles.cardTitle}>
           <span>{icon}</span>
@@ -64,7 +65,7 @@ function GridCard({icon, title, description, links}: GridItem) {
 
 export function GridCards({items}: Props): ReactNode {
   return (
-    <div className="row" style={{ margin: '0 -0.5rem' }}>
+    <div className="row" style={{ margin: '0 0' }}>
       {items.map((item, index) => (
         <GridCard key={index} {...item} />
       ))}
