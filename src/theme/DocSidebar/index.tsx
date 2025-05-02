@@ -1,0 +1,195 @@
+import React, {useState, useRef, useEffect} from 'react';
+import {useLocation} from '@docusaurus/router';
+import {useThemeConfig} from '@docusaurus/theme-common';
+import type {Props} from '@theme/DocSidebar';
+import type {PropSidebarItem, PropSidebarItemCategory, PropSidebarItemLink} from '@docusaurus/plugin-content-docs';
+import styles from './styles.module.css';
+
+interface CustomDropdownProps {
+  options: {label: string; value: string; description: string}[];
+  value: string;
+  onChange: (value: string) => void;
+}
+
+function CustomDropdown({options, value, onChange}: CustomDropdownProps) {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  return (
+    <div className={styles.customDropdown} ref={dropdownRef}>
+      <button
+        className={styles.dropdownButton}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div className={styles.dropdownButtonContent}>
+          <div className={styles.dropdownButtonTitle}>
+            {options.find(opt => opt.value === value)?.label || 'Select a product'}
+          </div>
+          <div className={styles.dropdownButtonDescription}>
+            {options.find(opt => opt.value === value)?.description || ''}
+          </div>
+        </div>
+        <svg
+          width="8"
+          height="24"
+          viewBox="0 -9 3 24"
+          className={`${styles.dropdownArrow} ${isOpen ? styles.arrowUp : styles.arrowDown}`}
+        >
+          <path
+            d="M0 0L3 3L0 6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+        </svg>
+      </button>
+      {isOpen && (
+        <div className={styles.dropdownMenu}>
+          {options.map(option => (
+            <button
+              key={option.value}
+              className={styles.dropdownItem}
+              onClick={() => {
+                onChange(option.value);
+                setIsOpen(false);
+              }}
+            >
+              <div className={styles.dropdownItemContent}>
+                <div className={styles.dropdownItemTitle}>{option.label}</div>
+                <div className={styles.dropdownItemDescription}>{option.description}</div>
+              </div>
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function DocSidebar(props: Props): React.ReactElement | null {
+  const {sidebar} = props;
+  const {pathname} = useLocation();
+  const {
+    navbar: {items},
+  } = useThemeConfig();
+
+  const [selectedSidebar, setSelectedSidebar] = useState('cognigy');
+  const [expandedCategories, setExpandedCategories] = useState<string[]>([]);
+
+  const sidebarOptions = [
+    {
+      label: 'Cognigy.AI',
+      value: 'cognigy',
+      description: 'Build and deploy AI-powered conversational agents'
+    },
+    {
+      label: 'Voice Gateway',
+      value: 'voice',
+      description: 'Connect your voice applications to telephony networks'
+    },
+  ];
+
+  const handleSidebarChange = (value: string) => {
+    setSelectedSidebar(value);
+    // Navigate to the intro page of the selected product
+    const introPath = value === 'cognigy' ? '/cognigy/about-cognigy-ai' : '/voice/intro';
+    window.location.href = introPath;
+  };
+
+  const toggleCategory = (categoryLabel: string) => {
+    setExpandedCategories(prev =>
+      prev.includes(categoryLabel)
+        ? prev.filter(cat => cat !== categoryLabel)
+        : [...prev, categoryLabel]
+    );
+  };
+
+  if (!sidebar) {
+    return null;
+  }
+
+  const renderSidebarItem = (item: PropSidebarItem) => {
+    if (item.type === 'category') {
+      const categoryItem = item as PropSidebarItemCategory;
+      const isExpanded = expandedCategories.includes(categoryItem.label);
+
+      return (
+        <div className={styles.category}>
+          <button
+            className={`${styles.categoryLabel} ${isExpanded ? styles.expanded : ''}`}
+            onClick={() => toggleCategory(categoryItem.label)}
+          >
+            <svg
+              width="8"
+              height="24"
+              viewBox="0 -9 3 24"
+              className={styles.categoryArrow}
+            >
+              <path
+                d="M0 0L3 3L0 6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+            </svg>
+            {categoryItem.label}
+          </button>
+          {isExpanded && (
+            <div className={styles.categoryItems}>
+              {categoryItem.items.map((subItem, index) => (
+                <div key={index}>{renderSidebarItem(subItem)}</div>
+              ))}
+            </div>
+          )}
+        </div>
+      );
+    } else if (item.type === 'link') {
+      const linkItem = item as PropSidebarItemLink;
+      return (
+        <a href={linkItem.href} className={styles.categoryItem}>
+          {linkItem.label}
+        </a>
+      );
+    } else if (typeof item === 'string') {
+      // Handle string items (doc references)
+      return (
+        <a href={`/docs/${item}`} className={styles.categoryItem}>
+          {item}
+        </a>
+      );
+    }
+    return null;
+  };
+
+  return (
+    <div className={styles.sidebarWrapper}>
+      <div className={styles.sidebarSwitcher}>
+        <CustomDropdown
+          options={sidebarOptions}
+          value={selectedSidebar}
+          onChange={handleSidebarChange}
+        />
+      </div>
+      <div className={styles.sidebarContent}>
+        {sidebar.map((item, index) => (
+          <div key={index} className={styles.sidebarItem}>
+            {renderSidebarItem(item)}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+} 
