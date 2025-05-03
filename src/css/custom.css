@@ -118,12 +118,12 @@ table tr:hover td {
 /* Dark mode table styles */
 [data-theme='dark'] table {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
-  border: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+  border: 0.5px solid rgba(255, 255, 255, 0.1) !important;
 }
 
 [data-theme='dark'] table th {
   background-color: var(--ifm-background-color) !important;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1) !important;
   border-left: none !important;
   border-right: none !important;
   border-top: none !important;
@@ -131,7 +131,10 @@ table tr:hover td {
 
 [data-theme='dark'] table td {
   background-color: var(--ifm-background-color) !important;
-  border: none !important;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1) !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
 }
 
 [data-theme='dark'] table tr:hover td {

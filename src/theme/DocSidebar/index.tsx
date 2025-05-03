@@ -1,12 +1,20 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useState, useRef, useEffect, ComponentType, SVGProps} from 'react';
 import {useLocation} from '@docusaurus/router';
 import {useThemeConfig} from '@docusaurus/theme-common';
 import type {Props} from '@theme/DocSidebar';
 import type {PropSidebarItem, PropSidebarItemCategory, PropSidebarItemLink} from '@docusaurus/plugin-content-docs';
 import styles from './styles.module.css';
+import cognigyIcon from '@site/static/img/_assets/icons/cognigy-ai.svg';
+import voiceGatewayIcon from '@site/static/img/_assets/icons/voice-gateway.svg';
+import webchatIcon from '@site/static/img/_assets/icons/webchat.svg';
 
 interface CustomDropdownProps {
-  options: {label: string; value: string; description: string}[];
+  options: {
+    label: string;
+    value: string;
+    description: string;
+    icon?: ComponentType<SVGProps<SVGSVGElement> & { title?: string }>;
+  }[];
   value: string;
   onChange: (value: string) => void;
 }
@@ -33,11 +41,18 @@ function CustomDropdown({options, value, onChange}: CustomDropdownProps) {
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className={styles.dropdownButtonContent}>
-          <div className={styles.dropdownButtonTitle}>
-            {options.find(opt => opt.value === value)?.label || 'Select a product'}
-          </div>
-          <div className={styles.dropdownButtonDescription}>
-            {options.find(opt => opt.value === value)?.description || ''}
+          {options.find(opt => opt.value === value)?.icon && (
+            <div className={styles.dropdownIcon}>
+              {React.createElement(options.find(opt => opt.value === value)?.icon!)}
+            </div>
+          )}
+          <div className={styles.dropdownButtonText}>
+            <div className={styles.dropdownButtonTitle}>
+              {options.find(opt => opt.value === value)?.label || 'Select a product'}
+            </div>
+            <div className={styles.dropdownButtonDescription}>
+              {options.find(opt => opt.value === value)?.description || ''}
+            </div>
           </div>
         </div>
         <svg
@@ -67,8 +82,15 @@ function CustomDropdown({options, value, onChange}: CustomDropdownProps) {
               }}
             >
               <div className={styles.dropdownItemContent}>
-                <div className={styles.dropdownItemTitle}>{option.label}</div>
-                <div className={styles.dropdownItemDescription}>{option.description}</div>
+                {option.icon && (
+                  <div className={styles.dropdownIcon}>
+                    {React.createElement(option.icon)}
+                  </div>
+                )}
+                <div className={styles.dropdownItemText}>
+                  <div className={styles.dropdownItemTitle}>{option.label}</div>
+                  <div className={styles.dropdownItemDescription}>{option.description}</div>
+                </div>
               </div>
             </button>
           ))}
@@ -96,17 +118,20 @@ export default function DocSidebar(props: Props): React.ReactElement | null {
     {
       label: 'Cognigy.AI',
       value: 'cognigy',
-      description: 'Build and deploy AI-powered conversational agents'
+      description: 'Build and deploy AI-powered conversational agents',
+      icon: cognigyIcon
     },
     {
       label: 'Voice Gateway',
       value: 'voice',
-      description: 'Connect your voice applications to telephony networks'
+      description: 'Connect voice applications to telephony networks',
+      icon: voiceGatewayIcon
     },
     {
       label: 'Webchat',
       value: 'webchat',
-      description: 'Embed and customize chat widgets for your website'
+      description: 'Embed and customize chat widgets for your website',
+      icon: webchatIcon
     },
   ];
 
