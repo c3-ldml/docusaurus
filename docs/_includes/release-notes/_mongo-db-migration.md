@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 :::warning[Migration to MongoDB 5]
 

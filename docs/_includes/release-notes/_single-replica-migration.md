@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 :::warning[Deprecation of Single Replica Redis]
 

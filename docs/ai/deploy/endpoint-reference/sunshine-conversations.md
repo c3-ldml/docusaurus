@@ -4,7 +4,6 @@ slug: "sunshine-conversations"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
 import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
 
@@ -23,7 +22,6 @@ Within our **Cognigy.AI** platform, you're able to connect your Cognigy Agent to
   This Endpoint was previously known as the Smooch Endpoint. Smooch was acquired by Zendesk in 2019 and renamed to Sunshine Conversations.
 
 :::
-
 
 ## Generic Endpoint Settings
 
@@ -64,7 +62,6 @@ The URI where we send messages to your Sunshine Conversations app. For example, 
   More detailed information on how to set up a **Sunshine Conversations** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
 
 :::
-
 
 ## More Information
 

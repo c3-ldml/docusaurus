@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 1. In the left-side menu of the Project, go to **Manage > Settings**.
 2. In the **Translation settings** section, select one of the following providers:

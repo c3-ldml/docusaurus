@@ -10,10 +10,6 @@ tags:
   - voice gateway
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
-
 # Cognigy Voice Gateway
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.96-blue.svg)](../../../release-notes/4.96.md)
@@ -42,13 +38,11 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 
 :::
 
-
 :::warning[Rebranding of Voice Gateway with AudioCodes]
 
   With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.
 
 :::
-
 
 ## Specific Endpoint Settings
 
@@ -81,7 +75,6 @@ Voice Gateway identifies information about the caller and adds it to the [Input]
   The data in `input.data.numberMetaData` is available as [Tokens](../../build/tokens.md) inside Cognigy Text fields.
 
 :::
-
 
 ### Generic Settings
 
@@ -138,7 +131,6 @@ If you have configured the same call event in both the Endpoint and the [Lookup]
 
 :::
 
-
 ### Call Failover
 
 The **Call Failover** section is intended to handle runtime and speech provider authentication errors that occur on the Cognigy.AI side during the execution of a Flow.
@@ -178,7 +170,6 @@ The **Call Failover** section is intended to handle runtime and speech provider 
   | Custom Transfer SIP Headers      | Toggle        | Data that needs to be sent as SIP headers in the generated SIP message.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | All           |
 
 :::
-
 
 ## Handover Settings
 

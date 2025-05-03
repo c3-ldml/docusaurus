@@ -4,7 +4,6 @@ slug: "interaction-panel"
 description: "The Interaction Panel offers a robust testing interface for your AI Agents. It enables you to test and analyze the behavior of your AI Agents, allowing you to easily modify and improve their communication and service skills."
 hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 import VoiceProviders from '@site/docs/_includes/ai/_voice-providers.md';
 
@@ -81,7 +80,6 @@ Using Snapshots, you can test your AI Agent configuration in the Interaction Pan
 
 For more information, refer to [Snapshots](../../deploy/snapshots.md).
 
-
 ## Test
 
 On the **Test** tab of the Interaction Panel, you can test your AI Agent using different channels. 
@@ -136,7 +134,6 @@ In **Chat** mode, you can use additional settings:
 
 :::
 
-
 <VoiceProviders />
 
 Based on the selected **Audio Provider**, the list of supported STT and TTS languages and voices will change. On the **Settings** tab, in the **Voice Call** section, you can select your preferred language and voice for your test call. 
@@ -183,7 +180,6 @@ You can now view and track the user's real-time conversation from your Interacti
   Human-agent messages are not shown in the Live Follow mode.
 
 :::
-
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-follow-user.png" width="80%" />

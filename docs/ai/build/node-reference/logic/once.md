@@ -7,8 +7,6 @@ tags:
   - Nodes
   - Once
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Once
 

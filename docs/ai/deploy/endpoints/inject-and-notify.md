@@ -4,9 +4,6 @@
  hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 # Inject & Notify
 
 Usually a Chat is an immediate interaction between the User and a Bot. However, sometimes the Bot might need to handle an external long-running process with uncertain execution length and use the result for the running chat session. For example, the Bot user is uploading a document to the Bot, which the Bot has then to upload to an external platform, which then will be analyzed by the external platform and the result should be then used by the Bot in a response to the user. 
@@ -39,7 +36,6 @@ Our /inject and /notify APIs need a certain payload you will need to send, in or
 
 You can use the [HTTP Request-Node](../../build/node-reference/service/http-request.md) to trigger the external long-running process, where you can send the necessary information for notify and inject next to the external specific payload.
 
-
 | Field in Inject & Notify | Cognigy Script |
 |--------------------------|----------------|
 | text                     | ci.text        |
@@ -49,7 +45,6 @@ You can use the [HTTP Request-Node](../../build/node-reference/service/http-requ
 | URLToken                 | ci.URLToken    |
 
 ## Notify and Inject in Transformers
-
 
 If you do not have control of the payload that the external service sends to the Inject or Notify API, then it can be controlled by using the [Notify Transformer](transformers/notify-transformer.md) or [Inject Transformer](transformers/inject-transformer.md). This allows you to transform the request and extract the necessary fields from the request body as described above before the actual Notify / Inject API is called.
 
@@ -70,7 +65,6 @@ Where the URLToken is the URLToken of the Endpoint that should be executed. The 
   inject: {endpoint-url}/inject/{URLToken}
 
 :::
-
 
 ## Channel Support
 

@@ -4,8 +4,6 @@ slug: "hangup"
 description: "The Hangup Node is used to end an AudioCodes voice conversation."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

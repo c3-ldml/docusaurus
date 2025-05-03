@@ -1,4 +1,3 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 
 :::warning[Upcoming Feature Removals]

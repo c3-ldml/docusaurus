@@ -4,8 +4,6 @@ slug: "voice-nodes"
 description: "Voice Nodes are used to handle voice interactions in your Flow."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 import {GridCards} from '@site/src/components/GridCards';

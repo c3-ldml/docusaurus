@@ -4,7 +4,6 @@ slug: "socketio"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
 import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
 

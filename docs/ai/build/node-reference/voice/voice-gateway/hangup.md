@@ -6,8 +6,6 @@ tags:
   - Voice Gateway
   - Hangup
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Hang Up
 

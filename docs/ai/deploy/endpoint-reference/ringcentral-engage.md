@@ -4,7 +4,6 @@ slug: "ringcentral-engage"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
 import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
 
@@ -65,7 +64,6 @@ The category ID, which will be used to identify the agent. This value is obtaine
   More detailed information on how to set up a **RingCentral Engage** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016306779).
 
 :::
-
 
 ## More Information
 

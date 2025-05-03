@@ -4,10 +4,6 @@
  hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
-
 # Session Management
 
 The **Session Management** section exists on some Endpoints. Here you can set the session expiration. Once a session has expired, the conversation will restart with the next user input.
@@ -26,7 +22,6 @@ The following Endpoints support session expiration:
   The default session expiration is set to 30 minutes.
 
 :::
-
 
 :::warning[Disable Session Expiration]
 

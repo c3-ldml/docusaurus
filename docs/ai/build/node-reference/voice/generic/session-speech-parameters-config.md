@@ -4,8 +4,6 @@ slug: "session-speech-parameters-config"
 description: "The Session Speech Parameters Config Node is used to configure speech parameters for a voice session."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

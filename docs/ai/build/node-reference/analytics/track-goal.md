@@ -4,8 +4,6 @@ slug: "track-goal"
 description: "The Track Goal Node lets you monitor the progress of a specific goal within a Flow."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Track Goal
 

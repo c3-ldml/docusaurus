@@ -4,7 +4,6 @@ slug: "slack"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
 import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
 
@@ -45,7 +44,6 @@ This value is the **Verification Token** of your Slack app. This is obtained fro
   More detailed information on how to set up a **Slack** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307039).
 
 :::
-
 
 ## More Information
 

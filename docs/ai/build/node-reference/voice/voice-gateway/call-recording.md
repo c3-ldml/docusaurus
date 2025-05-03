@@ -3,7 +3,6 @@
  slug: "call-recording" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Call Recording
 
@@ -28,6 +27,4 @@ Note that this Node controls a specific Flow. If you want to enable call recordi
 | Activity              | Select        | Whether to start, stop, pause, or resume a call recording.                                                                                                                                                                                                                                                                                 | -                    |
 | Call Recording Server | CognigyScript | Specify an IP group (a collection of IP addresses), for example, `sip:3.208.57.175` or `sip:siprec.cognigy.ai`. <br></br> The Voice Gateway sends call recordings to an IP group linked to the SRS, ensuring that calls are properly recorded and saved for future use. Based on the setup, the IP group may be linked to multiple SRS servers. | Start Call Recording |
 | Call Recording ID     | CognigyScript | Defines the recording session identifier, which is forwarded by the Voice Gateway to the SRS.                                                                                                                                                                                                                                              | Start Call Recording |
-
-
 

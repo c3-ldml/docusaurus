@@ -3,8 +3,6 @@ title: "Copilot: Identity Tile"
 slug: "identity-tile"
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Copilot: Identity Tile
 
@@ -15,7 +13,6 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 </figure>
 
 ## Description
-
 
 This Node is designed to display and process customer-specific information directly within the widget of your AI Copilot workspace, enhancing the context and usability of the identity-related data.
 

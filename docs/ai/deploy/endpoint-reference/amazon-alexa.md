@@ -4,9 +4,6 @@ slug: "amazon-alexa"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 # Amazon Alexa
 
 <figure>
@@ -23,7 +20,6 @@ The **Alexa** Endpoint allows you to connect your Amazon Alexa Skill to an AI Ag
   Amazon only passes the Intent name to the flow, not the actual user input! Therefore, any nodes that use conditions based on user input (e.g. if-nodes and rule intents are capable of doing so) will not work as intended.
 
 :::
-
 
 ## Generic Endpoint Settings
 
@@ -59,7 +55,6 @@ Once a skill has been selected, click the **DEPLOY** button to configure your sk
   More detailed information on how to set up an **Alexa** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016192979).
 
 :::
-
 
 ## More Information
 

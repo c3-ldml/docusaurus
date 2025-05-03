@@ -5,10 +5,6 @@ description: "Snapshots are immutable forms of an AI Agent in Cognigy.AI that in
 hidden: false
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
-
 # Snapshots
 
 _Snapshots_ are immutable forms of your AI Agent, including the following resources:
@@ -141,7 +137,6 @@ Once you reach the maximum number of Snapshots in your AI Agent, you have to sta
   A new task will be created, and your Snapshot will be removed.
 
 :::
-
 
 ## Snapshot Compatibility
 

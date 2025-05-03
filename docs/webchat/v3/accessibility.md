@@ -4,8 +4,6 @@ slug: "accessibility"
 description: "Cognigy encourages conversation designers to build solutions with accessibility in mind. Ensure that your Webchat is designed to be accessible to everyone, including individuals with varying accessibility needs."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../release-notes/4.100.md)
 
@@ -109,9 +107,7 @@ The following parameters need to be added to the JSON of the adaptive card:
   }
   ```
 
-
 :::
-
 
 ## Add Transcripts and Captions for Media Files
 
@@ -160,7 +156,6 @@ The audio transcript can have the following format:
 
 :::
 
-
 <figure>
   <img class="image-center" src="/img/webchat/v3/audio-transcript.png" width="100%" />
 </figure>
@@ -208,9 +203,7 @@ The video transcript can have the following format:
 
 In Webchat, the transcript will be available in the video widget under the **Download Transcript** button and accessible in `.txt` format.
 
-
 :::
-
 
 #### Captions
 
@@ -277,9 +270,7 @@ The file that includes captions should have the following `.vtt` format:
 
 In Webchat, activate captions in the video widget by clicking ![vertical-ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Captions**.
 
-
 :::
-
 
 ## Increase Text Visibility
 

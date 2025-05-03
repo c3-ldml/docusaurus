@@ -3,7 +3,6 @@
  slug: "state" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # State
 

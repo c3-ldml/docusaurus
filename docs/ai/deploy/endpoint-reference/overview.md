@@ -4,10 +4,6 @@ slug: "endpoint-reference"
 hidden: false
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
-
 # Endpoint Reference
 
 The platform includes many pre-built Endpoints that can be configured in a couple of steps.

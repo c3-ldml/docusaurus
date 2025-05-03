@@ -4,7 +4,6 @@ slug: "real-time-translation-settings"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import AddMachineTranslationProvider from '@site/docs/_includes/ai/settings/_add-machine-translation-provider.md';
 
 # Real-Time Translation Settings

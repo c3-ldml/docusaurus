@@ -4,8 +4,6 @@ slug: "getting-started"
 description: "In the Getting Started Cognigy Webchat v3 tutorial, you will create an AI Agent from scratch, build a conversation using Cognigy.AI Nodes, deploy this agent using Webchat v3, and test the Flow in Demo Webchat mode."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Getting Started with Webchat v3
 

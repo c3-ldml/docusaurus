@@ -4,7 +4,6 @@ slug: "webhook"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
 import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
 
@@ -62,7 +61,6 @@ All **POST** requests that are sent to the **Endpoint URL** are processed by the
   You can use the Webhook Endpoint to send either text or data to your Flow. You can choose to send both, but at least one is required. If invalid text and invalid data is specified, then the Webhook Endpoint throws an error.
 
 :::
-
 
 :::note[SessionID]
 

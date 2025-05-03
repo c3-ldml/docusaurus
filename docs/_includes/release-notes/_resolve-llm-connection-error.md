@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 :::warning[Resolving Connection Errors in Microsoft Azure OpenAI LLMs]
 

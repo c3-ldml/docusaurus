@@ -4,10 +4,6 @@ slug: "voice-copilot"
 hidden: false
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
-
 # Voice Copilot
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../../release-notes/4.66.md)

@@ -3,7 +3,6 @@
  slug: "regex-slot-filler" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Regex Slot Filler
 

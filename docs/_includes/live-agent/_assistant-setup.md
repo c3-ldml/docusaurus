@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 ## Set up a Flow
 
@@ -20,7 +20,6 @@ Assistant's messages are only shown based on customer inputs received during an 
   To provide helpful information to your agents, create Intents and use Lookup Nodes with Say Nodes based on customer inputs.
 
 :::
-
 
 <figure>
   <img class="image-center" src="https://docs.cognigy.com/_assets/live-agent/la-agent-assist-flow-example.png" width="100%" />

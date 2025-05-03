@@ -4,10 +4,6 @@ slug: "amazon-lex"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
-
 # Amazon Lex
 
 <figure>
@@ -41,7 +37,6 @@ Enable this toggle to allow the Slots found by Amazon Lex and transcript to be p
   if the **Amazon Lex (Built-in)** NLU is selected.
 
 :::
-
 
 ## Setup 
 

@@ -4,8 +4,6 @@ slug: "deactivate-profile"
 description: "The Deactivate Profile Node is used to deactivate a specific Contact Profile if the end user requests it."
 hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import ProfileNodeUseCase from '@site/docs/_includes/ai/node-reference/analytics/_profile-node-use-case.md';
 

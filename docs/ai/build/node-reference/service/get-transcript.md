@@ -4,8 +4,6 @@ slug: "get-transcript"
 description: "The Get Transcript Node lets receive a real-time conversation transcript and store the result in the Input or Context object."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Get Transcript
 

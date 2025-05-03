@@ -4,9 +4,6 @@ slug: "intercom"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 # Intercom
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/intercom.png" width="100%" />
@@ -53,7 +50,6 @@ This field allows a delay in milliseconds to be added for each letter in a messa
   More detailed information on how to set up an **Intercom** Endpoint refer to our Help Center articles [here](https://support.cognigy.com/hc/en-us/articles/360016183040-Intercom-Deploy-an-Endpoint?_ga=2.8010610.1313962342.1600679342-336273911.1592472592).
 
 :::
-
 
 ## More Information
 

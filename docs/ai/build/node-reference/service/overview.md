@@ -3,8 +3,6 @@ title: "Service Nodes"
 slug: "service overview" 
 hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import {GridCards} from '@site/src/components/GridCards';
 

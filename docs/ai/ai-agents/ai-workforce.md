@@ -4,8 +4,6 @@ slug: "cognigy-ai-agents"
 description: "Cognigy AI Agents are virtual assistants powered by artificial intelligence that can interact with users through text or voice, handling tasks traditionally performed by humans."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Cognigy AI Agents
 

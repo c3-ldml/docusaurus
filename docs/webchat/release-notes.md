@@ -4,8 +4,6 @@ slug: "webchat-release-notes"
 description: "Find the Cognigy Webchat release notes on GitHub and central Release Notes page."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Webchat Release Notes
 

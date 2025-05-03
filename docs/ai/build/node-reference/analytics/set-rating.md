@@ -4,8 +4,6 @@ slug: "set-rating"
 description: "The Set Rating Node is used to set a rating for a conversation."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import InsightsForRating from '@site/docs/_includes/ai/nodes/_insights-for-rating.md';
 import RatingUseCases from '@site/docs/_includes/ai/nodes/_rating.md';

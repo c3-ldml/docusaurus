@@ -4,8 +4,6 @@ slug: "audiocodes"
 description: "AudioCodes Nodes are used to handle voice interactions with AudioCodes endpoints."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

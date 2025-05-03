@@ -3,8 +3,6 @@ title: "Copilot: Sentiment Tile"
 slug: "sentiment-tile"
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Copilot: Sentiment Tile
 

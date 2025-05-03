@@ -4,8 +4,6 @@ slug: "resolve-tool-action"
 description: "The Resolve Tool Action Node sends a response to a tool call to the AI Agent after completing a tool action."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Resolve Tool Action
 
@@ -24,7 +22,6 @@ When the AI Agent calls a tool to perform an action, the tool action is executed
   Sending the result is optional. If the tool action is not resolved, the tool call is discarded after reaching the end of the branch and you may need to manually return to the AI Agent by using a [Go To](../logic/go-to.md) Node.
 
 :::
-
 
 ## Parameters
 

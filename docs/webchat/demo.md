@@ -4,8 +4,6 @@ slug: "demo-webchat"
 description: "Cognigy Demo Webchat provides the opportunity to test webchat integrations with various providers, including handover providers, and also allows you to preview the appearance of your webchat before deploying it in a production environment."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Demo Webchat
 

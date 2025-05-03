@@ -5,9 +5,7 @@ description: "For some Cognigy.AI Endpoints, you can configure file uploading to
 hidden: false
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import FileStorage from '@site/docs/_includes/ai/_file-storage.md';
-
 
 # File Storage
 

@@ -4,7 +4,6 @@ slug: "facebook-messenger"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
 import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
 
@@ -55,7 +54,6 @@ Your Facebook (Meta) app's Secret that is a randomly generated value from Facebo
   For more information on how to configure the **Page Access Token**, **App ID**, **App Secret**, head over to our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint#2-2-add-the-messenger-product-0-6).
 
 :::
-
 
 ## Facebook (Meta) Profiles
 
@@ -121,7 +119,6 @@ The user's first name.
 
 :::
 
-
 ### Update Contact Profiles
 
 If this setting is enabled, then the information a Facebook user has on their profile will be copied over to their contact profile. This is very useful in order to easily fill the contact profile with useful data.
@@ -136,7 +133,6 @@ Each user on Facebook has a unique ID, a PSID, for each Facebook page they talk 
 
 :::
 
-
 ## Messenger Settings
 
 Here you can configure whether typing indicators should be used and how many milliseconds of delay there should be between each message.
@@ -150,7 +146,6 @@ Here you can configure whether typing indicators should be used and how many mil
   For more detailed information on how to set up a **Facebook Messenger** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro).
 
 :::
-
 
 ## More Information
 

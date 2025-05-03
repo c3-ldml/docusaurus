@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 This comprehensive matrix is a resource
 that empowers users to make informed decisions regarding system integrations and upgrades.

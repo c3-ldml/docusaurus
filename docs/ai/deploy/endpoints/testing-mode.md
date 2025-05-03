@@ -4,10 +4,6 @@ slug: "endpoint-testing-mode"
 hidden: true 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
-
 # Testing Mode for Endpoints
 
 Testing Mode for Endpoints allows sending messages to existing Endpoints that are not affecting the Billable Conversation Count and will be processed in the same way as a regular message.

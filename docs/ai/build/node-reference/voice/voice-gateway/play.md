@@ -3,7 +3,6 @@
  slug: "play" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Play
 

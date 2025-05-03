@@ -4,8 +4,6 @@ slug: "webchat-v3"
 description: "Cognigy Webchat v3 is the latest version of Cognigy Webchat, compatible with Cognigy.AI 4.72 or later. It offers enhanced user interaction, customizable options, and advanced functionality for a seamless user experience."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Webchat v3
 

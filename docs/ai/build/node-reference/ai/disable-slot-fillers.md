@@ -3,7 +3,6 @@ title: "Disable Slot Fillers"
 slug: "disable-slot-fillers" 
 hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Disable Slot Fillers
 

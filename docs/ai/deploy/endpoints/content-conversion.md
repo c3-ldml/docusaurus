@@ -4,10 +4,6 @@ slug: "content-conversion"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
-
 # Content Conversion
 
 Cognigy provides a wide range of Endpoints for its conversational AI platform.

@@ -3,8 +3,6 @@
  slug: "Get-xApp-Session-PIN" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # xApp: Get Session PIN
 

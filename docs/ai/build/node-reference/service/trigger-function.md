@@ -3,7 +3,6 @@
  slug: "trigger-function" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Trigger Function
 

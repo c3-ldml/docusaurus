@@ -4,8 +4,6 @@ slug: "delete-profile"
 description: "The Delete Profile Node is used to delete a specific Contact Profile if the end user requests it."
 hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import ProfileNodeUseCase from '@site/docs/_includes/ai/node-reference/analytics/_profile-node-use-case.md';
 
@@ -24,7 +22,6 @@ This Node is used to delete a [specific Contact Profile](../../../analyze/contac
   Executing this Node will delete the user's entire Profile, including all analytics data and all transcripts. The user's data will no longer be available.
 
 :::
-
 
 <ProfileNodeUseCase />
 

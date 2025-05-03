@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 ## Description
 <div class="divider"></div>
@@ -19,7 +19,6 @@ you can maintain better control and ensure a seamless workflow in your applicati
   | Mute Speech Input | Toggle | Disables speech input recognition for the current call. By default, the setting is deactivated, allowing the Nodes below the Mute Speech Input Node to accept speech inputs. <br></br><br></br> When this setting is activated, the Nodes below the Mute Speech Input Node will not accept speech inputs or digits as the answer.  It affects all speech inputs made through the following Nodes:<br></br> - Nodes with Set Activity Parameters. <br></br> - Say and Play Nodes with enabled barge-in can no longer be interrupted.<br></br> - Question and Optional Question Nodes. |
 
 :::
-
 
 ## Example
 

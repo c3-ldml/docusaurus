@@ -4,8 +4,6 @@ slug: "think"
 description: "The Think Node lets you re-execute the Flow within a single iteration. The Node is useful when you want to start the Flow again, either with changed text/data or by triggering an intent explicitly."
 hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Think
 

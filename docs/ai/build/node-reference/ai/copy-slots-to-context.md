@@ -3,8 +3,6 @@
  slug: "copy-slots-to-context" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Copy Slots to Context
 

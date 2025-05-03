@@ -4,9 +4,6 @@
  hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 # Transformers
 
 <blockquote class="callout callout_info" theme="📘">
@@ -32,7 +29,6 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
       </div>
    </div>
 </blockquote>
-
 
 ## Description
 
@@ -73,7 +69,6 @@ The list below gives an overview of all the Transformer functions that are avail
 | [handleNotify](notify-transformer.md)                         | This Transformer function is executed when the Endpoint Notify API is used. The return value of the function will be sent directly to the user as a notification.                                            |
 | [handleInject](inject-transformer.md)                         | This Transformer function is executed when the Endpoint Inject API is used. The return value of the function will be sent to the Flow.                                                                       |
 
-
 ## Creating a Transformer
 
 To create a Transformer for an Endpoint, open the ``Transformer Functions`` tab in the Endpoint. Here are the different [Transformer Settings](#transformer-settings) that can be configured, as well as the Transformer code editor.
@@ -85,7 +80,6 @@ To create a Transformer for an Endpoint, open the ``Transformer Functions`` tab 
   The Transformer code editor has a default value for new Endpoints, which explains in brief how each Transformer function should be used. As soon as a specific Transformer has been enabled, the code in the corresponding Transformer function will be executed.
 
 :::
-
 
 <figure>
   <img class="image-center" src="../../../../../_assets/ai/deploy/endpoints/transformers/transformer-example.png" width="100%" />
@@ -114,13 +108,11 @@ If the Transformer is a vital part of the pipeline, for instance, when building 
 
 :::
 
-
 ## Stopping Transformer Execution
 
 Every Transformer function expects a certain return value, which it will then use in different ways depending on the specific Transformer function. In some cases, it might be desired to stop the execution completely, e.g. if the output from the Flow was already forwarded to another platform. In order to achieve this, the Transformer function can return a falsy value, e.g. null or void.
 
 ## Available Modules
-
 
 ### NPM Modules
 The following NPM modules are available in the Transformer:
@@ -143,7 +135,6 @@ It is possible to use the exposed modules `console.log`, `console.info` and `con
 ## Sending HTTP Requests
 It is possible to send HTTP requests to external services from within a Transformer. All Transformer functions can access the `httpRequest` module for this purpose. The module is invoked as a function which takes a single configuration object as arguments. This object has the same format as the options object for the NPM module [Request](https://www.npmjs.com/package/request#requestoptions-callback). Example:
 
-
 **HTTP Request**
 ```JavaScript
 handleInput: async () => {
@@ -164,7 +155,6 @@ handleInput: async () => {
   It is per default only possible to send one HTTP request per Transformer execution, and it is per default not possible to send HTTP requests to other Endpoints.
 
 :::
-
 
 ## Session Storage
 
@@ -193,7 +183,6 @@ The Session Storage is a storage object available to all Transformer functions a
   ```
 
 :::
-
 
 ## Different Base Transformer Types
 

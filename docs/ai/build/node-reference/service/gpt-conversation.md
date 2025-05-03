@@ -3,8 +3,6 @@ title: "GPT Conversation"
 slug: "gpt-conversation"
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # GPT Conversation (Research preview)
 
@@ -22,7 +20,6 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 :::
 
-
 :::warning
 
   This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
@@ -36,7 +33,6 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
   Before using this Node, set the Generative AI provider in the [Settings](../../../empower/generative-ai.md#set-up-generative-ai).
 
 :::
-
 
 ## Parameters
 
@@ -91,7 +87,6 @@ Grounding Knowledge is the foundational information that the AI Agent has access
 | Frequency Penalty | Indicator | Number between -2.0 and 2.0. The penalty assigns a lower probability to tokens frequently appearing in the generated text, encouraging the model to generate more diverse and unique content. |
 | Use Stops         | Toggle    | Whether to use a list of stop words to let Generative AI know where the sentence stops.                                                                                                       |
 | Stops             | Text      | Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.                                                                    |
-
 
 ### Timeout Settings
 

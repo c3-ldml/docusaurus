@@ -4,10 +4,6 @@ slug: "endpoints"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
-
 # Endpoints
 
 *Endpoints* are connectors between Cognigy AI Agents and external systems or platforms, such as Facebook (Meta) Messenger, Slack, Alexa, and more.
@@ -60,13 +56,11 @@ Enabling this option allows the Endpoint to override the [Connections](../../bui
 
 :::
 
-
 :::note
 
   You can verify or troubleshoot Connections by their `referenceId`, which needs to match both in the Project and the Snapshot for the override feature to work. To do that, use the [Cognigy.AI API](../../developers/api-and-cli.md) with the **Get all Connections** request.
 
 :::
-
 
 ### Flow
 

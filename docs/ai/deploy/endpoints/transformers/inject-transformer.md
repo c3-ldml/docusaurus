@@ -4,9 +4,6 @@
  hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 # Inject Transformer
 
 The `Inject Transformer` makes it possible to hook into the [Inject API](transformers.md#different-base-transformer-types). A common use-case is that external systems need to hook into a conversation and e.g. send a notification to the user after a certain process has completed. With the `Inject Transformer`, it is no longer required to have a service that translates the webhook payload of the external service into the correct format needed for the `Inject API`. This can now all be handled in the `Inject Transformer`.
@@ -24,7 +21,6 @@ The `Inject Transformer` is configured by implementing the `handleInject` functi
   The Inject Transformer is not supported for REST-Based Endpoints.
 
 :::
-
 
 ## Transformer Function Arguments
 

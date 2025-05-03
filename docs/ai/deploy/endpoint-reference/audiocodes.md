@@ -4,10 +4,6 @@ slug: "audiocodes"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
-
 # AudioCodes
 
 <figure>
@@ -23,7 +19,6 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
   allowing customers to speak to your AI Agent instead of just writing with it.
 
 :::
-
 
 [Watch this Episode](https://support.cognigy.com/hc/en-us/articles/360017522940-Cognigy-Sessions-Building-a-Phone-Bot-with-Voice-Gateway) of Cognigy Sessions for a technical deep dive.
 
@@ -72,7 +67,6 @@ AudioCodes identifies information about the caller and adds it to the Cognigy [I
 
 :::
 
-
 ## Generic Endpoint Settings
 Find out about the generic endpoint settings available with this endpoint on the following pages:
 
@@ -89,13 +83,11 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 :::
 
-
 :::warning[AudioCodes VoiceAI Connect]
 
   Cognigy AudioCodes Endpoint is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
 
 :::
-
 
 :::warning[Rebranding of Voice Gateway with AudioCodes]
 

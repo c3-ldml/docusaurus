@@ -4,9 +4,6 @@
  hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 # Input Transformer
 
 The `Input Transformer` is triggered on every message from the user before the Flow is executed. This makes it possible to manipulate the text before it has been sent to the Flow, communicate with external systems, implement integrations with a new channel, and much more.
@@ -71,7 +68,6 @@ return null;
 ### Transformers and Conversation Counts
 Conversations in Cognigy.AI are only counted if the Input Transformer returns a non-falsy result.
 
-
 :::warning[Return Value Validation]
 
   The return value of the `Input Transformer`, if provided, will be validated against a set of rules and rejected if the rules are not met. 
@@ -83,7 +79,6 @@ Conversations in Cognigy.AI are only counted if the Input Transformer returns a 
   - data is an object
 
 :::
-
 
 ### Transformers and Event Messages
 
@@ -105,7 +100,6 @@ The Webchat and the Socket.IO Endpoints produce event messages that indicate use
 ```
 
 The event messages inform Handover Providers about user activity, allowing human agents to determine if the user is still engaged in the conversation. 
-
 
 When you come across these event messages in the Input Transformers, we advise you to pass them on without any changes. The event messages can only be recognized as such if their data payload follows a specific format. To achieve this result, you can use the following code snippet in your Input Transformer:
 

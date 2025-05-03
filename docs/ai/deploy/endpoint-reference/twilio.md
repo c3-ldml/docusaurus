@@ -4,9 +4,6 @@ slug: "twilio"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 # Twilio
 
 <figure>

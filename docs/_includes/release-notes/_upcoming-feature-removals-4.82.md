@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 :::danger[Feature Removals in the Upcoming Releases]
 

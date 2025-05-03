@@ -3,7 +3,6 @@
  slug: "sleep" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Sleep
 

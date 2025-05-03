@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 1. In the left-side menu of the Project, go to **Build > LLM**.
 2. Click **+New LLM**.

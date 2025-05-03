@@ -3,8 +3,6 @@
  slug: "enable-slot-fillers" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Enable Slot Fillers
 

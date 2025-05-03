@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 Displays the percentage of messages understood and misunderstood by the system over a selected time span.
 

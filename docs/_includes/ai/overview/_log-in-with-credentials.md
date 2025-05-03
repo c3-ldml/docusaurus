@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 1. Go to the login page and enter your account credentials in the following fields:
 

@@ -4,8 +4,6 @@ slug: "quickstart-guide-for-ai-agents"
 description: "This guide provides a step-by-step approach to setting up your first AI Agent in Cognigy.AI. It covers the essentials to get started quickly, ensuring a seamless experience."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Guide for Agentic AI Agents
 
@@ -42,7 +40,6 @@ Set up the essential characteristics that define your AI Agent's behavior and ro
 4. _(Optional)_ Assign knowledge and add instructions.
 5. Ensure security settings are configured properly.
 6. Assign a job and click **Create** to test.
-
 
 <ReactPlayer playing controls url="https://docscognigyassets.blob.core.windows.net/assets/" />
 

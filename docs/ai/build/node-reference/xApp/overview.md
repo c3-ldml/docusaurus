@@ -4,8 +4,6 @@ slug: "xapp overview"
 description: "xApp Nodes are used to create and manage xApp experiences."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import Pricing from '@site/docs/_includes/ai/xApp/_pricing.md';
 import {GridCards} from '@site/src/components/GridCards';

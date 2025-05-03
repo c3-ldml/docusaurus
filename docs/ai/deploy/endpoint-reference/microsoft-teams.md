@@ -4,9 +4,6 @@ slug: "microsoft-teams"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 # Microsoft Teams
 
 <figure>
@@ -41,7 +38,6 @@ The Security Token obtained in the process of setting up the Microsoft Teams out
   More detailed information on how to set up a **Microsoft Teams** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016224039).
 
 :::
-
 
 ## More Information
 

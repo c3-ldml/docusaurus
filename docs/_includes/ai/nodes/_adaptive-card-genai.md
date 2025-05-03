@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
     1. In the **Generate Node Output** section, instruct the Generative AI model how to improve the current Adaptive Card. For example, `Create a form with a customer name field and a date input field`.
     2. Click **Generate**. The adaptive card will be generated.

@@ -3,8 +3,6 @@ title: "Voice Gateway Nodes"
 slug: "voice-gateway" 
 hidden: true 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import {GridCards} from '@site/src/components/GridCards';
 

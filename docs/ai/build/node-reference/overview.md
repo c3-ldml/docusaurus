@@ -3,8 +3,6 @@ title: "Overview"
 slug: "nodes-overview"
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import {GridCards} from '@site/src/components/GridCards';
 
@@ -104,7 +102,6 @@ If you want to create a custom Node, go to the [Extensions](../extensions.md) se
   Nodes can belong to multiple categories for easier search and navigation. In the following sections, each Node is assigned to a single category to avoid duplicated descriptions.
 
 :::
-
 
 ## Settings Common to All Node Types
 

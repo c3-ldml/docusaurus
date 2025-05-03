@@ -8,8 +8,6 @@ tags:
   - state
   - full intent recognition
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Reset State
 
@@ -27,7 +25,6 @@ to restore full Intent recognition.
   Resetting the State clears all stored information for the Set State Node and may interrupt your Flow. Use this action only when required.
 
 :::
-
 
 ## More Information
 

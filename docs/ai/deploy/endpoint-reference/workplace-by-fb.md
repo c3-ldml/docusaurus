@@ -4,7 +4,6 @@ slug: "workplace-by-fb"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
 
 # Workplace by Facebook
@@ -20,7 +19,6 @@ Within our **Cognigy.AI** platform, you're able to connect your Cognigy resource
   This Endpoint is currently not available in the Cognigy.AI Free Trial.
 
 :::
-
 
 ## Generic Endpoint Settings
 
@@ -57,7 +55,6 @@ Use this button to trigger the installation process of the Cognigy.AI Bot to you
   More detailed information on how to set up a **Workplace by Facebook** Endpoint can be found in our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/360016310379).
 
 :::
-
 
 ## More Information
 

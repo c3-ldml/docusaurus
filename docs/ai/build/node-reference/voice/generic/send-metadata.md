@@ -4,8 +4,6 @@ slug: "send-metadata"
 description: "The Send Metadata Node is used to send metadata in a voice conversation."
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

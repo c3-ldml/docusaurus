@@ -3,7 +3,6 @@
  slug: "logs" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Logs
 
@@ -20,7 +19,6 @@ The logs can be followed in real-time as they will be automatically appended whe
 Each log entry consists of a `timestamp`, the `log type`, the log `message` and additional `metadata`.
 
 ##Log Filtering
-
 
 ### Display Settings
 Configuration of the log display is possible by enabling or disabling the following features:

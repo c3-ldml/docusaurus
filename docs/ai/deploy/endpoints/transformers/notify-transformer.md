@@ -4,9 +4,6 @@
  hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 # Notify Transformer
 
 The `Notify Transformer` makes it possible to hook into the [Notify API](../inject-and-notify.md#notify-and-inject-in-transformers). A common use-case is that external systems need to hook into a conversation and e.g. send a notification to the user after a certain process has completed. With the `Notify Transformer`, it is no longer required to have a service that translates the webhook payload of the external service into the correct format needed for the `Notify API`. This can now all be handled in the `Notify Transformer`.
@@ -24,7 +21,6 @@ The `Notify Transformer` is configured by implementing the `handleNotify` functi
   The Notify Transformer is not supported for REST-Based Endpoints.
 
 :::
-
 
 ## Transformer Function Arguments
 

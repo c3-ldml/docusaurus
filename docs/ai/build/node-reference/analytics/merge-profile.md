@@ -3,8 +3,6 @@ title: "Merge Profile"
 slug: "merge-profile" 
 hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Merge Profile
 

@@ -3,7 +3,6 @@
  slug: "input" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 import UnderstoodMessages from '@site/docs/_includes/ai/_understood-messages.md';
 
@@ -25,7 +24,6 @@ The input object is passed to the Project's [Flow](../../../ai/build/flows/overv
   If an intent is configured with a default reply, this will override the AI Agent's flow logic and automatically be delivered as the response.
 
 :::
-
 
 ## Properties
 
@@ -97,7 +95,6 @@ The detailed NLU results are published to the **nlu** variable which contains th
 
 :::
 
-
 ## Accessing the Input Object
 
 Flow nodes can dynamically access Input properties via [Tokens](../../../ai/build/tokens.md) or [CognigyScript](../../../ai/build/cognigyscript.md) i.e. `{{ "{{input.property}}" }}`. The Cognigy Script used to access the input object follows the dot-notation `property.child.child`.
@@ -109,9 +106,6 @@ Flow nodes can dynamically access Input properties via [Tokens](../../../ai/buil
   You can copy the exact JSON path you need to reference a certain value in the Input object by right-clicking it and selecting "Copy JSON Path" from the context menu. 
 
 :::
-
-
-
 
 ## More Information
 

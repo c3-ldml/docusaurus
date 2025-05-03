@@ -4,9 +4,6 @@ slug: "userlike"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 # Userlike
 
 <figure>
@@ -31,7 +28,6 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 :::
 
-
 ## Message types in Userlike unified messaging channels
 
 As of Release v4.5, you can add message types to the Userlike unified messaging channel.
@@ -48,7 +44,6 @@ The below message types will be properly displayed in the Userlike unified messa
   The text from the Textual Description field is displayed for the **Gallery** or **List** output types, as well as for invalid media formats (image, audio, video).
 
 :::
-
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/userlike-webchat.png" width="100%" />

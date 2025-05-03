@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 :::warning[Agent Assist Workspace: Helm Chart Migration Required]
 

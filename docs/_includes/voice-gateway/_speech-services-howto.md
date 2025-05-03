@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Speech**.
 2. Click **Add Speech Service** and select your preferred vendor.

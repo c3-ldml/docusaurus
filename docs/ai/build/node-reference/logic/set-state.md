@@ -8,8 +8,6 @@ tags:
   - states
   - set state
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Set State
 

@@ -3,7 +3,6 @@
  slug: "add-to-context" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Add To Context
 
@@ -28,7 +27,6 @@ This Node stores information in the [Context](../../../test/interaction-panel/co
   If you want to store an object in the context, use `.preserveType()` at the end in order to keep it an object. Example: `input.slots.city[0].preserveType()` would store the full slot object for the first found city entity in the context.
 
 :::
-
 
 :::note[Adding a Value to an Array Only Contains Unique Values]
 

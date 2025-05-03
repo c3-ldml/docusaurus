@@ -3,7 +3,6 @@
  slug: "clean-text" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Clean Text
 

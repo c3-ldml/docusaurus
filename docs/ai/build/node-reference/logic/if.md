@@ -7,8 +7,6 @@ tags:
   - Nodes
   - If
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # If
 

@@ -3,7 +3,6 @@
  slug: "profile" 
  hidden: false 
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Profile
 
@@ -14,7 +13,6 @@ Every contact that connects to Cognigy.AI has their own **Contact Profile** that
 The [Flow](../../build/flows/overview.md) can read from and write to the **Profile** by saving user messages, slots, intents or any other data available throughout the session. For more information about the lifespan of the profile, see the [CognigyScript](../../build/cognigyscript.md#life-span-of-cognigy-objects) page.
 
 ## Accessing the Profile object
-
 
 Flow nodes can dynamically access **Profile** properties via [Tokens](../../build/tokens.md) or [CognigyScript](../../build/cognigyscript.md) e.g. `{{ " {{profile.property}}" }}`. The Cognigy Script used to access the profile object follows the dot-notation `property.child.child`.
 

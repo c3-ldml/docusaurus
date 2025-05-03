@@ -3,7 +3,6 @@ title: "Blind Mode"
 slug: "blind-mode"
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Blind Mode
 

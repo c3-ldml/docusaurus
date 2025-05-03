@@ -4,7 +4,6 @@ slug: "handover-settings"
 hidden: false 
 ---
 
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
 
 # Handover Settings
@@ -25,7 +24,6 @@ The Endpoints that support handover are listed below:
 - [WhatsApp](../endpoint-reference/whatsapp.md)
 - [Webchat](../../../webchat/overview.md)
 - [Webhook](../endpoint-reference/webhook.md)
-
 
 ## Handover Providers
 

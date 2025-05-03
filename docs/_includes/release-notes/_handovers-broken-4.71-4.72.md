@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 :::danger[Cognigy.AI Handovers broken in versions v4.71 and v4.72]
 

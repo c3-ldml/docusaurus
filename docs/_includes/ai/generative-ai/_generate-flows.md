@@ -1,4 +1,4 @@
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 Note that the generation of Flows for primary NLU languages besides German and English is not fully supported.
 

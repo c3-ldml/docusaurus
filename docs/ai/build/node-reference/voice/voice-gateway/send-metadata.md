@@ -6,8 +6,6 @@ tags:
   - Voice Gateway
   - Send Metadata
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Send Metadata
 

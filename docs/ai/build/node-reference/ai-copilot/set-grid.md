@@ -3,8 +3,6 @@ title: "Copilot: Set Grid"
 slug: "set-grid"
 hidden: false
 ---
-import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
 
 # Copilot: Set Grid
 
