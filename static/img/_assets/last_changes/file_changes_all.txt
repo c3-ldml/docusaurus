@@ -155,161 +155,161 @@ docs/ai/analyze/goals-and-tasks/overview.md	2024-11-27 Elena Baskakova
 docs/ai/analyze/goals-and-tasks/tasks.md	2024-11-27 Elena Baskakova
 docs/ai/analyze/goals-and-tasks/goals.md	2025-01-20 Elena Baskakova
 docs/ai/analyze/user-and-session-identification.md	2024-12-04 Caio Lopes de Melo Lindoso
-docs/ai/build/flows/overview.md	2025-01-15 Elena Baskakova
-docs/ai/build/extensions.md	2024-12-09 tmccaughey
-docs/ai/build/nodes/node-search.md	2024-05-16 Benjamin Mayr
-docs/ai/build/nodes/overview.md	2024-08-14 martyna korzynek
-docs/ai/build/nodes/channels.md	2024-11-07 Caio Lopes de Melo Lindoso
-docs/ai/build/cognigyscript.md	2024-10-26 Elena Baskakova
-docs/ai/build/projects.md	2025-01-15 Elena Baskakova
-docs/ai/build/functions.md	2024-12-10 Tom McCaughey
-docs/ai/build/packages.md	2025-01-15 Elena Baskakova
-docs/ai/build/translation-and-localization/localization.md	2025-01-15 Elena Baskakova
-docs/ai/build/translation-and-localization/auto-translation.md	2024-12-02 Caio Lopes de Melo Lindoso
-docs/ai/build/translation-and-localization/real-time-translation.md	2024-08-07 Elena Baskakova
-docs/ai/build/tokens.md	2024-10-26 Elena Baskakova
-docs/ai/build/node-reference/overview.md	2024-12-19 tmccaughey
-docs/ai/build/node-reference/xApp/overview.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/xApp/init-xApp-session.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/xApp/set-html-xApp-state.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/xApp/get-xApp-session-PIN.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/xApp/set-AdaptiveCard-xApp-state.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/logic/wait-for-input.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/logic/sleep.md	2024-07-16 martyna korzynek
-docs/ai/build/node-reference/logic/switch-locale.md	2024-12-03 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/logic/overview.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/logic/once.md	2024-10-26 Elena Baskakova
-docs/ai/build/node-reference/logic/execute-flow.md	2024-12-09 tmccaughey
-docs/ai/build/node-reference/logic/add-to-context.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/logic/if.md	2024-11-07 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/logic/set-state.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/logic/stop-and-return.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/logic/interval.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/logic/remove-from-context.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/logic/think.md	2024-11-06 Elena Baskakova
-docs/ai/build/node-reference/logic/go-to.md	2024-12-09 tmccaughey
-docs/ai/build/node-reference/logic/lookup.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/logic/reset-state.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/basic/overview.md	2024-08-20 David Scheier
-docs/ai/build/node-reference/basic/send-text.md	2024-10-26 Elena Baskakova
-docs/ai/build/node-reference/basic/code/channel-output.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/basic/code/analytics-data.md	2025-01-09 Elena Baskakova
-docs/ai/build/node-reference/basic/code/overview.md	2024-11-15 Elena Baskakova
-docs/ai/build/node-reference/basic/code/modules.md	2024-08-20 Elena Baskakova
-docs/ai/build/node-reference/basic/code/ai-default-channel-formats.md	2024-11-07 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/basic/code/actions.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/basic/optional-question.md	2024-11-07 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/basic/debug-message.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/basic/question.md	2024-12-05 Elena Baskakova
-docs/ai/build/node-reference/basic/say.md	2024-12-18 Elena Baskakova
-docs/ai/build/node-reference/voice/voice-gateway/call-recording.md	2024-05-16 Elena Baskakova
-docs/ai/build/node-reference/voice/voice-gateway/overview.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/voice/voice-gateway/transfer.md	2024-11-26 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/voice/voice-gateway/set-session-config.md	2024-08-14 martyna korzynek
-docs/ai/build/node-reference/voice/voice-gateway/mute-speech-input.md	2024-08-14 martyna korzynek
-docs/ai/build/node-reference/voice/voice-gateway/hangup.md	2024-10-26 Elena Baskakova
-docs/ai/build/node-reference/voice/voice-gateway/dtmf.md	2025-01-03 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/voice/voice-gateway/send-metadata.md	2024-12-19 tmccaughey
-docs/ai/build/node-reference/voice/voice-gateway/play.md	2024-11-25 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/voice/voice-gateway/parameter-details.md	2025-01-08 Elena Baskakova
-docs/ai/build/node-reference/voice/overview.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/voice/generic/overview.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/voice/generic/transfer.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/voice/generic/mute-speech-input.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/voice/generic/dtmf-collect-config.md	2024-10-26 Elena Baskakova
-docs/ai/build/node-reference/voice/generic/send-metadata.md	2024-12-19 tmccaughey
-docs/ai/build/node-reference/voice/generic/barge-in-config.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/voice/generic/session-speech-parameters-config.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/voice/generic/user-input-timeout-config.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/voice/generic/hang-up.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/voice/generic/play-url.md	2024-11-25 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/voice/generic/continuous-asr-config.md	2024-11-25 Elena Baskakova
-docs/ai/build/node-reference/voice/audiocodes/transfer-vg.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/voice/audiocodes/call-recording.md	2024-10-26 Elena Baskakova
-docs/ai/build/node-reference/voice/audiocodes/set-session-params.md	2024-12-13 Elena Baskakova
-docs/ai/build/node-reference/voice/audiocodes/overview.md	2024-12-19 tmccaughey
-docs/ai/build/node-reference/voice/audiocodes/hangup.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/voice/audiocodes/send-meta-data.md	2024-12-19 tmccaughey
-docs/ai/build/node-reference/voice/audiocodes/play-url.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/voice/audiocodes/send-message.md	2024-08-26 Elena Baskakova
-docs/ai/build/node-reference/ai/execute-cognigy-nlu.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/ai/overview.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/ai/resolve-tool-action.md	2024-12-10 Elena Baskakova
-docs/ai/build/node-reference/ai/ai-agent.md	2025-01-09 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/ai/regex-slot-filler.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/ai/fuzzy-search.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/ai/enable-slot-fillers.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/ai/match-pattern.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/ai/copy-slots-to-context.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/ai/add-lexicon-keyphrase.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/ai/ai-agent-handover.md	2024-12-06 Elena Baskakova
-docs/ai/build/node-reference/ai/clean-text.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/ai/disable-slot-fillers.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/other-nodes/llm-entity-extract.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/other-nodes/overview.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/other-nodes/knowledge-search.md	2024-12-05 Elena Baskakova
-docs/ai/build/node-reference/other-nodes/log-message.md	2024-08-27 Elena Baskakova
-docs/ai/build/node-reference/other-nodes/search-extract-output.md	2024-12-05 Elena Baskakova
-docs/ai/build/node-reference/other-nodes/set-translation.md	2024-06-19 Elena Baskakova
-docs/ai/build/node-reference/service/trigger-function.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/service/add-transcript-steps.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/service/overview.md	2024-11-07 Elena Baskakova
-docs/ai/build/node-reference/service/set-handover-inactivity.md	2024-07-24 Elena Baskakova
-docs/ai/build/node-reference/service/http-request.md	2024-09-16 Elena Baskakova
-docs/ai/build/node-reference/service/handover-to-agent.md	2025-01-09 tmccaughey
-docs/ai/build/node-reference/service/ms-sql.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/service/gpt-conversation.md	2024-12-12 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/service/close-handover.md	2024-07-24 Elena Baskakova
-docs/ai/build/node-reference/service/llm-prompt.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/service/check-agent-availability.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/service/get-transcript.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/service/mongo-db.md	2024-10-24 Elena Baskakova
-docs/ai/build/node-reference/data/datepicker.md	2024-11-07 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/data/overview.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/data/send-smtp-email.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/data/email-notification.md	2024-11-07 Caio Lopes de Melo Lindoso
-docs/ai/build/node-reference/ai-copilot/send-data.md	2024-11-26 Elena Baskakova
-docs/ai/build/node-reference/ai-copilot/knowledge-tile.md	2024-10-24 Elena Baskakova
-docs/ai/build/node-reference/ai-copilot/set-iframe-tile.md	2024-11-26 Elena Baskakova
-docs/ai/build/node-reference/ai-copilot/set-grid.md	2024-07-12 martyna korzynek
-docs/ai/build/node-reference/ai-copilot/overview.md	2024-11-26 Elena Baskakova
-docs/ai/build/node-reference/ai-copilot/set-html-tile.md	2024-11-26 Elena Baskakova
-docs/ai/build/node-reference/ai-copilot/secure-forms-tile.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/ai-copilot/set-adaptive-card-tile.md	2024-11-29 Elena Baskakova
-docs/ai/build/node-reference/ai-copilot/sentiment-tile.md	2024-10-24 Elena Baskakova
-docs/ai/build/node-reference/ai-copilot/next-action-tile.md	2024-08-30 Elena Baskakova
-docs/ai/build/node-reference/ai-copilot/identity-tile.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/ai-copilot/transcript-tile.md	2024-10-24 Elena Baskakova
-docs/ai/build/node-reference/analytics/overview.md	2024-12-10 Elena Baskakova
-docs/ai/build/node-reference/analytics/add-memory.md	2024-12-06 Elena Baskakova
-docs/ai/build/node-reference/analytics/complete-task.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/analytics/request-rating.md	2025-01-14 Elena Baskakova
-docs/ai/build/node-reference/analytics/blind-mode.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/analytics/deactivate-profile.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/analytics/track-goal.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/analytics/activate-profile.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/analytics/update-profile.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/analytics/set-rating.md	2024-07-24 Elena Baskakova
-docs/ai/build/node-reference/analytics/delete-profile.md	2024-12-11 Elena Baskakova
-docs/ai/build/node-reference/analytics/overwrite-analytics.md	2024-05-16 Benjamin Mayr
-docs/ai/build/node-reference/analytics/merge-profile.md	2024-12-11 Elena Baskakova
-docs/ai/build/connections.md	2025-01-15 Elena Baskakova
+docs/ai/resource/flows/overview.md	2025-01-15 Elena Baskakova
+docs/ai/resource/extensions.md	2024-12-09 tmccaughey
+docs/ai/resource/nodes/node-search.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/nodes/overview.md	2024-08-14 martyna korzynek
+docs/ai/resource/nodes/channels.md	2024-11-07 Caio Lopes de Melo Lindoso
+docs/ai/resource/cognigyscript.md	2024-10-26 Elena Baskakova
+docs/ai/resource/projects.md	2025-01-15 Elena Baskakova
+docs/ai/resource/functions.md	2024-12-10 Tom McCaughey
+docs/ai/resource/packages.md	2025-01-15 Elena Baskakova
+docs/ai/resource/translation-and-localization/localization.md	2025-01-15 Elena Baskakova
+docs/ai/resource/translation-and-localization/auto-translation.md	2024-12-02 Caio Lopes de Melo Lindoso
+docs/ai/resource/translation-and-localization/real-time-translation.md	2024-08-07 Elena Baskakova
+docs/ai/resource/tokens.md	2024-10-26 Elena Baskakova
+docs/ai/resource/node-reference/overview.md	2024-12-19 tmccaughey
+docs/ai/resource/node-reference/xApp/overview.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/xApp/init-xApp-session.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/xApp/set-html-xApp-state.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/xApp/get-xApp-session-PIN.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/xApp/set-AdaptiveCard-xApp-state.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/logic/wait-for-input.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/logic/sleep.md	2024-07-16 martyna korzynek
+docs/ai/resource/node-reference/logic/switch-locale.md	2024-12-03 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/logic/overview.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/logic/once.md	2024-10-26 Elena Baskakova
+docs/ai/resource/node-reference/logic/execute-flow.md	2024-12-09 tmccaughey
+docs/ai/resource/node-reference/logic/add-to-context.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/logic/if.md	2024-11-07 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/logic/set-state.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/logic/stop-and-return.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/logic/interval.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/logic/remove-from-context.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/logic/think.md	2024-11-06 Elena Baskakova
+docs/ai/resource/node-reference/logic/go-to.md	2024-12-09 tmccaughey
+docs/ai/resource/node-reference/logic/lookup.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/logic/reset-state.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/basic/overview.md	2024-08-20 David Scheier
+docs/ai/resource/node-reference/basic/send-text.md	2024-10-26 Elena Baskakova
+docs/ai/resource/node-reference/basic/code/channel-output.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/basic/code/analytics-data.md	2025-01-09 Elena Baskakova
+docs/ai/resource/node-reference/basic/code/overview.md	2024-11-15 Elena Baskakova
+docs/ai/resource/node-reference/basic/code/modules.md	2024-08-20 Elena Baskakova
+docs/ai/resource/node-reference/basic/code/ai-default-channel-formats.md	2024-11-07 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/basic/code/actions.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/basic/optional-question.md	2024-11-07 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/basic/debug-message.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/basic/question.md	2024-12-05 Elena Baskakova
+docs/ai/resource/node-reference/basic/say.md	2024-12-18 Elena Baskakova
+docs/ai/resource/node-reference/voice/voice-gateway/call-recording.md	2024-05-16 Elena Baskakova
+docs/ai/resource/node-reference/voice/voice-gateway/overview.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/voice/voice-gateway/transfer.md	2024-11-26 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/voice/voice-gateway/set-session-config.md	2024-08-14 martyna korzynek
+docs/ai/resource/node-reference/voice/voice-gateway/mute-speech-input.md	2024-08-14 martyna korzynek
+docs/ai/resource/node-reference/voice/voice-gateway/hangup.md	2024-10-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/voice-gateway/dtmf.md	2025-01-03 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/voice/voice-gateway/send-metadata.md	2024-12-19 tmccaughey
+docs/ai/resource/node-reference/voice/voice-gateway/play.md	2024-11-25 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/voice/voice-gateway/parameter-details.md	2025-01-08 Elena Baskakova
+docs/ai/resource/node-reference/voice/overview.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/voice/generic/overview.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/generic/transfer.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/generic/mute-speech-input.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/generic/dtmf-collect-config.md	2024-10-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/generic/send-metadata.md	2024-12-19 tmccaughey
+docs/ai/resource/node-reference/voice/generic/barge-in-config.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/generic/session-speech-parameters-config.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/generic/user-input-timeout-config.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/generic/hang-up.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/generic/play-url.md	2024-11-25 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/voice/generic/continuous-asr-config.md	2024-11-25 Elena Baskakova
+docs/ai/resource/node-reference/voice/audiocodes/transfer-vg.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/audiocodes/call-recording.md	2024-10-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/audiocodes/set-session-params.md	2024-12-13 Elena Baskakova
+docs/ai/resource/node-reference/voice/audiocodes/overview.md	2024-12-19 tmccaughey
+docs/ai/resource/node-reference/voice/audiocodes/hangup.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/audiocodes/send-meta-data.md	2024-12-19 tmccaughey
+docs/ai/resource/node-reference/voice/audiocodes/play-url.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/voice/audiocodes/send-message.md	2024-08-26 Elena Baskakova
+docs/ai/resource/node-reference/ai/execute-cognigy-nlu.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/ai/overview.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/ai/resolve-tool-action.md	2024-12-10 Elena Baskakova
+docs/ai/resource/node-reference/ai/ai-agent.md	2025-01-09 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/ai/regex-slot-filler.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/ai/fuzzy-search.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/ai/enable-slot-fillers.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/ai/match-pattern.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/ai/copy-slots-to-context.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/ai/add-lexicon-keyphrase.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/ai/ai-agent-handover.md	2024-12-06 Elena Baskakova
+docs/ai/resource/node-reference/ai/clean-text.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/ai/disable-slot-fillers.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/other-nodes/llm-entity-extract.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/other-nodes/overview.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/other-nodes/knowledge-search.md	2024-12-05 Elena Baskakova
+docs/ai/resource/node-reference/other-nodes/log-message.md	2024-08-27 Elena Baskakova
+docs/ai/resource/node-reference/other-nodes/search-extract-output.md	2024-12-05 Elena Baskakova
+docs/ai/resource/node-reference/other-nodes/set-translation.md	2024-06-19 Elena Baskakova
+docs/ai/resource/node-reference/service/trigger-function.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/service/add-transcript-steps.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/service/overview.md	2024-11-07 Elena Baskakova
+docs/ai/resource/node-reference/service/set-handover-inactivity.md	2024-07-24 Elena Baskakova
+docs/ai/resource/node-reference/service/http-request.md	2024-09-16 Elena Baskakova
+docs/ai/resource/node-reference/service/handover-to-agent.md	2025-01-09 tmccaughey
+docs/ai/resource/node-reference/service/ms-sql.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/service/gpt-conversation.md	2024-12-12 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/service/close-handover.md	2024-07-24 Elena Baskakova
+docs/ai/resource/node-reference/service/llm-prompt.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/service/check-agent-availability.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/service/get-transcript.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/service/mongo-db.md	2024-10-24 Elena Baskakova
+docs/ai/resource/node-reference/data/datepicker.md	2024-11-07 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/data/overview.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/data/send-smtp-email.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/data/email-notification.md	2024-11-07 Caio Lopes de Melo Lindoso
+docs/ai/resource/node-reference/ai-copilot/send-data.md	2024-11-26 Elena Baskakova
+docs/ai/resource/node-reference/ai-copilot/knowledge-tile.md	2024-10-24 Elena Baskakova
+docs/ai/resource/node-reference/ai-copilot/set-iframe-tile.md	2024-11-26 Elena Baskakova
+docs/ai/resource/node-reference/ai-copilot/set-grid.md	2024-07-12 martyna korzynek
+docs/ai/resource/node-reference/ai-copilot/overview.md	2024-11-26 Elena Baskakova
+docs/ai/resource/node-reference/ai-copilot/set-html-tile.md	2024-11-26 Elena Baskakova
+docs/ai/resource/node-reference/ai-copilot/secure-forms-tile.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/ai-copilot/set-adaptive-card-tile.md	2024-11-29 Elena Baskakova
+docs/ai/resource/node-reference/ai-copilot/sentiment-tile.md	2024-10-24 Elena Baskakova
+docs/ai/resource/node-reference/ai-copilot/next-action-tile.md	2024-08-30 Elena Baskakova
+docs/ai/resource/node-reference/ai-copilot/identity-tile.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/ai-copilot/transcript-tile.md	2024-10-24 Elena Baskakova
+docs/ai/resource/node-reference/analytics/overview.md	2024-12-10 Elena Baskakova
+docs/ai/resource/node-reference/analytics/add-memory.md	2024-12-06 Elena Baskakova
+docs/ai/resource/node-reference/analytics/complete-task.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/analytics/request-rating.md	2025-01-14 Elena Baskakova
+docs/ai/resource/node-reference/analytics/blind-mode.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/analytics/deactivate-profile.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/analytics/track-goal.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/analytics/activate-profile.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/analytics/update-profile.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/analytics/set-rating.md	2024-07-24 Elena Baskakova
+docs/ai/resource/node-reference/analytics/delete-profile.md	2024-12-11 Elena Baskakova
+docs/ai/resource/node-reference/analytics/overwrite-analytics.md	2024-05-16 Benjamin Mayr
+docs/ai/resource/node-reference/analytics/merge-profile.md	2024-12-11 Elena Baskakova
+docs/ai/resource/connections.md	2025-01-15 Elena Baskakova
 docs/ai/overview/ai-workforce.md	2024-12-06 Elena Baskakova
 docs/ai/overview/getting-started-with-voice-agent.md	2025-01-15 Elena Baskakova
 docs/ai/overview/key-features.md	2024-11-11 Elena Baskakova
 docs/ai/overview/about-cognigy-ai.md	2024-12-10 Elena Baskakova
 docs/ai/overview/getting-started-with-digital-agent.md	2025-01-15 Elena Baskakova
-docs/ai/escalate/user-inactivity-detection.md	2025-01-03 Caio Lopes de Melo Lindoso
-docs/ai/escalate/handover-reference/overview.md	2024-11-05 Caio Lopes de Melo Lindoso
-docs/ai/escalate/handover-reference/ring-central-engage.md	2024-05-16 Benjamin Mayr
-docs/ai/escalate/handover-reference/live-agent.md	2024-07-24 Elena Baskakova
-docs/ai/escalate/handover-reference/genesys-cloud-guest-chat.md	2024-12-13 Elena Baskakova
-docs/ai/escalate/handover-reference/genesys-cloud-open-messaging.md	2025-01-09 Caio Lopes de Melo Lindoso
-docs/ai/escalate/handover-reference/salesforce.md	2024-11-15 Caio Lopes de Melo Lindoso
-docs/ai/escalate/handover-reference/chatwoot.md	2024-12-09 tmccaughey
-docs/ai/escalate/handover-reference/8x8.md	2024-05-16 Benjamin Mayr
-docs/ai/escalate/handovers.md	2024-10-15 Elena Baskakova
-docs/ai/escalate/ai-copilot.md	2024-05-16 Benjamin Mayr
+docs/ai/human-escalation/user-inactivity-detection.md	2025-01-03 Caio Lopes de Melo Lindoso
+docs/ai/human-escalation/handover-reference/overview.md	2024-11-05 Caio Lopes de Melo Lindoso
+docs/ai/human-escalation/handover-reference/ring-central-engage.md	2024-05-16 Benjamin Mayr
+docs/ai/human-escalation/handover-reference/live-agent.md	2024-07-24 Elena Baskakova
+docs/ai/human-escalation/handover-reference/genesys-cloud-guest-chat.md	2024-12-13 Elena Baskakova
+docs/ai/human-escalation/handover-reference/genesys-cloud-open-messaging.md	2025-01-09 Caio Lopes de Melo Lindoso
+docs/ai/human-escalation/handover-reference/salesforce.md	2024-11-15 Caio Lopes de Melo Lindoso
+docs/ai/human-escalation/handover-reference/chatwoot.md	2024-12-09 tmccaughey
+docs/ai/human-escalation/handover-reference/8x8.md	2024-05-16 Benjamin Mayr
+docs/ai/human-escalation/handovers.md	2024-10-15 Elena Baskakova
+docs/ai/human-escalation/ai-copilot.md	2024-05-16 Benjamin Mayr
 docs/ai/developers/extension-framework.md	2024-10-18 Elena Baskakova
 docs/ai/developers/client-libraries.md	2024-11-04 Elena Baskakova
 docs/ai/developers/api-and-cli.md	2024-12-10 Tom McCaughey
@@ -498,11 +498,11 @@ docs/xApps/api.md	2024-10-26 Elena Baskakova
 docs/xApps/security/secure-xApp-from-xss.md	2024-10-26 Elena Baskakova
 docs/xApps/supported-browsers-and-channels.md	2024-05-16 Benjamin Mayr
 docs/xApps/index.md	2025-01-21 Elena Baskakova
-docs/xApps/build/overview.md	2024-05-16 Benjamin Mayr
-docs/xApps/build/first-xApp.md	2024-07-24 Elena Baskakova
-docs/xApps/build/overlay.md	2024-05-16 Benjamin Mayr
-docs/xApps/build/xApp-with-multi-channels.md	2024-11-12 Elena Baskakova
-docs/xApps/build/standalone-xApp.md	2024-05-16 Benjamin Mayr
-docs/xApps/build/custom-xApp-node.md	2024-05-16 Benjamin Mayr
+docs/xApps/resource/overview.md	2024-05-16 Benjamin Mayr
+docs/xApps/resource/first-xApp.md	2024-07-24 Elena Baskakova
+docs/xApps/resource/overlay.md	2024-05-16 Benjamin Mayr
+docs/xApps/resource/xApp-with-multi-channels.md	2024-11-12 Elena Baskakova
+docs/xApps/resource/standalone-xApp.md	2024-05-16 Benjamin Mayr
+docs/xApps/resource/custom-xApp-node.md	2024-05-16 Benjamin Mayr
 docs/xApps/tokens.md	2024-05-16 Benjamin Mayr
 docs/xApps/use-cases.md	2024-07-24 Elena Baskakova

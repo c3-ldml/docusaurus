@@ -1,0 +1,15 @@
+---
+ title: "Wait for Input" 
+ slug: "wait-for-input" 
+ hidden: false 
+---
+
+# Wait for Input
+
+<figure>
+  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/logic/wait-for-input.png" width="50%" />
+</figure>
+
+## Description
+
+The Wait for Input Nodes stops Flow execution and waits for the next user input.

@@ -31,7 +31,7 @@ The [Inject & Notify](../endpoints/inject-and-notify.md) functionality only work
 
 ## AudioCodes specific Nodes
 
-Cognigy.AI comes with a large number of inbuilt Nodes to control the AudioCodes behaviour. See [AudioCodes Nodes](../../build/node-reference/voice/audiocodes/overview.md) for more information.
+Cognigy.AI comes with a large number of inbuilt Nodes to control the AudioCodes behaviour. See [AudioCodes Nodes](../../resource/node-reference/voice/audiocodes/overview.md) for more information.
 
 ## Number Metadata
 
@@ -63,7 +63,7 @@ AudioCodes identifies information about the caller and adds it to the Cognigy [I
 
 :::note[NumberMetaData in Tokens]
 
-  All of the above are available as [Tokens](../../build/tokens.md) inside Cognigy Text fields as well.
+  All of the above are available as [Tokens](../../resource/tokens.md) inside Cognigy Text fields as well.
 
 :::
 

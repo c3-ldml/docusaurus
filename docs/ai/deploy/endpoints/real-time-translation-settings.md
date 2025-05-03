@@ -55,5 +55,5 @@ In the example below, if the **Set user input language on execution count** sett
 
 ## More Information
 
-- [Real-Time Translation](../../build/translation-and-localization/real-time-translation.md)
-- [Automatic Translation](../../build/translation-and-localization/auto-translation.md)
+- [Real-Time Translation](../../resource/translation-and-localization/real-time-translation.md)
+- [Automatic Translation](../../resource/translation-and-localization/auto-translation.md)

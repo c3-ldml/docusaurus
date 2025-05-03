@@ -4,7 +4,7 @@
 <div class="divider"></div>
 
 This Node controls when speech user inputs can be collected in your Flow.
-It prevents speech interruptions in specific cases, such as [xApp Flows](https://docs.cognigy.com/ai/build/node-reference/xApp/overview/), allowing for a smoother conversation experience.
+It prevents speech interruptions in specific cases, such as [xApp Flows](https://docs.cognigy.com/ai/resource/node-reference/xApp/overview/), allowing for a smoother conversation experience.
 By enabling or disabling speech gathering as needed,
 you can maintain better control and ensure a seamless workflow in your application.
 

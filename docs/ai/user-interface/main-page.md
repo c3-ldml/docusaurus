@@ -17,7 +17,7 @@ The following image provides an overview of the **Main** page:
 
     In the **Project List**, you can pin or unpin a Project by hovering over a Project, clicking the ![vertical-ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) button, and selecting **Pin Project** or **Unpin Project**.
 
-    The ![plus](../../../static/img/_assets/icons/plus.svg) button opens the [Project Creation Wizard](../../build/projects.md).
+    The ![plus](../../../static/img/_assets/icons/plus.svg) button opens the [Project Creation Wizard](../../resource/projects.md).
 
 </CollapsibleSection>
 

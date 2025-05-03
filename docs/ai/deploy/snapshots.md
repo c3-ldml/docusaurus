@@ -51,7 +51,7 @@ The following resources are not included in the Snapshot:
 
 ## Snapshot File Format
 
-The `.csnap` (Cognigy Snapshot) file is a special type that can only be used within the Cognigy.AI Snapshots. You cannot open or upload it outside of Cognigy.AI. Snapshots encrypt their data, including potentially sensitive information in the form of [Cognigy Connections](../build/connections.md).
+The `.csnap` (Cognigy Snapshot) file is a special type that can only be used within the Cognigy.AI Snapshots. You cannot open or upload it outside of Cognigy.AI. Snapshots encrypt their data, including potentially sensitive information in the form of [Cognigy Connections](../resource/connections.md).
 
 ## Create a new Snapshot
 
@@ -91,7 +91,7 @@ To upload a Snapshot, follow these steps:
 1. In the left-side menu of the Project, go to **Deploy > Snapshots**.
 2. On the **Snapshots** page, click **Upload Snapshot**.
 3. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with a progress bar.
-4. Once the file has been uploaded, a new [task](../build/projects.md), titled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../../static/img/_assets/icons/task-menu.svg) in the upper-right corner.
+4. Once the file has been uploaded, a new [task](../resource/projects.md), titled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../../static/img/_assets/icons/task-menu.svg) in the upper-right corner.
 
 After completing the **Upload Snapshot** task, your Snapshot will be installed and appear in the list on the **Snapshots** page.
 
@@ -216,4 +216,4 @@ as productive interaction only happens on this system.
 ## More Information
 
 - [Endpoints](endpoints/overview.md)
-- [Flows](../build/flows/overview.md)
+- [Flows](../resource/flows/overview.md)

@@ -54,7 +54,7 @@ Masks sensitive information in analytics. Specifically, it replaces `inputText`,
 
 ### Ignore specific fields
 
-In order to disable logging of specific analytic fields, one can access and manipulate them within a [Code Node](../../build/node-reference/basic/code/overview.md) using the `analyticsdata` variable:
+In order to disable logging of specific analytic fields, one can access and manipulate them within a [Code Node](../../resource/node-reference/basic/code/overview.md) using the `analyticsdata` variable:
 
 ```js
 analyticsdata.text = "overwritten text";

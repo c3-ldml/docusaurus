@@ -59,7 +59,7 @@ When you have created more than one Flow, you can select the Flow you want to te
 
 ### Locale
 
-[Locales](../../build/translation-and-localization/localization.md) are fundamental components for multilingual AI Agents communication.
+[Locales](../../resource/translation-and-localization/localization.md) are fundamental components for multilingual AI Agents communication.
 They enable AI Agents to interact with end users in their native languages,
 considering cultural nuances and creating a smooth user experience.
 
@@ -68,7 +68,7 @@ When you create more than one locale, you can select a preferred language as fol
 1. Click ![expand 2](../../../../static/img/_assets/icons/expand_2.svg) to open a list of the available locales.
 2. Select the Locale you want to use.
 
-When you run a Flow on the **Test** tab, the AI Agent's responses will match the language you previously selected in the [locale settings](../../build/flows/overview.md) of your Flow.
+When you run a Flow on the **Test** tab, the AI Agent's responses will match the language you previously selected in the [locale settings](../../resource/flows/overview.md) of your Flow.
 
 ### Snapshot
 
@@ -86,7 +86,7 @@ On the **Test** tab of the Interaction Panel, you can test your AI Agent using d
 
 ### Channel-Specific Output
 
-To view channel-specific output, it must be configured in an output Node (for example, [Say](../../build/node-reference/basic/say.md) or [Question](../../build/node-reference/basic/question.md) Nodes).
+To view channel-specific output, it must be configured in an output Node (for example, [Say](../../resource/node-reference/basic/say.md) or [Question](../../resource/node-reference/basic/question.md) Nodes).
 The Interaction Panel displays the outputs with corresponding channel icons and can filter them for a selected set of channels. For more information, refer to [Chat Output](#chat-output).
 
 <figure>
@@ -110,7 +110,7 @@ Alternatively,
 use the ![record-audio](../../../../static/img/_assets/icons/record-audio.svg) (**microphone**) button
 to activate your device's microphone and record voice input.
 
-Messages can include attached data. You can simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. To activate the **Data Input** field, go to the **Settings** tab and enable the **Show data input** toggle. Any message data sent to Cognigy.AI is accessible via [CognigyScript](../../build/cognigyscript.md) using the expression `{{ " {{input.data}}" }}`.
+Messages can include attached data. You can simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. To activate the **Data Input** field, go to the **Settings** tab and enable the **Show data input** toggle. Any message data sent to Cognigy.AI is accessible via [CognigyScript](../../resource/cognigyscript.md) using the expression `{{ " {{input.data}}" }}`.
 
 In **Chat** mode, you can use additional settings:
 
@@ -220,7 +220,7 @@ The **Info** tab menu includes the following sections:
 
 Cognigy.AI objects have a different life span depending on their type.
 For more information,
-refer to [Cognigy Objects Life Span](../../build/cognigyscript.md#life-span-of-cognigy-objects).
+refer to [Cognigy Objects Life Span](../../resource/cognigyscript.md#life-span-of-cognigy-objects).
 
 ### Input
 
@@ -306,10 +306,10 @@ Within this mode, the Interaction Panel displays more information about the Flow
 - Matched [Slots](../../empower/nlu/slots-and-lexicons/slots.md)
 - Found [Lexicon Keyphrases](../../empower/nlu/slots-and-lexicons/lexicons.md)
 - [State](./state.md) changes
-- Flow Transitions, for example, when executing a [Go To Node](../../build/node-reference/logic/go-to.md), an [Execute Flow Node](../../build/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
-- Node-specific output, for example, from an [HTTP Request Node](../../build/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug mode output. Node-specific outputs can be disabled selectively in the Interaction Panel [settings](#settings).
+- Flow Transitions, for example, when executing a [Go To Node](../../resource/node-reference/logic/go-to.md), an [Execute Flow Node](../../resource/node-reference/logic/execute-flow.md), or triggering an [Attached Flow](../../empower/nlu/attachments/attached-flows.md).
+- Node-specific output, for example, from an [HTTP Request Node](../../resource/node-reference/service/http-request.md). Some Nodes have settings to further configure their Debug mode output. Node-specific outputs can be disabled selectively in the Interaction Panel [settings](#settings).
 
-Debug Messages can also be triggered explicitly, either using the [Debug Message](../../build/node-reference/basic/debug-message.md) Node or [debug actions](../../build/node-reference/basic/code/actions.md) in the Code Node.
+Debug Messages can also be triggered explicitly, either using the [Debug Message](../../resource/node-reference/basic/debug-message.md) Node or [debug actions](../../resource/node-reference/basic/code/actions.md) in the Code Node.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-chat-tab-debug-mode.png" width="80%" />
@@ -380,6 +380,6 @@ and the Interaction Panel automatically switches to Flow B as soon as it's opene
 
 ## More Information
 
-- [Cognigy Script and Objects Life Span](../../build/cognigyscript.md#life-span-of-cognigy-objects)
+- [Cognigy Script and Objects Life Span](../../resource/cognigyscript.md#life-span-of-cognigy-objects)
 - [Testing your AI Agents with Playbooks](https://support.cognigy.com/hc/en-us/articles/9585431937948-Best-Practices-Testing-your-Virtual-Agents-with-Playbooks#1-design-comprehensive-playbooks-0-0)
-- [Voice Gateway Parameter Details](../../build/node-reference/voice/voice-gateway/parameter-details.md)
+- [Voice Gateway Parameter Details](../../resource/node-reference/voice/voice-gateway/parameter-details.md)

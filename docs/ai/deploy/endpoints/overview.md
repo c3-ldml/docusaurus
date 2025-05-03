@@ -11,7 +11,7 @@ hidden: false
 Endpoints support text-based conversations as well as conversations on your contact center phone lines.
 
 Endpoints convert channel-specific input and output, including images,
-galleries and voice, to the standardized Cognigy Input object. This approach enables the development of platform-independent [Flow](../../build/flows/overview.md) that require no modification when adding new channels.
+galleries and voice, to the standardized Cognigy Input object. This approach enables the development of platform-independent [Flow](../../resource/flows/overview.md) that require no modification when adding new channels.
 
 ## General Endpoint Settings
 
@@ -44,7 +44,7 @@ For more information, read the [Snapshot](../snapshots.md) article.
 #### Override Snapshot Connections
 
 When Agents use a Snapshot, a toggle **Override Snapshot Connections** will be displayed in the Endpoint editor.
-Enabling this option allows the Endpoint to override the [Connections](../../build/connections.md) in a Snapshot with Connections from the project. If a Connection is available only in the Snapshot, it will be used regardless of the toggle setting. If necessary, such Connections need to be manually updated.
+Enabling this option allows the Endpoint to override the [Connections](../../resource/connections.md) in a Snapshot with Connections from the project. If a Connection is available only in the Snapshot, it will be used regardless of the toggle setting. If necessary, such Connections need to be manually updated.
 
 :::note[Default setting]
 
@@ -64,7 +64,7 @@ Enabling this option allows the Endpoint to override the [Connections](../../bui
 
 ### Flow
 
-Endpoints need an entry [Flow](../../build/flows/overview.md) to start the conversation. You can switch Flows during a conversation.
+Endpoints need an entry [Flow](../../resource/flows/overview.md) to start the conversation. You can switch Flows during a conversation.
 
 To switch to a Flow during a conversation, do the following:
 
@@ -78,7 +78,7 @@ To toggle back to the drop-down selection list of Flows, click the **Select from
 
 ### Locale
 
-The [Localization](../../build/translation-and-localization/localization.md) feature in Cognigy.AI provides tools for enabling multilingual Agents. 
+The [Localization](../../resource/translation-and-localization/localization.md) feature in Cognigy.AI provides tools for enabling multilingual Agents. 
 
 You can add a Locale that will be applied across an Agent and allow language-specific output messages to be configured within Flows. The system works with fallback layers, which means that a Locale that has no content configured will fall back to another Locale that has.
 
@@ -136,4 +136,4 @@ You can use the following additional settings for the Endpoint configuration:
 
 ## More Information
 
-- [Localization](../../build/translation-and-localization/localization.md)
+- [Localization](../../resource/translation-and-localization/localization.md)

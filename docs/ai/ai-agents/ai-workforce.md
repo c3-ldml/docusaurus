@@ -41,8 +41,8 @@ Here are some examples of AI Agents you can build with Cognigy.AI:
 
 Chat-based AI Agents specialize in text-based interactions, primarily used for customer support, answering FAQs, and handling tasks, including booking appointments and providing product information through chat platforms, websites, and messaging apps.
 
-To build a chat AI Agent using Cognigy.AI, you need to start by creating a [Project](../build/projects.md) and a [Flow](../build/flows/overview.md).
-Once created, you can add at least [basic Nodes](../build/node-reference/overview.md) such as Say and Question Nodes,
+To build a chat AI Agent using Cognigy.AI, you need to start by creating a [Project](../resource/projects.md) and a [Flow](../resource/flows/overview.md).
+Once created, you can add at least [basic Nodes](../resource/node-reference/overview.md) such as Say and Question Nodes,
 which form the building blocks of the AI Agent's conversational flow.
 After that, you need to choose an appropriate Endpoint for the channel you want to deploy the AI Agent on.
 For example, select the [Webchat v3 Endpoint](../../webchat/v3/configuration.md) if you want to connect the AI Agent to the [Cognigy Webchat v3 widget](../../webchat/v3/overview.md), the [WhatsApp Endpoint](../deploy/endpoint-reference/whatsapp.md) to connect it to WhatsApp Messenger, or the [Slack Endpoint](../deploy/endpoint-reference/slack.md) to connect it to the Slack platform. To choose the best one for your needs, refer to the [full list of available Endpoints](../deploy/endpoint-reference/overview.md).
@@ -52,10 +52,10 @@ For example, select the [Webchat v3 Endpoint](../../webchat/v3/configuration.md)
 Voice AI Agents handle spoken conversations; they use speech-to-text recognition and text-to-speech technology, which makes them ideal for phone-based customer support.
 
 To build a voice AI Agent using Cognigy.AI,
-you need to start by creating a [Project](../build/projects.md) and a [Flow](../build/flows/overview.md).
-However, in addition to the [basic Nodes](../build/node-reference/overview.md),
+you need to start by creating a [Project](../resource/projects.md) and a [Flow](../resource/flows/overview.md).
+However, in addition to the [basic Nodes](../resource/node-reference/overview.md),
 you also need
-to add [voice Nodes](../build/node-reference/voice/voice-gateway/overview.md)
+to add [voice Nodes](../resource/node-reference/voice/voice-gateway/overview.md)
 that allow the AI Agent to interact with users through voice commands.
 After that, you need to select a suitable voice Endpoint for the channel where you want to deploy the AI Agent.
 For seamless connectivity, we recommend using the [Voice Gateway](../deploy/endpoint-reference/voice-gateway.md) Endpoint.
@@ -72,7 +72,7 @@ you can develop sophisticated digital AI Agents that engage customers across mul
 providing omnichannel support on platforms such as websites, apps, and social media. 
 For instance, an AI Agent may start a conversation through text and then suggest transitioning to a call with the contact center if needed. 
 To enhance the capability of your AI Agent,
-Cognigy.AI offers a [marketplace of prebuilt extensions](../build/extensions.md) and [custom Nodes](../developers/extension-framework.md)
+Cognigy.AI offers a [marketplace of prebuilt extensions](../resource/extensions.md) and [custom Nodes](../developers/extension-framework.md)
 to connect AI Agents with external systems, such as CRM and task management tools, or to build extensions from scratch.
 
 #### LLM-Driven AI Agents

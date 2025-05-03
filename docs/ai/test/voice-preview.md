@@ -48,4 +48,4 @@ You can access the Voice Preview feature in three different ways:
 
 - [Interaction Panel](interaction-panel/overview.md)
 - [Voice Gateway](../../voice-gateway/index.md)
-- [Voice Nodes](../build/node-reference/voice/overview.md)
+- [Voice Nodes](../resource/node-reference/voice/overview.md)

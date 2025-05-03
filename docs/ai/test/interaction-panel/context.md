@@ -11,13 +11,13 @@ The Context is a JSON object which stores persistent information.
 
 Every contact that connects to Cognigy.AI has their own Context which lives throughout the lifetime of the session. When a contact disconnects from Cognigy.AI, the Context is persisted in the database and retrieved upon reconnection.
 
-The Flow can read from and write to the Context by saving user messages, slots, intents or any other data available throughout the session. For more information about the lifespan of the context, see the [CognigyScript](../../build/cognigyscript.md) page.
+The Flow can read from and write to the Context by saving user messages, slots, intents or any other data available throughout the session. For more information about the lifespan of the context, see the [CognigyScript](../../resource/cognigyscript.md) page.
 
 ## Accessing the Context object
 
 
 
-Flow nodes can dynamically access Context properties via [Tokens](../../build/tokens.md) or [CognigyScript](../../build/cognigyscript.md) e.g. `{{ " {{context.property}}" }}`. The Cognigy Script used to access the context object follows the dot-notation `property.child.child`.
+Flow nodes can dynamically access Context properties via [Tokens](../../resource/tokens.md) or [CognigyScript](../../resource/cognigyscript.md) e.g. `{{ " {{context.property}}" }}`. The Cognigy Script used to access the context object follows the dot-notation `property.child.child`.
 
 :::note[Copy JSON path from the Context Object]
 
@@ -46,7 +46,7 @@ Flow nodes can dynamically access Context properties via [Tokens](../../build/to
     You can Save, Cancel or Reset the Context Object by clicking the Save, Cancel or Reset buttons in the bottom option pane of the Interaction Panel. Context manipulations will only manipulate the value(s) in your current session.
 
 
-    The default context is the initial state of the context when the session starts. This can be customized to initiate variables that will be accessed and changed throughout the conversation. The default context is configured in the [Flow Editor](../../build/flows/overview.md) under the **Settings** tab.
+    The default context is the initial state of the context when the session starts. This can be customized to initiate variables that will be accessed and changed throughout the conversation. The default context is configured in the [Flow Editor](../../resource/flows/overview.md) under the **Settings** tab.
 
 </CollapsibleSection>
 

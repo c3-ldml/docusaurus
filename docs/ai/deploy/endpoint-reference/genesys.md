@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.64-blue.svg)](../../../release-notes/4.64.md)
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/escalate/handover-reference/genesys.svg" width="100%" />
+  <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/genesys.svg" width="100%" />
 </figure>
 
 The Genesys Endpoint connects AI Agents to the [Genesys Cloud CX platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
@@ -213,4 +213,4 @@ To check the AI Agent's performance, access the installation that your server ad
 
 ## What's Next?
 
-Now you can configure Say, Question, and Optional Question Nodes by selecting the [Genesys](../../build/node-reference/basic/say.md) channel in the Node Editor settings. It's important to create messages that are compatible with the Genesys Endpoint, as the Genesys channel supports a [limited set of output types](../endpoints/content-conversion.md).
+Now you can configure Say, Question, and Optional Question Nodes by selecting the [Genesys](../../resource/node-reference/basic/say.md) channel in the Node Editor settings. It's important to create messages that are compatible with the Genesys Endpoint, as the Genesys channel supports a [limited set of output types](../endpoints/content-conversion.md).

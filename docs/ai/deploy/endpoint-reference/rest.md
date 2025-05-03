@@ -85,7 +85,7 @@ After creating a REST Endpoint, you are able to send **POST** requests to the **
 
 :::note[AI Default Channel Formats]
 
-  You can find out more about the format for the default channels [**here**](../../build/node-reference/basic/code/ai-default-channel-formats.md).
+  You can find out more about the format for the default channels [**here**](../../resource/node-reference/basic/code/ai-default-channel-formats.md).
 
 :::
 

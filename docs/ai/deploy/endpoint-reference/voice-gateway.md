@@ -48,7 +48,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 
 ### Voice Gateway Specific Nodes
 
-Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gateway Nodes](../../build/node-reference/voice/voice-gateway/overview.md) for more information.
+Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gateway Nodes](../../resource/node-reference/voice/voice-gateway/overview.md) for more information.
 
 ### SIP Headers
 
@@ -72,7 +72,7 @@ Voice Gateway identifies information about the caller and adds it to the [Input]
 
 :::note[NumberMetaData in Tokens]
 
-  The data in `input.data.numberMetaData` is available as [Tokens](../../build/tokens.md) inside Cognigy Text fields.
+  The data in `input.data.numberMetaData` is available as [Tokens](../../resource/tokens.md) inside Cognigy Text fields.
 
 :::
 
@@ -114,7 +114,7 @@ Allows activating call events for a Flow.
 Select a call event from the [Voice Gateway Events](../../../voice-gateway/references/events/overview.md) list.
 This event that will trigger the action.
 
-If you have configured the same call event in both the Endpoint and the [Lookup](../../build/node-reference/logic/lookup.md) Node, the Endpoint settings will overwrite the Node settings.
+If you have configured the same call event in both the Endpoint and the [Lookup](../../resource/node-reference/logic/lookup.md) Node, the Endpoint settings will overwrite the Node settings.
 
 #### Call Event Settings
 
@@ -127,7 +127,7 @@ If you have configured the same call event in both the Endpoint and the [Lookup]
   | Action       | Dropdown | Select the action to be performed when the call event is detected: <br></br> - **Inject into current Flow** — inject the defined text and data payload into the current flow. <br></br> - **Execute Flow** — trigger a selected Flow when the call event is detected. <br></br> - **None** — no action will be taken when the call event is detected. <br></br> - **Transfer** — transfer a call in case [TRANSFER_DIAL_ERROR](../../../voice-gateway/references/events/TRANSFER_DIAL_ERROR.md) or [TRANSFER_REFER_ERROR](../../../voice-gateway/references/events/TRANSFER_REFER_ERROR.md) call events occur. This action for call events is configured similarly to [Call Failover](#call-failover). |
   | Text Payload | String   | Enter the text that will be sent to your Flow. The parameter is available only for the **Inject into current Flow** action.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
   | Data Payload | JSON     | Provide the data that will be sent into your Flow in JSON format. The parameter is available only for the **Inject into current Flow** action.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-  | Execute Flow | Dropdown | Execute the selected Flow. The parameter is available only for the **Execute Flow** action. <br></br><br></br> Note that you can't use [Go To](../../build/node-reference/logic/go-to.md) or [Execute Flow](../../build/node-reference/logic/execute-flow.md) Nodes in the executed Flow. When the Flow is fully processed, with all Nodes from Start to End executed, any dependent Flows won't be triggered.                                                                                                                                                                                                                                                                               |
+  | Execute Flow | Dropdown | Execute the selected Flow. The parameter is available only for the **Execute Flow** action. <br></br><br></br> Note that you can't use [Go To](../../resource/node-reference/logic/go-to.md) or [Execute Flow](../../resource/node-reference/logic/execute-flow.md) Nodes in the executed Flow. When the Flow is fully processed, with all Nodes from Start to End executed, any dependent Flows won't be triggered.                                                                                                                                                                                                                                                                               |
 
 :::
 
@@ -163,7 +163,7 @@ The **Call Failover** section is intended to handle runtime and speech provider 
   | Endpointing Time                 | Number        | This parameter is active only when Deepgram is selected in the STT Vendor setting and the Endpointing toggle is enabled. <br></br><br></br> Customize the duration (in milliseconds) for detecting the end of speech. The default is 10 milliseconds of silence. Transcripts are sent after detecting silence, and the system waits until the speaker resumes or the required silence time is reached. Once either condition is met, a transcript is sent back with `speech_final` set to `true`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Dial          |
   | Smart Formatting                 | Toggle        | This parameter is active only when Deepgram is selected in the STT Vendor setting. <br></br><br></br> Deepgram's Smart Format feature applies additional formatting to transcripts to optimize them for human readability. Smart Format capabilities vary between models. When Smart Formatting is turned on, Deepgram will always apply the best-available formatting for your chosen model, tier, and language combination. For detailed examples, refer to the [Deepgram documentation](https://developers.deepgram.com/docs/smart-format). <br></br><br></br> Note that when Smart Formatting is turned on, punctuation will be activated, even if you have the Disable STT Punctuation setting enabled.                                                                                                                                                                                                                                                                                          | Dial          |
   | Google Model                     | Dropdown      | This parameter is active only when Google is selected in the STT Vendor setting.<br></br><br></br>Utilizes one of Google Cloud Speech-to-Text transcription models, with the `latest_short` model being the default choice. For a detailed list of Google models, refer to the [Transcription models](https://cloud.google.com/speech-to-text/docs/transcription-model#transcription_models)  section in the Google Documentation. Keep in mind that the `default` value is a Google Model type that can be used if other models don't suit your specific scenario.                                                                                                                                                                                                                                                                                                                                                                                                                         | Dial          |
-  | Transcription Webhook            | CognigyScript | The webhook is triggered with an HTTP POST whenever an interim or final transcription is received. If the **STT Vendor** and **STT Language** fields are empty, the system will use the default STT from the [Set Session Config Node](../../../ai/build/node-reference/voice/voice-gateway/parameter-details.md) (if it exists) or from the [Voice Gateway Self-Service Portal](../../../voice-gateway/webapp/speech-services.md). The parameter supports [CognigyScript](../../../ai/build/cognigyscript.md), allowing it to accept dynamic content. For example, you can specify the URL as follows: `https://test-hook.com?contact={{"{{ci.contact_name}}"}}`. <br></br><br></br> Note that if the [Voice Copilot](voice-copilot.md) Endpoint is inactive, you can use any Webhook URL to receive voice call transcripts. However, when the Voice Copilot Endpoint is enabled, ensure that the specified Webhook URL is associated with it for processing. | Dial          |
+  | Transcription Webhook            | CognigyScript | The webhook is triggered with an HTTP POST whenever an interim or final transcription is received. If the **STT Vendor** and **STT Language** fields are empty, the system will use the default STT from the [Set Session Config Node](../../../ai/resource/node-reference/voice/voice-gateway/parameter-details.md) (if it exists) or from the [Voice Gateway Self-Service Portal](../../../voice-gateway/webapp/speech-services.md). The parameter supports [CognigyScript](../../../ai/resource/cognigyscript.md), allowing it to accept dynamic content. For example, you can specify the URL as follows: `https://test-hook.com?contact={{"{{ci.contact_name}}"}}`. <br></br><br></br> Note that if the [Voice Copilot](voice-copilot.md) Endpoint is inactive, you can use any Webhook URL to receive voice call transcripts. However, when the Voice Copilot Endpoint is enabled, ensure that the specified Webhook URL is associated with it for processing. | Dial          |
   | STT Label                        | CognigyScript | The alternative name of the vendor is the one you [specify in the Voice Gateway Self-Service Portal](../../../voice-gateway/webapp/applications.md#add-additional-tts-and-stt-vendor). If you have created multiple speech services from the same vendor, use the label to specify which service to use.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Dial          |
   | Audio Stream Selection           | Dropdown      | Select the source of the audio stream: <br></br> - **Caller/Called** - both the incoming and outgoing audio streams of the caller and the called party. <br></br> - **Caller** - the incoming and outgoing audio stream of the caller. <br></br>- **Called** - the incoming and outgoing audio stream of the called party. <br></br> <br></br> Ensure that the selected audio stream matches the language specified for transcription. If no audio stream is provided, the system will use the one set in the beginning, which should also match the language specified for transcription.                                                                                                                                                                                                                                                                                                                                                                                                                 | Dial          |
   | Referred By                      | String        | This parameter is optional.<br></br><br></br> This setting allows you to change the original Referred By value, which can be a SIP URI or a user identifier such as a phone number. To define the Referred By value, you can use the following patterns:<br></br>- **SIP URI** - `sip:[referred-by]@custom.domain.com`. In this case, the entire SIP URI will be sent as the Referred-By header. Example: `"Referred-by": "sip:CognigyOutbound@custom.domain.com"`.<br></br>- **User Identifier** - `sip:[referred-by]@[SIP FROM Domain from carrier config]`. Example, `"Referred-By": "sip:CognigyOutbound@sip.cognigy.ai"`.                                                                                                                                                                                                                                                                                                                                                                        | Refer         |
@@ -173,7 +173,7 @@ The **Call Failover** section is intended to handle runtime and speech provider 
 
 ## Handover Settings
 
-You can use any [handover provider](../../escalate/handover-reference/overview.md) within the Voice Gateway integration.
+You can use any [handover provider](../../human-escalation/handover-reference/overview.md) within the Voice Gateway integration.
 The Handover Settings enable your voice agent to route calls to the contact center, ensuring efficient communication and swift access to human assistance. 
 
 In contrast to chatting, communication between actors during a voice call occurs using speech recognition technologies (text-to-speech and speech-to-text).
@@ -185,7 +185,7 @@ Finally, the converted message is sent to the end user.
 ### Configuration
 
 To activate the Handover Settings,
-you need to add a [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node in your voice Flow.
+you need to add a [Handover to Agent](../../resource/node-reference/service/handover-to-agent.md) Node in your voice Flow.
 This Node transfers the conversation from the voice agent to the human agent.
 
 ### Example
@@ -222,23 +222,23 @@ You can achieve this by adjusting timeout settings and error handling policies.
 
 To set up a multilingual Flow for the handover use case, follow these steps:
 
-1. In your voice Flow, navigate to the [Set Session Config](../../build/node-reference/voice/voice-gateway/parameter-details.md) Node.
+1. In your voice Flow, navigate to the [Set Session Config](../../resource/node-reference/voice/voice-gateway/parameter-details.md) Node.
 2. In the Node editor, go to the **Recognizer STT** section and activate the **Recognize Language** toggle.
 3. From the **Alternative Language** list, select the additional languages, for example, `German` and `Italian`.
 4. Click **Save Node**. 
-5. Below the Set Session Config Node, add a [Lookup](../../build/node-reference/logic/lookup.md) Node. 
+5. Below the Set Session Config Node, add a [Lookup](../../resource/node-reference/logic/lookup.md) Node. 
 6. In the parent Lookup Node, select **CognigyScript** from the **Type** list and specify `input.data.payload.speech.language_code` in the **Operator** field. 
 7. Click **Save Node**. 
 8. In the case Nodes of the Lookup Node, specify the language codes, for example, `de-DE`, `it-IT`. 
 9. Click **Save Node**. 
-10. Below each case Node, add the second [Set Session Config](../../build/node-reference/voice/voice-gateway/parameter-details.md) Nodes.
+10. Below each case Node, add the second [Set Session Config](../../resource/node-reference/voice/voice-gateway/parameter-details.md) Nodes.
 11. Configure the TTS and STT settings for each of the Set Session Config Nodes. This means that one Node should have German language selected, while the other should have Italian. These Nodes will manage the voice agent's communication in the end user's language. 
-12. Below each Set Session Config Node, add the [Set Translation](../../build/node-reference/other-nodes/set-translation.md) Nodes. These Nodes will perform translation of a text from the end user's language to the human agent's language. 
+12. Below each Set Session Config Node, add the [Set Translation](../../resource/node-reference/other-nodes/set-translation.md) Nodes. These Nodes will perform translation of a text from the end user's language to the human agent's language. 
 13. In the Set Translation Node, activate the **Translation Enabled** toggle. 
 14. In the **User Input Language** field, specify the language of the user input, for example, `de`, `it`. 
 15. In the **Flow Language** field, specify the language to translate to, for example, `en`. 
 16. Save your changes. 
-17. At the end of the Flow, place the [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node.
+17. At the end of the Flow, place the [Handover to Agent](../../resource/node-reference/service/handover-to-agent.md) Node.
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/voice-gateway-handover.png" width="100%" />

@@ -30,13 +30,13 @@ The Endpoints that support handover are listed below:
 <HandoverProviderDeprecation />
 
 In this section,
-you can select and configure the handover provider to which the user will be forwarded when a [Handover to Agent Node](../../build/node-reference/service/handover-to-agent.md) is triggered.
+you can select and configure the handover provider to which the user will be forwarded when a [Handover to Agent Node](../../resource/node-reference/service/handover-to-agent.md) is triggered.
 Cognigy.AI offers support for the following handover providers:
 
-- [Cognigy Live Agent](../../escalate/handover-reference/live-agent.md)
-- [Chatwoot](../../escalate/handover-reference/chatwoot.md)
-- [RingCentral Engage](../../escalate/handover-reference/ring-central-engage.md)
-- [Salesforce](../../escalate/handover-reference/salesforce.md)
-- [Genesys Cloud Guest Chat](../../escalate/handover-reference/genesys-cloud-guest-chat.md)
-- [Genesys Cloud Open Messaging](../../escalate/handover-reference/genesys-cloud-open-messaging.md)
-- [8x8](../../escalate/handover-reference/8x8.md)
+- [Cognigy Live Agent](../../human-escalation/handover-reference/live-agent.md)
+- [Chatwoot](../../human-escalation/handover-reference/chatwoot.md)
+- [RingCentral Engage](../../human-escalation/handover-reference/ring-central-engage.md)
+- [Salesforce](../../human-escalation/handover-reference/salesforce.md)
+- [Genesys Cloud Guest Chat](../../human-escalation/handover-reference/genesys-cloud-guest-chat.md)
+- [Genesys Cloud Open Messaging](../../human-escalation/handover-reference/genesys-cloud-open-messaging.md)
+- [8x8](../../human-escalation/handover-reference/8x8.md)

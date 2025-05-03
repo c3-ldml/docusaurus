@@ -28,7 +28,7 @@ Remember to label all UI elements in your Webchat to explain their purpose clear
 Provide users with descriptive labels for each interactive element, including links, text on buttons, and forms.
 Make sure the visible and [non-visible text](#aria-labels) is meaningful to help users navigate Webchat effectively.
 
-Include alternative (Alt) text to describe images for users who cannot see them. This text is pronounced by screen readers when hovering over the element. For example, include alternative text in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md), or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes for [images and other output types](../../ai/build/node-reference/basic/say.md) that contain images.
+Include alternative (Alt) text to describe images for users who cannot see them. This text is pronounced by screen readers when hovering over the element. For example, include alternative text in the [Say](../../ai/resource/node-reference/basic/say.md), [Question](../../ai/resource/node-reference/basic/question.md), or [Optional Question](../../ai/resource/node-reference/basic/optional-question.md) Nodes for [images and other output types](../../ai/resource/node-reference/basic/say.md) that contain images.
 
 <figure>
   <img class="image-center" alt="A screenshot with an example of an alt text" src="/img/webchat/v3/image-alt-text.png" width="100%" />
@@ -40,8 +40,8 @@ Webchat v3 has aria labels to give access to screen readers or other assistive t
 
 ### Adaptive Cards
 
-When you use the **Adaptive Card** output type in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md),
-or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes,
+When you use the **Adaptive Card** output type in the [Say](../../ai/resource/node-reference/basic/say.md), [Question](../../ai/resource/node-reference/basic/question.md),
+or [Optional Question](../../ai/resource/node-reference/basic/optional-question.md) Nodes,
 ensure
 that each field in [Microsoft Adaptive Cards](https://adaptivecards.io/designer/) contains a title with meaningful text
 and that the text has a hierarchical structure.
@@ -117,8 +117,8 @@ For video and audio, provide the same content in an alternate format, such as a 
 ### Audio
 
 An audio track should be provided along with the transcript for this track.
-In the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md),
-or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes, for the **Audio** output type,
+In the [Say](../../ai/resource/node-reference/basic/say.md), [Question](../../ai/resource/node-reference/basic/question.md),
+or [Optional Question](../../ai/resource/node-reference/basic/optional-question.md) Nodes, for the **Audio** output type,
 add the audio file and paste the transcript into the **Audio Alternative Text** field.
 
 To convert your audio into text, you can use third-party tools such as [Transcriptor](https://transkriptor.com/),
@@ -164,8 +164,8 @@ The audio transcript can have the following format:
 
 A video clip should be provided along with the transcript and captions for this clip.
 
-In the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md),
-or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes, for the **Video** output type,
+In the [Say](../../ai/resource/node-reference/basic/say.md), [Question](../../ai/resource/node-reference/basic/question.md),
+or [Optional Question](../../ai/resource/node-reference/basic/optional-question.md) Nodes, for the **Video** output type,
 add the vidio file, provide the alternative text (a downloadable transcript) and the URL for captions.
 
 <figure>
@@ -174,8 +174,8 @@ add the vidio file, provide the alternative text (a downloadable transcript) and
 
 #### Transcript 
 
-In the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md),
-or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes, for the **Video** output type,
+In the [Say](../../ai/resource/node-reference/basic/say.md), [Question](../../ai/resource/node-reference/basic/question.md),
+or [Optional Question](../../ai/resource/node-reference/basic/optional-question.md) Nodes, for the **Video** output type,
 you need to paste a vidio transcript into the **Video Alternative Text** field.
 
 To convert your video into text, you can use third-party tools such as [Transcriptor](https://transkriptor.com/),
@@ -209,8 +209,8 @@ In Webchat, the transcript will be available in the video widget under the **Dow
 
 Captions are designed to make content accessible to people who are deaf or hard of hearing, and they include not only spoken dialogue but also relevant non-verbal audio cues. 
 
-In the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md),
-or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes, for the **Video** output type,
+In the [Say](../../ai/resource/node-reference/basic/say.md), [Question](../../ai/resource/node-reference/basic/question.md),
+or [Optional Question](../../ai/resource/node-reference/basic/optional-question.md) Nodes, for the **Video** output type,
 you need to paste a URL, which links to the captions, into the **Captions URL** field.
 
 To create captions, you can use YouTube.
@@ -305,7 +305,7 @@ You can determine the contrast ratio of your Webchat using the browser DevTools.
 
 If you built a custom Node,
 make sure that the Node
-you created via the [Extension](../../ai/build/extensions.md) framework is developed according to accessibility standards.
+you created via the [Extension](../../ai/resource/extensions.md) framework is developed according to accessibility standards.
 
 ## More Information
 

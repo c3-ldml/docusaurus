@@ -17,7 +17,7 @@ from where the message was sent.
 More specific results from the NLU intent mapping process are also available, such as the **Intent** that was selected,
 the **Slots** that were identified and many other useful pieces of information.
 
-The input object is passed to the Project's [Flow](../../../ai/build/flows/overview.md) to decide on the next action to take. For more information about the lifespan of the input, see the [CognigyScript](../../../ai/build/cognigyscript.md) page.
+The input object is passed to the Project's [Flow](../../../ai/resource/flows/overview.md) to decide on the next action to take. For more information about the lifespan of the input, see the [CognigyScript](../../../ai/resource/cognigyscript.md) page.
 
 :::note[Intent Default Replies override flow logic]
 
@@ -97,7 +97,7 @@ The detailed NLU results are published to the **nlu** variable which contains th
 
 ## Accessing the Input Object
 
-Flow nodes can dynamically access Input properties via [Tokens](../../../ai/build/tokens.md) or [CognigyScript](../../../ai/build/cognigyscript.md) i.e. `{{ "{{input.property}}" }}`. The Cognigy Script used to access the input object follows the dot-notation `property.child.child`.
+Flow nodes can dynamically access Input properties via [Tokens](../../../ai/resource/tokens.md) or [CognigyScript](../../../ai/resource/cognigyscript.md) i.e. `{{ "{{input.property}}" }}`. The Cognigy Script used to access the input object follows the dot-notation `property.child.child`.
 
 **Example**: `{{ "{{input.text}}" }}` would return the text message that was sent to the Flow.
 
