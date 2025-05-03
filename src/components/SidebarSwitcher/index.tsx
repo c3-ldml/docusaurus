@@ -16,9 +16,6 @@ const SidebarSwitcher: React.FC = () => {
       case 'apiSidebar':
         history.push('/docs/api/getting-started');
         break;
-      case 'guidesSidebar':
-        history.push('/docs/guides/installation');
-        break;
       default:
         break;
     }
@@ -28,12 +25,10 @@ const SidebarSwitcher: React.FC = () => {
     <select
       onChange={handleSidebarChange}
       className={styles.dropdown}
-      value={location.pathname.includes('/api/') ? 'apiSidebar' : 
-             location.pathname.includes('/guides/') ? 'guidesSidebar' : 'tutorialSidebar'}
+      value={location.pathname.includes('/api/') ? 'apiSidebar' : 'tutorialSidebar'}
     >
       <option value="tutorialSidebar">Tutorial</option>
       <option value="apiSidebar">API Reference</option>
-      <option value="guidesSidebar">Guides</option>
     </select>
   );
 };

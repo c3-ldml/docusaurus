@@ -78,3 +78,62 @@
 .admonition.info:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Custom table styles */
+table {
+  border-radius: 0.5rem !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  overflow: hidden !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  width: 100% !important;
+  border: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+  display: block !important;
+  margin-bottom: var(--ifm-spacing-vertical) !important;
+}
+
+table th {
+  background-color: white !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  padding: 0.75rem 1rem !important;
+  font-weight: 600 !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+}
+
+table td {
+  background-color: white !important;
+  padding: 0.75rem 1rem !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+table tr:hover td {
+  background-color: var(--ifm-color-emphasis-100) !important;
+}
+
+/* Dark mode table styles */
+[data-theme='dark'] table {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+  border: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme='dark'] table th {
+  background-color: var(--ifm-background-color) !important;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+}
+
+[data-theme='dark'] table td {
+  background-color: var(--ifm-background-color) !important;
+  border: none !important;
+}
+
+[data-theme='dark'] table tr:hover td {
+  background-color: var(--ifm-color-emphasis-100) !important;
+}

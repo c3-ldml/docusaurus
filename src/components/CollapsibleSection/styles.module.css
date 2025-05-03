@@ -6,7 +6,7 @@
 }
 
 .title {
-  background-color: var(--ifm-color-emphasis-100);
+  background-color: rgb(250, 250, 250);
   color: var(--ifm-color-content);
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
@@ -51,7 +51,7 @@
 }
 
 [data-theme='dark'] .title {
-  background-color: var(--ifm-color-emphasis-200);
+  background-color: rgb(40, 40, 40);
 }
 
 [data-theme='dark'] .title::after {

@@ -26,7 +26,6 @@ const CustomSidebar: React.FC<CustomSidebarProps> = ({ sidebar, path }) => {
         >
           <option value="tutorialSidebar">Tutorial</option>
           <option value="apiSidebar">API Reference</option>
-          <option value="guidesSidebar">Guides</option>
         </select>
       </div>
       <div className={styles.sidebarContent}>
