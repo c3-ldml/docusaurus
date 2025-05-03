@@ -20,8 +20,12 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 A **Go To Node** switches the conversation to another **Node** or **Flow**, which is executed immediately when this Node is activated. If the Go To Node switches to another Flow, the Entrypoint also switches to that Flow altogether (until switched back).
 
-!!! note "Using Go To and Execute Together"
-    A Go To Node overwrites the execution of an Execute Flow Node. If a Flow containing a Go To Node is executed, after an Execute Flow Node, the Go To Node stops the original execution and the session stays in the Go To Node's destination Flow. This action prevents the normal behavior of the Execute Flow Node, which returns to the Flow it is located in.
+:::note[Using Go To and Execute Together]
+
+  A Go To Node overwrites the execution of an Execute Flow Node. If a Flow containing a Go To Node is executed, after an Execute Flow Node, the Go To Node stops the original execution and the session stays in the Go To Node's destination Flow. This action prevents the normal behavior of the Execute Flow Node, which returns to the Flow it is located in.
+
+:::
+
 
 ## Parameters
 
@@ -44,5 +48,9 @@ A **Go To Node** switches the conversation to another **Node** or **Flow**, whic
 </CollapsibleSection>
 
 
-!!! warning "Loops"
-    Cognigy.AI checks how often a Go To Node was activated without a user input in-between. The default setting for maximum loops is 4, but it is configurable for on-premises installations.
+:::warning[Loops]
+
+  Cognigy.AI checks how often a Go To Node was activated without a user input in-between. The default setting for maximum loops is 4, but it is configurable for on-premises installations.
+
+:::
+

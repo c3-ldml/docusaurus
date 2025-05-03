@@ -43,11 +43,15 @@ Packages can include the following Project resources:
 === "API"
      You can view, create, and delete Packages using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Packages) as well as download and upload them.
 
-!!! warning "Package Import"
+:::warning[Package Import]
 
-     - During the import, you may need to [resolve conflicts](#resolve-import-conflicts) if the Package contains a duplicate of a Project resource.
-     - Don't import Packages for deploying Knowledge.AI resources in a production Project. AI Agents' knowledge may be temporarily unavailable during the import.
-     - Node IDs remain unchanged during the import to ensure that hardcoded links between Flows and Nodes don't break. If you need to import a Flow multiple times into a Project, delete and re-create the Nodes before importing the Package to prevent Node ID conflicts.
+ - During the import, you may need to [resolve conflicts](#resolve-import-conflicts) if the Package contains a duplicate of a Project resource.
+ - Don't import Packages for deploying Knowledge.AI resources in a production Project. AI Agents' knowledge may be temporarily unavailable during the import.
+ - Node IDs remain unchanged during the import to ensure that hardcoded links between Flows and Nodes don't break. If you need to import a Flow multiple times into a Project, delete and re-create the Nodes before importing the Package to prevent Node ID conflicts.
+
+
+:::
+
 
 ### Map Locales Before Importing Flows
 

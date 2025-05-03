@@ -36,5 +36,9 @@ Example:
 }
 ```
 
-!!! note "This Node supports Activity Parameters"
-    You can find more information about activity parameters on the [Parameter Details](../voice-gateway/parameter-details.md) page.
+:::note[This Node supports Activity Parameters]
+
+  You can find more information about activity parameters on the [Parameter Details](../voice-gateway/parameter-details.md) page.
+
+:::
+

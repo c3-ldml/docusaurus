@@ -125,12 +125,16 @@ API calls made by the Extension code are proxied back to the rest of the system 
 
 ### Make Extensions Trusted
 
-!!! danger "Security considerations"
-    Never trust Extension code without thorough review. Extensions can use external packages from NPM, which may contain malicious code or routines. An Extension can steal sensitive information when executed in the standard environment.
+:::danger[Security considerations]
 
-A trusted Extension is an Extension that is considered safe to run in the standard environment. This means that trusted Extensions may offer less latency but need to be handled more carefully to avoid [performance issues](#custom-extensions).
+  Never trust Extension code without thorough review. Extensions can use external packages from NPM, which may contain malicious code or routines. An Extension can steal sensitive information when executed in the standard environment.
 
-To make Extensions trusted and let them run in the standard environment, you have two options:
+  A trusted Extension is an Extension that is considered safe to run in the standard environment. This means that trusted Extensions may offer less latency but need to be handled more carefully to avoid [performance issues](#custom-extensions).
+
+  To make Extensions trusted and let them run in the standard environment, you have two options:
+
+:::
+
 
 <CollapsibleSection title="Make Extensions Trusted">
 

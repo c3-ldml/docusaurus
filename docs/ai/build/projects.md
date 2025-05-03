@@ -46,8 +46,12 @@ If you already have a Live Agent account and admin rights, you can also:
 - Connect Live Agent to your Project using the **Set Up Cognigy Live Agent** option.
 - Create an [AI Copilot](../../ai-copilot/overview.md) Flow by selecting the **Enable AI Copilot** option from the list.
 
-!!! note "Live Agent feature flag for on-premises installations"
-    For on-premises installations, the **Live Agent** section in the Project Creation wizard is visible only if you enable the `FEATURE_USE_COGNIGY_LIVE_AGENT` environment variable.
+:::note[Live Agent feature flag for on-premises installations]
+
+  For on-premises installations, the **Live Agent** section in the Project Creation wizard is visible only if you enable the `FEATURE_USE_COGNIGY_LIVE_AGENT` environment variable.
+
+:::
+
 
 ## Task Panel
 

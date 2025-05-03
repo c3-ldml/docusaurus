@@ -50,23 +50,25 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
 
 <CollapsibleSection title="Alexa">
 
-    !!! warning
+    :::warning
+
         - If the user triggers more than one Say Node in a Flow execution with the Alexa channel, the AI Agent concatenates each Say Nodes' SSML or text outputs as one large SSML statement.
-        - If the Flow outputs more than one Card, the AI Agent sends only the last one.
-        - If the Flow outputs more than one Display configuration, the AI Agent uses only the last one.
+            - If the Flow outputs more than one Card, the AI Agent sends only the last one.
+            - If the Flow outputs more than one Display configuration, the AI Agent uses only the last one.
 
-    The Alexa channel defines what and how an Amazon Echo-enabled system provides answers.
+        The Alexa channel defines what and how an Amazon Echo-enabled system provides answers.
+    
+    :::
 
-    | Parameter                       | Description                                                                                                                                                                                                                                                                                                                            |
-    |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Session Lifecycle               | This parameter defines if the AI Agent should end the session after the Node is executed.                                                                                                                                                                                                                                              |
-    | Output Speech                   | The content and pronunciation of the output speech. This parameter supports SSML and JSON directives. For more details on JSON directives, read the [Amazon Alexa documentation](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html).                                                         |
-    | Reprompt                        | The content and pronunciation of the reprompt speech in case the user doesn't respond after a certain time. This parameter supports SSML and JSON directives. For more details on JSON directives, read the [Amazon Alexa documentation](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html). |
-    | Home Cards                      | A Card that provides additional visual information. You can send Cards if the user has an device with a screen that is connected to the Alexa application.                                                                                                                                                                             |
-    | Display Templates for Echo Show | This parameter defines how Amazon Echo Show devices display content.                                                                                                                                                                                                                                                                   |
+  | Parameter                       | Description                                                                                                                                                                                                                                                                                                                            |
+  |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | Session Lifecycle               | This parameter defines if the AI Agent should end the session after the Node is executed.                                                                                                                                                                                                                                              |
+  | Output Speech                   | The content and pronunciation of the output speech. This parameter supports SSML and JSON directives. For more details on JSON directives, read the [Amazon Alexa documentation](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html).                                                         |
+  | Reprompt                        | The content and pronunciation of the reprompt speech in case the user doesn't respond after a certain time. This parameter supports SSML and JSON directives. For more details on JSON directives, read the [Amazon Alexa documentation](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html). |
+  | Home Cards                      | A Card that provides additional visual information. You can send Cards if the user has an device with a screen that is connected to the Alexa application.                                                                                                                                                                             |
+  | Display Templates for Echo Show | This parameter defines how Amazon Echo Show devices display content.                                                                                                                                                                                                                                                                   |
 
 </CollapsibleSection>
-
 
 <CollapsibleSection title="Messenger">
 
@@ -81,20 +83,24 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
 
     For more details on how to configure the parameters, read the [Facebook Messenger documentation](https://developers.facebook.com/docs/messenger-platform/send-messages).
 
-    ??? tip "Using Code Nodes to Output Facebook Markup"
-        You can use the [output action in Code Nodes](../node-reference/basic/code/actions.md) to send a JSON object directly to Facebook. To do so, set the following code as the data property:
+    :::tip[Using Code Nodes to Output Facebook Markup]
 
-    ```json
-            {
-                "_cognigy": {
-                    "_facebook": {      
-                        "message": {
-                            // this contains your message to facebook
-                        }
-                    }
-                }
-            }
-    ```
+  You can use the [output action in Code Nodes](../node-reference/basic/code/actions.md) to send a JSON object directly to Facebook. To do so, set the following code as the data property:
+
+  ```json
+              {
+                  "_cognigy": {
+                      "_facebook": {      
+                          "message": {
+                              // this contains your message to facebook
+                          }
+                      }
+                  }
+              }
+  ```
+
+:::
+
 
 </CollapsibleSection>
 
@@ -103,17 +109,20 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
 
     The Webchat channel defines how AI Agents provide answers through [Webchat v2](../../../webchat/v2/overview.md).
 
-    ???+ note
+    :::note
+
         The Webchat channel has similar configuration options to the [Messenger channel](#messenger). Activate the **Use Facebook Messenger channel** toggle to use the same configuration options in both channels.
 
-    | Output Type   | Parameters                                                                                                                                                     |
-    |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Quick Replies | <ul><li>Message</li><li>Title</li><li>Payload</li><li>Image URL</li><li>Condition</li></ul>                                                                    |
-    | Buttons       | <ul><li>Button Type</li><li>Title</li><li>Payload</li><li>Condition</li></ul>                                                                                  |
-    | Gallery       | <ul><li>Title</li><li>Subtitle</li><li>Image URL</li><li>Default action web URL</li><li>Condition</li></ul>                                                    |
-    | Attachment    | <ul><li>Attachment Type</li><li>URL</li></ul>                                                                                                                  |
-    | List          | <ul><li>Title</li><li>Subtitle</li><li>Image URL</li><li>Default action web URL</li></ul>                                                                      |
-    | Adaptive Card | A `$schema` property for the adaptive card. You can find supported versions in the [Content Conversion](../../deploy/endpoints/content-conversion.md) article. |
+    :::
+
+  | Output Type   | Parameters                                                                                                                                                     |
+  |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | Quick Replies | <ul><li>Message</li><li>Title</li><li>Payload</li><li>Image URL</li><li>Condition</li></ul>                                                                    |
+  | Buttons       | <ul><li>Button Type</li><li>Title</li><li>Payload</li><li>Condition</li></ul>                                                                                  |
+  | Gallery       | <ul><li>Title</li><li>Subtitle</li><li>Image URL</li><li>Default action web URL</li><li>Condition</li></ul>                                                    |
+  | Attachment    | <ul><li>Attachment Type</li><li>URL</li></ul>                                                                                                                  |
+  | List          | <ul><li>Title</li><li>Subtitle</li><li>Image URL</li><li>Default action web URL</li></ul>                                                                      |
+  | Adaptive Card | A `$schema` property for the adaptive card. You can find supported versions in the [Content Conversion](../../deploy/endpoints/content-conversion.md) article. |
 
 </CollapsibleSection>
 
@@ -132,65 +141,74 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
 
 <CollapsibleSection title="Twilio">
 
-    !!! warning "Validate the TwiML"
-        Make sure the Twilio Markup Language (TwiML) provided in the Node editor is valid. If the AI Agent sends an invalid TwiML to Twilio, the call immediately fails or doesn't initiate.
+    :::warning[Validate the TwiML]
 
-        Make sure that the content of the TwiML is escaped XML.
+      Make sure the Twilio Markup Language (TwiML) provided in the Node editor is valid. If the AI Agent sends an invalid TwiML to Twilio, the call immediately fails or doesn't initiate.
 
-    The Twilio channel defines how AI Agents provide answers in Twilio.
+      Make sure that the content of the TwiML is escaped XML.
+    
+    :::
 
-    | Output Type | Description                                                                                                                                                                                          |
-    |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Text        | A simple text message.                                                                                                                                                                               |
-    | TwiML       | A valid TwiML. See the [Twilio documentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml) for further details and templates. |
+  The Twilio channel defines how AI Agents provide answers in Twilio.
 
-    **Amazon Polly Voice**
+  | Output Type | Description                                                                                                                                                                                          |
+  |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | Text        | A simple text message.                                                                                                                                                                               |
+  | TwiML       | A valid TwiML. See the [Twilio documentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml) for further details and templates. |
 
-    In the **Twilio Endpoint** settings, you can select the **Amazon Polly** voice. For more information about Amazon Polly features, read the [Twilio documentation](https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly).
+  **Amazon Polly Voice**
+
+  In the **Twilio Endpoint** settings, you can select the **Amazon Polly** voice. For more information about Amazon Polly features, read the [Twilio documentation](https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly).
 
 </CollapsibleSection>
 
 
 <CollapsibleSection title="Twilio SMS">
 
-    !!! warning "Validate the TwiML"
-        Make sure the Twilio Markup Language (TwiML) provided in the Node editor is valid. If the AI Agent sends an invalid TwiML to Twilio, the call immediately fails or doesn't initiate.
+    :::warning[Validate the TwiML]
 
-        Make sure that the content of the TwiML is escaped XML.
+      Make sure the Twilio Markup Language (TwiML) provided in the Node editor is valid. If the AI Agent sends an invalid TwiML to Twilio, the call immediately fails or doesn't initiate.
 
-    The Twilio SMS channel defines how AI Agents provide answers through Twilio SMS.
+      Make sure that the content of the TwiML is escaped XML.
 
-    | Output Type | Description                                                                                                                            |
-    |-------------|----------------------------------------------------------------------------------------------------------------------------------------|
-    | Text        | A simple text message.                                                                                                                 |
-    | TwiML       | A valid TwiML object. See the [Twilio documentation](https://www.twilio.com/docs/sms/twiml/message) for further details and templates. |
+    :::
+
+  The Twilio SMS channel defines how AI Agents provide answers through Twilio SMS.
+
+  | Output Type | Description                                                                                                                            |
+  |-------------|----------------------------------------------------------------------------------------------------------------------------------------|
+  | Text        | A simple text message.                                                                                                                 |
+  | TwiML       | A valid TwiML object. See the [Twilio documentation](https://www.twilio.com/docs/sms/twiml/message) for further details and templates. |
 
 </CollapsibleSection>
 
 
 <CollapsibleSection title="Microsoft Teams">
 
-    !!! warning "Multiple Flow Outputs"
+    :::warning[Multiple Flow Outputs]
+
         If the user triggers more than one Say Node in one Flow execution with the Microsoft Teams channel, the AI Agent:
-            - Concatenates each Say Nodes' text or Microsoft Teams text outputs as one message.
-            - Uses only the JSON field output of the last Node triggered.
+                - Concatenates each Say Nodes' text or Microsoft Teams text outputs as one message.
+                - Uses only the JSON field output of the last Node triggered.
+
+    :::
 
     With the Microsoft Teams channel, you can send either text or adaptive cards. Refer to [Deployment a Microsoft Teams Endpoint](../../deploy/endpoint-reference/azure-bot-services.md) page for information on how to send messages.
 
-    | Output Type   | Description                                                                                                                                                                                                                                                        |
-    |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Text          | A simple text message.                                                                                                                                                                                                                                             |
-    | JSON          | A valid JSON in the Bot Framework/Microsoft Teams format. See the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0) for further details and templates. |
-    | Adaptive Card | A `$schema` property for the adaptive card. You can find supported versions in [Content Conversion](../../deploy/endpoints/content-conversion.md).                                                                                                                 |
+  | Output Type   | Description                                                                                                                                                                                                                                                        |
+  |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | Text          | A simple text message.                                                                                                                                                                                                                                             |
+  | JSON          | A valid JSON in the Bot Framework/Microsoft Teams format. See the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0) for further details and templates. |
+  | Adaptive Card | A `$schema` property for the adaptive card. You can find supported versions in [Content Conversion](../../deploy/endpoints/content-conversion.md).                                                                                                                 |
 
-    <CollapsibleSection title="Voice Gateway">
+  <CollapsibleSection title="Voice Gateway">
 
-    With the Voice Gateway channel, you can configure the content and pronunciation of the AI Agents voice output.
+  With the Voice Gateway channel, you can configure the content and pronunciation of the AI Agents voice output.
 
-    You can also configure Voice Gateway settings using Activity Parameters. To do this, activate the **Set Activity Parameters** toggle. You can find a description of the parameter configurations in [Voice Gateway Parameter Details](../node-reference/voice/voice-gateway/parameter-details.md).
+  You can also configure Voice Gateway settings using Activity Parameters. To do this, activate the **Set Activity Parameters** toggle. You can find a description of the parameter configurations in [Voice Gateway Parameter Details](../node-reference/voice/voice-gateway/parameter-details.md).
 
 
-    </CollapsibleSection>
+  </CollapsibleSection>
 
 </CollapsibleSection>
 

@@ -19,21 +19,26 @@ The Flow can read from and write to the Context by saving user messages, slots, 
 
 Flow nodes can dynamically access Context properties via [Tokens](../../build/tokens.md) or [CognigyScript](../../build/cognigyscript.md) e.g. `{{ " {{context.property}}" }}`. The Cognigy Script used to access the context object follows the dot-notation `property.child.child`.
 
-!!! note "Copy JSON path from the Context Object"
-    You can copy the exact JSON path you need to reference a certain value in the Context object by right-clicking it and selecting "Copy JSON Path" from the context menu. 
+:::note[Copy JSON path from the Context Object]
 
-**Example**
+  You can copy the exact JSON path you need to reference a certain value in the Context object by right-clicking it and selecting "Copy JSON Path" from the context menu. 
 
-```JavaScript
-{
-    "user": {
-        "name": "Luke Skywalker"
-    }
-}
-```
+  **Example**
 
-* `{{ " {{context.user.name}}" }}` would return `Luke Skywalker`
-* `{{ " {{context.user.age}}" }}` would return ` ` (empty string) or - if used in a condition - `false`
+  ```JavaScript
+  {
+      "user": {
+          "name": "Luke Skywalker"
+      }
+  }
+  ```
+
+  * `{{ " {{context.user.name}}" }}` would return `Luke Skywalker`
+  * `{{ " {{context.user.age}}" }}` would return ` ` (empty string) or - if used in a condition - `false`
+
+:::
+
+
 
 
 <CollapsibleSection title="Edit, Save or Reset your current Context">

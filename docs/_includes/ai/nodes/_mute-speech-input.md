@@ -10,12 +10,16 @@ you can maintain better control and ensure a seamless workflow in your applicati
 
 ## Settings
 
-!!! warning
-    Do not turn off a speech user input throughout the call to receive additional messages from the user, especially when the AI Agent needs to send multiple messages with time gaps in between.  
+:::warning
 
-| Parameter         | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|-------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mute Speech Input | Toggle | Disables speech input recognition for the current call. By default, the setting is deactivated, allowing the Nodes below the Mute Speech Input Node to accept speech inputs. <br></br><br></br> When this setting is activated, the Nodes below the Mute Speech Input Node will not accept speech inputs or digits as the answer.  It affects all speech inputs made through the following Nodes:<br></br> - Nodes with Set Activity Parameters. <br></br> - Say and Play Nodes with enabled barge-in can no longer be interrupted.<br></br> - Question and Optional Question Nodes. |
+  Do not turn off a speech user input throughout the call to receive additional messages from the user, especially when the AI Agent needs to send multiple messages with time gaps in between.  
+
+  | Parameter         | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+  |-------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | Mute Speech Input | Toggle | Disables speech input recognition for the current call. By default, the setting is deactivated, allowing the Nodes below the Mute Speech Input Node to accept speech inputs. <br></br><br></br> When this setting is activated, the Nodes below the Mute Speech Input Node will not accept speech inputs or digits as the answer.  It affects all speech inputs made through the following Nodes:<br></br> - Nodes with Set Activity Parameters. <br></br> - Say and Play Nodes with enabled barge-in can no longer be interrupted.<br></br> - Question and Optional Question Nodes. |
+
+:::
+
 
 ## Example
 

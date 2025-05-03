@@ -78,24 +78,27 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
 
     [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../../release-notes/4.80.md)
     
-    !!! Warning
-        Barge In uses the [TTS and SST vendor](../../../../../voice-gateway/references/tts-and-stt-vendors.md) to listen throughout the entire conversation. Consequently, Barge In may lead to increased subscription costs with your vendor.
-    
-    Barge In is a feature that allows the caller to interrupt the voice AI Agent by using speech input or DTMF digits during the entire call. By default, this feature is turned off.
-    
-    Before release 4.80, this feature couldn't be controlled when the call was transferred to the contact center. Barge In was always active, allowing the caller to interrupt the voice AI Agent at any time.
-    
-    Starting with release 4.80, you can enable or disable Barge In when the call is redirected to the contact center. This improvement lets you decide whether the caller should listen to the voice AI Agent's messages fully or have the option to interrupt them.
-    This way, the caller can't use Barge In to skip, for example, important legal information such as the GDPR.
-    
-    To ensure Barge In works correctly after the call is transferred to the contact center, place the Set Session Config Node above the Handover to Agent Node.
-    
-    | Parameter              | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-    |------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Barge In On Speech     | Toggle | Enables interrupting the voice AI Agent with speech. The user is able to interrupt the voice AI Agent's responses even after the handover has taken place and a human agent communicates with the user through TTS . This parameter is disabled by default. It retains its setting throughout the whole conversation. <br></br><br></br> Note that activating **Barge In On Speech** and **Continuous ASR** simultaneously may cause unstable behavior in the Recognizer (STT). |
-    | Barge In On DTMF       | Toggle | Enables interrupting the voice AI Agent with DTMF digits. The user is able to interrupt the voice AI Agent's responses by pressing any digit, even after the handover has taken place and a human agent communicates with the user through TTS. This parameter is disabled by default. It retains its setting throughout the whole conversation.                                                                                                                      |
-    | Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge in.                                                                                                                                                                                                                                                                                                                                                           |
-    
+    :::warning
+
+  Barge In uses the [TTS and SST vendor](../../../../../voice-gateway/references/tts-and-stt-vendors.md) to listen throughout the entire conversation. Consequently, Barge In may lead to increased subscription costs with your vendor.
+
+  Barge In is a feature that allows the caller to interrupt the voice AI Agent by using speech input or DTMF digits during the entire call. By default, this feature is turned off.
+
+  Before release 4.80, this feature couldn't be controlled when the call was transferred to the contact center. Barge In was always active, allowing the caller to interrupt the voice AI Agent at any time.
+
+  Starting with release 4.80, you can enable or disable Barge In when the call is redirected to the contact center. This improvement lets you decide whether the caller should listen to the voice AI Agent's messages fully or have the option to interrupt them.
+  This way, the caller can't use Barge In to skip, for example, important legal information such as the GDPR.
+
+  To ensure Barge In works correctly after the call is transferred to the contact center, place the Set Session Config Node above the Handover to Agent Node.
+
+  | Parameter              | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+  |------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | Barge In On Speech     | Toggle | Enables interrupting the voice AI Agent with speech. The user is able to interrupt the voice AI Agent's responses even after the handover has taken place and a human agent communicates with the user through TTS . This parameter is disabled by default. It retains its setting throughout the whole conversation. <br></br><br></br> Note that activating **Barge In On Speech** and **Continuous ASR** simultaneously may cause unstable behavior in the Recognizer (STT). |
+  | Barge In On DTMF       | Toggle | Enables interrupting the voice AI Agent with DTMF digits. The user is able to interrupt the voice AI Agent's responses by pressing any digit, even after the handover has taken place and a human agent communicates with the user through TTS. This parameter is disabled by default. It retains its setting throughout the whole conversation.                                                                                                                      |
+  | Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge in.                                                                                                                                                                                                                                                                                                                                                           |
+
+:::
+
 
 </CollapsibleSection>
 

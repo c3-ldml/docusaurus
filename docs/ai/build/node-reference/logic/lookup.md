@@ -26,8 +26,12 @@ The operand, also called lookup type, can be set to Intent, State, Type and Mode
 
 ## Parameters
 
-!!! warning "Case Sensitivity"
-    Lookup Case Nodes are case-sensitive. Ensure that you use the correct upper or lower case spelling in the **Value** field of your Case Nodes.
+:::warning[Case Sensitivity]
+
+  Lookup Case Nodes are case-sensitive. Ensure that you use the correct upper or lower case spelling in the **Value** field of your Case Nodes.
+
+:::
+
 
 ### Type
 
@@ -64,8 +68,12 @@ The operand, also called lookup type, can be set to Intent, State, Type and Mode
 
     By changing the lookup type to **Type**, the Flow selects a case that matches the value of `input.type`. The case values must manually be written for this type of lookup.
 
-    !!! note "What is Type?"
-        The Type is defined as a classification of the last user message as determined by the NLU. The type is an [Input](../../../test/interaction-panel/input.md) variable that can be one of the following values: Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer. 
+    :::note[What is Type?]
+
+  The Type is defined as a classification of the last user message as determined by the NLU. The type is an [Input](../../../test/interaction-panel/input.md) variable that can be one of the following values: Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer. 
+
+:::
+
 
 </CollapsibleSection>
 
@@ -74,8 +82,12 @@ The operand, also called lookup type, can be set to Intent, State, Type and Mode
 
     By changing the lookup type to Mode, the Flow selects a case that matches the value of `input.mode`. The case values must manually be written for this type of lookup.
 
-    !!! note "What is Mode?"
-        The Mode provides information on what was contained in the last user message. The type is an [Input](../../../test/interaction-panel/input.md) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
+    :::note[What is Mode?]
+
+  The Mode provides information on what was contained in the last user message. The type is an [Input](../../../test/interaction-panel/input.md) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
+
+:::
+
 
 </CollapsibleSection>
 
@@ -103,12 +115,17 @@ The operand, also called lookup type, can be set to Intent, State, Type and Mode
 
     <CollapsibleSection title="CognigyScript">
 
-    !!! note
-        If you choose CognigyScript as the operand, use CognigyScript without `{{ "{{ }}" }}`. You can also select to parse the CognigyScript as a string or not.
+    :::note
 
-    By changing the lookup type to **CognigyScript**, the Flow selects a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the Flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.
+  If you choose CognigyScript as the operand, use CognigyScript without `{{ "{{ }}" }}`. You can also select to parse the CognigyScript as a string or not.
 
-    To learn more, read the [CognigyScript](../../cognigyscript.md) page.
+  By changing the lookup type to **CognigyScript**, the Flow selects a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the Flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.
+
+  To learn more, read the [CognigyScript](../../cognigyscript.md) page.
+
+:::
+
+
 
 
     </CollapsibleSection>

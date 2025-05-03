@@ -19,16 +19,20 @@ Use the Send SMTP Email Node to send an email via an SMTP connection to a recipi
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../../release-notes/4.49.md)
 
-!!! note "Email Service Configuration"
-    Some email providers, such as Gmail, require you to configure your mail account to allow sending mail via SMTP before you can use it.
+:::note[Email Service Configuration]
 
-| Parameter                    | Description                                                                                                                                                                                                         |
-|------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Email Service                | Select the Email Provider of the address you want to send from. If yours is not listed, you can select **Other SMTP Service** to do a manual configuration.                                                         |
-| SMTP Settings                | Depending on which Email Service selected above, you need to either enter your login credentials for that service or for the full SMTP connection information in case you selected the "Other SMTP Service" option. |
-| Recipient TO Email Addresses | Comma-separated list of email addresses to send the email to.                                                                                                                                                       |
-| Email Subject                | The subject of the email.                                                                                                                                                                                           |
-| Email Content                | The content of the email. The field supports basic rich text editing.                                                                                                                                               |
+  Some email providers, such as Gmail, require you to configure your mail account to allow sending mail via SMTP before you can use it.
+
+  | Parameter                    | Description                                                                                                                                                                                                         |
+  |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | Email Service                | Select the Email Provider of the address you want to send from. If yours is not listed, you can select **Other SMTP Service** to do a manual configuration.                                                         |
+  | SMTP Settings                | Depending on which Email Service selected above, you need to either enter your login credentials for that service or for the full SMTP connection information in case you selected the "Other SMTP Service" option. |
+  | Recipient TO Email Addresses | Comma-separated list of email addresses to send the email to.                                                                                                                                                       |
+  | Email Subject                | The subject of the email.                                                                                                                                                                                           |
+  | Email Content                | The content of the email. The field supports basic rich text editing.                                                                                                                                               |
+
+:::
+
 
 <CollapsibleSection title="Authentication">
 

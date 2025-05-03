@@ -66,8 +66,12 @@ You can also store CognigyScript in [Tokens](tokens.md).
 
 For text fields, wrap the CognigyScript expression in `{{"{{ }}"}}`.
 
-!!! note "Invalid CognigyScript"
-        If the CognigyScript expression is invalid, CognigyScript returns an empty string.
+:::note[Invalid CognigyScript]
+
+  If the CognigyScript expression is invalid, CognigyScript returns an empty string.
+
+:::
+
 
 <CollapsibleSection title="Example">
 

@@ -56,58 +56,62 @@ The following parameters need to be added to the JSON of the adaptive card:
   <img class="image-center" src="/img/webchat/v3/adaptive-card-labels.png" width="100%" />
 </figure>
 
-???+ note "Adaptive Card Sample"
+:::note[Adaptive Card Sample]
 
-      ```json
+  ```json
+  {
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.6",
+    "body": [
       {
-        "type": "AdaptiveCard",
-        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-        "version": "1.6",
-        "body": [
+        "type": "TextBlock",
+        "size": "Medium",
+        "weight": "Bolder",
+        "text": "Purchase your Product",
+        "style": "heading"
+      },
+      {
+        "type": "Input.Text",
+        "label": "Full Name",
+        "placeholder": "Enter your full name"
+      },
+      {
+        "type": "Input.Text",
+        "label": "Email Address",
+        "placeholder": "Enter your email address"
+      },
+      {
+        "type": "Input.ChoiceSet",
+        "label": "Select Product",
+        "choices": [
           {
-            "type": "TextBlock",
-            "size": "Medium",
-            "weight": "Bolder",
-            "text": "Purchase your Product",
-            "style": "heading"
+            "title": "AI Agent Standard",
+            "value": "Standard"
           },
           {
-            "type": "Input.Text",
-            "label": "Full Name",
-            "placeholder": "Enter your full name"
+            "title": "AI Agent Premium",
+            "value": "Premium"
           },
           {
-            "type": "Input.Text",
-            "label": "Email Address",
-            "placeholder": "Enter your email address"
-          },
-          {
-            "type": "Input.ChoiceSet",
-            "label": "Select Product",
-            "choices": [
-              {
-                "title": "AI Agent Standard",
-                "value": "Standard"
-              },
-              {
-                "title": "AI Agent Premium",
-                "value": "Premium"
-              },
-              {
-                "title": "AI Agent Enterprise",
-                "value": "Enterprise"
-              }
-            ],
-            "placeholder": "Choose a product"
-          },
-          {
-            "type": "Input.Date",
-            "label": "Preferred Purchase Date",
-            "placeholder": "Select a date"
+            "title": "AI Agent Enterprise",
+            "value": "Enterprise"
           }
-        ]
+        ],
+        "placeholder": "Choose a product"
+      },
+      {
+        "type": "Input.Date",
+        "label": "Preferred Purchase Date",
+        "placeholder": "Select a date"
       }
-      ```
+    ]
+  }
+  ```
+
+
+:::
+
 
 ## Add Transcripts and Captions for Media Files
 
@@ -126,32 +130,36 @@ To convert your audio into text, you can use third-party tools such as [Transcri
 
 The audio transcript can have the following format:
 
-???+ note "Audio Transcript Sample"
-      ```txt
-      [00:00] Background Music: Soft instrumental music begins playing.
-      
-      [00:05] Speaker 1: How are you today?
-      
-      [00:10] Speaker 2: I'm doing well, thank you. How about you?
-      
-      [00:15] Speaker 1: I'm good, just busy with work. Have you seen the latest updates from Cognigy?
-      
-      [00:20] Speaker 2: Yes, I checked them out! The new features look really promising.
-      
-      [00:25] Speaker 1: I agree! I'm particularly excited about the NLU improvements.
-      
-      [00:30] Speaker 2: Same here! I think it will really enhance our user experience.
-      
-      [00:35] Speaker 1: Absolutely. Let’s plan a time to discuss how we can implement these changes.
-      
-      [00:40] Speaker 2: Sounds great! I’ll send out a calendar invite.
-      
-      [00:45] Background Music: Soft instrumental music fades out.
-      ```
+:::note[Audio Transcript Sample]
 
-The transcript should accurately reflect the number of speakers and their lines, include all the voice content present in the audio, and account for any background music.
+  ```txt
+        [00:00] Background Music: Soft instrumental music begins playing.
+        
+        [00:05] Speaker 1: How are you today?
+        
+        [00:10] Speaker 2: I'm doing well, thank you. How about you?
+        
+        [00:15] Speaker 1: I'm good, just busy with work. Have you seen the latest updates from Cognigy?
+        
+        [00:20] Speaker 2: Yes, I checked them out! The new features look really promising.
+        
+        [00:25] Speaker 1: I agree! I'm particularly excited about the NLU improvements.
+        
+        [00:30] Speaker 2: Same here! I think it will really enhance our user experience.
+        
+        [00:35] Speaker 1: Absolutely. Let's plan a time to discuss how we can implement these changes.
+        
+        [00:40] Speaker 2: Sounds great! I'll send out a calendar invite.
+        
+        [00:45] Background Music: Soft instrumental music fades out.
+  ```
 
-In Webchat, the transcript will be available in the audio widget under the **Download Transcript** button and accessible in `.txt` format.
+  The transcript should accurately reflect the number of speakers and their lines, include all the voice content present in the audio, and account for any background music.
+
+  In Webchat, the transcript will be available in the audio widget under the **Download Transcript** button and accessible in `.txt` format.
+
+:::
+
 
 <figure>
   <img class="image-center" src="/img/webchat/v3/audio-transcript.png" width="100%" />
@@ -180,25 +188,29 @@ To convert your video into text, you can use third-party tools such as [Transcri
 
 The video transcript can have the following format:
 
-???+ note "Video Transcript Sample"
+:::note[Video Transcript Sample]
 
-      ```txt
-      [00:00] Speaker 1: Welcome to our tutorial on video transcription.
-      
-      [00:08] Speaker 2: In this video, we'll cover the basics of creating transcripts.
-      
-      [00:16] Speaker 1: Transcripts help make your content accessible to a broader audience.
-      
-      [00:21] Speaker 2: They are also useful for improving search engine optimization.
-      
-      [00:25] Speaker 1: Now, let’s go over how to create a transcript step-by-step.
-      
-      [00:33] Speaker 2: Be sure to check the description for links to the tools mentioned.
-      
-      [00:37] Speaker 1: Thank you for watching, and don't forget to subscribe for more tutorials.
-      ```
+  ```txt
+  [00:00] Speaker 1: Welcome to our tutorial on video transcription.
+  
+  [00:08] Speaker 2: In this video, we'll cover the basics of creating transcripts.
+  
+  [00:16] Speaker 1: Transcripts help make your content accessible to a broader audience.
+  
+  [00:21] Speaker 2: They are also useful for improving search engine optimization.
+  
+  [00:25] Speaker 1: Now, let's go over how to create a transcript step-by-step.
+  
+  [00:33] Speaker 2: Be sure to check the description for links to the tools mentioned.
+  
+  [00:37] Speaker 1: Thank you for watching, and don't forget to subscribe for more tutorials.
+  ```
 
 In Webchat, the transcript will be available in the video widget under the **Download Transcript** button and accessible in `.txt` format.
+
+
+:::
+
 
 #### Captions
 
@@ -215,55 +227,59 @@ Alternatively, you can use [Veed.io](https://www.veed.io/) and [Kapwing](https:/
 
 The file that includes captions should have the following `.vtt` format:
 
-???+ note "Video Captions Sample"
+:::note[Video Captions Sample]
 
-      ```txt
-      1
-      00:00:01.000 --> 00:00:03.500
-      [Music playing]
-      
-      2
-      00:00:03.600 --> 00:00:07.000
-      Welcome to our tutorial on video transcription.
-      
-      3
-      00:00:07.100 --> 00:00:10.200
-      In this video, we'll cover the basics of creating transcripts.
-      
-      4
-      00:00:10.300 --> 00:00:14.000
-      [Background noise: office sounds]
-      
-      5
-      00:00:14.100 --> 00:00:18.000
-      Transcripts help make your content accessible to a broader audience.
-      
-      6
-      00:00:18.100 --> 00:00:21.500
-      They are also useful for improving search engine optimization.
-      
-      7
-      00:00:21.600 --> 00:00:25.000
-      Now, let's go over how to create a transcript step-by-step.
-      
-      8
-      00:00:25.100 --> 00:00:28.000
-      [Background noise fades out]
-      
-      9
-      00:00:28.100 --> 00:00:32.000
-      Be sure to check the description for links to the tools mentioned.
-      
-      10
-      00:00:32.100 --> 00:00:35.500
-      Thank you for watching, and don't forget to subscribe for more tutorials.
-      
-      11
-      00:00:35.600 --> 00:00:37.000
-      [Music fades out]
-      ```
+  ```txt
+  1
+  00:00:01.000 --> 00:00:03.500
+  [Music playing]
+  
+  2
+  00:00:03.600 --> 00:00:07.000
+  Welcome to our tutorial on video transcription.
+  
+  3
+  00:00:07.100 --> 00:00:10.200
+  In this video, we'll cover the basics of creating transcripts.
+  
+  4
+  00:00:10.300 --> 00:00:14.000
+  [Background noise: office sounds]
+  
+  5
+  00:00:14.100 --> 00:00:18.000
+  Transcripts help make your content accessible to a broader audience.
+  
+  6
+  00:00:18.100 --> 00:00:21.500
+  They are also useful for improving search engine optimization.
+  
+  7
+  00:00:21.600 --> 00:00:25.000
+  Now, let's go over how to create a transcript step-by-step.
+  
+  8
+  00:00:25.100 --> 00:00:28.000
+  [Background noise fades out]
+  
+  9
+  00:00:28.100 --> 00:00:32.000
+  Be sure to check the description for links to the tools mentioned.
+  
+  10
+  00:00:32.100 --> 00:00:35.500
+  Thank you for watching, and don't forget to subscribe for more tutorials.
+  
+  11
+  00:00:35.600 --> 00:00:37.000
+  [Music fades out]
+  ```
 
 In Webchat, activate captions in the video widget by clicking ![vertical-ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Captions**.
+
+
+:::
+
 
 ## Increase Text Visibility
 

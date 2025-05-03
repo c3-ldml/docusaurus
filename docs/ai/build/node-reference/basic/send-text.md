@@ -12,8 +12,12 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Send Text
 
-!!! warning "Deprecation"
-    The Send Text Node is deprecated and can no longer be created in Cognigy.AI v4.85 and later. Use the [Say Node](say.md) default setting for simple text outputs.
+:::warning[Deprecation]
+
+  The Send Text Node is deprecated and can no longer be created in Cognigy.AI v4.85 and later. Use the [Say Node](say.md) default setting for simple text outputs.
+
+:::
+
 
 <figure>
   <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/basic/send-text.png" width="50%" />

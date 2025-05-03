@@ -12,8 +12,12 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 In a [Code Node](overview.md), you can use the functions of the `actions` and `api` classes.
 
-!!! note "Available in Extensions"
-    The following functions are available in Extensions as well. You can use the `api` object and, for example, execute `api.say()`.
+:::note[Available in Extensions]
+
+  The following functions are available in Extensions as well. You can use the `api` object and, for example, execute `api.say()`.
+
+:::
+
 
 ## General
 
@@ -112,24 +116,27 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
 <CollapsibleSection title="(Deprecated) actions.think || api.think">
 
-    !!! warning
-        Both `actions.think` and `api.think` have been deprecated in Cognigy.AI v4.98. The removal date is June 2025. Use `actions.thinkV2` and `api.thinkV2` instead.
-    
-    Is used to re-execute the Flow within one invocation.
-    
-    The Flow will stop and then restart executing at the Start Node.
-    
-    **Parameters**
-    
-    | Parameter | Type   | Description                             |
-    |-----------|--------|-----------------------------------------|
-    | text      | string | A simulated message text from the user. |
-    | data      | any    | Simulated message data from the user.   |
-    
-    **Returns**
-    
-    void
-    
+    :::warning
+
+  Both `actions.think` and `api.think` have been deprecated in Cognigy.AI v4.98. The removal date is June 2025. Use `actions.thinkV2` and `api.thinkV2` instead.
+
+  Is used to re-execute the Flow within one invocation.
+
+  The Flow will stop and then restart executing at the Start Node.
+
+  **Parameters**
+
+  | Parameter | Type   | Description                             |
+  |-----------|--------|-----------------------------------------|
+  | text      | string | A simulated message text from the user. |
+  | data      | any    | Simulated message data from the user.   |
+
+  **Returns**
+
+  void
+
+:::
+
 
 </CollapsibleSection>
 

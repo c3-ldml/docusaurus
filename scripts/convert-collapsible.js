@@ -4,9 +4,17 @@ const glob = require('glob');
 
 // Function to convert old admonition format to new CollapsibleSection format
 function convertAdmonitionToCollapsible(content) {
-  // Add import statement if not present
+  // Check if import statement is needed
   if (!content.includes('import CollapsibleSection')) {
-    content = `import CollapsibleSection from '@site/src/components/CollapsibleSection';\n\n${content}`;
+    // Find the end of frontmatter (---)
+    const frontmatterEnd = content.indexOf('---', 3);
+    if (frontmatterEnd !== -1) {
+      // Insert import after frontmatter
+      content = content.slice(0, frontmatterEnd + 3) + '\n\nimport CollapsibleSection from \'@site/src/components/CollapsibleSection\';\n\n' + content.slice(frontmatterEnd + 3);
+    } else {
+      // If no frontmatter, add at the beginning
+      content = `import CollapsibleSection from '@site/src/components/CollapsibleSection';\n\n${content}`;
+    }
   }
 
   // First convert !!! tip admonitions

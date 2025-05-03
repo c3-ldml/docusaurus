@@ -79,5 +79,9 @@ Voice Gateway Nodes help you build a voice agent using [Voice Gateway configurat
   }
 ]} />
 
-!!! note
-    The Play Node can be configured with [Parameter Details](parameter-details.md).
+:::note
+
+  The Play Node can be configured with [Parameter Details](parameter-details.md).
+
+:::
+

@@ -39,8 +39,12 @@ If your AI Agent has, for example, a [Go To Node](../node-reference/logic/go-to.
 - right-click the Node in the Flow editor and select **Set Entrypoint**.
 - select ![vertical ellipsis](../../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Set Entrypoint** in the Node editor.
 
-!!! note "Naming Entrypoints"
-    Define unique names for each Entrypoint Node using the **Label** field in the Node editor's **Settings** section. This approach is helpful to easily differentiate a Node with an Entrypoint from other Nodes of the same type.
+:::note[Naming Entrypoints]
+
+  Define unique names for each Entrypoint Node using the **Label** field in the Node editor's **Settings** section. This approach is helpful to easily differentiate a Node with an Entrypoint from other Nodes of the same type.
+
+:::
+
 
 ### Create Flows from Node Branches
 
@@ -48,8 +52,12 @@ You can split complex Flows and create new ones from a child Node. To do so, rig
 
 When you create a Flow from a child Node, you move the Nodes following the child Node to the new Flow. In the original Flow, these Nodes are replaced with an Execute Flow Node. The Execute Flow Node triggers the new Flow.
 
-!!! warning
-    NLU and Flow settings aren't copied to the new Flow. Check and adjust the **NLU** tab settings of the new Flow.
+:::warning
+
+  NLU and Flow settings aren't copied to the new Flow. Check and adjust the **NLU** tab settings of the new Flow.
+
+:::
+
 
 ## Dynamic Content in Nodes
 

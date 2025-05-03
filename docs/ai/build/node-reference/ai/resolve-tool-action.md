@@ -19,8 +19,12 @@ The Resolve Tool Action Node sends an answer as the response to a tool call to t
 
 When the AI Agent calls a tool to perform an action, the tool action is executed. Once the action is completed, the Resolve Tool Action Node sends a response back to the AI Agent, indicating the result of that action. This approach helps the AI Agent process and make decisions based on the results of the tool actions.
 
-!!! note
-    Sending the result is optional. If the tool action is not resolved, the tool call is discarded after reaching the end of the branch and you may need to manually return to the AI Agent by using a [Go To](../logic/go-to.md) Node.
+:::note
+
+  Sending the result is optional. If the tool action is not resolved, the tool call is discarded after reaching the end of the branch and you may need to manually return to the AI Agent by using a [Go To](../logic/go-to.md) Node.
+
+:::
+
 
 ## Parameters
 

@@ -18,8 +18,12 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 _Tokens_ are visual representations of [CognigyScript](cognigyscript.md) expressions that you store and reuse in Cognigy.AI. Cognigy.AI has a selection of default Tokens that are associated with user Input, Context, and Profile objects.
 
-!!! warning "Curly Brackets Not Required for Tokens"
-    Tokens automatically include curly brackets in the script. For this reason, you don't need to wrap the CognigyScript in the **Script** field or the Tokens in text fields with curly brackets.
+:::warning[Curly Brackets Not Required for Tokens]
+
+  Tokens automatically include curly brackets in the script. For this reason, you don't need to wrap the CognigyScript in the **Script** field or the Tokens in text fields with curly brackets.
+
+:::
+
 
 ## Restrictions
 
@@ -41,8 +45,12 @@ Tokens include the following information:
 
 You can also create and use Tokens in the Node editor or create Tokens from [JSON editors](#create-and-use-tokens-in-the-node-editor).
 
-!!! note "Script Persistence"
-    Deleting a Token doesn't remove the CognigyScript from the Nodes that used the deleted Token.
+:::note[Script Persistence]
+
+  Deleting a Token doesn't remove the CognigyScript from the Nodes that used the deleted Token.
+
+:::
+
 
 ### Default Tokens
 

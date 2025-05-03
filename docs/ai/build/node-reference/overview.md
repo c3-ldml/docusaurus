@@ -99,8 +99,12 @@ This Node reference provides details about the [Nodes'](../nodes/overview.md) pa
 
 If you want to create a custom Node, go to the [Extensions](../extensions.md) section.
 
-!!! note
-    Nodes can belong to multiple categories for easier search and navigation. In the following sections, each Node is assigned to a single category to avoid duplicated descriptions.
+:::note
+
+  Nodes can belong to multiple categories for easier search and navigation. In the following sections, each Node is assigned to a single category to avoid duplicated descriptions.
+
+:::
+
 
 ## Settings Common to All Node Types
 

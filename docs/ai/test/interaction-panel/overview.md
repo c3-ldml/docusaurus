@@ -125,13 +125,17 @@ In **Chat** mode, you can use additional settings:
 
 [![Version badge](https://img.shields.io/badge/Beta-purple.svg)](../../../release-notes/earlier-versions/overview.md)
 
-!!! note "Feature availability"
-    - If you use a SaaS Cognigy installation, contact the support team to activate this feature.
-    - If you use an on-premises Cognigy installation, activate this feature by adding `FEATURE_ENABLE_VOICECALL_WHITELIST`  in `values.yaml`. For example, `FEATURE_ENABLE_VOICECALL_WHITELIST:<organization-1-id>,<organization-2-id>`.
+:::note[Feature availability]
 
-In **Voice Call** mode, the Interaction Panel lets you initiate a test call to hear how your voice AI Agent sounds.
+  - If you use a SaaS Cognigy installation, contact the support team to activate this feature.
+  - If you use an on-premises Cognigy installation, activate this feature by adding `FEATURE_ENABLE_VOICECALL_WHITELIST`  in `values.yaml`. For example, `FEATURE_ENABLE_VOICECALL_WHITELIST:<organization-1-id>,<organization-2-id>`.
 
-Before starting a voice call, you need to configure a voice provider in the [Voice Preview Settings](../../test/voice-preview.md) of your Project. 
+  In **Voice Call** mode, the Interaction Panel lets you initiate a test call to hear how your voice AI Agent sounds.
+
+  Before starting a voice call, you need to configure a voice provider in the [Voice Preview Settings](../../test/voice-preview.md) of your Project. 
+
+:::
+
 
 <VoiceProviders />
 
@@ -174,8 +178,12 @@ To use and test this mode, follow these steps:
 
 You can now view and track the user's real-time conversation from your Interaction Panel. To stop live following, click **Stop Live Following**.
 
-!!! note
-    Human-agent messages are not shown in the Live Follow mode.
+:::note
+
+  Human-agent messages are not shown in the Live Follow mode.
+
+:::
+
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-follow-user.png" width="80%" />

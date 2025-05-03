@@ -95,18 +95,22 @@ For more information, refer to the [Configuration](#configuration) section.
     7. Below the **Copilot: Knowledge Tile** Node and other tile Nodes, place the **Once** child Node. 
     8. Below the **On First Time** child Node, add a duplicate of the **Copilot: Knowledge Tile** Node.
 
-    !!! tip
-        If the Flow is not working or issues arise with the Knowledge Source, try creating a new Agent and running the Flow in it.
+    :::tip
 
-    <figure>
-      <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/knowledge-tile-flow.png" width="80%"/>
-    </figure>
+  If the Flow is not working or issues arise with the Knowledge Source, try creating a new Agent and running the Flow in it.
 
-    Test your Flow by using a [Demo Webchat](../../../../webchat/demo.md) in the Webchat Endpoint. You can use Live Agent as a handover provider or any other available provider.
+  <figure>
+    <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/knowledge-tile-flow.png" width="80%"/>
+  </figure>
 
-    <figure>
-      <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/knowledge-tile-example.png" width="80%"/>
-    </figure>
+  Test your Flow by using a [Demo Webchat](../../../../webchat/demo.md) in the Webchat Endpoint. You can use Live Agent as a handover provider or any other available provider.
+
+  <figure>
+    <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/knowledge-tile-example.png" width="80%"/>
+  </figure>
+
+:::
+
 
 </CollapsibleSection>
 

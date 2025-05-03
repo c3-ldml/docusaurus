@@ -277,92 +277,15 @@ Before configuration,
     
     To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecards.io/designer). Customize the existing JSON, then copy and paste it into the code editor. If JSON is correct, you will see the adaptive card rendered under the code editor.
     
-    !!! warning
-        Cognigy supports a limited number of versions for Adaptive Card, so using the latest versions may cause issues. We recommend using [supported versions](../../../deploy/endpoints/content-conversion.md) for better compatibility.
-    
-    <CollapsibleSection title="Adaptive Card JSON example">
+    :::warning
 
-    ```json
-              {
-                "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-                "type": "AdaptiveCard",
-                "version": "1.0",
-                "body": [
-                  {
-                    "type": "TextBlock",
-                    "size": "Medium",
-                    "weight": "Bolder",
-                    "text": "Publish Adaptive Card Schema"
-                  },
-                  {
-                    "type": "ColumnSet",
-                    "columns": [
-                      {
-                        "type": "Column",
-                        "items": [
-                          {
-                            "type": "Image",
-                            "style": "Person",
-                            "url": "https://pbs.twimg.com/profile_images/3647943215/d7f12830b3c17a5a9e4afcc370e3a37e_400x400.jpeg",
-                            "size": "Small"
-                          }
-                        ],
-                        "width": "auto"
-                      },
-                      {
-                        "type": "Column",
-                        "items": [
-                          {
-                            "type": "TextBlock",
-                            "weight": "Bolder",
-                            "text": "Matt Hidinger",
-                            "wrap": true
-                          },
-                          {
-                            "type": "TextBlock",
-                            "spacing": "None",
-                            "text": "Created Tue, Feb 14, 2017",
-                            "isSubtle": true,
-                            "wrap": true
-                          }
-                        ],
-                        "width": "stretch"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "TextBlock",
-                    "text": "Publish Adaptive Card Schema easily.",
-                    "wrap": true
-                  },
-                  {
-                    "type": "Action.OpenUrl",
-                    "title": "View",
-                    "url": "https://adaptivecards.io"
-                  }
-                ]
-              }
-    ```
-    **Create an Adaptive Card with Generative AI**
+      Cognigy supports a limited number of versions for Adaptive Card, so using the latest versions may cause issues. We recommend using [supported versions](../../../deploy/endpoints/content-conversion.md) for better compatibility.
+      
+    :::
 
-    You can also use Generative AI to create a new adaptive card or improve an existing one. Before using it, ensure that you are connected to one of the [LLM Providers](../../../empower/generative-ai.md#prerequisites).
+  <CollapsibleSection title="Adaptive Card JSON example">
 
-    To use this feature, follow these steps:
-
-    1. Select the **Adaptive Card** output type.
-    2. On the right side of the **Output type** list, click ![Gen AI Icon](../../../../../static/img/_assets/icons/beta.svg).
-
-    <AdaptiveCardGenAI />
-
-    To replace the current Adaptive Card with a new one, click ![recycle bin](../../../../../static/img/_assets/icons/recycle-bin.svg).
-
-    <figure>
-      <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/say/adaptive-card-type-generative-ai.png" width="40%" />
-    </figure>
-
-    <CollapsibleSection title="Generative AI Adaptive Card JSON example">
-
-    ```json
+  ```json
                 {
                   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
                   "type": "AdaptiveCard",
@@ -370,26 +293,110 @@ Before configuration,
                   "body": [
                     {
                       "type": "TextBlock",
-                      "text": "Customer Form"
+                      "size": "Medium",
+                      "weight": "Bolder",
+                      "text": "Publish Adaptive Card Schema"
                     },
                     {
-                      "type": "Input.Text",
-                      "id": "customerName",
-                      "placeholder": "Enter customer name"
+                      "type": "ColumnSet",
+                      "columns": [
+                        {
+                          "type": "Column",
+                          "items": [
+                            {
+                              "type": "Image",
+                              "style": "Person",
+                              "url": "https://pbs.twimg.com/profile_images/3647943215/d7f12830b3c17a5a9e4afcc370e3a37e_400x400.jpeg",
+                              "size": "Small"
+                            }
+                          ],
+                          "width": "auto"
+                        },
+                        {
+                          "type": "Column",
+                          "items": [
+                            {
+                              "type": "TextBlock",
+                              "weight": "Bolder",
+                              "text": "Matt Hidinger",
+                              "wrap": true
+                            },
+                            {
+                              "type": "TextBlock",
+                              "spacing": "None",
+                              "text": "Created Tue, Feb 14, 2017",
+                              "isSubtle": true,
+                              "wrap": true
+                            }
+                          ],
+                          "width": "stretch"
+                        }
+                      ]
                     },
                     {
-                      "type": "Input.Date",
-                      "id": "dateInput",
-                      "placeholder": "Enter date"
+                      "type": "TextBlock",
+                      "text": "Publish Adaptive Card Schema easily.",
+                      "wrap": true
                     },
                     {
-                      "type": "Input.Text",
-                      "id": "flightNumber",
-                      "placeholder": "Enter flight number"
+                      "type": "Action.OpenUrl",
+                      "title": "View",
+                      "url": "https://adaptivecards.io"
                     }
                   ]
                 }
-    ```
+  ```
+  **Create an Adaptive Card with Generative AI**
+
+  You can also use Generative AI to create a new adaptive card or improve an existing one. Before using it, ensure that you are connected to one of the [LLM Providers](../../../empower/generative-ai.md#prerequisites).
+
+  To use this feature, follow these steps:
+
+  1. Select the **Adaptive Card** output type.
+  2. On the right side of the **Output type** list, click ![Gen AI Icon](../../../../../static/img/_assets/icons/beta.svg).
+
+  <AdaptiveCardGenAI />
+
+  To replace the current Adaptive Card with a new one, click ![recycle bin](../../../../../static/img/_assets/icons/recycle-bin.svg).
+
+  <figure>
+    <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/say/adaptive-card-type-generative-ai.png" width="40%" />
+  </figure>
+
+  <CollapsibleSection title="Generative AI Adaptive Card JSON example">
+
+  ```json
+                  {
+                    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                    "type": "AdaptiveCard",
+                    "version": "1.0",
+                    "body": [
+                      {
+                        "type": "TextBlock",
+                        "text": "Customer Form"
+                      },
+                      {
+                        "type": "Input.Text",
+                        "id": "customerName",
+                        "placeholder": "Enter customer name"
+                      },
+                      {
+                        "type": "Input.Date",
+                        "id": "dateInput",
+                        "placeholder": "Enter date"
+                      },
+                      {
+                        "type": "Input.Text",
+                        "id": "flightNumber",
+                        "placeholder": "Enter flight number"
+                      }
+                    ]
+                  }
+  ```
+
+:::
+
+
 
 
     </CollapsibleSection>

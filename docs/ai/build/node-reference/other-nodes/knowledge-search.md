@@ -17,19 +17,23 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 ## Description
 
-!!! danger "Removal of the Knowledge Search Node"
-    The Knowledge Search Node was removed from Cognigy.AI in version 4.61. If you use this Node, it will still work, but you won't be able to create new Knowledge Search Nodes. To ensure a seamless transition, we strongly recommend using the [Search Extract Output](search-extract-output.md) Node, as it offers the same functionality and additional features.
+:::danger[Removal of the Knowledge Search Node]
 
-This Node searches and retrieves content from data that was previously uploaded to the Knowledge AI solution.
+  The Knowledge Search Node was removed from Cognigy.AI in version 4.61. If you use this Node, it will still work, but you won't be able to create new Knowledge Search Nodes. To ensure a seamless transition, we strongly recommend using the [Search Extract Output](search-extract-output.md) Node, as it offers the same functionality and additional features.
 
-Before using this Node, ensure that you have a `text-embedding-ada-002` LLM configured. Refer to the [list of supported providers](../../../empower/llms/model-support-by-feature.md). 
+  This Node searches and retrieves content from data that was previously uploaded to the Knowledge AI solution.
 
-To display the output of the Knowledge Search Node to the user, follow these steps:
+  Before using this Node, ensure that you have a `text-embedding-ada-002` LLM configured. Refer to the [list of supported providers](../../../empower/llms/model-support-by-feature.md). 
 
-1. In the Flow editor, add a Say Node below the Knowledge Search Node.
-2. In the **Output Type** field, select **Text**.
-3. In the **Text** field, click ![token](../../../../../static/img/_assets/icons/token.svg) and select the **KSearch:TopK Texts** Token.
-4. Click **Save Node**.
+  To display the output of the Knowledge Search Node to the user, follow these steps:
+
+  1. In the Flow editor, add a Say Node below the Knowledge Search Node.
+  2. In the **Output Type** field, select **Text**.
+  3. In the **Text** field, click ![token](../../../../../static/img/_assets/icons/token.svg) and select the **KSearch:TopK Texts** Token.
+  4. Click **Save Node**.
+
+:::
+
 
 ## Parameters
 

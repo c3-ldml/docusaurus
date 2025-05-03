@@ -26,8 +26,12 @@ When a user input is received, it's scored based on natural language understandi
 
 After the AI Agent asks a question and the user answers, the answer is validated according to its type. If it passes, the answer is valid and stored, and the conversation continues.
 
-!!! warning "Question Nodes and Intent Execution"
-    Question Nodes, by default, are triggered repeatedly until a valid answer is provided. To avoid this behavior, you can use an Optional Question or change the Intent Execution setting.
+:::warning[Question Nodes and Intent Execution]
+
+  Question Nodes, by default, are triggered repeatedly until a valid answer is provided. To avoid this behavior, you can use an Optional Question or change the Intent Execution setting.
+
+:::
+
 
 <div style="text-align:center;">
   <iframe width="701" height="438" src="https://www.youtube.com/embed/iGc3fekZQOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -68,9 +72,12 @@ After the AI Agent asks a question and the user answers, the answer is validated
     | LLM-extracted Entity                 | Utilizes a chosen LLM to extract entities, such as product codes, booking codes, and customer IDs, from a given string. Go to the LLM Entity Extraction Options.                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                        |
     
     
-    !!! note "Supported Data Formats for System-Defined Slots"
-        All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping](../../../empower/nlu/slots-and-lexicons/slots.md) page.
-    
+    :::note[Supported Data Formats for System-Defined Slots]
+
+  All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping](../../../empower/nlu/slots-and-lexicons/slots.md) page.
+
+:::
+
 
 </CollapsibleSection>
 
@@ -79,9 +86,12 @@ After the AI Agent asks a question and the user answers, the answer is validated
 
     Question Node output types carry the same functionality as the [Say Node](say.md).
     
-    !!! success "Date Questions"
-        If you select the Date as a Question Type, the Question Node automatically renders a datepicker if the channel supports it. Refer to [Datepicker](../data/datepicker.md) for more information. 
-    
+    :::success[Date Questions]
+
+  If you select the Date as a Question Type, the Question Node automatically renders a datepicker if the channel supports it. Refer to [Datepicker](../data/datepicker.md) for more information. 
+
+:::
+
 
 </CollapsibleSection>
 

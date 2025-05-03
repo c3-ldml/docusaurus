@@ -20,8 +20,12 @@ the **Slots** that were identified and many other useful pieces of information.
 
 The input object is passed to the Project's [Flow](../../../ai/build/flows/overview.md) to decide on the next action to take. For more information about the lifespan of the input, see the [CognigyScript](../../../ai/build/cognigyscript.md) page.
 
-!!! note "Intent Default Replies override flow logic"
-    If an intent is configured with a default reply, this will override the AI Agent's flow logic and automatically be delivered as the response.
+:::note[Intent Default Replies override flow logic]
+
+  If an intent is configured with a default reply, this will override the AI Agent's flow logic and automatically be delivered as the response.
+
+:::
+
 
 ## Properties
 
@@ -72,23 +76,27 @@ The detailed NLU results are published to the **nlu** variable which contains th
 | intentMapperResults | Provides specific details about the NLU intent mapping results that includes a summary of the intent scoring for each of the trained intents located in the scores child property. |
 | tokens              | Provides an array containing each word of the input sentence as a string element.                                                                                                  |
 
-!!! note "NLU Properties are available after NLU only"
-    The below properties below are computed by the NLU Connector.
+:::note[NLU Properties are available after NLU only]
 
-    Consequently they are published **after** the NLU.
+  The below properties below are computed by the NLU Connector.
 
-    **They are thus not available inside Cognigy NLU Rules and Conditions.**
+  Consequently they are published **after** the NLU.
 
-    Properties written by the NLU into the Input:
-    
-      * intent
-      * intentScore
-      * nlu
-      * type
-      * intentLevel
-      * localeId
-      * understood
-      * conditionalEntrypointWasExecuted
+  **They are thus not available inside Cognigy NLU Rules and Conditions.**
+
+  Properties written by the NLU into the Input:
+
+    * intent
+    * intentScore
+    * nlu
+    * type
+    * intentLevel
+    * localeId
+    * understood
+    * conditionalEntrypointWasExecuted
+
+:::
+
 
 ## Accessing the Input Object
 
@@ -96,8 +104,13 @@ Flow nodes can dynamically access Input properties via [Tokens](../../../ai/buil
 
 **Example**: `{{ "{{input.text}}" }}` would return the text message that was sent to the Flow.
 
-!!! note "Copy JSON Path from the Input Object"
-    You can copy the exact JSON path you need to reference a certain value in the Input object by right-clicking it and selecting "Copy JSON Path" from the context menu. 
+:::note[Copy JSON Path from the Input Object]
+
+  You can copy the exact JSON path you need to reference a certain value in the Input object by right-clicking it and selecting "Copy JSON Path" from the context menu. 
+
+:::
+
+
 
 
 ## More Information

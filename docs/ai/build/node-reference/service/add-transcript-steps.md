@@ -15,10 +15,14 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 ## Description
 
-!!! warning
-    This Node isn't compatible with the `@cognigyRecentConversation` and `@cognigyRecentUserInputs` tags in the [LLM Prompt Node](llm-prompt.md).
+:::warning
 
-The Add Transcript Steps Node adds a step for one of the conversation actors to simulate an input or output.
+  This Node isn't compatible with the `@cognigyRecentConversation` and `@cognigyRecentUserInputs` tags in the [LLM Prompt Node](llm-prompt.md).
+
+  The Add Transcript Steps Node adds a step for one of the conversation actors to simulate an input or output.
+
+:::
+
 
 ## Parameters
 

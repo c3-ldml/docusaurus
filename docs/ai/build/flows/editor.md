@@ -52,8 +52,12 @@ The following image shows an overview of the Flow editor:
     | ![flow-plus](../../../../static/img/_assets/icons/flow-plus.svg) | Click to add a new Node or [Extension](../extensions.md) to the Flow. |
     |   ![comment](../../../../static/img/_assets/icons/comment.svg)   | Click to see the comments in the Node.                                |
 
-    !!! note "Drag and Drop"
-        The Flow editor supports drag and drop. To copy a Node, simply hold the ++alt++ or ++option++ while dragging the Node to another position.
+    :::note[Drag and Drop]
+
+  The Flow editor supports drag and drop. To copy a Node, simply hold the ++alt++ or ++option++ while dragging the Node to another position.
+
+:::
+
 
 </CollapsibleSection>
 
