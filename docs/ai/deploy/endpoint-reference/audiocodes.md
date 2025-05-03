@@ -4,18 +4,26 @@ slug: "audiocodes"
 hidden: false 
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # AudioCodes
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/audiocodes.png" width="100%" />
 </figure>
 
-!!! warning "Removal of the AudioCodes Endpoint"
-    The AudioCodes Endpoint was deprecated in April 2025 and will be removed in October 2025. Migrate to the [Voice Gateway Endpoint](voice-gateway.md) before the removal date.
-    
-Within our **Cognigy.AI** platform,
-you are able to connect your AI Agent to your Contact Center or other phone numbers using the AudioCodes Endpoint,
-allowing customers to speak to your AI Agent instead of just writing with it.
+:::warning[Removal of the AudioCodes Endpoint]
+
+  The AudioCodes Endpoint was deprecated in April 2025 and will be removed in October 2025. Migrate to the [Voice Gateway Endpoint](voice-gateway.md) before the removal date.
+
+  Within our **Cognigy.AI** platform,
+  you are able to connect your AI Agent to your Contact Center or other phone numbers using the AudioCodes Endpoint,
+  allowing customers to speak to your AI Agent instead of just writing with it.
+
+:::
+
 
 [Watch this Episode](https://support.cognigy.com/hc/en-us/articles/360017522940-Cognigy-Sessions-Building-a-Phone-Bot-with-Voice-Gateway) of Cognigy Sessions for a technical deep dive.
 
@@ -58,8 +66,12 @@ AudioCodes identifies information about the caller and adds it to the Cognigy [I
 - FIXED_LINE
 - MOBILE
 
-!!! note "NumberMetaData in Tokens"
-    All of the above are available as [Tokens](../../build/tokens.md) inside Cognigy Text fields as well.
+:::note[NumberMetaData in Tokens]
+
+  All of the above are available as [Tokens](../../build/tokens.md) inside Cognigy Text fields as well.
+
+:::
+
 
 ## Generic Endpoint Settings
 Find out about the generic endpoint settings available with this endpoint on the following pages:
@@ -71,11 +83,23 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Session Management](../endpoints/session-management.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md) 
 
-!!! note "Contact Center & Phone number linking"
-    To link the AudioCodes Endpoint to a phone number, contact your Cognigy representative to provision and configure a Voice Gateaway instance.
+:::note[Contact Center & Phone number linking]
 
-!!! warning "AudioCodes VoiceAI Connect"
-    Cognigy AudioCodes Endpoint is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
+  To link the AudioCodes Endpoint to a phone number, contact your Cognigy representative to provision and configure a Voice Gateaway instance.
 
-!!! warning "Rebranding of Voice Gateway with AudioCodes"
-    With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.
+:::
+
+
+:::warning[AudioCodes VoiceAI Connect]
+
+  Cognigy AudioCodes Endpoint is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
+
+:::
+
+
+:::warning[Rebranding of Voice Gateway with AudioCodes]
+
+  With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.
+
+:::
+

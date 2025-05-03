@@ -5,6 +5,10 @@ description: "The NICE CXone Endpoint connects AI Agents to the NICE CXone platf
 hidden: false
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # NICE CXone
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.82-blue.svg)](../../../release-notes/4.82.md)

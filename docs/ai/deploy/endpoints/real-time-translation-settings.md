@@ -4,6 +4,9 @@ slug: "real-time-translation-settings"
 hidden: false 
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import AddMachineTranslationProvider from '@site/docs/_includes/ai/settings/_add-machine-translation-provider.md';
+
 # Real-Time Translation Settings
 
 Cognigy.AI supports integration with various real-time translation services, allowing you to automatically translate incoming text to the language of your flow and translate the flow output back to the user's language.
@@ -12,7 +15,7 @@ Before using this feature, you need to configure a machine translation provider.
 
 ## Configure Translation Provider
 
-{! _includes/ai/settings/add-machine-translation-provider.md !}
+<AddMachineTranslationProvider />
 
 ## Configure Real-Time Translation Settings
 

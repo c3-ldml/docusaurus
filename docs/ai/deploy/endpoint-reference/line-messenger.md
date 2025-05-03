@@ -3,13 +3,19 @@ title: "LINE Messenger"
 slug: "line-messenger" 
 hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
+import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
+
+
 # LINE Messenger
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/line.png" width="100%" />
 </figure>
 
-{! _includes/release-notes/handover-providers-deprecation.md !}
+<HandoverProviderDeprecation />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **LINE** channel by using our Line Endpoint integration. 
 
@@ -25,7 +31,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 - [Handover Settings](../endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md) 
 
-{! _includes/ai/providers/inject-and-notify.md !}
+<InjectAndNotify />
 
 ## Specific Endpoint Settings
 
@@ -43,11 +49,19 @@ This value is the Line **Channel Access Token**, which is obtained from the Line
 
 This value is the Line **Channel Secret**, which is associated with a channel access token. This value is obtained from the Line Developer account for each channel that is deployed.
 
-!!! note "Help Center"
-    More detailed information on how to set up a **Line Messenger** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016222819).
+:::note[Help Center]
 
-!!! warning "Configuration of Line messages"
-    Line Messenger Messaging API requests have lots of requirements that might cause some of your configured messages not to be sent. Review your node configurations with regard to Line Messaging API requirements [**here**](https://support.cognigy.com/hc/en-us/articles/5721825020444) to make sure all messages configured will be delivered.
+  More detailed information on how to set up a **Line Messenger** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016222819).
+
+:::
+
+
+:::warning[Configuration of Line messages]
+
+  Line Messenger Messaging API requests have lots of requirements that might cause some of your configured messages not to be sent. Review your node configurations with regard to Line Messaging API requirements [**here**](https://support.cognigy.com/hc/en-us/articles/5721825020444) to make sure all messages configured will be delivered.
+
+:::
+
 
 ## More Information 
 

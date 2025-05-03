@@ -4,6 +4,10 @@ slug: "bandwidth"
 hidden: false
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Bandwidth
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)

@@ -4,6 +4,9 @@ slug: "handover-settings"
 hidden: false 
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
+
 # Handover Settings
 
 Cognigy.AI's integration with various contact centers enables fast escalation to human agents from any point in chat and call interactions with an AI Agent, ensuring a smooth customer experience.
@@ -23,11 +26,11 @@ The Endpoints that support handover are listed below:
 - [Webchat](../../../webchat/overview.md)
 - [Webhook](../endpoint-reference/webhook.md)
 
+
 ## Handover Providers
 
-{! _includes/release-notes/handover-providers-deprecation.md !}
+<HandoverProviderDeprecation />
 
-Endpoints that support handover have a **Handover Settings** section in their Endpoint settings.
 In this section,
 you can select and configure the handover provider to which the user will be forwarded when a [Handover to Agent Node](../../build/node-reference/service/handover-to-agent.md) is triggered.
 Cognigy.AI offers support for the following handover providers:

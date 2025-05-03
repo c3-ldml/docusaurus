@@ -3,6 +3,10 @@ title: "Twilio"
 slug: "twilio" 
 hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
 # Twilio
 
 <figure>
@@ -40,7 +44,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 The **Twilio Settings** dropdown menu is available in a standard **Twilio** type endpoint and provides options to configure the interaction between Cognigy.AI a Twilio deployment.
 
  <div class="center-image">
- <img src="../../../../_assets/ai/deploy/endpoint-reference/twilio-settings.png" width="80%" style="margin-bottom: 5px">
+ <img src="../../../../_assets/ai/deploy/endpoint-reference/twilio-settings.png" width="80%" style="margin-bottom: 5px" />
  </div>
 
 ### STT / TTS Language

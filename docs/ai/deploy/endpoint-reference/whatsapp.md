@@ -4,13 +4,17 @@ slug: "whatsapp"
 hidden: false 
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
+import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
+
 # WhatsApp
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/whatsApp-endpoint.png" width="100%" />
 </figure>
 
-{! _includes/release-notes/handover-providers-deprecation.md !}
+<HandoverProviderDeprecation />
 
 The WhatsApp Endpoint connects AI Agents to the [WhatsApp Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/) via the [Facebook
 (Meta) App Dashboard](https://developers.facebook.com/docs/development/create-an-app/app-dashboard/). This way, the AI Agent will be able to send messages in WhatsApp Messenger and engage in conversations with your end users.
@@ -32,7 +36,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 - [Handover Settings](../endpoints/handover-settings.md)
 - [File Storage](../endpoints/file-storage.md)
 
-{! _includes/ai/providers/inject-and-notify.md !}
+<InjectAndNotify />
 
 ## Specific Endpoint Settings
 

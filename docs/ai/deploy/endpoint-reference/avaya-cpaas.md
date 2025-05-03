@@ -4,6 +4,10 @@ slug: "avaya-cpaas"
 hidden: false 
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Avaya CPaaS
 
 <figure>

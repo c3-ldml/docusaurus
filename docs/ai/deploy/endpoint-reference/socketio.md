@@ -3,13 +3,18 @@ title: "Socket.io"
 slug: "socketio" 
 hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
+import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
+
 # Socket.io
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/socket-io.svg" width="100%" />
 </figure>
 
-{! _includes/release-notes/handover-providers-deprecation.md !}
+<HandoverProviderDeprecation />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **socket.io** client by using our Socket Endpoint integration.
 
@@ -25,7 +30,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings](../endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-{! _includes/ai/providers/inject-and-notify.md !}
+<InjectAndNotify />
 
 ## Connect your Application
 

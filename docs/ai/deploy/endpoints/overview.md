@@ -4,6 +4,10 @@ slug: "endpoints"
 hidden: false 
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Endpoints
 
 *Endpoints* are connectors between Cognigy AI Agents and external systems or platforms, such as Facebook (Meta) Messenger, Slack, Alexa, and more.
@@ -46,15 +50,23 @@ For more information, read the [Snapshot](../snapshots.md) article.
 When Agents use a Snapshot, a toggle **Override Snapshot Connections** will be displayed in the Endpoint editor.
 Enabling this option allows the Endpoint to override the [Connections](../../build/connections.md) in a Snapshot with Connections from the project. If a Connection is available only in the Snapshot, it will be used regardless of the toggle setting. If necessary, such Connections need to be manually updated.
 
-!!! note "Default setting"
-    By default, any Endpoint will continue using the Connections from the Snapshot unless the toggle is turned on.
+:::note[Default setting]
 
-To override the connection in the designated Agent, begin by either restoring it from a Snapshot or importing Connections from another Agent using a Package. Ensure that the Snapshot selected in the Endpoint Editor is created from the same Agent to ensure a match of Connections.
+  By default, any Endpoint will continue using the Connections from the Snapshot unless the toggle is turned on.
 
-In this case, if the toggle is enabled, any change in the Connections of the restored Agent will take precedence over the Connections in the selected Snapshot.
+  To override the connection in the designated Agent, begin by either restoring it from a Snapshot or importing Connections from another Agent using a Package. Ensure that the Snapshot selected in the Endpoint Editor is created from the same Agent to ensure a match of Connections.
 
-!!! note
-    You can verify or troubleshoot Connections by their `referenceId`, which needs to match both in the Project and the Snapshot for the override feature to work. To do that, use the [Cognigy.AI API](../../developers/api-and-cli.md) with the **Get all Connections** request.
+  In this case, if the toggle is enabled, any change in the Connections of the restored Agent will take precedence over the Connections in the selected Snapshot.
+
+:::
+
+
+:::note
+
+  You can verify or troubleshoot Connections by their `referenceId`, which needs to match both in the Project and the Snapshot for the override feature to work. To do that, use the [Cognigy.AI API](../../developers/api-and-cli.md) with the **Get all Connections** request.
+
+:::
+
 
 ### Flow
 

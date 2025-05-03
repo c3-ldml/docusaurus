@@ -3,6 +3,10 @@ title: "Userlike"
 slug: "userlike" 
 hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
 # Userlike
 
 <figure>
@@ -21,8 +25,12 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-!!! note "Help Center"
-    More detailed information on how to set up an **Userlike** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016310079).
+:::note[Help Center]
+
+  More detailed information on how to set up an **Userlike** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016310079).
+
+:::
+
 
 ## Message types in Userlike unified messaging channels
 
@@ -35,8 +43,12 @@ The below message types will be properly displayed in the Userlike unified messa
 - Quick replies 
 - Image/Audio/Video 
 
-!!! note
-    The text from the Textual Description field is displayed for the **Gallery** or **List** output types, as well as for invalid media formats (image, audio, video).
+:::note
+
+  The text from the Textual Description field is displayed for the **Gallery** or **List** output types, as well as for invalid media formats (image, audio, video).
+
+:::
+
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/userlike-webchat.png" width="100%" />

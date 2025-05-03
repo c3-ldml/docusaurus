@@ -5,6 +5,10 @@ description: "The Data Protection & Analytics section in Cognigy Endpoints provi
 hidden: false 
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Data Protection & Analytics
 
 The **Data Protection & Analytics** section is all about analytics and system logging. Here you can toggle whether you want to create and store data about contacts and whether you want to collect analytics data for the Endpoint. If you choose to collect data, you can also configure whether you are masking sensitive data or not.

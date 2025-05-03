@@ -3,6 +3,10 @@
  slug: "inject-and-notify" 
  hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
 # Inject & Notify
 
 Usually a Chat is an immediate interaction between the User and a Bot. However, sometimes the Bot might need to handle an external long-running process with uncertain execution length and use the result for the running chat session. For example, the Bot user is uploading a document to the Bot, which the Bot has then to upload to an external platform, which then will be analyzed by the external platform and the result should be then used by the Bot in a response to the user. 
@@ -57,12 +61,16 @@ inject: {endpoint-url}/inject/{URLToken}
 
 Where the URLToken is the URLToken of the Endpoint that should be executed. The Transformer functions should also be implemented in this Endpoint.
 
-!!! warning "API Differences"
-    The URL for the Notify and Inject API is different if a Transformer should be used. The API URL is then:
+:::warning[API Differences]
 
-    Notify: {endpoint-url}/notify/{URLToken}
+  The URL for the Notify and Inject API is different if a Transformer should be used. The API URL is then:
 
-    inject: {endpoint-url}/inject/{URLToken}
+  Notify: {endpoint-url}/notify/{URLToken}
+
+  inject: {endpoint-url}/inject/{URLToken}
+
+:::
+
 
 ## Channel Support
 

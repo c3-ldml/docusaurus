@@ -3,6 +3,10 @@ title: "REST"
 slug: "rest" 
 hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
 # REST
 
 <figure>
@@ -41,35 +45,47 @@ After creating a REST Endpoint, you are able to send **POST** requests to the **
 - *text* – message text that should get processed by the assigned flow in form of a string
 - *data* – message data that should get processed by the assigned flow in form of an object
 
-!!! note "Sending text and data"
-    By default, you can use the REST Endpoint to send either text or data to your Flow. You can choose to send both, but at least one is required. If invalid text and invalid data is specified, then the REST Endpoint throws an error.
+:::note[Sending text and data]
 
-!!! tip "Session ID"
+  By default, you can use the REST Endpoint to send either text or data to your Flow. You can choose to send both, but at least one is required. If invalid text and invalid data is specified, then the REST Endpoint throws an error.
+
+:::
+
+
+<CollapsibleSection title="Session ID">
+
     The sessionId is a unique identifier that is used to keep the state of a conversation. This means that you should generate a new unique ID whenever a new conversation starts, and not on every message. For testing purposes, you can use whatever string value you like as the sessionId, and change it whenever you want a new conversation to start.
-The response contains the output text, output data and the outputStack, which is an array of all Flow outputs. Since the Rest Endpoint will concatenate all Flow Outputs (e.g. all Say Nodes) into one text / data output, you can use the outputStack for debugging purposes.
+    The response contains the output text, output data and the outputStack, which is an array of all Flow outputs. Since the Rest Endpoint will concatenate all Flow Outputs (e.g. all Say Nodes) into one text / data output, you can use the outputStack for debugging purposes.
 
-```JSON
-{
-    "text": "output2",
-    "data": {
-        "output": 2
-    },
-    "outputStack": [
-        {
-            "text": "output 1",
-            "data": {
-                "output": 1
-            }
+    ```JSON
+    {
+        "text": "output2",
+        "data": {
+            "output": 2
         },
-        {
-            "text": "output 2",
-            "data": {
-                "output": 2
+        "outputStack": [
+            {
+                "text": "output 1",
+                "data": {
+                    "output": 1
+                }
+            },
+            {
+                "text": "output 2",
+                "data": {
+                    "output": 2
+                }
             }
-        }
-    ]
-}
-```
+        ]
+    }
+    ```
 
-!!! note "AI Default Channel Formats"
-    You can find out more about the format for the default channels [**here**](../../build/node-reference/basic/code/ai-default-channel-formats.md).
+</CollapsibleSection>
+
+
+:::note[AI Default Channel Formats]
+
+  You can find out more about the format for the default channels [**here**](../../build/node-reference/basic/code/ai-default-channel-formats.md).
+
+:::
+

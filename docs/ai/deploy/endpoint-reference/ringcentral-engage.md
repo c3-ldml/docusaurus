@@ -3,13 +3,18 @@ title: "RingCentral Engage"
 slug: "ringcentral-engage" 
 hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
+import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
+
 # RingCentral Engage
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/ring-central-engage.png" width="100%" />
 </figure>
 
-{! _includes/release-notes/handover-providers-deprecation.md !}
+<HandoverProviderDeprecation />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to **RingCentral Engage** by using our RingCentral Engage Endpoint integration.  
 
@@ -21,7 +26,7 @@ Within our **Cognigy.AI** platform, you're able to connect your Cognigy resource
 - [NLU Connectors](../../empower/nlu/external/nlu-connectors.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-{! _includes/ai/providers/inject-and-notify.md !}
+<InjectAndNotify />
 
 ## Specific Endpoint Settings
 
@@ -55,8 +60,12 @@ The category ID, which will be used to identify the bot. This value is obtained 
 
 The category ID, which will be used to identify the agent. This value is obtained from the RingCentral Engage platform.
 
-!!! note "Help Center"
-    More detailed information on how to set up a **RingCentral Engage** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016306779).
+:::note[Help Center]
+
+  More detailed information on how to set up a **RingCentral Engage** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016306779).
+
+:::
+
 
 ## More Information
 

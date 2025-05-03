@@ -3,6 +3,10 @@ title: "Amazon Alexa"
 slug: "amazon-alexa" 
 hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
 # Amazon Alexa
 
 <figure>
@@ -11,11 +15,15 @@ hidden: false
 
 The **Alexa** Endpoint allows you to connect your Amazon Alexa Skill to an AI Agent. Amazon Alexa Skills allow user interaction via voice, with potential visual support.
 
-!!! warning
-    The Alexa Endpoint uses the Alexa NLU Connector. See the [NLU Connectors Page](../../empower/nlu/external/nlu-connectors.md) for more details.
-    When using Amazon Alexa with Cognigy, all NLU is done by Amazon. It is not possible to use the Cognigy NLU.
+:::warning
 
-    Amazon only passes the Intent name to the flow, not the actual user input! Therefore, any nodes that use conditions based on user input (e.g. if-nodes and rule intents are capable of doing so) will not work as intended.
+  The Alexa Endpoint uses the Alexa NLU Connector. See the [NLU Connectors Page](../../empower/nlu/external/nlu-connectors.md) for more details.
+  When using Amazon Alexa with Cognigy, all NLU is done by Amazon. It is not possible to use the Cognigy NLU.
+
+  Amazon only passes the Intent name to the flow, not the actual user input! Therefore, any nodes that use conditions based on user input (e.g. if-nodes and rule intents are capable of doing so) will not work as intended.
+
+:::
+
 
 ## Generic Endpoint Settings
 
@@ -46,8 +54,12 @@ Here you can log in directly to your Amazon account that has access to your Alex
 
 Once a skill has been selected, click the **DEPLOY** button to configure your skill to use this endpoint when invoked. The process can also be carried out manually, visit our [help center](https://support.cognigy.com/hc/en-us/articles/360016192979) for more info.
 
-!!! note "Help Center"
-    More detailed information on how to set up an **Alexa** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016192979).
+:::note[Help Center]
+
+  More detailed information on how to set up an **Alexa** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016192979).
+
+:::
+
 
 ## More Information
 

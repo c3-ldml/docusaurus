@@ -3,6 +3,10 @@
  slug: "inject-transformer" 
  hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
 # Inject Transformer
 
 The `Inject Transformer` makes it possible to hook into the [Inject API](transformers.md#different-base-transformer-types). A common use-case is that external systems need to hook into a conversation and e.g. send a notification to the user after a certain process has completed. With the `Inject Transformer`, it is no longer required to have a service that translates the webhook payload of the external service into the correct format needed for the `Inject API`. This can now all be handled in the `Inject Transformer`.
@@ -15,8 +19,12 @@ The `Inject Transformer` is configured by implementing the `handleInject` functi
   <img class="image-center" src="../../../../../_assets/ai/deploy/endpoints/transformers/inject-transformer.png" width="100%" />
 </figure>
 
-!!! warning "REST Transformer Support"
-    The Inject Transformer is not supported for REST-Based Endpoints.
+:::warning[REST Transformer Support]
+
+  The Inject Transformer is not supported for REST-Based Endpoints.
+
+:::
+
 
 ## Transformer Function Arguments
 
@@ -34,12 +42,16 @@ The `Inject Transformer` has to return a valid user ID, session ID and text and/
 
 If the `Inject Transformer` returns a falsy value, then the message is never forwarded to the user.
 
-!!! warning "Return Value Validation"
-    The return value of the `Inject Transformer` will be validated against a set of rules and rejected if the rules are not met. The rules are:
+:::warning[Return Value Validation]
 
-    - The user ID is required in the return value. It has a max length of 256 characters.
-    - The session ID is required. It also has a max length of 256 characters.
-    - The text is not required. but has a max length of 10000 characters.
-    - The data object is not required.
+  The return value of the `Inject Transformer` will be validated against a set of rules and rejected if the rules are not met. The rules are:
 
-    If neither text or data is defined, then validation also fails.
+  - The user ID is required in the return value. It has a max length of 256 characters.
+  - The session ID is required. It also has a max length of 256 characters.
+  - The text is not required. but has a max length of 10000 characters.
+  - The data object is not required.
+
+  If neither text or data is defined, then validation also fails.
+
+:::
+

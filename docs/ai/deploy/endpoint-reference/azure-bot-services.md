@@ -3,6 +3,10 @@ title: "Azure Bot Services"
 slug: "azure-bot-services" 
 hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
+
 # Azure Bot Services
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../../release-notes/4.55.md)
@@ -11,7 +15,7 @@ hidden: false
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/azure-bot-services.png" width="100%" />
 </figure>
 
-{! _includes/release-notes/handover-providers-deprecation.md !}
+<HandoverProviderDeprecation />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy Agent to **Azure Bot Services** by using our Azure Bot Services Endpoint integration.
 
@@ -27,8 +31,12 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings](../endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md) 
 
-!!! tip "Supports Inject & Notify"
+<CollapsibleSection title="Supports Inject & Notify">
+
     You can use the [Inject & Notify](../endpoints/inject-and-notify.md) functionality with this type of Endpoint.
+
+</CollapsibleSection>
+
 
 ## Specific Endpoint Settings
 
@@ -58,8 +66,12 @@ This value is the **Microsoft App Password** of your Bot, also referred to as th
 
 This value is the **SSO Connection Name** when using this endpoint with an SSO integration.
 
-!!! note "Help Center"
-    More detailed information on how to set up an **Azure Bot Services** Endpoint refer to the [Help Center articles](https://support.cognigy.com/hc/en-us/articles/360016183720).
+:::note[Help Center]
+
+  More detailed information on how to set up an **Azure Bot Services** Endpoint refer to the [Help Center articles](https://support.cognigy.com/hc/en-us/articles/360016183720).
+
+:::
+
 
 ### Microsoft Teams
 

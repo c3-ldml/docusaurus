@@ -4,6 +4,10 @@ slug: "genesys"
 hidden: false
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Genesys
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.64-blue.svg)](../../../release-notes/4.64.md)

@@ -5,6 +5,10 @@ description: "For some Cognigy.AI Endpoints, you can configure file uploading to
 hidden: false
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import FileStorage from '@site/docs/_includes/ai/_file-storage.md';
+
+
 # File Storage
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.91-blue.svg)](../../../release-notes/4.91.md)
@@ -38,7 +42,7 @@ This process ensures the file is checked for potential malware or viruses, helpi
 
 To enable file uploads, connect to one of the following file storage providers:
 
-{! _includes/ai/file-storage.md !}
+<FileStorage />
 
 After setting up,
 open the chat in test mode

@@ -5,6 +5,10 @@ description: "Snapshots are immutable forms of an AI Agent in Cognigy.AI that in
 hidden: false
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Snapshots
 
 _Snapshots_ are immutable forms of your AI Agent, including the following resources:
@@ -122,18 +126,22 @@ A success notification will be displayed once your AI Agent has been successfull
 
 Once you reach the maximum number of Snapshots in your AI Agent, you have to start deleting older Snapshots.
 
-!!! danger "Check usage of your Snapshot"
-    In production, Endpoints should be directed to Snapshots. It is crucial to first check whether any Endpoints are still pointing to the Snapshot you intend to remove. Removing a Snapshot that is still referenced by one of your Endpoints will disrupt conversations for your customers.
+:::danger[Check usage of your Snapshot]
 
-To delete a Snapshot, do the following:
+  In production, Endpoints should be directed to Snapshots. It is crucial to first check whether any Endpoints are still pointing to the Snapshot you intend to remove. Removing a Snapshot that is still referenced by one of your Endpoints will disrupt conversations for your customers.
 
-1. In the left-side menu of the Project, go to **Deploy > Snapshots**.
-2. On the **Snapshots** page, select the Snapshot you want to delete.
-3. Click ![vertical ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) next to the Snapshot you want to delete. A selection menu will appear.
-4. Select **Delete**.
-5. Click **Confirm** in the dialog that opens.
+  To delete a Snapshot, do the following:
 
-A new task will be created, and your Snapshot will be removed.
+  1. In the left-side menu of the Project, go to **Deploy > Snapshots**.
+  2. On the **Snapshots** page, select the Snapshot you want to delete.
+  3. Click ![vertical ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) next to the Snapshot you want to delete. A selection menu will appear.
+  4. Select **Delete**.
+  5. Click **Confirm** in the dialog that opens.
+
+  A new task will be created, and your Snapshot will be removed.
+
+:::
+
 
 ## Snapshot Compatibility
 

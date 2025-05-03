@@ -4,6 +4,9 @@ slug: "workplace-by-fb"
 hidden: false 
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
+
 # Workplace by Facebook
 
 <figure>
@@ -12,8 +15,12 @@ hidden: false
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **Workplace** channel by using our Workplace Endpoint integration.
 
-!!! note "Available on app.cognigy.ai and dedicated environments"
-    This Endpoint is currently not available in the Cognigy.AI Free Trial.
+:::note[Available on app.cognigy.ai and dedicated environments]
+
+  This Endpoint is currently not available in the Cognigy.AI Free Trial.
+
+:::
+
 
 ## Generic Endpoint Settings
 
@@ -27,7 +34,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings](../endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-{! _includes/ai/providers/inject-and-notify.md !}
+<InjectAndNotify />
 
 ## Specific Endpoint Settings
 
@@ -45,8 +52,12 @@ This value is the **Recipient ID**, which is obtained from the page URL when a c
 
 Use this button to trigger the installation process of the Cognigy.AI Bot to your workplace instance. A pop-up window will appear and redirect to the workplace bot setup menu.
 
-!!! note "Help Center"
-    More detailed information on how to set up a **Workplace by Facebook** Endpoint can be found in our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/360016310379).
+:::note[Help Center]
+
+  More detailed information on how to set up a **Workplace by Facebook** Endpoint can be found in our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/360016310379).
+
+:::
+
 
 ## More Information
 

@@ -3,6 +3,10 @@
  slug: "input-transformer" 
  hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
 # Input Transformer
 
 The `Input Transformer` is triggered on every message from the user before the Flow is executed. This makes it possible to manipulate the text before it has been sent to the Flow, communicate with external systems, implement integrations with a new channel, and much more.
@@ -68,14 +72,18 @@ return null;
 Conversations in Cognigy.AI are only counted if the Input Transformer returns a non-falsy result.
 
 
-!!! warning "Return Value Validation"
-    The return value of the `Input Transformer`, if provided, will be validated against a set of rules and rejected if the rules are not met. 
-     Every value can return undefined. If something else is returned, these rules apply:
+:::warning[Return Value Validation]
 
-    - userId is a string with max length of 256 characters.
-    - sessionId is a string with max length of 256 characters.
-    - text is a string with a max length of 10000 characters.
-    - data is an object
+  The return value of the `Input Transformer`, if provided, will be validated against a set of rules and rejected if the rules are not met. 
+   Every value can return undefined. If something else is returned, these rules apply:
+
+  - userId is a string with max length of 256 characters.
+  - sessionId is a string with max length of 256 characters.
+  - text is a string with a max length of 10000 characters.
+  - data is an object
+
+:::
+
 
 ### Transformers and Event Messages
 

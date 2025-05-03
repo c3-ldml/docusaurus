@@ -3,13 +3,18 @@ title: "Slack"
 slug: "slack" 
 hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
+import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
+
 # Slack
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/slack.png" width="100%" />
 </figure>
 
-{! _includes/release-notes/handover-providers-deprecation.md !}
+<HandoverProviderDeprecation />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy Agent to your **Slack Bot** by using our Slack Endpoint. 
 
@@ -25,7 +30,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings](../endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-{! _includes/ai/providers/inject-and-notify.md !}
+<InjectAndNotify />
 
 ### OAuth access token
 
@@ -35,8 +40,12 @@ This value is the **OAuth access token** for your Slack app's workspace, which i
 
 This value is the **Verification Token** of your Slack app. This is obtained from the *Basic Information* page of your Slack App in the *App Credentials* section.
 
-!!! note "Help Center"
-    More detailed information on how to set up a **Slack** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307039).
+:::note[Help Center]
+
+  More detailed information on how to set up a **Slack** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307039).
+
+:::
+
 
 ## More Information
 

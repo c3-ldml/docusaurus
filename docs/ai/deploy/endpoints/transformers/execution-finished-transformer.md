@@ -3,6 +3,10 @@
  slug: "execution-finished-transformer" 
  hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
 # Execution Finished Transformer
 
 The `Execution Finished Transformer` is triggered when the Flow execution has finished. However, the behavior of the Transformer function differs greatly depending on which [base type](transformers.md#different-base-transformer-types) of Transformer is being used, which is described in more detail below.

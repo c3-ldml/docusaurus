@@ -3,18 +3,27 @@ title: "Sunshine Conversations"
 slug: "sunshine-conversations" 
 hidden: false 
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
+import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
+
 # Sunshine Conversations
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/sunshine-conversations.png" width="100%" />
 </figure>
 
-{! _includes/release-notes/handover-providers-deprecation.md !}
+<HandoverProviderDeprecation />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy Agent to your **Sunshine Conversations application** by using our Sunshine Conversations Endpoint.
 
-!!! note "Where is the Smooch Endpoint?"
-    This Endpoint was previously known as the Smooch Endpoint. Smooch was acquired by Zendesk in 2019 and renamed to Sunshine Conversations.
+:::note[Where is the Smooch Endpoint?]
+
+  This Endpoint was previously known as the Smooch Endpoint. Smooch was acquired by Zendesk in 2019 and renamed to Sunshine Conversations.
+
+:::
+
 
 ## Generic Endpoint Settings
 
@@ -28,7 +37,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings](../endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-{! _includes/ai/providers/inject-and-notify.md !}
+<InjectAndNotify />
 
 # Specific Endpoint Settings
 
@@ -50,8 +59,13 @@ Your Sunshine Conversations app's Key ID SECRET that is a randomly generated API
 
 The URI where we send messages to your Sunshine Conversations app. For example, `https://app.smooch.io` (ensure the "/" is omitted from the end of the URI)
 
-!!! note "Help Center"
-    More detailed information on how to set up a **Sunshine Conversations** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
+:::note[Help Center]
+
+  More detailed information on how to set up a **Sunshine Conversations** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
+
+:::
+
+
 ## More Information
 
 - [HelpCenter: Sunshine Conversations Deployment](https://support.cognigy.com/hc/en-us/articles/360016307699-Sunshine-Conversations-Deploy-an-Endpoint)

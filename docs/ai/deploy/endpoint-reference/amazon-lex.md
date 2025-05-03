@@ -4,6 +4,10 @@ slug: "amazon-lex"
 hidden: false 
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Amazon Lex
 
 <figure>
@@ -31,9 +35,13 @@ Find more about the generic Endpoint settings available for this Endpoint here:
 
 Enable this toggle to allow the Slots found by Amazon Lex and transcript to be passed to Cognigy.AI and processed by the Cognigy NLU.
 
-!!! warning
-    The option to reparse slots is only available
-    if the **Amazon Lex (Built-in)** NLU is selected.
+:::warning
+
+  The option to reparse slots is only available
+  if the **Amazon Lex (Built-in)** NLU is selected.
+
+:::
+
 
 ## Setup 
 

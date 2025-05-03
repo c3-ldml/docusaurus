@@ -4,13 +4,17 @@ slug: "webhook"
 hidden: false 
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_handover-providers-deprecation.md';
+import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notify.md';
+
 # Webhook
 
 <figure>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/webhook.png" width="100%" />
 </figure>
 
-{! _includes/release-notes/handover-providers-deprecation.md !}
+<HandoverProviderDeprecation />
 
 In Cognigy.AI, you can easily connect your resources to a Webhook using the Webhook Endpoint integration. This setup ensures quick communication by instantly sending information to a specified callback URL when it's ready. Connecting your Cognigy resources to this Webhook enables fast and smooth interactions, allowing for real-time updates and actions.
 
@@ -27,7 +31,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings](../endpoints/handover-settings.md)
 - [Real-Time Translation Settings](../endpoints/real-time-translation-settings.md)
 
-{! _includes/ai/providers/inject-and-notify.md !}
+<InjectAndNotify />
 
 ## Connect your Application
 
@@ -53,8 +57,16 @@ All **POST** requests that are sent to the **Endpoint URL** are processed by the
 - *text* - message text that should get processed by the assigned flow in form of a string
 - *data* - message data that should get processed by the assigned flow in form of an object
 
-!!! note "Sending text and data"
-    You can use the Webhook Endpoint to send either text or data to your Flow. You can choose to send both, but at least one is required. If invalid text and invalid data is specified, then the Webhook Endpoint throws an error.
+:::note[Sending text and data]
 
-!!! note "SessionID"
-    The sessionId is a unique identifier that is used to keep the state of a conversation. This means that you should generate a new unique ID whenever a new conversation starts, and not on every message. For testing purposes, you can use whatever string value you like as the sessionId, and change it whenever you want a new conversation to start.
+  You can use the Webhook Endpoint to send either text or data to your Flow. You can choose to send both, but at least one is required. If invalid text and invalid data is specified, then the Webhook Endpoint throws an error.
+
+:::
+
+
+:::note[SessionID]
+
+  The sessionId is a unique identifier that is used to keep the state of a conversation. This means that you should generate a new unique ID whenever a new conversation starts, and not on every message. For testing purposes, you can use whatever string value you like as the sessionId, and change it whenever you want a new conversation to start.
+
+:::
+
