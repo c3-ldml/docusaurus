@@ -1,9 +1,13 @@
 ---
-title: "Send Metadata" 
-slug: "send-meta-data" 
-hidden: false 
+title: "Send Meta Data"
+slug: "send-meta-data"
+description: "The Send Meta Data Node is used to send metadata in an AudioCodes voice conversation."
+hidden: false
 ---
-# Send Metadata
+
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
+# Send Meta Data
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/send-metadata.png" width="80%" />
@@ -12,7 +16,7 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+<ACAndGenericNodeDeprecation />
 
 The Send Metadata Node will send metadata via SIP INFO messages to the connected SIP trunk.
 

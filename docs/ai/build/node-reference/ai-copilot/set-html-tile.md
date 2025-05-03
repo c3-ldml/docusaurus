@@ -5,6 +5,8 @@ description: "The Copilot: HTML Tile Node enables you to showcase HTML content i
 hidden: false
 ---
 
+import Postback from '@site/docs/_includes/ai/nodes/_postback.md';
+
 # Copilot: HTML Tile
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../release-notes/4.90.md)
@@ -106,7 +108,7 @@ window.addEventListener("message", function (event) {
 You can send data back to the Flow by using the Postback feature.
 
 ??? info "Postback"
-{! _includes/ai/nodes/postback.md !}
+<Postback />
 
     In the AI Copilot Flow, below the Copilot: HTML Tile Node, add a [Copilot: Send Data](send-data.md).
     In the **JSON** field of the Copilot: Send Data Node,

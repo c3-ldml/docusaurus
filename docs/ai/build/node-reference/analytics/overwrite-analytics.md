@@ -5,6 +5,8 @@ description: "An Overwrite Analytics Node lets you overwrite default values such
 hidden: false
 ---
 
+import UnderstoodMessages from '@site/docs/_includes/ai/_understood-messages.md';
+
 # Overwrite Analytics
 
 <figure>
@@ -13,7 +15,7 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/understood-messages.md !}
+<UnderstoodMessages />
 
 This Node allows you to selectively overwrite default values, such as Intents, text, understood messages, and more,
 as well as manage the analytics data stored in the [Analytics](../../../analyze/collecting-data.md) database.

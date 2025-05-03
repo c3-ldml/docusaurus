@@ -1,8 +1,12 @@
 ---
-title: "Send Message" 
-slug: "send-message" 
-hidden: false 
+title: "Send Message"
+slug: "send-message"
+description: "The Send Message Node is used to send a message in an AudioCodes voice conversation."
+hidden: false
 ---
+
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
 # Send Message
 
 <figure>
@@ -12,7 +16,7 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+<ACAndGenericNodeDeprecation />
 
 The Send Message Node sends a text (optionally with SSML) to AudioCodes, which then turns this text into speech (TTS) and outputs it to the caller.
 

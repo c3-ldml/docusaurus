@@ -1,8 +1,11 @@
 ---
-title: "Analytics data" 
-slug: "analytics-data" 
-hidden: false 
+title: "Analytics Data"
+slug: "analytics-data"
+description: "The Analytics Data Node is used to add analytics data to the Contact Profile."
+hidden: false
 ---
+
+import UnderstoodMessages from '@site/docs/_includes/ai/understood-messages.md';
 
 # Analytics Data
 
@@ -18,7 +21,7 @@ analyticsdata.intent = "test";
 
 ## Analytics Data
 
-{! _includes/ai/understood-messages.md !}
+<UnderstoodMessages />
 
 ??? info "Analytics Data Fields"
     | Field          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Type            |
@@ -31,7 +34,7 @@ analyticsdata.intent = "test";
     | state          | The [State](../../../../test/interaction-panel/state.md) the Flow is currently in.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | String          |
     | slots          | The slots that were found in the user's input.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Object          |
     | completedGoals | A list of goals the user has completed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | List of Strings |
-    | understood     | An input is considered `understood` if any of the following conditions are met:<ul><li>An Intent or Slot is identified.</li><li>The input is marked as understood through the Nodes: Code, Overwrite Analytics, Search Extract Output, or AI Agent.</li><li>The sentence type is `pAnswer`, `nAnswer`, or `Greeting` (if **Confirmation Word logic** is activated).</li></ul><br>An input is considered `not understood` if any of the following conditions are met:<ul><li>There is an active handover without triggering an AI Copilot Whisper Flow.</li><li>The message is explicitly marked as `Don't count` or `Null`.</li></ul> | Boolean         |
+    | understood     | An input is considered `understood` if any of the following conditions are met:<ul><li>An Intent or Slot is identified.</li><li>The input is marked as understood through the Nodes: Code, Overwrite Analytics, Search Extract Output, or AI Agent.</li><li>The sentence type is `pAnswer`, `nAnswer`, or `Greeting` (if **Confirmation Word logic** is activated).</li></ul><br></br>An input is considered `not understood` if any of the following conditions are met:<ul><li>There is an active handover without triggering an AI Copilot Whisper Flow.</li><li>The message is explicitly marked as `Don't count` or `Null`.</li></ul> | Boolean         |
     | custom1        | A custom field that can be set to any string value during Flow execution. Defaults to null.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | String          |
     | custom2        | A custom field that can be set to any string value during Flow execution. Defaults to null.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | String          |
     | custom3        | A custom field that can be set to any string value during Flow execution. Defaults to null.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | String          |

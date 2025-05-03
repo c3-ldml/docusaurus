@@ -1,12 +1,16 @@
 ---
 title: "Voice Nodes"
 slug: "voice-nodes"
+description: "Voice Nodes are used to handle voice interactions in your Flow."
 hidden: false
 ---
 
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+import {GridCards} from '@site/src/components/GridCards';
+
 # Voice Nodes
 
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+<ACAndGenericNodeDeprecation />
 
 Voice Nodes are necessary for developing a voice AI Agent.
 

@@ -1,8 +1,12 @@
 ---
 title: "Request Rating"
 slug: "request-rating"
+description: "The Request Rating Node is used to request a rating from the user."
 hidden: false
 ---
+
+import InsightsForRating from '@site/docs/_includes/ai/nodes/_insights-for-rating.md';
+import RatingUseCases from '@site/docs/_includes/ai/nodes/_rating.md';
 
 # Request Rating
 
@@ -42,11 +46,11 @@ In contrast to the [Set Rating Node](set-rating.md), the Request Rating Node doe
 
 ## Track Ratings in Insights
 
-{! _includes/ai/nodes/insights-for-rating.md !}
+<InsightsForRating />
 
 ## Use Cases
 
-{! _includes/ai/nodes/rating.md !}
+<RatingUseCases />
 
 ## More information
 

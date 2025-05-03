@@ -1,10 +1,13 @@
 ---
 title: "Set Session Parameters"
-slug: "set-session-parameters"
+slug: "set-session-params"
+description: "The Set Session Parameters Node is used to configure session parameters in AudioCodes voice conversations."
 hidden: false
 ---
 
-# Set Session Params
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
+# Set Session Parameters
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/set-session-parameters.png" width="80%" />
@@ -13,7 +16,7 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+<ACAndGenericNodeDeprecation />
 
 The Set Session Params Node configures the AudioCodes Session. All parameters set here are valid for the remainder of the session unless overwritten, either directly or by activity parameters.
 

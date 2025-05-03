@@ -1,10 +1,15 @@
 ---
-title: "Hang Up" 
+title: "Hangup"
 slug: "hangup"
-hidden: false 
+description: "The Hangup Node is used to end an AudioCodes voice conversation."
+hidden: false
 ---
 
-# Hang Up
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
+# Hangup
+
+<ACAndGenericNodeDeprecation />
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/hang-up.png" width="80%" />
@@ -12,8 +17,6 @@ hidden: false
 </figure>
 
 ## Description
-
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 The Hangup Node will instruct AudioCodes to end the call.
 

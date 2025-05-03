@@ -1,8 +1,12 @@
 ---
 title: "Set Rating"
 slug: "set-rating"
+description: "The Set Rating Node is used to set a rating for a conversation."
 hidden: false
 ---
+
+import InsightsForRating from '@site/docs/_includes/ai/nodes/_insights-for-rating.md';
+import RatingUseCases from '@site/docs/_includes/ai/nodes/_rating.md';
 
 # Set Rating
 
@@ -31,11 +35,11 @@ In contrast to the [Request Rating Node](request-rating.md), the Set Rating Node
 
 ## Track Ratings in Insights
 
-{! _includes/ai/nodes/insights-for-rating.md !}
+<InsightsForRating />
 
 ## Use Cases
 
-{! _includes/ai/nodes/rating.md !}
+<RatingUseCases />
 
 ## More information
 

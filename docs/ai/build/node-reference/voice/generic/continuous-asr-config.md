@@ -1,13 +1,15 @@
 ---
-title: "Continuous ASR - Config" 
-slug: "continuous-asr-config" 
-hidden: false 
-tags: 
-  - Voice Gateway
-  - ASR
+title: "Continuous ASR Config"
+slug: "continuous-asr-config"
+description: "The Continuous ASR Config Node is used to configure continuous automatic speech recognition settings."
+hidden: false
 ---
 
-# Continuous ASR - Config
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
+# Continuous ASR Config
+
+<ACAndGenericNodeDeprecation />
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
 
@@ -17,8 +19,6 @@ tags:
 </figure>
 
 ## Description
-
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 Continuous ASR allows the system to combine multiple STT recognitions from the user and send them as a single textual message to the voice agent.
 

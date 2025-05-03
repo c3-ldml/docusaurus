@@ -1,10 +1,15 @@
 ---
-title: "Automatic Translation" 
-slug: "auto-translation" 
-hidden: false 
+title: "Auto Translation"
+slug: "auto-translation"
+description: "Auto Translation allows you to automatically translate messages between different languages."
+hidden: false
 ---
 
-# Automatic Translation
+import CompatibilityWithMTProviders from '@site/docs/_includes/ai/build/translation-and-localization/_compatibility-with-machine-translation-providers.md';
+import ConfigureMTProvider from '@site/docs/_includes/ai/build/translation-and-localization/_configure-a-machine-translation-provider.md';
+import SwitchLocale from '@site/docs/_includes/ai/localization/_switch-a-locale.md';
+
+# Auto Translation
 
 Cognigy.AI has integrated _Automatic Translation_ capabilities to streamline the process of customizing Flows and Intents for various Locales. These capabilities are helpful for users who need multilingual support for voice and text AI Agents without the need for manual translations.
 
@@ -23,13 +28,11 @@ Cognigy.AI has integrated _Automatic Translation_ capabilities to streamline the
 
 - For [Intents](#machine-translation-for-flow-localization), machine translation doesn't match the [Slots](../../empower/nlu/intents/ml-intents.md) you set for your primary Locale to the Keyphrases in the localized Example Sentences. After performing an Intent or Multi-Intent localization, check and fix the [Slot annotation](../../empower/nlu/intents/annotations.md#example-sentences) in the localized Example Sentences.
 
-## Compatibility with Machine Translation Providers
-
-{! _includes/ai/build/translation-and-localization/compatibility-with-machine-translation-providers.md !}
+<CompatibilityWithMTProviders />
 
 ## Configure a Machine Translation Provider
 
-{! _includes/ai/build/translation-and-localization/configure-a-machine-translation-provider.md !}
+<ConfigureMTProvider />
 
 ## How to Use Automatic Translation
 
@@ -43,7 +46,7 @@ Cognigy.AI has integrated _Automatic Translation_ capabilities to streamline the
 
 You can automatically translate [Nodes](../nodes/overview.md) and [Intents](../../empower/nlu/intents/ml-intents.md) in the [Flow editor](../flows/editor.md). To do so, select a Locale in the top bar, go to the Node editor or the **NLU** tab, and click **Add Localization**.
 
-{! _includes/ai/localization/switch-a-locale.md !}
+<SwitchLocale />
 
 ## More Information
 

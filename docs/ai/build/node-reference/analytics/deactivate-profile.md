@@ -4,6 +4,9 @@ slug: "deactivate-profile"
 description: "The Deactivate Profile Node is used to deactivate a specific Contact Profile if the end user requests it."
 hidden: false 
 ---
+
+import ProfileNodeUseCase from '@site/docs/_includes/ai/node-reference/analytics/profile-node-use-case.md';
+
 # Deactivate Profile
 
 <figure>
@@ -23,7 +26,7 @@ If you want to delete all stored profile data, activate the **Delete Data** para
 |-------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Delete Data | Boolean | This parameter is inactive by default. If enabled, this Node will deactivate the Contact Profile and delete stored data including all analytics data and transcripts will be removed from the system. This operation is not revertible. The Contact Profile won't get deleted so that it is still possible to reactivate the Profile via the Activate Profile Node or the Data collection inactive toggle. |
 
-{! _includes/ai/node-reference/analytics/profile-node-use-case.md !}
+<ProfileNodeUseCase />
 
 ## More Information
 

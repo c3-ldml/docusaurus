@@ -1,12 +1,15 @@
 ---
-title: "AudioCodes Nodes" 
-slug: "audiocodes" 
+title: "AudioCodes"
+slug: "audiocodes"
+description: "AudioCodes Nodes are used to handle voice interactions with AudioCodes endpoints."
 hidden: false
 ---
 
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
 # AudioCodes
 
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+<ACAndGenericNodeDeprecation />
 
 AudioCodes Nodes help you build a voice agent using [AudioCodes configuration](../../../../deploy/endpoint-reference/audiocodes.md).
 

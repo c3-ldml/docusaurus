@@ -1,10 +1,15 @@
 ---
 title: "Call Recording"
 slug: "call-recording"
+description: "The Call Recording Node is used to control call recording in AudioCodes voice conversations."
 hidden: false
 ---
 
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
 # Call Recording
+
+<ACAndGenericNodeDeprecation />
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/call-recording.png" width="80%" />
@@ -12,8 +17,6 @@ hidden: false
 </figure>
 
 ## Description
-
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 The Call Recording Node controls the voice recording capabilities of the conversation.
 

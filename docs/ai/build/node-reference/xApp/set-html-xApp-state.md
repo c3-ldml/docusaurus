@@ -3,6 +3,9 @@ title: "xApp: Show HTML"
 slug: "Set-HTML-xApp-State"
 hidden: false
 ---
+import CustomNode from '@site/docs/_includes/ai/nodes/_custom-node.md';
+import WaitingBehavior from '@site/docs/_includes/ai/nodes/_waiting-behavior.md';
+import Overlay from '@site/docs/_includes/ai/nodes/_overlay.md';
 
 # xApp: Show HTML
 
@@ -28,7 +31,7 @@ To view submitted data, use the Interaction panel. You can access submitted data
 
 To access session data from within the HTML Code, use CognigyScript `{{"{{ JSON.stringify(cc.someContextKey) }}"}}`.
 
-{! _includes/ai/xApp/custom-node.md !}
+<CustomNode />
 
 ## Parameters
 
@@ -36,9 +39,9 @@ To access session data from within the HTML Code, use CognigyScript `{{"{{ JSON.
 |-----------|------|-----------------------------------------------------------------------------|
 | Content   | List | Select the content format:<ul><li>HTML document</li><li>HTML body</li></ul> |
 
-{! _includes/ai/xApp/waiting-behavior.md !}
+<WaitingBehavior />
 
-{! _includes/ai/xApp/overlay.md !}
+<Overlay />
 
 ??? info "xApp Page SDK"
 
@@ -51,7 +54,7 @@ To access session data from within the HTML Code, use CognigyScript `{{"{{ JSON.
     |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | `SDK.getAppTemplateData():Promise<unknown>` | Returns the xApp Template Data associated with this xApp Page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
     | `SDK.submit(result: Object):Promise<void>`  | Submits the provided "result" object to the Flow. Has to be a JSON serializable object.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-    | `SDK.getCustomReadyHandler():Function`      | Returns a custom ready state handler. By default, the xApp Page is ready as soon as the document is fully loaded.<br>If you want to fetch additional content before showing the Page, you can override the `ready` event by getting a custom `ready handler` and calling it as soon as your xApp Page is ready manually. <br> The end user sees the xApp Loading Screen on the Shell Page.<br>Note: If loading the xApp Page takes more than 10 seconds, the xApp is treated as `Failed to load` without the possibility of recovering. |
+    | `SDK.getCustomReadyHandler():Function`      | Returns a custom ready state handler. By default, the xApp Page is ready as soon as the document is fully loaded.<br></br>If you want to fetch additional content before showing the Page, you can override the `ready` event by getting a custom `ready handler` and calling it as soon as your xApp Page is ready manually. <br></br> The end user sees the xApp Loading Screen on the Shell Page.<br></br>Note: If loading the xApp Page takes more than 10 seconds, the xApp is treated as `Failed to load` without the possibility of recovering. |
 
 ## More Information
 

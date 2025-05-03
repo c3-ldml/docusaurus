@@ -1,8 +1,11 @@
 ---
- title: "Send Metadata" 
- slug: "send-metadata" 
- hidden: false 
+title: "Send Metadata"
+slug: "send-metadata"
+description: "The Send Metadata Node is used to send metadata in a voice conversation."
+hidden: false
 ---
+
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
 
 # Send Metadata
 
@@ -15,7 +18,7 @@
 
 ## Description
 
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+<ACAndGenericNodeDeprecation />
 
 The Send Metadata Node sends metadata via SIP INFO messages to the connected SIP trunk.
 

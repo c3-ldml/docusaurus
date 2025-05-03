@@ -1,8 +1,11 @@
 ---
 title: "Copilot: Knowledge Tile"
 slug: "knowledge-tile"
+description: "The Copilot: Knowledge Tile Node is used to display knowledge content in the AI Copilot workspace."
 hidden: false
 ---
+import Forwarder from '@site/docs/_includes/ai/nodes/_forwarder.md';
+import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
 
 # Copilot: Knowledge Tile
 
@@ -38,7 +41,7 @@ For more information, refer to the [Configuration](#configuration) section.
     | Knowledge Store | Select        | Select a store from the list to allow the Node to retrieve the data. |
 
 ??? info "Enable Copy to Clipboard Button"
-{! _includes/ai/nodes/forwarder.md !}
+    <Forwarder />
 
 ??? info "Search Settings"
     | Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -47,9 +50,9 @@ For more information, refer to the [Configuration](#configuration) section.
     | Transcript Steps          | Indicator     | Number of prior transcript steps to use in a context-aware search. This parameter is active when the Context-Aware Search setting is enabled.                                                                                                                                                                                                                                                                                                        |
     | Where to store the result | Select        | The storage for the search results. Select a storage:<ul><li>**default** — the content will be stored in the Input object (`input.knowledgeSearch`).</li><li>**Input** — the content will be stored in the Input object.</li><li>**Context** — the content will be stored in the Context.</li></ul>                                                                                                                                                  |
     | String to search for      | CognigyScript | The string to search for in the Knowledge Store. A default value is stored in `input.text`.                                                                                                                                                                                                                                                                                                                                                          |
-    | Source Tags               | CognigyScript | The tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and, as a result, improve the accuracy of search outputs. <br><br> Before specifying tags, ensure that they were provided during the creation of the Knowledge Sources. Add tags by specifying each tag separately and pressing **enter**. The maximum number of tags is 5.                              |
+    | Source Tags               | CognigyScript | The tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and, as a result, improve the accuracy of search outputs. <br></br><br></br> Before specifying tags, ensure that they were provided during the creation of the Knowledge Sources. Add tags by specifying each tag separately and pressing **enter**. The maximum number of tags is 5.                              |
         
-{! _includes/ai/knowledge-ai/tags.md !}
+<Tags />
 
 ??? info "Error Handling"
     | Parameter                      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                              |

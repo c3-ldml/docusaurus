@@ -1,9 +1,13 @@
 ---
-title: "Transfer" 
-slug: "transfer-ac" 
-hidden: false 
+title: "Transfer VG"
+slug: "transfer-vg"
+description: "The Transfer VG Node is used to transfer a voice conversation to a Voice Gateway destination."
+hidden: false
 ---
-# Transfer
+
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
+# Transfer VG
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audiocodes/transfer.png" width="80%" />
@@ -12,7 +16,7 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+<ACAndGenericNodeDeprecation />
 
 The Transfer Node lets you pass an active call to a tel or sip target.
 

@@ -1,10 +1,15 @@
 ---
-title: "xApp: Show Adaptive Card"
-slug: "Set-AdaptiveCard-xApp-State"
+title: "Set AdaptiveCard xApp State"
+slug: "set-adaptivecard-xapp-state"
+description: "The Set AdaptiveCard xApp State Node is used to set the state of an AdaptiveCard in an xApp."
 hidden: false
 ---
 
-# xApp: Show Adaptive Card
+import CustomNode from '@site/docs/_includes/ai/xApp/custom-node.md';
+import WaitingBehavior from '@site/docs/_includes/ai/xApp/waiting-behavior.md';
+import Overlay from '@site/docs/_includes/ai/xApp/overlay.md';
+
+# Set AdaptiveCard xApp State
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../../../../release-notes/4.75.md)
 
@@ -20,7 +25,7 @@ To submit data back to the Flow, you need to include an action of type submit wi
 
 To view submitted data, use the Interaction panel. You can access submitted data in the `data` object by clicking **INFO > Input**, or in the chat by adding a Say Node and specifying <code>Submit payload: &lcub;&lcub;JSON.stringify(input.data)&rcub;&rcub;</code> or <code>Submit payload: &lcub;&lcub;JSON.stringify(ci.data)&rcub;&rcub;</code>.
 
-{! _includes/ai/xApp/custom-node.md !}
+<CustomNode />
 
 ## Parameters
 
@@ -32,9 +37,9 @@ To view submitted data, use the Interaction panel. You can access submitted data
 
     To override the background and interaction element colors, use CSS color codes.
 
-{! _includes/ai/xApp/waiting-behavior.md !}
+<WaitingBehavior />
 
-{! _includes/ai/xApp/overlay.md !}
+<Overlay />
 
 ## More Information
 

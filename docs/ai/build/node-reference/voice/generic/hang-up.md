@@ -1,8 +1,12 @@
 ---
  title: "Hang Up" 
  slug: "hang-up" 
+ description: "The Hang Up Node is used to end a voice conversation." 
  hidden: false 
 ---
+
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
 # Hang Up
 
 <figure>
@@ -12,7 +16,7 @@
 
 ## Description
 
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+<ACAndGenericNodeDeprecation />
 
 The Hang Up Node will instruct the system to end the call.
 

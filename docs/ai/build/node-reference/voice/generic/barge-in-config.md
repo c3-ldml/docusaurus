@@ -1,10 +1,13 @@
 ---
- title: "Barge In - Config" 
- slug: "transfer" 
- hidden: false 
+title: "Barge In Config"
+slug: "barge-in-config"
+description: "The Barge In Config Node is used to configure barge-in settings for voice conversations."
+hidden: false
 ---
 
-# Barge In - Config
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
+# Barge In Config
 
 <figure>
   <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/generic-voice/barge-in-config.png" width="80%" />
@@ -13,7 +16,7 @@
 
 ## Description
 
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+<ACAndGenericNodeDeprecation />
 
 The Barge In - Config Node is a session config that enables the interruption of the voice agent.
 

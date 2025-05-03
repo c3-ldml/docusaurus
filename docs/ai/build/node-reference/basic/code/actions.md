@@ -165,7 +165,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     | Parameter | Type   | Description                                                                                                                                     |
     |-----------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-    | mode      | string | - `json` — returns an array of conversation entries. This option is default. <br> - `string` — returns a stringified version of the transcript. |
+    | mode      | string | - `json` — returns an array of conversation entries. This option is default. <br></br> - `string` — returns a stringified version of the transcript. |
     | options   | object | Options to be passed to the function. The example is presented below.                                                                           |
 
     Example Options:

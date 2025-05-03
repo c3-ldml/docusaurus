@@ -1,12 +1,15 @@
 ---
-title: "Generic Voice Nodes" 
-slug: "generic-voice-nodes" 
-hidden: false 
+title: "Generic Voice Nodes"
+slug: "generic"
+description: "Generic Voice Nodes are used to handle voice interactions that are not specific to any particular endpoint."
+hidden: false
 ---
+
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
 
 # Generic Voice Nodes
 
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
+<ACAndGenericNodeDeprecation />
 
 The Generic Voice Nodes are a set of Nodes for creating voice Flows that are not specific to one Endpoint.
 These Voice Nodes are compatible with both voice integrations: AudioCodes and Voice Gateway.

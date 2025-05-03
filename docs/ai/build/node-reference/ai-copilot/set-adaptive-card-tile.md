@@ -4,6 +4,8 @@ slug: "set-adaptive-card-tile"
 hidden: false
 ---
 
+import AdaptiveCardGenAI from '@site/docs/_includes/ai/nodes/_adaptive-card-genai.md';
+
 # Copilot: Adaptive Card Tile
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../release-notes/4.79.md)
@@ -33,7 +35,7 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 
     To use this feature, follow these steps:
 
-{! _includes/ai/nodes/adaptive-card-genai.md !}
+<AdaptiveCardGenAI />
 
     <figure>
       <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/adaptive-card-generative-ai.png" width="100%" />

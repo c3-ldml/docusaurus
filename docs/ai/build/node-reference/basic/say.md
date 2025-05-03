@@ -8,6 +8,7 @@ tags:
   - Nodes
   - Say
 ---
+import AdaptiveCardGenAI from '@site/docs/_includes/ai/nodes/_adaptive-card-genai.md';
 
 # Say
 
@@ -46,7 +47,7 @@ Before configuration,
 
     | Parameters | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
     |------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Text       | CognigyScript | The message you want the AI Agent to send. If you want to customize the text by adding italic or bold styles or including links, only HTML is supported.<br><br>You can add multiple text messages — one message per field. Enter the first message and press ++enter++ to add additional messages.<br><br>When multiple text messages are added, the delivery order is controlled by the **Linear** and **Loop** parameters available in the **Options** section. Only one message is delivered with each Node execution. If you want the AI Agent to send two or more messages at once, add a new Say Node. |
+    | Text       | CognigyScript | The message you want the AI Agent to send. If you want to customize the text by adding italic or bold styles or including links, only HTML is supported.<br></br><br></br>You can add multiple text messages — one message per field. Enter the first message and press ++enter++ to add additional messages.<br></br><br></br>When multiple text messages are added, the delivery order is controlled by the **Linear** and **Loop** parameters available in the **Options** section. Only one message is delivered with each Node execution. If you want the AI Agent to send two or more messages at once, add a new Say Node. |
 
     **Options**
 
@@ -62,9 +63,9 @@ Before configuration,
 
     | Behavior             | Configuration            | Example Conversation                                                                                                                                                                                                                                                                                                                                                                           |
     |----------------------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Random Behavior      | Linear: Off<br>Loop: Off | User: `Give me some motivation.`<br>AI Agent: `You are doing great!`<br>User: `Another one, please.`<br>AI Agent: `Believe in yourself!`<br>User: `More motivation.`<br>AI Agent: `Keep pushing forward!`<br><br>Responses are in random order each time.                                                                                                                                      |
-    | Linear + Non-looping | Linear: On<br>Loop: Off  | User: `Give me some motivation.`<br>AI Agent: `Keep pushing forward!`<br>User: `Another one, please.`<br>AI Agent: `Believe in yourself!`<br>User: `More motivation.`<br>AI Agent: `You are doing great!`<br>User: `One more, please.`<br>AI Agent: `You are doing great!` (repeats last message)<br><br>Responses follow a fixed sequence and repeat the last message after reaching the end. |
-    | Linear + Looping     | Linear: On<br>Loop: On   | User: `Give me some motivation.`<br>AI Agent: `Keep pushing forward!`<br>User: `Another one, please.`<br>AI Agent: `Believe in yourself!`<br>User: `More motivation.`<br>AI Agent: `You are doing great!`<br>User: `Next!`<br>AI Agent: `Keep pushing forward!` (starts sequence over)<br><br>Responses cycle through in a fixed order and restart from the beginning after reaching the end.  |
+    | Random Behavior      | Linear: Off<br></br>Loop: Off | User: `Give me some motivation.`<br></br>AI Agent: `You are doing great!`<br></br>User: `Another one, please.`<br></br>AI Agent: `Believe in yourself!`<br></br>User: `More motivation.`<br></br>AI Agent: `Keep pushing forward!`<br></br><br></br>Responses are in random order each time.                                                                                                                                      |
+    | Linear + Non-looping | Linear: On<br></br>Loop: Off  | User: `Give me some motivation.`<br></br>AI Agent: `Keep pushing forward!`<br></br>User: `Another one, please.`<br></br>AI Agent: `Believe in yourself!`<br></br>User: `More motivation.`<br></br>AI Agent: `You are doing great!`<br></br>User: `One more, please.`<br></br>AI Agent: `You are doing great!` (repeats last message)<br></br><br></br>Responses follow a fixed sequence and repeat the last message after reaching the end. |
+    | Linear + Looping     | Linear: On<br></br>Loop: On   | User: `Give me some motivation.`<br></br>AI Agent: `Keep pushing forward!`<br></br>User: `Another one, please.`<br></br>AI Agent: `Believe in yourself!`<br></br>User: `More motivation.`<br></br>AI Agent: `You are doing great!`<br></br>User: `Next!`<br></br>AI Agent: `Keep pushing forward!` (starts sequence over)<br></br><br></br>Responses cycle through in a fixed order and restart from the beginning after reaching the end.  |
 
 ??? info "Text with Quick Replies"
 
@@ -317,7 +318,7 @@ Before configuration,
     1. Select the **Adaptive Card** output type.
     2. On the right side of the **Output type** list, click ![Gen AI Icon](../../../../_assets/icons/beta.svg).
 
-    {! _includes/ai/nodes/adaptive-card-genai.md !}
+    <AdaptiveCardGenAI />
 
     To replace the current Adaptive Card with a new one, click ![recycle bin](../../../../_assets/icons/recycle-bin.svg).
 

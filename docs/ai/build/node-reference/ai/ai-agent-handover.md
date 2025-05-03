@@ -4,6 +4,7 @@ slug: "ai-agent-handover"
 description: "The AI Agent Handover Node is used to transfer the conversation to another AI Agent Node or Flow, which will be triggered and executed as soon as this Node is activated."
 hidden: false
 ---
+import Beta from '@site/docs/_includes/ai/_beta.md';
 
 # AI Agent Handover
 
@@ -13,7 +14,7 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/beta.md !}
+<Beta />
 
 The AI Agent Handover Node transfers the conversation to another AI Agent Node or Flow and executes it.
 

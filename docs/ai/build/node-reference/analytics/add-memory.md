@@ -5,6 +5,8 @@ description: "The Add Memory Node stores text, such as user input and other rele
 hidden: false
 ---
 
+import Beta from '@site/docs/_includes/ai/_beta.md';
+
 # Add Memory
 
 <figure>
@@ -13,7 +15,7 @@ hidden: false
 
 ## Description
 
-{! _includes/ai/beta.md !}
+<Beta />
 
 The Add Memory Node stores memories within the [Contact Profile](../../../analyze/contact-profiles.md).
 A memory entry can be any text, such as user input and other relevant details.

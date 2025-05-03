@@ -1,12 +1,15 @@
 ---
-title: "xApp Nodes" 
-slug: "overview" 
-hidden: false 
+title: "xApp Nodes"
+slug: "xapp-nodes"
+description: "xApp Nodes are used to create and manage xApp experiences."
+hidden: false
 ---
+
+import Pricing from '@site/docs/_includes/ai/xApp/pricing.md';
 
 # xApp Nodes
 
-{! _includes/ai/xApp/pricing.md !}
+<Pricing />
 
 The xApp Flow Nodes allow creating xApps, flexible micro-web applications for customer self-service. You can build the actual xApp Pages by yourself in various ways, for example, by providing HTML code or by specifying an Adaptive Card in JSON format.
 

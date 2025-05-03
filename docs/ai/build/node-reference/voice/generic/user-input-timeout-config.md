@@ -1,10 +1,15 @@
 ---
- title: "User Input Timeout - Config" 
- slug: "user-input-timeout-config" 
- hidden: false 
+title: "User Input Timeout Config"
+slug: "user-input-timeout-config"
+description: "The User Input Timeout Config Node is used to configure timeout settings for user input in voice conversations."
+hidden: false
 ---
 
-# User Input Timeout - Config
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+
+# User Input Timeout Config
+
+<ACAndGenericNodeDeprecation />
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../../../../release-notes/4.45.md)
 
@@ -14,8 +19,6 @@
 </figure>
 
 ## Description
-
-{! _includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md!}
 
 The User Input Timeout - Config Node defines the action that the AI Agent should take if it does not receive any input from the user within a certain timeframe. 
 

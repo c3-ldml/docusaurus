@@ -5,6 +5,8 @@ description: "The Delete Profile Node is used to delete a specific Contact Profi
 hidden: false 
 ---
 
+import ProfileNodeUseCase from '@site/docs/_includes/ai/node-reference/analytics/_profile-node-use-case.md';
+
 # Delete Profile
 
 <figure>
@@ -18,7 +20,7 @@ This Node is used to delete a [specific Contact Profile](../../../analyze/contac
 !!! danger
     Executing this Node will delete the user's entire Profile, including all analytics data and all transcripts. The user's data will no longer be available.
 
-{! _includes/ai/node-reference/analytics/profile-node-use-case.md !}
+<ProfileNodeUseCase />
 
 ## More Information
 

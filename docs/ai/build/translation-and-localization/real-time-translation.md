@@ -1,10 +1,14 @@
 ---
-title: "Real-Time Translation" 
-slug: "real-time-translation" 
-hidden: false 
+title: "Real Time Translation"
+slug: "real-time-translation"
+description: "Real Time Translation allows you to translate messages in real-time during conversations."
+hidden: false
 ---
 
-# Real-Time Translation
+import CompatibilityWithMTProviders from '@site/docs/_includes/ai/build/translation-and-localization/_compatibility-with-machine-translation-providers.md';
+import ConfigureMTProvider from '@site/docs/_includes/ai/build/translation-and-localization/_configure-a-machine-translation-provider.md';
+
+# Real Time Translation
 
 _Real-Time Translation_ instantly translates languages during conversations, eliminating the need for pre-translation, as in typical [localization](localization.md) scenarios.
 
@@ -19,13 +23,11 @@ With real-time translation, you don't need human agents for every language nor t
 
 - You have configured a [machine translation provider](#configure-a-machine-translation-provider).
 
-## Compatibility with Machine Translation Providers
-
-{! _includes/ai/build/translation-and-localization/compatibility-with-machine-translation-providers.md !}
+<CompatibilityWithMTProviders />
 
 ## Configure a Machine Translation Provider
 
-{! _includes/ai/build/translation-and-localization/configure-a-machine-translation-provider.md !}
+<ConfigureMTProvider />
 
 ## How to Use Real-Time Translation
 
