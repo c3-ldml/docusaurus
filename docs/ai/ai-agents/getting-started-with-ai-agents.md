@@ -7,7 +7,7 @@ hidden: false
 
 # Guide for Agentic AI Agents
 
-![Build your AI Agent Workforce](../../_assets/ai/overview/build-your-ai-agent-workforce.png)
+![Build your AI Agent Workforce](../../../static/img/_assets/ai/overview/build-your-ai-agent-workforce.png)
 
 ## What is an Agentic AI Agent?  
 
@@ -55,7 +55,7 @@ Specify the role and tasks your AI Agent will perform within a Flow.
     - **Description** and **Instructions**.
 4. Experiment and refine settings in the Interaction Panel.
 
-![AI Agent Job Configuration](../../_assets/ai/overview/ai-agent-job-configuration.png)
+![AI Agent Job Configuration](../../../static/img/_assets/ai/overview/ai-agent-job-configuration.png)
 
 ## Enhance your AI Agent with Knowledge
 
@@ -83,7 +83,7 @@ Enable your AI Agent to perform specific tasks and integrate with external syste
 3. Enable parameters, for example,  add `tracking_code` as a string.
 4. Use **Resolve Tool Action to** finalize the AI Agent's response.
 
-![AI Agent Tool Action](../../_assets/ai/overview/ai-agent-tool-action.png)
+![AI Agent Tool Action](../../../static/img/_assets/ai/overview/ai-agent-tool-action.png)
 
 ## Enable AI Agent Memory
 
@@ -106,7 +106,7 @@ To configure short-term memory, follow these steps:
 3. _(Optional)_ Add an Update Profile Node to simulate stored user data.
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/overview/ai-agent-memory.png" width="70%" />
+  <img class="image-center" src="../../../static/img/_assets/ai/overview/ai-agent-memory.png" width="70%" />
   <figcaption>AI Agent Memory Configuration</figcaption>    
 </figure>
 

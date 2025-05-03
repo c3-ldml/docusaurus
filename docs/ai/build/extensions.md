@@ -120,7 +120,7 @@ A trusted Extension is an Extension that is considered safe to run in the standa
 To make Extensions trusted and let them run in the standard environment, you have two options:
 
 ??? info "Make Extensions Trusted"
-    - Mark an Extension as trusted in **Manage > Extensions**. Trusted Extensions display the ![trust-extensions](../../_assets/icons/trusted-extension.svg) icon. Only admins and users with the `extension_trust_admin` [role](../administer/access/members.md) can mark Extensions as trusted and update them.
+    - Mark an Extension as trusted in **Manage > Extensions**. Trusted Extensions display the ![trust-extensions](../../../static/img/_assets/icons/trusted-extension.svg) icon. Only admins and users with the `extension_trust_admin` [role](../administer/access/members.md) can mark Extensions as trusted and update them.
     - For dedicated SaaS or on-premises installations: 
         1. Set the `FEATURE_ALLOW_TRUSTED_CODE_CONFIGURATION` environment variable to `true` by adding the following code to your `config-map_patch.yaml` in the `kubernetes` repository where the deployment manifest files are stored:
         ```YML

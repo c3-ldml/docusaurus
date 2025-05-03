@@ -6,7 +6,7 @@ hidden: false
 # Send SMTP Email
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/send-smtp-email.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/send-smtp-email.png" width="50%" />
 </figure>
 
 ## Description

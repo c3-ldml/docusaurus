@@ -14,7 +14,7 @@ tags:
 [![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/handover-to-agent.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/services/handover-to-agent.png" width="50%" />
 </figure>
 
 ## Description
@@ -67,7 +67,7 @@ In case a channel doesn't support handover, the error reason is marked as `unsup
 Use the **Handover Status** [Token](../../tokens.md) to access handover status in Flow.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/handover-flow.png" width="80%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/services/handover-flow.png" width="80%" />
 </figure>
 
 ### Handover Status

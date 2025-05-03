@@ -5,15 +5,15 @@ description: "The Search Extract Output Node is used to search and extract data 
 hidden: false
 ---
 
-import OrderPropertyDeprecation from '@site/docs/_includes/release-notes/order-property-deprecation.md';
-import Tags from '@site/docs/_includes/ai/knowledge-ai/tags.md';
+import OrderPropertyDeprecation from '@site/docs/_includes/release-notes/_order-property-deprecation.md';
+import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
 
 # Search Extract Output
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/search-extract-output.png" width="50%"/>
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/other/search-extract-output.png" width="50%"/>
 </figure>
 
 <OrderPropertyDeprecation />

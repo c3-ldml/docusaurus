@@ -12,7 +12,7 @@ import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/
 [![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../../../../release-notes/4.45.md)
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/generic-voice/send-metadata.png" width="80%" />
+  <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/generic-voice/send-metadata.png" width="80%" />
   <figcaption>Voice Gateway Send Metadata Node</figcaption>
 </figure>
 

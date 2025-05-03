@@ -42,7 +42,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     **Returns**
 
-    Promise<void>
+    Promise `<void>`
 
 ??? info "actions.setTimezoneOffset || api.setTimezoneOffset"
 
@@ -282,7 +282,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     **Returns**
 
-    Promise<string>
+    Promise `<string>`
 
 ## Lexicon
 
@@ -315,7 +315,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     **Returns**
 
-    Promise<string>
+    Promise `<string>`
 
 ## Profile
 
@@ -329,7 +329,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     **Returns**
 
-    Promise<any>
+    Promise `<any>`
 
 ??? info "actions.updateProfile || api.updateProfile"
 
@@ -344,7 +344,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     **Returns**
 
-    Promise<any>
+    Promise `<any>`
 
 ??? info "actions.mergeProfile || api.mergeProfile"
 
@@ -360,7 +360,7 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     **Returns**
 
-    Promise<any>
+    Promise `<any>`
 
 ??? info "actions.deactivateProfile || api.deactivateProfile"
 
@@ -372,4 +372,4 @@ In a [Code Node](overview.md), you can use the functions of the `actions` and `a
 
     **Returns**
 
-    Promise<any>
+    Promise `<any>`

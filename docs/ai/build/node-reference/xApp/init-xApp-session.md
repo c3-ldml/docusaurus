@@ -9,7 +9,7 @@
 [![Version badge](https://img.shields.io/badge/Updated in-v4.50-blue.svg)](../../../../release-notes/4.51.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/xApp/init-xApp-session.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/xApp/init-xApp-session.png" width="50%" />
 </figure>
 
 ## Description

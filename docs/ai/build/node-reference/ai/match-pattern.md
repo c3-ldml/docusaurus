@@ -6,7 +6,7 @@
 # Match Pattern
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/match-pattern.png" width="40%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai/match-pattern.png" width="40%" />
 </figure>
 
 ## Description

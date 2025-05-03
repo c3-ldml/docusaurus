@@ -31,7 +31,7 @@ Make sure the visible and [non-visible text](#aria-labels) is meaningful to help
 Include alternative (Alt) text to describe images for users who cannot see them. This text is pronounced by screen readers when hovering over the element. For example, include alternative text in the [Say](../../ai/build/node-reference/basic/say.md), [Question](../../ai/build/node-reference/basic/question.md), or [Optional Question](../../ai/build/node-reference/basic/optional-question.md) Nodes for [images and other output types](../../ai/build/node-reference/basic/say.md) that contain images.
 
 <figure>
-  <img class="image-center" alt="A screenshot with an example of an alt text" src="../../../_assets/webchat/v3/image-alt-text.png" width="100%" />
+  <img class="image-center" alt="A screenshot with an example of an alt text" src="/img/webchat/v3/image-alt-text.png" width="100%" />
 </figure>
 
 ### Aria Labels
@@ -51,7 +51,7 @@ The following parameters need to be added to the JSON of the adaptive card:
 - Meaningful text blocks contain the `style` parameter with a value of `heading`. Headings help all users navigate and understand information more quickly as they create a hierarchical structure in an adaptive card. They improve content accessibility for visually impaired users, as screen readers announce them differently from a regular text.
 
 <figure>
-  <img class="image-center" src="../../../_assets/webchat/v3/adaptive-card-labels.png" width="100%" />
+  <img class="image-center" src="/img/webchat/v3/adaptive-card-labels.png" width="100%" />
 </figure>
 
 ???+ note "Adaptive Card Sample"
@@ -152,7 +152,7 @@ The transcript should accurately reflect the number of speakers and their lines,
 In Webchat, the transcript will be available in the audio widget under the **Download Transcript** button and accessible in `.txt` format.
 
 <figure>
-  <img class="image-center" src="../../../_assets/webchat/v3/audio-transcript.png" width="100%" />
+  <img class="image-center" src="/img/webchat/v3/audio-transcript.png" width="100%" />
 </figure>
 
 ### Video
@@ -164,7 +164,7 @@ or [Optional Question](../../ai/build/node-reference/basic/optional-question.md)
 add the vidio file, provide the alternative text (a downloadable transcript) and the URL for captions.
 
 <figure>
-  <img class="image-center" src="../../../_assets/webchat/v3/video-captions.png" width="100%" />
+  <img class="image-center" src="/img/webchat/v3/video-captions.png" width="100%" />
 </figure>
 
 #### Transcript 
@@ -261,7 +261,7 @@ The file that includes captions should have the following `.vtt` format:
       [Music fades out]
       ```
 
-In Webchat, activate captions in the video widget by clicking ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Captions**.
+In Webchat, activate captions in the video widget by clicking ![vertical-ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Captions**.
 
 ## Increase Text Visibility
 
@@ -289,7 +289,7 @@ You can determine the contrast ratio of your Webchat using the browser DevTools.
 6. Use the color picker to adjust the color values. This tool updates the contrast ratio in real-time, helping you find a compliant color combination. Alternatively, to determine a color click the eyedropper icon, pick a color from anywhere on your screen and use [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker) to check the color compatibility.
 
 <figure>
-  <img class="image-center" src="../../../_assets/webchat/v3/color-contrast.png" width="100%" />
+  <img class="image-center" src="/img/webchat/v3/color-contrast.png" width="100%" />
 </figure>
 
 ## Revise Extensions

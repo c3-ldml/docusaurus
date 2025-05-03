@@ -11,10 +11,11 @@
   width: 300px;
   background-color: var(--ifm-background-color);
   border-right: 1px solid var(--ifm-color-emphasis-200);
-  position: fixed;
+  position: sticky;
   left: 0;
   top: var(--ifm-navbar-height);
-  bottom: 0;
+  max-height: calc(100vh - var(--ifm-navbar-height));
+  overflow-y: auto;
 }
 
 .sidebarSwitcher {

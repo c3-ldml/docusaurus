@@ -8,7 +8,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../../../release-notes/4.68.md)
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/code/code.png" width="50%" />
+  <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/code/code.png" width="50%" />
 </figure>
 
 ## Description

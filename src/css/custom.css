@@ -137,3 +137,8 @@ table tr:hover td {
 [data-theme='dark'] table tr:hover td {
   background-color: var(--ifm-color-emphasis-100) !important;
 }
+
+.comparison-table th,
+.comparison-table td {
+    width: 50%;
+}

@@ -12,7 +12,7 @@ import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
 [![Version badge](https://img.shields.io/badge/Added in-v4.72-blue.svg)](../../../../release-notes/4.72.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/next-action-tile.png" width="50%"/>
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/next-action-tile.png" width="50%"/>
 </figure>
 
 ## Description
@@ -58,7 +58,7 @@ This Node helps the human agent by providing guidance and predefined instruction
 For instance, if a user asks about the latest release version, the AI Agent can give them both the answer and links to important updates in that release.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/next-action-tile-example.png" width="80%"/>
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/next-action-tile-example.png" width="80%"/>
   <figcaption>The Next Action Tile Widget in AI Copilot</figcaption>
 </figure>
 

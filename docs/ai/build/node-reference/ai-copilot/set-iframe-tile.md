@@ -12,7 +12,7 @@ import Postback from '@site/docs/_includes/ai/nodes/_postback.md';
 [![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../release-notes/4.90.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/set-iframe-tile.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/set-iframe-tile.png" width="50%" />
 </figure>
 
 ## Description

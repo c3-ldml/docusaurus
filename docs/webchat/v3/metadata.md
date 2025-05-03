@@ -90,7 +90,7 @@ To test receiving metadata, follow these steps:
 6. In the [Interaction Panel](../../ai/test/interaction-panel/overview.md), paste the user ID to the **User ID** field on the Live Follow tab.
 7. Send a message as a user via the [Demo Webchat](../demo.md) interface. Once the message is received, you will see the same message on the **Live Follow** tab.
 8. View the metadata in the Interaction Panel:
-    - To view the metadata in the payload, click ![expand](../../_assets/icons/expand.svg).
+    - To view the metadata in the payload, click ![expand](../../../static/img/_assets/icons/expand.svg).
     - To view the metadata in the Input object, navigate to **Info > Input**. In the code editor, go to `data._webchat3Metadata`.
 
 If you receive the `data._webchat3Metadata` object and can view it, the metadata settings work as expected.

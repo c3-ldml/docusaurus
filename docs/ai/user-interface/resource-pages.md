@@ -13,7 +13,7 @@ Resource pages are pages where you can view and manage resources to build AI Age
 The following image provides an overview of the Flows page:
 
 <img
-  src={require('../../_assets/ai/overview/user-interface/resource-page.png').default}
+  src={require('../../../static/img/_assets/ai/overview/user-interface/resource-page.png').default}
   alt="Resource Page"
   width="70%"
 />
@@ -22,9 +22,9 @@ The following image provides an overview of the Flows page:
 
   |                             UI Element                             | Type   | Description                                                                                                                                                                                                              |
   |:------------------------------------------------------------------:|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-  |                               ![plus-square](../../_assets/icons/plus-square.svg)                                | Button | You can create resources by clicking **+** in the upper-left corner.                                                                                                                                                     |
-  |            ![search](../../_assets/icons/search.svg)            | Field  | You can search for resources by name.                                                                                                                                                                                    |
-  | ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) | Menu   | With the right-side menu, you can perform other actions, for example, edit, delete, export as a Package, clone, copy Reference ID, as well as other resource-specific options. This menu is available for each resource. |
+  |                               ![plus-square](../../../static/img/_assets/icons/plus-square.svg)                                | Button | You can create resources by clicking **+** in the upper-left corner.                                                                                                                                                     |
+  |            ![search](../../../static/img/_assets/icons/search.svg)            | Field  | You can search for resources by name.                                                                                                                                                                                    |
+  | ![vertical-ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) | Menu   | With the right-side menu, you can perform other actions, for example, edit, delete, export as a Package, clone, copy Reference ID, as well as other resource-specific options. This menu is available for each resource. |
 
 </CollapsibleSection>
 
@@ -32,8 +32,8 @@ The following image provides an overview of the Flows page:
 
   | Notification Type | Description                                                                                                                                          | Example                                                                                                                            |
   |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-  | Success message   | Displays when a Task is completed successfully.                                                                                                      | <figure><img class="image-center" src="../../../_assets/ai/overview/user-interface/success-message.png" width="70%" /></figure> |
-  | Warning message   | Display when a Task is completed with a warning. Click ![arrow-down](../../_assets/icons/arrow-down.svg) to view the warning message. | <figure><img class="image-center" src="../../../_assets/ai/overview/user-interface/warning-message.png" width="70%" /></figure> |
-  | Error message     | Displays when a Task fails. Click ![arrow-down](../../_assets/icons/arrow-down.svg) to view the error message.                        | <figure><img class="image-center" src="../../../_assets/ai/overview/user-interface/error-message.png" width="70%" /></figure>   |
+  | Success message   | Displays when a Task is completed successfully.                                                                                                      | <figure><img class="image-center" src="../../../static/img/_assets/ai/overview/user-interface/success-message.png" width="70%" /></figure> |
+  | Warning message   | Display when a Task is completed with a warning. Click ![arrow-down](../../../static/img/_assets/icons/arrow-down.svg) to view the warning message. | <figure><img class="image-center" src="../../../static/img/_assets/ai/overview/user-interface/warning-message.png" width="70%" /></figure> |
+  | Error message     | Displays when a Task fails. Click ![arrow-down](../../../static/img/_assets/icons/arrow-down.svg) to view the error message.                        | <figure><img class="image-center" src="../../../static/img/_assets/ai/overview/user-interface/error-message.png" width="70%" /></figure>   |
 
 </CollapsibleSection>

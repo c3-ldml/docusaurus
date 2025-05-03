@@ -12,7 +12,7 @@ import MuteSpeechInput from '@site/docs/_includes/ai/nodes/_mute-speech-input.md
 [![Version badge](https://img.shields.io/badge/Added in-v4.54-blue.svg)](../../../../../release-notes/4.54.md)
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/generic-voice/mute-speech-input.png" width="80%" />
+  <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/generic-voice/mute-speech-input.png" width="80%" />
   <figcaption>Generic Mute Speech Input</figcaption>
 </figure>
 

@@ -12,7 +12,7 @@ import Overlay from '@site/docs/_includes/ai/xApp/_overlay.md';
 [![Version badge](https://img.shields.io/badge/Updated in-v4.75-blue.svg)](../../../../release-notes/4.75.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/xApp/set-html-xApp-state.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/xApp/set-html-xApp-state.png" width="50%" />
 </figure>
 
 ## Description

@@ -8,7 +8,7 @@ hidden: false
 # Log Message
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/log-message.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/other/log-message.png" width="50%" />
 </figure>
 
 ## Description

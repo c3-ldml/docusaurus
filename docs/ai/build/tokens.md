@@ -21,7 +21,7 @@ _Tokens_ are visual representations of [CognigyScript](cognigyscript.md) express
 
 ## Restrictions
 
-- Only Node text fields with the ![token](../../_assets/icons/token.svg) icon support Tokens.
+- Only Node text fields with the ![token](../../../static/img/_assets/icons/token.svg) icon support Tokens.
 
 ## Working with Tokens
 
@@ -105,7 +105,7 @@ Cognigy.AI provides a selection of default tokens that you can readily use in yo
 
 ### Create and Use Tokens in the Node Editor
 
-By clicking ![token](../../_assets/icons/token.svg) in a text field, you open the Token list. You can search for a Token in the search field at the top or scroll through the Token types. To create a Token, click ![plus-transparent](../../_assets/icons/plus-transparent.svg).
+By clicking ![token](../../../static/img/_assets/icons/token.svg) in a text field, you open the Token list. You can search for a Token in the search field at the top or scroll through the Token types. To create a Token, click ![plus-transparent](../../../static/img/_assets/icons/plus-transparent.svg).
 
 ### Create Tokens from JSON Editors
 
@@ -116,5 +116,5 @@ To create a Token from a JSON editor, right-click a CognigyScript expression and
 The default Token named **Text** represents `{{"{{input.text}}"}}`. The following image shows the **Text** Token in a Node and the corresponding CognigyScript expression after it:
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/build/tokens/token-example.png" width="70%" />
+  <img class="image-center" src="../../../static/img/_assets/ai/build/tokens/token-example.png" width="70%" />
 </figure>

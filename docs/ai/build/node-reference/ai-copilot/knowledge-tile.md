@@ -12,7 +12,7 @@ import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
 [![Version badge](https://img.shields.io/badge/Added in-v4.72-blue.svg)](../../../../release-notes/4.72.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/knowledge-tile.png" width="50%"/>
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/knowledge-tile.png" width="50%"/>
 </figure>
 
 ## Description
@@ -80,13 +80,13 @@ For more information, refer to the [Configuration](#configuration) section.
         If the Flow is not working or issues arise with the Knowledge Source, try creating a new Agent and running the Flow in it.
 
     <figure>
-      <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/knowledge-tile-flow.png" width="80%"/>
+      <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/knowledge-tile-flow.png" width="80%"/>
     </figure>
 
     Test your Flow by using a [Demo Webchat](../../../../webchat/demo.md) in the Webchat Endpoint. You can use Live Agent as a handover provider or any other available provider.
 
     <figure>
-      <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/knowledge-tile-example.png" width="80%"/>
+      <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/knowledge-tile-example.png" width="80%"/>
     </figure>
 
 ## More Information

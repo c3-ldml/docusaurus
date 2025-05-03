@@ -31,7 +31,7 @@ Some Node types, for example, [If Nodes](../node-reference/logic/if.md) and [Loo
 If your AI Agent has, for example, a [Go To Node](../node-reference/logic/go-to.md) or an [Execute Flow Node](../node-reference/logic/execute-flow.md) to switch between Flows, you can set a Node as an _Entrypoint_. An Entrypoint is the Node at which the Flow starts. The **Start** Node is the default Entrypoint. To set a Node as an Entrypoint:
 
 - right-click the Node in the Flow editor and select **Set Entrypoint**.
-- select ![vertical ellipsis](../../../_assets/icons/vertical-ellipsis.svg) **> Set Entrypoint** in the Node editor.
+- select ![vertical ellipsis](../../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Set Entrypoint** in the Node editor.
 
 !!! note "Naming Entrypoints"
     Define unique names for each Entrypoint Node using the **Label** field in the Node editor's **Settings** section. This approach is helpful to easily differentiate a Node with an Entrypoint from other Nodes of the same type.

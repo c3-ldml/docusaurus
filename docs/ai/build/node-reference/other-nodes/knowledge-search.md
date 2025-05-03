@@ -10,7 +10,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../../../release-notes/4.61.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/knowledge-search.png" width="80%"/>
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/other/knowledge-search.png" width="80%"/>
 </figure>
 
 ## Description
@@ -26,7 +26,7 @@ To display the output of the Knowledge Search Node to the user, follow these ste
 
 1. In the Flow editor, add a Say Node below the Knowledge Search Node.
 2. In the **Output Type** field, select **Text**.
-3. In the **Text** field, click ![token](../../../../_assets/icons/token.svg) and select the **KSearch:TopK Texts** Token.
+3. In the **Text** field, click ![token](../../../../../static/img/_assets/icons/token.svg) and select the **KSearch:TopK Texts** Token.
 4. Click **Save Node**.
 
 ## Parameters

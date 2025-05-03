@@ -247,7 +247,28 @@ const sidebars: SidebarsConfig = {
           ],
         },
       ]
-    }
+    },
+    {
+      type: 'category',
+      label: 'Test',
+      items: [
+        {
+          type: 'category',
+          label: 'Interaction Panel',
+          items: [
+            'ai/test/interaction-panel/overview',
+            'ai/test/interaction-panel/input',
+            'ai/test/interaction-panel/context',
+            'ai/test/interaction-panel/profile',
+            'ai/test/interaction-panel/state'
+          ]
+        },
+        'ai/test/demo-webchat',
+        'ai/test/logs',
+        'ai/test/playbooks',
+        'ai/test/voice-preview'
+      ],
+    },
   ],
 
   // Voice Gateway sidebar

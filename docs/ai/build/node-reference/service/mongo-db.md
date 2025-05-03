@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.88-blue.svg)](../../../../release-notes/4.88.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/mongo-db-find.png" width="50%" />
+  <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/services/mongo-db-find.png" width="50%" />
 </figure>
 
 ## Description
@@ -24,11 +24,11 @@ The MongoDB Nodes let you execute a range of operations on your [MongoDB](https:
 
 ### Find
 
-| Parameter          | Type          | Description                                                                                                               |
-|--------------------|---------------|---------------------------------------------------------------------------------------------------------------------------|
-| MongoDB Connection | List          | Select MongoDB database connection. To create a new connection, click ![plus](../../../../_assets/icons/plus-simple.svg). |
-| Collection         | CognigyScript | The name of the MongoDB collection.                                                                                       |
-| Query              | JSON          | The MongoDB query. [MongoDB Documentation: Find](https://docs.mongodb.com/manual/reference/method/db.collection.find/)    |
+| Parameter          | Type          | Description                                                                                                                             |
+|--------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| MongoDB Connection | List          | Select MongoDB database connection. To create a new connection, click ![plus](../../../../../static/img/_assets/icons/plus-simple.svg). |
+| Collection         | CognigyScript | The name of the MongoDB collection.                                                                                                     |
+| Query              | JSON          | The MongoDB query. [MongoDB Documentation: Find](https://docs.mongodb.com/manual/reference/method/db.collection.find/)                  |
 
 ??? info "Result Storage"
 
@@ -39,12 +39,12 @@ The MongoDB Nodes let you execute a range of operations on your [MongoDB](https:
 
 ??? info "Advanced"
 
-    | Parameter     | Type          | Description                                                                                                                                                                              |
-    |---------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Projection    | JSON          | Read the MongoDB documentation for more information on Projection. [MongoDB Documentation: Projection](https://docs.mongodb.com/manual/reference/operator/projection/){:target="_blank"} |
-    | Options       | JSON          | Read the MongoDB documentation for configurable options. [MongoDB Documentation](https://docs.mongodb.com/manual){:target="_blank"}                                                      |
-    | Index         | CognigyScript | Refer to the MongoDB documentation on Indexes. [MongoDB Documentation: Indexes](https://docs.mongodb.com/manual/indexes/){:target="_blank"}                                              |
-    | Stop on Error | Toggle        | Lets you configure whether to stop flow execution when an error occurs or not.                                                                                                           |
+    | Parameter     | Type          | Description                                                                                                                                                            |
+    |---------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Projection    | JSON          | Read the MongoDB documentation for more information on Projection. [MongoDB Documentation: Projection](https://docs.mongodb.com/manual/reference/operator/projection/) |
+    | Options       | JSON          | Read the MongoDB documentation for configurable options. [MongoDB Documentation](https://docs.mongodb.com/manual)                                                      |
+    | Index         | CognigyScript | Refer to the MongoDB documentation on Indexes. [MongoDB Documentation: Indexes](https://docs.mongodb.com/manual/indexes/)                                              |
+    | Stop on Error | Toggle        | Lets you configure whether to stop flow execution when an error occurs or not.                                                                                         |
 
 ??? info "Caching"
 
@@ -55,11 +55,11 @@ The MongoDB Nodes let you execute a range of operations on your [MongoDB](https:
 
 ### Find One
 
-| Parameter          | Type          | Description                                                                                                                                    |
-|--------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| MongoDB Connection | List          | Select MongoDB database connection. To create a new connection, click ![plus](../../../../_assets/icons/plus-simple.svg).                      |
-| Collection         | CognigyScript | The name of the MongoDB collection.                                                                                                            |
-| Query              | JSON          | The MongoDB query. [MongoDB Documentation: FindOne](https://docs.mongodb.com/manual/reference/method/db.collection.findOne/){:target="_blank"} |
+| Parameter          | Type          | Description                                                                                                                             |
+|--------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| MongoDB Connection | List          | Select MongoDB database connection. To create a new connection, click ![plus](../../../../../static/img/_assets/icons/plus-simple.svg). |
+| Collection         | CognigyScript | The name of the MongoDB collection.                                                                                                     |
+| Query              | JSON          | The MongoDB query. [MongoDB Documentation: FindOne](https://docs.mongodb.com/manual/reference/method/db.collection.findOne/)            |
 
 ??? info "Result Storage"
 
@@ -70,11 +70,11 @@ The MongoDB Nodes let you execute a range of operations on your [MongoDB](https:
 
 ??? info "Advanced"
 
-    | Parameter     | Type   | Description                                                                                                                                                                              |
-    |---------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Projection    | JSON   | Read the MongoDB documentation for more information on Projection. [MongoDB Documentation: Projection](https://docs.mongodb.com/manual/reference/operator/projection/){:target="_blank"} |
-    | Options       | JSON   | Read the MongoDB documentation for configurable options. [MongoDB Documentation](https://docs.mongodb.com/manual){:target="_blank"}                                                      |
-    | Stop on Error | Toggle | Lets you configure whether to stop flow execution when an error occurs or not.                                                                                                           |
+    | Parameter     | Type   | Description                                                                                                                                                            |
+    |---------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Projection    | JSON   | Read the MongoDB documentation for more information on Projection. [MongoDB Documentation: Projection](https://docs.mongodb.com/manual/reference/operator/projection/) |
+    | Options       | JSON   | Read the MongoDB documentation for configurable options. [MongoDB Documentation](https://docs.mongodb.com/manual)                                                      |
+    | Stop on Error | Toggle | Lets you configure whether to stop flow execution when an error occurs or not.                                                                                         |
 
 ??? info "Caching"
 
@@ -85,11 +85,11 @@ The MongoDB Nodes let you execute a range of operations on your [MongoDB](https:
 
 ### Update One
 
-| Parameter          | Type          | Description                                                                                                                                                               |
-|--------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MongoDB Connection | List          | Select MongoDB database connection. To create a new connection, click ![plus](../../../../_assets/icons/plus-simple.svg).                                                 |
-| Collection         | CognigyScript | The name of the MongoDB collection.                                                                                                                                       |
-| Update             | JSON          | The MongoDB update payload in JSON format.[MongoDB Documentation: UpdateOne](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/){:target="_blank"} |
+| Parameter          | Type          | Description                                                                                                                                             |
+|--------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| MongoDB Connection | List          | Select MongoDB database connection. To create a new connection, click ![plus](../../../../../static/img/_assets/icons/plus-simple.svg).                 |
+| Collection         | CognigyScript | The name of the MongoDB collection.                                                                                                                     |
+| Update             | JSON          | The MongoDB update payload in JSON format.[MongoDB Documentation: UpdateOne](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/) |
 
 ??? info "Result Storage"
 
@@ -103,21 +103,21 @@ The MongoDB Nodes let you execute a range of operations on your [MongoDB](https:
     | Parameter     | Type   | Description                                                                                                                                                                     |
     |---------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Use Operators | Toggle | If enabled, then you can use operators like $push in the update query. If not, then we will automatically $set everything that you write in the update query into the database. |
-    | Options       | JSON   | Read the MongoDB documentation for configurable options. [MongoDB Documentation](https://docs.mongodb.com/manual){:target="_blank"}                                             |
+    | Options       | JSON   | Read the MongoDB documentation for configurable options. [MongoDB Documentation](https://docs.mongodb.com/manual)                                                               |
     | Stop on Error | Toggle | Lets you configure whether to stop flow execution when an error occurs or not.                                                                                                  |
 
 ### Update Many
 
- [MongoDB Documentation: UpdateMany](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/){:target="_blank"}
+ [MongoDB Documentation: UpdateMany](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/)
 
 ### Insert
 
- [MongoDB Documentation:  Insert](https://docs.mongodb.com/manual/reference/method/db.collection.insert/){:target="_blank"}
+ [MongoDB Documentation:  Insert](https://docs.mongodb.com/manual/reference/method/db.collection.insert/)
 
 ### Remove
 
- [MongoDB Documentation: Remove](https://docs.mongodb.com/manual/reference/method/db.collection.remove/){:target="_blank"}
+ [MongoDB Documentation: Remove](https://docs.mongodb.com/manual/reference/method/db.collection.remove/)
 
 ### MongoDB Aggregate
 
- [MongoDB Documentation: Aggregate](https://docs.mongodb.com/manual/reference/method/db.collection.aggregate/){:target="_blank"}
+ [MongoDB Documentation: Aggregate](https://docs.mongodb.com/manual/reference/method/db.collection.aggregate/)

@@ -8,7 +8,7 @@ hidden: false
 # Resolve Tool Action
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/resolve-tool-action.png" width="45%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai/resolve-tool-action.png" width="45%" />
 </figure>
 
 ## Description

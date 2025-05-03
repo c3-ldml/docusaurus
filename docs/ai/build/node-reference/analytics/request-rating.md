@@ -11,7 +11,7 @@ import RatingUseCases from '@site/docs/_includes/ai/nodes/_rating.md';
 # Request Rating
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/request-rating.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/analytics/request-rating.png" width="50%" />
 </figure>
 
 ## Description
@@ -39,7 +39,7 @@ In contrast to the [Set Rating Node](set-rating.md), the Request Rating Node doe
     4. Click **Save**.
 
     <figure>
-      <img class="image-center" src="../../../../../_assets/ai/build/node-reference/request-rating-webchat.svg"/>
+      <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/request-rating-webchat.svg"/>
     </figure>
 
     Once the end user provides a rating, the rating value is stored as a variable in the Analytics database.

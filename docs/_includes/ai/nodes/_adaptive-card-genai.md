@@ -3,4 +3,4 @@
     3. Iteratively improve the resulting Adaptive Card by giving further instructions in the **Generate Node Output** section. For example, `Add a flight number field`.
     4. Click **Generate**. The existing adaptive card will be updated.
 
-    To navigate between your inputs, use ![back arrow](../../../../_assets/icons/back-arrow.svg) ![beta](../../../../_assets/icons/next-arrow.svg).
+    To navigate between your inputs, use ![back arrow](../../../../static/img/_assets/icons/back-arrow.svg) ![beta](../../../../static/img/_assets/icons/next-arrow.svg).

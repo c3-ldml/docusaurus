@@ -53,7 +53,7 @@ To build a chat AI Agent, follow these steps:
 7. Below the Question Node, add a Say Node. 
 8. Left-click the Say Node to open the Node editor. 
 9. In the Say Node editor, go to the **Text** field.
-10. In the **Text** field, enter `Hello` and click ![token](../../_assets/icons/token.svg).
+10. In the **Text** field, enter `Hello` and click ![token](../../../static/img/_assets/icons/token.svg).
 11. From the **Tokens** list, select **Answer**. This token lets reuse the user's answer in the AI Agent's response.
 12. Click **Save Node**.
 
@@ -63,12 +63,12 @@ Once your AI Agent is created, you can test it via the Interaction Panel.
 
 To test your AI Agent, follow these steps:
 
-1. In the existing Flow, open the Interaction Panel by clicking ![interaction-panel](../../_assets/icons/interaction-panel.svg) **Chat with your Agent** in the upper-right corner of the page. The Interaction panel appears on the right side of the Flow Editor.
+1. In the existing Flow, open the Interaction Panel by clicking ![interaction-panel](../../../static/img/_assets/icons/interaction-panel.svg) **Chat with your Agent** in the upper-right corner of the page. The Interaction panel appears on the right side of the Flow Editor.
 2. Initiate a conversation by entering `Hello` in the **Text Message** field and press **Enter**.
 3. Answer the AI Agent's question by entering your name. The AI Agent will greet you by your name.
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/overview/getting-started-chat.png" width="100%" />
+  <img class="image-center" src="../../../static/img/_assets/ai/overview/getting-started-chat.png" width="100%" />
 </figure>
 
 Now you can deploy the agent using the [Webchat v3](../../webchat/getting-started.md#create-an-endpoint) Endpoint, and see how conversations look on the production environment through Demo Webchat.

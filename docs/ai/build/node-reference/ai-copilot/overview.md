@@ -4,75 +4,96 @@ slug: "overview"
 hidden: false
 ---
 
+import {GridCards} from '@site/src/components/GridCards';
+
 # AI Copilot Nodes
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../../../release-notes/4.66.md)
 
 The AI Copilot Nodes allow users to customize the AI Copilot workspace by adding HTML, Adaptive Cards, and IFrame content.
 
-<div class="grid cards" style="text-align: center;" markdown>
-
--   :material-card-text:{ .lg .middle } __[Copilot: Adaptive Card Tile](set-adaptive-card-tile.md)__
-
-    ---
-
-    This Node allows you to create and display adaptive cards in your AI Copilot workspace.
-
--   :octicons-code-24:{ .lg .middle } __[Copilot: HTML Tile](set-html-tile.md)__
-
-    ---
-
-    This Node allows you to display customized HTML content in the AI Copilot workspace.
-
--   :material-shape-square-plus:{ .lg .middle } __[Copilot: IFrame Tile](set-iframe-tile.md)__
-
-    ---
-
-    This Node allows you to embed external websites directly into the AI Copilot workspace.
-
--   :material-account-card:{ .lg .middle } __[Copilot: Identity Tile](identity-tile.md)__
-
-    ---
-
-    This Node displays and processes customer-specific information directly within the widget of your AI Copilot workspace.
-
--   :material-book-open:{ .lg .middle } __[Copilot: Knowledge Tile](knowledge-tile.md)__
-
-    ---
-
-    This Node provides potential answers to human agents regarding customer questions.
-
--   :material-arrow-right-circle:{ .lg .middle } __[Copilot: Next Action Tile](next-action-tile.md)__
-
-    ---
-
-    This Node determines the appropriate next step or action in a conversation or process based on the user's input or the current context.
-
--   :material-send:{ .lg .middle } __[Copilot: Send Data](send-data.md)__
-
-    ---
-
-    This Node enables real-time updates of dynamic content to AI Copilot widgets without reloading the entire widget.
-
--   :material-emoticon:{ .lg .middle } __[Copilot: Sentiment Tile](sentiment-tile.md)__
-
-    ---
-
-    This Node performs sentiment analysis on the most recent input and provides insights into the emotional tone of the user.
-
--   :material-grid:{ .lg .middle } __[Copilot: Set Grid](set-grid.md)__
-
-    ---
-
-    This Node updates the AI Copilot workspace grid via an [API POST request](https://api-dev.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and provides a preview of the grid.
-
--   :material-text-box:{ .lg .middle } __[Copilot: Transcript Tile](transcript-tile.md)__
-
-    ---
-
-    This Node captures the most recent customer response and displays it on a designated widget in the AI Copilot workspace.
-
-</div>
+<GridCards items={[
+  {
+    icon: "📄",
+    title: "Copilot: Adaptive Card Tile",
+    description: "This Node allows you to create and display adaptive cards in your AI Copilot workspace.",
+    links: [
+      {text: "Documentation", href: "set-adaptive-card-tile.md"}
+    ]
+  },
+  {
+    icon: "🖥️",
+    title: "Copilot: HTML Tile",
+    description: "This Node allows you to display customized HTML content in the AI Copilot workspace.",
+    links: [
+      {text: "Documentation", href: "set-html-tile.md"}
+    ]
+  },
+  {
+    icon: "📱",
+    title: "Copilot: IFrame Tile",
+    description: "This Node allows you to embed external websites directly into the AI Copilot workspace.",
+    links: [
+      {text: "Documentation", href: "set-iframe-tile.md"}
+    ]
+  },
+  {
+    icon: "👤",
+    title: "Copilot: Identity Tile",
+    description: "This Node displays and processes customer-specific information directly within the widget of your AI Copilot workspace.",
+    links: [
+      {text: "Documentation", href: "identity-tile.md"}
+    ]
+  },
+  {
+    icon: "📚",
+    title: "Copilot: Knowledge Tile",
+    description: "This Node provides potential answers to human agents regarding customer questions.",
+    links: [
+      {text: "Documentation", href: "knowledge-tile.md"}
+    ]
+  },
+  {
+    icon: "➡️",
+    title: "Copilot: Next Action Tile",
+    description: "This Node determines the appropriate next step or action in a conversation or process based on the user's input or the current context.",
+    links: [
+      {text: "Documentation", href: "next-action-tile.md"}
+    ]
+  },
+  {
+    icon: "📤",
+    title: "Copilot: Send Data",
+    description: "This Node enables real-time updates of dynamic content to AI Copilot widgets without reloading the entire widget.",
+    links: [
+      {text: "Documentation", href: "send-data.md"}
+    ]
+  },
+  {
+    icon: "😊",
+    title: "Copilot: Sentiment Tile",
+    description: "This Node performs sentiment analysis on the most recent input and provides insights into the emotional tone of the user.",
+    links: [
+      {text: "Documentation", href: "sentiment-tile.md"}
+    ]
+  },
+  {
+    icon: "📊",
+    title: "Copilot: Set Grid",
+    description: "This Node updates the AI Copilot workspace grid via an API POST request and provides a preview of the grid.",
+    links: [
+      {text: "Documentation", href: "set-grid.md"}
+    ]
+  },
+  {
+    icon: "💬",
+    title: "Copilot: Transcript Tile",
+    description: "This Node captures the most recent customer response and displays it on a designated widget in the AI Copilot workspace.",
+    links: [
+      {text: "Documentation", href: "transcript-tile.md"}
+    ]
+  }
+]} />
 
 ## More Information
 

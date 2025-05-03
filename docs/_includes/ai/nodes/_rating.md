@@ -2,14 +2,7 @@
 
     The table shows use cases for Set Rating and Request Rating Nodes. These cases are divided into steps.
 
-    <style>
-        .comparison-table th,
-        .comparison-table td {
-            width: 50%;
-        }
-    </style>
-
-    <div class="comparison-table">
+    <div className="comparison-table">
 
     | Set Rating Node | Request Rating Node |
     |----------------|---------------------|

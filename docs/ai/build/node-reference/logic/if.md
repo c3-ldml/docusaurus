@@ -11,7 +11,7 @@ tags:
 # If
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/if.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/logic/if.png" width="50%" />
 </figure>
 
 ## Description
@@ -28,12 +28,12 @@ In the **Condition** field, use [CognigyScript](../../cognigyscript.md) without 
 
 The Rule editor allows you to quickly create simple conditions.
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/if-conditions.jpg" width="70%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/logic/if-conditions.jpg" width="70%" />
 </figure>
 
 ### Advanced Editor
 
 The Advanced editor allows you to write Conditions that go beyond one comparison.
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/if-conditions-rule.jpg" width="70%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/logic/if-conditions-rule.jpg" width="70%" />
 </figure>

@@ -10,7 +10,7 @@ import UnderstoodMessages from '@site/docs/_includes/ai/_understood-messages.md'
 # Overwrite Analytics
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/overwrite-analytics.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/analytics/overwrite-analytics.png" width="50%" />
 </figure>
 
 ## Description

@@ -23,12 +23,12 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "Say Node"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-in-node.png" width="80%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/say-in-node.png" width="80%" />
         </figure>
 
     === "Webchat"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-in-webchat.png" width="50%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/say-in-webchat.png" width="50%" />
         </figure>
 
 ??? info "Text with Quick Replies"
@@ -73,18 +73,18 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "Say Node"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-node-quick-replies.png" width="50%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/say-node-quick-replies.png" width="50%" />
           <figcaption>Quick Replies in Say Node</figcaption>
         </figure>
 
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-node-text-with-quick-reply.png" width="50%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/say-node-text-with-quick-reply.png" width="50%" />
           <figcaption>Quick Reply Detailed Settings</figcaption>
         </figure>
 
     === "Webchat"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/webchat-quick-reply-buttons.png" width="50%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/webchat-quick-reply-buttons.png" width="50%" />
         </figure>
 
 ??? info "Gallery"
@@ -146,19 +146,19 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
     === "Say Node"
         <div style="display: flex; justify-content: space-between;">
           <figure style="width: 30%;">
-            <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/gallery-say-node.png" width="80%" />
+            <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/gallery-say-node.png" width="80%" />
             <figcaption>Gallery in Say Node</figcaption>
           </figure>
 
           <figure style="width: 50%;">
-            <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/gallery-button-settings.png" width="50%" />
+            <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/gallery-button-settings.png" width="50%" />
             <figcaption>Gallery Button Settings</figcaption>
           </figure>
         </div>
 
     === "Webchat"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/gallery-web-chat.png" width="50%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/gallery-web-chat.png" width="50%" />
           <figcaption>Gallery in Webchat</figcaption>
         </figure>
 
@@ -211,19 +211,19 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
     === "Say Node"
         <div style="display: flex; justify-content: space-between;">
           <figure style="width: 30%;">
-            <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/buttons-in-editor-ai.png" width="100%" />
+            <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/buttons-in-editor-ai.png" width="100%" />
             <figcaption>Text with Buttons in Say Node</figcaption>
           </figure>
 
           <figure style="width: 50%;">
-            <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/text-with-buttons.png" width="60%" />
+            <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/text-with-buttons.png" width="60%" />
             <figcaption>Text with Buttons Detailed Settings</figcaption>
           </figure>
         </div>
 
     === "Webchat"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/test-with-buttons-in-web-chat.png" width="50%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/test-with-buttons-in-web-chat.png" width="50%" />
         </figure>
 
 ??? info "List"
@@ -309,19 +309,19 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
     === "Say Node"
         <div style="display: flex; justify-content: space-between;">
           <figure style="width: 50%;">
-            <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/edit-node-list.svg" width="60%" />
+            <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/edit-node-list.svg" width="60%" />
             <figcaption>List in Say Node</figcaption>
           </figure>
 
           <figure style="width: 50%;">
-            <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/say-list-option-order.svg" width="50%" />
+            <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/say-list-option-order.svg" width="50%" />
             <figcaption>List Say Node settings</figcaption>
           </figure>
         </div>
 
     === "Webchat"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/webchat-say-node-list-items.svg" width="80%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/webchat-say-node-list-items.svg" width="80%" />
         </figure>
 
 ??? info "Audio"
@@ -344,12 +344,12 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "Say Node"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audio-and-details-in-say-node.png" width="30%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/audio-and-details-in-say-node.png" width="30%" />
         </figure>
 
     === "Webchat"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/audio_in_webchat.png" width="50%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/audio_in_webchat.png" width="50%" />
         </figure>
 
 ??? info "Image"
@@ -372,12 +372,12 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "Say Node"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/image.png" width="30%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/image.png" width="30%" />
         </figure>
 
     === "Webchat"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/image-in-webchat.png" width="30%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/image-in-webchat.png" width="30%" />
         </figure>
 
 ??? info "Video"
@@ -400,12 +400,12 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "Say Node"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/video-in-say-node.png" width="30%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/video-in-say-node.png" width="30%" />
         </figure>
 
     === "Webchat"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/video_in_web_chat.png" width="50%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/video_in_web_chat.png" width="50%" />
         </figure>
 
 ??? info "Adaptive Card"
@@ -487,5 +487,5 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
 
     === "Webchat"
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/adaptive-card.png" width="60%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/adaptive-card.png" width="60%" />
         </figure>

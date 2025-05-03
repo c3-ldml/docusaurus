@@ -10,7 +10,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.84-blue.svg)](../../../../release-notes/4.84.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/basic/debug-message.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/basic/debug-message.png" width="50%" />
 </figure>
 
 ## Description

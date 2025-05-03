@@ -4,28 +4,35 @@ slug: "data"
 hidden: false
 ---
 
+import {GridCards} from '@site/src/components/GridCards';
+
 # Data
 
 Data Nodes are designed to manage, manipulate, process, or store data within a system.
 
-<div class="grid cards" style="text-align: center;" markdown>
-
--   :material-calendar:{ .lg .middle } __[Datepicker](datepicker.md)__
-
-    ---
-
-    The Datepicker Node renders a date selection widget in certain channels.
-
--   :material-email-fast:{ .lg .middle } __[Send SMTP Email](send-smtp-email.md)__
-
-    ---
-
-    The Send SMTP Email Node sends an email directly from the Flow.
-
--   :material-email-multiple:{ .lg .middle } __[Email Notification](email-notification.md)__
-
-    ---
-
-    The Email Notification Node sends quick and easy emails during sessions or for in-house communications.
-
-</div>
+<GridCards items={[
+  {
+    icon: "📅",
+    title: "Datepicker",
+    description: "The Datepicker Node renders a date selection widget in certain channels.",
+    links: [
+      {text: "Documentation", href: "datepicker.md"}
+    ]
+  },
+  {
+    icon: "📧",
+    title: "Send SMTP Email",
+    description: "The Send SMTP Email Node sends an email directly from the Flow.",
+    links: [
+      {text: "Documentation", href: "send-smtp-email.md"}
+    ]
+  },
+  {
+    icon: "📨",
+    title: "Email Notification",
+    description: "The Email Notification Node sends quick and easy emails during sessions or for in-house communications.",
+    links: [
+      {text: "Documentation", href: "email-notification.md"}
+    ]
+  }
+]} />

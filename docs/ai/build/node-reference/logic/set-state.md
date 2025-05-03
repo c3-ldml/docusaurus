@@ -12,7 +12,7 @@ tags:
 # Set State
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/set-state.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/logic/set-state.png" width="50%" />
 </figure>
 
 ## Description
@@ -59,7 +59,7 @@ To restore full Intent recognition to the default State, use the [Reset State](r
 Once you've configured the Flow, test it using the Interaction Panel to ensure everything works as expected.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/set-state-example.png" width="80%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/logic/set-state-example.png" width="80%" />
 </figure>
 
 ## More Information

@@ -36,7 +36,7 @@ Packages can include the following Project resources:
 ## Working with Packages
 
 === "GUI"
-     You can export and import Packages in **Manage > Packaging**. You can also export a resource as a Package from the respective resource page by selecting ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) **> Export as Package**.
+     You can export and import Packages in **Manage > Packaging**. You can also export a resource as a Package from the respective resource page by selecting ![vertical-ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Export as Package**.
 
 === "API"
      You can view, create, and delete Packages using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Packages) as well as download and upload them.

@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.48.0-blue.svg)](../../../../release-notes/4.48.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/gpt-conversation.png" width="80%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/other/gpt-conversation.png" width="80%" />
 </figure>
 
 ## Description
@@ -124,13 +124,13 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
          2. Enter `context.action` in the **Operator** field.<br></br>
          3. Click **Save Node**.
            <figure>
-           <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/gpt-conversation-lookup.png" width="80%" />
+           <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/other/gpt-conversation-lookup.png" width="80%" />
          </figure>
       4. Go to the Case of the Lookup Node:<br></br>
          1. Paste`checkAppointment` in the **Value** field.<br></br>
          2. Click **Save Node**.
        <figure>
-           <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/gpt-conversation-lookup-case.png" width="80%" />
+           <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/other/gpt-conversation-lookup-case.png" width="80%" />
          </figure>
       5. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
       6. Test this Flow via the Interaction Panel.
@@ -145,7 +145,7 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
          3. Select **exists** from the list.
          4. Click **Save Node**.
          <figure>
-           <img class="image-center" src="../../../../../_assets/ai/build/node-reference/other/gpt-conversation-if.png" width="80%" />
+           <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/other/gpt-conversation-if.png" width="80%" />
          </figure>
       4. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
       5. Test this Flow via the Interaction Panel.

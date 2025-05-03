@@ -11,7 +11,7 @@ import RatingUseCases from '@site/docs/_includes/ai/nodes/_rating.md';
 # Set Rating
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/set-rating.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/analytics/set-rating.png" width="50%" />
 </figure>
 
 ## Description

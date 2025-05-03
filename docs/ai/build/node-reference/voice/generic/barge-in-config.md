@@ -10,7 +10,7 @@ import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/
 # Barge In Config
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/generic-voice/barge-in-config.png" width="80%" />
+  <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/generic-voice/barge-in-config.png" width="80%" />
   <figcaption>Generic Barge In - Config Node</figcaption>
 </figure>
 

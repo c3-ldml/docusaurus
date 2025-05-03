@@ -25,7 +25,7 @@ A green arrow next to a Node indicates the Flow Entrypoint. The Entrypoint is wh
 The following image shows an overview of the Flow editor:
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/build/flows/flow-editor.png" width="70%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/build/flows/flow-editor.png" width="70%" />
 </figure>
 
 ??? info "1. Top Bar"
@@ -37,13 +37,13 @@ The following image shows an overview of the Flow editor:
     | Locale List     | List | Switch between Locales.                                                                                                                                                                                                                                                                                                                             |
     | Chart           | Tab  | Display the Flow chart.                                                                                                                                                                                                                                                                                                                             |
     | NLU             | Tab  | Display the NLU settings, where you can configure [Intents](../../empower/nlu/intents/ml-intents.md), [States](../../test/interaction-panel/state.md), [Slot Fillers](../../empower/nlu/slot-fillers.md), as well as attach [Flows](../../empower/nlu/overview.md#attached-flows) and [Lexicons](../../empower/nlu/slots-and-lexicons/lexicons.md). |
-    | Settings        | Tab  | Display the [Flow Settings](overview.md#settings), [Default Context](../../test/interaction-panel/context.md), and [Locale Settings](../translation-and-localization/localization.md).                                                                                                                                                                 |
+    | Settings        | Tab  | Display the [Flow Settings](overview.md#settings), [Default Context](../../test/interaction-panel/context.md), and [Locale Settings](../translation-and-localization/localization.md).                                                                                                                                                              |
 
 ??? info "2. Flow Chart"
-    |                       Button                       | Description                                                           |
-    |:--------------------------------------------------:|-----------------------------------------------------------------------|
-    | ![flow-plus](../../../_assets/icons/flow-plus.svg) | Click to add a new Node or [Extension](../extensions.md) to the Flow. |
-    |   ![comment](../../../_assets/icons/comment.svg)   | Click to see the comments in the Node.                                |
+    |                              Button                              | Description                                                           |
+    |:----------------------------------------------------------------:|-----------------------------------------------------------------------|
+    | ![flow-plus](../../../../static/img/_assets/icons/flow-plus.svg) | Click to add a new Node or [Extension](../extensions.md) to the Flow. |
+    |   ![comment](../../../../static/img/_assets/icons/comment.svg)   | Click to see the comments in the Node.                                |
 
     !!! note "Drag and Drop"
         The Flow editor supports drag and drop. To copy a Node, simply hold the ++alt++ or ++option++ while dragging the Node to another position.
@@ -52,12 +52,12 @@ The following image shows an overview of the Flow editor:
     |                             Control                              | Description                                                                                                                                                             |
     |:----------------------------------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |                         **-** and **+**                          | Zoom out (-) or in (+).                                                                                                                                                 |
-    |  ![flow-centralize](../../../_assets/icons/flow-centralize.svg)  | Centers the chart.                                                                                                                                                      |
-    | ![magnifying-glass](../../../_assets/icons/magnifying-glass.svg) | Search for Nodes in the Flow.                                                                                                                                           |
-    |     ![photo-camera](../../../_assets/icons/photo-camera.svg)     | Take a screenshot of the entire Flow and save it in PNG format. In the top left corner of each screenshot, the time of its creation and the Cognigy logo are displayed. |
-    |    ![voice-preview](../../../_assets/icons/voice-preview.svg)    | Test voice outputs without executing the entire Flow.                                                                                                                   |
-    |       ![arrow-back](../../../_assets/icons/arrow-back.svg)       | Undo the last step by going backward in history.                                                                                                                        |
-    |    ![arrow-forward](../../../_assets/icons/arrow-forward.svg)    | Redo the last steps by going forward in history.                                                                                                                        |
+    |  ![flow-centralize](../../../../static/img/_assets/icons/flow-centralize.svg)  | Centers the chart.                                                                                                                                                      |
+    | ![magnifying-glass](../../../../static/img/_assets/icons/magnifying-glass.svg) | Search for Nodes in the Flow.                                                                                                                                           |
+    |     ![photo-camera](../../../../static/img/_assets/icons/photo-camera.svg)     | Take a screenshot of the entire Flow and save it in PNG format. In the top left corner of each screenshot, the time of its creation and the Cognigy logo are displayed. |
+    |    ![voice-preview](../../../../static/img/_assets/icons/voice-preview.svg)    | Test voice outputs without executing the entire Flow.                                                                                                                   |
+    |       ![arrow-back](../../../../static/img/_assets/icons/arrow-back.svg)       | Undo the last step by going backward in history.                                                                                                                        |
+    |    ![arrow-forward](../../../../static/img/_assets/icons/arrow-forward.svg)    | Redo the last steps by going forward in history.                                                                                                                        |
 
 ## More Information
 

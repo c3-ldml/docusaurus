@@ -6,7 +6,7 @@ hidden: false
 # Close Handover
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/close-handover.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/services/close-handover.png" width="50%" />
 </figure>
 
 ## Description

@@ -15,7 +15,7 @@ import AdaptiveCardGenAI from '@site/docs/_includes/ai/nodes/_adaptive-card-gena
 [![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/basic/say.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/basic/say.png" width="50%" />
 </figure>
 
 ## Description
@@ -28,7 +28,7 @@ Additionally, you can enhance the existing output with [Generative AI](#ai-enhan
 
 ### Channels
 
-Depending on the current channel, additional rich media formats are available. Add a new channel output by clicking the ![add-channel](../../../../_assets/icons/add-channel.svg) icon and selecting the channel that corresponds to the [Endpoint](../../../deploy/endpoints/overview.md) that is deployed.
+Depending on the current channel, additional rich media formats are available. Add a new channel output by clicking the ![add-channel](../../../../../static/img/_assets/icons/add-channel.svg) icon and selecting the channel that corresponds to the [Endpoint](../../../deploy/endpoints/overview.md) that is deployed.
 
 Refer to the [available channels](../../nodes/channels.md).
 
@@ -43,7 +43,7 @@ Before configuration,
 
 ??? info "Text"
 
-    The **Text** output type renders text and emojis, if supported by the channel. The text field also supports [CognigyScript](../../cognigyscript.md) and [Tokens](../../tokens.md) that can be added by clicking ![token](../../../../_assets/icons/token.svg) at the end of each field.
+    The **Text** output type renders text and emojis, if supported by the channel. The text field also supports [CognigyScript](../../cognigyscript.md) and [Tokens](../../tokens.md) that can be added by clicking ![token](../../../../../static/img/_assets/icons/token.svg) at the end of each field.
 
     | Parameters | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
     |------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -316,14 +316,14 @@ Before configuration,
     To use this feature, follow these steps:
 
     1. Select the **Adaptive Card** output type.
-    2. On the right side of the **Output type** list, click ![Gen AI Icon](../../../../_assets/icons/beta.svg).
+    2. On the right side of the **Output type** list, click ![Gen AI Icon](../../../../../static/img/_assets/icons/beta.svg).
 
     <AdaptiveCardGenAI />
 
-    To replace the current Adaptive Card with a new one, click ![recycle bin](../../../../_assets/icons/recycle-bin.svg).
+    To replace the current Adaptive Card with a new one, click ![recycle bin](../../../../../static/img/_assets/icons/recycle-bin.svg).
 
     <figure>
-      <img class="image-center" src="../../../../../_assets/ai/build/node-reference/say/adaptive-card-type-generative-ai.png" width="40%" />
+      <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/say/adaptive-card-type-generative-ai.png" width="40%" />
     </figure>
 
     ??? info "Generative AI Adaptive Card JSON example"

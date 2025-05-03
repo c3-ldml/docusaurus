@@ -11,13 +11,13 @@ In Cognigy.AI's **Main** page, you can manage your Projects.
 
 The following image provides an overview of the **Main** page:
 
-<img src={require("../../_assets/ai/overview/user-interface/main-page.png").default} alt="Main Page" width="70%" />
+<img src={require("../../../static/img/_assets/ai/overview/user-interface/main-page.png").default} alt="Main Page" width="70%" />
 
 <CollapsibleSection title="1. Project List">
 
-    In the **Project List**, you can pin or unpin a Project by hovering over a Project, clicking the ![vertical-ellipsis](../../_assets/icons/vertical-ellipsis.svg) button, and selecting **Pin Project** or **Unpin Project**.
+    In the **Project List**, you can pin or unpin a Project by hovering over a Project, clicking the ![vertical-ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) button, and selecting **Pin Project** or **Unpin Project**.
 
-    The ![plus](../../_assets/icons/plus.svg) button opens the [Project Creation Wizard](../../build/projects.md).
+    The ![plus](../../../static/img/_assets/icons/plus.svg) button opens the [Project Creation Wizard](../../build/projects.md).
 
 </CollapsibleSection>
 
@@ -25,8 +25,8 @@ The following image provides an overview of the **Main** page:
 
 |                     Button                      | Description                                                                                                                                              |
 |:-----------------------------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      ![help](../../_assets/icons/help.svg)      | Opens the Help Center search widget, where you can search for answers to potential questions in the [Cognigy Help Center](https://support.cognigy.com/). |
-| ![user-menu](../../_assets/icons/user-menu.svg) | Opens the [User Menu](../../administer/user-menu/overview.md).                                                                                           |
+|      ![help](../../../static/img/_assets/icons/help.svg)      | Opens the Help Center search widget, where you can search for answers to potential questions in the [Cognigy Help Center](https://support.cognigy.com/). |
+| ![user-menu](../../../static/img/_assets/icons/user-menu.svg) | Opens the [User Menu](../../administer/user-menu/overview.md).                                                                                           |
 
 </CollapsibleSection>
 

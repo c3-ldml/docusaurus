@@ -11,7 +11,7 @@ tags:
 # Go To
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/logic/go-to.png" width="50%" />
+  <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/logic/go-to.png" width="50%" />
 </figure>
 
 ## Description
@@ -23,9 +23,9 @@ A **Go To Node** switches the conversation to another **Node** or **Flow**, whic
 
 ## Parameters
 
-| Parameter   | Description                                                                                                                                                                                                                                                                                                                                            |
-|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Select Flow | Select the target Flow that is switched to whenever the Flow execution triggers the **Go To** Node. To manually enter the Flow ID, click **Manual Input** and enter the Flow ID. Click ![target-flow](../../../../_assets/icons/target-flow.svg) to open the target Flow.                                                                              |
+| Parameter   | Description                                                                                                                                                                                                                                                                                                                                                      |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Select Flow | Select the target Flow that is switched to whenever the Flow execution triggers the **Go To** Node. To manually enter the Flow ID, click **Manual Input** and enter the Flow ID. Click ![target-flow](../../../../../static/img/_assets/icons/target-flow.svg) to open the target Flow.                                                                          |
 | Select Node | Select the target Node that is switched to whenever the Flow execution triggers the **Go To** Node. To manually enter the Node ID, click **Manual Input** and enter the Node ID. <br></br><br></br>A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use the [Set Entrypoint](../../nodes/overview.md) parameter. |
 
 ??? info "Advanced"

@@ -5,7 +5,7 @@ description: "xApp Nodes are used to create and manage xApp experiences."
 hidden: false
 ---
 
-import Pricing from '@site/docs/_includes/ai/xApp/pricing.md';
+import Pricing from '@site/docs/_includes/ai/xApp/_pricing.md';
 import {GridCards} from '@site/src/components/GridCards';
 
 # xApp

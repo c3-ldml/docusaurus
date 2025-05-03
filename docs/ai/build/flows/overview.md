@@ -32,7 +32,7 @@ You can also connect different [Flows](../../empower/nlu/attachments/attached-fl
 
     You can create Flows using [Generative AI](../../empower/generative-ai.md#generate-flows) to automatically generate Nodes with predefined configurations and content. For this approach, you need to add a [large language model](../../empower/generative-ai.md#prerequisites) (LLM).
 
-    To test Flows, click ![interaction-panel-icon](../../../_assets/icons/interaction-panel.svg) and use the [Interaction Panel](../../test/interaction-panel/overview.md).
+    To test Flows, click ![interaction-panel-icon](../../../../static/img/_assets/icons/interaction-panel.svg) and use the [Interaction Panel](../../test/interaction-panel/overview.md).
 
 === "API"
     You can view, create, and edit Flows using the [Cognigy API](https://api-dev.cognigy.ai/openapi#tag--Charts-v2.0).

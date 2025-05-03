@@ -12,7 +12,7 @@ tags:
 # DTMF
 
 <figure>
-  <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/dtmf.png" width="50%" />
+  <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/vg/dtmf.png" width="50%" />
 </figure>
 
 ## Description
@@ -70,7 +70,7 @@ To build a Flow with the DTMF Node for the previous example, follow these steps:
         4. Add a Handover to Agent Node to route the caller to the contact center.
 
         <figure>
-          <img class="image-center" src="../../../../../../_assets/ai/build/node-reference/vg/dtmf-example.png" width="80%" />
+          <img class="image-center" src="../../../../../../static/img/_assets/ai/build/node-reference/vg/dtmf-example.png" width="80%" />
         </figure>
 
     Test your Flow via the Interaction Panel. Use the [Voice Call](../../../../test/interaction-panel/overview.md#voice-call) setting.

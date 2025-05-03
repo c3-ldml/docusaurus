@@ -10,7 +10,7 @@ import Beta from '@site/docs/_includes/ai/_beta.md';
 # Add Memory
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/add-memory.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/analytics/add-memory.png" width="50%" />
 </figure>
 
 ## Description

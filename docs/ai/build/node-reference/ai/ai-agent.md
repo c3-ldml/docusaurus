@@ -19,7 +19,7 @@ import Beta from '@site/docs/_includes/ai/_beta.md';
 [![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../../release-notes/4.99.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai/ai-agent.png" width="60%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai/ai-agent.png" width="60%" />
 </figure>
 
 ## Description

@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../../release-notes/4.60.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/identity-tile.png" width="50%"/>
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/identity-tile.png" width="50%"/>
 </figure>
 
 ## Description
@@ -35,7 +35,7 @@ such as their name, account information, or preferences, directly within the cha
 This allows human agents to have contextually relevant discussions without the need to search for customer data in multiple tools.
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/ai-copilot/identity-assist-example.png" width="80%"/>
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/identity-assist-example.png" width="80%"/>
 </figure>
 
 ## More Information

@@ -13,7 +13,7 @@ tags:
 [![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/basic/question.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/basic/question.png" width="50%" />
 </figure>
 
 ## Description

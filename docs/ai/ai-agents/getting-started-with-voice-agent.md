@@ -81,13 +81,13 @@ Once the voice agent is created, you can test it using the Interaction Panel.
 
 To test your voice AI Agent, follow these steps:
 
-1. In the existing Flow, open the Interaction Panel by clicking ![interaction-panel](../../_assets/icons/interaction-panel.svg) **Chat with your Agent** in the upper-right corner of the page. The Interaction panel appears on the right side of the Flow Editor.
-2. Initiate a call by clicking ![phone](../../_assets/icons/phone.svg) **> Start Call** at the bottom of the Interaction Panel. 
-3. Listen to the message from the voice agent and then select either number 1 or 2 on the dial pad ![dialpad](../../_assets/icons/dialpad.svg) located in the bottom-right corner of the Interaction Panel.
+1. In the existing Flow, open the Interaction Panel by clicking ![interaction-panel](../../../static/img/_assets/icons/interaction-panel.svg) **Chat with your Agent** in the upper-right corner of the page. The Interaction panel appears on the right side of the Flow Editor.
+2. Initiate a call by clicking ![phone](../../../static/img/_assets/icons/phone.svg) **> Start Call** at the bottom of the Interaction Panel. 
+3. Listen to the message from the voice agent and then select either number 1 or 2 on the dial pad ![dialpad](../../../static/img/_assets/icons/dialpad.svg) located in the bottom-right corner of the Interaction Panel.
 4. The voice agent will respond with a voice message according to the number you selected, and then finish the conversation. If you want to listen to a specific voice output again, hover your cursor over the message in the Interaction Panel and click **Voice Preview**.
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/overview/getting-started-voice.png" width="100%" />
+  <img class="image-center" src="../../../static/img/_assets/ai/overview/getting-started-voice.png" width="100%" />
 </figure>
 
 To deploy your Flow in production, you will need to create a Voice Gateway Endpoint and set up a SIP Trunk provider.

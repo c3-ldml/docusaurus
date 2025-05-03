@@ -15,7 +15,7 @@ tags:
 [![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/check-agent-availability.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/services/check-agent-availability.png" width="50%" />
 </figure>
 
 ## Description
@@ -82,7 +82,7 @@ To build a Flow using the Check Agent Availability Node, follow these steps:
 
 1. In the Flow editor, add a **Check Agent Availability Node** and enter the required values. For example, for the Live Agent handover provider, you need to specify **Live Agent Inbox Id**, **Skills**, and **Languages** that help you sort available agents.
 2. Below the Check Agent Availability Node, add an IF Node and configure the **Condition** fields as follows:
-    1. Click ![token](../../../../_assets/icons/token.svg) and select the **Available Agents** Token.
+    1. Click ![token](../../../../../static/img/_assets/icons/token.svg) and select the **Available Agents** Token.
     2. Select **>**.
     3. Enter **0**.
 3. Below your **Then** child Node, add a **Handover to Agent** Node. Enter the required values for your handover provider. For example, for the Live Agent handover provider, you need to specify **Live Agent Inbox Id**, **Skills**, and **Languages** that help you route the conversation to available agents.
@@ -91,7 +91,7 @@ To build a Flow using the Check Agent Availability Node, follow these steps:
 To test your Flow, use [Demo Webchat](../../../../webchat/demo.md).
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/services/check-agent-availability-flow.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/services/check-agent-availability-flow.png" width="50%" />
 </figure>
 
 ## More Information

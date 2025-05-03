@@ -4,76 +4,96 @@ slug: "nodes-overview"
 hidden: false
 ---
 
+import {GridCards} from '@site/src/components/GridCards';
+
 # Node Reference
 
 This Node reference provides details about the [Nodes'](../nodes/overview.md) parameters to help you configure your [Flow](../flows/overview.md).
 
 ## Node Categories
 
-<div class="grid cards" style="text-align: center;" markdown>
-
--   :material-message-text:{ .lg .middle } __[Basic](basic/overview.md)__
-
-    ---
-
-    Use Basic Nodes for basic conversational Flows, for example, the [Say Node](basic/say.md) and the [Question Node](basic/question.md).
-
-
--   :material-code-braces:{ .lg .middle } __[Logic](logic/overview.md)__
-
-    ---
-
-    Use Logic Nodes to control the Flow execution, for example, the [If Node](logic/if.md) and the [Lookup Node](logic/lookup.md).
-
--   :material-microphone:{ .lg .middle } __[Voice](voice/overview.md)__
-
-    ---
-
-    Voice Nodes are for developing voice AI Agents.
-
--   :material-chart-line:{ .lg .middle } __[Analytics](analytics/overview.md)__
-
-    ---
-
-    Nodes for tracking and analyzing conversation data and taking advantage of Cognigy AI's comprehensive marketing functionality.
-
--   :material-cog:{ .lg .middle } __[Service](service/overview.md)__
-
-    ---
-
-    Use Service Nodes to trigger external services, like databases and email servers. Additional services can be added through [Extensions](../extensions.md).
-
--   :material-robot:{ .lg .middle } __[AI](ai/overview.md)__
-
-    ---
-
-    AI Nodes are a collection of Nodes for Cognigy.AI [NLU](../../empower/nlu/overview.md) and [Agentic AI](../../empower/agentic-ai/overview.md).
-
--   :material-database:{ .lg .middle } __[Data](data/overview.md)__
-
-    ---
-
-    Data Nodes are designed to manage, manipulate, process, or store data.
-
--   :material-account-tie:{ .lg .middle } __[AI Copilot](ai-copilot/overview.md)__
-
-    ---
-
-    Nodes for creating the AI Copilot workspace.
-
--   :material-application:{ .lg .middle } __[xApps](xApp/overview.md)__
-
-    ---
-
-    Nodes for creating xApps.
-
--   :material-dots-horizontal:{ .lg .middle } __[Other](other-nodes/overview.md)__
-
-    ---
-
-    Additional specialized Nodes.
-
-</div>
+<GridCards items={[
+  {
+    icon: "💬",
+    title: "Basic",
+    description: "Use Basic Nodes for basic conversational Flows, for example, the Say Node and the Question Node.",
+    links: [
+      {text: "Documentation", href: "basic/overview.md"}
+    ]
+  },
+  {
+    icon: "🔀",
+    title: "Logic",
+    description: "Use Logic Nodes to control the Flow execution, for example, the If Node and the Lookup Node.",
+    links: [
+      {text: "Documentation", href: "logic/overview.md"}
+    ]
+  },
+  {
+    icon: "🎤",
+    title: "Voice",
+    description: "Voice Nodes are for developing voice AI Agents.",
+    links: [
+      {text: "Documentation", href: "voice/overview.md"}
+    ]
+  },
+  {
+    icon: "📊",
+    title: "Analytics",
+    description: "Nodes for tracking and analyzing conversation data and taking advantage of Cognigy AI's comprehensive marketing functionality.",
+    links: [
+      {text: "Documentation", href: "analytics/overview.md"}
+    ]
+  },
+  {
+    icon: "⚙️",
+    title: "Service",
+    description: "Use Service Nodes to trigger external services, like databases and email servers. Additional services can be added through Extensions.",
+    links: [
+      {text: "Documentation", href: "service/overview.md"}
+    ]
+  },
+  {
+    icon: "🤖",
+    title: "AI",
+    description: "AI Nodes are a collection of Nodes for Cognigy.AI NLU and Agentic AI.",
+    links: [
+      {text: "Documentation", href: "ai/overview.md"}
+    ]
+  },
+  {
+    icon: "🗄️",
+    title: "Data",
+    description: "Data Nodes are designed to manage, manipulate, process, or store data.",
+    links: [
+      {text: "Documentation", href: "data/overview.md"}
+    ]
+  },
+  {
+    icon: "👤",
+    title: "AI Copilot",
+    description: "Nodes for creating the AI Copilot workspace.",
+    links: [
+      {text: "Documentation", href: "ai-copilot/overview.md"}
+    ]
+  },
+  {
+    icon: "📱",
+    title: "xApps",
+    description: "Nodes for creating xApps.",
+    links: [
+      {text: "Documentation", href: "xApp/overview.md"}
+    ]
+  },
+  {
+    icon: "🔍",
+    title: "Other",
+    description: "Additional specialized Nodes.",
+    links: [
+      {text: "Documentation", href: "other-nodes/overview.md"}
+    ]
+  }
+]} />
 
 If you want to create a custom Node, go to the [Extensions](../extensions.md) section.
 

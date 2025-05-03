@@ -5,12 +5,12 @@ description: "The Deactivate Profile Node is used to deactivate a specific Conta
 hidden: false 
 ---
 
-import ProfileNodeUseCase from '@site/docs/_includes/ai/node-reference/analytics/profile-node-use-case.md';
+import ProfileNodeUseCase from '@site/docs/_includes/ai/node-reference/analytics/_profile-node-use-case.md';
 
 # Deactivate Profile
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/build/node-reference/analytics/deactivate-profile.png" width="50%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/analytics/deactivate-profile.png" width="50%" />
 </figure>
 
 ## Description
