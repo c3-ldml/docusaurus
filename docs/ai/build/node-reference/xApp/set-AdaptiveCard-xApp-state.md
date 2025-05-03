@@ -5,9 +5,9 @@ description: "The Set AdaptiveCard xApp State Node is used to set the state of a
 hidden: false
 ---
 
-import CustomNode from '@site/docs/_includes/ai/xApp/custom-node.md';
-import WaitingBehavior from '@site/docs/_includes/ai/xApp/waiting-behavior.md';
-import Overlay from '@site/docs/_includes/ai/xApp/overlay.md';
+import CustomNode from '@site/docs/_includes/ai/xApp/_custom-node.md';
+import WaitingBehavior from '@site/docs/_includes/ai/xApp/_waiting-behavior.md';
+import Overlay from '@site/docs/_includes/ai/xApp/_overlay.md';
 
 # Set AdaptiveCard xApp State
 

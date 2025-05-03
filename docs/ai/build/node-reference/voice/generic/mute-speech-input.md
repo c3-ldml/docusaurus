@@ -4,7 +4,7 @@ slug: "mute-speech-input"
 description: "The Generic Mute Speech Input Node allows you to control when speech input is collected in your Flow, preventing interruptions and ensuring a smoother conversation experience, especially in xApp Flows. By enabling or disabling speech gathering as needed, you can maintain better control and create a seamless workflow in your application."
 hidden: false
 ---
-import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 import MuteSpeechInput from '@site/docs/_includes/ai/nodes/_mute-speech-input.md';
 
 # Mute Speech Input

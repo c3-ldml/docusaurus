@@ -3,9 +3,9 @@ title: "xApp: Show HTML"
 slug: "Set-HTML-xApp-State"
 hidden: false
 ---
-import CustomNode from '@site/docs/_includes/ai/nodes/_custom-node.md';
-import WaitingBehavior from '@site/docs/_includes/ai/nodes/_waiting-behavior.md';
-import Overlay from '@site/docs/_includes/ai/nodes/_overlay.md';
+import CustomNode from '@site/docs/_includes/ai/xApp/_custom-node.md';
+import WaitingBehavior from '@site/docs/_includes/ai/xApp/_waiting-behavior.md';
+import Overlay from '@site/docs/_includes/ai/xApp/_overlay.md';
 
 # xApp: Show HTML
 

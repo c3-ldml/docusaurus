@@ -5,7 +5,7 @@ description: "The Transfer VG Node is used to transfer a voice conversation to a
 hidden: false
 ---
 
-import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 
 # Transfer VG
 

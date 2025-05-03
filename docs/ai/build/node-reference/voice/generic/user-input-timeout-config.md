@@ -5,7 +5,7 @@ description: "The User Input Timeout Config Node is used to configure timeout se
 hidden: false
 ---
 
-import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 
 # User Input Timeout Config
 

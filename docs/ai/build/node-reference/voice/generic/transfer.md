@@ -5,7 +5,7 @@
  description: "The Transfer Node is used to transfer a voice conversation to another destination."
 ---
 
-import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 
 # Transfer
 

@@ -5,7 +5,7 @@ description: "The DTMF Collect Config Node is used to configure DTMF collection 
 hidden: false
 ---
 
-import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 
 # DTMF Collect Config
 

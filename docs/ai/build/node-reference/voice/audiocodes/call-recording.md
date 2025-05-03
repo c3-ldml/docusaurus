@@ -5,7 +5,7 @@ description: "The Call Recording Node is used to control call recording in Audio
 hidden: false
 ---
 
-import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 
 # Call Recording
 

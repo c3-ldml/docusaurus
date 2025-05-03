@@ -5,7 +5,7 @@ description: "The Send Metadata Node is used to send metadata in a voice convers
 hidden: false
 ---
 
-import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/ac-and-generic-node-deprecation.md';
+import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 
 # Send Metadata
 
