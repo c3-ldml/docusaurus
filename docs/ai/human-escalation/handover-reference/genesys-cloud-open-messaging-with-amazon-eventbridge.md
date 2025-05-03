@@ -53,7 +53,7 @@ The configuration depends on the Cognigy installation you have:
         - **Event Source Suffix** – enter the `organisationId` of your Cognigy.AI organization.
         - **Topic Filtering** – add the following filters:
             - `v2.detail.events.conversation.{id}.user.end`
-            - `v2.detail.events.conversation.{id}.acw`<br>
+            - `v2.detail.events.conversation.{id}.acw`<br />
         Save changes and make sure that your integration is active.
     3. Click **Save**, go to the **Details** tab, and activate the integration.
 
@@ -104,9 +104,9 @@ The configuration depends on the Cognigy installation you have:
         ```json
         {"source": [{"prefix": ""}]}
         ```
-    6. At the **Select target(s)** step, proceed as follows:<br>
-        6.1 Select **EventBridge API destination** in the **Target types** section.<br>
-        6.2 In the **API destination** section, select **Use an existing API destination**.<br>
+    6. At the **Select target(s)** step, proceed as follows:<br />
+        6.1 Select **EventBridge API destination** in the **Target types** section.<br />
+        6.2 In the **API destination** section, select **Use an existing API destination**.<br />
         6.3 In the **Execution role** section, create a role that uniquely identifies this integration, for example, `Amazon_EventBridge_Invoke_API_Destination_Genesys_Integration`.
     7. Skip the Configure tags step. At the **Review and create** step, complete the configuration.
 

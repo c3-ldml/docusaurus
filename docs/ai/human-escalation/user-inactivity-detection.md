@@ -61,15 +61,15 @@ To use this feature, add Nodes to your Flow, then test your Flow via Demo Webcha
         <figure>
             <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/2-handover-lookup.png" width="100%" />
         </figure>
-    3. Go to the child Nodes:<br>
-        1. Click the **Case** Node.<br>
-        2. In the **Value** field, specify the `active` handover status if you want to detect and handle inactivity while the end users are in the queue. Save changes.<br>
+    3. Go to the child Nodes:<br />
+        1. Click the **Case** Node.<br />
+        2. In the **Value** field, specify the `active` handover status if you want to detect and handle inactivity while the end users are in the queue. Save changes.<br />
         <figure>
             <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/3-handover-child-lookup.png" width="100%" />
         </figure>
-        3. Click the second **Case** Node.<br>
-        4. In the **Value** field, specify the `queue` handover status if you want to detect and handle inactivity while the end users are in the queue.<br>
-        5. Click **Save Node**.<br>
+        3. Click the second **Case** Node.<br />
+        4. In the **Value** field, specify the `queue` handover status if you want to detect and handle inactivity while the end users are in the queue.<br />
+        5. Click **Save Node**.<br />
         <figure>
             <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/4-handover-second-child-lookup.png" width="100%" />
         </figure>
@@ -106,16 +106,16 @@ To use this feature, add Nodes to your Flow, then test your Flow via Demo Webcha
 
     1. Add the **If** Node at the end of the Flow.
     2. In the Node editor, specify `input.handover.inactivityCount >= 2`. This allows handling the second detected inactivity differently from the first one. Note that the `input.handover.inactivityCount` is reset to 0 once the end user sends a message.
-    3. Below the **If** Node and its **Else** child Node, do the following to ask the end user, based on detected inactivity, if he is still there.<br>
-        1. Add the **Say** Node.<br>
-        2. In the **Say** Node editor, in the text field, specify `Are you still there? The conversation will be automatically closed soon`. <br>
-        3. In **Handover Settings > Handover Output Destination**, select **User** to only show the message to the user and not the human agent. Save changes.<br>
-        4. Add the **Set Handover Inactivity** Node to start a subsequent inactivity timer.<br> If the inactivity count is greater than two, it triggers the close handover process, which can close the handover on both the user and human agent sides.
-    4. Below the **If** Node and its **Then** child Node, do the following to auto-close the handover after the inactivity timer expired the second time in direct succession:<br>
-        1. Add the **Close Handover** Node to auto-close the handover.<br>
-        2. Add the **Say** Node.<br>
-        3. In the **Say** Node editor, in the text field, specify `You are back with the bot now!`.<br>
-        4. In **Handover Settings > Handover Output Destination**, select **User and Agent**. Save changes.<br> If the inactivity count is less than two, it triggers prompt the user to respond to prevent the conversation from being automatically closed. The Set Handover Inactivity Node will set the time period for inactivity after which the conversation will be closed or restart a Flow from the beginning.
+    3. Below the **If** Node and its **Else** child Node, do the following to ask the end user, based on detected inactivity, if he is still there.<br />
+        1. Add the **Say** Node.<br />
+        2. In the **Say** Node editor, in the text field, specify `Are you still there? The conversation will be automatically closed soon`. <br />
+        3. In **Handover Settings > Handover Output Destination**, select **User** to only show the message to the user and not the human agent. Save changes.<br />
+        4. Add the **Set Handover Inactivity** Node to start a subsequent inactivity timer.<br /> If the inactivity count is greater than two, it triggers the close handover process, which can close the handover on both the user and human agent sides.
+    4. Below the **If** Node and its **Then** child Node, do the following to auto-close the handover after the inactivity timer expired the second time in direct succession:<br />
+        1. Add the **Close Handover** Node to auto-close the handover.<br />
+        2. Add the **Say** Node.<br />
+        3. In the **Say** Node editor, in the text field, specify `You are back with the bot now!`.<br />
+        4. In **Handover Settings > Handover Output Destination**, select **User and Agent**. Save changes.<br /> If the inactivity count is less than two, it triggers prompt the user to respond to prevent the conversation from being automatically closed. The Set Handover Inactivity Node will set the time period for inactivity after which the conversation will be closed or restart a Flow from the beginning.
 
     <figure>
        <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/7-handover-if.png" width="100%" />

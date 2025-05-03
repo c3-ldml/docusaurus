@@ -102,15 +102,15 @@ The AI Agent detects the user's location and suggests switching to their preferr
 Also, the AI Agent recognizes that the user is in Salzburg and provides location-based options,
 such as picking up the product in Vienna or arranging delivery to Salzburg.
 
-**End User:** With the first message, the user asks for product information. Example: `Hi, I'd like to know if you have product XYZ in stock`.<br></br>
-**AI Agent:** With the first user input, the AI Agent receives the `_webchat3Metadata` object and extracts data from it. Based on the received data, the AI Agent asks a clarifying question. Example: `One moment, please. I'll check that for you. I see your location is Salzburg, Austria. Do you want to switch to German?`<br></br>
-**End User:** The user confirms switching to another language. Example: `Yes, please`.<br></br>
-**AI Agent:** The AI Agent switches the language to German (Austrian). Example: `Einen Moment bitte, ich überprüfe das für Sie`.<br></br>
-**AI Agent:** Based on the user's geolocation (the user is in Salzburg), the AI Agent offers options to the user. Example: `Leider ist das Produkt XYZ derzeit nicht in Salzburg verfügbar. Sie können es jedoch in Wien abholen oder eine Lieferung nach Salzburg arrangieren. Was bevorzugen Sie?`<br></br>
-**End User:** The user makes a choice. Example: `Ich würde es gerne geliefert bekommen`.<br></br>
-**AI Agent:** The AI Agent confirms the option and provides further details. Example: `Kein Problem! Ich habe eine Lieferung des Produkts XYZ nach Salzburg für Sie eingeleitet. Sie sollten es innerhalb von 3-5 Werktagen erhalten. Möchten Sie die Bestellung jetzt abschließen?`<br></br>
-**End User**: The user confirms the option. Example: `Ja, bitte`.<br></br>
-**AI Agent:** The AI Agent completes the order. Example: `Super! Ihre Bestellung für das Produkt XYZ wird nach Salzburg geliefert. Sie erhalten eine Bestätigung per E-Mail`.<br></br>
+**End User:** With the first message, the user asks for product information. Example: `Hi, I'd like to know if you have product XYZ in stock`.<br />
+**AI Agent:** With the first user input, the AI Agent receives the `_webchat3Metadata` object and extracts data from it. Based on the received data, the AI Agent asks a clarifying question. Example: `One moment, please. I'll check that for you. I see your location is Salzburg, Austria. Do you want to switch to German?`<br />
+**End User:** The user confirms switching to another language. Example: `Yes, please`.<br />
+**AI Agent:** The AI Agent switches the language to German (Austrian). Example: `Einen Moment bitte, ich überprüfe das für Sie`.<br />
+**AI Agent:** Based on the user's geolocation (the user is in Salzburg), the AI Agent offers options to the user. Example: `Leider ist das Produkt XYZ derzeit nicht in Salzburg verfügbar. Sie können es jedoch in Wien abholen oder eine Lieferung nach Salzburg arrangieren. Was bevorzugen Sie?`<br />
+**End User:** The user makes a choice. Example: `Ich würde es gerne geliefert bekommen`.<br />
+**AI Agent:** The AI Agent confirms the option and provides further details. Example: `Kein Problem! Ich habe eine Lieferung des Produkts XYZ nach Salzburg für Sie eingeleitet. Sie sollten es innerhalb von 3-5 Werktagen erhalten. Möchten Sie die Bestellung jetzt abschließen?`<br />
+**End User**: The user confirms the option. Example: `Ja, bitte`.<br />
+**AI Agent:** The AI Agent completes the order. Example: `Super! Ihre Bestellung für das Produkt XYZ wird nach Salzburg geliefert. Sie erhalten eine Bestätigung per E-Mail`.<br />
 
 ## More Information
 

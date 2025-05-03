@@ -9,6 +9,10 @@ tags:
   - handover provider
 ---
 
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Chatwoot
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../release-notes/4.97.md)
@@ -32,7 +36,7 @@ Cognigy.AI supports Chatwoot API v1.19.0, custom agent bot names and description
 - Created Endpoint [compatible with Chatwoot](../../deploy/endpoints/handover-settings.md#endpoints-compatible-with-handover-providers).
 - You need two IDs that are listed in the Chatwoot address line:
     - **Account ID** — a unique identifier assigned to you as the user.
-    - **Inbox ID** — not unique and is created again for each channel.<br>
+    - **Inbox ID** — not unique and is created again for each channel.<br />
     Both IDs are required to use the new Inbox channel. You can find them in your Chatwoot URL. For example, `https://app.chatwoot.com/app/account/6607/inbox/5446`, where the Account ID is `6607` and the Inbox ID is `5446`.
 
 ## Configuration on the Handover Provider Side
@@ -62,20 +66,23 @@ Cognigy.AI supports Chatwoot API v1.19.0, custom agent bot names and description
 
 ## Configuration on the Cognigy.AI Side
 
-??? info "1. Create a Handover Connector (Beta)"
+<CollapsibleSection title="1. Create a Handover Connector (Beta)">
 
-    !!! note
-        This feature is in Beta. We encourage you to try it out and provide us with feedback.
-  
-     To link your Cognigy.AI Endpoint to Chatwoot:
+  !!! note
+      This feature is in Beta. We encourage you to try it out and provide us with feedback.
 
-    1. Go to **Deploy > Handover Providers**. 
-    2. Click **+ New Handover Provider** and select **Chatwoot** as the handover provider. 
-    3. Enter the **Base URL** for your Chatwoot instance, which is your Chatwoot installation URL extended with `/api/v1`, for example, `https://app.chatwoot.com/api/v1`. For on-premises setups, use your custom Chatwoot API URL. 
-    4. Provide the Chatwoot **Account ID**.
-    5. Enter the Chatwoot **API Key**.
-    6. Click **Save** to store the configuration.
-    7. Test the setup by clicking **Open Webchat** and initiating a conversation that triggers a handover.
+   To link your Cognigy.AI Endpoint to Chatwoot:
+
+  1. Go to **Deploy > Handover Providers**. 
+  2. Click **+ New Handover Provider** and select **Chatwoot** as the handover provider. 
+  3. Enter the **Base URL** for your Chatwoot instance, which is your Chatwoot installation URL extended with `/api/v1`, for example, `https://app.chatwoot.com/api/v1`. For on-premises setups, use your custom Chatwoot API URL. 
+  4. Provide the Chatwoot **Account ID**.
+  5. Enter the Chatwoot **API Key**.
+  6. Click **Save** to store the configuration.
+  7. Test the setup by clicking **Open Webchat** and initiating a conversation that triggers a handover.
+
+</CollapsibleSection>
+
 
 ??? info "2. Add a Handover to Agent Node"
     To specify the Chatwoot Inbox for the handover:

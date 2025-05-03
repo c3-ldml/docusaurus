@@ -51,7 +51,7 @@ Select one of these modes:
 | Company Description | CognigyScript | Company's current activities: What is your company doing?                                                                                                                                                                                                                                                                            |
 | Bot Name            | CognigyScript | The name of the AI Agent.                                                                                                                                                                                                                                                                                                            |
 | Character           | Text          | The character traits of the AI Agent. For example, is the AI Agent `professional` or `patient`? Enter phrases that describe your agent's personality.                                                                                                                                                                                |
-| Strictness          | Select        | The level of adherence expected from the AI Agent regarding the task: <br/> - Trivia and small talk — including trivia and small talk. <br></br> - Stick to the task — strictly sticking to the task. <br></br> - Some small talk — incorporating some small talk. <br></br> - Complete free style — engaging in completely free-form conversation. |
+| Strictness          | Select        | The level of adherence expected from the AI Agent regarding the task: <br/> - Trivia and small talk — including trivia and small talk. <br /> - Stick to the task — strictly sticking to the task. <br /> - Some small talk — incorporating some small talk. <br /> - Complete free style — engaging in completely free-form conversation. |
 
 ### Task Settings
 
@@ -72,9 +72,9 @@ Grounding Knowledge is the foundational information that the AI Agent has access
 
 | Parameter           | Type                 | Description                                                                                                                                                                                                                                                                                                                                                                        |
 |---------------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grounding Mode      | Select               | Choose how grounding knowledge is acquired. The following modes are available: <br></br> - **Perform Knowledge Search** — retrieves data from the specific Knowledge Store.<br></br> - **Enter Custom Grounding Knowledge** — retrieves data from the knowledge you provided in the **Grounding Knowledge** field.<br></br> - **Do not inject grounding knowledge** — deactivates grounding mode. |
-| Knowledge Store     | Select/CognigyScript | This field appears if you selected the **Perform Knowledge Search** grounding mode. <br></br><br></br>Select the Knowledge Store to use. You can add a value manually using CognigyScript.                                                                                                                                                                                                   |
-| Grounding Knowledge | CognigyScript        | This field appears if you selected the **Enter Custom Grounding Knowledge** grounding mode. <br></br><br></br>Custom definable knowledge helping the AI Agent to build a factual response.                                                                                                                                                                                                   |
+| Grounding Mode      | Select               | Choose how grounding knowledge is acquired. The following modes are available: <br /> - **Perform Knowledge Search** — retrieves data from the specific Knowledge Store.<br /> - **Enter Custom Grounding Knowledge** — retrieves data from the knowledge you provided in the **Grounding Knowledge** field.<br /> - **Do not inject grounding knowledge** — deactivates grounding mode. |
+| Knowledge Store     | Select/CognigyScript | This field appears if you selected the **Perform Knowledge Search** grounding mode. <br /><br />Select the Knowledge Store to use. You can add a value manually using CognigyScript.                                                                                                                                                                                                   |
+| Grounding Knowledge | CognigyScript        | This field appears if you selected the **Enter Custom Grounding Knowledge** grounding mode. <br /><br />Custom definable knowledge helping the AI Agent to build a factual response.                                                                                                                                                                                                   |
 | Injected Slots      | CognigyScript        | Slots you want to send to the AI Agent. They will be appended to the user input.                                                                                                                                                                                                                                                                                                   |
 
 ### Advanced
@@ -124,15 +124,15 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
 
       1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it. 
       2. After the GPT Conversation Node, add the **Lookup** Node. 
-      3. Go to the **Lookup** Node:<br></br>
-         1. Select **CognigyScript** from the **Type** list.<br></br>
-         2. Enter `context.action` in the **Operator** field.<br></br>
+      3. Go to the **Lookup** Node:<br />
+         1. Select **CognigyScript** from the **Type** list.<br />
+         2. Enter `context.action` in the **Operator** field.<br />
          3. Click **Save Node**.
            <figure>
            <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/other/gpt-conversation-lookup.png" width="80%" />
          </figure>
-      4. Go to the Case of the Lookup Node:<br></br>
-         1. Paste`checkAppointment` in the **Value** field.<br></br>
+      4. Go to the Case of the Lookup Node:<br />
+         1. Paste`checkAppointment` in the **Value** field.<br />
          2. Click **Save Node**.
        <figure>
            <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/other/gpt-conversation-lookup-case.png" width="80%" />
@@ -144,9 +144,9 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
 
       1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it.
       2. After the GPT Conversation Node, add the IF Node.
-      3. Go to the **IF** Node:<br></br>
-         1. Select **CognigyScript** from the **Type** list.<br></br>
-         2. Enter `context.action === "checkAppointment"` in the **Condition** field.<br></br>
+      3. Go to the **IF** Node:<br />
+         1. Select **CognigyScript** from the **Type** list.<br />
+         2. Enter `context.action === "checkAppointment"` in the **Condition** field.<br />
          3. Select **exists** from the list.
          4. Click **Save Node**.
          <figure>

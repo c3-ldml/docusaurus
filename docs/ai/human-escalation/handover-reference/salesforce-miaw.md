@@ -11,6 +11,14 @@ tags:
    - salesforce messaging for in-app and web
 ---
 
+import UrlPattern from '@site/docs/_includes/ai-copilot/_url-pattern.md';
+
+
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Salesforce MIAW
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.100-blue.svg)](../../../release-notes/4.100.md)
@@ -101,22 +109,25 @@ enabling end users to connect with human agents working in a contact center that
 
 ## Configuration on the Cognigy.AI Side
 
-??? info "1. Create a Handover Connector (Beta)"
+<CollapsibleSection title="1. Create a Handover Connector (Beta)">
 
-    !!! note 
-        This feature is in Beta. We encourage you to try it out and provide us with feedback.
+  !!! note 
+      This feature is in Beta. We encourage you to try it out and provide us with feedback.
 
-    1. Go to **Build > Handover Providers** and click **+ New Handover Provider**.
-    2. In the **New Handover Provider** window, select **Salesforce MIAW** from the list and name the connector.
-    3. _(Optional)_ Activate the **Forward Events to the Flow** setting. This setting forwards any event to the Flow, which can be handled in the Lookup Node. Select the **Handover Status** type in the Lookup Node. In the Case Node, select **Events** from the **Handover Status** list. Agent Replies and Conversation Closed events are not forwarded.
-    4. Fill in the following fields:
+  1. Go to **Build > Handover Providers** and click **+ New Handover Provider**.
+  2. In the **New Handover Provider** window, select **Salesforce MIAW** from the list and name the connector.
+  3. _(Optional)_ Activate the **Forward Events to the Flow** setting. This setting forwards any event to the Flow, which can be handled in the Lookup Node. Select the **Handover Status** type in the Lookup Node. In the Case Node, select **Events** from the **Handover Status** list. Agent Replies and Conversation Closed events are not forwarded.
+  4. Fill in the following fields:
 
-    | **Field**                       | **Description**                                                                         |
-    |---------------------------------|-----------------------------------------------------------------------------------------|
-    | Base URL                        | The URL of your configured service in Salesforce, copied from `Url`.                    |
-    | Organization ID                 | The unique identifier of your organization in Salesforce, copied from `OrganizationId`. |
-    | Embedded Service Developer Name | The ID of your deployment in Salesforce, copied from `DeveloperName`.                   |
-    | Capabilities Version            | The API version is `1`.                                                                 |
+  | **Field**                       | **Description**                                                                         |
+  |---------------------------------|-----------------------------------------------------------------------------------------|
+  | Base URL                        | The URL of your configured service in Salesforce, copied from `Url`.                    |
+  | Organization ID                 | The unique identifier of your organization in Salesforce, copied from `OrganizationId`. |
+  | Embedded Service Developer Name | The ID of your deployment in Salesforce, copied from `DeveloperName`.                   |
+  | Capabilities Version            | The API version is `1`.                                                                 |
+
+</CollapsibleSection>
+
 
 ??? info "2. Add a Handover to Agent Node"
     In the **Salesforce Settings** section of the [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node, configure the following settings:
@@ -136,7 +147,7 @@ Within the Salesforce MIAW integration, you can use the [AI Copilot workspace](.
 By default, two versions of the application are provided:
 
 ??? info "Standalone"
-    AI Copilot will be available as a standalone application via the following link: {! _includes/ai-copilot/url-pattern.md !}
+    AI Copilot will be available as a standalone application via the following link: <UrlPattern />
 
 ??? info "Embedded"
     To use the embedded version of the AI Copilot workspace, you need to update the settings on the Salesforce side and configure the AI Copilot UI components.
@@ -152,7 +163,7 @@ By default, two versions of the application are provided:
         4. In the **Parameter Mappings** section, click **New**.
         5. In the **New Parameter Mapping** window, configure the following parameters:
             - **Parameter** — select **Copilot URL** that was added under **Custom Parameters**.
-            - **Flow Variable Name** — enter `copilotUrl`. <br> Save changes.
+            - **Flow Variable Name** — enter `copilotUrl`. <br /> Save changes.
 
     ??? info "2. Update Embedded Service Deployments"
         1. In the **Quick Find** box, enter **Embedded Service Deployments** and follow the **Feature Settings > Service > Messaging** path.
@@ -161,7 +172,7 @@ By default, two versions of the application are provided:
         4. Go to the **Visible Pre-Chat Fields** section, click **Add > Custom**.
         5. In the **New Custom** window, fill in the following fields:
             - **Field Type** — select **text**.
-            - **Channel Variable Name** — select `Copilot_URL` that you added in **Messaging Settings** previously. <br> Save changes. 
+            - **Channel Variable Name** — select `Copilot_URL` that you added in **Messaging Settings** previously. <br /> Save changes. 
         6. Click **Save**. On the **Embedded Service Deployment Settings** page, click **Publish**.
 
     ??? info "3. Update the Flow"

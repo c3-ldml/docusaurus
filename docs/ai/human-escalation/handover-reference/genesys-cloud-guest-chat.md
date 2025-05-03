@@ -4,6 +4,15 @@ slug: "genesys-cloud-guest-chat"
 hidden: false 
 ---
 
+import FilterTranscriptMessages from '@site/docs/_includes/ai/providers/genesys/_filter-transcript-messages.md';
+import UrlPattern from '@site/docs/_includes/ai-copilot/_url-pattern.md';
+
+
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Genesys Cloud Guest Chat
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../release-notes/4.97.md)
@@ -30,14 +39,17 @@ The Genesys Cloud Guest Chat handover connector is based on [Genesys Guest Chat 
 
 ## Configuration on the Handover Provider Side
 
-??? info "1. Create a Handover Connector (Beta)"
+<CollapsibleSection title="1. Create a Handover Connector (Beta)">
 
-    !!! note
-        This feature is in Beta. We encourage you to try it out and provide us with feedback.
+  !!! note
+      This feature is in Beta. We encourage you to try it out and provide us with feedback.
 
-    1. Go to **Deploy > Handover Providers**.
-    2. Click **+ New Hanvover Provider** and select **Genesys Guest Chat** from the list.
-    4. To fill in the required fields and complete your setup, read the [Genesys Cloud Handover Integration](https://support.cognigy.com/hc/en-us/articles/6229147435292) article in the Cognigy Help Center. 
+  1. Go to **Deploy > Handover Providers**.
+  2. Click **+ New Hanvover Provider** and select **Genesys Guest Chat** from the list.
+  4. To fill in the required fields and complete your setup, read the [Genesys Cloud Handover Integration](https://support.cognigy.com/hc/en-us/articles/6229147435292) article in the Cognigy Help Center. 
+
+</CollapsibleSection>
+
 
 ??? info "2. Configure Handover Settings"
     In [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node, configure the following settings:
@@ -56,7 +68,7 @@ The Genesys Cloud Guest Chat handover connector is based on [Genesys Guest Chat 
 
 ## Additional Configuration
 
-{! _includes/ai/providers/genesys/filter-transcript-messages.md !}
+<FilterTranscriptMessages />
 
 ### AI Copilot Workspace
 
@@ -65,7 +77,7 @@ Within Genesys integration, you can use the [AI Copilot workspace](../../../ai-c
 By default, two versions of the application are provided:
 
 ??? info "Standalone"
-    AI Copilot will be available as a standalone application via the following link: {! _includes/ai-copilot/url-pattern.md !}
+    AI Copilot will be available as a standalone application via the following link: <UrlPattern />
 
 ??? info "Embedded"
     By default, you can use the embedded version of the AI Copilot workspace, but it will overlap part of the screen with the conversation. To place the workspace to the right of the chat with the conversation, follow these steps:
@@ -83,7 +95,7 @@ By default, two versions of the application are provided:
         8. In the **Layout** section, change the size of width and height by clicking the **Stretch** button.
         9. In the upper-right corner, go to the **Variables** tab.
         10. On the **Variables** tab, go to the **Basic Types** section and click **String**.
-        11. Create a new variable:<br>
+        11. Create a new variable:<br />
             1. In the **Name** field, enter `userId`.
             2. In the **Description** field, enter `Cognigy variable`.
             3. Enable the **Input** toggle and click **Apply**.

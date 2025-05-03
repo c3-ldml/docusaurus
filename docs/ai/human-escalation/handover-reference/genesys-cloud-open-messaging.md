@@ -11,6 +11,14 @@ tags:
   - Genesys OM
 ---
 
+import UrlPattern from '@site/docs/_includes/ai-copilot/_url-pattern.md';
+
+
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
+
 # Genesys Cloud Open Messaging
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../../release-notes/4.100.md)
@@ -171,41 +179,42 @@ To test connection, click **Open Demo Web Chat** in your Endpoint.
 
 ## Additional Configuration
 
-??? info "Send Genesys Bot Messages to End Users"
+<CollapsibleSection title="Send Genesys Bot Messages to End Users">
 
-    !!! note
-        Before using this feature, add the `GENESYS_CLOUD_OM_HANDLE_BOT_MESSAGE: "true"` feature flag.
+  !!! note
+      Before using this feature, add the `GENESYS_CLOUD_OM_HANDLE_BOT_MESSAGE: "true"` feature flag.
 
-    By default, the Genesys Inbound Message flow routes messages to human agents only. 
-    You can configure your settings so that not only humans but end users receive these messages.
-    Forwarding messages to the end user can be helpful in the following use cases:
+  By default, the Genesys Inbound Message flow routes messages to human agents only. 
+  You can configure your settings so that not only humans but end users receive these messages.
+  Forwarding messages to the end user can be helpful in the following use cases:
 
-    - when the conversation status or wait time information is relevant to the end user.
-    - to provide the end user with updates and transparency throughout the interaction.
-    - to allow the end user to make informed decisions while waiting for a human agent, such as requesting a callback.
+  - when the conversation status or wait time information is relevant to the end user.
+  - to provide the end user with updates and transparency throughout the interaction.
+  - to allow the end user to make informed decisions while waiting for a human agent, such as requesting a callback.
 
-    The Genesys Inbound flow is responsible for message configuration.
-    However, if you want to use additional logic,
-    such as allowing end users to see their queue position,
-    set up the [In-Queue Message flow](https://help.mypurecloud.com/articles/work-with-in-queue-flows/) in Genesys in addition to the Genesys Inbound flow.
+  The Genesys Inbound flow is responsible for message configuration.
+  However, if you want to use additional logic,
+  such as allowing end users to see their queue position,
+  set up the [In-Queue Message flow](https://help.mypurecloud.com/articles/work-with-in-queue-flows/) in Genesys in addition to the Genesys Inbound flow.
 
-    Cognigy.AI is responsible for message roting logic. Follow the instructions to configure this logic:
+  Cognigy.AI is responsible for message roting logic. Follow the instructions to configure this logic:
 
-    1. In your chosen Handover Flow, set a **Lookup** Node below the **Handover to Agent** Node. Set **Lookup** Node as your Entrypoint.
-    2. For the **Type** field within the **Lookup** Node, select **Handover Status**.
-    3. For the child **Case** Node, specify `genericHandoverUpdate` in the **Value** field.
-    4. Add your **Say** Node under the **Case** Node to display the messages to the end user. Select **Text** from the **Output Type** list, and in the **Text** field enter the following **CognigyScript**:  `{{ "{{ input.data.request.text }}" }}`. The script will then query Genesys for the relevant data, such as a queue position.
-    5. In the Handover Settings of the **Say** Node, select **User Only** from the **Handover Output Destination** list.
-    6. To display all incoming Genesys Status or Bot messages, add a **Go To** Node below the **Say** Node.
-    7. Open the **Go To** Node. From the **Select Node** list, choose **Lookup**. Scroll down to the **Advanced** section. From the **Execution Mode** list, select **Go to Node and wait for Input**.
+  1. In your chosen Handover Flow, set a **Lookup** Node below the **Handover to Agent** Node. Set **Lookup** Node as your Entrypoint.
+  2. For the **Type** field within the **Lookup** Node, select **Handover Status**.
+  3. For the child **Case** Node, specify `genericHandoverUpdate` in the **Value** field.
+  4. Add your **Say** Node under the **Case** Node to display the messages to the end user. Select **Text** from the **Output Type** list, and in the **Text** field enter the following **CognigyScript**:  `{{ "{{ input.data.request.text }}" }}`. The script will then query Genesys for the relevant data, such as a queue position.
+  5. In the Handover Settings of the **Say** Node, select **User Only** from the **Handover Output Destination** list.
+  6. To display all incoming Genesys Status or Bot messages, add a **Go To** Node below the **Say** Node.
+  7. Open the **Go To** Node. From the **Select Node** list, choose **Lookup**. Scroll down to the **Advanced** section. From the **Execution Mode** list, select **Go to Node and wait for Input**.
 
-    The main Flow on Cognigy.AI should look like this:
+  The main Flow on Cognigy.AI should look like this:
 
-    <figure>
-      <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
-    </figure>
+  <figure>
+    <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
+  </figure>
 
-{! _includes/ai/providers/genesys/filter-transcript-messages.md !}
+</CollapsibleSection>
+
 
 ### AI Copilot Workspace
 
@@ -214,7 +223,7 @@ Within the Genesys integration, you can use the [AI Copilot workspace](../../../
 By default, two versions of the application are provided:
 
 ??? info "Standalone"
-    AI Copilot will be available as a standalone application via the following link: {! _includes/ai-copilot/url-pattern.md !}
+    AI Copilot will be available as a standalone application via the following link: <UrlPattern />
 
 ??? info "Embedded"
     By default, you can use the embedded version of the AI Copilot workspace, but it will overlap part of the screen with the conversation. To place the workspace to the right of the chat with the conversation, follow these steps:
@@ -232,7 +241,7 @@ By default, two versions of the application are provided:
         8. In the **Layout** section, change the size of width and height by clicking the **Stretch** button.
         9. In the upper-right corner, go to the **Variables** tab.
         10. On the **Variables** tab, go to the **Basic Types** section and click **String**.
-        11. Create a new variable:<br>
+        11. Create a new variable:<br />
             1. In the **Name** field, enter `userId`.
             2. In the **Description** field, enter `Cognigy variable`.
             3. Enable the **Input** toggle and click **Apply**.

@@ -8,6 +8,10 @@ tags:
    - handover provider
    - salesforce
 ---
+
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+
 # Salesforce Service Cloud
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../release-notes/4.97.md)
@@ -39,12 +43,12 @@ enabling end users to connect with human agents working in a contact center that
         - [Create a Basic Chat Implementation](https://help.salesforce.com/s/articleView?id=sf.live_agent_set_up_basic_implementation.htm)
         - [Create Chat Deployments](https://help.salesforce.com/s/articleView?id=sf.live_agent_create_deployments.htm).
     3. On the Salesforce home page, navigate to **Feature Settings > Service > Chat > Chat Settings**. On the **Chat Settings** page, go to the **API Information > Chat API Endpoint**. Copy the Chat API Endpoint value without the `/chat/rest` part, for example `https://x.xxx-xx-xxx.salesforceliveagent.com`. Save it for future use.
-    4. Navigate to **Feature Settings > Service > Embedded Service > Embedded Service Deployments**. In the raw with the deployment you want to use, click ![vertical ellipsis](../../../_assets/icons/vertical-ellipsis.svg), then select **View**.
+    4. Navigate to **Feature Settings > Service > Embedded Service > Embedded Service Deployments**. In the raw with the deployment you want to use, click ![vertical ellipsis](../../../../static/img/_assets/icons/vertical-ellipsis.svg), then select **View**.
     5. In the **Embedded Service Code Snippets** section, click **Get Code**. Copy and save the values from the following parameters without the single quotes `''`:
         - `deploymentId`
         - `buttonId`
         - `organizationId`
-         <br>
+         <br />
 
          ```js
          embedded_svc.init(
@@ -63,23 +67,26 @@ enabling end users to connect with human agents working in a contact center that
 
 ## Configuration on the Cognigy.AI Side
 
-??? info "1. Create a Handover Connector (Beta)"
+<CollapsibleSection title="1. Create a Handover Connector (Beta)">
 
-    !!! note 
-        This feature is in Beta. We encourage you to try it out and provide us with feedback.
+  !!! note 
+      This feature is in Beta. We encourage you to try it out and provide us with feedback.
 
-    1. Go to **Build > Handover Providers** and click **+ New Handover Provider**.
-    2. In the **New Handover Provider** window, select **Salesforce** from the list and name the connector.
-    3. _(Optional)_ Activate the **Forward Events to the Flow** setting. This setting forwards any event to the Flow, which can be handled in the Lookup Node. Select the **Handover Status** type in the Lookup Node. In the Case Node, select **Events** from the **Handover Status** list. Agent Replies and Conversation Closed events are not forwarded.
-    4. Fill in the following fields:
+  1. Go to **Build > Handover Providers** and click **+ New Handover Provider**.
+  2. In the **New Handover Provider** window, select **Salesforce** from the list and name the connector.
+  3. _(Optional)_ Activate the **Forward Events to the Flow** setting. This setting forwards any event to the Flow, which can be handled in the Lookup Node. Select the **Handover Status** type in the Lookup Node. In the Case Node, select **Events** from the **Handover Status** list. Agent Replies and Conversation Closed events are not forwarded.
+  4. Fill in the following fields:
 
-    | **Field**           | **Description**                                                                        |
-    |---------------------|----------------------------------------------------------------------------------------|
-    | Live Agent Base URL | The URL, copied from the **Chat API Endpoint** field.                                  |
-    | API Version         | The API version is `52`.                                                               |
-    | Organization ID     | The unique identifier for your Salesforce organization, copied from `organizationId`.  |
-    | Deployment ID       | The ID of your deployment in Salesforce, copied from `deploymentId`.                   |
-    | Button ID           | The ID of the button for the related deployment in Salesforce, copied form `buttonId`. |
+  | **Field**           | **Description**                                                                        |
+  |---------------------|----------------------------------------------------------------------------------------|
+  | Live Agent Base URL | The URL, copied from the **Chat API Endpoint** field.                                  |
+  | API Version         | The API version is `52`.                                                               |
+  | Organization ID     | The unique identifier for your Salesforce organization, copied from `organizationId`.  |
+  | Deployment ID       | The ID of your deployment in Salesforce, copied from `deploymentId`.                   |
+  | Button ID           | The ID of the button for the related deployment in Salesforce, copied form `buttonId`. |
+
+</CollapsibleSection>
+
 
 ??? info "2. Add a Handover to Agent Node"
     In the **Salesforce Settings** section of the [Handover to Agent](../../build/node-reference/service/handover-to-agent.md) Node, configure the following settings:

@@ -4,11 +4,19 @@ const glob = require('glob');
 
 // Function to convert a filename to a valid component name
 function toComponentName(filename) {
-  // Remove the .md extension and convert to camelCase
-  const name = filename.replace('.md', '')
-    .split('-')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join('');
+  // Remove .md extension and convert to camelCase
+  let name = filename.replace(/\.md$/, '');
+  
+  // Handle numbers at the start
+  if (/^8x8/.test(name)) {
+    name = 'EightByEight' + name.slice(3);
+  } else if (/^\d/.test(name)) {
+    name = 'component' + name;
+  }
+  
+  // Convert to camelCase
+  name = name.replace(/[-_](.)/g, (_, c) => c.toUpperCase());
+  
   return name;
 }
 
@@ -19,38 +27,40 @@ function processFile(filePath) {
 
   // Find all include statements
   const includeRegex = /{!\s*([^}]+)\s*!}/g;
-  const includes = [...content.matchAll(includeRegex)];
-  
-  if (includes.length > 0) {
-    // Find the end of frontmatter
-    const frontmatterEnd = content.indexOf('---', 3);
-    if (frontmatterEnd === -1) {
-      console.log(`Warning: No frontmatter found in ${filePath}`);
-      return;
-    }
+  let match;
+  let newContent = content;
 
-    // Generate import statements and component replacements
-    const importStatements = [];
-    let newContent = content;
-
-    includes.forEach(match => {
-      const includePath = match[1].trim();
-      const componentName = toComponentName(path.basename(includePath));
-      
-      // Add import statement
-      importStatements.push(`import ${componentName} from '@site/docs/${includePath}';`);
-      
-      // Replace include statement with component usage
-      newContent = newContent.replace(match[0], `<${componentName} />`);
-    });
-
-    // Insert import statements after frontmatter
-    newContent = newContent.slice(0, frontmatterEnd + 3) + '\n\n' + importStatements.join('\n') + '\n\n' + newContent.slice(frontmatterEnd + 3);
+  while ((match = includeRegex.exec(content)) !== null) {
+    const includePath = match[1].trim();
+    const basename = path.basename(includePath);
+    const componentName = toComponentName(basename);
     
-    if (content !== newContent) {
-      fs.writeFileSync(filePath, newContent);
-      console.log(`Converted: ${filePath}`);
+    // Generate import statement - preserve the path but ensure underscore prefix
+    const importPath = includePath.replace(basename, '_' + basename);
+    const importStatement = `import ${componentName} from '@site/docs/${importPath}';`;
+    
+    // Generate component usage
+    const componentUsage = `<${componentName} />`;
+    
+    // Replace include statement with component usage
+    newContent = newContent.replace(match[0], componentUsage);
+    
+    // Add import statement after frontmatter if not already present
+    if (!newContent.includes(importStatement)) {
+      const frontmatterEnd = newContent.indexOf('---', 3);
+      if (frontmatterEnd !== -1) {
+        newContent = newContent.slice(0, frontmatterEnd + 3) + '\n\n' + importStatement + '\n\n' + newContent.slice(frontmatterEnd + 3);
+      } else {
+        newContent = importStatement + '\n\n' + newContent;
+      }
     }
+    
+    modified = true;
+  }
+
+  if (modified) {
+    fs.writeFileSync(filePath, newContent);
+    console.log(`Converted: ${filePath}`);
   }
 }
 

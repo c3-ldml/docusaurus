@@ -29,29 +29,29 @@ To build an AI Agent, follow these steps:
 
 1. In the left-side menu of the Project , navigate to **Build > Flows**.
 2. Create a new Flow by clicking **+ New Flow** in the upper-right corner.
-3. In the **New Flow** window, do the following:<br></br>
-    3.1. Add a unique name, for example, `Getting Started`.<br></br>
-    3.2. Add a relevant description, for example, `Getting Started Guide for Webchat v3`.<br></br>
-    3.3. Click **Create**.<br></br>
+3. In the **New Flow** window, do the following:<br />
+    3.1. Add a unique name, for example, `Getting Started`.<br />
+    3.2. Add a relevant description, for example, `Getting Started Guide for Webchat v3`.<br />
+    3.3. Click **Create**.<br />
 4. In the Flow editor, create a new Node by clicking **+** and selecting a Question Node from the list.
-5. In the Question Node editor, set up the following parameters:<br></br>
-    5.1. From the **Question Type** list, select **Text**.<br></br>
-    5.2. In the **Text** field, enter the following sentences: `Hello! Welcome to Cognigy Support. How can I assist you today?`<br></br>
-    5.3. Click **Save Node**.<br></br>
+5. In the Question Node editor, set up the following parameters:<br />
+    5.1. From the **Question Type** list, select **Text**.<br />
+    5.2. In the **Text** field, enter the following sentences: `Hello! Welcome to Cognigy Support. How can I assist you today?`<br />
+    5.3. Click **Save Node**.<br />
 6. Below the Question Node, add a Say Node.
 7. In the Say Node editor, go to the **Text** field and enter the following sentences: `The Cognigy Headquarters is located in Düsseldorf, Germany. Is there anything else I can help you with?`
 8. Click **Save Node**.
 9. Below the Say Node, add the second one.
-10. In the second Say Node, set up the following parameters:<br></br>
-    10.1. From the **Question Type** list, select **Gallery**.<br></br>
-    10.2. Click **Add Card**.<br></br>
-    10.3. Open the card settings by clicking the image card.<br></br>
-    10.4. In the **Image URL** field, enter the `https://docs.cognigy.com/webchat/images/europe-office-cognigy.png` URL and click **Done**.<br></br>
-    10.5. In the **Title** field, enter `Düsseldorf-Hafen`.<br></br>
-    10.6. Click **Add**, then **Empty Tile**.<br></br>
-    10.7. In the **Button Title** field, enter `Go to the Map`.<br></br>
-    10.8. From the **Select Button Type** list, choose **URL**.<br></br>
-    10.9. In the **URL** field, enter the `https://maps.app.goo.gl/nWgwUdgaPABkSFZC7` URL and click **Save**.<br></br>
+10. In the second Say Node, set up the following parameters:<br />
+    10.1. From the **Question Type** list, select **Gallery**.<br />
+    10.2. Click **Add Card**.<br />
+    10.3. Open the card settings by clicking the image card.<br />
+    10.4. In the **Image URL** field, enter the `https://docs.cognigy.com/webchat/images/europe-office-cognigy.png` URL and click **Done**.<br />
+    10.5. In the **Title** field, enter `Düsseldorf-Hafen`.<br />
+    10.6. Click **Add**, then **Empty Tile**.<br />
+    10.7. In the **Button Title** field, enter `Go to the Map`.<br />
+    10.8. From the **Select Button Type** list, choose **URL**.<br />
+    10.9. In the **URL** field, enter the `https://maps.app.goo.gl/nWgwUdgaPABkSFZC7` URL and click **Save**.<br />
 11. Click **Save Node**.
 12. Below the second Say Node, add a **Wait for Input** Node.
 13. Below the **Wait for Input** Node, add the third Say Node.
@@ -66,10 +66,10 @@ To create a Webchat Endpoint v3, follow these steps:
 
 1. In the left-side menu of the Project, go to **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
-3. In the **New Endpoint** section, do the following:<br></br>
-    3.1. Select the **Webchat (v3)** Endpoint type.<br></br>
-    3.2. Add a unique name.<br></br>
-    3.3. Select a Flow that you created on the [previous step](#build-a-flow).<br></br>
+3. In the **New Endpoint** section, do the following:<br />
+    3.1. Select the **Webchat (v3)** Endpoint type.<br />
+    3.2. Add a unique name.<br />
+    3.3. Select a Flow that you created on the [previous step](#build-a-flow).<br />
 4. Click **Save**.
 
 Now you can change the default settings of the Webchat v3 Endpoint.

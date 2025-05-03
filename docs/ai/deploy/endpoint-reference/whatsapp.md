@@ -97,10 +97,10 @@ To set up the WhatsApp Endpoint, follow these steps:
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu of the Project, go to **Deploy > Endpoints**.
 3. On the **Endpoints** page, click **+ New Endpoint**.
-4. In the **New Endpoint** section, do the following: <br></br>
-    1. Select the **WhatsApp** Endpoint type.<br></br>
-    2. Add a unique name.<br></br>
-    3. Select a relevant Flow from the list.<br></br>
+4. In the **New Endpoint** section, do the following: <br />
+    1. Select the **WhatsApp** Endpoint type.<br />
+    2. Add a unique name.<br />
+    3. Select a relevant Flow from the list.<br />
 5. In the **Configuration Information** section, copy the Endpoint URL and save it for later use on the Meta/Facebook App Dashboard.
 6. Activate the **Enable Endpoint** setting.
 7. In the **WhatsApp Setup** section, in the **Verify Token** field, create a verification token for connecting the WhatsApp Endpoint to the WhatsApp app. The token can consist of letters, numbers, and punctuation marks. Save this token for later use on the Meta/Facebook App Dashboard.

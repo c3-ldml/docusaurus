@@ -49,11 +49,11 @@ To set up a connection between NICE CXone and Cognigy.AI, follow these steps:
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu of the Project, go to **Deploy > Endpoints**.
 3. On the **Endpoints** page, click **+ New Endpoint**.
-4. In the **New Endpoint** section, do the following: <br></br>
-    1. Select the **NICE CXone** Endpoint type.<br></br>
-    2. Add a unique name.<br></br>
-    3. Select a relevant Flow from the list.<br></br>
-    4. Click **Save**.<br></br>
+4. In the **New Endpoint** section, do the following: <br />
+    1. Select the **NICE CXone** Endpoint type.<br />
+    2. Add a unique name.<br />
+    3. Select a relevant Flow from the list.<br />
+    4. Click **Save**.<br />
 5. In the **Configuration Information** section, copy the Endpoint URL and save it for later use in NICE CXone.
 6. Activate the **Enable Endpoint** setting.
 7. In the **NICE CXone Setup** section, copy the token from the **Verify Token** field and save it for later use in NICE CXone.
@@ -65,10 +65,10 @@ To set up a connection between NICE CXone and Cognigy.AI, follow these steps:
 3. Go to **Others > Automation & AI**. A new window opens.
 4. In the left-side **Hubs** menu, select **Virtual Agent Hub**. The **Virtual Agents** panel appears.
 5. Click **Add Bot**.
-6. At **Step 1: General Information**, do the following:<br></br>
-    1. Enter a unique name in the **Virtual Agent (Bot) Name** field.<br></br>
-    2. In the **Select Bot Provider** field, choose the **Cognigy Bot** card. If this card is not present, contact NICE support to activate this feature for your account.<br></br>
-    3. In the upper-right corner, click **Next**.<br></br>
+6. At **Step 1: General Information**, do the following:<br />
+    1. Enter a unique name in the **Virtual Agent (Bot) Name** field.<br />
+    2. In the **Select Bot Provider** field, choose the **Cognigy Bot** card. If this card is not present, contact NICE support to activate this feature for your account.<br />
+    3. In the upper-right corner, click **Next**.<br />
 7. At **Step 2: Configuration**, fill in the following fields:
     - **URL** — enter the Endpoint URL that you saved and copied previously.
     - **Verify Token** — enter the Verify Token that you saved and copied previously.
