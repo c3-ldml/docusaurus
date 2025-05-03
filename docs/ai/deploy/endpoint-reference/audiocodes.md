@@ -7,7 +7,7 @@ hidden: false
 # AudioCodes
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/audiocodes.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/audiocodes.png" width="100%" />
 </figure>
 
 :::warning[Removal of the AudioCodes Endpoint]

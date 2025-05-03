@@ -51,7 +51,7 @@ To use this feature, add Nodes to your Flow, then test your Flow via Demo Webcha
   4. Save changes.
 
   <figure>
-     <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/1-handover-event-settings.png" width="100%" />
+     <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/scenarios/1-handover-event-settings.png" width="100%" />
   </figure>
 
 :::
@@ -64,19 +64,19 @@ To use this feature, add Nodes to your Flow, then test your Flow via Demo Webcha
   1. In the Flow editor, below the **Handover to Agent** Node, add the **Lookup** Node.
   2. Open a Node editor by clicking the Node, then go to the **Type** setting, select **Handover Status** from the list. Save changes.
       <figure>
-          <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/2-handover-lookup.png" width="100%" />
+          <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/scenarios/2-handover-lookup.png" width="100%" />
       </figure>
   3. Go to the child Nodes:<br />
       1. Click the **Case** Node.<br />
       2. In the **Value** field, specify the `active` handover status if you want to detect and handle inactivity while the end users are in the queue. Save changes.<br />
       <figure>
-          <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/3-handover-child-lookup.png" width="100%" />
+          <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/scenarios/3-handover-child-lookup.png" width="100%" />
       </figure>
       3. Click the second **Case** Node.<br />
       4. In the **Value** field, specify the `queue` handover status if you want to detect and handle inactivity while the end users are in the queue.<br />
       5. Click **Save Node**.<br />
       <figure>
-          <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/4-handover-second-child-lookup.png" width="100%" />
+          <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/scenarios/4-handover-second-child-lookup.png" width="100%" />
       </figure>
   4. Add **completed** and **error** child Nodes by analogy.
 
@@ -95,7 +95,7 @@ To use this feature, add Nodes to your Flow, then test your Flow via Demo Webcha
   4. Repeat the same steps for the **active** child Node in case you want to detect and handle inactivity during active handovers.
 
       <figure>
-          <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/5-set-handover-inactivity.png" width="100%" />
+          <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/scenarios/5-set-handover-inactivity.png" width="100%" />
       </figure>
 
   The timer is set in minutes and may vary by up to one minute. If there is no end user input, the timer will expire after the specified time. If an end user input is received before the timeout, the timer will automatically reset and start from the beginning.
@@ -111,7 +111,7 @@ To use this feature, add Nodes to your Flow, then test your Flow via Demo Webcha
   In the **Go To** Node editor, select **Lookup** from the **Select Node** list and **Go To Node and wait for Input** from the **Execution Mode** list in the **Advanced** section.
 
   <figure>
-     <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/6-handover-go-to.png" width="100%" />
+     <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/scenarios/6-handover-go-to.png" width="100%" />
   </figure>
 
 :::
@@ -135,7 +135,7 @@ To use this feature, add Nodes to your Flow, then test your Flow via Demo Webcha
       4. In **Handover Settings > Handover Output Destination**, select **User and Agent**. Save changes.<br /> If the inactivity count is less than two, it triggers prompt the user to respond to prevent the conversation from being automatically closed. The Set Handover Inactivity Node will set the time period for inactivity after which the conversation will be closed or restart a Flow from the beginning.
 
   <figure>
-     <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/scenarios/7-handover-if.png" width="100%" />
+     <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/scenarios/7-handover-if.png" width="100%" />
   </figure>
 
 :::

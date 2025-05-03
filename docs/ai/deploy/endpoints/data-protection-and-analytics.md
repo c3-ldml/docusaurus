@@ -68,13 +68,13 @@ In this example, the token will be deleted from the analytics data before it's w
 Masks potential sensitive information in system logs produced by the underlying infrastructure. This will also include the logs page within our UI. Here is an example of a log which gets produced when a new message arrives in our system:
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoints/log.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoints/log.png" width="100%" />
 </figure>
 
 The text could contain the name of the user, their location, or a credit card number. Once masking is enabled, all fields that could contain user information will be hidden and replaced, as shown in the following figure:
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoints/hidden-log.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoints/hidden-log.png" width="100%" />
 </figure>
 
 We will replace the following properties:

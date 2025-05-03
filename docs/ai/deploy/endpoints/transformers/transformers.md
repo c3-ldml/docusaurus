@@ -82,14 +82,14 @@ To create a Transformer for an Endpoint, open the ``Transformer Functions`` tab 
 :::
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/deploy/endpoints/transformers/transformer-example.png" width="100%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/deploy/endpoints/transformers/transformer-example.png" width="100%" />
    <figcaption>Persistent Menu</figcaption>
 </figure>
 
 ## Transformer Settings
 
 <figure>
-  <img class="image-center" src="../../../../../_assets/ai/deploy/endpoints/transformers/transformer.png" width="100%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/deploy/endpoints/transformers/transformer.png" width="100%" />
 </figure>
 
 In order to use a specific Transformer function, it has to be enabled in the Transformer Settings section. There is a toggle to enable each individual Transformer function. Transformer functions can thereby also be temporarily disabled without having to delete the code.

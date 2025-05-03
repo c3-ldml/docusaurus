@@ -14,7 +14,7 @@ tags:
 [![Version badge](https://img.shields.io/badge/Added in-v4.97.0-blue.svg)](../../../release-notes/4.97.md)
 
 <figure>
-    <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/ring-central-engage.svg" width="100%" />
+    <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/ring-central-engage.svg" width="100%" />
 </figure>
 
 ## Description

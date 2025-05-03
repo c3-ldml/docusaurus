@@ -180,7 +180,7 @@ To release the Snapshot, someone with access to the **FAQ Bot production** Agent
 Remember that **Snapshots do not need to be restored** for Endpoints to use their content. The **FAQ Bot production** Agent should not contain direct resources like Flows; it should only store Snapshots, and its Endpoints should directly point to these Snapshots.
 
 <figure>
-  <img class="image-center" src="../../../_assets/ai/deploy/snapshots/deployment-two-agents.png" width="100%" />
+  <img class="image-center" src="../../../static/img/_assets/ai/deploy/snapshots/deployment-two-agents.png" width="100%" />
   <figcaption>Deployment concept using Snapshots and two Agents (projects)</figcaption>
 </figure>
 

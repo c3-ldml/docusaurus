@@ -13,7 +13,7 @@ The `Notify Transformer` is triggered when the `Notify Transformer API` is calle
 The `Notify Transformer` is configured by implementing the `handleNotify` function in the Transformer in the Endpoint.
 
  <figure>
-  <img class="image-center" src="../../../../../_assets/ai/deploy/endpoints/transformers/notify-transformer.png" width="100%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/deploy/endpoints/transformers/notify-transformer.png" width="100%" />
 </figure>
 
 :::note[REST Transformer Support]

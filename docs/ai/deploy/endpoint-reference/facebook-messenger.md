@@ -10,7 +10,7 @@ import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notif
 # Facebook (Meta) Messenger
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/facebook-messenger.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/facebook-messenger.png" width="100%" />
 </figure>
 
 <HandoverProviderDeprecation />
@@ -138,7 +138,7 @@ Each user on Facebook has a unique ID, a PSID, for each Facebook page they talk 
 Here you can configure whether typing indicators should be used and how many milliseconds of delay there should be between each message.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/facebook-messenger-settings.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/facebook-messenger-settings.png" width="100%" />
 </figure>
 
 :::note[Help Center]

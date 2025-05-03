@@ -10,7 +10,7 @@ import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notif
 # LINE Messenger
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/line.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/line.png" width="100%" />
 </figure>
 
 <HandoverProviderDeprecation />
@@ -36,7 +36,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 The **Line Setup** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with a **Line Channel**.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/line-setup.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/line-setup.png" width="100%" />
 </figure>
 
 ### Channel Access Token

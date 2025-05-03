@@ -7,7 +7,7 @@ hidden: false
 # Amazon Alexa
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/alexa.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/alexa.png" width="100%" />
 </figure>
 
 The **Alexa** Endpoint allows you to connect your Amazon Alexa Skill to an AI Agent. Amazon Alexa Skills allow user interaction via voice, with potential visual support.
@@ -34,7 +34,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 The **Alexa Settings** dropdown menu is where Cognigy.AI is provided with the credentials to connect with an **Amazon Alexa Skill**.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/alexa-menu.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/alexa-menu.png" width="100%" />
 </figure>
 ### Reparse Alexa Slots
 

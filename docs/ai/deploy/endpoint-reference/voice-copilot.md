@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../../release-notes/4.66.md)
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/voice-copilot.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/voice-copilot.png" width="100%" />
 </figure>
 
 This Endpoint is intended for voice use cases

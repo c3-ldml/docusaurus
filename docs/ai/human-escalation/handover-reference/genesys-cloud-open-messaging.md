@@ -24,7 +24,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 [![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../../release-notes/4.100.md)
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/genesys.svg" width="80%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/genesys.svg" width="80%" />
 </figure>
 
 The Genesys Cloud Open Messaging handover connector bridges Cognigy.AI and [Genesys](https://login.mypurecloud.com/),
@@ -244,7 +244,7 @@ Before starting the integration with Cognigy, build the Genesys Cloud Open Messa
     The main Flow on Cognigy.AI should look like this:
 
     <figure>
-  <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
     </figure>
 
 :::
@@ -293,22 +293,27 @@ By default, two versions of the application are provided:
     13. In the **Script Properties** section, activate the **Inbound** and **Message** features.
     14. In the upper-left corner of the script page, click **Script > Save**, then **Publish**.
 
-    ??? info "2. Add the Script to the Inbound Message Flow"
-    To add the Script to the Inbound Message Flow, follow these steps:
+    :::info[2. Add the Script to the Inbound Message Flow]
 
-    1. In the Genesys Cloud interface, go to **Admin > Architect**.
-    2. Click or hover over the **Flows** menu and select **Inbound Message**.
-    3. From the flow list, select a flow that you created before.
-    4. To configure a flow, click **Edit**.
-    5. In the flow editor, ensure that both the **Get Participant Data** action is added. If you haven't done so already, refer to steps 12-14 in the [Create an Inbound Message Flow](#create-an-inbound-message-flow) section. 
-    6. Below the **Get Participant Data** action, place [Set Screen Pop](https://help.mypurecloud.com/articles/set-screen-pop-action/) action. The **Set Screen Pop** action must be positioned above the **Transfer to ACD** action.
-    7. From the **Message Script** list of the **Set Screen Pop** action, select the script created before. 
-    8. In the **Inputs** action, add `userId` in the **userId** field. 
-    9. In the upper-left corner, click **Save**, then **Publish**.
+  To add the Script to the Inbound Message Flow, follow these steps:
+
+  1. In the Genesys Cloud interface, go to **Admin > Architect**.
+  2. Click or hover over the **Flows** menu and select **Inbound Message**.
+  3. From the flow list, select a flow that you created before.
+  4. To configure a flow, click **Edit**.
+  5. In the flow editor, ensure that both the **Get Participant Data** action is added. If you haven't done so already, refer to steps 12-14 in the [Create an Inbound Message Flow](#create-an-inbound-message-flow) section. 
+  6. Below the **Get Participant Data** action, place [Set Screen Pop](https://help.mypurecloud.com/articles/set-screen-pop-action/) action. The **Set Screen Pop** action must be positioned above the **Transfer to ACD** action.
+  7. From the **Message Script** list of the **Set Screen Pop** action, select the script created before. 
+  8. In the **Inputs** action, add `userId` in the **userId** field. 
+  9. In the upper-left corner, click **Save**, then **Publish**.
+
+    :::
 
   :::
 
 :::
+
+
 
 
 

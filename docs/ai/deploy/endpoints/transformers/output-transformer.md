@@ -11,7 +11,7 @@ The `Output Transformer` is triggered on every output from the Flow. However, th
 The `Output Transformer` is configured by implementing the `handleOutput` function in the Transformer in the Endpoint.
 
  <figure>
-  <img class="image-center" src="../../../../../_assets/ai/deploy/endpoints/transformers/output-transformer.png" width="100%" />
+  <img class="image-center" src="../../../../../static/img/_assets/ai/deploy/endpoints/transformers/output-transformer.png" width="100%" />
   <figcaption>Output Transformer Example</figcaption>
 </figure>
 

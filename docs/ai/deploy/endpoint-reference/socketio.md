@@ -10,7 +10,7 @@ import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notif
 # Socket.io
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/socket-io.svg" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/socket-io.svg" width="100%" />
 </figure>
 
 <HandoverProviderDeprecation />
@@ -38,7 +38,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 The URL Token is the last part of the displayed Endpoint URL:
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/socket-url-token.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/socket-url-token.png" width="100%" />
 </figure>
 
 In the given example, you would connect to **https://endpoint-trial.cognigy.ai**.

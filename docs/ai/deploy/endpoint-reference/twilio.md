@@ -7,7 +7,7 @@ hidden: false
 # Twilio
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/twilio.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/twilio.png" width="100%" />
 </figure>
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy Agent to your **Twilio** channel by using our Twilio Endpoint. This allows you to build Bots your users can talk to or chat with via SMS.
@@ -36,12 +36,12 @@ Find out about the generic endpoint settings available with this endpoint on the
 ## Twilio Endpoint Settings
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/twilio.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/twilio.png" width="100%" />
 </figure>
 The **Twilio Settings** dropdown menu is available in a standard **Twilio** type endpoint and provides options to configure the interaction between Cognigy.AI a Twilio deployment.
 
  <div class="center-image">
- <img src="../../../../_assets/ai/deploy/endpoint-reference/twilio-settings.png" width="80%" style="margin-bottom: 5px" />
+ <img src="../../../../static/img/_assets/ai/deploy/endpoint-reference/twilio-settings.png" width="80%" style="margin-bottom: 5px" />
  </div>
 
 ### STT / TTS Language

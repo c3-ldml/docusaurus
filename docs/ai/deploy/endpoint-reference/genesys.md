@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.64-blue.svg)](../../../release-notes/4.64.md)
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/genesys.svg" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/genesys.svg" width="100%" />
 </figure>
 
 The Genesys Endpoint connects AI Agents to the [Genesys Cloud CX platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
@@ -180,7 +180,7 @@ To create a digital bot flow in Architect, configure the inbound message flow:
 15. In the **Queue** field of the **Transfer to ACD** action, select the queue to which you want to transfer the interaction.
     
     <figure>
-      <img src="../../../../_assets/ai/deploy/endpoint-reference/genesys-flow-example.png" width="100%"/>
+      <img src="../../../../static/img/_assets/ai/deploy/endpoint-reference/genesys-flow-example.png" width="100%"/>
     </figure>
 
 16. In the upper-left corner, click **Save**, then **Publish**.

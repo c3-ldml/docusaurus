@@ -90,7 +90,7 @@ To view channel-specific output, it must be configured in an output Node (for ex
 The Interaction Panel displays the outputs with corresponding channel icons and can filter them for a selected set of channels. For more information, refer to [Chat Output](#chat-output).
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-channel-selection.png" width="80%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/test/interaction-panel/interaction-panel-channel-selection.png" width="80%" />
 </figure>
 
 ### Input Modes
@@ -140,7 +140,7 @@ Based on the selected **Audio Provider**, the list of supported STT and TTS lang
 After configuring the Audio Provider, language and voice, you can start the call by clicking the **Start Call** button.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-start-voice-call.png" width="60%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/test/interaction-panel/interaction-panel-start-voice-call.png" width="60%" />
 </figure>
 
 During a call, you can do the following:
@@ -151,7 +151,7 @@ During a call, you can do the following:
 - **Automatically end a call on timeout**. If you don't provide any voice input for a set period (timeout), the call will automatically end to prevent unnecessary connection time.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-end-voice-call.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/test/interaction-panel/interaction-panel-end-voice-call.png" width="100%" />
 </figure>
 
 To see and analyze the payload of a recognized voice input, click ![expand](../../../../static/img/_assets/icons/expand.svg) indicated on the message fields.
@@ -182,7 +182,7 @@ You can now view and track the user's real-time conversation from your Interacti
 :::
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-follow-user.png" width="80%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/test/interaction-panel/interaction-panel-follow-user.png" width="80%" />
 </figure>
 
 #### Playbook
@@ -200,7 +200,7 @@ Hovering your cursor over them reveals more details in a tooltip.
 For more information, refer to [Assertions](../../test/playbooks.md#assertion).
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-playbook.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/test/interaction-panel/interaction-panel-playbook.png" width="100%" />
 </figure>
 
 You can further configure the Playbook execution in the [Playbook settings](#playbooks).
@@ -215,7 +215,7 @@ The **Info** tab menu includes the following sections:
 - [State](#state)
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-info.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/test/interaction-panel/interaction-panel-info.png" width="100%" />
 </figure>
 
 Cognigy.AI objects have a different life span depending on their type.
@@ -312,7 +312,7 @@ Within this mode, the Interaction Panel displays more information about the Flow
 Debug Messages can also be triggered explicitly, either using the [Debug Message](../../resource/node-reference/basic/debug-message.md) Node or [debug actions](../../resource/node-reference/basic/code/actions.md) in the Code Node.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/test/interaction-panel/interaction-panel-chat-tab-debug-mode.png" width="80%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/test/interaction-panel/interaction-panel-chat-tab-debug-mode.png" width="80%" />
 </figure>
 
 ##### Channel Select

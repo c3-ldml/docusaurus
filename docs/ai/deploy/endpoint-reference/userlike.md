@@ -7,7 +7,7 @@ hidden: false
 # Userlike
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/userlike.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/userlike.png" width="100%" />
 </figure>
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy Agent to your **Userlike Bot Operator** by using our Userlike Endpoint.
@@ -46,7 +46,7 @@ The below message types will be properly displayed in the Userlike unified messa
 :::
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/userlike-webchat.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/userlike-webchat.png" width="100%" />
 </figure>
 
 How to create and configure an Endpoint for a Userlike unified messaging channel see in our Help-Center [Userlike: Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360016310079).

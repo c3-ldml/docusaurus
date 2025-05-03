@@ -10,7 +10,7 @@ import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notif
 # Sunshine Conversations
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/sunshine-conversations.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/sunshine-conversations.png" width="100%" />
 </figure>
 
 <HandoverProviderDeprecation />

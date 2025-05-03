@@ -17,7 +17,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 [![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../release-notes/4.97.md)
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/salesforce.svg" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/salesforce.svg" width="100%" />
   <figcaption>Salesforce Service Cloud</figcaption>
 </figure>
 

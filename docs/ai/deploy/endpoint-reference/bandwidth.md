@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/bandwidth.png" width="20%"/>
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/bandwidth.png" width="20%"/>
 </figure>
 
 Within our **Cognigy.AI** platform,

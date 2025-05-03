@@ -367,6 +367,167 @@ const sidebars: SidebarsConfig = {
         },
       ]
     },
+    {
+      type: 'category',
+      label: 'Empower',
+      items: [
+        {
+          type: 'category',
+          label: 'Agentic AI',
+          items: [
+            'ai/empower/agentic-ai/overview',
+            'ai/empower/agentic-ai/getting-started',
+            'ai/empower/agentic-ai/manage-ai-agents'
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Natural Language Understanding',
+          items: [
+            'ai/empower/nlu/overview',
+            {
+              type: 'category',
+              label: 'Intents',
+              items: [
+                'ai/empower/nlu/intents/ml-intents',
+                'ai/empower/nlu/intents/annotations',
+                'ai/empower/nlu/intents/conditions',
+                'ai/empower/nlu/intents/intent-analyzer',
+                'ai/empower/nlu/intents/intent-hierarchy',
+                'ai/empower/nlu/intents/intent-mapping-priority',
+                'ai/empower/nlu/intents/intent-upload-download',
+                'ai/empower/nlu/intents/reject-intents',
+                'ai/empower/nlu/intents/rule-intents',
+                'ai/empower/nlu/intents/trigger-intent',
+                'ai/empower/nlu/intents/yes-no-intents'
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Slots and Lexicons',
+              items: [
+                'ai/empower/nlu/slots-and-lexicons/lexicons',
+                'ai/empower/nlu/slots-and-lexicons/slots',
+                'ai/empower/nlu/slots-and-lexicons/any-slots'
+              ]
+            },
+            'ai/empower/nlu/slot-fillers',
+            'ai/empower/nlu/text-cleaner',
+            {
+              type: 'category',
+              label: 'External NLU',
+              items: [
+                'ai/empower/nlu/external/overview',
+                'ai/empower/nlu/external/no-nlu',
+                'ai/empower/nlu/external/nlu-connectors',
+                'ai/empower/nlu/external/external-nlu-intent-recognition',
+                'ai/empower/nlu/external/intent-reranking',
+                'ai/empower/nlu/external/nlu-transformers'
+              ]
+            },
+            {
+              type: 'category',
+              label: 'NLU Attachments',
+              items: [
+                'ai/empower/nlu/attachments/attached-flows',
+                'ai/empower/nlu/attachments/attached-lexicons',
+                'ai/empower/nlu/attachments/attachments'
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Other',
+              items: [
+                'ai/empower/nlu/language-support',
+                'ai/empower/nlu/nlu-warnings'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Large Language Models',
+          items: [
+            'ai/empower/llms/overview',
+            'ai/empower/llms/model-support-by-feature',
+            {
+              type: 'category',
+              label: 'Providers',
+              items: [
+                'ai/empower/llms/providers/all-providers',
+                'ai/empower/llms/providers/microsoft-azure-openai',
+                'ai/empower/llms/providers/openai',
+                'ai/empower/llms/providers/openai-compatible',
+                'ai/empower/llms/providers/anthropic',
+                'ai/empower/llms/providers/google-vertex-ai',
+                'ai/empower/llms/providers/google-gemini',
+                'ai/empower/llms/providers/aleph-alpha',
+                'ai/empower/llms/providers/amazon-bedrock',
+                'ai/empower/llms/providers/mistral'
+              ]
+            },
+            'ai/empower/llms/fallback',
+            'ai/empower/llms/llm-session-token-counter',
+            'ai/empower/llms/other-operations'
+          ]
+        },
+        'ai/empower/generative-ai',
+        {
+          type: 'category',
+          label: 'Knowledge AI',
+          items: [
+            'ai/empower/knowledge-ai/overview',
+            'ai/empower/knowledge-ai/activate',
+            'ai/empower/knowledge-ai/getting-started',
+            'ai/empower/knowledge-ai/knowledge-store',
+            {
+              type: 'category',
+              label: 'Knowledge Source',
+              items: [
+                'ai/empower/knowledge-ai/knowledge-source/knowledge-source',
+                {
+                  type: 'category',
+                  label: 'Text Formats',
+                  items: [
+                    'ai/empower/knowledge-ai/knowledge-source/text-formats/ctxt',
+                    'ai/empower/knowledge-ai/knowledge-source/text-formats/pdf',
+                    'ai/empower/knowledge-ai/knowledge-source/text-formats/web-page'
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Text Extraction',
+                  items: [
+                    'ai/empower/knowledge-ai/knowledge-source/text-extraction/overview',
+                    'ai/empower/knowledge-ai/knowledge-source/text-extraction/basic-parser',
+                    'ai/empower/knowledge-ai/knowledge-source/text-extraction/advanced-parser',
+                    'ai/empower/knowledge-ai/knowledge-source/text-extraction/azure-ai'
+                  ]
+                },
+                'ai/empower/knowledge-ai/knowledge-source/knowledge-source-tags'
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Knowledge Chunk',
+              items: [
+                'ai/empower/knowledge-ai/knowledge-chunk/knowledge-chunk',
+                'ai/empower/knowledge-ai/knowledge-chunk/knowledge-chunk-editor'
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Knowledge Search and Extraction',
+              items: [
+                'ai/empower/knowledge-ai/knowledge-search-and-extraction/search-extract-output',
+                'ai/empower/knowledge-ai/knowledge-search-and-extraction/ai-copilot-knowledge'
+              ]
+            },
+            'ai/empower/knowledge-ai/distance-value-change-after-migration'
+          ]
+        }
+      ]
+    }
   ],
 
   // Voice Gateway sidebar

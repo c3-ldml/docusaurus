@@ -10,7 +10,7 @@ import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notif
 # RingCentral Engage
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/ring-central-engage.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/ring-central-engage.png" width="100%" />
 </figure>
 
 <HandoverProviderDeprecation />
@@ -32,7 +32,7 @@ Within our **Cognigy.AI** platform, you're able to connect your Cognigy resource
 The **RingCentral Engage setup** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with a **RingCentral Engage** deployment.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/deploy/endpoint-reference/rce-setup.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/rce-setup.png" width="100%" />
 </figure>
 
 ###API URL

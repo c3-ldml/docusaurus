@@ -24,7 +24,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 [![Version badge](https://img.shields.io/badge/Added in-v4.100-blue.svg)](../../../release-notes/4.100.md)
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/human-escalation/handover-reference/salesforce.svg" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/salesforce.svg" width="100%" />
   <figcaption>Salesforce MIAW</figcaption>
 </figure>
 
@@ -200,35 +200,38 @@ By default, two versions of the application are provided:
         - **Parameter** — select **Copilot URL** that was added under **Custom Parameters**.
         - **Flow Variable Name** — enter `copilotUrl`. <br /> Save changes.
 
-    ??? info "2. Update Embedded Service Deployments"
-    1. In the **Quick Find** box, enter **Embedded Service Deployments** and follow the **Feature Settings > Service > Messaging** path.
-    2. Select the deployment that you created previously, then select **Pre-Chat**.
-    3. Enable the **Activate the pre-chat feature** setting. 
-    4. Go to the **Visible Pre-Chat Fields** section, click **Add > Custom**.
-    5. In the **New Custom** window, fill in the following fields:
-        - **Field Type** — select **text**.
-        - **Channel Variable Name** — select `Copilot_URL` that you added in **Messaging Settings** previously. <br /> Save changes. 
-    6. Click **Save**. On the **Embedded Service Deployment Settings** page, click **Publish**.
+    :::info[2. Update Embedded Service Deployments]
 
-    ??? info "3. Update the Flow"
+  1. In the **Quick Find** box, enter **Embedded Service Deployments** and follow the **Feature Settings > Service > Messaging** path.
+  2. Select the deployment that you created previously, then select **Pre-Chat**.
+  3. Enable the **Activate the pre-chat feature** setting. 
+  4. Go to the **Visible Pre-Chat Fields** section, click **Add > Custom**.
+  5. In the **New Custom** window, fill in the following fields:
+      - **Field Type** — select **text**.
+      - **Channel Variable Name** — select `Copilot_URL` that you added in **Messaging Settings** previously. <br /> Save changes. 
+  6. Click **Save**. On the **Embedded Service Deployment Settings** page, click **Publish**.
+
+  :::info
+
+  "3. Update the Flow"
     1. In the **Quick Find** box, enter **Flows**, then select **Flows**.
     2. Go to the Flow that you created previously.
     3. On the **Manager** tab, create a **New Resource**.
-        1. From the **Resource Type** list, select **Variable**.
-        2. In the **API Name** field, enter `copilotUrl`.
-        3. From the **Data Type** list, select **Text**.
-        4. Activate **Available for Input**, then click **Done**.
+    1. From the **Resource Type** list, select **Variable**.
+    2. In the **API Name** field, enter `copilotUrl`.
+    3. From the **Data Type** list, select **Text**.
+    4. Activate **Available for Input**, then click **Done**.
     4. In the Flow editor, above the **Route Work** action, click **+** to add an element. Select **Update Records** from the list.
     5. In the **How to Find Records to Update and Set Their Values** section, select **Specify conditions to identify records**.
     6. In the **Update Records of This Object Type** section, select **Messaging Session** from the **Object** list.
     7. In the **Filter Messaging Session Records** section, configure the following fields: 
-        - **Condition Requirement to Update Records** — select **All Conditions Are Met (AND)**. 
-        - **Field** — enter `Id`.
-        - **Operator** — select **Equals**.
-        - **Value** — enter `recordId`.
+    - **Condition Requirement to Update Records** — select **All Conditions Are Met (AND)**. 
+    - **Field** — enter `Id`.
+    - **Operator** — select **Equals**.
+    - **Value** — enter `recordId`.
     8. In the **Set Field Values for the Messaging Session Records** section, configure the following fields:
-        - **Field** — enter `Copilot__c`.
-        - **Value** — enter `copilotUrl`.
+    - **Field** — enter `Copilot__c`.
+    - **Value** — enter `copilotUrl`.
     9. Click **Save a New Version**, then **Activate**.
 
     ??? info "4. Configure UI Components"
@@ -238,7 +241,15 @@ By default, two versions of the application are provided:
 
   :::
 
+    :::
+
+  :::
+
 :::
+
+
+
+
 
 
 
