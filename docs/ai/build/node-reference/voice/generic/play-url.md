@@ -4,6 +4,8 @@ slug: "play-url"
 description: "The Play URL Node is used to play audio from a URL in a voice conversation."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

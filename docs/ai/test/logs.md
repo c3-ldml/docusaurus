@@ -3,6 +3,8 @@
  slug: "logs" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Logs
 
 The **Logs** feature allows platform users to track each input and output message that occurs with AI Agents. The Logs are most frequently used to debug workflows by observing if and where errors are occurring.

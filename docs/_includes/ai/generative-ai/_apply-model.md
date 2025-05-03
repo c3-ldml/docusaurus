@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 To apply a model, follow these steps:
 
 1. In the left-side menu of the Project, go to **Manage > Settings**. 

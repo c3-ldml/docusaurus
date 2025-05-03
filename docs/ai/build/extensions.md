@@ -7,6 +7,8 @@ tags:
   - Extensions
   - Extension
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Extensions
 
@@ -46,17 +48,18 @@ Extensions are designed for lightweight operations. When developing a custom Ext
 
 Additionally, you can publish your custom Extension on the Marketplace so that other Cognigy users have access to it.
 
-??? info "Develop Custom Extensions"
+<CollapsibleSection title="Develop Custom Extensions">
 
     The following materials will provide you with in-depth information to develop a custom Extension:
-
+    
     - [Readme](https://www.npmjs.com/package/@cognigy/extension-tools) of the `@cognigy/extension-tools` package for requirements.
     - [Get Started](https://support.cognigy.com/hc/en-us/articles/360016534459-Get-Started) documentation for the first steps.
     - [Cognigy Sessions Episode](https://support.cognigy.com/hc/en-us/articles/360019893139-Cognigy-Sessions-Extensions) about Extensions for a technical deep dive.
     - [GitHub repository](https://github.com/Cognigy/Extensions) for Extensions examples.
+    
+    <CollapsibleSection title="Extension Development">
 
-    !!! tip "Extension Development"
-        [Cognigy Hammer](https://github.com/tgbv/cognigy-hammer/), created by the Cognigy community, is an Extension development suite designed for Cognigy.AI. Cognigy Hammer offers several tools and features to assist in the development of Cognigy Extensions. Note that Cognigy Hammer isn't a product of Cognigy and doesn't qualify for enterprise support.
+    [Cognigy Hammer](https://github.com/tgbv/cognigy-hammer/), created by the Cognigy community, is an Extension development suite designed for Cognigy.AI. Cognigy Hammer offers several tools and features to assist in the development of Cognigy Extensions. Note that Cognigy Hammer isn't a product of Cognigy and doesn't qualify for enterprise support.
 
     **Best Practices for Developing Custom Extensions**
 
@@ -70,29 +73,39 @@ Additionally, you can publish your custom Extension on the Marketplace so that o
     **Code Example for Error Handling**
 
     ```JavaScript
-    function: async ({ cognigy, config }) => {
-        const { api } = cognigy;
-        const { contextKey, inputKey } = config;
-
-        const endpoint = `API_TO_CALL`;
-
-        try {
-            const result = await axios.get(endpoint);
-
-            // store in context
-            api.addToContext(contextKey, result.data, 'simple');
-
-            // store in input 
-            api.addToInput(inputKey, result.data);
+        function: async ({ cognigy, config }) => {
+            const { api } = cognigy;
+            const { contextKey, inputKey } = config;
+        
+            const endpoint = `API_TO_CALL`;
+        
+            try {
+                const result = await axios.get(endpoint);
+        
+                // store in context
+                api.addToContext(contextKey, result.data, 'simple');
+        
+                // store in input 
+                api.addToInput(inputKey, result.data);
+            }
+            catch (error) {
+                api.addToContext(contextKey, { error: error.message }, 'simple');
+            }
         }
-        catch (error) {
-            api.addToContext(contextKey, { error: error.message }, 'simple');
-        }
-    }
     ```
 
-??? info "Publish Custom Extensions"
+
+    </CollapsibleSection>
+
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Publish Custom Extensions">
+
     If you want to publish a custom Extension on the Marketplace, follow the approval procedure in the [Extensions GitHub repository](https://github.com/Cognigy/Extensions).
+
+</CollapsibleSection>
+
 
 ## Extension Performance and Security
 
@@ -119,16 +132,20 @@ A trusted Extension is an Extension that is considered safe to run in the standa
 
 To make Extensions trusted and let them run in the standard environment, you have two options:
 
-??? info "Make Extensions Trusted"
+<CollapsibleSection title="Make Extensions Trusted">
+
     - Mark an Extension as trusted in **Manage > Extensions**. Trusted Extensions display the ![trust-extensions](../../../static/img/_assets/icons/trusted-extension.svg) icon. Only admins and users with the `extension_trust_admin` [role](../administer/access/members.md) can mark Extensions as trusted and update them.
     - For dedicated SaaS or on-premises installations: 
         1. Set the `FEATURE_ALLOW_TRUSTED_CODE_CONFIGURATION` environment variable to `true` by adding the following code to your `config-map_patch.yaml` in the `kubernetes` repository where the deployment manifest files are stored:
-        ```YML
-        - op: add
-          path: /data/FEATURE_ALLOW_TRUSTED_CODE_CONFIGURATION
-          value: "true"
-        ```
+    ```YML
+            - op: add
+              path: /data/FEATURE_ALLOW_TRUSTED_CODE_CONFIGURATION
+              value: "true"
+    ```
         2. Use the Cognigy.AI API [PATCH](https://api-trial.cognigy.ai/openapi#patch-/v2.0/extensions/-extensionId-) request to update the `trustedCode` property of an Extension.
+
+</CollapsibleSection>
+
 
 ## Install Extensions for All Organizations
 
@@ -138,12 +155,16 @@ On-premises customers can install Extensions in all organizations of their insta
 
 You can cache Extensions in your local directory to improve the Extensions' loading performance.
 
-??? info "Maximum cache storage"
+<CollapsibleSection title="Maximum cache storage">
+
     By default, when Extensions exceed the maximum cache directory size, the last 10 Extensions are removed from the local directory. On premises and dedicated SaaS customers can change the number of Extensions that are removed when the maximum cache directory size is exceeded using the `EXCEED_DIR_SIZE_AMOUNT_TO_DROP_FROM_MAP` environment variable.
 
     On-premises and dedicated SaaS customers can change the maximum directory size by adding the `MAX_EXTENSIONS_CACHE_DIR_SIZE_IN_MB` environment variable to `values.yaml`. By default, the maximum directory size is 512 MB.
 
     The cache is in the `service-execution` [Kubernetes pod](https://kubernetes.io/docs/concepts/workloads/pods/).
+
+</CollapsibleSection>
+
 
 ## Dynamic Fields
 

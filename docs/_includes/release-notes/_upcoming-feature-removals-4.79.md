@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 !!! warning "Upcoming Feature Removals"
     - The Chatbase analytics integration will be removed in version 4.82. The Chatbase platform has not been supported since 2021.

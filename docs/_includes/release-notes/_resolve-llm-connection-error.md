@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 !!! warning "Resolving Connection Errors in Microsoft Azure OpenAI LLMs"
     In recent releases, we have updated the connection settings to Azure OpenAI LLMs and added new parameters, such as the Resource Name.
     If you have an older connection (for example, created in the 4.53 release) to Azure OpenAI LLMs, especially Azure OpenAI `text-embedding-ada-002` for knowledge search features, you might encounter the following error when an LLM is triggered:

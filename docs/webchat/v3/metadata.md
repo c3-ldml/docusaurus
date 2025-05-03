@@ -4,6 +4,8 @@ slug: "collecting-metadata"
 description: "Collecting metadata from the user's browser allows you to gather additional information that is not available by default, such as the browser language, geolocation, device type, and operating system."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Collecting Metadata
 

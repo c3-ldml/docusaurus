@@ -3,6 +3,8 @@
  slug: "clean-text" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Clean Text
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../../../release-notes/4.51.md)

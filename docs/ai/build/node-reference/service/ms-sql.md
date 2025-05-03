@@ -3,6 +3,8 @@
  slug: "ms-sql" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # MS SQL
 
 <figure>
@@ -22,18 +24,26 @@ Runs a SQL a single query statement.
 | MS SQL Connection | List          | Select MS SQL database connection. To create a new connection, click ![plus](../../../../../static/img/_assets/icons/plus-simple.svg). |
 | SQL Query         | CognigyScript | Enter a valid SQL query in the Query field.                                                                                            |
 
-??? info "Result Storage"
+<CollapsibleSection title="Result Storage">
 
     | Parameter                 | Type          | Description                                                                                                                         |
     |---------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
     | Where to store the result | List          | <ul><li>**Input** — stores the result in the Input object.</li><li>**Context** — stores the result in the Context object.</li></ul> |
     | Input Key to store Result | CognigyScript | Enter the key where the result should be stored.                                                                                    |
+    
 
-??? info "Advanced"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Advanced">
 
     | Parameter     | Type   | Description                                                                                                                                                                     |
     |---------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Stop on Error | Toggle | Lets you configure whether to stop Flow execution when an error occurs or not.                                                                                                  |
+    
+
+</CollapsibleSection>
+
 
 ## Run Transaction
 
@@ -44,18 +54,26 @@ Runs a transaction.
 | MS SQL Connection | List          | Select MS SQL database connection. To create a new connection, click ![plus](../../../../../static/img/_assets/icons/plus-simple.svg).                                                                                                                                                             |
 | Query             | CognigyScript | Enter a valid SQL transaction query in the Query field. You do not need to add the "BEGIN TRANSACTION" and "COMMIT" fields, since this will be done implicitly. If you want to work with Try / catch blocks and do more advanced transactions with rollbacks, use [Run Query](#run-query) instead. |
 
-??? info "Result Storage"
+<CollapsibleSection title="Result Storage">
 
     | Parameter                 | Type          | Description                                                                                                                         |
     |---------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
     | Where to store the result | List          | <ul><li>**Input** — stores the result in the Input object.</li><li>**Context** — stores the result in the Context object.</li></ul> |
     | Input Key to store Result | CognigyScript | Enter the key where the result should be stored.                                                                                    |
+    
 
-??? info "Advanced"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Advanced">
 
     | Parameter     | Type   | Description                                                                                                                                                                     |
     |---------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Stop on Error | Toggle | Lets you configure whether to stop Flow execution when an error occurs or not.                                                                                                  |
+    
+
+</CollapsibleSection>
+
 
 ## Run Stored Procedure
 
@@ -68,15 +86,23 @@ Runs a stored procedure. The stored procedure must exist in the database specifi
 | Inputs                | JSON          | Enter an array of input parameters of your stored procedure as defined in the database. You can forward parameters from the Context to the database, for example. Parameters must be specified in an array of objects that define the input parameter in the following format: `{name,value,type}`   |
 | Outputs               | JSON          | Enter an array of output parameters of your stored procedure as defined in the database. You can forward parameters from the database to the Context, for example. Parameters must be specified in an array of objects that define the output parameter in the following format: `{name,value,type}` |
 
-??? info "Result Storage"
+<CollapsibleSection title="Result Storage">
 
     | Parameter                 | Type          | Description                                                                                                                         |
     |---------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
     | Where to store the result | List          | <ul><li>**Input** — stores the result in the Input object.</li><li>**Context** — stores the result in the Context object.</li></ul> |
     | Input Key to store Result | CognigyScript | Enter the key where the result should be stored.                                                                                    |
+    
 
-??? info "Advanced"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Advanced">
 
     | Parameter     | Type   | Description                                                                                                                                                                     |
     |---------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Stop on Error | Toggle | Lets you configure whether to stop Flow execution when an error occurs or not.                                                                                                  |
+    
+
+</CollapsibleSection>
+

@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 ### Reset Filters
 
 To reset all filters, at the top of the page, click the **Reset** button on the right side of the Global Filters.

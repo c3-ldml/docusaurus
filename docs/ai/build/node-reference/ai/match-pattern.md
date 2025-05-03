@@ -3,6 +3,8 @@
  slug: "match-pattern" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Match Pattern
 
 <figure>

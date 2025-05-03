@@ -3,6 +3,8 @@
  slug: "call-recording" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Call Recording
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../../../../release-notes/4.45.md)

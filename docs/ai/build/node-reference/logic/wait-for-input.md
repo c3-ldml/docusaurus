@@ -3,6 +3,8 @@
  slug: "wait-for-input" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Wait for Input
 
 <figure>

@@ -7,6 +7,8 @@ tags:
   - Nodes
   - Lookup
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Lookup
 
@@ -29,7 +31,8 @@ The operand, also called lookup type, can be set to Intent, State, Type and Mode
 
 ### Type
 
-??? info "Intent"
+<CollapsibleSection title="Intent">
+
     This is the default setting for the Lookup Node, and it allows you to easily look up the Intent that has been triggered. 
 
     By default, the Intent at the most detailed [Intent Hierarchy](../../../empower/nlu/intents/intent-hierarchy.md) level is matched. In this case, the Intents of all three levels are selectable in the Intent dropdown menu of the Case Nodes.
@@ -38,27 +41,47 @@ The operand, also called lookup type, can be set to Intent, State, Type and Mode
 
     For more information about building Flows with Intents, refer to the [NLU Overview](../../../empower/nlu/overview.md) page.
 
-??? info "Text"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Text">
+
     By changing the lookup type to **Text**, the Flow selects a case that matches the value of `input.text`. The case values must manually be written for this type of lookup.
 
-??? info "State"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="State">
+
     By changing the lookup type to [State](../../../test/interaction-panel/state.md), the Flow selects a case that matches the value of `input.state`. The case values must manually be written for this type of lookup.
 
     States allow limitations to be placed on a conversation that restrict the valid Intents that the NLU has access to. For more information, refer to the [States](../../../test/interaction-panel/state.md) page.
 
-??? info "Type"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Type">
+
     By changing the lookup type to **Type**, the Flow selects a case that matches the value of `input.type`. The case values must manually be written for this type of lookup.
 
     !!! note "What is Type?"
         The Type is defined as a classification of the last user message as determined by the NLU. The type is an [Input](../../../test/interaction-panel/input.md) variable that can be one of the following values: Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer. 
 
-??? info "Mode"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Mode">
+
     By changing the lookup type to Mode, the Flow selects a case that matches the value of `input.mode`. The case values must manually be written for this type of lookup.
 
     !!! note "What is Mode?"
         The Mode provides information on what was contained in the last user message. The type is an [Input](../../../test/interaction-panel/input.md) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
 
-??? info "Handover Status"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Handover Status">
+
     By changing the lookup type to **Handover Status**,
     the Flow selects a case that matches the value of `input.handover.status`.
     The case values must manually be written for a type of lookup.
@@ -78,21 +101,31 @@ The operand, also called lookup type, can be set to Intent, State, Type and Mode
     | Handover Already in Progress | Conversations maintain a handover connection when a user with the same ID opens multiple conversations. In this scenario, when the user opens a new conversation, the first conversation with the human agent becomes inactive. The chat continues in the new conversation with the human agent. No new handover is created, and the human agent has access to the history of both conversations with the user in one chat window.<br></br><br></br>To inform the user that the first chat is inactive, add a Say Node after the Case Node. This message appears if the user revisits the first conversation. If the user creates multiple conversations, each chat displays this message, except for the last one that the user opened.<br></br><br></br> If you use the [AI Copilot workspace](../../../../ai-copilot/index.md) in your contact center, you should add the Handover Node and Lookup Node with the Handover Already in Progress status in your AI Copilot Flow, along with a Say Node to inform the user that the first chat is inactive. In the Main Flow, after the Case Node with the Handover Already in Progress status, add the Go To Node that leads to the AI Copilot Flow and its Lookup Node. | The status is applicable only to the [Genesys Cloud Messaging](../../../escalate/handover-reference/genesys-cloud-open-messaging.md) provider.                                                                                                                                                                                                                                                                                     |
     | `genricHandoverUpdate`       | Conversations include messages from the Genesys Bot. By default, the Genesys Inbound Message flow routes messages to human agents only. However, you can configure your settings so that these messages are sent not only to human agents but also to end users. For more information, refer to the [Send Genesys Bot Messages to End Users](../../../escalate/handover-reference/genesys-cloud-open-messaging.md#configure-handover-settings) section.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | The status is applicable only to the [Genesys Cloud Messaging](../../../escalate/handover-reference/genesys-cloud-open-messaging.md) provider.                                                                                                                                                                                                                                                                                     |
 
-??? info "CognigyScript"
+    <CollapsibleSection title="CognigyScript">
 
     !!! note
         If you choose CognigyScript as the operand, use CognigyScript without `{{ "{{ }}" }}`. You can also select to parse the CognigyScript as a string or not.
-    
+
     By changing the lookup type to **CognigyScript**, the Flow selects a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the Flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.
 
     To learn more, read the [CognigyScript](../../cognigyscript.md) page.
 
-??? info "Call Event Status"
+
+    </CollapsibleSection>
+
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Call Event Status">
+
     By changing the lookup type to **Call Event Status**, the Flow selects a case that matches the value of `input.data.event`. The case values must manually be written for this type of lookup.
 
     In the Case Node, you can handle various Voice Gateway events, including Recognized Speech, Recognized DTMF, Call Created, Answering Machine Detection, and more.
 
     More information about these events you can find in the [Voice Gateway Events](../../../../voice-gateway/references/events/overview.md) reference.
+
+</CollapsibleSection>
+
 
 ### Advanced
 

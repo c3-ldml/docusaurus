@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 1. In the left-side menu of the Project, go to **Build > LLM**.
 2. Click **+New LLM**.
 3. In the **New LLM** window, select a model from the **Model Type** list.

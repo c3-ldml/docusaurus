@@ -4,6 +4,8 @@ slug: "call-recording"
 description: "The Call Recording Node is used to control call recording in AudioCodes voice conversations."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

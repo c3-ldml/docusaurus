@@ -8,6 +8,8 @@ tags:
   - state
   - full intent recognition
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Reset State
 

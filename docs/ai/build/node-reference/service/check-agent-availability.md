@@ -9,6 +9,8 @@ tags:
   - contact centers
   - handover providers
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Check Agent Availability
 
@@ -37,44 +39,64 @@ The Check Agent Availability Node supports the following handover providers:
 |-------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Handover Provider | Selector | Select the handover provider from the list. The **Legacy** option is selected by default, meaning the node configuration points to the settings in **Deploy > Endpoints > Handover** Settings. To select a provider from the list, you need to either migrate your settings to the [Handover Providers](../../../escalate/migration.md) interface or create this handover provider from scratch. |
 
-??? info "Live Agent"
+<CollapsibleSection title="Live Agent">
 
     | Parameter           | Type          | Description                                                                   |
     |---------------------|---------------|-------------------------------------------------------------------------------|
     | Skills              | CognigyScript | A list of skills that should be used to filter the available human agents.    |
     | Live Agent Inbox Id | CognigyScript | The ID of your Inbox in Live Agent.                                           |
     | Languages           | CognigyScript | A list of languages that should be used to filter the available human agents. |
+    
 
-??? info "Genesys Cloud"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Genesys Cloud">
 
     These settings are applicable to both [Genesys Cloud Guest Chat](../../../escalate/handover-reference/genesys-cloud-guest-chat.md) and [Genesys Cloud Open Messaging](../../../escalate/handover-reference/genesys-cloud-open-messaging.md).
-
+    
     | Parameter       | Type | Description                                                                         |
     |-----------------|------|-------------------------------------------------------------------------------------|
     | Skills          | List | A list of skills that should be used to filter the available human agents.          |
     | Profile Skills  | List | A list of profile skills that should be used to filter the available human agents.  |
     | Language Skills | List | A list of language skills that should be used to filter the available human agents. |
+    
 
-??? info "Chatwoot"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Chatwoot">
 
     | Parameter         | Type          | Description                      |
     |-------------------|---------------|----------------------------------|
     | Chatwoot Inbox Id | CognigyScript | The ID of our Inbox in Chatwoot. |
+    
 
-??? info "Storage Options"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Storage Options">
 
     | Parameter                     | Type          | Description                                                                                                                                                                               |
     |-------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Where to store the result     | Select        | The storage for the search results. Select a storage:<ul><li>**Input** — the content is stored in the Input object.</li><li>**Context** — the content is stored in the Context.</li></ul> |
     | Input Key to store result     | CognigyScript | The location in the input object where the result is stored. For example, `input.knowledgeSearch`.                                                                                        |
     | Input Context to store result | CognigyScript | The location in the context object where the result is stored. For example, `context.knowledgeSearch`.                                                                                    |
+    
 
-??? info "Error Handling"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Error Handling">
 
     | Parameter                     | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
     |-------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Error Logging                 | Select | You can select one of the Error Logging options:<ul><li>**Don't log errors** — this parameter doesn't allow errors to be logged. It's suitable for environments where error tracking isn't desired, such as production systems, to maintain clean logs.</li><li>**Log error codes and responses** — this parameter records essential information, including error codes such as HTTP status codes, and the responses received from the server. It's useful for basic troubleshooting and understanding error contexts.</li><li>**Log full errors and request payloads** — this parameter provides comprehensive error logging. It not only captures error codes and responses but also logs the complete error messages or details and the entire request payload sent to the server. Be cautious with this option, as it can expose sensitive data. It's most beneficial for in-depth debugging and diagnostics.</li></ul> |
     | Abort Flow Execution on Error | Toggle | Halts Flow Execution on HTTP status codes greater than 299.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+    
+
+</CollapsibleSection>
+
 
 ## Example
 

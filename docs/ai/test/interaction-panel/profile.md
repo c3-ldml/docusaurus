@@ -3,6 +3,8 @@
  slug: "profile" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Profile
 
 The Profile is a JSON object that stores persistent information about the end-user.

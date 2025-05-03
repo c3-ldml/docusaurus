@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 Cognigy.AI supports the following machine translation providers:
 
 - Microsoft Translator

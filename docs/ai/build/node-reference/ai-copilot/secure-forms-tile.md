@@ -3,6 +3,8 @@ title: "Copilot: SecureForms Tile"
 slug: "secure-forms-tile"
 hidden: true
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Copilot: SecureForms Tile
 

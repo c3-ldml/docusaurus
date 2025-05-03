@@ -3,6 +3,8 @@ title: "Update Profile"
 slug: "update-profile" 
 hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Update Profile
 

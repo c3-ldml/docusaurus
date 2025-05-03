@@ -7,6 +7,8 @@ tags:
   - Nodes
   - Go To
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Go To
 
@@ -28,7 +30,8 @@ A **Go To Node** switches the conversation to another **Node** or **Flow**, whic
 | Select Flow | Select the target Flow that is switched to whenever the Flow execution triggers the **Go To** Node. To manually enter the Flow ID, click **Manual Input** and enter the Flow ID. Click ![target-flow](../../../../../static/img/_assets/icons/target-flow.svg) to open the target Flow.                                                                          |
 | Select Node | Select the target Node that is switched to whenever the Flow execution triggers the **Go To** Node. To manually enter the Node ID, click **Manual Input** and enter the Node ID. <br></br><br></br>A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use the [Set Entrypoint](../../nodes/overview.md) parameter. |
 
-??? info "Advanced"
+<CollapsibleSection title="Advanced">
+
     | Parameter                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
     |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Execution Mode           | The Execution Mode determines the behavior of the Go To Node. It can go to the target Node and continue, or it can wait for input.                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -37,6 +40,9 @@ A **Go To Node** switches the conversation to another **Node** or **Flow**, whic
     | Parse Intents            | The user decides whether we should **parse intents** within the sub Flow. This is disabled by default.<br></br><br></br>If the **Parse Intents** parameter is enabled, Cognigy NLU reparses the Intents in the target Flow, using either [input.text](../../../test/interaction-panel/input.md#accessing-the-input-object) or the Optionally Injected Text.<br></br><br></br>This parameter parses the input into the sub Flow, and the NLU then scores this text using the available Intents in the sub Flow. This parameter doesn't score based on Intents in the parent Flow. |
     | Parse Slots              | The user decides whether we should **parse slots** within the sub Flow. This is disabled by default.<br></br><br></br>If the **Parse Slots** parameter is enabled, Cognigy NLU reparses the Slots in the target Flow, using either [input.text](../../../test/interaction-panel/input.md#accessing-the-input-object) or the Optionally Injected Text.<br></br><br></br>This parameter parses the input into the sub Flow, and the NLU then scores this text using the available Slots in the sub Flow. This parameter doesn't score based on Slots in the parent Flow.           |
     | Absorb Context           | If this parameter is enabled, the default Context of the target Flow is applied to the current Context upon switching.                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+</CollapsibleSection>
+
 
 !!! warning "Loops"
     Cognigy.AI checks how often a Go To Node was activated without a user input in-between. The default setting for maximum loops is 4, but it is configurable for on-premises installations.

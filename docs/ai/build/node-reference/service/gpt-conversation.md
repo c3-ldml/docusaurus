@@ -3,6 +3,8 @@ title: "GPT Conversation"
 slug: "gpt-conversation"
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # GPT Conversation (Research preview)
 

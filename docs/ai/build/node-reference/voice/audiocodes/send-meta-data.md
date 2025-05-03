@@ -4,6 +4,8 @@ slug: "send-meta-data"
 description: "The Send Meta Data Node is used to send metadata in an AudioCodes voice conversation."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

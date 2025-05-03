@@ -4,6 +4,8 @@ slug: "set-html-tile"
 description: "The Copilot: HTML Tile Node enables you to showcase HTML content in the AI Copilot workspace. You can design custom layouts to present information to a human agent. HTML content may include text, images, videos, links, and scripts."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import Postback from '@site/docs/_includes/ai/nodes/_postback.md';
 
@@ -35,7 +37,7 @@ In the Copilot: HTML Tile Node, you can enhance your HTML content by utilizing t
 These libraries allow you to seamlessly display dynamic widgets within your workspace. 
 To use these libraries in the Copilot: HTML Tile Node, you need to include them in your HTML code.
 
-??? info "Example"
+<CollapsibleSection title="Example">
 
     ```html
     <!DOCTYPE html>
@@ -51,19 +53,19 @@ To use these libraries in the Copilot: HTML Tile Node, you need to include them 
       </head>
       <body>
         <div id="root"></div>
-
+    
         <script type="text/babel">
           const { useState } = React;
-
+    
           // this event listener processes incoming data updates
           window.addEventListener("message", function (event) {
             console.log("Content of message: " + event.data);
           });
-
+    
           function ReactWidget() {
             const [name, setName] = useState('');
             const [message, setMessage] = useState('');
-
+    
             const handleData = () => {
               if (name) {
                 setMessage('Your name is ' + name);
@@ -71,7 +73,7 @@ To use these libraries in the Copilot: HTML Tile Node, you need to include them 
                 setMessage('Please enter your name.');
               }
             };
-
+    
             return (
               <div>
                 <input
@@ -85,12 +87,16 @@ To use these libraries in the Copilot: HTML Tile Node, you need to include them 
               </div>
             );
           }
-
+    
           ReactDOM.render(<ReactWidget />, document.getElementById('root'));
         </script>
       </body>
     </html>
     ```
+    
+
+</CollapsibleSection>
+
 
 ## Receiving JSON Data from the Flow
 
@@ -107,12 +113,16 @@ window.addEventListener("message", function (event) {
 
 You can send data back to the Flow by using the Postback feature.
 
-??? info "Postback"
-<Postback />
+<CollapsibleSection title="Postback">
+
+    <Postback />
 
     In the AI Copilot Flow, below the Copilot: HTML Tile Node, add a [Copilot: Send Data](send-data.md).
     In the **JSON** field of the Copilot: Send Data Node,
     specify the parameters you want to pass as metadata to the Copilot: HTML Tile Node to update the content.
+
+</CollapsibleSection>
+
 
 ## More Information
 

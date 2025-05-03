@@ -4,6 +4,8 @@ slug: "voice-preview"
 description: "The Voice Preview feature lets users quickly test their voice output without going through the entire flow with a mock call. It supports cloud speech-to-text and text-to-speech services from providers such as Google, Microsoft, and Amazon AWS."
 hidden: true 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 import VoiceProviders from '@site/docs/_includes/ai/_voice-providers.md';
 
 # Voice Preview

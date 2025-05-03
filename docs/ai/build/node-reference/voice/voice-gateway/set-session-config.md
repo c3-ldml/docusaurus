@@ -7,6 +7,8 @@ tags:
   - Nodes
   - Set Session Config
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Set Session Config
 

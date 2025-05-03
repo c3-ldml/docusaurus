@@ -8,6 +8,8 @@ tags:
   - DTMF
   - dtmf
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # DTMF
 
@@ -44,19 +46,19 @@ An AI Agent guides the customer through this process using DTMF digit tones.
 
 To build a Flow with the DTMF Node for the previous example, follow these steps:
 
-??? info "Example DTMF Flow"
-    
+<CollapsibleSection title="Example DTMF Flow">
+
     1. In the Flow editor, click **+** and select **Extensions > VG > Set Session Config**.
     2. In the **DTMF** section of the **Set Session Config** Node, activate the **Capture DTMF Signals** parameter, remove `#` from the **DTMF Submit Digit** field, and save.
     3. Below the Set Session Config Node, add a Question Node and configure the following settings:
-    
+
         - **Question Type**: select **Number**.
         - **Output Type**: Select **Text**.
         - **Text**:`Hello! Welcome to our Support. We can help you with your equipment needs. If you want to place an order for equipment, press 1. If you have already received your equipment and need help with setup or are experiencing issues, press 2.`
-    
+
     4. Below the Question Node, add a Lookup Node, select the **Text** type, and click **Save Node**.
     5. Configure the logic in the branch for the first Case Node:
-    
+
         1. In the **Value** field, specify `1`.
         2. Below the Case Node, add a Say Node. In the **Text** field of the Say Node, specify the following sentence: `After the signal, please leave a voice message with the information about the equipment you wish to order, and we will call you back`.
         3. Below the Say Node, add a DTMF Node. Specify `1` in the **Digit Sequence** field to correspond the tone to the dial number that the caller presses.
@@ -74,6 +76,9 @@ To build a Flow with the DTMF Node for the previous example, follow these steps:
         </figure>
 
     Test your Flow via the Interaction Panel. Use the [Voice Call](../../../../test/interaction-panel/overview.md#voice-call) setting.
+
+</CollapsibleSection>
+
 
 ## More Information
 

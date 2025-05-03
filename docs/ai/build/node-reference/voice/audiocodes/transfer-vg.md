@@ -4,6 +4,8 @@ slug: "transfer-vg"
 description: "The Transfer VG Node is used to transfer a voice conversation to a Voice Gateway destination."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

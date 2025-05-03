@@ -7,6 +7,8 @@ tags:
   - Cognigy.AI
   - Projects
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Projects
 
@@ -53,11 +55,15 @@ If you already have a Live Agent account and admin rights, you can also:
 
 _Tasks_ are specific activities, such as training Intents, importing Snapshots, or creating a new Project. A Task is an asynchronous process that runs in the background and for which you get notifications. The Task Panel provides an overview of ongoing and completed Tasks. To open the Task Panel, click the ![task-menu](../../../static/img/_assets/icons/task-menu.svg) button in the upper-right corner of the **Project** page. 
 
-??? info "View Tasks"
+<CollapsibleSection title="View Tasks">
+
     Note that only the most recent 100 tasks are visible on the Task Panel. To view tasks beyond the latest 100, use the [Get Tasks](https://api-trial.cognigy.ai/openapi#get-/v2.0/tasks) API request as follows:
 
     - To skip the first 100 Tasks that are already visible on the Task Panel, set the `skip` parameter to 100.
     - To view, for example, the next 100 Tasks, set the `limit` parameter to 100.
+
+</CollapsibleSection>
+
 
 ## More Information
 

@@ -4,6 +4,8 @@ slug: "search-extract-output"
 description: "The Search Extract Output Node is used to search and extract data from the output of a previous Node."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import OrderPropertyDeprecation from '@site/docs/_includes/release-notes/_order-property-deprecation.md';
 import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
@@ -74,7 +76,7 @@ There are three modes that offer different levels of data extraction and present
 
 Select a store from the list to allow the Node to retrieve the data.
 
-??? info "Search Settings"
+<CollapsibleSection title="Search Settings">
 
     | Parameter                  | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
     |----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,10 +87,14 @@ Select a store from the list to allow the Node to retrieve the data.
     | Top K                      | Slider        | Specify how many of the top K knowledge search results should be returned.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
     | Source Tags                | CognigyScript | The tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and, as a result, improve the accuracy of search outputs. <br></br><br></br> Before specifying tags, ensure that they were provided during the creation of the Knowledge Sources. Add Tags by specifying each Tag separately and pressing ++enter++. The maximum number of tags is 5. <br></br><br></br>When you specify multiple Source Tags, the Search Extract Output Node defaults to an `AND` operator, meaning it only considers Sources that have all the specified Tags. This approach ensures the search results are precise and highly relevant to the end user's query. To change this behavior, go to the **Match Types for Source Tags** parameter. |
     | Match type for Source Tags | Select        | The operator to filter Knowledge Sources by Source Tags. Select one of the following options:<ul><li>**AND** — the default value, requires all tags to match across multiple Knowledge Sources. Consider the following example: there are Knowledge Sources with Tags `S-a`, `S-b`, and `S-c`. When you use the `AND` operator to filter by `S-a` and `S-b`, only Sources with both Tags `S-a` and `S-b` are included in the search results.</li><li>**OR** — requires at least one tag to match across multiple Knowledge Sources. Consider the following example: there are Knowledge Sources with Tags `S-a`, `S-b`, and `S-c`. When you use the `OR` operator to filter by `S-a` or `S-b`, any Source with either Tag `S-a` or `S-b` is included in the search results.</li></ul>    |
+    
+    <Tags />
+    
 
-<Tags />
+</CollapsibleSection>
 
-??? info "Extract Settings"
+
+<CollapsibleSection title="Extract Settings">
 
     | Parameter         | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
     |-------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -101,15 +107,23 @@ Select a store from the list to allow the Node to retrieve the data.
     | Stops             | Text          | Up to 4 sequences where the API stops generating further tokens. The returned text doesn't contain the stop sequence.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
     | Timeout           | Number        | The maximum amount of time in milliseconds to wait for a response from the Generative AI Provider.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
     | Timeout Message   | CognigyScript | The message to output if the timeout is reached.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+    
 
-??? info "Output Settings"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Output Settings">
 
     | Parameter            | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                       |
     |----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | OutputMode           | Select        | This parameter allows you to choose between two options for the output:<ul><li>**Text** — select this option if you want the system to provide a basic text-based response as the output.</li><li>**Adaptive Card** — select this option if you want a visual representation of an Adaptive Card as the output. Adaptive Cards are interactive and display rich content with buttons, images, and more.</li></ul> |
     | Output Fallback Text | CognigyScript | The text to output if no answer was found.                                                                                                                                                                                                                                                                                                                                                                        |
+    
 
-??? info "Error Handling"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Error Handling">
 
     | Parameter                      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                              |
     |--------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -117,6 +131,10 @@ Select a store from the list to allow the Node to retrieve the data.
     | Error Message (optional)       | Text   | Active when the **Continue Flow Execution** option is selected. Optional message to output if the Search or Extract service fails.                                                                                                                                                                                                                                                                                       |
     | Select Flow                    | Select | Active when the **Go to Node** option is selected. Select a Flow from the available options.                                                                                                                                                                                                                                                                                                                             |
     | Select Node                    | Select | Active when the **Go to Node** option is selected. Select a Node from the available options.                                                                                                                                                                                                                                                                                                                             |
+    
+
+</CollapsibleSection>
+
 
 ### Debugging Options
 

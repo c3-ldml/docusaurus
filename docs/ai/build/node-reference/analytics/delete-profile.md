@@ -4,6 +4,8 @@ slug: "delete-profile"
 description: "The Delete Profile Node is used to delete a specific Contact Profile if the end user requests it."
 hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import ProfileNodeUseCase from '@site/docs/_includes/ai/node-reference/analytics/_profile-node-use-case.md';
 

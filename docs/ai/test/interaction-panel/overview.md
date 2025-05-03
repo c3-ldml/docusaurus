@@ -4,6 +4,8 @@ slug: "interaction-panel"
 description: "The Interaction Panel offers a robust testing interface for your AI Agents. It enables you to test and analyze the behavior of your AI Agents, allowing you to easily modify and improve their communication and service skills."
 hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 import VoiceProviders from '@site/docs/_includes/ai/_voice-providers.md';
 
 # Interaction Panel

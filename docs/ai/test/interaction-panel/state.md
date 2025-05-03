@@ -3,6 +3,8 @@
  slug: "state" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # State
 
 States allow limitations to be placed on a conversation that restrict the valid Intents that the NLU has access to. 

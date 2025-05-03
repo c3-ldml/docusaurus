@@ -3,6 +3,8 @@
  slug: "switch-locale" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Switch Locale
 
 <figure>

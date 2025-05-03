@@ -3,6 +3,8 @@ title: "Set Handover Inactivity"
 slug: "set-handover-inactivity"
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Set Handover Inactivity
 
 <figure>

@@ -7,6 +7,8 @@ tags:
   - Nodes
   - Optional Question
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Optional Question
 
@@ -24,7 +26,8 @@ An Optional Question Node requests specific information from the user. The Node 
 
 ## Parameters
 
-??? info "Basic Settings"
+<CollapsibleSection title="Basic Settings">
+
     | Type        | Required user input to answer question                                                                                                                                                                                                  |
     |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Text        | Any text input.                                                                                                                                                                                                                         |
@@ -46,14 +49,18 @@ An Optional Question Node requests specific information from the user. The Node 
     !!! note "Supported Data Formats for System-Defined Slots"
         All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping](../../../empower/nlu/slots-and-lexicons/slots.md) page.
 
-??? info "Channels and Output types"
+    <CollapsibleSection title="Channels and Output types">
 
     The Optional Question Node output types carry the same functionality as the [Say Node](say.md).
 
     !!! success "Date Questions"
         If you select the Date as a Question Type, the Question Node automatically renders a datepicker if the channel supports it. Refer to [Datepicker](../data/datepicker.md) for more information. 
 
-??? info "Advance"
+
+    </CollapsibleSection>
+
+
+    <CollapsibleSection title="Advance">
 
     | Parameter                        | Description                                                                                                                                                                                                                                                                                                                                                   |
     |----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,22 +69,36 @@ An Optional Question Node requests specific information from the user. The Node 
     | Forget Question Threshold        | The difference with a regular Question Node is that the Optional Question Node doesn't need to be answered. If the Optional Question Node is triggered and no answer is provided, the fact that the question was "asked" is nonetheless kept in memory. With this setting, you can decide for how many inputs the Optional Question should be kept in memory. |
     | Parse CognigyScript              | Lets you decide on which user input the CognigyScript after Answer should be executed.                                                                                                                                                                                                                                                                        |
 
-??? info "Result Storage"
+
+    </CollapsibleSection>
+
+
+    <CollapsibleSection title="Result Storage">
 
     If **Store Result in Context** is enabled, the Question Result is also stored in the [Context](../../../test/interaction-panel/context.md) object. 
 
-??? info "Question Information in Input"
+
+    </CollapsibleSection>
+
+
+    <CollapsibleSection title="Question Information in Input">
 
     When an Optional Question is "active", meaning the AI Agent waits for an answer, information about the Optional Question is added to the Input object.
 
     ```JSON
-    "activeOptionalQuestion": {
-        "nodeId": "cb81db3a-6230-49e7-8ce4-12f877abe0cb",
-        "type": "yesNo",
-        "lastExecutedAt": 1,
-        "forgetQuestionThreshold": 3
-    }
-    ``` 
+        "activeOptionalQuestion": {
+            "nodeId": "cb81db3a-6230-49e7-8ce4-12f877abe0cb",
+            "type": "yesNo",
+            "lastExecutedAt": 1,
+            "forgetQuestionThreshold": 3
+        }
+    ```
+
+
+    </CollapsibleSection>
+
+</CollapsibleSection>
+
 
 ## AI-Enhanced Output
 

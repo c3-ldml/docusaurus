@@ -4,6 +4,8 @@ slug: "set-adaptivecard-xapp-state"
 description: "The Set AdaptiveCard xApp State Node is used to set the state of an AdaptiveCard in an xApp."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import CustomNode from '@site/docs/_includes/ai/xApp/_custom-node.md';
 import WaitingBehavior from '@site/docs/_includes/ai/xApp/_waiting-behavior.md';
@@ -29,17 +31,25 @@ To view submitted data, use the Interaction panel. You can access submitted data
 
 ## Parameters
 
-??? info "AdaptiveCard Definition"
+<CollapsibleSection title="AdaptiveCard Definition">
 
     The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form.
+    
 
-??? info "Style Overrides"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Style Overrides">
 
     To override the background and interaction element colors, use CSS color codes.
+    
+    <WaitingBehavior />
+    
+    <Overlay />
+    
 
-<WaitingBehavior />
+</CollapsibleSection>
 
-<Overlay />
 
 ## More Information
 

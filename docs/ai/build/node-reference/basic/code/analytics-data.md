@@ -4,6 +4,8 @@ slug: "analytics-data"
 description: "The Analytics Data Node is used to add analytics data to the Contact Profile."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import UnderstoodMessages from '@site/docs/_includes/ai/_understood-messages.md';
 
@@ -23,7 +25,8 @@ analyticsdata.intent = "test";
 
 <UnderstoodMessages />
 
-??? info "Analytics Data Fields"
+<CollapsibleSection title="Analytics Data Fields">
+
     | Field          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Type              |
     |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
     | intent         | The intent that will be written to analytics. You can for instance modify this field to store the intent that was found in an executed Flow in analytics.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | String            |
@@ -46,6 +49,9 @@ analyticsdata.intent = "test";
     | custom9        | A custom field that can be set to any string value during Flow execution. Defaults to null.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | String            |
     | custom10       | A custom field that can be set to any string value during Flow execution. Defaults to null.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | String            |
 
+</CollapsibleSection>
+
+
 ## Custom Fields
 
 Custom fields let you add extra data to your Analytics reports. 
@@ -55,20 +61,24 @@ This feature helps you analyze your data more deeply and get insights beyond the
 
 - The maximum length of a custom field is 1024 characters.
 
-??? info "Store Complex Custom Data"
+<CollapsibleSection title="Store Complex Custom Data">
 
     For more complex data, you can use a string field object. 
-
+    
     In this example, `custom1` stores a simple string value, while `custom2` uses a JSON representation of the `customData` object to store more complex information.
-
+    
     ```javascript
     const customData = {
       key: "value"
     };
-
+    
     analyticsdata.custom1 = "userFocusGroup: focusGroup1";
     analyticsdata.custom2 = JSON.stringify(customData);
     ```
+    
+
+</CollapsibleSection>
+
 
 ## Analytics Data Lifespan
 

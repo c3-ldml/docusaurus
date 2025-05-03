@@ -3,6 +3,8 @@ title: "Copilot: Adaptive Card Tile"
 slug: "set-adaptive-card-tile"
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import AdaptiveCardGenAI from '@site/docs/_includes/ai/nodes/_adaptive-card-genai.md';
 
@@ -29,17 +31,21 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 | Adaptive Card JSON   | HTML          | The Adaptive Card JSON payload to render inside the tile.                                      |
 | JSON Data            | JSON          | The Data to send to the IFrame as a postMessage event.                                         |
 
-??? info "Create an Adaptive Card with Generative AI"
+<CollapsibleSection title="Create an Adaptive Card with Generative AI">
 
     Before creating an Adaptive Card with Generative AI, ensure that you are connected to one of the [LLM Providers](../../../empower/generative-ai.md#prerequisites).
-
+    
     To use this feature, follow these steps:
-
-<AdaptiveCardGenAI />
-
+    
+    <AdaptiveCardGenAI />
+    
     <figure>
       <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/adaptive-card-generative-ai.png" width="100%" />
     </figure>
+    
+
+</CollapsibleSection>
+
 
 ## More Information
 

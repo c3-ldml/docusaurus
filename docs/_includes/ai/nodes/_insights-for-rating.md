@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 To track how the rating changed during a user session,
 use [Insights](https://docs.cognigy.com/insights/overview/).
 On the Transcript Explorer page,

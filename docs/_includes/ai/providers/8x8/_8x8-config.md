@@ -1,4 +1,7 @@
-??? info "Configure 8x8"
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
+<CollapsibleSection title="Configure 8x8">
+
     1. Log in to the 8x8 Contact Center for admins.
     2. On the **My Applications** page, select **Configuration Manager for Contact Center**. 
     3. In the left-side menu, click **Integration**, then go to the **Webhooks** tab. 
@@ -23,3 +26,6 @@
         - **Webhook** — select the webhook that you recently created.
         - **Queue** — select the queue that you recently created.
     Save changes.
+
+</CollapsibleSection>
+

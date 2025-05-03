@@ -3,6 +3,8 @@ title: "xApp: Show HTML"
 slug: "Set-HTML-xApp-State"
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 import CustomNode from '@site/docs/_includes/ai/xApp/_custom-node.md';
 import WaitingBehavior from '@site/docs/_includes/ai/xApp/_waiting-behavior.md';
 import Overlay from '@site/docs/_includes/ai/xApp/_overlay.md';
@@ -43,18 +45,22 @@ To access session data from within the HTML Code, use CognigyScript `{{"{{ JSON.
 
 <Overlay />
 
-??? info "xApp Page SDK"
+<CollapsibleSection title="xApp Page SDK">
 
     When hosted within Cognigy.AI, the xApp Page or any generic HTML xApp can load the xApp Page SDK using a fixed URL:
     `<script src=”/sdk/app-page-sdk.js”></script>`.
     Loading this file exposes the xApp Page SDK as a global instance called `SDK`.
     To access its methods, call `SDK.someExampleMethod()` after loading the SDK file. The SDK code isn't loaded asynchronously.
-
+    
     | Function                                    | Usage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
     |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | `SDK.getAppTemplateData():Promise<unknown>` | Returns the xApp Template Data associated with this xApp Page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
     | `SDK.submit(result: Object):Promise<void>`  | Submits the provided "result" object to the Flow. Has to be a JSON serializable object.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
     | `SDK.getCustomReadyHandler():Function`      | Returns a custom ready state handler. By default, the xApp Page is ready as soon as the document is fully loaded.<br></br>If you want to fetch additional content before showing the Page, you can override the `ready` event by getting a custom `ready handler` and calling it as soon as your xApp Page is ready manually. <br></br> The end user sees the xApp Loading Screen on the Shell Page.<br></br>Note: If loading the xApp Page takes more than 10 seconds, the xApp is treated as `Failed to load` without the possibility of recovering. |
+    
+
+</CollapsibleSection>
+
 
 ## More Information
 

@@ -4,6 +4,8 @@ slug: "log-message"
 description: "A Log Message Node writes a message into the Project Logs."
 hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Log Message
 

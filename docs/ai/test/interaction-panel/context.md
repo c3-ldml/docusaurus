@@ -3,6 +3,8 @@
  slug: "context" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Context
 
 The Context is a JSON object which stores persistent information.
@@ -34,11 +36,15 @@ Flow nodes can dynamically access Context properties via [Tokens](../../build/to
 * `{{ " {{context.user.age}}" }}` would return ` ` (empty string) or - if used in a condition - `false`
 
 
-!!! tip "Edit, Save or Reset your current Context"
+<CollapsibleSection title="Edit, Save or Reset your current Context">
+
     You can Save, Cancel or Reset the Context Object by clicking the Save, Cancel or Reset buttons in the bottom option pane of the Interaction Panel. Context manipulations will only manipulate the value(s) in your current session.
 
 
-The default context is the initial state of the context when the session starts. This can be customized to initiate variables that will be accessed and changed throughout the conversation. The default context is configured in the [Flow Editor](../../build/flows/overview.md) under the **Settings** tab.
+    The default context is the initial state of the context when the session starts. This can be customized to initiate variables that will be accessed and changed throughout the conversation. The default context is configured in the [Flow Editor](../../build/flows/overview.md) under the **Settings** tab.
+
+</CollapsibleSection>
+
 
 ## More Information
 

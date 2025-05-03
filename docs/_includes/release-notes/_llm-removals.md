@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 ???+ warning "Removal of Several LLM Versions by OpenAI, Azure OpenAI, and Google"
     If you are using these models as custom models, switch to [newer versions](https://docs.cognigy.com/ai/empower/llms/#supported-models) before the shutdown date.
 

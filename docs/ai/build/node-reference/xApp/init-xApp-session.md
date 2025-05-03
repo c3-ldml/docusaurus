@@ -3,6 +3,8 @@
  slug: "Init-xApp-Session" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # xApp: Init Session
 
@@ -43,7 +45,7 @@ With the provided link, a user can access the PIN page and enter their provided 
 
 ## Parameters
 
-??? info "Style Customization"
+<CollapsibleSection title="Style Customization">
 
     | Parameter          | Type          | Description                                                                                                                                                                                                      |
     |--------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -52,8 +54,12 @@ With the provided link, a user can access the PIN page and enter their provided 
     | Logo               | List          | You can choose to show the default logo, not any logo, or a custom logo. If you select the custom logo option, specify the Custom Logo URL.                                                                      |
     | Custom Favicon URL | CognigyScript | An image URL for the custom favicon.                                                                                                                                                                             |
     | Page Title         | CognigyScript | A text shown as a tab or window title. The title is displayed on all Shell Page Screens.                                                                                                                         |
+    
 
-??? info "xApp Screens"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="xApp Screens">
 
     | Parameter           | Type          | Description                                                                                |
     |---------------------|---------------|--------------------------------------------------------------------------------------------|
@@ -61,14 +67,26 @@ With the provided link, a user can access the PIN page and enter their provided 
     | 'Launch Error' Text | CognigyScript | Specify messages displayed to the user when the xApp Page fails for some reason            |
     | 'xApp Error' Text   | CognigyScript | Specify messages displayed to the user when the xApp Page encounters an error or is halted |
     
+    
 
-??? info "Intermediate Screen"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Intermediate Screen">
 
     Customize the text displayed on the Intermediate Screen. Alternatively, you can replace the default Intermediate Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
+    
 
-??? info "Connection Screen"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Connection Screen">
 
     Customize the text displayed on the Connection Screen. Alternatively, you can replace the default Connection Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
+    
+
+</CollapsibleSection>
+
 
 ## More Information
 

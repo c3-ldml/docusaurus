@@ -7,6 +7,8 @@ tags:
   - Voice Gateway
   - Mute
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Mute Speech Input
 
@@ -36,10 +38,10 @@ you can maintain better control and ensure a seamless workflow in your applicati
 
 ## Examples
 
-??? info "Mute Speech Input Example"
+<CollapsibleSection title="Mute Speech Input Example">
 
     You can control when speech input is accepted or not in the Flow:
-
+    
     1. Say Node: `Hello, you will receive an xApp`.
     2. xApp: Init Session Node.
     3. Mute Speech Input (enabled).
@@ -47,18 +49,26 @@ you can maintain better control and ensure a seamless workflow in your applicati
     5. Mute Node STT (disabled).
     
     After the rating question, the Mute Node STT is disabled, allowing the subsequent Nodes to accept speech inputs normally.
+    
 
-??? info "Mute DTMF Input Example"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Mute DTMF Input Example">
 
     You can control when DTMF input is accepted or not in the Flow:
-
+    
     1. Say Node: `Welcome to the interactive menu`.
     2. xApp: Init Session Node.
     3. Mute DTMF Input (enabled).
     4. Question Node: `Please select an option from the menu using your keypad`. <br></br>When the Mute DTMF Input Node is enabled, the Question Node will not accept DTMF inputs. Users must interact with the menu using other means, such as speech recognition or selecting options through buttons or touchscreen. This prevents unintended DTMF input interference while speech recognition or other input methods are active.
     5. Mute DTMF Input (disabled).
-
+    
     After the menu interaction, the Mute DTMF Input Node is disabled, allowing subsequent Nodes to accept DTMF inputs normally.
+    
+
+</CollapsibleSection>
+
 
 ## More Information
 

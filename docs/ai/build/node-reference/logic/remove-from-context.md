@@ -3,6 +3,8 @@ title: "Remove From Context"
 slug: "remove-from-context" 
 hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Remove From Context
 
 <figure>

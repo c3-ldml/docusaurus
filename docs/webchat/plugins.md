@@ -8,6 +8,8 @@ tags:
   - Plugins
   - Plugin
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Webchat Plugins
 

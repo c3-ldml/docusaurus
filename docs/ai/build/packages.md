@@ -8,6 +8,8 @@ tags:
   - Packages
   - Packaging
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Packages
 
@@ -51,26 +53,34 @@ Packages can include the following Project resources:
 
 Locales aren't imported with the Flow. However, you can include the localized content in the import process by mapping the Locales.
 
-??? info "Map Locales"
-     Before importing the Flow, create the necessary Locales in the target Project and then import the Package. You can map the Locales during the import. The localized content from the Package overwrites the Project content if you replace the Flow.
+<CollapsibleSection title="Map Locales">
+
+    Before importing the Flow, create the necessary Locales in the target Project and then import the Package. You can map the Locales during the import. The localized content from the Package overwrites the Project content if you replace the Flow.
 
      For version 4.67 and later, you can map any Locale from the Package to the target Project's primary Locale.
 
      If you map a non-primary Locale from the Package with incomplete localized content to the Project's primary Locale, Cognigy.AI copies the missing content from the Package's primary Locale.
 
+</CollapsibleSection>
+
+
 ### Resolve Import Conflicts
 
 You can resolve conflicts in the **Conflict Management** section that appears during the import.
 
-??? info "FAQ"
+<CollapsibleSection title="FAQ">
 
     **Q1**: What should I do if I encounter errors during Knowledge Store Import?
-
+    
     **A1**: Try to upload the Package again. During the reupload, select only the Knowledge Stores that were not fully imported.
-
+    
     **Q2:** How can I avoid browser request timeouts during Knowledge Store Package upload?
-
+    
     **A2:** To avoid browser request timeouts, keep the Package size low. Separate your resources into smaller Packages.
+    
+
+</CollapsibleSection>
+
 
 ## More Information
 

@@ -4,6 +4,8 @@ slug: "knowledge-search"
 description: "The Knowledge Search Node performs a content search and retrieves content from data previously uploaded to the Knowledge Store through various sources, such as text files, images, and web pages."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Knowledge Search
 

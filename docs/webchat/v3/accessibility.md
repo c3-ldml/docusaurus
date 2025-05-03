@@ -4,6 +4,8 @@ slug: "accessibility"
 description: "Cognigy encourages conversation designers to build solutions with accessibility in mind. Ensure that your Webchat is designed to be accessible to everyone, including individuals with varying accessibility needs."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../release-notes/4.100.md)
 

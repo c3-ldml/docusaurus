@@ -6,6 +6,8 @@ description: "Nodes are the fundamental building blocks of Flows. They define th
 tags:
   - nodes
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Nodes
 
@@ -20,11 +22,15 @@ Some Node types, for example, [If Nodes](../node-reference/logic/if.md) and [Loo
 === "GUI"
     You can create and delete Nodes in the [Flow editor](../flows/editor.md). To edit a Node, open the Node editor by clicking the Node in the Flow editor. Node editors include settings specific to each Node type. In the Flow editor, you can also right-click a Node to copy, cut, and paste the Node as well as add comments to it.
 
-    !!! tip "Use Hotkeys for Managing Nodes"
-        To speed up building your AI Agent, use [keyboard shortcuts](../../administer/hotkeys.md).
+    <CollapsibleSection title="Use Hotkeys for Managing Nodes">
 
-=== "API"
+    To speed up building your AI Agent, use [keyboard shortcuts](../../administer/hotkeys.md).
+
+    === "API"
     You can view, create, edit, and delete Nodes using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Charts-v2.0). You can also search and move Nodes and add Locales to them. For Nodes that support Generative AI output, you can generate this kind of output through the API as well.
+
+</CollapsibleSection>
+
 
 ### Set a Node as an Entrypoint
 

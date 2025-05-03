@@ -11,6 +11,8 @@ tags:
   - mcp tool
   - mcp server
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import Beta from '@site/docs/_includes/ai/_beta.md';
 
@@ -35,7 +37,8 @@ To configure this Node, follow these steps:
 
 This configuration assigns a job to an AI Agent, defines its role and responsibilities, and provides additional instructions or context to guide its actions.
 
-??? info "AI Agent"
+<CollapsibleSection title="AI Agent">
+
     | Parameter                | Type          | Description                                                                                                                                                                                                                                                                                                 |
     |--------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | AI Agent                 | Selector      | Select the AI Agent.                                                                                                                                                                                                                                                                                        |
@@ -43,14 +46,22 @@ This configuration assigns a job to an AI Agent, defines its role and responsibi
     | Job Description          | CognigyScript | Provide a description of the job responsibilities to guide the AI Agent's interactions. For example, `Assist customers with product issues, escalate complex cases, and provide guidance on best practices`.                                                                                                |
     | Instructions and Context | Toggle        | Add specific instructions or context as a system message to help the AI Agent better fulfill the job requirements. For example, `Stay professional and friendly; focus on problem-solving and clarity`. These instructions are considered in addition to those specified in the AI Agent creation settings. |
 
-??? info "Memory Handling"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Memory Handling">
+
     | Parameter                   | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
     |-----------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Long-Term Memory Injection  | Selector      | Allow the AI Agent to access [Contact Profile](../../../analyze/contact-profiles.md) information for the current user. Select one of the following options:<ul><li>**None** – no memory.</li><li>**Inherit from AI Agent** – use the settings specified in the [AI Agent creation settings](../../../empower/agentic-ai/manage-ai-agents.md#create-an-ai-agent).</li><li>**Inject full Contact Profile** – use all information from the Contact Profile.</li><li>**Inject Contact Memories only** – use information only from the **Memories** field in the Contact Profile.</li><li>**Inject selected Profile fields** – use information from specific fields in the Contact Profile.</li></ul> |
     | Selected Profile Fields     | Text          | The parameter appears when the **Inject selected Profile fields** option is enabled. Enter specific fields from the Contact Profile for targeted data use. Specify the field using the [Profile keys](../../../analyze/contact-profiles.md#predefined-fields) format and press ++enter++ to apply it.                                                                                                                                                                                                                                                                                                                                                                                            |
     | Short-Term Memory Injection | CognigyScript | Specify a static string or a dynamic value via CognigyScript to make available to the AI Agent in the current turn.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
-??? info "Grounding Knowledge"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Grounding Knowledge">
+
     | Parameter                  | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
     |----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Knowledge Injection        | Selector      | Use the Knowledge AI feature for the AI Agent. Select one of the following options:<ul><li>**Never** — do not use the Knowledge Stores.</li><li>**When Required** — let the AI Agent decide when querying the Knowledge Stores is required to help the user.</li><li>**Once for Each User Input** — query the Knowledge Store(s) after each user input. Note that executing a query on every user input can lead to increased costs and latency.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -62,7 +73,11 @@ This configuration assigns a job to an AI Agent, defines its role and responsibi
     | Match type for Source Tags | Select        | The parameter appears when you select either **When Required** or **Once for Each User Input**. The operator to filter Knowledge Sources by Source Tags. Select one of the following options:<ul><li>**AND** — the default value, requires all tags to match across multiple Knowledge Sources. Consider the following example: there are Knowledge Sources with Tags `S-a`, `S-b`, and `S-c`. When you use the `AND` operator to filter by `S-a` and `S-b`, only Sources with both Tags `S-a` and `S-b` will be included in the search results.</li><li>**OR** — requires at least one tag to match across multiple Knowledge Sources. Consider the following example: there are Knowledge Sources with Tags `S-a`, `S-b`, and `S-c`. When you use the `OR` operator to filter by `S-a` or `S-b`, any Source with either Tag `S-a` or `S-b` will be included in the search results.</li></ul> |
     | Generate Search Prompt     | Toggle        | The parameter appears when you select **Once for Each User Input**. This parameter is enabled by default and allows you to generate a context-aware search prompt before executing the knowledge search. Note that enabling this parameter may lead to increased cost and latency.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-??? info "Storage and Streaming Options"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Storage and Streaming Options">
+
     | Parameter                   | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
     |-----------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | How to handle the result    | Select        | Determine how to handle the prompt result:<ul><li>**Store in Input** — stores the AI Agent result in the Input object. To print the prompt result, refer to the configured Context key in a Say Node or enable the **Output result immediately** option.</li><li>**Store in Context** — stores the result in the Context object. To print the prompt result, refer to the configured Context key in a Say Node or enable the **Output result immediately** option.</li><li>**Stream to Output** — streams the result directly into the output. This means that chunks coming from the prompt response will be output directly into the conversation chat as soon as a Stream Buffer Flush Token is matched, and you don't need to use the AI Agent Output Token token and Say Node. By default, this result won't be stored in either the Input or the Context. You can change this behavior by activating the **Store Copy in Input** option.</li></ul> |
@@ -72,7 +87,11 @@ This configuration assigns a job to an AI Agent, defines its role and responsibi
     | Output result immediately   | Toggle        | The parameter appears when you select either **Store in Input** or **Store in Context**. This parameter allows you to output results immediately without using the Say Node and AI Agent Output token.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
     | Store Copy in Input         | Toggle        | The parameter appears when **Stream to Output** is selected. In addition to streaming the result to the output, store a copy in the Input object by specifying a value in the **Input Key to store Result** field.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
-??? info "Voice"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Voice">
+
     | Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
     |---------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Voice Setting             | Select        | Configure the voice settings for the AI Agent Job. This parameter determines how the AI Agent selects the voice for text-to-speech (TTS) output. Select one of the following options:<br></br>- **Inherit from AI Agent** — use the voice settings defined in the [AI Agent creation settings](../../../empower/agentic-ai/manage-ai-agents.md#create-an-ai-agent).<br></br>- **Use Job Voice** – apply custom voice settings specific to this job, allowing the AI Agent to adapt to the particular role it performs. For example, if you create a marketing AI Agent, the voice can be more engaging, friendly, and persuasive. However, if the same AI Agent performs a different role, such as customer support, the voice might be more neutral, empathetic, and formal. |
@@ -85,19 +104,31 @@ This configuration assigns a job to an AI Agent, defines its role and responsibi
     | TTS Label                 | CognigyScript | The alternative name of the TTS vendor is the one you [specify in the Voice Gateway Self-Service Portal](../../../../voice-gateway/webapp/applications.md#add-additional-tts-and-stt-vendor). If you have created multiple speech services from the same vendor, use the label to specify which service to use.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
     | Disable TTS Audio Caching | Toggle        | Disables TTS audio caching.<br></br><br></br> By default, the setting is deactivated. In this case, previously requested TTS audio results are stored in the AI Agent cache. When a new TTS request is made and the audio text has been previously requested, the AI Agent retrieves the cached result instead of sending another request to the TTS provider.<br></br><br></br> When the setting is activated, the AI Agent caches TTS results but doesn't use them. In this case, each request is directly sent to your speech provider.  <br></br><br></br> Note that disabling caching can increase TTS costs. For detailed information, contact your speech provider.                                                                                                                        |
 
-??? info "Tool Settings"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Tool Settings">
+
     | Parameter       | Type     | Description                                                                                                                                                                                                                                                                                                                         |
     |-----------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Tool Choice     | Selector | If supported by your LLM Model, this will determine how tools should be selected by the AI Agent:<ul><li>**Auto** — tools (or none) are automatically selected by the AI Agent when needed.</li><li>**Required** — your AI Agent will always use one of its Tools.</li><li>**None** — your AI Agent won't use a tool.</li></ul>     |
     | Use Strict mode | Toggle   | When the parameter is enabled, strict mode (if supported by the LLM provider) ensures that the arguments passed to a tool call precisely match the expected parameters. Enabling this feature can help prevent errors. However, it may cause a slight delay in the response, especially during the first call after making changes. |
 
-??? info "Image Handling"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Image Handling">
+
     | Parameter            | Type     | Description                                                                                                                                                                                                                                                                                                                                |
     |----------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Process Images       | Toggle   | Enable the AI Agent to read and understand images attachments. Make sure that your LLM provider supports image processing; refer to your provider's documentation. In addition, make sure that attachments are supported by and activated in your Endpoint, for example, Webchat.                                                          |
     | Images in Transcript | Selector | Configure how images older than the last turn are handled to reduce token usage: <ul><li>**Minify** — reduces the size of these images to 512x512px.</li><li>**Drop** — excludes the images.</li><li>**Keep** — sends the max size (this option consumes more tokens).</li></ul> Limitations and token consumption depend on the LLM used. |
 
-??? info "Advanced"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Advanced">
+
     | Parameter                 | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
     |---------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | LLM                       | Selector | Select a model that supports the [AI Agent Node feature](../../../empower/llms/model-support-by-feature.md). The selected **Default** model is the model that you specified in **Settings > Generative AI Settings** of your Project. Select the model that you [added earlier](../../../empower/agentic-ai/overview.md#prerequisites) while configuring Agentic AI feature. This model will manage your AI Agent.                                                                                                                                                                                                                                                                                        |
@@ -106,7 +137,11 @@ This configuration assigns a job to an AI Agent, defines its role and responsibi
     | Maximum Completion Tokens | Slider   | Define the maximum number of tokens that can be used during a process to manage costs. However, if the limit is set too low, the output may be incomplete, as the process could be cut off before it finishes. For example, if you set the maximum tokens to 100, the model will stop generating content once it reaches 100 tokens. This number would be roughly equal to 100 words, depending on the language and tokenization method.                                                                                                                                                                                                                                                                  |
     | Temperature               | Slider   | Define the sampling temperature, which ranges between 0 and 1. Higher values, such as 0.8, make the output more random, while lower values, such as 0.2, make it more focused and deterministic.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
-??? info "Error Handling"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Error Handling">
+
     | Parameter                      | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                              |
     |--------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Log to System Logs             | Toggle        | Log errors to the system logs. They can be viewed on the [Logs](../../../test/logs.md) page of your Project. The parameter is inactive by default.                                                                                                                                                                                                                                                                       |
@@ -116,12 +151,19 @@ This configuration assigns a job to an AI Agent, defines its role and responsibi
     | Select Node                    | Select        | The parameter appears when **Go to Node** is selected. Select a Node from the available options.                                                                                                                                                                                                                                                                                                                         |
     | Error Message (optional)       | CognigyScript | Add the optional message to the output if the AI Agent Node fails.                                                                                                                                                                                                                                                                                                                                                       |
 
-??? info "Debug Settings"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Debug Settings">
+
     | Parameter             | Type   | Description                                                                                                                                                                                                                                                                                         |
     |-----------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Log Job Execution     | Toggle | Send a debug message with the current AI Agent Job configuration. The message appears in the Interaction Panel when Debug Mode is enabled. The parameter is active by default.                                                                                                                      |
     | Log Knowledge Results | Toggle | Send a debug message containing the result from a knowledge search. The message appears in the Interaction Panel when Debug Mode is enabled. The parameter is inactive by default.                                                                                                                  |
     | Show Token Count      | Toggle | Send a debug message containing the input, output, and total token count. The message appears in the Interaction Panel when Debug Mode is enabled. Cognigy.AI uses the GPT-3 tokenizer algorithm, so actual token usage may vary depending on the model used. The parameter is inactive by default. |
+
+</CollapsibleSection>
+
 
 ## AI Agent Tool Settings
 
@@ -131,13 +173,18 @@ At the end of a tool action branch, it is advisable to use a [Resolve Tool Actio
 
 Clicking the Tool Node lets you define a tool, set its parameters, and allows debugging by enabling detailed messages about the tool's execution.
 
-??? info "Tool"
+<CollapsibleSection title="Tool">
+
     | Parameter   | Type          | Description                                                                                                                                          |
     |-------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Tool ID     | CognigyScript | Provide a meaningful name as a Tool ID. This ID can contain only letters, numbers, underscores (`_`), or dashes (`-`). For example, `update_user-1`. |
     | Description | CognigyScript | Provide a detailed description of what the tool does, when it should be used, and its parameters.                                                    |
 
-??? info "Parameters"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Parameters">
+
     Configure the parameters that will be collected by the AI Agent before the tool is called. You can switch between the Graphical and JSON editors. When editing the JSON, follow the [JSON Schema specification](https://json-schema.org).
 
     | Parameter       | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -149,15 +196,26 @@ Clicking the Tool Node lets you define a tool, set its parameters, and allows de
     | Enum (optional) | Enum          | Define a set of values that the parameter can accept. The enum restricts the input to one of the specified values, ensuring only valid options are chosen. The enum is only available for string-type parameters in the Graphical editor. For other types, use the JSON editor. May not be supported by all LLM providers.                                                                                                                                                                                                                                                                                                                          |
     | Add Parameter   | Button        | Add a new parameter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-??? info "Debug Settings"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Debug Settings">
+
     | Parameter                 | Type   | Description                                                                                                       |
     |---------------------------|--------|-------------------------------------------------------------------------------------------------------------------|
     | Debug Message when called | Toggle | Enable the output of a debug message when the tool is called to provide detailed information about the tool call. |
 
-??? info "Advanced"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Advanced">
+
     | Parameter | Type          | Description                                                                                                                                                                                                                                                                                                                                                                       |
     |-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Condition | CognigyScript | The tool will be enabled only if the condition is evaluated as true. If false, the tool isn't part of the AI Agent's Tools within this execution. For example, when using the `unlock_account tool, you can specify a condition like `context.accountStatus === "locked"`. This checks the value in the context, and if it is missing or different, the tool will not be enabled. |
+
+</CollapsibleSection>
+
 
 ## AI Agent MCP Tool Settings
 
@@ -165,21 +223,30 @@ MCP Tool Nodes are child Nodes of AI Agent Nodes. The MCP Tool Nodes connect to 
 
 Clicking the MCP Tool Node lets you define the connection, filter loaded tools, and allows debugging by enabling detailed messages about the tool's execution.
 
-??? info "MCP Tool"
+<CollapsibleSection title="MCP Tool">
+
     | Parameter          | Type          | Description                                                                                                                                                                            |
     |--------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Name               | CognigyScript | Provide a name for the MCP connection. This name helps you identify the source of the loaded tool.                                                                                     |
     | MCP Server SSE URL | CognigyScript | Provide the URL to an SSE (Server-Sent Events) endpoint from a remote [MCP server](https://modelcontextprotocol.io/introduction). Ensure that you connect only to trusted MCP servers. |
     | Timeout            | Slider        | Set the timeout time for the MCP connection in seconds.                                                                                                                                |
 
-??? info "Debug Settings"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Debug Settings">
+
     | Parameter             | Type   | Description                                                                                                                                                                            |
     |-----------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Debug loaded Tools    | Toggle | Enable this parameter to display a debug message with all tools loaded from the MCP server. The debug message also includes tools that have been filtered out in the Advanced section. |
     | Debug with Parameters | Toggle | Enable this parameter to include the Tool Parameters in the debug message.                                                                                                             |
     | Debug calling Tool    | Toggle | Enable the output of a debug message when the tool is called to provide detailed information about the tool call.                                                                      |
 
-??? info "Advanced"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Advanced">
+
     | Parameter   | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                               |
     |-------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Cache Tools | Toggle        | Disable caching of loaded tools while developing. Ensure that caching is enabled in production for performance reasons. The caching time is 10 minutes.                                                                                                                                                                                                                                                                   |
@@ -187,6 +254,9 @@ Clicking the MCP Tool Node lets you define the connection, filter loaded tools, 
     | Tool Filter | Select        | Control tool filtering by selecting one of the following options:<br></br>- **None** — no tool filtering is applied, and all tools are available for execution. This option is selected by default. <br></br> - **Whitelist** — only tools on the list are allowed for execution, while all other tools are excluded. <br></br> - **Blacklist** — tools on the list are excluded from execution, while all other tools remain available. |
     | Blacklist   | CognigyScript | The parameter appears if you select **Blacklist** in **Tool Filter**. Specify the tools that should be blocked from execution. Specify only one tool per field.                                                                                                                                                                                                                                                           |
     | Whitelist   | CognigyScript | This parameter appears if you select **Whitelist** in **Tool Filter**. Specify the tools you want to allow for execution. Specify only one tool per field.                                                                                                                                                                                                                                                                |
+
+</CollapsibleSection>
+
 
 ## Call MCP Tool Settings
 
@@ -196,22 +266,34 @@ To return the tool result to the AI Agent, the **Resolve Immediately** setting c
 
 As an alternative, use a [Resolve Tool Action](resolve-tool-action.md) Node to return a specific result to the AI Agent.
 
-??? info "Call MCP Tool"
+<CollapsibleSection title="Call MCP Tool">
+
     | Parameter           | Type   | Description                                                                                           |
     |---------------------|--------|-------------------------------------------------------------------------------------------------------|
     | Resolve Immediately | Toggle | Enable this parameter to immediately resolve the tool action with the full result as the tool answer. |
 
-??? info "Storage Options"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Storage Options">
+
     | Parameter   | Type          | Description                                                                                                                                          |
     |-------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
     | How to handle the result    | Select        | Determine how to handle the MCP tool call result:<ul><li>**Store in Input** — stores the result in the Input object.</li><li>**Store in Context** — stores the result in the Context object.</li></ul> |
     | Input Key to store Result   | CognigyScript | The parameter appears when **Store in Input** is selected. The result is stored in the `input.aiAgent.toolResult` object by default. You can specify another value, but the **MCP Tool Result** Token won't work if the value is changed. |
     | Context Key to store Result | CognigyScript | The parameter appears when **Store in Context** is selected. The result is stored in the `context.aiAgent.toolResult` object by default. |
 
-??? info "Debug Settings"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Debug Settings">
+
     | Parameter                 | Type   | Description                                                                                                       |
     |---------------------------|--------|-------------------------------------------------------------------------------------------------------------------|
     | Debug Tool Result | Toggle | Enable the output of a debug message with the tool call result after a successful call. |
+
+</CollapsibleSection>
+
 
 ## Examples
 

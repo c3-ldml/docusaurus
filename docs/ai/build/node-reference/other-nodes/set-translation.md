@@ -3,6 +3,8 @@
  slug: "set-translation" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Set Translation
 
 <figure>

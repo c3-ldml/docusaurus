@@ -7,6 +7,8 @@ tags:
   - Flow Editor
   - Nodes
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Flow Editor
 
@@ -28,7 +30,8 @@ The following image shows an overview of the Flow editor:
   <img class="image-center" src="../../../../static/img/_assets/ai/build/flows/flow-editor.png" width="70%" />
 </figure>
 
-??? info "1. Top Bar"
+<CollapsibleSection title="1. Top Bar">
+
     Besides the controls from the [Project Page](../../overview/user-interface/project-page.md) top bar, the Flow editor includes the following elements from left to right:
 
     | UI&nbsp;Element | Type | Description                                                                                                                                                                                                                                                                                                                                         |
@@ -39,7 +42,11 @@ The following image shows an overview of the Flow editor:
     | NLU             | Tab  | Display the NLU settings, where you can configure [Intents](../../empower/nlu/intents/ml-intents.md), [States](../../test/interaction-panel/state.md), [Slot Fillers](../../empower/nlu/slot-fillers.md), as well as attach [Flows](../../empower/nlu/overview.md#attached-flows) and [Lexicons](../../empower/nlu/slots-and-lexicons/lexicons.md). |
     | Settings        | Tab  | Display the [Flow Settings](overview.md#settings), [Default Context](../../test/interaction-panel/context.md), and [Locale Settings](../translation-and-localization/localization.md).                                                                                                                                                              |
 
-??? info "2. Flow Chart"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="2. Flow Chart">
+
     |                              Button                              | Description                                                           |
     |:----------------------------------------------------------------:|-----------------------------------------------------------------------|
     | ![flow-plus](../../../../static/img/_assets/icons/flow-plus.svg) | Click to add a new Node or [Extension](../extensions.md) to the Flow. |
@@ -48,7 +55,11 @@ The following image shows an overview of the Flow editor:
     !!! note "Drag and Drop"
         The Flow editor supports drag and drop. To copy a Node, simply hold the ++alt++ or ++option++ while dragging the Node to another position.
 
-??? info "3. Chart Controls"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="3. Chart Controls">
+
     |                             Control                              | Description                                                                                                                                                             |
     |:----------------------------------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |                         **-** and **+**                          | Zoom out (-) or in (+).                                                                                                                                                 |
@@ -58,6 +69,9 @@ The following image shows an overview of the Flow editor:
     |    ![voice-preview](../../../../static/img/_assets/icons/voice-preview.svg)    | Test voice outputs without executing the entire Flow.                                                                                                                   |
     |       ![arrow-back](../../../../static/img/_assets/icons/arrow-back.svg)       | Undo the last step by going backward in history.                                                                                                                        |
     |    ![arrow-forward](../../../../static/img/_assets/icons/arrow-forward.svg)    | Redo the last steps by going forward in history.                                                                                                                        |
+
+</CollapsibleSection>
+
 
 ## More Information
 

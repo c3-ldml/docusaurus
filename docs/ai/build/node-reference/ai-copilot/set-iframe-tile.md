@@ -4,6 +4,8 @@ slug: "set-iframe-tile"
 description: "The Copilot: IFrame Tile Node is used to display an IFrame in the AI Copilot workspace."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import Postback from '@site/docs/_includes/ai/nodes/_postback.md';
 
@@ -37,7 +39,7 @@ window.addEventListener("message", function (event) {
 });
 ``` 
 
-??? info "Example"
+<CollapsibleSection title="Example">
 
     ```html
     <!DOCTYPE html>
@@ -48,13 +50,13 @@ window.addEventListener("message", function (event) {
       <body>
         <script>
           let i = 0; // Handle postMessage from iframe parent
-
+    
           // Update the body document content every second
           setInterval(function() {
             i++;
             document.body.innerHTML = '<h1>Iframe Tile ' + i + '</h1>';
           }, 1000);
-
+    
           // Listen for messages from the parent window
           window.addEventListener('message', function(event) {
             // We only accept messages from ourselves
@@ -66,17 +68,25 @@ window.addEventListener("message", function (event) {
       </body>
     </html>
     ```
+    
+
+</CollapsibleSection>
+
 
 ## Sending JSON Data Back to the Flow
 
 You can send data back to the Flow by using the Postback feature.
 
-??? info "Postback"
-<Postback />
+<CollapsibleSection title="Postback">
+
+    <Postback />
 
     In the AI Copilot Flow, below the Copilot: IFrame Tile Node, add a [Copilot: Send Data](send-data.md).
     In the **JSON** field of the Copilot: Send Data Node,
     specify the parameters you want to pass as metadata to the Copilot: IFrame Tile Node to update the content.
+
+</CollapsibleSection>
+
 
 ## More Information
 

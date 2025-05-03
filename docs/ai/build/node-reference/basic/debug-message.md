@@ -4,6 +4,8 @@ slug: "debug-message"
 description: "A Debug Message Node sends a debug message to the Interaction Panel."
 hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Debug Message
 
@@ -31,26 +33,34 @@ To view the debug message, enable [debug mode](../../../test/interaction-panel/o
 
 ## Examples
 
-??? info "Info Message"
+<CollapsibleSection title="Info Message">
 
     To show that the message relates to user's actions, such as completing a task or making a selection, you can use the Debug Message Node with the header `User Action`. 
     It can be helpful when a user fills out an [Adaptive Card](say.md) form or clicks the [Submit](../xApp/set-html-xApp-state.md) button in xApps to confirm an action.
-
+    
     ```txt
     Header: "User Action"
     Message: "User successfully completed the registration process"
     ```
+    
 
-??? info "Error Message"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Error Message">
 
     To show that the message relates to an error related to database operations,
     use the Debug Message Node with the header `Database Error`.
     It can be useful for tracking errors that occur during database requests. For example, it can help identify issues when using [MongoDB](../service/mongo-db.md) Nodes.
-
+    
     ```txt
     Header: "Database Error"
     Message: "Failed to retrieve user data"
     ```
+    
+
+</CollapsibleSection>
+
 
 ## Alternatives
 

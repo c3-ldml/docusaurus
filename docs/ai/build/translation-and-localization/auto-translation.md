@@ -4,6 +4,8 @@ slug: "auto-translation"
 description: "Auto Translation allows you to automatically translate messages between different languages."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import CompatibilityWithMTProviders from '@site/docs/_includes/ai/build/translation-and-localization/_compatibility-with-machine-translation-providers.md';
 import ConfigureMTProvider from '@site/docs/_includes/ai/build/translation-and-localization/_configure-a-machine-translation-provider.md';

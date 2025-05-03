@@ -4,6 +4,8 @@ slug: "getting-started-with-digital-agent"
 description: "Build Your Chat-Based AI Agent in Minutes: In this tutorial, you will learn how to create a simple chat AI Agent from scratch that greets you by name. Then you will test this agent using built-in Cognigy testing tools."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import LogInWithCredentials from '@site/docs/_includes/ai/overview/_log-in-with-credentials.md';
 import LogInWithSSO from '@site/docs/_includes/ai/overview/_log-in-with-sso.md';

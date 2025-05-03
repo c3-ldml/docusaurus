@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 !!! note "New Insights framework"
     We are introducing a new architecture framework for Cognigy Insights, which significantly enhances the application's data processing capacity. This upgraded framework not only improves overall performance but also minimizes loading times for report data. To use this framework, migration is required.
 

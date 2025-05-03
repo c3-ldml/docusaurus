@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 ## Set up a Flow
 
 To provide additional real-time information to your agents, this assistant uses a Flow.

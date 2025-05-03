@@ -1,2 +1,4 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 Note that some browsers may not support certain Webchat features.
 For example, the **Enable speech-to-text** feature, which adds a microphone button to the Webchat interface, is unavailable in Mozilla Firefox as voice input is not yet implemented in that browser.

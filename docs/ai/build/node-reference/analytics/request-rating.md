@@ -4,6 +4,8 @@ slug: "request-rating"
 description: "The Request Rating Node is used to request a rating from the user."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import InsightsForRating from '@site/docs/_includes/ai/nodes/_insights-for-rating.md';
 import RatingUseCases from '@site/docs/_includes/ai/nodes/_rating.md';
@@ -29,20 +31,24 @@ In contrast to the [Set Rating Node](set-rating.md), the Request Rating Node doe
 | Rating Title        | Define a custom title for the rating request dialog.        |
 | Rating Comment Text | Define a custom comment text for the rating request dialog. |
 
-??? info "Implement Rating in the Webchat Endpoint"
+<CollapsibleSection title="Implement Rating in the Webchat Endpoint">
 
     You can customize a rating widget in the Webchat Endpoint by doing the following:
-
+    
     1. In the left-side menu of the Project, go to **Deploy > Endpoints** and select your configured Webchat Endpoint.
     2. Open the **Conversation Rating Settings** field.
     3. Configure the Rating settings as described in the [Deploy Webchat Endpoint](../../../../webchat/v2/configuration.md#conversation-rating-settings) documentation.
     4. Click **Save**.
-
+    
     <figure>
       <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/request-rating-webchat.svg"/>
     </figure>
-
+    
     Once the end user provides a rating, the rating value is stored as a variable in the Analytics database.
+    
+
+</CollapsibleSection>
+
 
 ## Track Ratings in Insights
 

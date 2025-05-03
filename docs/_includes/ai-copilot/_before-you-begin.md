@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 ## Before you Begin
 
 AI Copilot is automatically activated on Cognigy Trial and Cognigy shared SaaS environments.

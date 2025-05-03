@@ -3,6 +3,8 @@ title: "Overview"
 slug: "code"
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Code
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../../../release-notes/4.68.md)
@@ -103,31 +105,35 @@ Instead, an error message is written to the `input.codeNodeError` Input object.
 
 You can send Facebook JSON directly from within Code Nodes using the [output](actions.md) action.
 
-??? info "JSON Sample"
+<CollapsibleSection title="JSON Sample">
+
     ```javaScript
-    // build the facebook reply
-    const obj = {
-        "_cognigy": {
-            "_facebook": {      
-                "message": {
-                    "text": "Hello World",
-                    "quick_replies": [
-                        {
-                            "content_type": "text",
-                            "condition": "",
-                            "title": "Hi",
-                            "image_url": "",
-                            "payload": "Hi"
-                        }
-                    ]
+        // build the facebook reply
+        const obj = {
+            "_cognigy": {
+                "_facebook": {      
+                    "message": {
+                        "text": "Hello World",
+                        "quick_replies": [
+                            {
+                                "content_type": "text",
+                                "condition": "",
+                                "title": "Hi",
+                                "image_url": "",
+                                "payload": "Hi"
+                            }
+                        ]
+                    }
                 }
             }
         }
-    }
-
-    // output the reply
-    actions.output("test", obj);
+    
+        // output the reply
+        actions.output("test", obj);
     ```
+
+</CollapsibleSection>
+
 
 ## More Information
 

@@ -20,6 +20,8 @@ tags:
     - line
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Channels
 
@@ -39,10 +41,15 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
 
 ## Available Channels
 
-??? info "Default AI Channel"
+<CollapsibleSection title="Default AI Channel">
+
     The default AI channel is a universal channel and its settings correspond to the parameters in the [Say Node](../node-reference/basic/say.md). Use this channel to get more flexibility around different platforms.
 
-??? info "Alexa"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Alexa">
+
     !!! warning
         - If the user triggers more than one Say Node in a Flow execution with the Alexa channel, the AI Agent concatenates each Say Nodes' SSML or text outputs as one large SSML statement.
         - If the Flow outputs more than one Card, the AI Agent sends only the last one.
@@ -58,7 +65,11 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
     | Home Cards                      | A Card that provides additional visual information. You can send Cards if the user has an device with a screen that is connected to the Alexa application.                                                                                                                                                                             |
     | Display Templates for Echo Show | This parameter defines how Amazon Echo Show devices display content.                                                                                                                                                                                                                                                                   |
 
-??? info "Messenger"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Messenger">
+
     The Messenger channel defines how AI Agents provide answers in Facebook Messenger.
 
     | Output Type   | Parameters                                                                                                  |
@@ -73,19 +84,23 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
     ??? tip "Using Code Nodes to Output Facebook Markup"
         You can use the [output action in Code Nodes](../node-reference/basic/code/actions.md) to send a JSON object directly to Facebook. To do so, set the following code as the data property:
 
-        ```json
-        {
-            "_cognigy": {
-                "_facebook": {      
-                    "message": {
-                        // this contains your message to facebook
+    ```json
+            {
+                "_cognigy": {
+                    "_facebook": {      
+                        "message": {
+                            // this contains your message to facebook
+                        }
                     }
                 }
             }
-        }
-        ```
+    ```
 
-??? info "Webchat"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Webchat">
+
     The Webchat channel defines how AI Agents provide answers through [Webchat v2](../../../webchat/v2/overview.md).
 
     ???+ note
@@ -100,7 +115,11 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
     | List          | <ul><li>Title</li><li>Subtitle</li><li>Image URL</li><li>Default action web URL</li></ul>                                                                      |
     | Adaptive Card | A `$schema` property for the adaptive card. You can find supported versions in the [Content Conversion](../../deploy/endpoints/content-conversion.md) article. |
 
-??? info "LINE"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="LINE">
+
     The LINE channel defines how AI Agents provide answers in LINE.
 
     | Output Type | Description                                                                                                                                          |
@@ -108,7 +127,11 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
     | Text        | A simple text message.                                                                                                                               |
     | Custom JSON | A valid LINE message object. See the [LINE documentation](https://developers.line.me/en/reference/messaging-api/) for further details and templates. |
 
-??? info "Twilio"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Twilio">
+
     !!! warning "Validate the TwiML"
         Make sure the Twilio Markup Language (TwiML) provided in the Node editor is valid. If the AI Agent sends an invalid TwiML to Twilio, the call immediately fails or doesn't initiate.
 
@@ -125,7 +148,11 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
 
     In the **Twilio Endpoint** settings, you can select the **Amazon Polly** voice. For more information about Amazon Polly features, read the [Twilio documentation](https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly).
 
-??? info "Twilio SMS"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Twilio SMS">
+
     !!! warning "Validate the TwiML"
         Make sure the Twilio Markup Language (TwiML) provided in the Node editor is valid. If the AI Agent sends an invalid TwiML to Twilio, the call immediately fails or doesn't initiate.
 
@@ -138,7 +165,11 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
     | Text        | A simple text message.                                                                                                                 |
     | TwiML       | A valid TwiML object. See the [Twilio documentation](https://www.twilio.com/docs/sms/twiml/message) for further details and templates. |
 
-??? info "Microsoft Teams"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Microsoft Teams">
+
     !!! warning "Multiple Flow Outputs"
         If the user triggers more than one Say Node in one Flow execution with the Microsoft Teams channel, the AI Agent:
             - Concatenates each Say Nodes' text or Microsoft Teams text outputs as one message.
@@ -152,13 +183,20 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
     | JSON          | A valid JSON in the Bot Framework/Microsoft Teams format. See the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0) for further details and templates. |
     | Adaptive Card | A `$schema` property for the adaptive card. You can find supported versions in [Content Conversion](../../deploy/endpoints/content-conversion.md).                                                                                                                 |
 
-??? info "Voice Gateway"
+    <CollapsibleSection title="Voice Gateway">
 
     With the Voice Gateway channel, you can configure the content and pronunciation of the AI Agents voice output.
 
     You can also configure Voice Gateway settings using Activity Parameters. To do this, activate the **Set Activity Parameters** toggle. You can find a description of the parameter configurations in [Voice Gateway Parameter Details](../node-reference/voice/voice-gateway/parameter-details.md).
 
-??? info "8x8"
+
+    </CollapsibleSection>
+
+</CollapsibleSection>
+
+
+<CollapsibleSection title="8x8">
+
     The **8x8** channel defines how AI Agents provide answers in 8x8.
 
     | Output Type   | Description                                                                                                              |
@@ -167,27 +205,34 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
     | Custom JSON   | A valid 8x8 message object.                                                                                              |
     | Adaptive Card | An adaptive card. You can find supported versions in [Content Conversion](../../deploy/endpoints/content-conversion.md). |
 
-    ??? info "Custom JSON example"
+    <CollapsibleSection title="Custom JSON example">
 
-        ```json
-        {
-            "authorType": "customer",
-            "text": "Hello!",
-            "attachments": [
-                {
-                    "id": "string"
-                }    
-            ],
-            "cards": [
-                {
-                    "contentType": "application/vnd.microsoft.card.adaptive",
-                    "content": {}
-                }
-            ]
-        }
-        ```
+    ```json
+            {
+                "authorType": "customer",
+                "text": "Hello!",
+                "attachments": [
+                    {
+                        "id": "string"
+                    }    
+                ],
+                "cards": [
+                    {
+                        "contentType": "application/vnd.microsoft.card.adaptive",
+                        "content": {}
+                    }
+                ]
+            }
+    ```
 
-??? info "Genesys"
+
+    </CollapsibleSection>
+
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Genesys">
+
     The **Genesys** channel defines how AI Agents provide answers in Genesys.
 
     | Output Type   | Description                                                                        |
@@ -195,20 +240,27 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
     | Text          | A simple text message.                                                             |
     | Custom JSON   | A valid Genesys Cloud message object. Defines more complex messages and templates. |
 
-    ??? info "Custom JSON example"
+    <CollapsibleSection title="Custom JSON example">
 
-        ```json
-        {
-            "replymessages": [],
-            "parameters": {
-                "command": "handover"
+    ```json
+            {
+                "replymessages": [],
+                "parameters": {
+                    "command": "handover"
+                }
             }
-        }
-        ```
+    ```
 
         This message suggests that the AI Agent working on the Cognigy.AI side has finished its task. Also, the message means that the control is handed over to the logic within the [Genesys architect flow](https://help.mypurecloud.com/articles/use-architect-to-create-a-bot-for-an-inbound-flow/).
 
-??? info "Bandwidth"
+
+    </CollapsibleSection>
+
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Bandwidth">
+
     The **Bandwidth** channel defines how AI Agents provide answers in Bandwidth.
 
     | Output Type | Description                                                                    |
@@ -217,20 +269,26 @@ You can configure channels in the [Say](../node-reference/basic/say.md), [Questi
     | Custom JSON | A valid Bandwidth message object. Defines more complex messages and templates. |
 
 
-    ??? info "Custom JSON example"
+    <CollapsibleSection title="Custom JSON example">
 
-        ```json
-        {
-            "activities": [
-                {
-                    "id": "123456789",
-                    "timestamp": "1999-12-31T23:59:59.999Z", 
-                    "type": "message",
-                    "text": "Hello. This is my message."
-                }
-            ]
-        }
-        ```
+    ```json
+            {
+                "activities": [
+                    {
+                        "id": "123456789",
+                        "timestamp": "1999-12-31T23:59:59.999Z", 
+                        "type": "message",
+                        "text": "Hello. This is my message."
+                    }
+                ]
+            }
+    ```
+
+
+    </CollapsibleSection>
+
+</CollapsibleSection>
+
 
 ## More Information
 

@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

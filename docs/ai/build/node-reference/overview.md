@@ -3,6 +3,8 @@ title: "Overview"
 slug: "nodes-overview"
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import {GridCards} from '@site/src/components/GridCards';
 

@@ -4,6 +4,8 @@ slug: "complete-task"
 description: "The Complete Task Node provides an easy way to track the completion of a specific event, once the Node is triggered."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Complete Task
 
@@ -40,42 +42,62 @@ The difference between a Complete Task and an Analytics Step lies in their purpo
 
 ## Use Cases
 
-??? info "Order Placement"
+<CollapsibleSection title="Order Placement">
 
     When a user completes the order placement process successfully,
     you can use the Complete Task Node to mark the "Order Placement" task as completed.
-
+    
     This task helps you track the number of successful order placements by customers through the chat or voice call.
+    
 
-??? info "Account Registration"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Account Registration">
 
     When a user has to create an account, you can use the Complete Task Node to indicate that the "Account Registration" task has been achieved.
-
+    
     This task helps you to track the number of successful account registrations through the chat or voice call.
+    
 
-??? info "Appointment Booking"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Appointment Booking">
 
     When a user books an appointment, you can use the Complete Task Node to signify the completion of the appointment booking process.
-
+    
     This task helps you track the number of successful appointments scheduled through the chat or voice call.
+    
 
-??? info "Information Retrieval"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Information Retrieval">
 
     When a user seeks specific information from the chatbot, such as product details or FAQ answers, you can use the Complete Task Node to mark the "Information Retrieval" task as completed.
-
+    
     This task allows you to track successful information retrieval interactions through the chat or voice call.
+    
+
+</CollapsibleSection>
+
 
 ## Example
 
 The example shows how to measure the AI Agent's effectiveness in a customer call center.
 
-??? info "Measuring AI Agent Effectiveness"
+<CollapsibleSection title="Measuring AI Agent Effectiveness">
+
     1. In the Flow, add a Question Node with the `Have we resolved your problem?` question and provide buttons as options:
         - B1: Yes, my problem is resolved
         - B2: No, I want to speak to a human agent
     2. If the user selects B1, connect it to a Complete Task Node. This Node marks the `Successful AI Agent Conversation` task as completed, indicating that the AI Agent has effectively assisted the customer.
     3. If the customer selects B2, handle this separately by triggering a Handover to Agent Node. In this case, you don't need to use the Complete Task Node.
     4. If the customer doesn't reply or types another question directly, consider it as a neutral conversation. You don't need to track it as a completed or unsuccessful task.
+
+</CollapsibleSection>
+
 
 ## Alternatives
 

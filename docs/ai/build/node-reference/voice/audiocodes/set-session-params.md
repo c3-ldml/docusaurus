@@ -4,6 +4,8 @@ slug: "set-session-params"
 description: "The Set Session Parameters Node is used to configure session parameters in AudioCodes voice conversations."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

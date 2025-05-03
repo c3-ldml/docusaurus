@@ -4,6 +4,8 @@ slug: "resolve-tool-action"
 description: "The Resolve Tool Action Node sends a response to a tool call to the AI Agent after completing a tool action."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Resolve Tool Action
 

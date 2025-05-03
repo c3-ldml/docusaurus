@@ -3,6 +3,8 @@
  slug: "add-lexicon-keyphrase" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Add Lexicon Keyphrase
 
 <figure>

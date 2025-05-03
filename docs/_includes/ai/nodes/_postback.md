@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
     The Postback feature allows you
     to send data either back to the Flow or chat, or directly to the widget interface.
     This feature can be useful for updating the state of your widget based on human agent interactions.

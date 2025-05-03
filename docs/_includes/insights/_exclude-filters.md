@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 ### Exclude Filters
 
 When you toggle the **Negate** option, all filters except the selected one will be analyzed.

@@ -3,6 +3,8 @@ title: "Interval"
 slug: "interval" 
 hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Interval
 

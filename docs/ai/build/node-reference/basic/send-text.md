@@ -7,6 +7,8 @@ tags:
   - Nodes
   - Send Text
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Send Text
 

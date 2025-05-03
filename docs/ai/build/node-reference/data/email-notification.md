@@ -3,6 +3,8 @@ title: "Email Notification"
 slug: "email-notification"
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Email Notification
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../../release-notes/4.49.md)
@@ -80,7 +82,8 @@ If you have on-premises installation, you need to add the following parameters t
 | Email Subject                | The subject of the email.                                             |
 | Email Content                | The content of the email. The field supports basic rich text editing. |
 
-??? info "Store location of SMTP Request result"
+<CollapsibleSection title="Store location of SMTP Request result">
+
     | Option             | Description                                                                                |
     |--------------------|--------------------------------------------------------------------------------------------|
     | Don't store result | Default option. The result isn't stored.                                                   |
@@ -91,10 +94,18 @@ If you have on-premises installation, you need to add the following parameters t
 
     If switched on, the Flow execution will halt in case the mail-sending fails.
 
-??? info "Advanced"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Advanced">
+
     | Parameter                    | Description                                                                                                                                                          |
     |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | CC Email Addresses           | The CC recipients of your email.                                                                                                                                     |
     | BCC Email Addresses          | The BCC recipients of your email.                                                                                                                                    |
     | Email Priority               | The priority of the email.                                                                                                                                           |
     | Execute Request asynchronous | If switched on, the Flow execution continues directly after the Send Email Node has been triggered. If turned-off, the Flow execution waits until the email is sent. |
+
+</CollapsibleSection>
+
+

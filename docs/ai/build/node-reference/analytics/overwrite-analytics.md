@@ -4,6 +4,8 @@ slug: "overwrite-analytics"
 description: "An Overwrite Analytics Node lets you overwrite default values such as intent, text, understood messages, and more, and manage the analytics data stored in the Cognigy.AI Analytics database."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import UnderstoodMessages from '@site/docs/_includes/ai/_understood-messages.md';
 
@@ -28,13 +30,13 @@ the initial value stored in the Analytics database will remain unchanged.
 
 ## Parameters
 
-??? info "Custom Fields"
+<CollapsibleSection title="Custom Fields">
 
     Custom fields allow you to store any data as a string value.
-
+    
     Custom fields can be useful for enriching the information about a user's conversation by adding more details.
     For example, if user inputs contain words such as `excellent` or `great`, you can add a custom field with the value `Positive feedback` to make it easier to analyze positive feedback through analytics records.
-
+    
     | Parameter       | Type          | Description                                                                            |
     |-----------------|---------------|----------------------------------------------------------------------------------------|
     | Custom Value 1  | CognigyScript | Store a custom field that can be set to any string value. The default value is `null`. |
@@ -47,20 +49,24 @@ the initial value stored in the Analytics database will remain unchanged.
     | Custom Value 8  | CognigyScript | Store a custom field that can be set to any string value. The default value is `null`. |
     | Custom Value 9  | CognigyScript | Store a custom field that can be set to any string value. The default value is `null`. |
     | Custom Value 10 | CognigyScript | Store a custom field that can be set to any string value. The default value is `null`. |
+    
 
-??? info "Default Fields"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Default Fields">
 
     Default fields allow you to change existing data or add new data to the default parameters,
     such as Intents, States, and inputs.
     If a default field is left empty, the previous value will be used in the analytics record.
-
+    
     The table includes the most commonly used parameters for overwriting.
     For example, you can overwrite the Intent name.
     Consider the case where a user says, `I need to return an item`.
     The AI Agent recognizes this message as the `Return request` Intent.
     For more precise tracking,
     you can configure the AI Agent to overwrite this Intent so that it is stored in the Analytics database as `Product return`.
-
+    
     | Parameter            | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                              |
     |----------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Intent               | CognigyScript | Store the intent name.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -72,18 +78,30 @@ the initial value stored in the Analytics database will remain unchanged.
     | Completed Goals      | Text          | Store a list of completed goals.                                                                                                                                                                                                                                                                                                                                                                                                                         |
     | Understood           | Dropdown      | Select one of the following options:<ul><li>**Don't Overwrite** — the current status of the message (whether it is `understood` or `misunderstood`) will not be overridden.</li><li>**True** — the message will be counted as `understood`.</li><li>**False** — the message will not be counted as `misunderstood`.</li><li>**Don't Count** — the message will not be included in the calculation of `understood` or `misunderstood` messages.</li></ul> |
     | Handover Escalations | CognigyScript | Store the number of handover escalations.                                                                                                                                                                                                                                                                                                                                                                                                                |
+    
+
+</CollapsibleSection>
+
 
 ## Examples
 
-??? info "Anonymize Personal Data for Privacy in OData"
+<CollapsibleSection title="Anonymize Personal Data for Privacy in OData">
 
     You can anonymize specific text in the field to ensure privacy while maintaining context in OData. 
     For example, instead of `My name is Alex, how do I do something?` you can replace it with `My name is <Name>, how do I do something?`.
+    
 
-??? info "Clean Up NLU Metrics with Understood"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Clean Up NLU Metrics with Understood">
 
     To clean up NLU metrics, you can set the `Understood` field to `null` or `true` in specific circumstances.
     This approach is useful in voice AI Agents for handling Voice Gateway payloads, which are automatically set to `false`.
+    
+
+</CollapsibleSection>
+
 
 ## Alternatives
 

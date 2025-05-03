@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 ## Download Report
 
 To download a report as a CSV file for the chart,

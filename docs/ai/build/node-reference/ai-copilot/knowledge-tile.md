@@ -4,6 +4,8 @@ slug: "knowledge-tile"
 description: "The Copilot: Knowledge Tile Node is used to display knowledge content in the AI Copilot workspace."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 import Forwarder from '@site/docs/_includes/ai/nodes/_forwarder.md';
 import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
 
@@ -34,16 +36,25 @@ For more information, refer to the [Configuration](#configuration) section.
 
 ## Parameters
 
-??? info "General Settings"
+<CollapsibleSection title="General Settings">
+
     | Parameter       | Type          | Description                                                          |
     |-----------------|---------------|----------------------------------------------------------------------|
     | Tile ID         | CognigyScript | The ID that you created in the AI Copilot configuration.             |
     | Knowledge Store | Select        | Select a store from the list to allow the Node to retrieve the data. |
 
-??? info "Enable Copy to Clipboard Button"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Enable Copy to Clipboard Button">
+
     <Forwarder />
 
-??? info "Search Settings"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Search Settings">
+
     | Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                          |
     |---------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Context-Aware Search      | Select        | Considering the transcript's context for the search. It allows an AI Agent to answer follow-up questions. You can select one of the following options:<ul><li>**On** — is the default option. When this parameter is enabled, it affects tokenization costs, which impact the amount of memory, computational power, and overall expenses needed for running an OpenAI or Azure OpenAI model.</li><li>**Off** — the setting is turned off.</li></ul> |
@@ -51,10 +62,14 @@ For more information, refer to the [Configuration](#configuration) section.
     | Where to store the result | Select        | The storage for the search results. Select a storage:<ul><li>**default** — the content will be stored in the Input object (`input.knowledgeSearch`).</li><li>**Input** — the content will be stored in the Input object.</li><li>**Context** — the content will be stored in the Context.</li></ul>                                                                                                                                                  |
     | String to search for      | CognigyScript | The string to search for in the Knowledge Store. A default value is stored in `input.text`.                                                                                                                                                                                                                                                                                                                                                          |
     | Source Tags               | CognigyScript | The tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and, as a result, improve the accuracy of search outputs. <br></br><br></br> Before specifying tags, ensure that they were provided during the creation of the Knowledge Sources. Add tags by specifying each tag separately and pressing **enter**. The maximum number of tags is 5.                              |
-        
-<Tags />
 
-??? info "Error Handling"
+    <Tags />
+
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Error Handling">
+
     | Parameter                      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                              |
     |--------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Select Error Handling Approach | Select | You can select one of the Error Handling options:<ul><li>**Stop Flow Execution** — terminate the current Flow execution.</li><li>**Continue Flow Execution** — allow the Flow to continue executing, bypassing the error and proceeding to the next steps.</li><li>**Go to Node** — redirect the workflow to a specific Node in the Flow, which can be useful for error recovery or customized error handling.</li></ul> |
@@ -62,9 +77,13 @@ For more information, refer to the [Configuration](#configuration) section.
     | Select Flow                    | Select | Active when the **Go to Node** option is selected. Select a Flow from the available options.                                                                                                                                                                                                                                                                                                                             |
     | Select Node                    | Select | Active when the **Go to Node** option is selected. Select a Node from the available options.                                                                                                                                                                                                                                                                                                                             |
 
+</CollapsibleSection>
+
+
 ## Configuration
 
-??? info "Configure the Copilot: Knowledge Tile widget"
+<CollapsibleSection title="Configure the Copilot: Knowledge Tile widget">
+
     To use the Copilot: Knowledge AI widget, configure the following Flow:
 
     1. Add an **If** Node. 
@@ -88,6 +107,9 @@ For more information, refer to the [Configuration](#configuration) section.
     <figure>
       <img class="image-center" src="../../../../../static/img/_assets/ai/build/node-reference/ai-copilot/knowledge-tile-example.png" width="80%"/>
     </figure>
+
+</CollapsibleSection>
+
 
 ## More Information
 

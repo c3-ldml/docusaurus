@@ -3,6 +3,8 @@
  slug: "add-to-context" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Add To Context
 
 <figure>

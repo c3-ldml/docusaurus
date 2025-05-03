@@ -3,6 +3,8 @@
  slug: "stop-and-return" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Stop and Return
 
 <figure>

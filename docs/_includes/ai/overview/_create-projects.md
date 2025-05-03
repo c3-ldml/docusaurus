@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 ## Create a Project
 
 Create a Project that involves building an AI Agent:

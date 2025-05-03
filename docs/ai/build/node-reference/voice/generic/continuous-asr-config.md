@@ -4,6 +4,8 @@ slug: "continuous-asr-config"
 description: "The Continuous ASR Config Node is used to configure continuous automatic speech recognition settings."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

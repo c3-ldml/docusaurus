@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 ## Time Zone Considerations: OData and Insights
 
 In the OData feed, all times are consistently presented in UTC format.

@@ -8,6 +8,8 @@ tags:
     - JavaScript
     - API Integration
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Functions
 
@@ -34,12 +36,12 @@ You can access the `parameters` and `api` objects from the Function's arguments.
 
 ## Examples
 
-??? info "Interact with Third-Party Systems"
+<CollapsibleSection title="Interact with Third-Party Systems">
 
     You can use HTTP requests to interact with third-party systems.
-
+    
     #### GET Request
-
+    
     ```JavaScript
     export default async ({ parameters, api }: IFunctionExecutionArguments) => {
         const response = await api.httpRequest({
@@ -51,9 +53,9 @@ You can access the `parameters` and `api` objects from the Function's arguments.
         });
     }
     ```
-
+    
     #### POST Request
-
+    
     ```JavaScript
     export default async ({ parameters, api }: IFunctionExecutionArguments) => {
         const response = await api.httpRequest({
@@ -71,19 +73,23 @@ You can access the `parameters` and `api` objects from the Function's arguments.
         });
     }
     ```
+    
 
-??? info "Interact with Flows"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Interact with Flows">
 
     Functions can interact with Flows through the [Inject & Notify](../deploy/endpoints/inject-and-notify.md) APIs.
-
+    
     The following examples assume that you pass `userId` and `sessionId` through the Function's parameters.
-
+    
     #### Injecting Text into a Flow
-
+    
     ```JavaScript
     export default async ({ parameters, api }: IFunctionExecutionArguments) => {
         const { userId, sessionId } = parameters;
-
+    
         api.inject({
             userId,
             sessionId,
@@ -91,13 +97,13 @@ You can access the `parameters` and `api` objects from the Function's arguments.
         });
     }
     ```
-
+    
     #### Sending a Notification
-
+    
     ```JavaScript
     export default async ({ parameters, api }: IFunctionExecutionArguments) => {
         const { userId, sessionId } = parameters;
-
+    
         api.notify({
             userId,
             sessionId,
@@ -105,8 +111,12 @@ You can access the `parameters` and `api` objects from the Function's arguments.
         });
     }
     ```
+    
+    Find more Function examples in the Cognigy's [Function](https://github.com/Cognigy/Functions?tab=readme-ov-file) repository.
+    
 
-Find more Function examples in the Cognigy's [Function](https://github.com/Cognigy/Functions?tab=readme-ov-file) repository.
+</CollapsibleSection>
+
 
 ## Use Case
 

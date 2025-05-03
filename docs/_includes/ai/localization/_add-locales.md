@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 Cognigy AI Agents use English as the default language. However, you can customize the language of your Flow to match your requirements when needed.
 
 To create a locale, follow these steps:

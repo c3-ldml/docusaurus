@@ -3,6 +3,8 @@ title: "Copilot: Transcript Tile"
 slug: "transcript-tile"
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Copilot: Transcript Tile
 

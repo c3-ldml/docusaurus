@@ -3,6 +3,8 @@
  slug: "input" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 import UnderstoodMessages from '@site/docs/_includes/ai/_understood-messages.md';
 
 # Input

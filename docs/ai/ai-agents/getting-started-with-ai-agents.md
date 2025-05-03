@@ -4,6 +4,8 @@ slug: "quickstart-guide-for-ai-agents"
 description: "This guide provides a step-by-step approach to setting up your first AI Agent in Cognigy.AI. It covers the essentials to get started quickly, ensuring a seamless experience."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Guide for Agentic AI Agents
 

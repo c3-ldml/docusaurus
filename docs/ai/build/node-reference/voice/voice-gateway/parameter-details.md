@@ -7,6 +7,8 @@ tags:
   - Nodes
   - Parameter Details
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Voice Gateway Parameter Details
 
@@ -17,12 +19,12 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
 
 ## Parameters
 
-??? info "Synthesizer (TTS)"
+<CollapsibleSection title="Synthesizer (TTS)">
 
     [![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../../../../release-notes/4.62.md)
-
+    
     The Text-To-Speech (TTS) settings can be chosen from a pre-filled dropdown for Microsoft Azure, AWS, Google, Nuance, or a custom vendor.
-
+    
     | Parameter                  | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
     |----------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | TTS Vendor                 | Dropdown      | Defines the desired TTS Vendor. You can select a custom vendor.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -34,13 +36,17 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
     | TTS Label                  | CognigyScript | The alternative name of the vendor is the one you [specify in the Voice Gateway Self-Service Portal](../../../../../voice-gateway/webapp/applications.md#add-additional-tts-and-stt-vendor). If you have created multiple speech services from the same vendor, use the label to specify which service to use.                                                                                                                                                                                                                                                                                                                     |
     | Enable Advanced TTS Config | Toggle        | Enables the addition of a URL for an Azure Custom Voice Endpoint.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
     | Disable TTS Audio Caching  | Toggle        | Disables TTS audio caching.<br></br><br></br> By default, the setting is deactivated. In this case, previously requested TTS audio results are stored in the AI Agent cache. When a new TTS request is made, and the audio text has been previously requested, the AI Agent retrieves the cached result instead of sending another request to the TTS provider.<br></br><br></br> When the setting is activated, the AI Agent no longer caches TTS results. In this case, each request is directly sent to your speech provider.  <br></br><br></br> Note that disabling caching can increase TTS costs. For detailed information, contact your speech provider. |
+    
 
-??? info "Recognizer (STT)"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Recognizer (STT)">
 
     [![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../../../../release-notes/4.100.md)
-
+    
     The Speech-To-Text (STT) settings can be chosen from a pre-filled dropdown for Microsoft Azure, AWS, Google, Nuance, Soniox, or a custom vendor.
-
+    
     | Parameter                       | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
     |---------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | STT Vendor                      | Dropdown      | Defines the desired STT Vendor. You can select a custom vendor.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -63,52 +69,64 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
     | Profanity Filter                | Dropdown      | Defines how swear words are handled in transcripts when using Microsoft Azure Speech Services as the STT vendor. Possible values:<ul><li>**Raw** - swear words show up in the transcript. This option is selected by default.</li><li>**Masked** - swear words are replaced with asterisks (`****`) in the transcript.</li><li>**Removed** - swear words are removed from the transcript.</li></ul>For more information, see the [Microsoft Azure Speech Services documentation on profanity filter](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/display-text-format?pivots=programming-language-csharp#profanity-filter).                                               |
     | Enable Audio Logging            | Toggle        | Enables recording and logging of audio from the user on Azure.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
     | Recognize Language              | Toggle        | Enables the addition of alternative languages for recognition. You can select a maximum of 3 languages. To reuse these languages in other Nodes, such as the child Nodes of the [Lookup](../../logic/lookup.md) Node,  use the following format: `de-DE`, `fr-FR`, `en-US`. For the parent Node of the Lookup Node, specify `input.data.payload.speech.language_code`.                                                                                                                                                                                                                                                                                                                    |
+    
 
-??? info "Barge In"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Barge In">
 
     [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../../release-notes/4.80.md)
-
+    
     !!! Warning
         Barge In uses the [TTS and SST vendor](../../../../../voice-gateway/references/tts-and-stt-vendors.md) to listen throughout the entire conversation. Consequently, Barge In may lead to increased subscription costs with your vendor.
-
+    
     Barge In is a feature that allows the caller to interrupt the voice AI Agent by using speech input or DTMF digits during the entire call. By default, this feature is turned off.
-
+    
     Before release 4.80, this feature couldn't be controlled when the call was transferred to the contact center. Barge In was always active, allowing the caller to interrupt the voice AI Agent at any time.
-
+    
     Starting with release 4.80, you can enable or disable Barge In when the call is redirected to the contact center. This improvement lets you decide whether the caller should listen to the voice AI Agent's messages fully or have the option to interrupt them.
     This way, the caller can't use Barge In to skip, for example, important legal information such as the GDPR.
-
+    
     To ensure Barge In works correctly after the call is transferred to the contact center, place the Set Session Config Node above the Handover to Agent Node.
-
+    
     | Parameter              | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
     |------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Barge In On Speech     | Toggle | Enables interrupting the voice AI Agent with speech. The user is able to interrupt the voice AI Agent's responses even after the handover has taken place and a human agent communicates with the user through TTS . This parameter is disabled by default. It retains its setting throughout the whole conversation. <br></br><br></br> Note that activating **Barge In On Speech** and **Continuous ASR** simultaneously may cause unstable behavior in the Recognizer (STT). |
     | Barge In On DTMF       | Toggle | Enables interrupting the voice AI Agent with DTMF digits. The user is able to interrupt the voice AI Agent's responses by pressing any digit, even after the handover has taken place and a human agent communicates with the user through TTS. This parameter is disabled by default. It retains its setting throughout the whole conversation.                                                                                                                      |
     | Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge in.                                                                                                                                                                                                                                                                                                                                                           |
+    
 
-??? info "User Input Timeout"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="User Input Timeout">
 
     [![Version badge](https://img.shields.io/badge/Updated in-v4.81-blue.svg)](../../../../../release-notes/4.81.md)
-
+    
     This feature defines what should happen when there is no input from the user.
-
+    
     Before the release [4.81](../../../../../release-notes/4.81.md), User Input Timeout was always enabled and users had to determine the number of milliseconds before timeout occurred. Starting from release [4.81](../../../../../release-notes/4.81.md), users can enable or disable User Input Timeout using a toggle. This setting keeps the voice AI Agent on the call even if the caller takes a while to respond. When the User Input Timeout is disabled, the voice AI Agent waits for the caller's response.
-
+    
     | Parameter                    | Type     | Description                                                                                                                                                                                    |
     |------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Enable User No Input Timeout | Toggle   | Enables or disables the User No Input Timeout parameter. This parameter is enabled by default.                                                                                                 |
     | User No Input Mode           | Dropdown | This parameter is active only when Enable User No Input Timeout is enabled. <br></br><br></br> Defines the action if a user doesn't  provide an input to the AI Agent in time.                           |
     | User No Input Timeout        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br></br><br></br> Defines the timeout duration for user input, specified in milliseconds (ms).                              |
     | User No Input Retries        | Number   | This parameter is active only when Enable User No Input Timeout is enabled. <br></br><br></br> Defines how often the voice AI Agent should retry to get an input from a user before completing the call. |
+    
 
-??? info "Flow Input Timeout"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Flow Input Timeout">
 
     [![Version badge](https://img.shields.io/badge/Added in-v4.87-blue.svg)](../../../../../release-notes/4.87.md)
-
+    
     This feature is designed for use cases where response delays occur in a Flow, such as when utilizing large language models (LLMs), waiting for responses from external services, or managing complex processing tasks. It helps maintain user engagement by proactively delivering information or prompts during these delays.
-
+    
     For example, you can inform end users that their request is being processed or that assistance is on the way.
-
+    
     | Parameter                    | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
     |------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Enable Flow No Input Timeout | Toggle        | This parameter is disabled by default. When enabled, this setting plays a track or speaks a prompt while waiting for a response from the Flow.                                                                                                                                                                                                                                                                                                                              |
@@ -118,11 +136,15 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
     | Flow No Input Timeout        | Number        | This parameter is active only when **Enable Flow No Input Timeout** is enabled. <br></br><br></br> Defines how frequently the voice AI Agent should retry to obtain input from the Flow before completing the call.                                                                                                                                                                                                                                                                   |
     | Flow No Input Retries        | Number        | This parameter is active only when **Enable Flow No Input Timeout** is enabled. Define how many times the AI Agent should retry to obtain input from the Flow before executing an action.                                                                                                                                                                                                                                                                                   |
     | AI Agent Fails on Error      | Toggle        | This parameter is disabled by default. It defines a failure condition when the maximum number of retry attempts is reached. If [Call Failover](../../../../deploy/endpoint-reference/voice-gateway.md#call-failover) is enabled in the Voice Gateway Endpoint Settings, the call is transferred either to another voice AI Agent or to a human agent in the contact center. If Call Failover isn't enabled, the call disconnects, leaving the user without further support. |
+    
 
-??? info "DTMF"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="DTMF">
 
     Enables DTMF collection.
-
+    
     | Parameter                | Type          | Description                                                                                                                                     |
     |--------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
     | Capture DTMF signals     | Toggle        | Enables capturing DTMF signals by the AI Agent.                                                                                                 |
@@ -130,59 +152,75 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
     | DTMF Max Digits          | Number        | Defines the maximum number of digits the user can enter. The digits are submitted automatically once this limit is reached.                     |
     | DTMF Min Digits          | Number        | Defines the minimum number of digits before they are forwarded to the AI Agent. A submit digit can override this.                               |
     | DTMF Submit Digit        | CognigyScript | Defines the DTMF submit digit, which is used for submitting the previously entered digits. This action overrides the minimum digits validation. |
+    
 
-??? info "Continuous ASR"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Continuous ASR">
 
     [![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
-
+    
     Continuous ASR enables the Voice Gateway to concatenate multiple STT recognitions of the user and then send them as a single textual message to the AI Agent.
-
+    
     | Parameter                   | Type          | Description                                                                                                                                                                       |
     |-----------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Enable Continuous ASR       | Toggle        | Enable or disable Continuous ASR. <br></br><br></br> Note that activating **Barge In On Speech** and **Continuous ASR** simultaneously may cause unstable behavior in the Recognizer (STT). |
     | Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key that sends the accumulated recognitions to the Flow.                                                                                                   |
     | Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the Flow. The default and minimum value is 2000.                                    |
+    
 
-??? info "Atmosphere Sounds"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Atmosphere Sounds">
 
     [![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
-
+    
     This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
     Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
-
+    
     The track plays during the conversation with the AI Agent, continues when the call is transferred to a human agent, and stops once the human agent accepts the call.
-
+    
     | Parameter | Type     | Description                                                                                                                                                                                                                                                                                               |
     |-----------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Action    | Dropdown | Selects an action to play, silence, or remove the track: <ul><li>**play** — plays the track in the background.</li><li>**silence** — mutes the track.</li><li>**remove** — removes the track from the background completely.</li></ul>                                                                    |
     | URL       | Text     | Accepts URL links to MP3 tracks. The URL doesn't need to include the `.mp3` extension. For example, `https://abc.xyz/music.mp3` or `https://audio.jukehost.co.uk/N5pnlULbup8KabGRE7dsGwHTeIZAwWdr`.                                                                                                       |
     | Loop      | Toggle   | Turns on looping for the audio track.                                                                                                                                                                                                                                                                     |
     | Volume    | Number   | Adjusts the volume of the track. Can be set from -50 to +50 dB. The default value is 0, meaning that the track is played as-is, with no adjustments to its volume. Users may need to adjust the volume by testing the call and checking if the Atmosphere Sounds track is neither too loud nor too quiet. |
+    
 
-??? info "Silence Overlay"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Silence Overlay">
 
     Silence Overlay enables you to play an MP3 file in the background during calls with an AI Agent. This feature is activated during prolonged periods of silence, which may result from the AI Agent's background activity. Playing the track informs the customer that the AI Agent is processing their query, which may take some time. The Silence Overlay track can simulate office sounds, for example, a human agent typing on a keyboard and clicking the mouse.
-
+    
     When Silence Overlay is enabled in the [Set Session Config](./set-session-config.md) Node, the Silence Overlay track starts playing automatically once the AI Agent takes longer to respond, then stops the moment the AI Agent responds. You can adjust the delay before the Silence Overlay starts to make it sound more natural.
-
+    
     If you enabled the [Call Recording](../../../../../voice-gateway/webapp/recent-calls.md#call-recordings) feature in the Voice Gateway Self-Service Portal, the Silence Overlay track is recorded together with the AI Agent's track and can be played back in the audio file.
-
+    
     | Parameter                              | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                           |
     |----------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Action                                 | Dropdown | Defines an action to play or remove the track: <ul><li>**play** — plays the track in the background when prolonged silence occurs.</li><li>**remove** — removes the track from the conversation. Next time a prolonged silence occurs, the Silence Overlay doesn't play.</li></ul><br></br>Make sure to place the next Set Session Config Node before the Node that needs to have Silence Overlay removed. |
     | URL                                    | Text     | Accepts URL links to an MP3 track. The URL doesn't need to include the `.mp3` extension. For example, `https://abc.xyz/music.mp3` or `https://audio.jukehost.co.uk/N5pnlULbup8KabGRE7dsGwHTeIZAwWdr`. This parameter appears when the play action is selected.                                                                                                                                        |
     | Delay for starting the Silence Overlay | Number   | Defines the wait time before the MP3 track plays, simulating a humanlike response. For example, human agents often have a pause between speaking and typing. This parameter appears when the play action is selected.                                                                                                                                                                                 |
+    
 
-??? info "Advanced"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Advanced">
 
     [![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../../../../release-notes/4.100.md)
-
+    
     | Parameter                     | Type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
     |-------------------------------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Additional Session Parameters | JSON | Allows for configuring settings using JSON. If you have already made changes using the UI settings above, this field overwrites them. Also, you can specify additional parameters in the JSON, which are unavailable in the UI, such as vendor credentials. <br></br><br></br>If you want to specify a [custom TTS or STT provider](#settings) in the **vendor** parameter, use the `custom:<provider-name>` format, for example, `"vendor": "custom:My Speech provider"`. |
-
+    
     **List of Additional Session Parameters**
-
+    
     | Feature                | Parameter               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Type             | Example                                    |
     |------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------|
     | **User Input Timeout** | `user`                  | The User Input Timeout feature.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Object           | -                                          |
@@ -225,9 +263,9 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
     |                        | `asrEnabled`            | Enables Continuous Automatic Speech Recognition (ASR).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Boolean          | `true`                                     |
     |                        | `asrDigit`              | The specific digit for triggering ASR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | String           | `"5"`                                      |
     |                        | `asrTimeout`            | The timeout for ASR detection (in milliseconds).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Number           | `5000` (5 seconds)                         |
-
+    
     JSON example:
-
+    
     ```json
     {
       "synthesizer": {
@@ -268,3 +306,6 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
       }
     }
     ```
+
+</CollapsibleSection>
+

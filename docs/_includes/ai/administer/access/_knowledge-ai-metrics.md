@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 The Knowledge AI metrics include the following:
 
 1. The number of Knowledge Queries performed within the selected period.

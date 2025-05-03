@@ -9,6 +9,8 @@ tags:
   - Tokens
   - CognigyScript
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Tokens
 
@@ -46,7 +48,8 @@ You can also create and use Tokens in the Node editor or create Tokens from [JSO
 
 Cognigy.AI provides a selection of default tokens that you can readily use in your Flows.
 
-??? info "Default Tokens"
+<CollapsibleSection title="Default Tokens">
+
     | Token                        | Type       | Description                                                                                                                                                                                                                                                                           | Target path                                                       |
     |------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
     | AI Agent Output              | User Input | The response sent by the AI Agent.                                                                                                                                                                                                                                                    | `input.aiAgentOutput`                                             |
@@ -102,6 +105,9 @@ Cognigy.AI provides a selection of default tokens that you can readily use in yo
     | Location                     | Profile    | Displays the customer's location.                                                                                                                                                                                                                                                     | `profile.location`                                                |
     | Prevent Data Collection      | Profile    | Indicates, if available, `true`/`false`; shows whether data collection is active or not.                                                                                                                                                                                              | `profile.prevent_data_collection`                                 |
     | Profile Picture              | Profile    | Contains the URL to a profile picture.                                                                                                                                                                                                                                                | `profile.profilepic`                                              |
+
+</CollapsibleSection>
+
 
 ### Create and Use Tokens in the Node Editor
 

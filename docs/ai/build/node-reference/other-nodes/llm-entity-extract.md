@@ -4,6 +4,8 @@ slug: "llm-entity-extract"
 description: "The LLM Entity Extract Node utilizes a chosen LLM to extract entities, such as product codes, booking codes, and customer IDs, from a given string."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # LLM Entity Extract
 
@@ -44,30 +46,42 @@ To output the result, below the LLM Entity Extract Node, add a [Say Node](../bas
 }
 ```
 
-??? info "Advanced"
+<CollapsibleSection title="Advanced">
 
     | Parameter       | Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
     |-----------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Temperature     | Indicator | The appropriate sampling temperature for the model. Higher values mean the model will take more risks.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
     | Timeout         | Number    | The maximum amount of milliseconds to wait for a response from the Generative AI Provider.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
     | Response Format | Select    | Choose the format for the model's output result. You can select one of the following options:<ul><li>**None** — no response format is specified, or do not request with an LLM provider that does not accept any response format or does not support it or could use provider's default in-built response format. This option is selected by default.</li><li>**Text** — the model returns messages in text format.</li><li>**JSON Object** — the model returns messages in JSON format. In contrast to the [LLM Prompt](../service/llm-prompt.md) Node, you don't need to return the model to return the JSON object. It's already configured to do so. Note that not all LLMs may support this parameter, which could cause model calls to fail. For more information, refer to the LLM provider's API documentation.</li></ul> |
+    
 
-??? info "Storage Options"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Storage Options">
 
     | Parameter                   | Type          | Description                                                                                                                                                                                     |
     |-----------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | How to handle the result    | Select        | Determine how to handle the prompt result:<ul><li>**Store in Input** — stores the result in the Input object.</li><li>**Store in Context** — stores the result in the Context object.</li></ul> |
     | Input Key to store Result   | CognigyScript | The parameter appears when **Store in Input** is selected. The result is stored in the `extractedEntity` Input object by default. You can specify another value.                                |
     | Context Key to store Result | CognigyScript | The parameter appears  when **Store in Context** is selected. The result is stored in the `extractedEntity` Context object by default. You can specify another value.                           |
+    
 
-??? info "Debugging Options"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Debugging Options">
 
     When using the Interaction Panel, you can trigger two types of debug logs. These logs are only available when using the Interaction Panel and are not intended for production debugging. You can also combine both log types.
-
+    
     | Parameter                  | Type   | Description                                                                                                                                                                                                                                                                                         |
     |----------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Show Token Count           | Toggle | Send a debug message containing the input, output, and total token count. The message appears in the Interaction Panel when Debug Mode is enabled. Cognigy.AI uses the GPT-3 tokenizer algorithm, so actual token usage may vary depending on the model used. The parameter is inactive by default. |
     | Log Request and Completion | Toggle | Send a debug message containing the LLM provider and the subsequent completion. The message appears in the Interaction Panel when Debug Mode is enabled. The parameter is inactive by default.                                                                                                      |
+    
+
+</CollapsibleSection>
+
 
 ## More Information
 

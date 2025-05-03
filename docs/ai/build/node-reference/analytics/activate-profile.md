@@ -4,6 +4,8 @@ slug: "activate-profile"
 description: "The Activate Profile Node is used to reactivate a profile that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again."
 hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Activate Profile
 
 <figure>

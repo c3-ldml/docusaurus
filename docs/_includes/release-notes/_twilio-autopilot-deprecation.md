@@ -1,2 +1,4 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 !!! warning "Removal of Twilio Autopilot Endpoint"
     Due to the sunset of Twilio Autopilot on August 25, 2023, our Twilio Autopilot Endpoint will be removed in the near future. Consequently, the Endpoint will become unavailable.

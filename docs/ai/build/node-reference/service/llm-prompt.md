@@ -4,6 +4,8 @@ slug: "llm-prompt"
 description: "The Cognigy LLM Prompt Node allows using Generative AI for creating relevant content."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # LLM Prompt
 
@@ -81,7 +83,7 @@ Examples:
 
 Activate the toggle to enable Chat mode.
 
-??? info "Advanced"
+<CollapsibleSection title="Advanced">
 
     | Parameter         | Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
     |-------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -94,8 +96,12 @@ Activate the toggle to enable Chat mode.
     | Timeout           | Number    | The maximum number of milliseconds to wait for a response from the Generative AI Provider.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
     | Response Format   | Select    | Choose the format for the model's output result. You can select one of the following options:<ul><li>**None** — no response format is specified, or do not request with an LLM provider that does not accept any response format or does not support it or could use provider's default in-built response format. This option is selected by default.</li><li>**Text** — the model returns messages in text format.</li><li>**JSON Object** — the model returns messages in JSON format. To use this option, instruct the model to generate JSON via a system or user message in the **Instruction (System Message/Prompt)** field. For example, `Take the user message and return it as JSON in the following format {"message": "THE_MESSAGE"}`. Note that this parameter may not be supported by all LLMs. For more information, refer to the LLM provider's API documentation.</li></ul> |
     | Seed              | Number    | Use this parameter for consistent output when referring to the same LLM Prompt Node multiple times. Specify any integer number, for example, `123`. The number in the Seed field and the prompt in the **Instruction (System Message/Prompt)** field should remain unchanged during subsequent references to the Node.<br></br>Note that in OpenAI, this parameter is in [Beta](https://platform.openai.com/docs/api-reference/chat/create#chat-create-seed) and is supported only by [certain models](https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter).                                                                                                                                                                                                                                                                                                        |
+    
 
-??? info "Storage & Streaming Options"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Storage & Streaming Options">
 
     | Parameter                     | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
     |-------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -110,15 +116,15 @@ Activate the toggle to enable Chat mode.
     | Input Key to store Result     | CognigyScript | The parameter appears when **Store Copy in Input** is selected. The result is stored in the `promptResult` Input object by default. You can specify another value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
     
     **Streaming Results**
-
+    
     In Stream mode, LLM generates tokens and returns them one by one to Cognigy.AI to ensure low-latency responses.
     Cognigy.AI monitors delimiter tokens (Stream Buffer Flush Tokens),
     which serve as markers indicating when to output the token buffer.
     These tokens could be `.`, `!`, `?`, or any other symbols that act as delimiters for complete logical statements.
     When Cognigy.AI detects one of these tokens, it promptly flushes the token buffer into the voice or text chat.
-
+    
     The preconfigured overrides are listed in the table.
-
+    
     | Regex                                 | Description                                | Example    |
     |---------------------------------------|--------------------------------------------|------------|
     | `\d+\.`                               | A number followed by a dot.                | 26.08      |
@@ -126,10 +132,14 @@ Activate the toggle to enable Chat mode.
     | `\b[A-Z]\.`                           | A single capital letter followed by a dot. | M. Smith   |
     | `\.\.\.`                              | Three dots used for omission.              | ...        |
     | `\b.\..\.`                            | Two-letter abbreviations.                  | i.e., e.g. |
-
+    
     [^*]: Note that not all LLM models support streaming.
+    
 
-??? info "Error Handling"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Error Handling">
 
     | Parameter                      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                              |
     |--------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -138,52 +148,64 @@ Activate the toggle to enable Chat mode.
     | Error Message (optional)       | Text   | The parameter appears when **Continue Flow Execution** is selected. Add an message to output if the LLM Prompt Node fails.                                                                                                                                                                                                                                                                                               |
     | Select Flow                    | Select | The parameter appears when **Go to Node** is selected. Select a Flow from the available options.                                                                                                                                                                                                                                                                                                                         |
     | Select Node                    | Select | The parameter appears when **Go to Node** is selected. Select a Node from the available options.                                                                                                                                                                                                                                                                                                                         |
+    
 
-??? info "Custom Options"
+</CollapsibleSection>
+
+
+<CollapsibleSection title="Custom Options">
 
     These settings are helpful if you need to use parameters that are not included in the LLM Prompt Node or if you need to overwrite existing ones.
-
+    
     | Parameter              | Type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
     |------------------------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Custom Model Options   | JSON | Additional parameters for the LLM model. You can specify individual parameters as well as entire functions. These parameters customize the behavior of the model, such as adjusting temperature, top_k, or presence_penalty. Note that if you use a parameter already set in the Node, for example, temperature, it will be overwritten. To view the full list of available parameters for your model, refer to the LLM provider's API documentation. For example, [OpenAI](https://platform.openai.com/docs/api-reference/chat/create) or [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/).<br></br><br></br> **Examples:** <ul><li>`{ "logprobs": true }`</li><li>`{ "temperature": 0.7 }`</li><li>`{ "model": "claude-3-opus-20240229" }` (see Forcing Model Versions)</li></ul> |
     | Custom Request Options | JSON | Additional parameters for the LLM request. These parameters customize the request itself, such as setting parameters related to timeout, retries, or headers. For more information, refer to the LLM provider's API documentation. <br></br><br></br> **Examples:** <br></br>- `{ "timeout": 5000 }`<br></br> - `{ "headers": { "Authorization": "Bearer <token>" } }`                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-  
+      
     **Forcing Model Versions**
-
+    
     You can force the LLM Prompt Node to use a specific model version by including it in the Custom Model Options.
     This means that the LLM Prompt Node will use the specified version of the language model instead of the default or any other available versions. This allows for more control over the behavior of the LLM Prompt Node, ensuring it utilizes the desired model version for generating prompts or responses.
-
+    
     You can use models from any LLM provider supported by Cognigy, including those not yet directly integrated.
     However, you can only replace one model with another within the same provider.
-
+    
     Let's consider an example with the Anthropic provider:
     how to force the LLM Prompt Node to use the model version `claude-3-sonnet-20240229`,
     despite the LLM resource defaulting to the `claude-3-opus-20240229` model:
-
+    
     1. [Create an Anthropic LLM resource](../../../empower/llms/providers/anthropic.md) for Claude-1, for example, `claude-3-opus-20240229`.
     2. Create a Flow and add an LLM Prompt Node to it.
     3. In the LLM Prompt Node, select the model `claude-3-opus-20240229` from the **Large Language Model** list.
     4. Override the model selection. In the **Custom Model Options** field, specify the custom model options as follows: `{ "model": "claude-3-sonnet-20240229" }`.
     5. Click **Save Node**.
-
+    
     The LLM Prompt Node now utilizes the `claude-3-sonnet-20240229` model.
-
+    
     Below, you'll find documentation for supported models:
-
+    
     - [Aleph Alpha Models](https://docs.aleph-alpha.com/)
     - [Anthropic Models](https://docs.anthropic.com/claude/docs/models-overview)
     - [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models)
     - [OpenAI Models](https://platform.openai.com/docs/models)
+    
+    
+
+</CollapsibleSection>
 
 
-??? info "Debugging Settings"
+<CollapsibleSection title="Debugging Settings">
 
     When using the Interaction Panel, you can trigger two types of debug logs. These logs are only available when using the Interaction Panel and are not intended for production debugging. You can also combine both log types.
-
+    
     | Parameter                  | Type   | Description                                                                                                                                                                                                                                                                                         |
     |----------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Show Token Count           | Toggle | Send a debug message containing the input, output, and total token count. The message appears in the Interaction Panel when Debug Mode is enabled. Cognigy.AI uses the GPT-3 tokenizer algorithm, so actual token usage may vary depending on the model used. The parameter is inactive by default. |
     | Log Request and Completion | Toggle | Send a debug message containing the request sent to the LLM provider and the subsequent completion. The message appears in the Interaction Panel when Debug Mode is enabled. The parameter is inactive by default.                                                                                  |
+    
+
+</CollapsibleSection>
+
 
 ## More Information
 

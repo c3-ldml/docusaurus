@@ -4,6 +4,8 @@ slug: "add-transcript-steps"
 description: "The Add Transcript Steps Node lets you add a step for one of the conversation actor's to simulate an input or output."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Add Transcript Steps
 

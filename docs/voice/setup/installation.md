@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Installing Voice Gateway
 

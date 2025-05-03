@@ -8,6 +8,8 @@ tags:
     - Localization
     - Locales
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import SwitchLocale from '@site/docs/_includes/ai/localization/_switch-a-locale.md';
 

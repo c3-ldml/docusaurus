@@ -4,6 +4,8 @@ slug: "barge-in-config"
 description: "The Barge In Config Node is used to configure barge-in settings for voice conversations."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

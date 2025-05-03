@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 Note that the generation of Flows for primary NLU languages besides German and English is not fully supported.
 
 To use [Generative AI](../../generative-ai.md#generate-flows) technology for creating a new Flow with pre-configured Nodes based on your scenario, do the following:

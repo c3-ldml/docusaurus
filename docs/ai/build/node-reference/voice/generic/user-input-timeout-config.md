@@ -4,6 +4,8 @@ slug: "user-input-timeout-config"
 description: "The User Input Timeout Config Node is used to configure timeout settings for user input in voice conversations."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/voice/_ac-and-generic-node-deprecation.md';
 

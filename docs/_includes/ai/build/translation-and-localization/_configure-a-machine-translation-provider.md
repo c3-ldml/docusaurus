@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 You can configure a machine translation provider in **Manage > Settings > Translation Settings**. To do so, you need the following information:
 
 === "Microsoft Translator"

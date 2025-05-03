@@ -3,6 +3,8 @@
  slug: "fuzzy-search" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Fuzzy Search
 
 <figure>
@@ -26,7 +28,8 @@ If an error occurs, it is stored in either the Cognigy context (`context.STORE.e
 | Search Pattern | String | The pattern to search for.                          |
 | Source Data    | JSON   | An array of strings or an object to search through. |
 
-??? info "Basic Options"
+<CollapsibleSection title="Basic Options">
+
     | Parameter          | Type    | Description                                                                                                                                                  |
     |--------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Is Case Sensitive  | Boolean | Specify whether comparisons should be case-sensitive.                                                                                                        |
@@ -35,7 +38,7 @@ If an error occurs, it is stored in either the Cognigy context (`context.STORE.e
     | Minimum Characters | Number  | Only the matches whose length exceeds this value is returned.                                                                                                |
     | Should Sort        | Boolean | Specify whether to sort the result list by score.                                                                                                            |
 
-??? info "Fuzzy Matching Options"
+    <CollapsibleSection title="Fuzzy Matching Options">
 
     | Parameter        | Type    | Description                                                                                                                                                        |
     |------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,9 +48,19 @@ If an error occurs, it is stored in either the Cognigy context (`context.STORE.e
     | Distance         | Number  | Determine how close the match must be to the fuzzy location (specified by Location).                                                                               |
     | Ignore Location  | Boolean | When activated, the search ignores Location and Distance, so it won't matter where in the string the pattern appears.                                              |
 
-??? info "Storage Options"
+
+    </CollapsibleSection>
+
+
+    <CollapsibleSection title="Storage Options">
 
     | Parameter                 | Type   | Description                                                          |
     |---------------------------|--------|----------------------------------------------------------------------|
     | Where to store the result | List   | Specify whether the result is stored in the Input or Context object. |
     | Input Key to store Result | String | The key to store the result in.                                      |
+
+    </CollapsibleSection>
+
+</CollapsibleSection>
+
+

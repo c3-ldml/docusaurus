@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 1. Go to the login page and enter your account credentials in the following fields:
 
     - **E-Mail** — the email you provided to your Cognigy.AI admin to register your Cognigy.AI account.

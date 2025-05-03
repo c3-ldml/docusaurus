@@ -4,6 +4,8 @@ slug: "key-features"
 description: "Cognigy.AI is a leading conversational AI platform that empowers organizations to build advanced, integrated conversational automation solutions."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Key Features
 

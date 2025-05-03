@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 === "Azure Blob Storage Container"
     1. Make sure that you have access to [Azure Blob Storage Container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) and at least one container has been created, or [create a new one](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container). Note that the container must be publicly available; otherwise, users cannot upload files via the chat interface.

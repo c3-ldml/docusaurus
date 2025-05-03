@@ -3,6 +3,8 @@ title: "Copilot: Identity Tile"
 slug: "identity-tile"
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Copilot: Identity Tile
 

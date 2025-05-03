@@ -1,3 +1,5 @@
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 !!! warning
     The following settings for design-time features in **Manage > Settings** have been deprecated and will be removed in Cognigy.AI version 4.101.0: Intent Sentence Generation, Lexicon Generation, Flow Generation, and Adaptive Card Generation.
     

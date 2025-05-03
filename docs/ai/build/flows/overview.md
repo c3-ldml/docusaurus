@@ -7,6 +7,8 @@ tags:
   - Cognigy.AI
   - Flows
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Flows
 
@@ -44,7 +46,8 @@ You can also connect different [Flows](../../empower/nlu/attachments/attached-fl
 
 Besides the Nodes, you can customize Flows further on the **Settings** tab of the [Flow editor](editor.md). For example, you can add Yes/No logic and personalized confirmation responses. Also, you can fine-tune the AI Agent's confidence in understanding Intents and activate recognition of specific details, including age, date, and email addresses, to ensure more accurate responses.
 
-??? info "Settings"
+<CollapsibleSection title="Settings">
+
     | Setting                                                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
     |-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | **General Flow Logic**                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -81,6 +84,9 @@ Besides the Nodes, you can customize Flows further on the **Settings** tab of th
     | Enable Percentage Slots                                               | Enable the recognition of percentage values. For more information, read [System-Defined Slots](../../empower/nlu/slots-and-lexicons/slots.md#system-defined-slots).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
     | Enable Temperature Slots                                              | Enable the recognition of temperature values. For more information, read [System-Defined Slots](../../empower/nlu/slots-and-lexicons/slots.md#system-defined-slots).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
     | Enable URL Slots                                                      | Enable the recognition of URLs. For more information, read [System-Defined Slots](../../empower/nlu/slots-and-lexicons/slots.md#system-defined-slots).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+
+</CollapsibleSection>
+
 
 ## More Information
 

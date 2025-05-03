@@ -7,6 +7,8 @@ tags:
   - flow editor
 hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Node Search
 
@@ -16,7 +18,7 @@ With the _Node Search_ field, you can search through the Nodes in the [Flow edit
 
 To open the Node Search field, click ![search icon](../../../../static/img/_assets/icons/search.svg){width="24"} in the lower-left corner of the Flow editor.
 
-??? info "Searchable Content"
+<CollapsibleSection title="Searchable Content">
 
     | Searchable Node Value | Description                                                                                                                                                                                                                                                                                       |
     |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -30,13 +32,21 @@ To open the Node Search field, click ![search icon](../../../../static/img/_asse
     | Output types          | Any text in the Output type settings in configured [channels](channels.md).                                                                                                                                                                                                                       |
     | Button labels         | Button labels and values you have configured in Say, Question, and Optional Question Nodes.                                                                                                                                                                                                       |
     | Settings fields       | Setting fields in a Node or Extension.                                                                                                                                                                                                                                                            |
+    
+
+</CollapsibleSection>
+
 
 ### Search Matches in the Flow Editor
 
 When you enter a text into the Node Search field, the Flow editor highlights matching Nodes in yellow and scrolls to the first match. Use ![up arrow](../../../../static/img/_assets/icons/arrow-up.svg) and ![down arrow](../../../../static/img/_assets/icons/arrow-down.svg) to navigate between matches. Click ![close button](../../../../static/img/_assets/icons/close-button.svg) to reset the search.
 
-!!! tip "Toggle Search Results"
+<CollapsibleSection title="Toggle Search Results">
+
     To close the Node Search field but keep the matching Nodes highlighted, click ![search icon](../../../../static/img/_assets/icons/search.svg){width="24"} again.
+
+</CollapsibleSection>
+
 
 ### Search Matches in the Node Editor
 

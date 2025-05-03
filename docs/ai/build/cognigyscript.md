@@ -9,6 +9,8 @@ tags:
   - Dynamic Content
   - Cognigy.AI Objects
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # CognigyScript
 
@@ -67,8 +69,12 @@ For text fields, wrap the CognigyScript expression in `{{"{{ }}"}}`.
 !!! note "Invalid CognigyScript"
         If the CognigyScript expression is invalid, CognigyScript returns an empty string.
 
-??? info "Example"
+<CollapsibleSection title="Example">
+
     `{{"{{input.text.toUpperCase()}}"}}` returns the text the client sent in uppercase format.
+
+</CollapsibleSection>
+
 
 ### JSON Editors
 
@@ -78,20 +84,24 @@ The CognigyScript syntax in JSON editors depends on where you place the CognigyS
 
 For inline CognigyScript in a JSON object, use `{{"{{ }}"}}`.
 
-??? info "Example"
+<CollapsibleSection title="Example">
+
     ```json
-    {
-        "customer_orders": "{{"{{context.orders}}"}}"
-    }
+        {
+            "customer_orders": "{{"{{context.orders}}"}}"
+        }
     ```
 
     The code attempts to fetch the `orders` variable from the Context object and to assign it to `customer_orders`. If `context.orders` doesn't exist, the code skips `customer_orders`.
+
+</CollapsibleSection>
+
 
 #### Inside JSON Arguments
 
 To run CognigyScript within a JSON argument, use `{ "$cs": { "script": "x", "type": "t"}}`, where `x` is the script and `t` is the return type (optional). For instance, you can convert a string such as `"6"` into a number or an object into a string.
 
-??? info "Example"
+<CollapsibleSection title="Example">
 
     ```json
     {
@@ -103,14 +113,18 @@ To run CognigyScript within a JSON argument, use `{ "$cs": { "script": "x", "typ
         }
     }
     ```
-
+    
     The code attempts to fetch the `orders` variable from the Context object and to assign it to `customer_orders` as an object. If `context.orders` doesn't exist, the code skips `customer_orders`.
+    
+
+</CollapsibleSection>
+
 
 ### Code Nodes
 
 In a Code Node, you don't need to wrap the CognigyScript expression in `{{"{{ }}"}}`. You can use CognigyScript as standard JavaScript. The `input`, `context`, `profile`, and `actions` variables are exposed by default, as well as `_` and `moment`.
 
-??? info "Example"
+<CollapsibleSection title="Example">
 
     ```JavaScript
     const ordercount = context.orders;
@@ -126,13 +140,17 @@ In a Code Node, you don't need to wrap the CognigyScript expression in `{{"{{ }}
             input.ordertext = "You ordered many items";
     }
     ```
+    
+
+</CollapsibleSection>
+
 
 ## Additional Examples
 
-??? info " Examples of CognigyScript Expressions"
+<CollapsibleSection title=" Examples of CognigyScript Expressions">
 
     The following table shows additional examples of CognigyScript expressions:
-
+    
     | Example                                                                   | Description                                                                                                               |
     |---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
     | `{{"{{input.slots.SLOT_NAME[0].keyphrase}}"}}`                            | Extracts the first Keyphrase found for the Slot with the name `SLOT_NAME`.                                                |
@@ -140,6 +158,10 @@ In a Code Node, you don't need to wrap the CognigyScript expression in `{{"{{ }}
     | `{{"{{input.slots.DATE[0].start.plain}}"}}`                               | Returns the date information if the user sent a date. Example: July 23, 2021                                              |
     | `{{"{{moment(input.slots.DATE[0].start.ISODate).format('MMM Do YY')}}"}}` | Formats a given date that the user provided in the last message.                                                          |
     | `{{"{{input.currentTime.hour}}"}}`                                        | Gets the hour of the current incoming message. You can use this CognigyScript expression to greet the user appropriately. |
+    
+
+</CollapsibleSection>
+
 
 ## More Information
 

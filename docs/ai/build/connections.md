@@ -3,6 +3,8 @@ title: "Connections"
 slug: "connections"
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 # Connections
 

@@ -4,6 +4,8 @@ slug: "add-memory"
 description: "The Add Memory Node stores text, such as user input and other relevant details, within the Contact Profile."
 hidden: false
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 
 import Beta from '@site/docs/_includes/ai/_beta.md';
 

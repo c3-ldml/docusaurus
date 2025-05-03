@@ -3,6 +3,8 @@
  slug: "play" 
  hidden: false 
 ---
+import CollapsibleSection from '@site/src/components/CollapsibleSection';
+
 # Play
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../../../../release-notes/4.64.md)
