@@ -22,9 +22,10 @@ Cognigy.AI integrates with various [Large Language Models (LLM) Providers](#prer
 
 To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
 
-<div style="text-align:center;">
-  <iframe width="701" height="438" src="https://www.youtube.com/embed/g_ntrz52BLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<Video 
+  src="https://www.youtube.com/embed/g_ntrz52BLM"
+  title="Webinar: Conversational AI with Generative AI"
+/>
 
 ## Prerequisites
 

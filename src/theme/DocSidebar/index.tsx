@@ -182,6 +182,45 @@ export default function DocSidebar(props: Props): React.ReactElement | null {
     window.location.href = introPath;
   };
 
+  const findParentCategories = (item: PropSidebarItem, currentPath: string): string[] => {
+    if (item.type === 'category') {
+      const categoryItem = item as PropSidebarItemCategory;
+      for (const subItem of categoryItem.items) {
+        if (subItem.type === 'link' && subItem.href === currentPath) {
+          return [categoryItem.label];
+        }
+        if (subItem.type === 'category') {
+          const parentCategories = findParentCategories(subItem, currentPath);
+          if (parentCategories.length > 0) {
+            return [categoryItem.label, ...parentCategories];
+          }
+        }
+      }
+    }
+    return [];
+  };
+
+  // Update expanded categories when pathname changes
+  useEffect(() => {
+    const newExpandedCategories = new Set<string>();
+    
+    const traverseSidebar = (items: readonly PropSidebarItem[]) => {
+      for (const item of items) {
+        if (item.type === 'category') {
+          const categoryItem = item as PropSidebarItemCategory;
+          const parentCategories = findParentCategories(categoryItem, pathname);
+          if (parentCategories.length > 0) {
+            parentCategories.forEach(cat => newExpandedCategories.add(cat));
+          }
+          traverseSidebar(categoryItem.items);
+        }
+      }
+    };
+
+    traverseSidebar(sidebar);
+    setExpandedCategories(Array.from(newExpandedCategories));
+  }, [pathname, sidebar]);
+
   const toggleCategory = (categoryLabel: string) => {
     setExpandedCategories(prev =>
       prev.includes(categoryLabel)

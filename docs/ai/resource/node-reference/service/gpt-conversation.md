@@ -103,9 +103,11 @@ Grounding Knowledge is the foundational information that the AI Agent has access
 
 This video shows a live example of how the GPT Conversation Node can generate text based on the user input.
 
-<div style="text-align:center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/WKJO4_JfIFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<Video
+  src="https://www.youtube.com/embed/WKJO4_JfIFs"
+  title="YouTube video player"
+  startTime={12}
+/>
 
 At 0:12 seconds, the user receives the expected answer from the AI Agent in the form of generated Conversational AI text.
 

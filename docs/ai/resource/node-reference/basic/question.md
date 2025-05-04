@@ -30,10 +30,11 @@ After the AI Agent asks a question and the user answers, the answer is validated
 
 :::
 
+<Video
+  src="https://www.youtube.com/embed/iGc3fekZQOw"
+  title="YouTube video player"
+/>
 
-<div style="text-align:center;">
-  <iframe width="701" height="438" src="https://www.youtube.com/embed/iGc3fekZQOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
 
 ## Parameters
 

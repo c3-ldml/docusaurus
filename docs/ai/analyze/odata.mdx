@@ -8,6 +8,7 @@ hidden: false
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import Video from '@site/src/components/Video';
 
 import understoodMessages from '@site/docs/_includes/ai/_understood-messages.md';
 
@@ -25,9 +26,11 @@ or build rich dashboards for AI Agents with your favorite data visualization too
 
 Watch this video to get a quick overview of what the OData Analytics endpoint is, how it works, and in which scenarios you can use it:
 
-<div style="text-align:center;">
-  <iframe width="701" height="438" src="https://www.youtube.com/embed/D18JNjUPvN4?si=UJYuFYZzEovHg83Z&amp;start=1857" title="Cognigy Sessions: Cognigy Insights & OData" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+<Video
+  src="https://www.youtube.com/embed/D18JNjUPvN4"
+  title="Cognigy Sessions: Cognigy Insights & OData"
+  startTime={1857}
+/>
 
 To analyze your AI Agent's performance, you can use the [built-in Insights reports](../../insights/overview.md) as an alternative to OData or in addition to it.
 
@@ -48,12 +51,12 @@ You can control data available through the OData endpoint at both the [Endpoint]
 
 ## Supported Versions
 
-| Cognigy.AI version | Cognigy.AI OData Endpoint version | Status                                      |
-|--------------------|-----------------------------------|---------------------------------------------|
-| 4.65 and later     | 2.4                               | Supported                                   |
+| Cognigy.AI version | Cognigy.AI OData Endpoint version | Status                                         |
+|--------------------|-----------------------------------|------------------------------------------------|
+| 4.65 and later     | 2.4                               | Supported                                      |
 | 4.48 and later     | 2.3                               | Supported; deprecation date is September, 2025 |
-| 4.31-4.47          | 2.0–2.3                           | Out of support                              |
-| 4.30 and earlier   | 2.0–2.2                           | Out of support                              |
+| 4.31-4.47          | 2.0–2.3                           | Out of support                                 |
+| 4.30 and earlier   | 2.0–2.2                           | Out of support                                 |
 
 ## OData Endpoint Access
 
@@ -278,7 +281,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
 When retrieving this collection, the endpoint will return the following fields:
 
-| Field Name         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Type     | Example                                                          |
+| Field Name         | <div style={{ width: '300px' }}>Description</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Type     | <div style={{ width: '50px' }}>Example</div>                                                          |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|------------------------------------------------------------------|
 | id                 | The unique ID of the record. Applicable to the OData endpoint v2.4 or later.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | String   | 5a91d194fde28b0011ce2423                                         |
 | _id                | The unique ID of the record. Applicable to the OData endpoint v2.3 or earlier.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | String   | 5a91d194fde28b0011ce2423                                         |
@@ -350,7 +353,7 @@ Select one of the requests to extract data from the collection. Note that the AP
 
 When retrieving this collection, the endpoint will return the following fields:
 
-| Field Name             | <div style="width:300px">Description</div>                                                                                                                                                                                                                                                                             | Type     | <div style="width:50px">Example</div>                                                                                           |
+| Field Name             | <div style={{ width: '300px' }}>Description</div>                                                                                                                                                                                                                                                                             | Type     | <div style={{ width: '50px' }}>Example</div>                                                                                           |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------|
 | id                     | The unique ID of the record. Applicable to the OData endpoint v2.4 or later.                                                                                                                                                                                                                                           | String   | 5a91d194fde28b0011ce2423                                                                                                        |
 | _id                    | The unique ID of the record. Applicable to the OData endpoint v2.3 or earlier.                                                                                                                                                                                                                                         | String   | 5a91d194fde28b0011ce2423                                                                                                        |

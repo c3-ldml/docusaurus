@@ -23,9 +23,10 @@ Alternatively, for more customization, you can create your own Node by implement
 
 Watch this webinar to get a quick overview of what xApps are, how they work, and in which scenarios you can use them. The webinar also includes a tutorial on how to build a simple xApp.
 
-<div style="text-align:center;">
-  <iframe width="701" height="438" src="https://www.youtube.com/embed/4qvZGG6qK6w" title="Design Multimodal Customer Journeys with Cognigy xApps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<Video
+  src="https://www.youtube.com/embed/4qvZGG6qK6w"
+  title="Design Multimodal Customer Journeys with Cognigy xApps"
+/>
 
 ## Compatibility
 
