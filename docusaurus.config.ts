@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Cognigy.AI',
+  title: 'Documentation',
   tagline: 'Documentation for Cognigy.AI and Voice Gateway',
   favicon: 'img/favicon-light.svg',
 
@@ -78,7 +78,13 @@ const config: Config = {
           type: 'doc',
           docId: 'ai/about-cognigy-ai',
           position: 'left',
-          label: 'Cognigy.AI',
+          label: 'Documentation',
+        },
+        {
+          type: 'doc',
+          docId: 'voice-gateway/overview',
+          position: 'left',
+          label: 'Release Notes',
         },
         {
           href: 'https://github.com/cognigy/docs',
@@ -91,7 +97,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
               label: 'Cognigy.AI',
