@@ -11,7 +11,7 @@ tags:
 
 # Live Agent
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../release-notes/4.97.md)
+<a href="../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97-blue.svg" alt="Version badge" />
 
 The Live Agent handover connector bridges Cognigy.AI with the native contact center [Cognigy Live Agent](../../../live-agent/index.md),
 enabling end users to connect with human agents working within the Cognigy Live Agent contact center.

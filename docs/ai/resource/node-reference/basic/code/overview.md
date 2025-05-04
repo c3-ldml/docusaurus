@@ -7,7 +7,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Code
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../../../release-notes/4.68.md)
+<a href="../../../../../release-notes/4.68.md" /><img src="https://img.shields.io/badge/Updated in-v4.68-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/code/code.png" width="50%" />

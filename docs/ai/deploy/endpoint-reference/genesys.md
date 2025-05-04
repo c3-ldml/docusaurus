@@ -6,7 +6,7 @@ hidden: false
 
 # Genesys
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.64-blue.svg)](../../../release-notes/4.64.md)
+<a href="../../../release-notes/4.64.md" /><img src="https://img.shields.io/badge/Added in-v4.64-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/genesys.svg" width="100%" />

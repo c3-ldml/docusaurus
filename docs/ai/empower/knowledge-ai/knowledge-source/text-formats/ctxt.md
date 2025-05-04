@@ -8,7 +8,7 @@ tags: ['CTXT Format', 'Text Formatting', 'Knowledge Chunks', 'Metadata', 'Conten
 
 # Cognigy Text Format
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../../../../release-notes/4.63.md)
+<a href="../../../../../release-notes/4.63.md" /><img src="https://img.shields.io/badge/Updated in-v4.63-blue.svg" alt="Version badge" />
 
 The _Cognigy Text_ format (CTXT) is a file format developed by Cognigy for extracting knowledge with Knowledge AI. You can segment the text in a CTXT file into [Knowledge Chunks](../../knowledge-chunk/knowledge-chunk.md) before uploading the file as a [Knowledge Source](../knowledge-source.md).
 

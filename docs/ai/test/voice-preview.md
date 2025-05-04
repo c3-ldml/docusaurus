@@ -9,7 +9,7 @@ import VoiceProviders from '@site/docs/_includes/ai/_voice-providers.md';
 
 # Voice Preview
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.97.1-blue.svg)](../../release-notes/4.97.md)
+<a href="../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97.1-blue.svg" alt="Version badge" />
 
 The _Voice Preview_ feature lets
 users quickly test their voice output without going through the entire flow with a mock call.

@@ -8,7 +8,7 @@ tags: ['Knowledge Tile', 'Knowledge Search', 'Customer Support', 'Knowledge Retr
 
 # Copilot: Knowledge Tile Node
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.72-blue.svg)](../../../../release-notes/4.72.md)
+<a href="../../../../release-notes/4.72.md" /><img src="https://img.shields.io/badge/Added in-v4.72-blue.svg" alt="Version badge" />
 
 The _Copilot: Knowledge Tile Node_ is an [AI Copilot Node](../../../build/node-reference/ai-copilot/overview.md) that uses [Knowledge AI](../../knowledge-ai/overview.md) to provide human agents with accurate information about customer questions.
 

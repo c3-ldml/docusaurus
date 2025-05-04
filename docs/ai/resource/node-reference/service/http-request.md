@@ -9,7 +9,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # HTTP Request
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../../release-notes/4.84.md)
+<a href="../../../../release-notes/4.84.md" /><img src="https://img.shields.io/badge/Updated in-v4.84-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/services/http-request.png" width="50%" />

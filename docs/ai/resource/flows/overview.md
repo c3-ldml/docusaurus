@@ -12,7 +12,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Flows
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../release-notes/4.80.md)
+<a href="../../../release-notes/4.80.md" /><img src="https://img.shields.io/badge/Updated in-v4.80-blue.svg" alt="Version badge" />
 
 A _Flow_ is a conversational structure consisting of [Nodes](../nodes/overview.md) that defines how AI Agents interact with users. With Flows, you can customize the behavior of AI Agents and design tailored and dynamic conversational experiences. AI Agents can access the [Input](../../test/interaction-panel/input.md), [Context](../../test/interaction-panel/context.md), and [Profile](../../test/interaction-panel/profile.md) objects from the Flow to provide context-aware responses.
 

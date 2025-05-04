@@ -14,7 +14,7 @@ import termsOfUse from '@site/docs/_includes/ai/_terms-of-use.md';
 
 # Generative AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../release-notes/4.99.md)
+<a href="../../release-notes/4.99.md" /><img src="https://img.shields.io/badge/Updated in-v4.99-blue.svg" alt="Version badge" />
 
 <termsOfUse />
 

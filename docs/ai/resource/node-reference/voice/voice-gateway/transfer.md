@@ -13,7 +13,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Transfer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.96-blue.svg)](../../../../../release-notes/4.96.md)
+<a href="../../../../../release-notes/4.96.md" /><img src="https://img.shields.io/badge/Updated in-v4.96-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/vg/transfer.png" width="50%" />

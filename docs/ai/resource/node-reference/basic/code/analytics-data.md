@@ -11,7 +11,7 @@ import UnderstoodMessages from '@site/docs/_includes/ai/_understood-messages.md'
 
 # Analytics Data
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
+<a href="../../../../../release-notes/4.90.md" /><img src="https://img.shields.io/badge/Updated in-v4.90-blue.svg" alt="Version badge" />
 
 In a [Code Node](overview.md), you can modify certain parts of the analytics data to get more control of what exactly is written to analytics.
 

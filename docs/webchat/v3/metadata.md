@@ -7,7 +7,7 @@ hidden: false
 
 # Collecting Metadata
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.81-blue.svg)](../../release-notes/4.81.md)
+<a href="../../release-notes/4.81.md" /><img src="https://img.shields.io/badge/Added in-v4.81-blue.svg" alt="Version badge" />
 
 _Collecting metadata_ from the user's browser during the conversation via Webchat v3 allows you
 to gather additional information that is not available by default. It includes details such as the browser language, geolocation, device type, and operating system.

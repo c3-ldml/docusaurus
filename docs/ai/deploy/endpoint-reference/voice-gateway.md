@@ -12,7 +12,7 @@ tags:
 
 # Cognigy Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.96-blue.svg)](../../../release-notes/4.96.md)
+<a href="../../../release-notes/4.96.md" /><img src="https://img.shields.io/badge/Updated in-v4.96-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/voice-gateway.png" width="100%" />

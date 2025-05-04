@@ -19,7 +19,7 @@ Enable the collection of Analytics data for this endpoint.
 
 ### Store Extensive Data Payloads in Analytics
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+<a href="../../../release-notes/4.60.md" /><img src="https://img.shields.io/badge/Added in-v4.60-blue.svg" alt="Version badge" />
 
 This setting applies only to the [Voice Gateway](../endpoint-reference/voice-gateway.md) Endpoint
 and can be activated if the [Collect Analytics](#collect-analytics) toggle is turned on.
@@ -43,7 +43,7 @@ By default, the setting is disabled, and the following fields are not stored:
 
 ## Mask IP Address
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../../release-notes/4.53.md)
+<a href="../../../release-notes/4.53.md" /><img src="https://img.shields.io/badge/Added in-v4.53-blue.svg" alt="Version badge" />
 
 Masks IP addresses in the analytics and input object when you use `{{ "{{ input.ip }}" }}` or `{{ "{{ ci.ip }}" }}` in the Say Node or  `ci.ip` or `input.ip` in the Code Node. If the user input contains an IP address and the text, Cognigy will only mask the IP address while leaving the rest unmasked. When enabled, the setting replaces the `IP` of user inputs with asterisks in both the analytics data and the input object.
 The IP addresses will not be available through [Cognigy OData Analytics Endpoint](../../analyze/odata.md) and [Insights](../../../insights/overview.md).
@@ -88,7 +88,7 @@ Defines whether we should store conversation histories in contact profiles for e
 
 ## Enable Input Sanitization
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.81-blue.svg)](../../../release-notes/4.81.md)
+<a href="../../../release-notes/4.81.md" /><img src="https://img.shields.io/badge/Added in-v4.81-blue.svg" alt="Version badge" />
 
 Activates server-side input sanitization.
 If this setting is enabled,
@@ -106,7 +106,7 @@ In this case, enabling server-side input sanitization will provide an additional
 
 ## Hide References to External Resources in Transcripts
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.92-blue.svg)](../../../release-notes/4.92.md)
+<a href="../../../release-notes/4.92.md" /><img src="https://img.shields.io/badge/Added in-v4.92-blue.svg" alt="Version badge" />
 
 If this parameter is enabled, tags that reference third-party APIs, such as `<a>` for links and `<img>` for images, will be removed from user inputs in conversation transcripts to enhance security and protect Cognigy.AI users from potential risks associated with third-party content.
 

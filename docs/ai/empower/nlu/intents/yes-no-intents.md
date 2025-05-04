@@ -6,7 +6,7 @@ hidden: false
 
 # Yes/No Intents
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.98-blue.svg)](../../../../release-notes/4.98.md)
+<a href="../../../../release-notes/4.98.md" /><img src="https://img.shields.io/badge/Updated in-v4.98-blue.svg" alt="Version badge" />
 
 The **Yes/No Intents** feature enables machine learning to determine `yes` and `no` confirmations similar to regular Intent matching. That allows a small set of example sentences to train a model capable of understanding various `yes` and `no` confirmation phrases, introducing a more fluent natural language experience.
 

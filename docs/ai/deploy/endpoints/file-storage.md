@@ -9,7 +9,7 @@ import FileStorage from '@site/docs/_includes/ai/_file-storage.md';
 
 # File Storage
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.91-blue.svg)](../../../release-notes/4.91.md)
+<a href="../../../release-notes/4.91.md" /><img src="https://img.shields.io/badge/Updated in-v4.91-blue.svg" alt="Version badge" />
 
 By default, users cannot attach files to chat messages.
 To enable file uploads via drag and drop or the Attach file button,

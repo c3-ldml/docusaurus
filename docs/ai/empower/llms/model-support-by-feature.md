@@ -12,7 +12,7 @@ tags:
 
 # Model Support by Feature
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../release-notes/4.99.md)
+<a href="../../../release-notes/4.99.md" /><img src="https://img.shields.io/badge/Updated in-v4.99-blue.svg" alt="Version badge" />
 
 The table provides an overview of the LLM providers supported by Cognigy.AI, detailing the standard models and their compatibility with Cognigy.AI features.
 You can also add a custom model that is not presented in the table.

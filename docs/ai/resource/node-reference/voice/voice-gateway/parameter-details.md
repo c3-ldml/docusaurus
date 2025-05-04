@@ -21,7 +21,7 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
 
 <CollapsibleSection title="Synthesizer (TTS)">
 
-    [![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../../../../release-notes/4.62.md)
+    <a href="../../../../../release-notes/4.62.md" /><img src="https://img.shields.io/badge/Updated in-v4.62-blue.svg" alt="Version badge" />
     
     The Text-To-Speech (TTS) settings can be chosen from a pre-filled dropdown for Microsoft Azure, AWS, Google, Nuance, or a custom vendor.
     
@@ -43,7 +43,7 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
 
 <CollapsibleSection title="Recognizer (STT)">
 
-    [![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../../../../release-notes/4.100.md)
+    <a href="../../../../../release-notes/4.100.md" /><img src="https://img.shields.io/badge/Updated in-v4.100-blue.svg" alt="Version badge" />
     
     The Speech-To-Text (STT) settings can be chosen from a pre-filled dropdown for Microsoft Azure, AWS, Google, Nuance, Soniox, or a custom vendor.
     
@@ -76,7 +76,7 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
 
 <CollapsibleSection title="Barge In">
 
-    [![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../../release-notes/4.80.md)
+    <a href="../../../../../release-notes/4.80.md" /><img src="https://img.shields.io/badge/Updated in-v4.80-blue.svg" alt="Version badge" />
     
     :::warning
 
@@ -105,7 +105,7 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
 
 <CollapsibleSection title="User Input Timeout">
 
-    [![Version badge](https://img.shields.io/badge/Updated in-v4.81-blue.svg)](../../../../../release-notes/4.81.md)
+    <a href="../../../../../release-notes/4.81.md" /><img src="https://img.shields.io/badge/Updated in-v4.81-blue.svg" alt="Version badge" />
     
     This feature defines what should happen when there is no input from the user.
     
@@ -124,7 +124,7 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
 
 <CollapsibleSection title="Flow Input Timeout">
 
-    [![Version badge](https://img.shields.io/badge/Added in-v4.87-blue.svg)](../../../../../release-notes/4.87.md)
+    <a href="../../../../../release-notes/4.87.md" /><img src="https://img.shields.io/badge/Added in-v4.87-blue.svg" alt="Version badge" />
     
     This feature is designed for use cases where response delays occur in a Flow, such as when utilizing large language models (LLMs), waiting for responses from external services, or managing complex processing tasks. It helps maintain user engagement by proactively delivering information or prompts during these delays.
     
@@ -162,7 +162,7 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
 
 <CollapsibleSection title="Continuous ASR">
 
-    [![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
+    <a href="../../../../../release-notes/4.90.md" /><img src="https://img.shields.io/badge/Updated in-v4.90-blue.svg" alt="Version badge" />
     
     Continuous ASR enables the Voice Gateway to concatenate multiple STT recognitions of the user and then send them as a single textual message to the AI Agent.
     
@@ -178,7 +178,7 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
 
 <CollapsibleSection title="Atmosphere Sounds">
 
-    [![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../../release-notes/4.90.md)
+    <a href="../../../../../release-notes/4.90.md" /><img src="https://img.shields.io/badge/Updated in-v4.90-blue.svg" alt="Version badge" />
     
     This feature is useful in scenarios where users interact with an AI Agent instead of a human when calling the contact center. Within the Atmosphere Sound section, you can configure the MP3 background track. This track may include office noises or other sounds that simulate human interaction, helping the caller feel they are speaking with a person rather than an AI Agent.
     Playing a background MP3 track during the conversation with AI Agents makes it more engaging and personalized.
@@ -216,7 +216,7 @@ Cognigy Voice Gateway has many configuration settings that are controlled direct
 
 <CollapsibleSection title="Advanced">
 
-    [![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../../../../release-notes/4.100.md)
+    <a href="../../../../../release-notes/4.100.md" /><img src="https://img.shields.io/badge/Updated in-v4.100-blue.svg" alt="Version badge" />
     
     | Parameter                     | Type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
     |-------------------------------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -8,7 +8,7 @@ import {GridCards} from '@site/src/components/GridCards';
 
 # AI Copilot Nodes
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../../../release-notes/4.66.md)
+<a href="../../../../release-notes/4.66.md" /><img src="https://img.shields.io/badge/Updated in-v4.66-blue.svg" alt="Version badge" />
 
 The AI Copilot Nodes allow users to customize the AI Copilot workspace by adding HTML, Adaptive Cards, and IFrame content.
 

@@ -7,7 +7,7 @@ hidden: false
 
 # Intent Recognition with External Embedding Model
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.74-blue.svg)](../../../../release-notes/4.74.md)
+<a href="../../../../release-notes/4.74.md" /><img src="https://img.shields.io/badge/Added in-v4.74-blue.svg" alt="Version badge" />
 
 An embedding is a sequence of numbers that represents the meaning of sentences and is used by the NLU for tasks such as intent classification.
 

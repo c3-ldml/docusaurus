@@ -6,7 +6,7 @@ hidden: true
 
 # Text Cleaner
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../../release-notes/4.58.md)
+<a href="../../../release-notes/4.58.md" /><img src="https://img.shields.io/badge/Updated in-v4.58-blue.svg" alt="Version badge" />
 
 Cognigy.AI offers various functions to assist in preprocessing user inputs, such as text messages or transcribed voice messages. These functions make it easier to process data in Cognigy.AI.
 

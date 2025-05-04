@@ -8,7 +8,7 @@ import UnderstoodMessages from '@site/docs/_includes/ai/_understood-messages.md'
 
 # Input
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../release-notes/4.90.md)
+<a href="../../../release-notes/4.90.md" /><img src="https://img.shields.io/badge/Updated in-v4.90-blue.svg" alt="Version badge" />
 
 The Input is a short term JSON data object that is generated each time a message is sent to Cognigy.AI. 
 

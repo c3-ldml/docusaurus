@@ -14,7 +14,7 @@ import AdaptiveCardGenAI from '@site/docs/_includes/ai/nodes/_adaptive-card-gena
 
 # Say
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
+<a href="../../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/basic/say.png" width="50%" />

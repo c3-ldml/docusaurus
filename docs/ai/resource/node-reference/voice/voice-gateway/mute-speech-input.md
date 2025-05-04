@@ -12,7 +12,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Mute Speech Input
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../../../../release-notes/4.61.md)
+<a href="../../../../../release-notes/4.61.md" /><img src="https://img.shields.io/badge/Updated in-v4.61-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/vg/mute-speech-input.png" width="50%" />

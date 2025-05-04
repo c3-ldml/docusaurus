@@ -14,7 +14,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Tokens
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.98-blue.svg)](../../release-notes/4.95.md)
+<a href="../../release-notes/4.95.md" /><img src="https://img.shields.io/badge/Updated in-v4.98-blue.svg" alt="Version badge" />
 
 _Tokens_ are visual representations of [CognigyScript](cognigyscript.md) expressions that you store and reuse in Cognigy.AI. Cognigy.AI has a selection of default Tokens that are associated with user Input, Context, and Profile objects.
 

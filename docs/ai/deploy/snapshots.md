@@ -80,7 +80,7 @@ The web browser will start to download your prepared Snapshot package as a `.csn
 
 ## Upload a Snapshot
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../release-notes/4.47.md)
+<a href="../../release-notes/4.47.md" /><img src="https://img.shields.io/badge/Updated in-v4.47-blue.svg" alt="Version badge" />
 
 The use case for uploading a Snapshot is usually to deploy its Flows into production.
 Since Snapshots live within AI Agents as other resources,

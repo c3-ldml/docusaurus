@@ -12,7 +12,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Flow Editor
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../release-notes/4.80.md)
+<a href="../../../release-notes/4.80.md" /><img src="https://img.shields.io/badge/Updated in-v4.80-blue.svg" alt="Version badge" />
 
 The _Flow Editor_ is a user interface (UI) where you can see a graphic representation of a [Flow](overview.md), the _Flow Chart_, and design AI Agents' conversations. In the Flow editor, the Flow consists of Nodes that represent various actions or decision points. The [Nodes](../nodes/overview.md) are linked to one another by lines that indicate the conversation's path, from the **Start** Node to the **End** Node.
 

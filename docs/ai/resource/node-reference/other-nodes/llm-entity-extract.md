@@ -9,7 +9,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # LLM Entity Extract
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
+<a href="../../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Added in-v4.97-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/other/llm-entity-extract.png" width="50%"/>

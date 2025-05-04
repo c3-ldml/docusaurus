@@ -19,7 +19,7 @@ import addModelViaApi from '@site/docs/_includes/ai/generative-ai/_add-model-via
 
 # Amazon Bedrock
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../../release-notes/4.92.md)
+<a href="../../../../release-notes/4.92.md" /><img src="https://img.shields.io/badge/Updated in-v4.92-blue.svg" alt="Version badge" />
 
 To start using an Amazon Bedrock model with Cognigy.AI features, follow these steps:
 

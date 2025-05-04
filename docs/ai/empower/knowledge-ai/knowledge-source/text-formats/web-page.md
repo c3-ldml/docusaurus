@@ -8,7 +8,7 @@ tags: ['Web Scraping', 'Web Content', 'Text Extraction', 'Content Processing']
 
 # Web Page
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.73-blue.svg)](../../../../../release-notes/4.73.md)
+<a href="../../../../../release-notes/4.73.md" /><img src="https://img.shields.io/badge/Updated in-v4.73-blue.svg" alt="Version badge" />
 
 Knowledge AI supports using web pages to create [Knowledge Sources](../knowledge-source.md).
 

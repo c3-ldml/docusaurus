@@ -21,7 +21,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Salesforce MIAW
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.100-blue.svg)](../../../release-notes/4.100.md)
+<a href="../../../release-notes/4.100.md" /><img src="https://img.shields.io/badge/Added in-v4.100-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/salesforce.svg" width="100%" />

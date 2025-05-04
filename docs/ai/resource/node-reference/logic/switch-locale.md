@@ -20,7 +20,7 @@ The Switch Locale Node changes the [Locale](../../translation-and-localization/l
 
 ## Parameters
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../../../release-notes/4.80.md)
+<a href="../../../../release-notes/4.80.md" /><img src="https://img.shields.io/badge/Updated in-v4.80-blue.svg" alt="Version badge" />
 
 | Parameter         | Description                                                                                                |
 |-------------------|------------------------------------------------------------------------------------------------------------|

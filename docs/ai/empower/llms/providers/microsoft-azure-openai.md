@@ -19,7 +19,7 @@ import addModelViaApi from '@site/docs/_includes/ai/generative-ai/_add-model-via
 
 # Microsoft Azure OpenAI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.90-blue.svg)](../../../../release-notes/4.90.md)
+<a href="../../../../release-notes/4.90.md" /><img src="https://img.shields.io/badge/Updated in-v4.90-blue.svg" alt="Version badge" />
 
 To start using a Microsoft Azure OpenAI model with Cognigy.AI features, follow these steps:
 

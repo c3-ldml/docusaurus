@@ -8,7 +8,7 @@ tags: ['Search Extraction', 'Knowledge Search', 'Information Retrieval', 'Knowle
 
 # Search Extract Output Node 
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../../release-notes/4.84.md)
+<a href="../../../../release-notes/4.84.md" /><img src="https://img.shields.io/badge/Updated in-v4.84-blue.svg" alt="Version badge" />
 
 The Search Extract Output Node uses an embedding model to search [Knowledge Stores](../knowledge-store.md) and a generative AI model to extract relevant information and generate outputs. For example, you can upload manuals and technical documents as [Knowledge Sources](../knowledge-source/knowledge-source.md) to create an AI Agent that helps customers with technical issues.
 

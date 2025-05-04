@@ -7,7 +7,7 @@ hidden: false
 
 # LLM-Based Intent Reranking
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.76-blue.svg)](../../../../release-notes/4.76.md)
+<a href="../../../../release-notes/4.76.md" /><img src="https://img.shields.io/badge/Added in-v4.76-blue.svg" alt="Version badge" />
 
 _LLM-based intent reranking_ is a process that uses a Large Language Model (LLM) to reorganize or reorder identified intents based on data taken from the input text. This process involves using a more advanced language model to better understand the context and meaning of the user's input, which improves the accuracy of intent classification.
 

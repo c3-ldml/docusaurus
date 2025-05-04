@@ -10,7 +10,7 @@ tags:
 
 # Manage AI Agents
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.98-blue.svg)](../../../release-notes/4.98.md)
+<a href="../../../release-notes/4.98.md" /><img src="https://img.shields.io/badge/Updated in-v4.98-blue.svg" alt="Version badge" />
 
 To manage a new generation of AI Agents, Cognigy.AI introduces the _AI Agent Management_ interface,
 where you can create, edit, and delete AI Agents.

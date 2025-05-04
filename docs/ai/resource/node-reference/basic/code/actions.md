@@ -8,7 +8,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Actions
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../../../release-notes/4.84.md)
+<a href="../../../../../release-notes/4.84.md" /><img src="https://img.shields.io/badge/Updated in-v4.84-blue.svg" alt="Version badge" />
 
 In a [Code Node](overview.md), you can use the functions of the `actions` and `api` classes.
 

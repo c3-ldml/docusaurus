@@ -5,7 +5,7 @@ description: "Cognigy encourages conversation designers to build solutions with 
 hidden: false
 ---
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.100-blue.svg)](../../release-notes/4.100.md)
+<a href="../../release-notes/4.100.md" /><img src="https://img.shields.io/badge/Updated in-v4.100-blue.svg" alt="Version badge" />
 
 # Webchat v3: Accessibility
 

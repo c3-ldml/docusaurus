@@ -10,7 +10,7 @@ import forbiddenCharacters from '@site/docs/_includes/ai/_forbidden-characters.m
 
 # Lexicons
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../../../../release-notes/4.52.md)
+<a href="../../../../release-notes/4.52.md" /><img src="https://img.shields.io/badge/Updated in-v4.52-blue.svg" alt="Version badge" />
 
 _Lexicons_ are collections of domain-specific Keyphrases, also known as entities, that can be attached to a Flow.
 A Lexicon can be seen as a dictionary that allows the AI Agent to understand

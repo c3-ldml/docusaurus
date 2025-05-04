@@ -12,7 +12,7 @@ import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
 
 # Search Extract Output
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
+<a href="../../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/other/search-extract-output.png" width="50%"/>

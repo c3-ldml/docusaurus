@@ -17,7 +17,7 @@ Use the Send SMTP Email Node to send an email via an SMTP connection to a recipi
 
 ## Parameters
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../../release-notes/4.49.md)
+<a href="../../../../release-notes/4.49.md" /><img src="https://img.shields.io/badge/Updated in-v4.49-blue.svg" alt="Version badge" />
 
 :::note[Email Service Configuration]
 

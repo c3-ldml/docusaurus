@@ -19,7 +19,7 @@ import addModelViaApi from '@site/docs/_includes/ai/generative-ai/_add-model-via
 
 # OpenAI-Compatible LLMs
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
+<a href="../../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Added in-v4.97-blue.svg" alt="Version badge" />
 
 :::warning
 

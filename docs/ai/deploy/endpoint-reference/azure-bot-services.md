@@ -9,7 +9,7 @@ import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_han
 
 # Azure Bot Services
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../../release-notes/4.55.md)
+<a href="../../../release-notes/4.55.md" /><img src="https://img.shields.io/badge/Updated in-v4.55-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/azure-bot-services.png" width="100%" />
@@ -44,7 +44,7 @@ The **Azure Bot Services Settings** dropdown menu is where Cognigy.AI needs to b
 
 ### Access Scope
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../../release-notes/4.55.md)
+<a href="../../../release-notes/4.55.md" /><img src="https://img.shields.io/badge/Added in-v4.55-blue.svg" alt="Version badge" />
 
 This setting determines who can access this application, choosing being **Multi Tenant** and **Single Tenant**.
 

@@ -14,7 +14,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Check Agent Availability
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../../../release-notes/4.97.md)
+<a href="../../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/services/check-agent-availability.png" width="50%" />

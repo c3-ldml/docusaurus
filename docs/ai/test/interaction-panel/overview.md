@@ -121,7 +121,7 @@ In **Chat** mode, you can use additional settings:
 
 #### Voice Call
 
-[![Version badge](https://img.shields.io/badge/Beta-purple.svg)](../../../release-notes/earlier-versions/overview.md)
+<a href="../../../release-notes/earlier-versions/overview.md" /><img src="https://img.shields.io/badge/Beta-purple.svg" alt="Version badge" />
 
 :::note[Feature availability]
 
@@ -295,7 +295,7 @@ When the **Text-to-Speech** setting is enabled, an AI Agent will vocalize its re
 
 ##### Debug Mode
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.84-blue.svg)](../../../release-notes/4.84.md)
+<a href="../../../release-notes/4.84.md" /><img src="https://img.shields.io/badge/Updated in-v4.84-blue.svg" alt="Version badge" />
 
 The **Debug Mode** setting is enabled by default.
 
@@ -333,7 +333,7 @@ Valid JSON input data could be `{"firstName": "Max", "lastName": "Müller"}`, wh
 
 ### Voice Call
 
-[![Version badge](https://img.shields.io/badge/Beta-purple.svg)](../../../release-notes/index.md)
+<a href="../../../release-notes/index.md" /><img src="https://img.shields.io/badge/Beta-purple.svg" alt="Version badge" />
 
 The **Voice Call** section lets select the language and voice to test voice calls from the Interaction Panel.
 

@@ -109,7 +109,7 @@ Additionally, you can publish your custom Extension on the Marketplace so that o
 
 ## Extension Performance and Security
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../release-notes/4.46.md)
+<a href="../../release-notes/4.46.md" /><img src="https://img.shields.io/badge/Added in-v4.46-blue.svg" alt="Version badge" />
 
 By default, Cognigy.AI considers Extension code untrusted and runs it in a secure, isolated environment. This additional security layer introduces some overhead during startup. For this reason, Extensions usually run slower than default Nodes in Flows.
 
@@ -182,6 +182,6 @@ For more details, read the [Localization for Extensions](https://www.npmjs.com/p
 
 ## Error Handling
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.22-blue.svg)](../../release-notes/earlier-versions/cognigy-ai-pre-4.30.md)
+<a href="../../release-notes/earlier-versions/cognigy-ai-pre-4.30.md" /><img src="https://img.shields.io/badge/Added in-v4.22-blue.svg" alt="Version badge" />
 
 If an Extension [times out or sends too many API calls](#limitations), the Flow execution doesn't stop. Instead, an error message is written to the `input.extensionError` Input object.

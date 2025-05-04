@@ -12,7 +12,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Projects
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../release-notes/4.92.md)
+<a href="../../release-notes/4.92.md" /><img src="https://img.shields.io/badge/Updated in-v4.92-blue.svg" alt="Version badge" />
 
 _Projects_ are collections of Conversational AI resources with which you can create AI Agents. AI Agents are bots designed to tackle one use case and handle multiple user intents. You can deploy AI Agents on a wide range of channels within a Project. Multiple team members can work on a Project at the same time.
 
@@ -55,7 +55,7 @@ If you already have a Live Agent account and admin rights, you can also:
 
 ## Task Panel
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../release-notes/4.65.md)
+<a href="../../release-notes/4.65.md" /><img src="https://img.shields.io/badge/Updated in-v4.65-blue.svg" alt="Version badge" />
 
 _Tasks_ are specific activities, such as training Intents, importing Snapshots, or creating a new Project. A Task is an asynchronous process that runs in the background and for which you get notifications. The Task Panel provides an overview of ongoing and completed Tasks. To open the Task Panel, click the ![task-menu](../../../static/img/_assets/icons/task-menu.svg) button in the upper-right corner of the **Project** page. 
 

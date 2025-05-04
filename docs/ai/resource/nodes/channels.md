@@ -25,7 +25,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Channels
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/4.48.md)
+<a href="../../../release-notes/4.48.md" /><img src="https://img.shields.io/badge/Updated in-v4.48-blue.svg" alt="Version badge" />
 
 _Channels_ allow you to use your Flow with multiple Endpoints, ensuring that output messages are correctly reproduced in both chat and voice conversations.
 

@@ -98,7 +98,7 @@ The **Intent Analyzer** uses a traffic light color system to provide users with 
 
 ## Testing NLU Scores 
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.79-blue.svg)](../../../../release-notes/4.79.md)
+<a href="../../../../release-notes/4.79.md" /><img src="https://img.shields.io/badge/Added in-v4.79-blue.svg" alt="Version badge" />
 
 You can test NLU scores via the Interaction Panel by activating the [Debug Mode](../../../test/interaction-panel/overview.md#debug-mode) feature and exploring the detailed results in the `input.nlu.intentMapperResults.scores` object.
 

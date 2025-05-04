@@ -13,7 +13,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Packages
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.97-blue.svg)](../../release-notes/4.97.md)
+<a href="../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97-blue.svg" alt="Version badge" />
 
 _Packages_ are a useful tool for exporting and importing Project resources, such as Flows or Lexicons, to share with other teams. With Packages, you can transfer resources from one Project to another. When you create a Package, it automatically includes its direct dependencies. Once a Package has been downloaded, you can share it as a ZIP file.
 

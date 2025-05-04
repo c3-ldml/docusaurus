@@ -13,7 +13,7 @@ tags:
 
 # User Inactivity Detection and Handling
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../release-notes/4.53.md)
+<a href="../../release-notes/4.53.md" /><img src="https://img.shields.io/badge/Added in-v4.53-blue.svg" alt="Version badge" />
 
 The _Inactivity Detection and Handling_ feature detects user inactivity during handovers
 and enables automated responses,

@@ -11,7 +11,7 @@ import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
 
 # Copilot: Next Action Tile
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.72-blue.svg)](../../../../release-notes/4.72.md)
+<a href="../../../../release-notes/4.72.md" /><img src="https://img.shields.io/badge/Added in-v4.72-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/next-action-tile.png" width="50%"/>

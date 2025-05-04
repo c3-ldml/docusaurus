@@ -17,7 +17,7 @@ tags:
 
 # Genesys Cloud Open Messaging: Handover End Detection with Amazon EventBridge
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.100-blue.svg)](../../../release-notes/4.100.md)
+<a href="../../../release-notes/4.100.md" /><img src="https://img.shields.io/badge/Added in-v4.100-blue.svg" alt="Version badge" />
 
 The Amazon EventBridge integration offers a more reliable and stable solution for event handling compared to WebSocket. 
 Unlike WebSocket, which can sometimes result in lost events due to connection instability, EventBridge ensures smooth and consistent event delivery, improving the reliability of the handover process between Cognigy.AI and Genesys Cloud Open Messaging.

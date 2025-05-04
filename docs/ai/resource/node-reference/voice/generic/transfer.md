@@ -9,7 +9,7 @@ import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/
 
 # Transfer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../../../../release-notes/4.64.md)
+<a href="../../../../../release-notes/4.64.md" /><img src="https://img.shields.io/badge/Updated in-v4.65-blue.svg" alt="Version badge" />
 
 <figure>
   <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/generic-voice/transfer.png" width="80%" />
