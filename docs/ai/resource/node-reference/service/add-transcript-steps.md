@@ -7,9 +7,7 @@ hidden: false
 
 # Add Transcript Steps
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/services/add-transcript-step.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/services/add-transcript-step.png').default} width="50%" />
 
 ## Description
 

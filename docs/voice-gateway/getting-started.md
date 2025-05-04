@@ -6,10 +6,7 @@ hidden: false
 
 # Getting Started with Voice Gateway
 
-<figure>
-<img class="image-center" src="../../../static/img/_assets/voice-gateway/VG-logo.png" width="80%" />
-   <figcaption>Voice Gateway Logo</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/voice-gateway/VG-logo.png').default} width="80%" />
 
 ## How to Set Up Voice Gateway?
 
@@ -37,9 +34,7 @@ For voice-specific actions, you can use the [Voice Gateway Flow Nodes](../ai/bui
 :::
 
 
-<figure>
-   <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-nodes-overview.png"  width="80%" />
-</figure>
+<img src={require('../../static/img/_assets/voice-gateway/VG-nodes-overview.png').default} width="80%" />
 
 ## Create a Voice Gateway Endpoint
 
@@ -54,9 +49,7 @@ To do voice-based experiences with your AI Agent, create your [Voice Gateway End
     3. Select a relevant Flow from the list.<br />
 5. Click **Save**.
 
-<figure>
-   <img class="image-center" src="../../../static/img/_assets/voice-gateway/VG-endpoint-new.png" width="100%" />
-</figure>
+<img src={require('../../static/img/_assets/voice-gateway/VG-endpoint-new.png').default} width="100%" />
 
 ## Route your Contact Center or Phone Number to Voice Gateway
 

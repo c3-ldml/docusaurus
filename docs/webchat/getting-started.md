@@ -104,29 +104,17 @@ To test your AI Agent via Demo Webchat, follow these steps:
 
 1. In the upper-right corner of the **Endpoint Editor** page, select **Open Demo Webchat**. A home screen of Webchat v3 opens. 
 2. Click the button **I need technical Support** that triggers a conversation with the AI Agent.
-    <figure>
-      <img class="image-center" src="../../static/img/_assets/webchat/getting-started/home-screen.png" width="100%" />
-    </figure>
+    <img src={require('../../static/img/_assets/webchat/getting-started/home-screen.png').default} width="100%" />
 3. Reply to the AI Agent with the following message: `Hi! I'd like to know where the Cognigy Headquarters is located`.
-   <figure>
-      <img class="image-center" src="../../static/img/_assets/webchat/getting-started/start-conversation.png" width="100%" />
-    </figure>
+   <img src={require('../../static/img/_assets/webchat/getting-started/start-conversation.png').default} width="100%" />
 4. The agent sends you the answer, which contains the location and a link to the map, and asks if further assistance is needed. Send the following message as a reply: `No, that's all. Thank you!`
-   <figure>
-      <img class="image-center" src="../../static/img/_assets/webchat/getting-started/agent-reply.png" width="100%" />
-    </figure>
+   <img src={require('../../static/img/_assets/webchat/getting-started/agent-reply.png').default} width="100%" />
 5. When you send a reply, the AI Agent asks you to leave feedback on the Chat Options screen. In the upper-right corner of the current page, click ![vertical-ellipsis](../../static/img/_assets/icons/vertical-ellipsis.svg).
-   <figure>
-      <img class="image-center" src="../../static/img/_assets/webchat/getting-started/finish-conversation.png" width="100%" />
-    </figure>
+   <img src={require('../../static/img/_assets/webchat/getting-started/finish-conversation.png').default} width="100%" />
 6. On the Chat Options screen, click ![thumbs-up](../../static/img/_assets/icons/thumbs-up.svg) (**thumbs up**) and leave the message `I appreciate the quick response` in the feedback field. Click **Send feedback**.
-   <figure>
-      <img class="image-center" src="../../static/img/_assets/webchat/getting-started/feedback-sent.png" width="100%" />
-    </figure>
+   <img src={require('../../static/img/_assets/webchat/getting-started/feedback-sent.png').default} width="100%" />
 7. After submitting feedback, a notification about the sent message will appear at the top of the window. The user can give feedback an unlimited number of times. Return to the conversation you started or view earlier conversations on the home screen. For navigation, use the button **\<** in the upper-left corner of the screen.
-   <figure>
-      <img class="image-center" src="../../static/img/_assets/webchat/getting-started/feedback-confirmed.png" width="100%" />
-   </figure>
+   <img src={require('../../static/img/_assets/webchat/getting-started/feedback-confirmed.png').default} width="100%" />
 
 ## What's Next?
 

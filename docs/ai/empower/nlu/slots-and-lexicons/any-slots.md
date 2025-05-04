@@ -19,15 +19,11 @@ hidden: false
 :::
 
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/any-slots.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/any-slots.png').default} width="60%" />
 
 Add user input that matches the pattern exactly to the Slot `movie_title`:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/result_movie_title.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/result_movie_title.png').default} width="60%" />
 
 Any input content that exactly matches the pattern of an Any Slot in your example sentences will be populated as a new Cognigy Slot. The result will be the same as if you had populated a Lexicon with the tag of your placeholder Any Slot and a keyphrase identical to the matched user input.
 
@@ -45,21 +41,15 @@ Any input content that exactly matches the pattern of an Any Slot in your exampl
 
 Consider the following example:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/slots-and-lexicons/any-slot-example.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/slots-and-lexicons/any-slot-example.png').default} width="60%" />
 
 This will dynamically add user input that matches the pattern exactly to the Slot *fruit*:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/slots-and-lexicons/result-apple.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/slots-and-lexicons/result-apple.png').default} width="60%" />
 
 Note that because the Any Slot annotation is located at the very end of the training sentence, any number of words after *"This is a"* will be matched to the slot *fruit*:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/slots-and-lexicons/result-apple-tree.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/slots-and-lexicons/result-apple-tree.png').default} width="60%" />
 
 This is by design and does not seem to make sense for this specific example. However, consider the example above with the sentence `Who is the director of Titanic`, where the Any Slot would be matched with any movie title, also titles including spaces.
 
@@ -67,21 +57,15 @@ This is by design and does not seem to make sense for this specific example. How
 
 Let's fix the issue we discovered above by adjusting the example sentence a little:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/slots-and-lexicons/result-orange-tree.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/slots-and-lexicons/result-orange-tree.png').default} width="60%" />
 
 We placed the Any Slot annotation in the middle of a sentence. Now, the word of an input sentence that has exactly the structure of the training sentence will be mapped to the Slot *fruit*:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/result_thisisanappletree2.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/result_thisisanappletree2.png').default} width="60%" />
 
 Grammatical issues aside, using multiple words does also work:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/result_thisisankiwifruittree.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/result_thisisankiwifruittree.png').default} width="60%" />
 
 ### Any Slot in combination with Lexicon Slot
 
@@ -90,27 +74,19 @@ we can make use of a Lexicon Slot.
 
 Let's annotate the example sentence from the previous example with a Lexicon Slot:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/anyslot_lexiconannotated.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/anyslot_lexiconannotated.png').default} width="60%" />
 
 Keep in mind that we also need to create and attach a lexicon to the flow to be able to annotate *Lexicon Slots*:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/anyslot_lexicon.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/anyslot_lexicon.png').default} width="60%" />
 
 As seen in the following examples, the user has more flexibility in wording the sentence:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/result_thisisanorangejuice.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/result_thisisanorangejuice.png').default} width="60%" />
 
 Grammatical issues aside, using completely different words than from the training sentence does also work:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/result_thisisanpinapplehouse.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/result_thisisanpinapplehouse.png').default} width="60%" />
 
 ### Punctuation
 
@@ -118,9 +94,7 @@ Any Slots are insensitive to punctuation. This means that any extra or unexpecte
 
 See the following input with the same training sentence as the previous examples:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/result_punctuation.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/result_punctuation.png').default} width="60%" />
 
 ### Any Slots from Past Inputs
 
@@ -131,15 +105,11 @@ This approach can help maintain a smooth conversation flow if a topic from earli
 
 Let's consider the following training sentences.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/anyslot_past_slots.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/anyslot_past_slots.png').default} width="60%" />
 
 In the first two inputs, the AI agent detects two corresponding Any Slots in the inputs. However, the third input doesn't contain any word to be mapped to a Slot. The conversation could continue until the topic of apples and tastiness comes up again.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/result_follow_up.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/result_follow_up.png').default} width="60%" />
 
 ## Known Issues
 
@@ -149,28 +119,20 @@ There are some edge cases to Any Slot matching where seemingly odd behaviors occ
 
 An input sentence without spaces will be mapped.
 
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/result_anyslotwithoutspaces.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/result_anyslotwithoutspaces.png').default} width="60%" />
 
 ### Excessive Punctuation
 
 Excessive punctuation may cause problems with word mapping.
 
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/result_excessivepunctuation.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/result_excessivepunctuation.png').default} width="60%" />
 
 ### Conflicting Training Sentences 
 
 Conflicting training sentences may yield undesired results. Notice the same beginning of both training sentences below. The Any Slot annotation in the second sentence will override that of the first sentence.
 
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/anyslot_conflicts.png" width="60%" />
-</figure>
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/anyslot_result_conflicts.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/anyslot_conflicts.png').default} width="60%" />
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/anyslot_result_conflicts.png').default} width="60%" />
 
 Bear in mind that this might also happen when Any Slots are used in combination with Lexicon Slots, System Slots, or other Any Slots. If you are planning to make excessive use of Slot matching in your agent, particular care must be taken to ensure that multiple annotated training sentences of the same or multiple intents will not conflict each other.
 
@@ -186,12 +148,8 @@ This behavior may be adjusted by configuring Any Slot matching on system level f
 
 You should take particular care to avoid leading and trailing spaces within Any Slot annotations. They can quickly creep in with a slip of the mouse and cause undesirable Slot mapping results. 
 
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/4_in.png" width="60%" />
-</figure>
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/4_out.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/4_in.png').default} width="60%" />
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/4_out.png').default} width="60%" />
 
 ### Consecutive Any Slot Annotations
 
@@ -199,21 +157,13 @@ Using multiple Any Slot annotations right after each other may cause problems. M
 
 Incorrect:
 
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/5_wrong_in.png" width="60%" />
-</figure>
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/5_wrong_out.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/5_wrong_in.png').default} width="60%" />
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/5_wrong_out.png').default} width="60%" />
 
 Correct:
 
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/5_right_in.png" width="60%" />
-</figure>
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/5_right_out.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/5_right_in.png').default} width="60%" />
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/5_right_out.png').default} width="60%" />
 
 ### Multiple Words as Any Slot Annotations
 
@@ -222,21 +172,13 @@ Keep in mind that you can still detect multi-word `Any Slots`, but using multipl
 
 Incorrect:
 
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/6_wrong_in.png" width="60%" />
-</figure>
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/6_wrong_out.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/6_wrong_in.png').default} width="60%" />
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/6_wrong_out.png').default} width="60%" />
 
 Correct:
 
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/5_right_in.png" width="60%" />
-</figure>
-<figure>
-<img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/5_right_out.png" width="60%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/5_right_in.png').default} width="60%" />
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/5_right_out.png').default} width="60%" />
 
 ## More Information
 

@@ -6,9 +6,7 @@
 
 # Match Pattern
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai/match-pattern.png" width="40%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai/match-pattern.png').default} width="40%" />
 
 ## Description
 

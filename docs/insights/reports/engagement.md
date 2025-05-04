@@ -20,10 +20,7 @@ The _Engagement Report_ highlights customer interactions in conversations and vi
 
 <globalFilters />
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/engagement/engagement-report.png" width="100%" />
-  <figcaption>Engagement report</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/engagement/engagement-report.png').default} width="100%" />
 
 ## Indicators
 
@@ -153,9 +150,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/engagement/heatmap.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/engagement/heatmap.png').default} width="100%" />
 
 ## Bar charts
 
@@ -182,9 +177,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/goals.png" width="80%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/goals.png').default} width="80%" />
 
 ### Containment Rate
 
@@ -217,9 +210,7 @@ Example for the 3/1/2023: `(35/40)* 100% = 87.5%`
 
 Result: 
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/containment-rate.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/containment-rate.png').default} width="100%" />
 
 ## Line charts
 
@@ -248,9 +239,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/engagement/handovers-on-time.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/engagement/handovers-on-time.png').default} width="100%" />
 
 ### Positive Ratings over Time
 
@@ -268,9 +257,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/engagement/positive-ratings.png" width="80%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/engagement/positive-ratings.png').default} width="80%" />
 
 ### Unique Contacts
 
@@ -290,9 +277,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/unique-contacts.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/unique-contacts.png').default} width="100%" />
 
 <downloadReport />
 

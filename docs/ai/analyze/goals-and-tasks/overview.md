@@ -21,9 +21,7 @@ Both Goals and Tasks offer the following benefits:
 
 ## Life Cycle of Goals and Tasks
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/analyze/goals/life-cycle.png" width="50%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/analyze/goals/life-cycle.png').default} width="50%" />
 
 A Goal or a Task has the following life cycle:
 

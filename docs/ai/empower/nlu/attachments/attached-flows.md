@@ -46,17 +46,13 @@ As described above, the Intents of the Attached Flow are added to the list of In
 
 From the flow editor, select the **NLU** tab in the top menu and then select the **Attachments** sub-tab to open the Attachments menu.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/attach-flows-menu.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/attach-flows-menu.png').default} width="100%" />
 
 ### Attach a Flow
 
 Flows are attached by clicking the flow in the list, which enables the attachment toggle.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/attach-flows.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/attach-flows.png').default} width="100%" />
 
 :::warning[Train Intents when Attaching]
 
@@ -72,6 +68,4 @@ You can sort the Intent mapping of available Flows as follows:
 1. Click the *Sort* button next to the *Attach* button at the top of the flow list. The view will switch to Sort mode.
 2. Sort attached Flows by dragging and dropping Flows into the desired order.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/sort-attached-flows.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/sort-attached-flows.png').default} width="100%" />

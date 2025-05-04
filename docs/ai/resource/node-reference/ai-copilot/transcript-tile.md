@@ -8,9 +8,7 @@ hidden: false
 
 <a href="../../../../release-notes/4.60.md" /><img src="https://img.shields.io/badge/Added in-v4.60-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/transcript-tile.png" width="50%"/>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/transcript-tile.png').default} width="50%" />
 
 ## Description
 
@@ -38,9 +36,7 @@ In such cases, the Copilot: Transcript Tile plays a crucial role in recording an
 This approach allows human agents to have immediate access to this information,
 thereby facilitating more effective and efficient communication and decision-making during voice call interactions.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/transcript-tile-example.png" width="80%"/>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/transcript-tile-example.png').default} width="80%" />
 
 ## More Information
 

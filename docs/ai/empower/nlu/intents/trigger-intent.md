@@ -35,12 +35,8 @@ For instance, if you want your intent to be named `my Intent`, you'd send the te
 
 Here's an example:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/intent-trigger.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/intent-trigger.png').default} width="100%" />
 
 You may supply additional text that will be parsed for keyphrases using the pipe operator. Here is an example that illustrates the functionality:
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/intent-trigger-usage.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/intent-trigger-usage.png').default} width="100%" />

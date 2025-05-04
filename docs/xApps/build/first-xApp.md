@@ -172,28 +172,20 @@ Once you built your first xApp, you can test your xApp via the Interaction Panel
 1. Open the Interaction Panel and enter a message like `Hi` to trigger the Flow.
 2. In the Interaction Panel, click **Open xApp** to access the xApp session. By the way, you can also check the **Info** tab to see the xApp's URL in the `input.apps.url` input object.
 
-       <figure>
-          <img class="image-center" src="../../../static/img/_assets/xApps/build/first-xApp/open-xApp.png" width="100%" />
-       </figure>
+       <img src={require('../../../static/img/_assets/xApps/build/first-xApp/open-xApp.png').default} width="100%" />
 
 3. Open the URL in a new tab to view the xApp with the Adaptive Card and select your customer status.
 
-       <figure>
-          <img class="image-center" src="../../../static/img/_assets/xApps/build/first-xApp/open-url.png" width="100%" />
-       </figure>
+       <img src={require('../../../static/img/_assets/xApps/build/first-xApp/open-url.png').default} width="100%" />
 
 4. When you select **New Customer** and submit the action, a new page will be loaded.
 
-       <figure>
-          <img class="image-center" src="../../../static/img/_assets/xApps/build/first-xApp/select-new-customer.png" width="100%" />
-       </figure>
+       <img src={require('../../../static/img/_assets/xApps/build/first-xApp/select-new-customer.png').default} width="100%" />
 
 5. You can submit data in the entry fields and observe the behavior, for example, `Dan Schneider`, `01.01.1999`, and `dan@cognigy.com`.
 6. Check the input result via the Interaction Panel.
 
-    <figure>
-      <img class="image-center" src="../../../static/img/_assets/xApps/build/first-xApp/check-input-result.png" width="100%" />
-    </figure>
+    <img src={require('../../../static/img/_assets/xApps/build/first-xApp/check-input-result.png').default} width="100%" />
 
 You can download a Cognigy Package with the [xApp Flow example](https://docs.cognigy.com/_assets/xApps/build/first-xApp/Flow-xApp-Demo.zip).
 

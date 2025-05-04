@@ -27,10 +27,7 @@ You can display the values per day, week, month or year, depending on the select
 
 For instance, in the image below, there is a combined chart for the QA team to analyze performance data.
 
-<figure>
-<img src="../../../../../static/img/_assets/live-agent/LA_Team_report.png" width="100%" alt="Live Agent Team report" />
-  <figcaption>Combined chart: Conversations</figcaption>
-</figure>
+<img src={require('../../../../static/img/_assets/live-agent/LA_Team_report.png').default} alt="Live Agent Team report" width="100%" />
 
 ## Report Metrics
 

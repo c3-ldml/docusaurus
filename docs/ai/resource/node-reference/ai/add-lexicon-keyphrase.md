@@ -6,9 +6,7 @@
 
 # Add Lexicon Keyphrase
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai/add-lexicon-keyphrase.png" width="40%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai/add-lexicon-keyphrase.png').default} width="40%" />
 
 ## Description
 

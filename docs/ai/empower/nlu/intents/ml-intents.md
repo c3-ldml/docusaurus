@@ -15,23 +15,17 @@ The building menu is available under the "NLU" tab in the flow editor. Any Flow 
 
 Flows that are only processed as an attached Flow do not need to be individually built (the exclamation mark can be ignored) as the building of the attaching Flow will pull in the Intents of the attached Flows and the Build will be done there. Flows that are used separately with intent mapping need to be built separately.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/build-model.JPG" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/build-model.JPG').default} width="100%" />
 
 *Cognigy NLU* requires pre-building of the intent mapping model.
 
 To build your model, go to the Intents tab in your Flow Editor and click the blue *Build Model* button.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/intent-menu.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/intent-menu.png').default} width="100%" />
 
 A new [Task](../../../build/projects.md) will begin, and the spinning task icon indicates model building is in progress. While new models are built, the latest version of your flow will fall back to the most recently trained model.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/c33ef5a-trainedSuccess.PNG" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/c33ef5a-trainedSuccess.PNG').default} width="100%" />
 
 Successful builds are indicated with a green success notification. It is possible that builds may fail, this will be indicated by a red error notification. Expand the error message to learn more, for example, you may have to add more example sentence data to complete the build successfully.
 
@@ -46,9 +40,7 @@ Any time adjustments are made to the model data, the NLU model must be rebuilt t
 
 When clicking the arrow on the **Build Model** button, a **Quick Build** option can be selected. This option will build a machine learning model for your intents which doesn't contain specifications for [States](../../../test/interaction-panel/state.md) and Intent Conditions and is thus significantly faster in building your model.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/quick-build.JPG" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/quick-build.JPG').default} width="100%" />
 
 If you're not using [States](../../../test/interaction-panel/state.md) or Intent Conditions, the training speed (as in the time it takes for Cognigy.AI to build the model after you clicked the button) and quality of the model will be the same whether you use the regular *Build Model* or *Quick Build* options.
 
@@ -67,10 +59,7 @@ When entering the example sentences, you can use the **TAB** or **ENTER** key to
 :::
 
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/example-sentences.png" width="100%" />
-  <figcaption>Machine Learning Intents: Example Sentences</figcaption>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/example-sentences.png').default} width="100%" />
 
 :::warning[Avoid Repetition]
 
@@ -81,17 +70,11 @@ When entering the example sentences, you can use the **TAB** or **ENTER** key to
 :::
 
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/min-sentence-warning.png" width="100%" />
-  <figcaption>Machine Learning Intents: Minimum Example Sentence warning</figcaption>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/min-sentence-warning.png').default} width="100%" />
 
 Any attempt at training the Intents with less than 5 example sentences will result in a negative feedback indicator once the build completes.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/min-sentence-negative-feedback.png" width="100%" />
-  <figcaption>Negative Feedback Indicator after training Intents with less than 5 Example Sentences</figcaption>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/min-sentence-negative-feedback.png').default} width="100%" />
 
 Intent example sentences should be as distinct and unique as possible. If there is too much similarity and overlap with other intents, then the intent mapping will become less predictable and, if configured, intent confirmation sentences will be triggered more frequently.
 
@@ -122,10 +105,7 @@ When writing example sentences, it is possible to add System Slots and attached 
 
 If you have configured **Lexicons** with similar items (for example, pizza = FOOD and cake = FOOD), you don't need to enter similar sentences for both. Build a general sentence that will be configured with Annotations to recognize your custom Lexicon keyphrases for example, `I want to order some FOOD`.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/lexicon-sentences.png" width="100%" />
-  <figcaption>Machine Learning Intents: Slot & Lexicon Annotations</figcaption>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/lexicon-sentences.png').default} width="100%" />
 
 Simply **highlight** the word that should be mapped as a slot or lexicon
 and click the **+** at the right end of the text field to open the **Annotations** menu.
@@ -181,7 +161,4 @@ If an Intent has been marked as `Reconfirmation Needed` and it is the highest fo
 :::
 
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/reconfirmation.png" width="100%" />
-  <figcaption>Machine Learning Intents: Confirmation Sentence</figcaption>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/reconfirmation.png').default} width="100%" />

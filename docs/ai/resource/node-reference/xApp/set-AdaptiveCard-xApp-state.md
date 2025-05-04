@@ -15,9 +15,7 @@ import Overlay from '@site/docs/_includes/ai/xApp/_overlay.md';
 
 <a href="../../../../release-notes/4.75.md" /><img src="https://img.shields.io/badge/Updated in-v4.75-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/xApp/set-AdaptiveCard-xApp-state.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/xApp/set-AdaptiveCard-xApp-state.png').default} width="50%" />
 
 ## Description
 

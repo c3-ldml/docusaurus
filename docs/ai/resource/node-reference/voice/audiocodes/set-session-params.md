@@ -9,10 +9,7 @@ import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/
 
 # Set Session Parameters
 
-<figure>
-  <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/audiocodes/set-session-parameters.png" width="80%" />
-  <figcaption>AudioCodes Set Session Parameters</figcaption>
-</figure>
+<img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/audiocodes/set-session-parameters.png').default} width="80%" />
 
 ## Description
 

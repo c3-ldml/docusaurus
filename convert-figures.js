@@ -31,7 +31,48 @@ function convertFigures(content) {
   });
 }
 
-// Example usage:
-// const content = fs.readFileSync('your-file.md', 'utf8');
-// const converted = convertFigures(content);
-// fs.writeFileSync('your-file.md', converted); 
+// Function to recursively get all MDX and MD files
+function getAllMarkdownFiles(dir) {
+  const files = fs.readdirSync(dir);
+  let markdownFiles = [];
+
+  files.forEach(file => {
+    const filePath = path.join(dir, file);
+    const stat = fs.statSync(filePath);
+
+    if (stat.isDirectory()) {
+      markdownFiles = markdownFiles.concat(getAllMarkdownFiles(filePath));
+    } else if (file.endsWith('.mdx') || file.endsWith('.md')) {
+      markdownFiles.push(filePath);
+    }
+  });
+
+  return markdownFiles;
+}
+
+// Process all MDX and MD files recursively
+const docsDir = 'docs';
+const files = getAllMarkdownFiles(docsDir);
+const changedFiles = [];
+
+console.log(`Found ${files.length} files to process`);
+
+files.forEach(filePath => {
+  console.log(`\nProcessing ${filePath}...`);
+  
+  const content = fs.readFileSync(filePath, 'utf8');
+  const converted = convertFigures(content);
+  
+  if (content !== converted) {
+    console.log(`Changes made to ${filePath}`);
+    fs.writeFileSync(filePath, converted);
+    changedFiles.push(filePath);
+  } else {
+    console.log(`No changes needed for ${filePath}`);
+  }
+});
+
+console.log('\nConversion complete!');
+console.log('\nChanged files:');
+changedFiles.forEach(file => console.log(`- ${file}`));
+console.log(`\nTotal files changed: ${changedFiles.length}`); 

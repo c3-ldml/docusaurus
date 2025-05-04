@@ -20,10 +20,7 @@ Within a conversation, as a human agent, you can send a reply to the following a
 
 You can also [track typing activity](#track-human-agent-typing-events) via a WebSocket connection to determine when the human agent starts typing.
 
-<figure>
-<img class="image-center" src="../../../static/img/_assets/live-agent/conversation/reply-section.png" width="80%" alt="Live Agent Conversations Reply" />
-  <figcaption>The Reply Section</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/live-agent/conversation/reply-section.png').default} alt="Live Agent Conversations Reply" width="80%" />
 
 ## Send a Reply to a User
 
@@ -64,21 +61,15 @@ To request a file, follow these steps:
 
 The end user will see a button in the chat to open a file upload dialog.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/live-agent/LA-conversation-workflow-27.png" width="100%" alt="Live Agent request file upload webchat" />
-</figure>
+<img src={require('../../../static/img/_assets/live-agent/LA-conversation-workflow-27.png').default} alt="Live Agent request file upload webchat" width="100%" />
 
 After uploading the file, it should be reflected in both the Webchat and the Live Agent interfaces, making the file ready for download on the Live Agent side.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/live-agent/LA-conversation-workflow-28.png" width="80%" alt="Live Agent request file upload webchat completed" />
-</figure>
+<img src={require('../../../static/img/_assets/live-agent/LA-conversation-workflow-28.png').default} alt="Live Agent request file upload webchat completed" width="80%" />
 
 The successful upload is displayed in Live Agent.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/live-agent/LA-conversation-workflow-29.png" width="100%" alt="Live Agent request file upload completed" />
-</figure>
+<img src={require('../../../static/img/_assets/live-agent/LA-conversation-workflow-29.png').default} alt="Live Agent request file upload completed" width="100%" />
 
 ### Simple Quick Reply
 
@@ -144,10 +135,7 @@ To include a [canned response](../settings/canned-responses.md) as a reply to th
 
 The selected canned response will be inserted into your reply, allowing you to easily include prewritten messages in your conversation.
 
-<figure>
-<img class="image-center" src="../../../static/img/_assets/live-agent/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
-  <figcaption>Send Canned Response</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/live-agent/LA-conversation-workflow-14.png').default} alt="Live Agent Canned Responses" width="80%" />
 
 #### Send a Canned Response with Variables
 
@@ -167,10 +155,7 @@ To send a reply to another human agent, follow these steps:
 2. Select an Agent and type in a message to consult with the selected Agent.
 3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../../static/img/_assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the end user but only to you and your team.
 
-<figure>
-<img class="image-center" src="../../../static/img/_assets/live-agent/conversation/private-message.png" width="100%" alt="Live Agent Private Message" />
-  <figcaption>Private Message with Agent</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/live-agent/conversation/private-message.png').default} alt="Live Agent Private Message" width="100%" />
 
 The second agent addressed in the private note will receive a notification in their account.
 Subsequent replies by the second agent will be visible on the **Private Note** tab.

@@ -12,9 +12,7 @@ The `Inject Transformer` is triggered when the `Inject Transformer API` is calle
 
 The `Inject Transformer` is configured by implementing the `handleInject` function in the Transformer in the Endpoint.
 
- <figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/deploy/endpoints/transformers/inject-transformer.png" width="100%" />
-</figure>
+ <img src={require('../../../../../static/img/_assets/ai/deploy/endpoints/transformers/inject-transformer.png').default} width="100%" />
 
 :::warning[REST Transformer Support]
 

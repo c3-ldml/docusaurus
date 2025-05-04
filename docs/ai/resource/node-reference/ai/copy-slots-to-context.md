@@ -6,9 +6,7 @@
 
 # Copy Slots to Context
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai/copy-slots-to-context.png" width="40%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai/copy-slots-to-context.png').default} width="40%" />
 
 ## Description
 

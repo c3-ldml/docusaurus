@@ -15,9 +15,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 <a href="../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/chatwoot/chatwoot.svg" width="25%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/human-escalation/handover-reference/chatwoot/chatwoot.svg').default} width="25%" />
 
 ## Description
 
@@ -61,9 +59,7 @@ Cognigy.AI supports Chatwoot API v1.19.0, custom agent bot names and description
   5. Click **Create API Channel**.
   6. Assign an agent to the inbox by selecting them and clicking **Add agents**.
 
-     <figure>
-       <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/chatwoot/inbox-create-api-channel-edit.png" width="100%" />
-     </figure>
+     <img src={require('../../../../static/img/_assets/ai/human-escalation/handover-reference/chatwoot/inbox-create-api-channel-edit.png').default} width="100%" />
 
   The new API channel will now appear in your Chatwoot Inbox list.
 

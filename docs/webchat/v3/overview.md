@@ -23,10 +23,7 @@ For Genesys Cloud Open Messaging, the typing indicator supports a single use cas
 
 If you're using Webchat v2 and looking to transition to Webchat v3, refer to the [migration guide](../migration.md).
 
-<figure>
-  <img class="image-center" src="/img/webchat/v3/webchat-v3-home-and-chat-screens.png" width="100%" />
-  <figcaption>Cognigy Webchat v3: Home and Chat Screens</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/webchat/v3/webchat-v3-home-and-chat-screens.png').default} width="100%" />
 
 ## How to Start with Webchat v3?
 

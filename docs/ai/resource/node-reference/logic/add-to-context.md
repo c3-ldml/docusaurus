@@ -6,9 +6,7 @@
 
 # Add To Context
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/logic/add-to-context.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/logic/add-to-context.png').default} width="50%" />
 
 ## Description
 

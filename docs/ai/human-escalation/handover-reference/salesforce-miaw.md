@@ -18,10 +18,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 <a href="../../../release-notes/4.100.md" /><img src="https://img.shields.io/badge/Added in-v4.100-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/salesforce.svg" width="100%" />
-  <figcaption>Salesforce MIAW</figcaption>
-</figure>
+<img src={require('../../../../static/img/_assets/ai/human-escalation/handover-reference/salesforce.svg').default} width="100%" />
 
 ## Description
 

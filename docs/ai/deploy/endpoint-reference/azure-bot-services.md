@@ -11,9 +11,7 @@ import HandoverProviderDeprecation from '@site/docs/_includes/release-notes/_han
 
 <a href="../../../release-notes/4.55.md" /><img src="https://img.shields.io/badge/Updated in-v4.55-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/azure-bot-services.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/azure-bot-services.png').default} width="100%" />
 
 <HandoverProviderDeprecation />
 
@@ -79,13 +77,9 @@ As of release v4.9, the display changes for clicked postback buttons in a Micros
 
 When clicking the postback button in a [quick reply](../../resource/node-reference/basic/say.md), [gallery](../../resource/node-reference/basic/say.md), [list](../../resource/node-reference/basic/say.md), or [button](../../resource/node-reference/basic/say.md) configuration, the button title is displayed now on the user side of the chat. For other Azure bot service channels, this change is not relevant.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/teams-chat.svg" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/teams-chat.svg').default} width="100%" />
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/teams-example.svg" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/teams-example.svg').default} width="100%" />
 
 ## Channel Priority when using Azure Bot Services
 

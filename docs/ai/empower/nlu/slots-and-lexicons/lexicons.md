@@ -15,9 +15,7 @@ A Lexicon can be seen as a dictionary that allows the AI Agent to understand
 specific words, such as car brands, product groups, or zip codes.
 As soon as a keyphrase is detected, it is published to the Input object for further use. This process is called Slot Mapping.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/lexicon-editor_Devices.png" width="80%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/lexicon-editor_Devices.png').default} width="80%" />
 
 To learn more about use cases for Lexicons, read [Match user expressions with a Lexicon](https://support.cognigy.com/hc/en-us/articles/360014776979-Match-user-expressions-with-a-Lexicon) Help Center article.
 

@@ -6,9 +6,7 @@ hidden: false
 
 # Microsoft Teams
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/teams.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/teams.png').default} width="100%" />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy.AI Flows to **Microsoft Teams** by using our Microsoft Teams Endpoint.
 
@@ -25,9 +23,7 @@ Within our **Cognigy.AI** platform, you're able to connect your Cognigy.AI Flows
 
 The **Microsoft Teams Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with a **Microsoft Teams Bot**.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/teams-settings.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/teams-settings.png').default} width="100%" />
 
 ### Security Token
 

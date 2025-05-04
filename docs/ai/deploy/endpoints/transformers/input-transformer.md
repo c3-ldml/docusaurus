@@ -10,9 +10,7 @@ The `Input Transformer` is triggered on every message from the user before the F
 
 The `Input Transformer` is configured by implementing the ``handleInput`` function in the Transformer in the Endpoint.
 
- <figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/deploy/endpoints/transformers/handle-input-transformer.png" width="100%" />
-</figure>
+ <img src={require('../../../../../static/img/_assets/ai/deploy/endpoints/transformers/handle-input-transformer.png').default} width="100%" />
 
 ## Transformer Function Arguments
 

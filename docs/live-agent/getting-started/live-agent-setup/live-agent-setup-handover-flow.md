@@ -39,10 +39,7 @@ To create a Live Agent Flow, follow these steps:
 2. Click **Open Demo Webchat**.
 3. Start the conversation by typing `Hi` and clicking the **Send** button.
 
-    <figure>
-        <img src="../../../../static/img/_assets/live-agent/LA-webchat-hi.png" width="100%" alt="Webchat Screen" />
-        <figcaption>Webchat Screen</figcaption>
-    </figure>
+    <img src={require('../../../../static/img/_assets/live-agent/LA-webchat-hi.png').default} alt="Webchat Screen" width="100%" />
 
 4. In the bottom-left corner of your Project, click **User Menu > Live Agent**.
 5. In the left-side menu of the Live Agent interface, select **Conversations**.
@@ -50,17 +47,11 @@ To create a Live Agent Flow, follow these steps:
 6. Open the conversation.
 7. In the **Reply** section, send a message to the user as a human agent.
 
-    <figure>
-       <img src="../../../../static/img/_assets/live-agent/LA-conversation-example.png" width="100%" alt="Live Agent Conversation" />
-       <figcaption>Live Agent Conversation</figcaption>
-    </figure>
+    <img src={require('../../../../static/img/_assets/live-agent/LA-conversation-example.png').default} alt="Live Agent Conversation" width="100%" />
 
 8. This message should also appear in the Cognigy.AI Webchat window.
 
-    <figure>
-        <img class="image-center" src="../../../../static/img/_assets/live-agent/LA-webchat.png" width="100%" alt="Cognigy.AI Webchat" />
-        <figcaption>Cognigy.AI Webchat</figcaption>
-    </figure>
+    <img src={require('../../../../static/img/_assets/live-agent/LA-webchat.png').default} alt="Cognigy.AI Webchat" width="100%" />
 
 You have successfully completed your first conversation in Live Agent.
 

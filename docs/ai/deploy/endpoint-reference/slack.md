@@ -9,9 +9,7 @@ import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notif
 
 # Slack
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/slack.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/slack.png').default} width="100%" />
 
 <HandoverProviderDeprecation />
 

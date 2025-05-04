@@ -8,9 +8,7 @@ hidden: false
 
 <a href="../../../release-notes/4.60.md" /><img src="https://img.shields.io/badge/Added in-v4.60-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/bandwidth.png" width="20%"/>
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/bandwidth.png').default} width="20%" />
 
 Within our **Cognigy.AI** platform,
 you are able to connect your AI Agent to your Contact Center or other phone numbers using the [Bandwidth Voice API](https://www.bandwidth.com/voice/voice-api/),

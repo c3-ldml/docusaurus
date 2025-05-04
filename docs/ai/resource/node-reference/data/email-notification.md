@@ -13,9 +13,7 @@ import TabItem from '@theme/TabItem';
 
 <a href="../../../../release-notes/4.49.md" /><img src="https://img.shields.io/badge/Updated in-v4.49-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/email-notification.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/email-notification.png').default} width="50%" />
 
 ## Description
 

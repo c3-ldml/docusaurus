@@ -38,10 +38,7 @@ To open the Transcript Explorer, use one of the following options:
 
 The Transcript Explorer interface will be displayed. 
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/transcript/transcript-explorer.png" width="100%" />
-  <figcaption>Transcript Explorer displaying a list of sessions</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/transcript/transcript-explorer.png').default} width="100%" />
 
 ## List of Sessions
 
@@ -49,13 +46,13 @@ By default, the Transcript Explorer displays a filtered list of sessions for the
 
 The list of sessions has the following parameters:
 
-| Title        | Description                                                                                                                                                                                              |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Endpoint     | The Endpoint handling the session. For example, Cognigy Webchat or the Interaction Panel.                                                                                                                |
+| Title        | Description                                                                                                                                                                                                              |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Endpoint     | The Endpoint handling the session. For example, Cognigy Webchat or the Interaction Panel.                                                                                                                                |
 | Session ID   | The unique ID for each session. <br /> To copy the Session ID, on the right side of the selected session row, click ![vertical ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Copy session ID**. |
-| User ID      | The unique ID for the end user. To copy the User ID, on the right side of the selected session row, click ![vertical ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Copy user ID**.            |
-| Messages     | The total number of messages within the specific session.                                                                                                                                                |
-| Last Message | The date and time when the last message was received within the session.                                                                                                                                 |
+| User ID      | The unique ID for the end user. To copy the User ID, on the right side of the selected session row, click ![vertical ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Copy user ID**.              |
+| Messages     | The total number of messages within the specific session.                                                                                                                                                                |
+| Last Message | The date and time when the last message was received within the session.                                                                                                                                                 |
 
 ### Sort Sessions
 
@@ -96,8 +93,8 @@ click **more filters ![insight-filter-black](../../../static/img/_assets/icons/i
 
 | Filter              | Description                                                                                                                                                                                                                                                                                                                           |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message Rating      | Select the rating criteria: <br /> - **Positive** — messages perceived positively. <br />- **None** — messages with no sentiment. <br />- **Negative** — messages perceived negatively.                                                                                                                                                     |
-| Source              | Select one or more message sources: <br /> - **AI Agent Messages** — messages sent by AI Agents. <br /> - **User Messages** — messages sent by users. <br /> - **Agent Messages** — messages sent by human agents.                                                                                                                          |
+| Message Rating      | Select the rating criteria: <br /> - **Positive** — messages perceived positively. <br />- **None** — messages with no sentiment. <br />- **Negative** — messages perceived negatively.                                                                                                                                               |
+| Source              | Select one or more message sources: <br /> - **AI Agent Messages** — messages sent by AI Agents. <br /> - **User Messages** — messages sent by users. <br /> - **Agent Messages** — messages sent by human agents.                                                                                                                    |
 | Goals Completed     | Select from predefined goals to narrow down results according to specific objectives or targets configured with [Tasks](../../ai/build/node-reference/overview.md).                                                                                                                                                                   |
 | Flow                | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                                                                                                                                              |
 | Contains Step       | Refine your search results by selecting a predefined analytic step. To access analytic steps, ensure you define descriptive names in the Node settings of your Flow within Cognigy.AI. These steps are crucial for identification and analysis within Cognigy Insights, as they are logged once Nodes are passed during interactions. |
@@ -115,10 +112,7 @@ Session transcripts are logged conversations between end users and agents.
 The Transcript Explorer enables you to view session transcripts to analyze them, in order to better understand the interactions between the end users and agents.
 To view a session transcript, select a session from the list on the **Transcript Explorer** page.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/transcript/transcript-explorer-profile.png" width="100%" />
-  <figcaption>Session Transcript with Debug Mode</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/transcript/transcript-explorer-profile.png').default} width="100%" />
 
 ### Session Transcript
 

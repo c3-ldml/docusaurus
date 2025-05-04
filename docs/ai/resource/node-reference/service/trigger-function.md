@@ -6,9 +6,7 @@
 
 # Trigger Function
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/services/trigger-function.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/services/trigger-function.png').default} width="50%" />
 
 ## Description
 

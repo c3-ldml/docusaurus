@@ -16,9 +16,7 @@ import AdaptiveCardGenAI from '@site/docs/_includes/ai/nodes/_adaptive-card-gena
 
 <a href="../../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/basic/say.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/basic/say.png').default} width="50%" />
 
 ## Description
 
@@ -359,9 +357,7 @@ Before configuration,
 
   To replace the current Adaptive Card with a new one, click ![recycle bin](../../../../../static/img/_assets/icons/recycle-bin.svg).
 
-  <figure>
-    <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/say/adaptive-card-type-generative-ai.png" width="40%" />
-  </figure>
+  <img src={require('../../../../../static/img/_assets/ai/resource/node-reference/say/adaptive-card-type-generative-ai.png').default} width="40%" />
 
   <CollapsibleSection title="Generative AI Adaptive Card JSON example">
 

@@ -104,10 +104,7 @@ To configure short-term memory, follow these steps:
 2. Set **Long-Term Memory Injection** to **Inject full Contact Profile**.
 3. _(Optional)_ Add an Update Profile Node to simulate stored user data.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/ai/overview/ai-agent-memory.png" width="70%" />
-  <figcaption>AI Agent Memory Configuration</figcaption>    
-</figure>
+<img src={require('../../../static/img/_assets/ai/overview/ai-agent-memory.png').default} width="70%" />
 
 ## Enable Image Recognition
 

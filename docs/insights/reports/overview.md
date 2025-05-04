@@ -27,10 +27,7 @@ The summary of key metrics is represented in the following charts:
 
 All charts display data based on the global filter settings you've selected.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/overview/overview-report.png" width="100%" />
-  <figcaption>Overview report</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/overview/overview-report.png').default} width="100%" />
 
 ## Indicators
 
@@ -86,9 +83,7 @@ Source table:
 ```
 Result: 
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/overview/sessions_by_channel.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/overview/sessions_by_channel.png').default} width="100%" />
 
 ## Bar charts
 
@@ -111,9 +106,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/nlu/top-intents.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/nlu/top-intents.png').default} width="100%" />
 
 ### Users by Locale
 
@@ -134,9 +127,7 @@ Source table:
 ```
 Result: 
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/overview/users_by_locale.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/overview/users_by_locale.png').default} width="100%" />
 
 ### Top Tasks
 
@@ -160,9 +151,7 @@ Source table:
 ```
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/goals.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/goals.png').default} width="100%" />
 
 ### Top Slots
 
@@ -179,9 +168,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/top_slots.png" width="80%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/top_slots.png').default} width="80%" />
 
 ### Understood / Misunderstood Messages
 
@@ -202,9 +189,7 @@ Source table:
 ```
 Result: 
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/understood_messages.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/understood_messages.png').default} width="100%" />
 
 ### Number of Inputs
 
@@ -225,9 +210,7 @@ Source table:
 ```
 Result: 
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/overview/number_of_inputs.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/overview/number_of_inputs.png').default} width="100%" />
 
 
 ## Line charts
@@ -252,9 +235,7 @@ Source table:
 
 Result: 
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/overview/sessions.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/overview/sessions.png').default} width="100%" />
 
 ### Unique Contacts
 
@@ -274,9 +255,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/unique-contacts.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/unique-contacts.png').default} width="100%" />
 
 <downloadReport />
 

@@ -16,17 +16,13 @@ In order to attach a Lexicon, it must first be created in the [Lexicons Editor](
 
 From the flow editor, select the **NLU** tab in the top menu and then select the **Attachments** sub-tab to open the Attachments menu.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/attach-flows-menu.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/attach-flows-menu.png').default} width="100%" />
 
 ### Attach a Lexicon
 
 Lexicons are attached by clicking the lexicon in the list, which enables the attachment toggle.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/attach-lexicons.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/attach-lexicons.png').default} width="100%" />
 
 :::warning[Train Intents when Attaching]
 

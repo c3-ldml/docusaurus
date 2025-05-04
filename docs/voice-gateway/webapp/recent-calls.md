@@ -13,10 +13,7 @@ hidden: false
 
 Account, Date, Direction, and Status can filter these calls. Note that you can only filter by a maximum of the last 30 days.
 
-<figure>
-  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-recent-calls.png" width="60%" />
-  <figcaption>Recent Calls</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/voice-gateway/VG-webapp-recent-calls.png').default} width="60%" />
 
 ## Limitations
 

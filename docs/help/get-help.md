@@ -12,25 +12,17 @@ Whenever you feel stuck or encounter a problem on our platform, do not hesitate 
 
 Inside Cognigy.AI, you can find contextual in-product help by clicking the Help icon in the App Bar on the upper right of the screen.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/help/agent-bar.JPG" width="100%" />
-  <figcaption>Help Icon in the App Bar</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/help/agent-bar.JPG').default} width="100%" />
 
 When clicking on this menu, the help widget will open, and you can search for help directly within the product.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/help/help-widget.JPG" width="100%" />
-  <figcaption>Help Widget</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/help/help-widget.JPG').default} width="100%" />
 
 ## Help Center
 
 Every article in the Help Widget comes from the Cognigy Help Center, which can be reached by clicking the "View original article" link.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/help/view-article.JPG" width="100%" />
-</figure>
+<img src={require('../../static/img/_assets/help/view-article.JPG').default} width="100%" />
 
 Alternatively, you can always reach the [Cognigy Help Center](https://support.cognigy.com/hc/en-us).
 

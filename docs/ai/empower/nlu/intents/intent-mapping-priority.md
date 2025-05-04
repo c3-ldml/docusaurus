@@ -14,9 +14,7 @@ With **Intent Mapping Priority**, you choose whether you want to prioritize the 
 
 We recommend using full sentences when you generate examples for Intents. This approach leads to more accurate results during the mapping process. 
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/intents/intent-mapping-priority.png" width="80%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/intents/intent-mapping-priority.png').default} width="80%" />
 
 ## How to Set up
 

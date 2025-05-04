@@ -30,21 +30,15 @@ Suppose we want to gather three pieces of information:
 
 We would configure appropriate **Slot Fillers** for these pieces of information:
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/empower/nlu/nlu-slot-filling.jpg" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/empower/nlu/nlu-slot-filling.jpg').default} width="100%" />
 
 If we now add matching Question Nodes, we get the following Flow:
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/empower/nlu/nlu-slot-filling-flow.jpg" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/empower/nlu/nlu-slot-filling-flow.jpg').default} width="100%" />
 
 Make sure to configure the Question Nodes with the "Skip if Answer exists in Context" selected, as this is where the Slot Filler results are stored.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/empower/nlu/nlu-slot-filling-question-node.jpg" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/empower/nlu/nlu-slot-filling-question-node.jpg').default} width="100%" />
 
 The Flow is now ready to take different kinds of utterances and automatically ask for the missing information.
 

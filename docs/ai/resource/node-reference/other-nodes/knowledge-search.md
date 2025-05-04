@@ -9,9 +9,7 @@ hidden: false
 
 <a href="../../../../release-notes/4.61.md" /><img src="https://img.shields.io/badge/Updated in-v4.61-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/other/knowledge-search.png" width="80%"/>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/other/knowledge-search.png').default} width="80%" />
 
 ## Description
 

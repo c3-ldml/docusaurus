@@ -28,10 +28,7 @@ The NLU Performance data of your AI Agent is visualized in the following charts:
 
 These charts display all data based on the [global filter](../global-filters.md) and local filter settings. 
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/nlu/NLU-report.png" width="100%" />
-  <figcaption>NLU Performance report</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/nlu/NLU-report.png').default} width="100%" />
 
 ## Indicators
 
@@ -135,9 +132,7 @@ Calculation example for the date `2023-09-15`:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/nlu/NLU_understood_messages.png" width="80%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/nlu/NLU_understood_messages.png').default} width="80%" />
 
 ### Top Intents
 
@@ -157,9 +152,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/nlu/top-intents.png" width="90%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/nlu/top-intents.png').default} width="90%" />
 
 ### Top Slots
 
@@ -176,9 +169,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/top_slots.png" width="80%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/top_slots.png').default} width="80%" />
 
 ### Intents by Score Range
 
@@ -204,9 +195,7 @@ Source table:
 ```
 Result: 
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/nlu/NLU_intents_by_score_range.png" width="80%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/nlu/NLU_intents_by_score_range.png').default} width="80%" />
 
 ### Top Intent Scores
 
@@ -233,9 +222,7 @@ Result:
 1. Intent Score Max: `1`
 2. Intent Score Min: `0.65`
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/nlu/NLU_top_intent_scores.png" width="80%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/nlu/NLU_top_intent_scores.png').default} width="80%" />
 
 ## Line charts
 
@@ -263,9 +250,7 @@ Source table:
 
 Result: `(130ms + 123ms) / 2 = 127.5ms`
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/nlu/NLU_avg_execution_time.png" width="80%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/nlu/NLU_avg_execution_time.png').default} width="80%" />
 
 <downloadReport />
 

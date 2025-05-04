@@ -11,10 +11,7 @@ tags:
 
 <a href="../../../../../release-notes/4.99.md" /><img src="https://img.shields.io/badge/Updated in-v4.99-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/vg/hang-up.png" width="80%" />
-  <figcaption>Voice Gateway Hang Up Node</figcaption>
-</figure>
+<img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/vg/hang-up.png').default} width="80%" />
 
 ## Description
 

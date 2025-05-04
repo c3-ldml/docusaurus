@@ -8,9 +8,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Execute Cognigy NLU
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai/execute-cognigy-nlu.png" width="40%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai/execute-cognigy-nlu.png').default} width="40%" />
 
 ## Description
 

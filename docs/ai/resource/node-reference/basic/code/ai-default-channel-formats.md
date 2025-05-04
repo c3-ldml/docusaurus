@@ -25,14 +25,10 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
     ```
 
     === "Say Node"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/say-in-node.png" width="80%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/say-in-node.png').default} width="80%" />
 
     === "Webchat"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/say-in-webchat.png" width="50%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/say-in-webchat.png').default} width="50%" />
 
 </CollapsibleSection>
 
@@ -79,20 +75,12 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
     ```
 
     === "Say Node"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/say-node-quick-replies.png" width="50%" />
-          <figcaption>Quick Replies in Say Node</figcaption>
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/say-node-quick-replies.png').default} width="50%" />
 
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/say-node-text-with-quick-reply.png" width="50%" />
-          <figcaption>Quick Reply Detailed Settings</figcaption>
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/say-node-text-with-quick-reply.png').default} width="50%" />
 
     === "Webchat"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/webchat-quick-reply-buttons.png" width="50%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/webchat-quick-reply-buttons.png').default} width="50%" />
 
 </CollapsibleSection>
 
@@ -168,10 +156,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
         </div>
 
     === "Webchat"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/gallery-web-chat.png" width="50%" />
-          <figcaption>Gallery in Webchat</figcaption>
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/gallery-web-chat.png').default} width="50%" />
 
 </CollapsibleSection>
 
@@ -237,9 +222,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
         </div>
 
     === "Webchat"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/test-with-buttons-in-web-chat.png" width="50%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/test-with-buttons-in-web-chat.png').default} width="50%" />
 
 </CollapsibleSection>
 
@@ -339,9 +322,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
         </div>
 
     === "Webchat"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/webchat-say-node-list-items.svg" width="80%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/webchat-say-node-list-items.svg').default} width="80%" />
 
 </CollapsibleSection>
 
@@ -366,14 +347,10 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
     ```
 
     === "Say Node"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/audio-and-details-in-say-node.png" width="30%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/audio-and-details-in-say-node.png').default} width="30%" />
 
     === "Webchat"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/audio_in_webchat.png" width="50%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/audio_in_webchat.png').default} width="50%" />
 
 </CollapsibleSection>
 
@@ -398,14 +375,10 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
     ```
 
     === "Say Node"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/image.png" width="30%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/image.png').default} width="30%" />
 
     === "Webchat"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/image-in-webchat.png" width="30%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/image-in-webchat.png').default} width="30%" />
 
 </CollapsibleSection>
 
@@ -430,14 +403,10 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
     ```
 
     === "Say Node"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/video-in-say-node.png" width="30%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/video-in-say-node.png').default} width="30%" />
 
     === "Webchat"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/video_in_web_chat.png" width="50%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/video_in_web_chat.png').default} width="50%" />
 
 </CollapsibleSection>
 
@@ -521,9 +490,7 @@ Using the [Code](overview.md) Node, you can also send JSON-formatted output to t
     ```
 
     === "Webchat"
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/adaptive-card.png" width="60%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/adaptive-card.png').default} width="60%" />
 
 </CollapsibleSection>
 

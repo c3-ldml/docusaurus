@@ -628,12 +628,7 @@ Each event is logged as a single record.
 
 The Entity Relationship Diagram (ERD) describes the relationships between the collection entities.
 
-<figure>
-    <img class="image-center" src="../../../static/img/_assets/ai/analyze/insights-odata-entities.drawio.svg" width="100%" /> 
-    <figcaption>
-        Entity Relationship Diagram
-    </figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/ai/analyze/insights-odata-entities.drawio.svg').default} width="100%" />
 
 ## Integrations
 

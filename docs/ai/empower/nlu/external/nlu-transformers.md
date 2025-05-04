@@ -18,9 +18,7 @@ It is also possible to write a custom NLU Connector, without using one of the NL
 
 To create a **NLU Transformer** for a Cognigy NLU, Alexa, DialogFlow, LUIS or Watson Assistant Connector, open the **Transformer Functions** tab in the NLU Connector. Here are the different [Transformer Settings](#transformer-settings) that can be configured, as well as the Transformer code editor.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/NLU_Transformer.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/NLU_Transformer.png').default} width="100%" />
 
 ### preNlu
 The transformer function ``preNlu`` has the parameters ``text``, ``data`` and ``language``, as received from the Endpoint. It has to return ``text`` and ``data``, which can be changed in the function, before being sent to the NLU engine.
@@ -39,9 +37,7 @@ The function has to return ``data`` and ``nluResult``, which can be changed in t
 
 The NLU Code transformer makes it possible to write a custom NLU pipeline. To create a NLU Transformer, open the **Transformer Functions** tab in the Code Connector. Here are the different [Transformer Settings](#transformer-settings) that can be configured, as well as the Transformer code editor.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/NLU_Code_Transformer.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/NLU_Code_Transformer.png').default} width="100%" />
 
 The transformer function ``preNlu`` has the parameters ``text``, ``data`` and ``language``, as received from the Endpoint. The function has to return ``data`` and ``nluResult``, which will be sent to the Flow execution.
 

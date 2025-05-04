@@ -8,9 +8,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # Datepicker
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/datepicker.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/datepicker.png').default} width="50%" />
 
 ## Description
 

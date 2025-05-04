@@ -6,9 +6,7 @@ hidden: false
 
 # Amazon Alexa
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/alexa.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/alexa.png').default} width="100%" />
 
 The **Alexa** Endpoint allows you to connect your Amazon Alexa Skill to an AI Agent. Amazon Alexa Skills allow user interaction via voice, with potential visual support.
 
@@ -33,9 +31,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 ## Specific Endpoint Settings
 The **Alexa Settings** dropdown menu is where Cognigy.AI is provided with the credentials to connect with an **Amazon Alexa Skill**.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/alexa-menu.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/alexa-menu.png').default} width="100%" />
 ### Reparse Alexa Slots
 
 Enable this toggle to allow the slots found by Alexa to be passed to Cognigy.AI and processed by the Cognigy NLU.

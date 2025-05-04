@@ -129,6 +129,4 @@ To create a Token from a JSON editor, right-click a CognigyScript expression and
 
 The default Token named **Text** represents `{{"{{input.text}}"}}`. The following image shows the **Text** Token in a Node and the corresponding CognigyScript expression after it:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/ai/resource/tokens/token-example.png" width="70%" />
-</figure>
+<img src={require('../../../static/img/_assets/ai/resource/tokens/token-example.png').default} width="70%" />

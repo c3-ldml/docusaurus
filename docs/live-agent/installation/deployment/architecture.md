@@ -6,10 +6,7 @@ hidden: false
 
 # Architecture
 
-<figure>
- <img class="image-center" src="../../../../static/img/_assets/live-agent/LA-diagram.svg" alt="Live Agent Architecture" width="100%" />
-  <figcaption>Live Agent Architecture Diagram</figcaption>
-</figure>
+<img src={require('../../../../static/img/_assets/live-agent/LA-diagram.svg').default} alt="Live Agent Architecture" width="100%" />
 
 Live Agent is composed of a Ruby On Rails application that serves a Vue.js Frontend along with an API
 for performing actions such as CRUD operations and WebSockets.

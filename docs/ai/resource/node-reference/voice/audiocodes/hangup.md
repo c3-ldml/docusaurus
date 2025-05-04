@@ -11,10 +11,7 @@ import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/
 
 <ACAndGenericNodeDeprecation />
 
-<figure>
-  <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/audiocodes/hang-up.png" width="80%" />
-  <figcaption>AudioCodes Hang Up</figcaption>
-</figure>
+<img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/audiocodes/hang-up.png').default} width="80%" />
 
 ## Description
 

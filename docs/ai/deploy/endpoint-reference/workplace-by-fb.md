@@ -8,9 +8,7 @@ import InjectAndNotify from '@site/docs/_includes/ai/providers/_inject-and-notif
 
 # Workplace by Facebook
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/workplace.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/workplace.png').default} width="100%" />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **Workplace** channel by using our Workplace Endpoint integration.
 
@@ -38,9 +36,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 The **Workplace Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with **Workplace Bot** deployment.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/workplace-settings.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/workplace-settings.png').default} width="100%" />
 
 ### Workplace Recipient ID
 

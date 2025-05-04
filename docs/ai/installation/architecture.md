@@ -13,10 +13,7 @@ us to leverage the compute-power of multiple servers for a single software produ
 we have decomposed Cognigy.AI into more than 30 separate executables. These smaller executables (hence the name microservice) despite being separated,
 act as a single product — Cognigy.AI — by interacting with each other through network calls.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/ai/installation/architecture.png" width="100%" />
-  <figcaption>Cognigy.AI v4.55.0 architecture</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/ai/installation/architecture.png').default} width="100%" />
 
 Each individual microservice runs as a containerized application on top of Kubernetes. Containers are a way of how processes can run in isolation
 from each other and offer the ability to ship modern software products together with their dependencies, for instance, a runtime environment.

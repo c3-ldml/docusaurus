@@ -30,10 +30,7 @@ After creating a speech service, you can edit or delete it.
 
 Users with an Account scope can only edit speech services they have created, as well as speech services created by other users with the same scope. They can still use and view speech services shared by Service providers or Admins.
 
-<figure>
-  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-speech-services.png"  width="60%" />
-  <figcaption>Speech Services</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/voice-gateway/VG-webapp-speech-services.png').default} width="60%" />
 
 ## Cloud-Based Speech Services
 

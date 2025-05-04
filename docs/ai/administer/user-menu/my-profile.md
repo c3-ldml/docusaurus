@@ -6,9 +6,7 @@ hidden: false
 
 # My Profile
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/profile.jpg" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/administer/access/profile.jpg').default} width="100%" />
 
 ## Preferences
 
@@ -70,9 +68,7 @@ The API key will be revoked and can no longer be used for the requests.
 
 This section lets users manage their **Connected Accounts**, 3rd-party accounts that Cognigy.AI can connect to in order to make it easier to deploy to certain platforms. 
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/accounts.jpg" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/administer/access/accounts.jpg').default} width="100%" />
 
 ## Extended Menu
 

@@ -13,9 +13,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # DTMF
 
-<figure>
-  <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/vg/dtmf.png" width="50%" />
-</figure>
+<img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/vg/dtmf.png').default} width="50%" />
 
 ## Description
 
@@ -71,9 +69,7 @@ To build a Flow with the DTMF Node for the previous example, follow these steps:
         3. Below the second Say Node, add another DTMF Node. Specify `2` in the **Digit Sequence** field to correspond the tone to the dial number that the caller presses.
         4. Add a Handover to Agent Node to route the caller to the contact center.
 
-        <figure>
-          <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/vg/dtmf-example.png" width="80%" />
-        </figure>
+        <img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/vg/dtmf-example.png').default} width="80%" />
 
     Test your Flow via the Interaction Panel. Use the [Voice Call](../../../../test/interaction-panel/overview.md#voice-call) setting.
 

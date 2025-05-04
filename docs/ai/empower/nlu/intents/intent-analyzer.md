@@ -8,9 +8,7 @@ hidden: false
 
 Writing a quality set of example sentences is key to building intelligent AI Agents. Cognigy.AI includes an in-tool evaluation feature that provides creators with immediate feedback on the quality of each example sentence and intent as it fits into the current version of their unique NLU training model.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/nlu-scoring.jpg" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/nlu-scoring.jpg').default} width="100%" />
 
 Although it is not necessary to have a perfect NLU model with all sentences achieving a green level score, this feature assists designers in identifying areas that can be improved.
 
@@ -39,9 +37,7 @@ A quick review of the intents can reveal potential problems. Checking individual
 
 The overall intent model score provides a total score on the quality of the NLU model.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/overall-model.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/overall-model.png').default} width="100%" />
 
 A green accuracy score indicates the model is ready for testing by users and consistent.
 
@@ -54,9 +50,7 @@ Each intent trained to the NLU is assigned a score that provides AI Agent design
 - The overall NLU score for the intent
 - The names of any intents that have overlapping example sentences
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/intent-score.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/intent-score.png').default} width="100%" />
 
 To improve the score and reduce overlap, adjustments must be made to the example sentences contained within the intent.
 
@@ -76,15 +70,11 @@ When the mouse is hovered over the traffic light score color, the feedback windo
 - The model's score for the sentence
 - The names of any intents that have overlapping example sentences
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/poor-score.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/poor-score.png').default} width="100%" />
 
 In conjunction with the traffic light color, these two pieces of information allow designers to quickly identify and remove potential issues with the training model to achieve more accurate NLU understanding.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/good-score.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/good-score.png').default} width="100%" />
 
 ## Scoring System
 

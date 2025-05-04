@@ -18,9 +18,7 @@ To access the Chunk editor, select a Knowledge Store in **Build > Knowledge**, t
 
 The Chunk editor includes the Knowledge Chunks in the Knowledge Source as numbered text fields. Clicking the Knowledge Chunks expands the Knowledge Chunk and displays two areas where you can edit [Knowledge Chunk texts](knowledge-chunk.md#knowledge-chunk-text) and [Chunk metadata](knowledge-chunk.md#chunk-metadata).
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/knowledge-ai/knowledge-chunk/chunk-editor.png" width="80%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/knowledge-ai/knowledge-chunk/chunk-editor.png').default} width="80%" />
 
 :::info[Controls]
 

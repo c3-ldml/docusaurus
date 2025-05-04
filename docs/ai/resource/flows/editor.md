@@ -26,9 +26,7 @@ A green arrow next to a Node indicates the Flow Entrypoint. The Entrypoint is wh
 
 The following image shows an overview of the Flow editor:
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/resource/flows/flow-editor.png" width="70%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/resource/flows/flow-editor.png').default} width="70%" />
 
 <CollapsibleSection title="1. Top Bar">
 

@@ -21,6 +21,4 @@ Assistant's messages are only shown based on customer inputs received during an 
 
 :::
 
-<figure>
-  <img class="image-center" src="https://docs.cognigy.com/_assets/live-agent/la-agent-assist-flow-example.png" width="100%" />
-</figure>
+<img src={require('https://docs.cognigy.com/_assets/live-agent/la-agent-assist-flow-example.png').default} width="100%" />

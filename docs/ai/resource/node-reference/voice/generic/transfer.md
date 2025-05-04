@@ -11,10 +11,7 @@ import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/
 
 <a href="../../../../../release-notes/4.64.md" /><img src="https://img.shields.io/badge/Updated in-v4.65-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/generic-voice/transfer.png" width="80%" />
-  <figcaption>Generic Transfer</figcaption>
-</figure>
+<img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/generic-voice/transfer.png').default} width="80%" />
 
 <ACAndGenericNodeDeprecation />
 

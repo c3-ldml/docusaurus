@@ -8,10 +8,7 @@ hidden: false
 
 _Users_ allow you to manage members in your account: create new members, edit, or delete existing ones. 
 
-<figure>
-  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-users.png"  width="60%" />
-  <figcaption>Users</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/voice-gateway/VG-webapp-users.png').default} width="60%" />
 
 ## Scopes
 

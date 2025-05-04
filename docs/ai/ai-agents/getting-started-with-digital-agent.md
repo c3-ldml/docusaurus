@@ -67,9 +67,7 @@ To test your AI Agent, follow these steps:
 2. Initiate a conversation by entering `Hello` in the **Text Message** field and press **Enter**.
 3. Answer the AI Agent's question by entering your name. The AI Agent will greet you by your name.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/ai/overview/getting-started-chat.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/ai/overview/getting-started-chat.png').default} width="100%" />
 
 Now you can deploy the agent using the [Webchat v3](../../webchat/getting-started.md#create-an-endpoint) Endpoint, and see how conversations look on the production environment through Demo Webchat.
 

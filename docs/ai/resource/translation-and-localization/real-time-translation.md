@@ -43,9 +43,7 @@ Real-time translation between a user and a human agent works for text-based conv
 
 After the human agent takes over the conversation, the user can keep writing in their original language while the human agent receives real-time translation of the user's input. The human agent can respond in their language, and the user receives real-time translation of the human agent's response. The following image shows real-time translation example, where the user is writing in German and the human agent is responding in English.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/resource/translation-and-localization/real-time-translation.png" width="70%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/resource/translation-and-localization/real-time-translation.png').default} width="70%" />
 
 ## More Information
 

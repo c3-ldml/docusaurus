@@ -194,9 +194,7 @@ Then monitor and analyze each step of the booking process.
     3. Specify `pre-booking` below the list.  
     4. Click **Save Node**.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/analyze/goals/goal-flow.png" width="80%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/analyze/goals/goal-flow.png').default} width="80%" />
 
 ### Configure the Passenger Details Step
 
@@ -235,9 +233,7 @@ Then monitor and analyze each step of the booking process.
    ```  
    Replace `<Answer>` with the **Answer** Token by clicking ![token](../../../../static/img/_assets/icons/token.svg).
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/analyze/goals/goal-flow-end.png" width="80%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/analyze/goals/goal-flow-end.png').default} width="80%" />
 
 ### Test your Flow
 

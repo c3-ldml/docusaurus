@@ -6,9 +6,7 @@
 
 # Enable Slot Fillers
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai/enable-slot-fillers.png" width="40%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai/enable-slot-fillers.png').default} width="40%" />
 
 ## Description
 

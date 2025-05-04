@@ -15,9 +15,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 <a href="../../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/services/handover-to-agent.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/services/handover-to-agent.png').default} width="50%" />
 
 ## Description
 
@@ -68,9 +66,7 @@ In case a channel doesn't support handover, the error reason is marked as `unsup
 
 Use the **Handover Status** [Token](../../tokens.md) to access handover status in Flow.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/services/handover-flow.png" width="80%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/services/handover-flow.png').default} width="80%" />
 
 ### Handover Status
 

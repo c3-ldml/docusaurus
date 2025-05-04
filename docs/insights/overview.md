@@ -9,9 +9,7 @@ hidden: false
 *Cognigy Insights* replaces our previous static analytics report and provides you with the tools you need to improve the customer experience your AI agents provide.
 Insights features a range of key metrics, helping you to understand the usage and the performance of your bots.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/overview.png" width="100%" />
-</figure>
+<img src={require('../../static/img/_assets/insights/overview.png').default} width="100%" />
 
 Cognigy.AI provides two data analysis solutions catering to different preferences:
 
@@ -40,10 +38,7 @@ Insights operates within individual Cognigy.AI Projects. This allows you to anal
 Access Cognigy Insights by opening the left-side menu in a Cognigy.AI Project and selecting **Insights**. To switch Projects within Insights, use the dropdown menu in the upper-left corner.
 When switching from Cognigy.AI to Cognigy Insights, you will be redirected to the Insights **Report** section, starting on the Overview report.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/overview/overview-report.png" width="100%" />
-  <figcaption>Overview report</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/insights/reports/overview/overview-report.png').default} width="100%" />
 
 Cognigy Insights features a variety of different reports and explorers, which visualize key metrics of your currently selected AI Agent. 
 
@@ -85,10 +80,7 @@ You can always identify the currently selected view in two ways: it's highlighte
 
 The left-side menu also allows you to switch back to Cognigy.AI by clicking **Cognigy.AI**.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/insights-menu.png" width="100%" />
-  <figcaption>Insights main menu</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/insights/insights-menu.png').default} width="100%" />
 
 
 :::tip[Insights product introduction]

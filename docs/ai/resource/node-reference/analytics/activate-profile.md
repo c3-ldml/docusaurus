@@ -7,9 +7,7 @@ hidden: false
 
 # Activate Profile
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/analytics/activate-profile.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/analytics/activate-profile.png').default} width="50%" />
 
 ## Description
 

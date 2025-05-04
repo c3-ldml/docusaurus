@@ -71,9 +71,7 @@ To run your Flow, follow these steps:
 2. Enter the following text: `Hello, I want to unlock my account`. The AI Agent will ask you to provide your email.
 3. Enter your email. The AI Agent will validate your email address and send an update to the provided email address. The AI Agent will confirm that the account is unlocked by posting: `Your account has been successfully unlocked`.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/empower/agentic-ai/getting-started.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/empower/agentic-ai/getting-started.png').default} width="100%" />
 
 ## What's Next?
 

@@ -2,17 +2,13 @@
 
 The **Members** panel allows **Project Admins** to manage the **Roles** that users in an organization have for a specific Project. The roles assigned here are complimentary to the **Global Roles** assigned in the [Access Control](admin-center/access-control.md) panel.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/members.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/administer/access/members.png').default} width="100%" />
 
 ## Project Roles
 
 In addition to global roles, Cognigy.AI offers Project-specific roles, which can be assigned to compliment the global access rights that have been granted for a given user.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/members2.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/administer/access/members2.png').default} width="100%" />
 
 :::note[Project Member Administration]
 
@@ -77,7 +73,5 @@ When you create a new member in your project, that user will receive a notificat
 
 The locale restrictions feature allows a user's access to be granted to a single locale. By enabling the "User is restricted to the following locales" option, the user can be assigned any of the locales that exist within the Project.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/localeRestrictions.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/administer/access/localeRestrictions.png').default} width="100%" />
 The user's access rights will only be available for the assigned locales.

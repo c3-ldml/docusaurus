@@ -9,10 +9,7 @@ import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/
 
 # DTMF Collect Config
 
-<figure>
-  <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/generic-voice/dtmf-collect-config.png" width="80%" />
-  <figcaption>Generic DTMF Collect - Config Node</figcaption>
-</figure>
+<img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/generic-voice/dtmf-collect-config.png').default} width="80%" />
 
 ## Description
 

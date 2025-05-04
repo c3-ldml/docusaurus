@@ -9,9 +9,7 @@ import ProfileNodeUseCase from '@site/docs/_includes/ai/node-reference/analytics
 
 # Delete Profile
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/analytics/delete-profile.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/analytics/delete-profile.png').default} width="50%" />
 
 ## Description
 

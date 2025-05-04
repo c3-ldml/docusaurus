@@ -10,9 +10,7 @@ tags:
 
 # If
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/logic/if.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/logic/if.png').default} width="50%" />
 
 ## Description
 
@@ -27,13 +25,9 @@ In the **Condition** field, use [CognigyScript](../../cognigyscript.md) without 
 ### Rule Editor
 
 The Rule editor allows you to quickly create simple conditions.
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/logic/if-conditions.jpg" width="70%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/logic/if-conditions.jpg').default} width="70%" />
 
 ### Advanced Editor
 
 The Advanced editor allows you to write Conditions that go beyond one comparison.
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/logic/if-conditions-rule.jpg" width="70%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/logic/if-conditions-rule.jpg').default} width="70%" />

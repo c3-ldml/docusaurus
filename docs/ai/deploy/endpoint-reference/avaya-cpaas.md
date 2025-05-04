@@ -6,9 +6,7 @@ hidden: false
 
 # Avaya CPaaS
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/avaya-cpaas.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/avaya-cpaas.png').default} width="100%" />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy.AI resources to your **Avaya CPaaS** phone number by using the Avaya CPaaS Endpoint.
 

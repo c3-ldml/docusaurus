@@ -27,10 +27,7 @@ import globalFilters from '@site/docs/_includes/insights/_global-filters.md';
 
 <globalFilters />
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/goals/goals-report.png" width="100%" />
-  <figcaption>Goals report</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/goals/goals-report.png').default} width="100%" />
 
 ## Indicators
 
@@ -89,9 +86,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/goals/goals-performance.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/goals/goals-performance.png').default} width="100%" />
 
 ### Time Saved (in hours)
 
@@ -114,9 +109,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/goals/time-saved.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/goals/time-saved.png').default} width="100%" />
 
 `<What should be added: formula, example of calculation, screenshot>`
 
@@ -141,9 +134,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/goals/cost-savings.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/goals/cost-savings.png').default} width="100%" />
 
 ### Revenue Earned
 
@@ -165,9 +156,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/goals/revenue-earned.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/goals/revenue-earned.png').default} width="100%" />
 
 ## More Information
 

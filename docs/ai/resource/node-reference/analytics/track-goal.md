@@ -7,9 +7,7 @@ hidden: false
 
 # Track Goal
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/analytics/track-goal.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/analytics/track-goal.png').default} width="50%" />
 
 ## Description
 

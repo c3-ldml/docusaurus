@@ -10,10 +10,7 @@ The `Execution Finished Transformer` is triggered when the Flow execution has fi
 
 The `Execution Finished Transformer` is configured by implementing the `handleExecutionFinished` function in the Transformer in the Endpoint.
 
- <figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/deploy/endpoints/transformers/alexa-transformer.png" width="100%" />
-  <figcaption>Execution Finished Transformer Example</figcaption>
-</figure>
+ <img src={require('../../../../../static/img/_assets/ai/deploy/endpoints/transformers/alexa-transformer.png').default} width="100%" />
 
 ## Differences between Transformer Types
 

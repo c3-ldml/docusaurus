@@ -14,10 +14,7 @@ With this report, you can monitor how many conversations or requests are linked 
 
 To learn more about metrics, refer to [Report Metrics](overview.md#report-metrics).
 
-<figure>
-<img src="../../../../../static/img/_assets/live-agent/LA_Labels_report.png" width="100%" alt="Live Agent Labels report" />
-  <figcaption>Labels report</figcaption>
-</figure>
+<img src={require('../../../../static/img/_assets/live-agent/LA_Labels_report.png').default} alt="Live Agent Labels report" width="100%" />
 
 ## View a Report
 

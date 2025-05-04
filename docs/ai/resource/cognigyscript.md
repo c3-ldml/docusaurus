@@ -46,9 +46,7 @@ The life span of Cognigy.AI objects varies depending on their type:
 
 The following image shows a comparison of the life spans of Cognigy.AI objects:
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/resource/life-span.png" width="70%" />
-</figure> 
+<img src={require('../../../static/img/_assets/ai/resource/life-span.png').default} width="70%" /> 
 
 ## Working with CognigyScript
 

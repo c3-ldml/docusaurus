@@ -6,9 +6,7 @@ hidden: false
 
 # Dialogflow
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/dialogflow.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/dialogflow.png').default} width="100%" />
 
 In case you have existing functionality on Dialogflow, or want to make use of one of Dialogflow's integrations, this Endpoint has you covered. 
 

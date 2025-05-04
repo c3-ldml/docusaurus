@@ -74,9 +74,7 @@ In this step, proceed as follows:
 
 In **Build > Flows**, select the Flow you created in the Knowledge Store Wizard.
 
-<figure>
-    <img class="image-center" src="../../../../static/img/_assets/ai/empower/knowledge-ai/knowledge-ai-test.png" width="80%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/empower/knowledge-ai/knowledge-ai-test.png').default} width="80%" />
 
 To test Knowledge AI, follow these steps:
 

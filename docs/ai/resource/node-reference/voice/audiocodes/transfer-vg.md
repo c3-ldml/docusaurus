@@ -9,10 +9,7 @@ import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/
 
 # Transfer VG
 
-<figure>
-  <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/audiocodes/transfer.png" width="80%" />
-  <figcaption>AudioCodes Transfer</figcaption>
-</figure>
+<img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/audiocodes/transfer.png').default} width="80%" />
 
 ## Description
 

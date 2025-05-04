@@ -20,10 +20,7 @@ To create an account, in the left-side menu of the Voice Gateway Self-Service Po
 
 A user with the Account scope can view and edit only the account to which they belong.
 
-<figure>
-  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-accounts.png"  width="60%" />
-  <figcaption>Accounts</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/voice-gateway/VG-webapp-accounts.png').default} width="60%" />
 
 ## Settings
 

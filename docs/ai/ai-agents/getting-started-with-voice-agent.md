@@ -86,9 +86,7 @@ To test your voice AI Agent, follow these steps:
 3. Listen to the message from the voice agent and then select either number 1 or 2 on the dial pad ![dialpad](../../../static/img/_assets/icons/dialpad.svg) located in the bottom-right corner of the Interaction Panel.
 4. The voice agent will respond with a voice message according to the number you selected, and then finish the conversation. If you want to listen to a specific voice output again, hover your cursor over the message in the Interaction Panel and click **Voice Preview**.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/ai/overview/getting-started-voice.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/ai/overview/getting-started-voice.png').default} width="100%" />
 
 To deploy your Flow in production, you will need to create a Voice Gateway Endpoint and set up a SIP Trunk provider.
 For these steps, refer to the [Voice Gateway](../../voice-gateway/overview.md) documentation.

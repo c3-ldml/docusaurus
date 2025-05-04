@@ -15,9 +15,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 <a href="../../../../../release-notes/4.96.md" /><img src="https://img.shields.io/badge/Updated in-v4.96-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/vg/transfer.png" width="50%" />
-</figure>
+<img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/vg/transfer.png').default} width="50%" />
 
 ## Description
 

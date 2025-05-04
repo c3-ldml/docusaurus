@@ -22,9 +22,7 @@ You can access the **Admin Center Dashboard** page using one of the following op
 
 The chart shows a number of [billable conversations](../../billing.md) for the organization.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/administer/access/billable-conversations.png" width="90%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/administer/access/billable-conversations.png').default} width="90%" />
 
 The Billable Conversations metrics include the following:
 
@@ -40,9 +38,7 @@ Knowledge Chunks and Knowledge Queries are billable units.
 Tracking the usage of these units helps manage costs effectively
 and make informed decisions about resource allocation.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/administer/access/knowledge-ai.png" width="90%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/administer/access/knowledge-ai.png').default} width="90%" />
 
 <knowledgeAiMetrics />
 
@@ -76,29 +72,17 @@ This process contains the following steps:
 
 1. A user with the `admin` role (system administrator) will request to delete the organization from the **Admin Center** page. This action will trigger a request to be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
 
-    <figure>
-      <img class="image-center" src="../../../../../static/img/_assets/ai/administer/access/delete-organisation-confirm_org_deletion.png" width="100%" />
-      <figcaption>Delete Organization</figcaption>
-    </figure>
+    <img src={require('../../../../../static/img/_assets/ai/administer/access/delete-organisation-confirm_org_deletion.png').default} width="100%" />
 
 2. Once the system administrator receives the email, they will be able to click the provided link to the [Management UI](../../access/management-ui.md) with the embedded token to proceed with the deletion. The system administrator will need to have a valid user for the Cognigy Management UI.
 
-    <figure>
-      <img class="image-center" src="../../../../../static/img/_assets/ai/administer/access/deleteOrg-request-email.png" width="100%" />
-      <figcaption>Organization Deletion Email</figcaption>
-    </figure>
+    <img src={require('../../../../../static/img/_assets/ai/administer/access/deleteOrg-request-email.png').default} width="100%" />
 
 3. After logging in to the Management UI, the system administrator needs to click the **Delete Organisation** button that signifies the point of no return for deleting the entire organization.
 
-    <figure>
-      <img class="image-center" src="../../../../../static/img/_assets/ai/administer/access/delete-organisation-delete_org_management_ui.png" width="100%" />
-      <figcaption>Delete an Organization in Management UI</figcaption>
-    </figure>
+    <img src={require('../../../../../static/img/_assets/ai/administer/access/delete-organisation-delete_org_management_ui.png').default} width="100%" />
 
 Finally, once the deletion process has been completed,
 the system administrator will receive an email notifying that the organization has been completely removed.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/administer/access/deleteOrg-complete-email.png" width="100%" />
-  <figcaption>Delete Organization Completed Email</figcaption>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/administer/access/deleteOrg-complete-email.png').default} width="100%" />

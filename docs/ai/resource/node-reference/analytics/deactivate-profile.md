@@ -9,9 +9,7 @@ import ProfileNodeUseCase from '@site/docs/_includes/ai/node-reference/analytics
 
 # Deactivate Profile
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/analytics/deactivate-profile.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/analytics/deactivate-profile.png').default} width="50%" />
 
 ## Description
 

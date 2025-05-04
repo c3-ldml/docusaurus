@@ -5,9 +5,7 @@
 ---
 # No NLU
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/no-nlu.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/no-nlu.png').default} width="100%" />
 
 ## Description
 

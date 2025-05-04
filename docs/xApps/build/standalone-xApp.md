@@ -162,9 +162,7 @@ In this tutorial, you will learn how to build and deploy an xApp as a standalone
 4. Under **Waiting Behavior**, select **Wait for xApp User Input**.
 5. Click **Save Node**.
 
-<figure>
-    <img class="image-center" src="../../../static/img/_assets/xApps/build/standalone/flow-result.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/xApps/build/standalone/flow-result.png').default} width="100%" />
 
 Now you can test the result via the Interaction Panel.
 
@@ -176,9 +174,7 @@ Now you can test the result via the Interaction Panel.
 4. Once the page is opened, click **Ok**. The Adaptive Card form will be loaded.
 5. In the **Phone Number** field, specify a mobile number and click **Submit**.
 
-   <figure>
-    <img class="image-center" src="../../../static/img/_assets/xApps/build/standalone/test-flow.png" width="100%" />
-   </figure>
+   <img src={require('../../../static/img/_assets/xApps/build/standalone/test-flow.png').default} width="100%" />
 
 If the operation is successful, you will receive the following message: `Thank you for the info. You can now close this tab`.
 

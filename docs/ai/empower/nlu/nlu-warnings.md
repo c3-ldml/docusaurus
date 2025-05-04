@@ -13,9 +13,7 @@ Warnings will only be generated and forwarded to our user interface when the Int
 
 1. Open the Cognigy.AI dashboard and [create a new Flow](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message), for example, named as NLU Warnings.
 
-    <figure>
-      <img class="image-center" src="../../../../static/img/_assets/ai/empower/nlu/nlu-warnings.png" width="100%" />
-    </figure>
+    <img src={require('../../../../static/img/_assets/ai/empower/nlu/nlu-warnings.png').default} width="100%" />
 
 2. Open the new Flow and select tab **NLU**
 3. Create a new Intent, for example, `int1` and enter more than three example sentences. For example, `Test1`, Test2` ... `Test5`. For a proper intent scoring, it is important to define Rules and Conditions.
@@ -25,9 +23,7 @@ Warnings will only be generated and forwarded to our user interface when the Int
 7. Open the Interaction Panel on the right-hand side.
 8. For the scoring test, activate **Debug mode** on the **SETTINGS** tab. Activated Debug mode will show more detailed data in the Interaction Panel.
 
-    <figure>
-      <img class="image-center" src="../../../../static/img/_assets/ai/empower/nlu/expert-mode.png" width="100%" />
-    </figure>
+    <img src={require('../../../../static/img/_assets/ai/empower/nlu/expert-mode.png').default} width="100%" />
 
 Now every user input (text message)
 on the Interaction Panel will be evaluated with the defined Rules and Conditions of the created intent.
@@ -37,14 +33,10 @@ a notification will be displayed (see image above) which indicates the intent na
 
 In case the rules or conditions are not defined correctly, for example, if relevant code details are missing, the NLU Warning will be displayed on the Interaction Panel for 30 seconds.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/empower/nlu/rules-and-conditions.PNG" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/empower/nlu/rules-and-conditions.PNG').default} width="100%" />
 
 Cognigy NLU Warning displayed on the Interaction Panel caused by incorrect Rule definition.
 NLU Warning indication is helpful to find incorrect defined Rules and Conditions.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/empower/nlu/rules-and-conditions-1.png" width="70%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/empower/nlu/rules-and-conditions-1.png').default} width="70%" />
 

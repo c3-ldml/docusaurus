@@ -13,9 +13,7 @@ import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
 
 <a href="../../../../release-notes/4.72.md" /><img src="https://img.shields.io/badge/Added in-v4.72-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/next-action-tile.png" width="50%"/>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/next-action-tile.png').default} width="50%" />
 
 ## Description
 
@@ -75,10 +73,7 @@ This Node helps guide a conversation flow and ensures that the system responds e
 This Node helps the human agent by providing guidance and predefined instructions based on the user's question. 
 For instance, if a user asks about the latest release version, the AI Agent can give them both the answer and links to important updates in that release.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/next-action-tile-example.png" width="80%"/>
-  <figcaption>The Next Action Tile Widget in AI Copilot</figcaption>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/next-action-tile-example.png').default} width="80%" />
 
 ## More Information
 

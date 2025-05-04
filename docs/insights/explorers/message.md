@@ -29,10 +29,7 @@ To open the Message Explorer interface, use one of the following options:
 
 The Message Explorer interface will be displayed.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/message/message-explorer.png" width="100%" />
-  <figcaption>Message Explorer displays user and AI Agent messages</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/message/message-explorer.png').default} width="100%" />
 
 ## Messages
 
@@ -42,10 +39,7 @@ These messages are titled **Top Messages**, including user messages and response
 
 The top messages are the ones that are sent most frequently during the specified time span. By default, the only filter applied is the time span set to **Last 7 Days**. This means that the Message Explorer will first show you the most frequently sent messages from the period you have selected in descending order. The numbers displayed below each message indicate how many times the message has occurred in the selected time span.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/message/top-messages.png" width="100%" />
-  <figcaption>Message Explorer displays top messages in descending order</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/message/top-messages.png').default} width="100%" />
 
 ## Explore Messages
 
@@ -59,10 +53,7 @@ If the selected message was sent multiple times and belongs to different convers
 
 To go back to the filtered top messages again, click ![X-icon](../../../static/img/_assets/icons/X-icon.svg) in the column title labeled with **Current Message**.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/message/message-explorer_exploring-messages.png" width="100%"/>
-  <figcaption>Selected message with prior and following messages</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/message/message-explorer_exploring-messages.png').default} width="100%" />
 
 ## Search for Messages
 

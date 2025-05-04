@@ -6,9 +6,7 @@
 
 # Wait for Input
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/logic/wait-for-input.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/logic/wait-for-input.png').default} width="50%" />
 
 ## Description
 

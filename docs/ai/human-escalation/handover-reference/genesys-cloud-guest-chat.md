@@ -12,9 +12,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 <a href="../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/genesys.svg" width="80%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/human-escalation/handover-reference/genesys.svg').default} width="80%" />
 
 ## Description
 

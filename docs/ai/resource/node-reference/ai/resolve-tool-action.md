@@ -7,9 +7,7 @@ hidden: false
 
 # Resolve Tool Action
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai/resolve-tool-action.png" width="45%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai/resolve-tool-action.png').default} width="45%" />
 
 ## Description
 

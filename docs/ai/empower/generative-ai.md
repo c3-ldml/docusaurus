@@ -73,9 +73,7 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
 
     When the Lexicon Editor with new keyphrases is opened, you can edit, delete, or add new ones manually.
 
-    <figure>
-      <img class="image-center" src="../../../static/img/_assets/ai/empower/generative-ai/generating-lexicons.png" width="90%" />
-    </figure>
+    <img src={require('../../../static/img/_assets/ai/empower/generative-ai/generating-lexicons.png').default} width="90%" />
 
   :::
 
@@ -99,9 +97,7 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
 
   In the existing Flow, you can edit Nodes created based on your scenario. Generate new Intent sentences or responses for a chatbot.
 
-  <figure>
-    <img class="image-center" src="../../../static/img/_assets/ai/empower/generative-ai/generating-flows.png" width="90%" />
-  </figure>
+  <img src={require('../../../static/img/_assets/ai/empower/generative-ai/generating-flows.png').default} width="90%" />
 
 :::
 
@@ -126,9 +122,7 @@ During the design phase of creating AI Agents, LLMs can be used to generate a va
 
     You can also use Generative AI in the Node configuration.
 
-    <figure>
-      <img class="image-center" src="../../../static/img/_assets/ai/empower/generative-ai/generating-intent-sentences.png" width="90%" />
-    </figure>
+    <img src={require('../../../static/img/_assets/ai/empower/generative-ai/generating-intent-sentences.png').default} width="90%" />
 
   :::
 
@@ -201,9 +195,7 @@ In the [Flow editor](../build/flows/editor.md), you can use the following run-ti
 
   Check in the Interaction Panel if your Flow works as expected.
 
-  <figure>
-    <img class="image-center" src="../../../static/img/_assets/ai/empower/generative-ai/generating-output.png" width="90%" />
-  </figure>
+  <img src={require('../../../static/img/_assets/ai/empower/generative-ai/generating-output.png').default} width="90%" />
 
 :::
 

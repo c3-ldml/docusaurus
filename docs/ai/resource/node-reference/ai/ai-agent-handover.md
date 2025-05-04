@@ -9,9 +9,7 @@ import Beta from '@site/docs/_includes/ai/_beta.md';
 
 # AI Agent Handover
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai/ai-agent-handover.png" width="40%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai/ai-agent-handover.png').default} width="40%" />
 
 ## Description
 

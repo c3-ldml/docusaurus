@@ -18,9 +18,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 <a href="../../../release-notes/4.100.md" /><img src="https://img.shields.io/badge/Updated in-v4.100-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/genesys.svg" width="80%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/human-escalation/handover-reference/genesys.svg').default} width="80%" />
 
 The Genesys Cloud Open Messaging handover connector bridges Cognigy.AI and [Genesys](https://login.mypurecloud.com/),
 enabling end users to connect with human agents working in a contact center that uses Genesys.
@@ -238,9 +236,7 @@ Before starting the integration with Cognigy, build the Genesys Cloud Open Messa
 
     The main Flow on Cognigy.AI should look like this:
 
-    <figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/human-escalation/handover-reference/genesys/genesys-flow-sample.png" width="80%" />
-    </figure>
+    <img src={require('../../../../static/img/_assets/ai/human-escalation/handover-reference/genesys/genesys-flow-sample.png').default} width="80%" />
 
 :::
 

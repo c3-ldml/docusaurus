@@ -11,9 +11,7 @@ import UnderstoodMessages from '@site/docs/_includes/ai/_understood-messages.md'
 
 # Overwrite Analytics
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/analytics/overwrite-analytics.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/analytics/overwrite-analytics.png').default} width="50%" />
 
 ## Description
 

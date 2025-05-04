@@ -10,10 +10,7 @@ hidden: false
 
 _Global Filters_ enable you to focus your reports and explorers on specific datasets by adjusting a set of criteria. These filters are available and effective across all reports and explorers, and they persist when you switch between them. Once you change a filter setting, the displayed graphics and charts will adapt to your selections. Reports will also reflect these changes.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/global-filters.png" width="100%" />
-  <figcaption>Global Filters</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/insights/global-filters.png').default} width="100%" />
 
 The following global filters are available:
 

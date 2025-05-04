@@ -9,9 +9,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 # REST
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/REST.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/REST.png').default} width="100%" />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **Rest** client by using our Rest Endpoint integration.
 

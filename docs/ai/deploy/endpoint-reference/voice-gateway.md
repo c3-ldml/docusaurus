@@ -14,9 +14,7 @@ tags:
 
 <a href="../../../release-notes/4.96.md" /><img src="https://img.shields.io/badge/Updated in-v4.96-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/voice-gateway.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/voice-gateway.png').default} width="100%" />
 
 Within the Cognigy.AI platform, you can connect Cognigy AI Agents to your contact center or other phone numbers using [Cognigy Voice Gateway](../../../voice-gateway/index.md). 
 This feature enables customers to speak with your AI Agents instead of writing to them.
@@ -240,9 +238,7 @@ To set up a multilingual Flow for the handover use case, follow these steps:
 16. Save your changes. 
 17. At the end of the Flow, place the [Handover to Agent](../../resource/node-reference/service/handover-to-agent.md) Node.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/voice-gateway-handover.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/voice-gateway-handover.png').default} width="100%" />
 
 #### Example
 

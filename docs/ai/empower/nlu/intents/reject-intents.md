@@ -5,9 +5,7 @@
 ---
 # Reject Intents
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/reject-Intent.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/reject-Intent.png').default} width="100%" />
 
 Reject intents give you the capability to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the AI Agent.
 

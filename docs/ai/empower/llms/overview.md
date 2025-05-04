@@ -78,10 +78,7 @@ Explore key use cases that illustrate how LLMs can be utilized in Cognigy.AI, an
   To add this feature to your AI Agent,
   add the [LLM Entity Extract](../../build/node-reference/other-nodes/llm-entity-extract.md) Node within your Flow.
 
-  <figure>
-    <img class="image-center" src="../../../../static/img/_assets/ai/empower/llms/llm-entity-extract.png" width="70%"/>
-    <figcaption>Testing the LLM Entity Extract Node via the Interaction Panel</figcaption>
-  </figure>
+  <img src={require('../../../../static/img/_assets/ai/empower/llms/llm-entity-extract.png').default} width="70%" />
 
 :::
 
@@ -94,10 +91,7 @@ Explore key use cases that illustrate how LLMs can be utilized in Cognigy.AI, an
   add a widget to the AI Copilot workspace
   using an [AI Copilot: Sentiment Analysis Tile](../../build/node-reference/ai-copilot/sentiment-tile.md) Node. The widget monitors the conversation and displays the emotional tone (positive, negative, or neutral) of the latest user input in real time.
 
-  <figure>
-    <img class="image-center" src="../../../../static/img/_assets/ai/empower/llms/copilot-sentiment-tile.png" width="70%"/>
-    <figcaption>The configuration defined for the Sentiment Analysis Tile Node is displayed as a widget in the AI Copilot workspace</figcaption>
-  </figure>
+  <img src={require('../../../../static/img/_assets/ai/empower/llms/copilot-sentiment-tile.png').default} width="70%" />
 
 :::
 

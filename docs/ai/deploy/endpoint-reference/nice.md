@@ -9,9 +9,7 @@ hidden: false
 
 <a href="../../../release-notes/4.82.md" /><img src="https://img.shields.io/badge/Added in-v4.82-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/nice.svg" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/nice.svg').default} width="100%" />
 
 The NICE CXone Endpoint connects AI Agents to the [NICE CXone](https://www.nice.com) platform.
 

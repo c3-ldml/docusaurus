@@ -12,9 +12,7 @@ To set up the Live Agent Account for your organization, follow these steps:
 2. Select the **Admin Center** from the menu. 
 3. Click **Set up Live Agent**.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/live-agent/getting-started/organisation-wide-live-agent-setup-button.png" width="100%"/>
-</figure>
+<img src={require('../../../../static/img/_assets/live-agent/getting-started/organisation-wide-live-agent-setup-button.png').default} width="100%" />
 
 When you set up Live Agent for your Organization, you can [create your Project Inbox for Live Agent](live-agent-setup-inbox.md).
 
@@ -30,14 +28,10 @@ If the **Set up Live Agent** button is disabled, it could be for the following r
 
 Cognigy Live Agent feature is not enabled. 
 
-<figure>
-    <img class="image-center" src="../../../../static/img/_assets/live-agent/getting-started/organisation-wide-live-agent-not-configured.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/live-agent/getting-started/organisation-wide-live-agent-not-configured.png').default} width="100%" />
 
 **Example 2**
 
 Live Agent Account is already set up for the Organization.
 
-<figure>
-    <img class="image-center" src="../../../../static/img/_assets/live-agent/getting-started/organisation-wide-live-agent-successfully-configured.png" width="100%"/>
-</figure>
+<img src={require('../../../../static/img/_assets/live-agent/getting-started/organisation-wide-live-agent-successfully-configured.png').default} width="100%" />

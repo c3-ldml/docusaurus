@@ -8,9 +8,7 @@ hidden: false
 
 <a href="../../../../release-notes/4.60.md" /><img src="https://img.shields.io/badge/Added in-v4.60-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/sentiment-tile.png" width="50%"/>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/sentiment-tile.png').default} width="50%" />
 
 ## Description
 
@@ -35,9 +33,7 @@ Before using this Node, set the Generative AI provider in the [Settings](../../.
 
 The Copilot: Sentiment Tile Node allows you to analyze a larger part of the conversation, extending beyond the user's latest message. This Node helps provide a more objective conversation assessment and empowers the management of the customer's overall impression.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/sentiment-tile-example.png" width="80%"/>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/sentiment-tile-example.png').default} width="80%" />
 
 ## More Information
 

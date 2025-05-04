@@ -122,10 +122,7 @@ To change the appearance of this message and make it more accessible, as well as
 3. In the **Advanced** section, select **Go to Node and wait for Input** from the **Execution Mode** list. 
 4. Click **Save Node**.
 
-<figure>
-    <img class="image-center" src="../../../../static/img/_assets/live-agent/conversation/real-time-queue-notifications.png" width="100%" />
-    <figcaption>Configuration of Real-Time Queue Notifications</figcaption>
-</figure>
+<img src={require('../../../../static/img/_assets/live-agent/conversation/real-time-queue-notifications.png').default} width="100%" />
 
 ## AI Copilot
 

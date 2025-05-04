@@ -43,10 +43,7 @@ With xApps, you can allow users to authenticate using various methods such as em
 
 Users can securely verify their identity and gain access to specific services or information.
 
-<figure>
-    <img class="image-center" src="../../../static/img/_assets/xApps/use-cases/microsoft-login.png" width="70%" />
-    <figcaption>Authentication via Credentials</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/xApps/use-cases/microsoft-login.png').default} width="70%" />
 
 ### Select a flight seat
 
@@ -56,10 +53,7 @@ Users can view the available seats and select the seat of their choice, enhancin
 
 You can find an example of implementation in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main/xapps/flight-seat-picker) repository.
 
-<figure>
-    <img class="image-center" src="../../../static/img/_assets/xApps/use-cases/select-seat.png" width="70%" />
-    <figcaption>Select a flight seat</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/xApps/use-cases/select-seat.png').default} width="70%" />
 
 ### Share location 
 
@@ -67,10 +61,7 @@ With xApps, you can allow users to share their device's location information.
 
 This use case can be useful in various scenarios, such as providing location-based services, tracking deliveries, or finding nearby resources.
 
-<figure>
-    <img class="image-center" src="../../../static/img/_assets/xApps/use-cases/share-location.png" width="70%" />
-    <figcaption>Share device location</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/xApps/use-cases/share-location.png').default} width="70%" />
 
 ### Take a picture via a mobile camera
 
@@ -78,10 +69,7 @@ With xApps, you can provide users an interface to capture images of metering dev
 
 This use case can be useful for utility companies or service providers to remotely monitor and analyze metering data.
 
-<figure>
-    <img class="image-center" src="../../../static/img/_assets/xApps/use-cases/energy-meter.png" width="70%" />
-    <figcaption>Take a picture via a mobile camera</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/xApps/use-cases/energy-meter.png').default} width="70%" />
 
 ### Add a boarding pass to a wallet
 
@@ -89,10 +77,7 @@ With xApps, you can allow users to add their boarding pass to a digital wallet.
 
 This use case enables users to easily access their boarding information, simplifies the check-in process, and eliminates the need for printed boarding passes.
 
-<figure>
-    <img class="image-center" src="../../../static/img/_assets/xApps/use-cases/boarding-pass.png" width="70%" />
-    <figcaption>Add a boarding pass</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/xApps/use-cases/boarding-pass.png').default} width="70%" />
 
 ### Create a signature
 
@@ -102,10 +87,7 @@ Users can sign documents or forms electronically, eliminating the need for physi
 
 You can find an example of implementation in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main/xapps/signature) repository.
 
-<figure>
-    <img class="image-center" src="../../../static/img/_assets/xApps/use-cases/signature-pad.png" width="70%" />
-    <figcaption>Create a signature</figcaption>
-</figure>
+<img src={require('../../static/img/_assets/xApps/use-cases/signature-pad.png').default} width="70%" />
 
 ## More Information
 

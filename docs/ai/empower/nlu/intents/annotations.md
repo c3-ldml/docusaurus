@@ -9,9 +9,7 @@ The _Annotations_ tool allows sentence words
 to be assigned as placeholders for recognizing specific details from user inputs.
 Each placeholder is associated with the Slot that will be recognized and filled by the NLU.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/annotations.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/annotations.png').default} width="100%" />
 
 This feature is particularly useful to reduce repetition by allowing lexicon libraries to be recognized within example sentence structures.
 
@@ -20,15 +18,11 @@ This feature is particularly useful to reduce repetition by allowing lexicon lib
 
 Annotations can be added to example sentences by highlighting the required word in the text field and selecting the **+** icon at the right end of the field.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/annotate-words.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/annotate-words.png').default} width="100%" />
 
 A new menu line will be created for each annotation added to the sentence. The annotation menu includes drop down fields to select the `Slot Type` and `key`. Both of these values are required for each annotation.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/annotate-word.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/annotate-word.png').default} width="100%" />
 
 Multiple annotations of different types can be added to a single example sentence where each annotation will be underlined in a different color. 
 
@@ -45,9 +39,7 @@ Multiple annotations of different types can be added to a single example sentenc
 
 Insert **Lexicon Slot** placeholders within example sentences to teach the NLU to recognize words with similar meanings. For example, annotate the product name `shirts` with a custom `product` lexicon tag to allow the NLU to recognize `pants`, `hats`, and `jackets` that have been given the same slot tag in the [Lexicon Editor](../../../empower/nlu/slots-and-lexicons/lexicons.md).
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/lexicon-slot.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/lexicon-slot.png').default} width="100%" />
 
 **Synonyms** you provide in attached Lexicons are used at score and train time to improve accuracy.
 

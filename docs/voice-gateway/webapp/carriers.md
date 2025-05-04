@@ -22,10 +22,7 @@ There are two options on how the SIP Trunk can be added:
 :::
 
 
-<figure>
-  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-carriers.png"  width="60%" />
-  <figcaption>Carriers</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/voice-gateway/VG-webapp-carriers.png').default} width="60%" />
 
 ## Settings
 

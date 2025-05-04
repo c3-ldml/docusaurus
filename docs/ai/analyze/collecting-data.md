@@ -50,9 +50,7 @@ This collection contains one record per session. The main purpose of this record
 
 Analytics data is generated through the whole life cycle of an input message being processed by Cognigy.AI. The diagram below shows when each type of data is generated and written to the respective collection.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/ai/analyze/analytics-data-flow.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/ai/analyze/analytics-data-flow.png').default} width="100%" />
 
 1. When the input arrives (but after the NLU), the analytics record is initialized with the following data:
 

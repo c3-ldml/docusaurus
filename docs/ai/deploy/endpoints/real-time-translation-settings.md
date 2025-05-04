@@ -48,10 +48,7 @@ When automatic language detection for user inputs is enabled, the system determi
 
 In the example below, if the **Set user input language on execution count** setting is configured to `1`, an AI Agent will use the language of the user's first input for all subsequent interactions.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoints/auto-detected_user_language.png" width="70%" />
-  <figcaption>Auto-detected user input is German</figcaption>
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoints/auto-detected_user_language.png').default} width="70%" />
 
 ## More Information
 

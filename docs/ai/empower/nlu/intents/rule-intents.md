@@ -24,9 +24,7 @@ Rule Intents require the following:
 
 Each Intent can have any number of rules attached to it. The rules are written as Direct CognigyScript, meaning that you don't need the CognigyScript tags. You can therefore write your rules using the [Input Object](../../../test/interaction-panel/input.md) or [Context Object](../../../test/interaction-panel/context.md) (for example, input.text === "restart") and use free form JavaScript. You can create as many rules as you want, and if any one of them is matched, the intent will be returned with a score of 1.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/empower/nlu/rules.png" width="100%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/empower/nlu/rules.png').default} width="100%" />
 
 :::note[Rule Intent Example]
 

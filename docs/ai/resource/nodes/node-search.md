@@ -52,9 +52,7 @@ When you enter a text into the Node Search field, the Flow editor highlights mat
 
 The Node search also matches text in the Node editor. When you open a matching Node, the field, section, or tab that matches the search text is highlighted.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/resource/nodes/node-editor-with-highlighting.png" width="60%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/resource/nodes/node-editor-with-highlighting.png').default} width="60%" />
 
 ## More Information
 

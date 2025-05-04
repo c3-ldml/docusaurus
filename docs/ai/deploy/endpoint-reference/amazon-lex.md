@@ -6,9 +6,7 @@ hidden: false
 
 # Amazon Lex
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/amazon-lex.jpg" width="50%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/amazon-lex.jpg').default} width="50%" />
 
 The **Amazon Lex Endpoint** allows you to connect your Amazon Lex bots with Cognigy.AI.
 

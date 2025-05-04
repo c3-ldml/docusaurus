@@ -8,9 +8,7 @@
 
 The **Logs** feature allows platform users to track each input and output message that occurs with AI Agents. The Logs are most frequently used to debug workflows by observing if and where errors are occurring.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/test/logs.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/ai/test/logs.png').default} width="100%" />
 
 The logs can be followed in real-time as they will be automatically appended when new log outputs are emitted. The log history can also be loaded to review outputs that occurred in the past.
 

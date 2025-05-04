@@ -56,9 +56,7 @@ Knowledge AI has the following knowledge hierarchy:
 - [Knowledge Source](knowledge-source/knowledge-source.md) — a collection of organized and structured knowledge extracted from files, for example, user manuals, articles, FAQs, and other relevant information.
 - [Knowledge Chunk](knowledge-chunk/knowledge-chunk.md) — a unit of knowledge inside a Knowledge Source.
 
-<figure>
-    <img class="image-center" src="../../../../static/img/_assets/ai/empower/knowledge-ai/knowledge-hierarchy.png" width="70%"/>
-</figure>
+<img src={require('../../../../static/img/_assets/ai/empower/knowledge-ai/knowledge-hierarchy.png').default} width="70%" />
 
 ## Knowledge AI Workflow
 

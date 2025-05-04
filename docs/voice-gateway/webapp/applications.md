@@ -19,10 +19,7 @@ You can create more than one application, dependent on the number of Endpoints c
 
 After creating an application, you can edit or delete it.
 
-<figure>
-  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-applications-overview.png"  width="60%"/>
-  <figcaption>Applications</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/voice-gateway/VG-webapp-applications-overview.png').default} width="60%" />
 
 ## Settings 
 

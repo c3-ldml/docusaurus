@@ -28,10 +28,7 @@ To open the Step Explorer, use one of the following options:
 The Step Explorer interface will be displayed.
 Each column on the Step Explorer page represents a Node or Intent [annotated](#before-you-begin) in the Cognigy.AI Flow.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/step/step-explorer.png" width="100%" />
-  <figcaption>Step Explorer</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/step/step-explorer.png').default} width="100%" />
 
 ## Before you Begin
 
@@ -117,10 +114,7 @@ click **more filters ![insight-filter-black](../../../static/img/_assets/icons/i
 
 ## Step Overview
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/step/step-explorer-elements.png" width="100%" />
-  <figcaption>Step Explorer Elements</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/step/step-explorer-elements.png').default} width="100%" />
 
 1. **All Starting Steps**. The starting point of the session, when the user enters a session and starts interacting with the bot.
 2. **Analytics Step Name**. The name that you specified in the [Node](#annotate-nodes) or [Intent](#annotate-intents) settings.
@@ -140,10 +134,7 @@ To view step details, hover the cursor over the step on the Step Explorer page.
 | From end step      | The percentage of end users who reached this step compared to the last step.                                   |
 | Times              | The total number of end users who reached this step.                                                           |
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/step/step-explorer-details.png" width="100%" />
-  <figcaption>Step Explorer Details</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/step/step-explorer-details.png').default} width="100%" />
 
 ## Step Operations
 
@@ -159,10 +150,7 @@ To view step operations, right-click the selected Step on the Step Explorer page
 | Set as Starting Step                  | Places the selected step at the beginning of the path.                                                                                                                                                                                                                                                                                                          |
 | Set as Ending Step                    | Places the selected step at the end of the path.                                                                                                                                                                                                                                                                                                                |
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/step/step-explorer-menu.png" width="100%" />
-  <figcaption>Step Explorer Operations</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/step/step-explorer-menu.png').default} width="100%" />
 
 ## Examples
 
@@ -183,10 +171,7 @@ The following steps are presented:
 
 In the image below, it's evident that out of all users, only 1 completed the order.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/step/step-explorer-node-example.png" width="100%" />
-  <figcaption>Step Explorer Node Example</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/step/step-explorer-node-example.png').default} width="100%" />
 
 ### Nodes and Intents
 
@@ -211,10 +196,7 @@ The following steps are presented:
 
 In the image below, it's evident that out of all users, only 2 completed the order.
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/explorers/step/step-explorer-intent-example.png" width="100%" />
-  <figcaption>Step Explorer Intent Example</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/explorers/step/step-explorer-intent-example.png').default} width="100%" />
 
 ## More Information
 

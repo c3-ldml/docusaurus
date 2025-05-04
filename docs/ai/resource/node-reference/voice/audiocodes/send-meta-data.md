@@ -9,10 +9,7 @@ import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/
 
 # Send Meta Data
 
-<figure>
-  <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/audiocodes/send-metadata.png" width="80%" />
-  <figcaption>AudioCodes Metadata</figcaption>
-</figure>
+<img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/audiocodes/send-metadata.png').default} width="80%" />
 
 ## Description
 

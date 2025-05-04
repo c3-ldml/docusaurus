@@ -19,10 +19,7 @@ TODO: Voice Gateway Helm Chart is being refactored and only when is done the abo
 Once Helm releases are successfully installed, you can open a web-browser and visit the URL, which you have set in `webapp.host` parameter Voice Gateway Helm release.
 You should be able to see the login screen of Voice Gateway WebApp:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/voice-gateway/VG-login.png" width="90%" />
-  <figcaption>Login screen of Voice Gateway WebApp</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/voice-gateway/VG-login.png').default} width="90%" />
 
 ## Initial Login Credentials
 

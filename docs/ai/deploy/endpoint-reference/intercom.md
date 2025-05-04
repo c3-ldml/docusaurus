@@ -5,9 +5,7 @@ hidden: false
 ---
 
 # Intercom
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/intercom.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/intercom.png').default} width="100%" />
 
 Within our **Cognigy.AI** platform, you're able to connect your Cognigy Agent to your **Intercom** platform by using our Intercom Endpoint. This allows you to create a bot with Cognigy.AI that can answer support requests from Intercom when your agents are not online or even replace them.
 
@@ -25,9 +23,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 The **Intercom Settings** dropdown menu is where Cognigy.AI is provided with the credentials to connect with an **Intercom Bot**.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/deploy/endpoint-reference/intercom-settings.png" width="100%" />
-</figure>
+<img src={require('../../../../static/img/_assets/ai/deploy/endpoint-reference/intercom-settings.png').default} width="100%" />
 
 ### Access Token
 

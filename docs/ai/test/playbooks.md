@@ -9,9 +9,7 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 _Playbooks_ are automated conversations, which can help you test your Flows and ensure that they work as expected. Playbooks include Assertions that check different aspects of your Flow, giving you more confidence in your conversational experiences.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/test/playbooks/playbook.png" width="70%" />
-</figure>
+<img src={require('../../../static/img/_assets/ai/test/playbooks/playbook.png').default} width="70%" />
 
 You can turn any conversation in your Interaction Panel directly into a playbook:
 
@@ -61,15 +59,11 @@ All Assertion results can be inverted.
 
 In addition to executing a Playbook in the Interaction Panel, you can also schedule a Playbook Run from the Playbook Editor. When you open a Playbook from the list, you will now see a new tab named **Run** that will list all the previously scheduled Playbook runs.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/test/playbooks/playbook-runs.png" width="70%" />
-</figure>
+<img src={require('../../../static/img/_assets/ai/test/playbooks/playbook-runs.png').default} width="70%" />
 
 In order to schedule a new Run, click the *Run* button. In the dialog box that opens, select the Snapshot, Flow and Locale against which you want to run your current Playbook. Configuring a Playbook Run in this dialog box is similar to configuring a Playbook Execution in the Interaction Panel. When done, click the **Run** button in the dialog box.
 
-<figure>
-  <img class="image-center" src="../../../../static/img/_assets/ai/test/playbooks/playbook-runs-dialog.png" width="90%" />
-</figure>
+<img src={require('../../../static/img/_assets/ai/test/playbooks/playbook-runs-dialog.png').default} width="90%" />
 
 <CollapsibleSection title="Schedule playbook runs in bulk using the Cognigy CLI">
 
@@ -79,9 +73,7 @@ In order to schedule a new Run, click the *Run* button. In the dialog box that o
 
     If the status of a Run is **Failed**, it means that there is one or more failing assertions in the Playbook Run. If the status is **Successful**, then all the Playbook assertions have passed. Clicking on a Playbook Run can give you further information on which assertions failed or passed, helping you to see what went wrong or right with the executed Flow.
 
-    <figure>
-      <img class="image-center" src="../../../../static/img/_assets/ai/test/playbooks/playbook-run-details.png" width="70%" />
-    </figure>
+    <img src={require('../../../static/img/_assets/ai/test/playbooks/playbook-run-details.png').default} width="70%" />
 
 </CollapsibleSection>
 

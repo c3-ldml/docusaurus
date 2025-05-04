@@ -99,9 +99,7 @@ When AI Copilot is active, and a new conversation is created with the Open statu
     - Condition 2: Verify that the **Inbox** is set to **AI Copilot bot-default** selected from the dropdown menu.
 - Add an action: Assign the conversation to the Sales team by selecting it from the dropdown menu. Make sure the Sales team is created before executing this action.
 
-<figure>
-    <img class="image-center" src="../../../static/img/_assets/live-agent/add-automation-rule.png" width="80%" />
-</figure>
+<img src={require('../../../static/img/_assets/live-agent/add-automation-rule.png').default} width="80%" />
 
 ## Edit an Automation Rule
 

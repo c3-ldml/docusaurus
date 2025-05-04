@@ -8,9 +8,7 @@ hidden: true
 
 The following diagram illustrates the process when the xApp Shell Page loads its assets (HTML/CSS/JS) by requesting static files via HTTP/HTTPs 1.1 requests to `service-static-files` and establishes a WebSocket connection (via Socket.io)  to `serviceapp-session-manager` to retrieve information about xApp sessions. This information includes an async event to initialize an xApp session, which creates a unique URL, and specifies which xApp will be displayed in a specific xApp session. The Elastic Load Balancer helps distribute incoming traffic, while Traefik dynamically routes traffic to backend servers based on specific requirements. The `serviceapp-session-manager` updates the xApp session state in the App Session DB, and the WebSocket transfers data to the Shell page, which loads xApps and provides data to the SDK.
 
-<figure>
-    <img class="image-center" src="../../../static/img/_assets/xApps/architecture.png" width="100%" />
-</figure>
+<img src={require('../../static/img/_assets/xApps/architecture.png').default} width="100%" />
 
 ## xApp Sequence Diagram
 

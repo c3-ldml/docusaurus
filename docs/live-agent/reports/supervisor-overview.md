@@ -30,10 +30,7 @@ tags:
 - [Line Charts](#line-charts)
 - [Tables](#tables)
 
-<figure>
-<img class="image-center" src="../../../../static/img/_assets/live-agent/LA_Supervisor_overview_1.png" width="80%" alt="Live Agent Supervisor overview" />
-  <figcaption>Overview report</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/live-agent/LA_Supervisor_overview_1.png').default} alt="Live Agent Supervisor overview" width="80%" />
 
 ## Indicators
 
@@ -92,10 +89,7 @@ However, if the agent is offline, any changes you attempt to make to their statu
 
 Additionally, you can filter the data in the table according to the agent's status.
 
-<figure>
-<img src="../../../static/img/_assets/live-agent/LA_Supervisor_overview_2.png" width="100%" alt="Live Agent Supervisor overview 2" />
-  <figcaption>Conversations by Agents chart</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/live-agent/LA_Supervisor_overview_2.png').default} alt="Live Agent Supervisor overview 2" width="100%" />
 
 ## View a Report
 

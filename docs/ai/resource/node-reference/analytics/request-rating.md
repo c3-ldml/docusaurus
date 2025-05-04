@@ -12,9 +12,7 @@ import RatingUseCases from '@site/docs/_includes/ai/nodes/_rating.md';
 
 # Request Rating
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/analytics/request-rating.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/analytics/request-rating.png').default} width="50%" />
 
 ## Description
 
@@ -40,9 +38,7 @@ In contrast to the [Set Rating Node](set-rating.md), the Request Rating Node doe
     3. Configure the Rating settings as described in the [Deploy Webchat Endpoint](../../../../webchat/v2/configuration.md#conversation-rating-settings) documentation.
     4. Click **Save**.
     
-    <figure>
-      <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/request-rating-webchat.svg"/>
-    </figure>
+    <img src={require('../../../../../static/img/_assets/ai/resource/node-reference/request-rating-webchat.svg').default} />
     
     Once the end user provides a rating, the rating value is stored as a variable in the Analytics database.
     

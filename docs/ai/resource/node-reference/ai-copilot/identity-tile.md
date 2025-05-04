@@ -8,9 +8,7 @@ hidden: false
 
 <a href="../../../../release-notes/4.60.md" /><img src="https://img.shields.io/badge/Added in-v4.60-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/identity-tile.png" width="50%"/>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/identity-tile.png').default} width="50%" />
 
 ## Description
 
@@ -33,9 +31,7 @@ One way to enhance the conversation further is by showing key customer data,
 such as their name, account information, or preferences, directly within the chat conversation.
 This allows human agents to have contextually relevant discussions without the need to search for customer data in multiple tools.
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/identity-assist-example.png" width="80%"/>
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/identity-assist-example.png').default} width="80%" />
 
 ## More Information
 

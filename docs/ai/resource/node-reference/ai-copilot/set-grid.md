@@ -8,9 +8,7 @@ hidden: false
 
 <a href="../../../../release-notes/4.69.md" /><img src="https://img.shields.io/badge/Added in-v4.69-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/set-grid.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/set-grid.png').default} width="50%" />
 
 ## Description
 

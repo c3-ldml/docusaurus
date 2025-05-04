@@ -36,10 +36,7 @@ These metrics are visualized in the following charts:
 
 <globalFilters />
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/live-agent/live-agent-report.png" width="100%" />
-  <figcaption>Live Agent report</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/live-agent/live-agent-report.png').default} width="100%" />
 
 ## Indicators 
 
@@ -184,9 +181,7 @@ Source table:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/live-agent/handover-end-reason.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/live-agent/handover-end-reason.png').default} width="100%" />
 
 ### Label Summary
 
@@ -201,9 +196,7 @@ Indicates Live Agents labels to categorize and prioritize conversations.
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/live-agent/label-summary.png" width="80%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/live-agent/label-summary.png').default} width="80%" />
 
 ## Line charts
 
@@ -222,9 +215,7 @@ Source tables:
 
 Result:
 
-<figure>
-  <img class="image-center" src="../../../static/img/_assets/insights/reports/live-agent/live-agent-performance-times.png" width="100%" />
-</figure>
+<img src={require('../../../static/img/_assets/insights/reports/live-agent/live-agent-performance-times.png').default} width="100%" />
 
 <downloadReport />
 

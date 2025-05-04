@@ -12,8 +12,5 @@ Create a unique service provider name and save changes.
 
 Generate a new API key by clicking **Add key**.
 
-<figure>
-  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-settings.png" width="60%" />
-  <figcaption>Settings</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/voice-gateway/VG-webapp-settings.png').default} width="60%" />
 

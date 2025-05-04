@@ -9,10 +9,7 @@ import ACAndGenericNodeDeprecation from '@site/docs/_includes/ai/node-reference/
 
 # Hang Up
 
-<figure>
-  <img class="image-center" src="../../../../../../static/img/_assets/ai/resource/node-reference/generic-voice/hang-up.png" width="80%" />
-  <figcaption>Generic Hang Up Node</figcaption>
-</figure>
+<img src={require('../../../../../../static/img/_assets/ai/resource/node-reference/generic-voice/hang-up.png').default} width="80%" />
 
 ## Description
 

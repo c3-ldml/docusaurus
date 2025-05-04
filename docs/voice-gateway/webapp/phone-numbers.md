@@ -14,8 +14,5 @@ You can create more than one phone number.
 
 After creating a phone number, you can delete it or edit the Account and Application fields.
 
-<figure>
-  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-phone-numbers.png"  width="60%" />
-  <figcaption>Phone Numbers</figcaption>
-</figure>
+<img src={require('../../../static/img/_assets/voice-gateway/VG-webapp-phone-numbers.png').default} width="60%" />
 

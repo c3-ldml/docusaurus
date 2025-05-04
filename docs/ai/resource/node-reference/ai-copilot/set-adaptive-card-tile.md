@@ -12,9 +12,7 @@ import AdaptiveCardGenAI from '@site/docs/_includes/ai/nodes/_adaptive-card-gena
 
 <a href="../../../../release-notes/4.79.md" /><img src="https://img.shields.io/badge/Added in-v4.79-blue.svg" alt="Version badge" />
 
-<figure>
-  <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/set-adaptive-card-tile.png" width="50%" />
-</figure>
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/set-adaptive-card-tile.png').default} width="50%" />
 
 ## Description
 
@@ -39,9 +37,7 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
     
     <AdaptiveCardGenAI />
     
-    <figure>
-      <img class="image-center" src="../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/adaptive-card-generative-ai.png" width="100%" />
-    </figure>
+    <img src={require('../../../../../static/img/_assets/ai/resource/node-reference/ai-copilot/adaptive-card-generative-ai.png').default} width="100%" />
     
 
 </CollapsibleSection>
