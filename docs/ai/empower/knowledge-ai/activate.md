@@ -8,8 +8,6 @@ tags: ['Knowledge AI', 'License Activation', 'Quotas', 'Knowledge Chunks', 'Acti
 
 import knowledgeAiMetrics from '@site/docs/_includes/ai/administer/access/_knowledge-ai-metrics.md';
 
-
-
 # Activate Knowledge AI
 
 <a href="../../../release-notes/4.80.md" /><img src="https://img.shields.io/badge/Updated in-v4.80-blue.svg" alt="Version badge" />

@@ -8,9 +8,6 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-
-
-
 import OrderPropertyDeprecation from '@site/docs/_includes/release-notes/_order-property-deprecation.md';
 import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
 

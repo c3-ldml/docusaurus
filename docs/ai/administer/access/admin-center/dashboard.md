@@ -7,8 +7,6 @@ hidden: false
 
 import knowledgeAiMetrics from '@site/docs/_includes/ai/administer/access/_knowledge-ai-metrics.md';
 
-
-
 # Admin Center Dashboard
 
 <a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.89-blue" alt="Version badge" /></a>

@@ -11,8 +11,6 @@ tags:
 
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
-
-
 # Chatwoot
 
 <a href="../../../release-notes/4.97.md" /><img src="https://img.shields.io/badge/Updated in-v4.97-blue.svg" alt="Version badge" />

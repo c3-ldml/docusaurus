@@ -11,8 +11,6 @@ import TabItem from '@theme/TabItem';
 
 import understoodMessages from '@site/docs/_includes/ai/_understood-messages.md';
 
-
-
 # Cognigy.AI: OData Analytics Endpoint
 
 <a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.95-blue" alt="Version badge" /></a>

@@ -10,8 +10,6 @@ tags:
 
 import beta from '@site/docs/_includes/ai/_beta.md';
 
-
-
 # LLM Fallback (Beta)
 
 <a href="../../../release-notes/4.90.md" /><img src="https://img.shields.io/badge/Added in-v4.90(Beta)-purple.svg" alt="Version badge" />

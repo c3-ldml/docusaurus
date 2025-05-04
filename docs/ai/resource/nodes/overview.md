@@ -11,8 +11,6 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
-
 # Nodes
 
 _Nodes_ are the fundamental building blocks of [Flows](../flows/overview.md). Nodes define the logic of AI Agents and are used to create complex conversational experiences. Each Node represents a specific action, decision point, or interaction in the Flow. Users can configure and connect Nodes to design complex conversational experiences.

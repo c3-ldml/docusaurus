@@ -6,12 +6,7 @@ hidden: false
 
 import FilterTranscriptMessages from '@site/docs/_includes/ai/providers/genesys/_filter-transcript-messages.md';
 import UrlPattern from '@site/docs/_includes/ai-copilot/_url-pattern.md';
-
-
-
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 
 # Genesys Cloud Guest Chat
 

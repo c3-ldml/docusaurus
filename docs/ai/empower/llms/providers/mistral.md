@@ -14,12 +14,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 import applyModel from '@site/docs/_includes/ai/generative-ai/_apply-model.md';
-
-
-
 import addModelViaApi from '@site/docs/_includes/ai/generative-ai/_add-model-via-api.md';
-
-
 
 # Mistral AI
 

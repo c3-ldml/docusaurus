@@ -12,8 +12,6 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
-
 # Projects
 
 <a href="../../release-notes/4.92.md" /><img src="https://img.shields.io/badge/Updated in-v4.92-blue.svg" alt="Version badge" />

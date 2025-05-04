@@ -12,12 +12,7 @@ tags:
 ---
 
 import UrlPattern from '@site/docs/_includes/ai-copilot/_url-pattern.md';
-
-
-
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
-
 
 # Genesys Cloud Open Messaging
 

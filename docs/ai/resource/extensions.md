@@ -12,8 +12,6 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
-
 # Extensions
 
 _Extensions_ are [Nodes](nodes/overview.md) for specific use cases that you can install from the Marketplace or develop yourself to extend your Flows' capabilities. You can use Extensions to:

@@ -8,8 +8,6 @@ tags: ['Knowledge AI', 'RAG', 'Information Retrieval', 'Document Processing', 'K
 
 import termsOfUseKs from '@site/docs/_includes/ai/_terms-of-use-ks.md';
 
-
-
 # Knowledge AI
 
 <a href="../../../release-notes/4.93.md" /><img src="https://img.shields.io/badge/Updated in-v4.93-blue.svg" alt="Version badge" />

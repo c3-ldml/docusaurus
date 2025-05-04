@@ -7,8 +7,6 @@ hidden: false
 
 import onPremCompatibilityMatrixNote from '@site/docs/_includes/installation/_on-prem-compatibility-matrix-note.md';
 
-
-
 # Voice Gateway: Version Compatibility Matrix
 
 This matrix outlines the compatibility of Cognigy Voice Gateway versions with Cognigy infrastructure components,

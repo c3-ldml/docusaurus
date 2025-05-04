@@ -13,8 +13,6 @@ import CollapsibleSection from '@site/src/components/CollapsibleSection';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
-
 # Functions
 
 _Functions_ are JavaScript functions that you can define and execute in Cognigy.AI. You can use Functions to assist with long-running and asynchronous processes, such as interacting with third-party systems through HTTP API.

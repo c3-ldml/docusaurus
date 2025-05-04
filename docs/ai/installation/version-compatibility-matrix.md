@@ -7,8 +7,6 @@ hidden: false
 
 import onPremCompatibilityMatrixNote from '@site/docs/_includes/installation/_on-prem-compatibility-matrix-note.md';
 
-
-
 # Cognigy.AI, Insights, and AI Copilot: Version Compatibility Matrix
 
 This matrix outlines the compatibility of Cognigy.AI, Insights, and AI Copilot product versions with Cognigy infrastructure components,

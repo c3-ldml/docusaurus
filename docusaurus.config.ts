@@ -82,10 +82,17 @@ const config: Config = {
         },
         {
           type: 'doc',
-          docId: 'voice-gateway/overview',
+          href: 'https://api-trial.cognigy.ai/openapi',
+          position: 'left',
+          label: 'API',
+        },
+        {
+          type: 'doc',
+          docId: 'release-notes/index',
           position: 'left',
           label: 'Release Notes',
         },
+        
         {
           href: 'https://github.com/cognigy/docs',
           label: 'GitHub',
@@ -110,6 +117,14 @@ const config: Config = {
             {
               label: 'Webchat',
               to: '/webchat/index',
+            },
+            {
+              label: 'Live Agent',
+              to: '/live-agent/index',
+            }
+            {
+              label: 'xApps',
+              to: '/xapps/index',
             },
           ],
         },

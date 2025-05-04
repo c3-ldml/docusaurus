@@ -49,9 +49,9 @@ function processFile(filePath) {
     if (!newContent.includes(importStatement)) {
       const frontmatterEnd = newContent.indexOf('---', 3);
       if (frontmatterEnd !== -1) {
-        newContent = newContent.slice(0, frontmatterEnd + 3) + '\n\n' + importStatement + '\n\n' + newContent.slice(frontmatterEnd + 3);
+        newContent = newContent.slice(0, frontmatterEnd + 3) + '\n' + importStatement + '\n' + newContent.slice(frontmatterEnd + 3);
       } else {
-        newContent = importStatement + '\n\n' + newContent;
+        newContent = importStatement + '\n' + newContent;
       }
     }
     

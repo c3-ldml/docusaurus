@@ -6,8 +6,6 @@ hidden: false
 
 import logInWithSso from '@site/docs/_includes/ai/overview/_log-in-with-sso.md';
 
-
-
 # Single Sign-on with SAML 2.0
 
 Cognigy.AI integrates with popular Single Sign-on (SSO) Identity Providers (IDPs), such as Azure Active Directory, OneLogin, and Okta. This integration allows users within your organization to log in to Cognigy.AI without separate credentials.

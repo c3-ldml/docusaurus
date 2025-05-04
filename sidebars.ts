@@ -784,11 +784,201 @@ const sidebars: SidebarsConfig = {
   // Webchat sidebar
   webchatSidebar: [
     'webchat/index',
+    {
+      type: 'category',
+      label: 'Overview',
+      items: [
+        'webchat/overview',
+        'webchat/getting-started'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Webchat v3',
+      items: [
+        'webchat/v3/overview',
+        'webchat/v3/supported-browsers',
+        'webchat/v3/features',
+        {
+          type: 'category',
+          label: 'Endpoint Configuration',
+          items: [
+            'webchat/v3/configuration',
+            'webchat/v3/metadata'
+          ]
+        },
+        'webchat/v3/accessibility',
+        'webchat/v3/embedding'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Webchat v2 (Deprecated)',
+      items: [
+        'webchat/v2/overview',
+        'webchat/v2/supported-browsers',
+        'webchat/v2/features',
+        'webchat/v2/configuration',
+        'webchat/v2/embedding'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Miscellaneous',
+      items: [
+        'webchat/migration',
+        'webchat/plugins',
+        'webchat/demo',
+        'webchat/release-notes'
+      ]
+    }
   ],
 
-  // API Reference sidebar
-  apiSidebar: [
-    'api/getting-started',
+  // Support sidebar
+  supportSidebar: [
+    'help/index',
+    'help/get-help'
+  ],
+
+  // Release Notes sidebar
+  releaseNotesSidebar: [
+    'release-notes/index',
+    'release-notes/deprecations-and-removals',
+    {
+      type: 'category',
+      label: 'Product Versions',
+      items: [
+        {
+          type: 'category',
+          label: '4.10x',
+          items: [
+            'release-notes/4.100'
+          ]
+        },
+        {
+          type: 'category',
+          label: '4.9x',
+          items: [
+            'release-notes/4.99',
+            'release-notes/4.98',
+            'release-notes/4.97',
+            'release-notes/4.96',
+            'release-notes/4.95',
+            'release-notes/4.94',
+            'release-notes/4.93',
+            'release-notes/4.92',
+            'release-notes/4.91',
+            'release-notes/4.90'
+          ]
+        },
+        {
+          type: 'category',
+          label: '4.8x',
+          items: [
+            'release-notes/4.89',
+            'release-notes/4.88',
+            'release-notes/4.87',
+            'release-notes/4.86',
+            'release-notes/4.85',
+            'release-notes/4.84',
+            'release-notes/4.83',
+            'release-notes/4.82',
+            'release-notes/4.81',
+            'release-notes/4.80'
+          ]
+        },
+        {
+          type: 'category',
+          label: '4.7x',
+          items: [
+            'release-notes/4.79',
+            'release-notes/4.78',
+            'release-notes/4.77',
+            'release-notes/4.76',
+            'release-notes/4.75',
+            'release-notes/4.74',
+            'release-notes/4.73',
+            'release-notes/4.72',
+            'release-notes/4.71',
+            'release-notes/4.70'
+          ]
+        },
+        {
+          type: 'category',
+          label: '4.6x',
+          items: [
+            'release-notes/4.69',
+            'release-notes/4.68',
+            'release-notes/4.67',
+            'release-notes/4.66',
+            'release-notes/4.65',
+            'release-notes/4.64',
+            'release-notes/4.63',
+            'release-notes/4.62',
+            'release-notes/4.61',
+            'release-notes/4.60'
+          ]
+        },
+        {
+          type: 'category',
+          label: '4.5x',
+          items: [
+            'release-notes/4.59',
+            'release-notes/4.58',
+            'release-notes/4.57',
+            'release-notes/4.56',
+            'release-notes/4.55',
+            'release-notes/4.54',
+            'release-notes/4.53',
+            'release-notes/4.52',
+            'release-notes/4.51',
+            'release-notes/4.50'
+          ]
+        },
+        {
+          type: 'category',
+          label: '4.4x',
+          items: [
+            'release-notes/4.49',
+            'release-notes/4.48',
+            'release-notes/4.47',
+            'release-notes/4.46',
+            'release-notes/4.45',
+            'release-notes/4.44',
+            'release-notes/4.43',
+            'release-notes/4.42',
+            'release-notes/4.41',
+            'release-notes/4.40'
+          ]
+        },
+        {
+          type: 'category',
+          label: '4.3x',
+          items: [
+            'release-notes/4.39',
+            'release-notes/4.38',
+            'release-notes/4.37',
+            'release-notes/4.36',
+            'release-notes/4.35',
+            'release-notes/4.34',
+            'release-notes/4.33',
+            'release-notes/4.32',
+            'release-notes/4.31',
+            'release-notes/4.30'
+          ]
+        }
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Earlier Product Versions',
+      items: [
+        'release-notes/earlier-versions/overview',
+        'release-notes/earlier-versions/cognigy-ai-pre-4.30',
+        'release-notes/earlier-versions/insights-pre-4.30',
+        'release-notes/earlier-versions/live-agent-pre-4.30'
+      ]
+    }
   ],
 
 };

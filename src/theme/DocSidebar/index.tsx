@@ -7,6 +7,8 @@ import styles from './styles.module.css';
 import cognigyIcon from '@site/static/img/_assets/icons/cognigy-ai.svg';
 import voiceGatewayIcon from '@site/static/img/_assets/icons/voice-gateway.svg';
 import webchatIcon from '@site/static/img/_assets/icons/webchat.svg';
+import xappsIcon from '@site/static/img/_assets/icons/xapps-logo.svg';
+import liveAgentIcon from '@site/static/img/_assets/icons/live-agent-icon.svg';
 
 interface CustomDropdownProps {
   options: {
@@ -133,6 +135,18 @@ export default function DocSidebar(props: Props): React.ReactElement | null {
       description: 'Embed and customize chat widgets for your website',
       icon: webchatIcon
     },
+    {
+      label: 'Live Agent',
+      value: 'live-agent',
+      description: 'Embed and customize chat widgets for your website',
+      icon: liveAgentIcon
+    },
+    {
+      label: 'xApps',
+      value: 'xapps',
+      description: 'Flexible micro-web applications for customer self-service.',
+      icon: xappsIcon
+    }
   ];
 
   const handleSidebarChange = (value: string) => {

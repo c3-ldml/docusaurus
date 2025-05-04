@@ -7,8 +7,6 @@ hidden: false
 
 import logInWithSso from '@site/docs/_includes/ai/overview/_log-in-with-sso.md';
 
-
-
 # Access to Cognigy.AI
 
 Access to Cognigy.AI allows you to log in to and log out of Cognigy.AI.

@@ -11,8 +11,6 @@ import TabItem from '@theme/TabItem';
 
 import speechServicesHowto from '@site/docs/_includes/voice-gateway/_speech-services-howto.md';
 
-
-
 # Speech Services
 
 <a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.77-blue" alt="Version badge" /></a>

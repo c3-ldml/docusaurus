@@ -84,46 +84,51 @@ To create an AI Agent, select one of the following options:
         - **Avoid ungrounded content** — prevent generating content that is based on speculation or unsupported claims, ensuring it is reliable and verifiable.
         - **Avoid copyright infringements** — prevent generating content that violates intellectual property rights or uses copyrighted material without authorization.
         - **Prevent jailbreak and manipulations** — prevent attempts to bypass security measures or manipulate the AI Agent into producing unauthorized or unsafe content.
-    ??? info "5. Job Selection"
-    1. In the **Job Selection** step, select one of the following options:
-    - **Default** — create an AI Agent with a predefined Flow, then click **Create & Configure LLM** to save changes and open the Flow with the created AI Agent. If you haven't added an LLM before, the system will prompt you to [configure a model](overview.md#prerequisites) to ensure your AI-driven Flow works.
-    - **Personality Only** — create an AI Agent without a predefined Flow, then click **Create** to save changes.
-    - **Job** — select one of the available jobs you want to assign to the AI Agent, then click **Create** to save changes.
+    :::info[5. Job Selection]
 
-    === "API"
-    You can create an Agent from scratch using the [Cognigy.AI API POST beta/aiagents](https://api-trial.cognigy.ai/openapi#post-/beta/aiagents) request.
+  1. In the **Job Selection** step, select one of the following options:
+  - **Default** — create an AI Agent with a predefined Flow, then click **Create & Configure LLM** to save changes and open the Flow with the created AI Agent. If you haven't added an LLM before, the system will prompt you to [configure a model](overview.md#prerequisites) to ensure your AI-driven Flow works.
+  - **Personality Only** — create an AI Agent without a predefined Flow, then click **Create** to save changes.
+  - **Job** — select one of the available jobs you want to assign to the AI Agent, then click **Create** to save changes.
 
-  :::
+  === "API"
+  You can create an Agent from scratch using the [Cognigy.AI API POST beta/aiagents](https://api-trial.cognigy.ai/openapi#post-/beta/aiagents) request.
 
-  </TabItem>
-  <TabItem value="tab2" label="GUI">
-    1. In the left-side menu on the **Project** page, select **Build > AI Agents**.
-    2. On the **AI Agents** page, click **Hire AI Agent**. The **Job Market** page displays a list of available AI Agents to hire.
-    3. Hover your cursor over the desired AI Agent template and click **Hire**. This action will trigger the **Hire AI Agent** task in the Task Manager.
-    4. Check the status of the **Hire AI Agent** task by clicking ![task-menu](../../../../static/img/_assets/icons/task-menu.svg) in the upper-right corner.
-    5. Once the task is complete, go to **Build > Flows**  and find the Flow with the AI Agent name from the template you installed.
+    :::
 
-  </TabItem>
-  <TabItem value="tab3" label="API">
-    You can hire an Agent from the Job Market using the [Cognigy.AI API POST beta/aiagents/hire](https://api-trial.cognigy.ai/openapi#post-/beta/aiagents/hire) request.
+    </TabItem>
+    <TabItem value="tab2" label="GUI">
+  1. In the left-side menu on the **Project** page, select **Build > AI Agents**.
+  2. On the **AI Agents** page, click **Hire AI Agent**. The **Job Market** page displays a list of available AI Agents to hire.
+  3. Hover your cursor over the desired AI Agent template and click **Hire**. This action will trigger the **Hire AI Agent** task in the Task Manager.
+  4. Check the status of the **Hire AI Agent** task by clicking ![task-menu](../../../../static/img/_assets/icons/task-menu.svg) in the upper-right corner.
+  5. Once the task is complete, go to **Build > Flows**  and find the Flow with the AI Agent name from the template you installed.
 
-  </TabItem>
-  <TabItem value="tab4" label="GUI">
-     You can view and delete AI Agents, and copy their Reference ID in **Build > AI Agents**.
+    </TabItem>
+    <TabItem value="tab3" label="API">
+  You can hire an Agent from the Job Market using the [Cognigy.AI API POST beta/aiagents/hire](https://api-trial.cognigy.ai/openapi#post-/beta/aiagents/hire) request.
 
-  </TabItem>
-  <TabItem value="tab5" label="API">
-    You can create, edit, and delete AI Agents using [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#get-/beta/aiagents).
+    </TabItem>
+    <TabItem value="tab4" label="GUI">
+   You can view and delete AI Agents, and copy their Reference ID in **Build > AI Agents**.
 
-  </TabItem>
-  <TabItem value="tab6" label="CLI">
-     You can clone and edit AI Agents using [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI).
+    </TabItem>
+    <TabItem value="tab5" label="API">
+  You can create, edit, and delete AI Agents using [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#get-/beta/aiagents).
 
-  </TabItem>
+    </TabItem>
+    <TabItem value="tab6" label="CLI">
+   You can clone and edit AI Agents using [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI).
+
+    </TabItem>
+
+    :::
 
   :::
 
 :::
+
+
 
 
 
