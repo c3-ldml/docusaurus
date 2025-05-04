@@ -46,7 +46,7 @@ The full set of configuration parameters:
 | finishOnKey                   | The set of digits that can end the listen action.                                                                                                                                                                                                                                                                                                                     | No       |
 | maxLength                     | The maximum length of the listened audio stream in seconds.                                                                                                                                                                                                                                                                                                           | No       |
 | metadata                      | Arbitrary data to add to the JSON payload sent to the remote server when the WebSocket connection is first established.                                                                                                                                                                                                                                               | No       |
-| mixType                       | The following types can be specified:<br> - `mono` — sends a single channel,<br> - `stereo` — sends a dual channel of both calls in a bridge,<br> - `mixed` — sends audio from both calls in a bridge in a single mixed audio stream. The default value is `mono`.                                                                                                    | No       |
+| mixType                       | The following types can be specified:<br /> - `mono` — sends a single channel,<br /> - `stereo` — sends a dual channel of both calls in a bridge,<br /> - `mixed` — sends audio from both calls in a bridge in a single mixed audio stream. The default value is `mono`.                                                                                                    | No       |
 | passDtmf                      | If this parameter is `true`, detected DTMF digits will be sent over WebSocket as JSON text frames. The default value is `false`.                                                                                                                                                                                                                                      | No       |
 | playBeep                      | Enable a beep sound when the listen operation starts. The default value is `false`.                                                                                                                                                                                                                                                                                   | No       |
 | sampleRate                    | The sample rate of audio to send. Allowable values: `8000`, `16000`, `24000`, `48000`, or `64000`. The default value is `8000`.                                                                                                                                                                                                                                       | No       |
@@ -74,48 +74,52 @@ The payload example:
 
 Audio can also be sent back over the WebSocket. This audio, if supplied, will be played out to the caller.
 
-!!! warning
-    Bidirectional audio is not supported when the [`listen`](listen.md) is nested in the context of a [`dial`](dial.md) verb.
+:::warning
 
-The far-end WebSocket server supplies bidirectional audio by sending a JSON text frame over the WebSocket connection:
+  Bidirectional audio is not supported when the [`listen`](listen.md) is nested in the context of a [`dial`](dial.md) verb.
 
-```json
-{
-  "type": "playAudio",
-  "data": {
-    "audioContent": "base64-encoded content..",
-    "audioContentType": "raw",
-    "sampleRate": "16000"
+  The far-end WebSocket server supplies bidirectional audio by sending a JSON text frame over the WebSocket connection:
+
+  ```json
+  {
+    "type": "playAudio",
+    "data": {
+      "audioContent": "base64-encoded content..",
+      "audioContentType": "raw",
+      "sampleRate": "16000"
+    }
   }
-}
-```
+  ```
 
-In the example above, raw (headerless) audio is sent. The audio must comply with the standard properties of encoding and format, with a configurable sample rate of either 8000, 16000, 24000, 32000, 48000, or 64000 Hz.
+  In the example above, raw (headerless) audio is sent. The audio must comply with the standard properties of encoding and format, with a configurable sample rate of either 8000, 16000, 24000, 32000, 48000, or 64000 Hz.
 
-Alternatively, a `wave` file format can be supplied by using type `wav` (or `wave`), and in this case, no `sampleRate` property is needed. In all cases, the audio must be base64 encoded when sent over the socket.
+  Alternatively, a `wave` file format can be supplied by using type `wav` (or `wave`), and in this case, no `sampleRate` property is needed. In all cases, the audio must be base64 encoded when sent over the socket.
 
-If multiple `playAudio` verbs are sent before the first has finished playing, they will be queued and played in order. You may have up to 10 queued `playAudio` verbs at any time.
+  If multiple `playAudio` verbs are sent before the first has finished playing, they will be queued and played in order. You may have up to 10 queued `playAudio` verbs at any time.
 
-Once a `playAudio` verb has finished playing out the audio, a `playDone` JSON text frame will be sent over the WebSocket connection for confirmation.
+  Once a `playAudio` verb has finished playing out the audio, a `playDone` JSON text frame will be sent over the WebSocket connection for confirmation.
 
-```json
-{
-  "type": "playDone"
-}
-```
+  ```json
+  {
+    "type": "playDone"
+  }
+  ```
 
-A `killAudio` verb can be sent by the WebSocket server to stop the playback of audio that was started via a previous `playAudio` verb:
+  A `killAudio` verb can be sent by the WebSocket server to stop the playback of audio that was started via a previous `playAudio` verb:
 
-```json
-{
-  "type": "killAudio"
-}
-```
+  ```json
+  {
+    "type": "killAudio"
+  }
+  ```
 
-If the WebSocket connection wishes to end the `listen`, it can send a disconnect verb:
+  If the WebSocket connection wishes to end the `listen`, it can send a disconnect verb:
 
-```json
-{
-  "type": "disconnect"
-}
-```
+  ```json
+  {
+    "type": "disconnect"
+  }
+  ```
+
+:::
+

@@ -7,7 +7,7 @@ hidden: false
 # My Profile
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/profile.jpg" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/profile.jpg" width="100%" />
 </figure>
 
 ## Preferences
@@ -36,7 +36,7 @@ This section shows a list of previous login-sessions and their location (if avai
 
 ## API Keys
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../release-notes/4.49.md)
+<a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.49-blue" alt="Version badge" /></a>
 
 Application Programming Interface (API) Keys are security tokens registered to a user account. These tokens can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to log in to the platform. 
 
@@ -62,7 +62,7 @@ Once the API key is created, its name and creation date will be displayed in the
 To revoke an API key, follow these steps:
 
 1. On the **My profile** page, go to the **API Keys** section.
-2. Near the selected API key, click ![vertical-ellipsis](../../../_assets/icons/vertical-ellipsis.svg) **> Revoke API Key**.
+2. Near the selected API key, click ![vertical-ellipsis](../../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Revoke API Key**.
 
 The API key will be revoked and can no longer be used for the requests.
 
@@ -71,7 +71,7 @@ The API key will be revoked and can no longer be used for the requests.
 This section lets users manage their **Connected Accounts**, 3rd-party accounts that Cognigy.AI can connect to in order to make it easier to deploy to certain platforms. 
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/accounts.jpg" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/accounts.jpg" width="100%" />
 </figure>
 
 ## Extended Menu

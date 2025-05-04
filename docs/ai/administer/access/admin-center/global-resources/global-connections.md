@@ -9,18 +9,26 @@ tags:
     - Admin Center
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Global Connections
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.97-blue.svg)](../../../../../release-notes/4.97.md)
+<a href="Added"><img src="https://img.shields.io/badge/Added_in-v4.97-blue" alt="Version badge" /></a>
 
-_Global Connections_ are [Connections](../../../../build/connections.md) established when you create [global LLMs](../../../../empower/llms/overview.md).
-
-## Working with Global LLMs
-
-=== "GUI"
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
 
     You can view, edit, and delete global Connections in the [Admin Center](../overview.md) under **Resources > Connections** as well as copy their Reference ID.
 
-=== "API"
+  </TabItem>
+  <TabItem value="tab2" label="API">
 
     You can view, edit, and delete global Connections using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--Connections-v2.0). To do so, set the `resourceLevel` parameter to `organisation` in the JSON body.
+
+  </TabItem>
+</Tabs>
+_Global Connections_ are [Connections](../../../../build/connections.md) established when you create [global LLMs](../../../../empower/llms/overview.md).
+
+## Working with Global LLMs

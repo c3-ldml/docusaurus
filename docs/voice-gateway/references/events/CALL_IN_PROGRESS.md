@@ -6,7 +6,7 @@ hidden: false
 
 # CALL_IN_PROGRESS
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.90-blue.svg)](../../../release-notes/4.90.md)
+<a href="Added"><img src="https://img.shields.io/badge/Added_in-v4.90-blue" alt="Version badge" /></a>
 
 The call is in progress once the call has been successfully established.
 

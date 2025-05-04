@@ -10,7 +10,7 @@ The AI Agent terminated the call because the user did not respond.
 
 To test a payload with the `USER_INPUT_TIMEOUT` event, you can use an empty Flow.
 
-Input: Start a call via the Interaction Panel by clicking ![phone](../../../_assets/icons/phone.svg) **> Start Call**. When the call starts, say "Hello". Wait several seconds until a payload with the `USER_INPUT_TIMEOUT` event appears.
+Input: Start a call via the Interaction Panel by clicking ![phone](../../../../static/img/_assets/icons/phone.svg) **> Start Call**. When the call starts, say "Hello". Wait several seconds until a payload with the `USER_INPUT_TIMEOUT` event appears.
 
 Payload:
 

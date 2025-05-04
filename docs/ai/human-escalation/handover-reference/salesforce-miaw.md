@@ -234,10 +234,13 @@ By default, two versions of the application are provided:
     - **Value** — enter `copilotUrl`.
     9. Click **Save a New Version**, then **Activate**.
 
-    ??? info "4. Configure UI Components"
-    To configure the AI Copilot UI components, refer to the [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations) documentation on GitHub. Once the components are configured, you can test the embedded AI Copilot workspace using [Demo Webchat](../../../webchat/demo.md).
+    :::info[4. Configure UI Components]
 
-    If you used an embedded AI Copilot workspace with the [deprecated Salesforce integration](salesforce.md) and migrated to Salesforce MIAW, you need to update the AI Copilot UI components. Refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub.
+  To configure the AI Copilot UI components, refer to the [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations) documentation on GitHub. Once the components are configured, you can test the embedded AI Copilot workspace using [Demo Webchat](../../../webchat/demo.md).
+
+  If you used an embedded AI Copilot workspace with the [deprecated Salesforce integration](salesforce.md) and migrated to Salesforce MIAW, you need to update the AI Copilot UI components. Refer to the [Set up the Component](https://github.com/Cognigy/salesforce-integrations?tab=readme-ov-file#set-up-the-componentrefer) documentation on GitHub.
+
+    :::
 
   :::
 
@@ -246,6 +249,8 @@ By default, two versions of the application are provided:
   :::
 
 :::
+
+
 
 
 

@@ -1,0 +1,32 @@
+.button {
+  color: var(--md-primary-fg-color);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: initial;
+  border-radius: 0.1rem;
+  padding: 0.625em 2em;
+  transition: color 125ms, background-color 125ms, border-color 125ms;
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.primary {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Dark mode support */
+[data-md-color-primary=white] .button {
+  color: var(--md-typeset-a-color);
+}
+
+[data-md-color-primary=white] .primary {
+  background-color: var(--md-typeset-a-color);
+  border-color: var(--md-typeset-a-color);
+  color: hsla(var(--md-hue), 0%, 100%, 1);
+} 

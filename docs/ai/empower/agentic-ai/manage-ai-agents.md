@@ -58,34 +58,37 @@ To create an AI Agent, select one of the following options:
             - **TTS Label** — select the alternative name of the TTS vendor, as specified in the [Voice Gateway Self-Service Portal](../../../voice-gateway/webapp/applications.md#add-additional-tts-and-stt-vendor). If you have multiple speech services from the same vendor, use the label to specify which service to use.
             - **Disable TTS Audio Caching** — by default, this setting is deactivated. With caching enabled, previously requested TTS audio is stored in the AI Agent cache, and repeated requests for the same audio text will use the cached result instead of sending another request. With caching disabled, the AI Agent stores the TTS audio but doesn't use it; each request is sent directly to the speech provider. Note that disabling caching can increase TTS costs. For detailed information, contact your speech provider. 
 
-    ??? info "3. Knowledge & Instructions"
-    1. In the **Knowledge & Instructions** step, configure the following fields:
-        - **Instructions** — provide special instructions to your AI Agent in bullet-point form. For example:
+    :::info[3. Knowledge & Instructions]
+
+  1. In the **Knowledge & Instructions** step, configure the following fields:
+      - **Instructions** — provide special instructions to your AI Agent in bullet-point form. For example:
   ```txt
-                     - Greet users warmly and professionally.
-                     - Keep responses concise; expand only if requested.
-                     - Start with a formal tone; adjust as needed.
-                     - Share troubleshooting links for technical issues.
-                     - Apologize if errors occur, then correct promptly.
+                       - Greet users warmly and professionally.
+                       - Keep responses concise; expand only if requested.
+                       - Start with a formal tone; adjust as needed.
+                       - Share troubleshooting links for technical issues.
+                       - Apologize if errors occur, then correct promptly.
   ```
-        - **Knowledge Store** — select the [Knowledge Store](../knowledge-ai/overview.md#knowledge-store) that the AI Agent will use to access information from the documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries. Note that you need to configure the [embedding model](../knowledge-ai/overview.md#which-model-to-choose) to use Knowledge AI.
-    ??? info "4. Data Privacy & Security"
+      - **Knowledge Store** — select the [Knowledge Store](../knowledge-ai/overview.md#knowledge-store) that the AI Agent will use to access information from the documents you provide. By accessing and understanding knowledge bases, these AI Agents can provide more accurate, context-aware, and helpful responses to user queries. Note that you need to configure the [embedding model](../knowledge-ai/overview.md#which-model-to-choose) to use Knowledge AI.
+  :::info
+
+  "4. Data Privacy & Security"
     1. In the **Data Privacy & Security** step, configure the following fields:
-        - **Contact Profile Information** — select which information the AI Agent should use from the [Cognigy Contact Profile](../../analyze/contact-profiles.md):
-            - **None** — no data will be used from the Contact Profile. This option is selected by default.
-            - **Selected Profile Fields** — enter specific fields from the Contact Profile for targeted data use. Specify the field using the [Profile keys](../../analyze/contact-profiles.md#predefined-fields) format and press ++enter++ to apply it.
-            - **Complete Profile** — use all fields from the Contact Profile to provide comprehensive user details. 
-            - **Profile Memories** — use the [Memories](../../analyze/contact-profiles.md#predefined-fields) field from the Contact Profile.
-        - **Safety Instructions** — adjust the AI Agent's safety settings to guide content generation, interactions, and responses, ensuring compliance with ethical, legal, and operational standards. Although these settings reduce risks, occasional unexpected outputs may still occur. The selected safety instructions are included in the prompt to enhance safety, which may increase token usage. Select the safety instructions you want to apply:
-            - **Avoid harmful content** — prevent generating content that could be harmful, offensive, or abusive to end users.
-            - **Avoid ungrounded content** — prevent generating content that is based on speculation or unsupported claims, ensuring it is reliable and verifiable.
-            - **Avoid copyright infringements** — prevent generating content that violates intellectual property rights or uses copyrighted material without authorization.
-            - **Prevent jailbreak and manipulations** — prevent attempts to bypass security measures or manipulate the AI Agent into producing unauthorized or unsafe content.
+    - **Contact Profile Information** — select which information the AI Agent should use from the [Cognigy Contact Profile](../../analyze/contact-profiles.md):
+        - **None** — no data will be used from the Contact Profile. This option is selected by default.
+        - **Selected Profile Fields** — enter specific fields from the Contact Profile for targeted data use. Specify the field using the [Profile keys](../../analyze/contact-profiles.md#predefined-fields) format and press ++enter++ to apply it.
+        - **Complete Profile** — use all fields from the Contact Profile to provide comprehensive user details. 
+        - **Profile Memories** — use the [Memories](../../analyze/contact-profiles.md#predefined-fields) field from the Contact Profile.
+    - **Safety Instructions** — adjust the AI Agent's safety settings to guide content generation, interactions, and responses, ensuring compliance with ethical, legal, and operational standards. Although these settings reduce risks, occasional unexpected outputs may still occur. The selected safety instructions are included in the prompt to enhance safety, which may increase token usage. Select the safety instructions you want to apply:
+        - **Avoid harmful content** — prevent generating content that could be harmful, offensive, or abusive to end users.
+        - **Avoid ungrounded content** — prevent generating content that is based on speculation or unsupported claims, ensuring it is reliable and verifiable.
+        - **Avoid copyright infringements** — prevent generating content that violates intellectual property rights or uses copyrighted material without authorization.
+        - **Prevent jailbreak and manipulations** — prevent attempts to bypass security measures or manipulate the AI Agent into producing unauthorized or unsafe content.
     ??? info "5. Job Selection"
     1. In the **Job Selection** step, select one of the following options:
-        - **Default** — create an AI Agent with a predefined Flow, then click **Create & Configure LLM** to save changes and open the Flow with the created AI Agent. If you haven't added an LLM before, the system will prompt you to [configure a model](overview.md#prerequisites) to ensure your AI-driven Flow works.
-        - **Personality Only** — create an AI Agent without a predefined Flow, then click **Create** to save changes.
-        - **Job** — select one of the available jobs you want to assign to the AI Agent, then click **Create** to save changes.
+    - **Default** — create an AI Agent with a predefined Flow, then click **Create & Configure LLM** to save changes and open the Flow with the created AI Agent. If you haven't added an LLM before, the system will prompt you to [configure a model](overview.md#prerequisites) to ensure your AI-driven Flow works.
+    - **Personality Only** — create an AI Agent without a predefined Flow, then click **Create** to save changes.
+    - **Job** — select one of the available jobs you want to assign to the AI Agent, then click **Create** to save changes.
 
     === "API"
     You can create an Agent from scratch using the [Cognigy.AI API POST beta/aiagents](https://api-trial.cognigy.ai/openapi#post-/beta/aiagents) request.
@@ -117,6 +120,14 @@ To create an AI Agent, select one of the following options:
      You can clone and edit AI Agents using [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI).
 
   </TabItem>
+
+  :::
+
+:::
+
+
+
+
 </Tabs>
 - [Hire from the Job Market](#hire-from-the-job-market)
 

@@ -5,9 +5,17 @@ description: "Speech Services allow adding multiple Speech Vendors to the Voice 
 hidden: false
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+import speechServicesHowto from '@site/docs/_includes/voice-gateway/_speech-services-howto.md';
+
+
+
 # Speech Services
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.77-blue.svg)](../../release-notes/4.77.md)
+<a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.77-blue" alt="Version badge" /></a>
 
 **Speech services** integrate Speech-to-Text (STT) or Text-to-Speech (TTS) vendors in the Voice Gateway Self-Service Portal. To ensure the AI Agent gets a voice, a speech service must be selected within the [Application](./applications.md). By connecting with a speech vendor of your choice, you can select between multiple voices, genders, accents, and languages. You can add multiple speech vendors to the Voice Gateway Self-Service Portal, or install multiple configurations of one speech vendor, to quickly switch between different setups.
 
@@ -25,61 +33,73 @@ After creating a speech service, you can edit or delete it.
 Users with an Account scope can only edit speech services they have created, as well as speech services created by other users with the same scope. They can still use and view speech services shared by Service providers or Admins.
 
 <figure>
-  <img class="image-center"  src="../../../_assets/voice-gateway/VG-webapp-speech-services.png"  width="60%" />
+  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-speech-services.png"  width="60%" />
   <figcaption>Speech Services</figcaption>
 </figure>
 
 ## Cloud-Based Speech Services
 
-To configure the connection for a cloud-based speech service:
-
-{! _includes/voice-gateway/speech-services-howto.md !}
-
-=== "Amazon Polly"
+<Tabs>
+  <TabItem value="tab1" label="Amazon Polly" default>
     1. Enter the Access Key in the **Access key ID** field. For more information on AWS Access Keys, read the [Amazon AWS](https://repost.aws/knowledge-center/create-access-key) documentation.
     2. Enter the Secret Access Key in the **Secret access key** field.
     3. Select a region from the **Region** list.
-=== "Deepgram"
+  </TabItem>
+  <TabItem value="tab2" label="Deepgram">
     1. Enter an API key in the **API key** field. For more information on API keys in Deepgram, read the [Deepgram](https://developers.deepgram.com/docs/create-additional-api-keys) documentation.
-=== "Elevenlabs"
+  </TabItem>
+  <TabItem value="tab3" label="Elevenlabs">
     1. Enter an API key in the **API key** field. For more information on Elevenlabs API keys, read the [Elevenlabs](https://help.elevenlabs.io/hc/en-us/articles/14599447207697-How-to-authorize-yourself-using-your-xi-api-key) documentation.
     2. Select your language model from the **Model** list. 
     3. _(Optional)_ Edit the JSON code for additional options by selecting the **Extra Options**.
-=== "Google Speech Services"
+  </TabItem>
+  <TabItem value="tab4" label="Google Speech Services">
     1. Upload your Service Key to the **Service key** field. For more information on creating Service Keys in Google Cloud, read the [Google Cloud](https://cloud.google.com/iam/docs/keys-create-delete) documentation.
-=== "Microsoft Azure Speech Services"
+  </TabItem>
+  <TabItem value="tab5" label="Microsoft Azure Speech Services">
     1. Select **Use hosted Azure service**. 
     2. Select a region from the **Region** list.
     3. Enter an API key in the **API key** field. For more information on linking API keys, read the [Microsoft Speech Services Billing](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-howto#billing-arguments) documentation.
     4. _(Optional)_ Select a custom voice model for TTS by providing a custom voice endpoint ID in the **Custom voice deployment ID** field.
     5. _(Optional)_ Select a custom speech model for STT by providing a custom speech endpoint ID in the **Custom speech endpoint ID** field.
-=== "Nuance"
+  </TabItem>
+  <TabItem value="tab6" label="Nuance">
     1. Enter the client ID in the **Client ID** field. You can obtain the client ID as well as the secret key from your Nuance program manager. For more information, read the [Nuance](https://docs.nuance.com/digital-engagement/APIs/UMAPI/token-auth.html) documentation.
     2. Enter the secret key in the **Secret** field.
-=== "Soniox"
+  </TabItem>
+  <TabItem value="tab7" label="Soniox">
     1. Enter an API key in the **API key** field. For more information on Soniox API keys, read the [Soniox Quick Start Guide](https://soniox.com/docs/speech-recognition/quickstart/index.html#authenticate).
+
+  </TabItem>
+  <TabItem value="tab8" label="Deepgram">
+    1. Select **Use on-prem Deepgram container**.
+    2. Enter the container URI for TTS in the **Container URI** field.
+    3. Select **Use TLS**, if required.
+
+  </TabItem>
+  <TabItem value="tab9" label="Nuance">
+    1. Select **Use on-prem TTS** and enter the IP port in the **TTS URI** field.
+    2. Select **Use on-prem STT** to enter the IP port in the **STT URI** field.
+  
+  </TabItem>
+  <TabItem value="tab10" label="Microsoft Azure Speech Services">
+    1. Select **Use Azure Docker container (on-prem)**.
+    2. Enter the container URL for TTS in the **Container URL for TTS** field.
+    3. Enter the container URL for STT in the **Container URL for STT** field.
+    4. Enter an API key in the **Subscription key** field, if required. Whether the subscription key is required will depend on your custom on-premises setup. For more information on Microsoft Azure Subscriptions, read the [Subscriptions in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-subscriptions) documentation.
+
+  </TabItem>
+</Tabs>
+To configure the connection for a cloud-based speech service:
+
+<speechServicesHowto />
 
 Save your changes by clicking **Save**.
 Once you created a speech service, add this service to the [Application](./applications.md).
 
 ## On-Premises Speech Services
 
-{! _includes/voice-gateway/speech-services-howto.md !}
-
-=== "Deepgram"
-    1. Select **Use on-prem Deepgram container**.
-    2. Enter the container URI for TTS in the **Container URI** field.
-    3. Select **Use TLS**, if required.
-
-=== "Nuance"
-    1. Select **Use on-prem TTS** and enter the IP port in the **TTS URI** field.
-    2. Select **Use on-prem STT** to enter the IP port in the **STT URI** field.
-  
-=== "Microsoft Azure Speech Services"
-    1. Select **Use Azure Docker container (on-prem)**.
-    2. Enter the container URL for TTS in the **Container URL for TTS** field.
-    3. Enter the container URL for STT in the **Container URL for STT** field.
-    4. Enter an API key in the **Subscription key** field, if required. Whether the subscription key is required will depend on your custom on-premises setup. For more information on Microsoft Azure Subscriptions, read the [Subscriptions in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-subscriptions) documentation.
+<speechServicesHowto />
 
 Save your changes by clicking **Save**.
 Once you created a speech service, add this service to the [Application](./applications.md).

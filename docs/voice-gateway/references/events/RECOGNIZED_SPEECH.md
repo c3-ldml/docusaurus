@@ -10,7 +10,7 @@ The user's answer was recognized by the AI Agent.
 
 To test a payload with the `RECOGNIZED_SPEECH` event, you can use an empty Flow.
 
-Input: Start a call via the Interaction Panel by clicking ![phone](../../../_assets/icons/phone.svg) **> Start Call**. When the call starts, say "Hello". 
+Input: Start a call via the Interaction Panel by clicking ![phone](../../../../static/img/_assets/icons/phone.svg) **> Start Call**. When the call starts, say "Hello". 
 
 Payload:
 

@@ -10,7 +10,7 @@ The DTMF code was recognized by the AI Agent.
 
 To test a payload with the `RECOGNIZED_DTMF` event, you can use a Flow with only one **Set Session Config** Node.
 
-Input: Add the **Set Session Config** Node to the Flow editor and enable the **Capture DTMF Signals** setting in the Node. Start a call via the Interaction Panel by clicking ![phone](../../../_assets/icons/phone.svg) **> Start Call**, then enter `#`.
+Input: Add the **Set Session Config** Node to the Flow editor and enable the **Capture DTMF Signals** setting in the Node. Start a call via the Interaction Panel by clicking ![phone](../../../../static/img/_assets/icons/phone.svg) **> Start Call**, then enter `#`.
 
 Payload:
 

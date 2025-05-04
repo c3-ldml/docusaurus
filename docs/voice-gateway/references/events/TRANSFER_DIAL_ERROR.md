@@ -6,7 +6,7 @@ hidden: false
 
 # TRANSFER_DIAL_ERROR
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.61-blue.svg)](../../../release-notes/4.61.md)
+<a href="Added"><img src="https://img.shields.io/badge/Added_in-v4.61-blue" alt="Version badge" /></a>
 
 This event indicates that a call transfer attempt using the `Dial` method resulted in an error or failure. 
 

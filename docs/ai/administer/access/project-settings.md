@@ -72,8 +72,12 @@ On the **Flows** page, click **Train all Flows**.
 If the **Train all Flows** button is not enabled for your environment,
 specify the `FEATURE_TRAIN_ALL_PROJECT_FLOWS` feature flag in the `values.yaml` file for on-premises installations or contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
 
-!!! warning "English Locale Limitations"
-    The Enable Case-Sensitive Intent Mapping feature is not implemented for English locales such as `US`, `Indian`, `UK`, `Canadian`, and `Australian`. However, you can use this feature with the `Universal` locale, which also supports general English.
+:::warning[English Locale Limitations]
+
+  The Enable Case-Sensitive Intent Mapping feature is not implemented for English locales such as `US`, `Indian`, `UK`, `Canadian`, and `Australian`. However, you can use this feature with the `Universal` locale, which also supports general English.
+
+:::
+
 
 ### Attached Flow Intent Mapping Priority
 
@@ -103,9 +107,13 @@ Score from which on an Intent is considered confirmed if a confirmation sentence
 
 Score from which on an Intent is considered confirmed or marked for reconfirmation if a reconfirmation sentence is set. Value between 0 and 1.
 
-!!! danger "Adjust the Reconfirmation Threshold"
-    The confidence threshold has **no effect unless the intent uses confirmation sentences**.
-    The Reconfirmation Threshold is your lower confidence bound — you must set it in addition to the Confidence Threshold. **Intent scores above the reconfirmation threshold are confirmed or marked for reconfirmation.**
+:::danger[Adjust the Reconfirmation Threshold]
+
+  The confidence threshold has **no effect unless the intent uses confirmation sentences**.
+  The Reconfirmation Threshold is your lower confidence bound — you must set it in addition to the Confidence Threshold. **Intent scores above the reconfirmation threshold are confirmed or marked for reconfirmation.**
+
+:::
+
 
 ## Analytics
 

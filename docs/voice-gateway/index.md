@@ -10,95 +10,99 @@ hide:
 
 _Cognigy Voice Gateway_ is an AI-based solution to deploy voice AI Agents for automated phone conversations. It is integrated with the Cognigy.AI platform to connect voice AI Agents to your contact center. Voice Gateway is an add-on product to Cognigy.AI and cannot be used independently.
 
-<div class="grid cards" markdown>
+<GridCards>
+  <GridCard
+    title="About Voice Gateway"
+    description="Start with our beginner's articles if you're new to Cognigy Voice Gateway or considering purchasing this product"
+    icon="wave"
+    links={[
+      { text: "Overview", href: "overview.md" },
+      { text: "Features and Capabilities", href: "technical-capabilities.md" },
+      { text: "Getting Started", href: "getting-started.md" }
+    ]}
+  />
 
--   :wave:{ .lg .middle } __About Voice Gateway__
+  <GridCard
+    title="Build Voice Agents"
+    description="Create voice agents using voice Nodes, verbs, and Endpoints"
+    icon="tools"
+    links={[
+      { text: "Voice Gateway Nodes", href: "../ai/build/node-reference/voice/voice-gateway/overview.md" },
+      { text: "Voice Gateway Verbs", href: "references/verbs/overview.md" },
+      { text: "Voice Gateway Endpoint", href: "../ai/deploy/endpoint-reference/voice-gateway.md" }
+    ]}
+  />
 
-    ---
+  <GridCard
+    title="Configure Voice Calls"
+    description="Use the Voice Gateway Self-Service Portal to configure call routing and connect this configuration to your voice agent"
+    icon="speaking_head"
+    links={[
+      { text: "Guide", href: "webapp/overview.md" }
+    ]}
+  />
 
-    Start with our beginner's articles if you're new to Cognigy Voice Gateway or considering purchasing this product
+  <GridCard
+    title="Outbound Calls"
+    description="Create and Manage Outbound Calls"
+    icon="material-phone-outgoing-outline"
+    links={[
+      { text: "Create Outbound Calls", href: "creating-outbound-calls.md" },
+      { text: "Outbound Call Routing", href: "webapp/outbound-call-routing.md" },
+      { text: "Outbound Authentication", href: "webapp/carriers.md#outbound-authentication" }
+    ]}
+  />
 
-    [:octicons-arrow-right-24: Overview](overview.md)<br>
-    [:octicons-arrow-right-24: Features and Capabilities](technical-capabilities.md)<br>
-    [:octicons-arrow-right-24: Getting Started](getting-started.md)
-    
+  <GridCard
+    title="Record and Monitor Call Data"
+    description="Record and analyze call data to identify areas for improvement"
+    icon="record_button"
+    links={[
+      { text: "Alerts", href: "webapp/alerts.md" },
+      { text: "Call Recordings", href: "webapp/recent-calls.md#call-recordings" },
+      { text: "Call Tracing", href: "webapp/recent-calls.md#recent-calls" },
+      { text: "Call Events", href: "references/events/overview.md" }
+    ]}
+  />
 
--   :tools:{ .lg .middle } __Build Voice Agents__
+  <GridCard
+    title="Call Failure Handling"
+    description="Diagnose and resolve call issues"
+    icon="warning"
+    links={[
+      { text: "Call Forwarding", href: "webapp/applications.md#call-forwarding" },
+      { text: "Add Backup Providers", href: "webapp/applications.md#add-additional-tts-and-stt-vendor" },
+      { text: "TTS Prompt Caching", href: "webapp/accounts.md#tts-prompt-caching" }
+    ]}
+  />
 
-    ---
+  <GridCard
+    title="Supported Providers"
+    description="Use available SIP Trunk and speech providers, create a custom speech provider if needed"
+    icon="information_source"
+    links={[
+      { text: "SIP Trunk Providers", href: "references/sip-trunk-providers.md" },
+      { text: "Speech Providers", href: "references/tts-and-stt-vendors.md" },
+      { text: "Create a Custom Speech Provider", href: "webapp/speech-services.md#add-a-custom-speech-vendor" }
+    ]}
+  />
 
-    Create voice agents using voice Nodes, verbs, and Endpoints
+  <GridCard
+    title="Administer"
+    description="Create and administer users in the Voice Gateway Self-Service Portal"
+    icon="gear"
+    links={[
+      { text: "Users", href: "webapp/users.md" }
+    ]}
+  />
 
-    [:octicons-arrow-right-24: Voice Gateway Nodes](../ai/build/node-reference/voice/voice-gateway/overview.md)<br>
-    [:octicons-arrow-right-24: Voice Gateway Verbs](references/verbs/overview.md)<br>
-    [:octicons-arrow-right-24: Voice Gateway Endpoint](../ai/deploy/endpoint-reference/voice-gateway.md)<br>
-
--   :speaking_head:{ .lg .middle } __Configure Voice Calls__
-
-    ---
-
-    Use the Voice Gateway Self-Service Portal to configure call routing
-    and connect this configuration to your voice agent
-
-    [:octicons-arrow-right-24: Guide](webapp/overview.md)<br>
-
--   :material-phone-outgoing-outline:{ .lg .middle } __Outbound Calls__
-
-    ---
-
-    Create and Manage Outbound Calls
-
-    [:octicons-arrow-right-24: Create Outbound Calls](creating-outbound-calls.md)<br>
-    [:octicons-arrow-right-24: Outbound Call Routing](webapp/outbound-call-routing.md)<br>
-    [:octicons-arrow-right-24: Outbound Authentication](webapp/carriers.md#outbound-authentication)
-
--   :record_button:{ .lg .middle } __Record and Monitor Call Data__
-
-    ---
-
-    Record and analyze call data to identify areas for improvement
-
-    [:octicons-arrow-right-24: Alerts](webapp/alerts.md)<br>
-    [:octicons-arrow-right-24: Call Recordings](webapp/recent-calls.md#call-recordings)<br>
-    [:octicons-arrow-right-24: Call Tracing](webapp/recent-calls.md#recent-calls)<br>
-    [:octicons-arrow-right-24: Call Events](references/events/overview.md)
-
--   :warning:{ .lg .middle } __Call Failure Handling__
-
-    ---
-
-    Diagnose and resolve call issues
-
-    [:octicons-arrow-right-24: Call Forwarding](webapp/applications.md#call-forwarding)<br>
-    [:octicons-arrow-right-24: Add Backup Providers](webapp/applications.md#add-additional-tts-and-stt-vendor)<br>
-    [:octicons-arrow-right-24: TTS Prompt Caching](webapp/accounts.md#tts-prompt-caching)
-
-
--   :information_source:{ .lg .middle } __Supported Providers__
-
-    ---
-
-    Use available SIP Trunk and speech providers, create a custom speech provider if needed
-
-    [:octicons-arrow-right-24: SIP Trunk Providers](references/sip-trunk-providers.md)<br>
-    [:octicons-arrow-right-24: Speech Providers](references/tts-and-stt-vendors.md)<br>
-    [:octicons-arrow-right-24: Create a Custom Speech Provider](webapp/speech-services.md#add-a-custom-speech-vendor)
-
--   :gear:{ .lg .middle } __Administer__
-
-    ---
-
-    Create and administer users in the Voice Gateway Self-Service Portal
-
-    [:octicons-arrow-right-24: Users](webapp/users.md)
-
--   :books:{ .lg .middle } __References__
-
-    --- 
-
-    For additional information, use the Voice Gateway references
-
-    [:octicons-arrow-right-24: SIP Response Codes](references/sip-response-codes.md)<br>
-    [:octicons-arrow-right-24: Voice Gateway Events](references/events/overview.md)
-
-</div>
+  <GridCard
+    title="References"
+    description="For additional information, use the Voice Gateway references"
+    icon="books"
+    links={[
+      { text: "SIP Response Codes", href: "references/sip-response-codes.md" },
+      { text: "Voice Gateway Events", href: "references/events/overview.md" }
+    ]}
+  />
+</GridCards>

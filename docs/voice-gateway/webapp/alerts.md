@@ -13,7 +13,7 @@ To view alerts, select **Alerts** in the left-side menu of the Voice Gateway Sel
 Note that you can only filter by a maximum of the last 7 days.
 
 <figure>
-  <img class="image-center"  src="../../../_assets/voice-gateway/VG-webapp-alerts.png" width="60%"/>
+  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-alerts.png" width="60%"/>
   <figcaption>Alerts</figcaption>
 </figure>
 

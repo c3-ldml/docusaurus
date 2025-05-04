@@ -20,7 +20,7 @@ Once Helm releases are successfully installed, you can open a web-browser and vi
 You should be able to see the login screen of Voice Gateway WebApp:
 
 <figure>
-  <img class="image-center" src="../../../_assets/voice-gateway/VG-login.png" width="90%" />
+  <img class="image-center" src="../../../static/img/_assets/voice-gateway/VG-login.png" width="90%" />
   <figcaption>Login screen of Voice Gateway WebApp</figcaption>
 </figure>
 

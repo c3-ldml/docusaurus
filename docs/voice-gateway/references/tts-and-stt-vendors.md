@@ -7,7 +7,7 @@ hidden: false
 
 # TTS and STT Vendors
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../../release-notes/4.70.md)
+<a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.70-blue" alt="Version badge" /></a>
 
 The table below shows the cloud-based and on-premises TTS (Text-to-Speech) and STT (Speech-to-Text) providers supported by Cognigy Voice Gateway.
 

@@ -399,7 +399,8 @@ const sidebars: SidebarsConfig = {
                 'ai/empower/nlu/intents/reject-intents',
                 'ai/empower/nlu/intents/rule-intents',
                 'ai/empower/nlu/intents/trigger-intent',
-                'ai/empower/nlu/intents/yes-no-intents'
+                'ai/empower/nlu/intents/yes-no-intents',
+                'ai/empower/nlu/intents/intent-trainer'
               ]
             },
             {
@@ -525,6 +526,43 @@ const sidebars: SidebarsConfig = {
             },
             'ai/empower/knowledge-ai/distance-value-change-after-migration'
           ]
+        },
+        {
+          type: 'category',
+          label: 'Developer Reference',
+          items: [
+            'ai/empower/developers/api-and-cli',
+            'ai/empower/developers/client-libraries',
+            'ai/empower/developers/extension-framework'
+          ]
+        }
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Analyze',
+      items: [
+        'ai/analyze/overview',
+        {
+          type: 'category',
+          label: 'Collecting Data',
+          items: [
+            'ai/analyze/collecting-data',
+            'ai/analyze/user-and-session-identification'
+          ]
+        },
+        'ai/analyze/insights',
+        'ai/analyze/odata',
+        'ai/analyze/call-tracing',
+        'ai/analyze/contact-profiles',
+        {
+          type: 'category',
+          label: 'Goals and Tasks',
+          items: [
+            'ai/analyze/goals-and-tasks/overview',
+            'ai/analyze/goals-and-tasks/tasks',
+            'ai/analyze/goals-and-tasks/goals'
+          ]
         }
       ]
     },
@@ -577,6 +615,60 @@ const sidebars: SidebarsConfig = {
         },
         'ai/administer/limitations',
         'ai/administer/billing'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Install, Configure, and Migrate',
+      items: [
+        'ai/installation/access-to-cognigy-ai',
+        'ai/installation/about',
+        'ai/installation/browser-requirements',
+        'ai/installation/architecture',
+        {
+          type: 'category',
+          label: 'On-Premises',
+          items: [
+            'ai/installation/overview',
+            'ai/installation/version-compatibility-matrix',
+            'ai/installation/prerequisites',
+            'ai/installation/pre-installation-checklist',
+            'ai/installation/installation-process',
+            'ai/installation/reset-init-user-credentials',
+            'ai/installation/backups',
+            {
+              type: 'category',
+              label: 'Upgrade and Migration Guides',
+              items: [
+                'ai/installation/migration/overview',
+                'ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration',
+                'ai/installation/migration/kustomize-to-helm-migration',
+                'ai/installation/migration/efs-provisioner-to-efs-csi-migration',
+                'ai/installation/migration/azure-file-to-azure-csi-migration',
+                'ai/installation/migration/from-nlu-v1-to-v2-migration',
+                'ai/installation/migration/single-replica-redis-to-redis-ha-migration',
+                'ai/installation/migration/weaviate-upgrade-to-1.22.5',
+                'ai/installation/migration/from-weaviate-to-qdrant'
+              ]
+            }
+          ]
+        },
+        {
+          type: 'category',
+          label: 'SaaS',
+          items: [
+            'ai/installation/saas-service-health',
+            'ai/installation/ip-ranges-shared-environments'
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Single Sign-on (SSO)',
+          items: [
+            'ai/installation/single-sign-on-saml2',
+            'ai/installation/single-signin-openid-connect'
+          ]
+        }
       ]
     }
   ],

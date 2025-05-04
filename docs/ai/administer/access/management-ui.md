@@ -6,7 +6,7 @@ hidden: false
 
 # Management UI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.92-blue.svg)](../../../release-notes/4.92.md)
+<a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.92-blue" alt="Version badge" /></a>
 
 The Cognigy Management UI is an additional product originally developed as a Cognigy internal tool for managing our own cloud installations. You need to install it in addition to our actual product in order to use it.
 
@@ -27,7 +27,7 @@ With the use of organizations, you can use your own Cognigy.AI installation, e.g
 The following figure shows a screenshot of what this product looks like.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/mui.png" width="100%" />
   <figcaption> The Cognigy.AI Management UI</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ Here you can add new users to the system. A user needs to get assigned to an **o
 - select the organization
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui-2.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/mui-2.png" width="100%" />
   <figcaption>Creating a new user is simple</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ If you click a user, the user details page opens. On the user details page, you 
 - Disable or delete the user, or update the user's password by clicking ![vertical-ellipsis](https://docs.cognigy.com/_assets/icons/vertical-ellipsis.svg) and selecting the respective option.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui-3.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/mui-3.png" width="100%" />
   <figcaption> Details of a user</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ You can block user impersonation as follows:
 This view presents all organizations that exist within the system. Each installation has at least one organization that will be created automatically. This initial organization is called **defaultOrg-xxx**. Have a look at the following figure.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui-4.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/mui-4.png" width="100%" />
   <figcaption> All organizations within the system</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ If you have your own Cognigy.AI installation, you might want to schedule mainten
 Only one system message can exist at a time. Such a message has an actual message text and a **valid until** date. The message will be displayed on all UI clients as long as the message is valid. It will automatically varnish when it is expired.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui-5.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/mui-5.png" width="100%" />
   <figcaption>Creating a new system message</figcaption>
 </figure>
 
@@ -112,7 +112,7 @@ With version 3.4.0 of Cognigy.AI, we have introduced quotas and limits on an org
 In the menu, select **Change Organisation Quotas**.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/mui-6.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/mui-6.png" width="100%" />
   <figcaption>Configuring quotas & limits for an organization</figcaption>
 </figure>
 
@@ -135,7 +135,7 @@ It is also possible to configure the password policies of an organization in the
 In the menu, select **Change Password Policy**.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/password-policy.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/password-policy.png" width="100%" />
   <figcaption>Configuring a Password Policy for an organization</figcaption>
 </figure>
 
@@ -160,7 +160,7 @@ It is possible to set the data privacy settings of an organization in the Manage
 In the menu, select **Change Data Privacy Settings**
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/docs-mngmt-org-data-privacy.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/docs-mngmt-org-data-privacy.png" width="100%" />
   <figcaption>Configuring Data Privacy Settings for an organization</figcaption>
 </figure>
 
@@ -199,7 +199,7 @@ It is possible to configure when certain sensitive data expires and is deleted f
 In the menu, select **Change Expiration Values**.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/ai/administer/access/exp-values.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/ai/administer/access/exp-values.png" width="100%" />
   <figcaption> Configuring the expiration values for sensitive data in an Organization</figcaption>
 </figure>
 

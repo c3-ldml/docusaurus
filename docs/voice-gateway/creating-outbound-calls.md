@@ -8,6 +8,10 @@ tags:
   - Outbound
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Create Outbound Calls 
 
 _Outbound calls_ are calls initiated by Voice Gateway to an external endpoint, such as a phone number, call center, or another system capable of handling voice communication.
@@ -34,11 +38,8 @@ This token is filled with an [API key value](webapp/accounts.md#account-level-ap
 - [Advanced Configuration Request](#advanced-configuration-request)
 
 #### Basic Configuration Request
-
-The basic configuration provides details for initiating and managing calls, enabling the system to establish a connection between the caller and the callee.
-It also includes call duration, handling unanswered calls, and attaching relevant metadata.
-
-=== "cURL"
+<Tabs>
+  <TabItem value="tab1" label="cURL" default>
 
     ```text
     curl --location --request POST 'https://<base_url>/v1/Accounts/<account_sid>/Calls' \
@@ -57,7 +58,8 @@ It also includes call duration, handling unanswered calls, and attaching relevan
     }'
     ```
 
-=== "JSON"
+  </TabItem>
+  <TabItem value="tab2" label="JSON">
 
     ```JSON
     POST /v1/Accounts/<account_sid>/Calls HTTP/1.1
@@ -77,37 +79,8 @@ It also includes call duration, handling unanswered calls, and attaching relevan
     }
     ```
 
-The following parameters can be provided in the request body:
-
-| Parameter                 | Type                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Required |
-|---------------------------|-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| application_sid           | String                                              | The application to invoke when the call is answered.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Yes      |
-| from                      | String                                              | The user portion that identifies the caller within the domain. The user portion follows the format: `<sip:user@host>`, where `user` can be:<br>- A username, for example, `<sip:john@host>`. <br>- A phone number (E.164 format), for example, `<sip:+1234567890@host>`. <br>- A unique identifier, for example, `<sip:device001@host>`.                                                                                                                                                                                                   | Yes      |
-| fromHost                  | String                                              | The domain of the caller, which is a part of the SIP address included in the `From` header of a SIP request. The domain follows the format: `<sip:user@host>`. For example, `<sip:user@cognigy.cloud>`, where `cognigy.cloud` is the domain where the caller's SIP service is hosted.                                                                                                                                                                                                                                                      | No       |
-| callerName                | String                                              | A descriptive caller name that appears as the display name in a SIP request. This name is included in the `From` header, alongside the SIP address, in the following format: `From: "<callerName>" <sip:user@host>`. For example, `"John Doe" <sip:user@cognigy.cloud>`, where `"John Doe"` is the caller name and `<sip:user@cognigy.cloud>` is the SIP address.                                                                                                                                                                          | No       |
-| to                        | [TargetType](references/verbs/dial.md#target-types) | The destination target, either a phone number or a SIP URI.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Yes      |
-| timeout                   | Number                                              | The time the system waits for an answer before considering the call unanswered. The default value is 60 seconds.                                                                                                                                                                                                                                                                                                                                                                                                                           | No       |
-| tag                       | Object                                              | An object containing key-value pairs of metadata to be attached to this call. This metadata can be used for further call analysis, allowing you to track call details, identify patterns, and generate insightful reports.                                                                                                                                                                                                                                                                                                                 | No       |
-| headers                   | Object                                              | An object containing custom SIP headers that can be applied to outbound call attempts. These headers are added alongside the system (default) headers in the SIP request. Custom SIP headers provide more control over the call setup process, such as adjusting authentication, routing, or other specific SIP parameters. For example, an custom header could be `P-Preferred-Identity: <sip:+123456@sip.cognigy.cloud>`, where the caller's preferred identity is the specified phone number or SIP address to present during the call. | No       |
-| speech_synthesis_vendor   | String                                              | The vendor responsible for the speech synthesis service (Text-to-Speech, TTS). For example, `microsoft`.                                                                                                                                                                                                                                                                                                                                                                                                                                   | No       |
-| speech_synthesis_voice    | String                                              | The specific voice to be used for speech synthesis. For example, `de-DE-SeraphinaMultilingualNeural`.                                                                                                                                                                                                                                                                                                                                                                                                                                      | No       |
-| speech_synthesis_language | String                                              | The language in which the speech should be synthesized. For example, `en-US` for American English, `es-ES` for Spanish.                                                                                                                                                                                                                                                                                                                                                                                                                    | No       |
-| amd                       | Object ([AMD](references/verbs/amd.md))             | The Automatic Machine Detection (AMD) feature, which identifies whether a human or a machine answered a call.                                                                                                                                                                                                                                                                                                                                                                                                                              | No       |
-| notifyUrl | String/Object | An additional HTTP or WebSocket hook to receive status updates about the call, used alongside the Call Status Webhook in the application. This parameter can be configured as a simple URL (String) for the default POST request or as an object `{ "url": "", "method": "" }` to specify a different method. The choice between HTTP and WebSocket depends on your specific requirements.  The most common choice is a standard HTTP hook, but a WebSocket URL can be used if desired, as it is supported for internal communication with Cognigy.AI. | No |
-
-#### Advanced Configuration Request
-
-The advanced configuration provides a range of features to enhance call handling and management. It includes notifications, interaction hooks, header manipulation and transcription capabilities.
-
-In the example below,
-we enable the [Answering Machine Detection](references/verbs/amd.md) feature
-using the `amd` parameter
-and use the `actionHook` parameter to send the events to the [Webhook](https://webhook.site/) site.
-Via `timeout`, we define a maximum ringing time. If the call is not answered within this time, Voice Gateway stops calling (see the [NO_ANSWER](references/events/NO_ANSWER.md) event).
-We include tags in the `tag` parameter to send custom information about the user,
-such as a custom object, as well as `headers` to send custom headers.
-
-=== "cURL"
+  </TabItem>
+  <TabItem value="tab3" label="cURL">
 
     ```text
     curl --location --request POST 'https: //<base_url>/v1/Accounts/<account_sid>/Calls' \
@@ -146,7 +119,8 @@ such as a custom object, as well as `headers` to send custom headers.
     }'
     ```
 
-=== "JSON"
+  </TabItem>
+  <TabItem value="tab4" label="JSON">
 
     ```JSON
     POST /v1/Accounts/<account_sid>/Calls HTTP/1.1
@@ -187,6 +161,42 @@ such as a custom object, as well as `headers` to send custom headers.
     ```
 
 
+
+  </TabItem>
+</Tabs>
+
+The basic configuration provides details for initiating and managing calls, enabling the system to establish a connection between the caller and the callee.
+It also includes call duration, handling unanswered calls, and attaching relevant metadata.
+
+The following parameters can be provided in the request body:
+
+| Parameter                 | Type                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Required |
+|---------------------------|-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| application_sid           | String                                              | The application to invoke when the call is answered.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Yes      |
+| from                      | String                                              | The user portion that identifies the caller within the domain. The user portion follows the format: `<sip:user@host>`, where `user` can be:<br />- A username, for example, `<sip:john@host>`. <br />- A phone number (E.164 format), for example, `<sip:+1234567890@host>`. <br />- A unique identifier, for example, `<sip:device001@host>`.                                                                                                                                                                                                   | Yes      |
+| fromHost                  | String                                              | The domain of the caller, which is a part of the SIP address included in the `From` header of a SIP request. The domain follows the format: `<sip:user@host>`. For example, `<sip:user@cognigy.cloud>`, where `cognigy.cloud` is the domain where the caller's SIP service is hosted.                                                                                                                                                                                                                                                      | No       |
+| callerName                | String                                              | A descriptive caller name that appears as the display name in a SIP request. This name is included in the `From` header, alongside the SIP address, in the following format: `From: "<callerName>" <sip:user@host>`. For example, `"John Doe" <sip:user@cognigy.cloud>`, where `"John Doe"` is the caller name and `<sip:user@cognigy.cloud>` is the SIP address.                                                                                                                                                                          | No       |
+| to                        | [TargetType](references/verbs/dial.md#target-types) | The destination target, either a phone number or a SIP URI.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Yes      |
+| timeout                   | Number                                              | The time the system waits for an answer before considering the call unanswered. The default value is 60 seconds.                                                                                                                                                                                                                                                                                                                                                                                                                           | No       |
+| tag                       | Object                                              | An object containing key-value pairs of metadata to be attached to this call. This metadata can be used for further call analysis, allowing you to track call details, identify patterns, and generate insightful reports.                                                                                                                                                                                                                                                                                                                 | No       |
+| headers                   | Object                                              | An object containing custom SIP headers that can be applied to outbound call attempts. These headers are added alongside the system (default) headers in the SIP request. Custom SIP headers provide more control over the call setup process, such as adjusting authentication, routing, or other specific SIP parameters. For example, an custom header could be `P-Preferred-Identity: <sip:+123456@sip.cognigy.cloud>`, where the caller's preferred identity is the specified phone number or SIP address to present during the call. | No       |
+| speech_synthesis_vendor   | String                                              | The vendor responsible for the speech synthesis service (Text-to-Speech, TTS). For example, `microsoft`.                                                                                                                                                                                                                                                                                                                                                                                                                                   | No       |
+| speech_synthesis_voice    | String                                              | The specific voice to be used for speech synthesis. For example, `de-DE-SeraphinaMultilingualNeural`.                                                                                                                                                                                                                                                                                                                                                                                                                                      | No       |
+| speech_synthesis_language | String                                              | The language in which the speech should be synthesized. For example, `en-US` for American English, `es-ES` for Spanish.                                                                                                                                                                                                                                                                                                                                                                                                                    | No       |
+| amd                       | Object ([AMD](references/verbs/amd.md))             | The Automatic Machine Detection (AMD) feature, which identifies whether a human or a machine answered a call.                                                                                                                                                                                                                                                                                                                                                                                                                              | No       |
+| notifyUrl | String/Object | An additional HTTP or WebSocket hook to receive status updates about the call, used alongside the Call Status Webhook in the application. This parameter can be configured as a simple URL (String) for the default POST request or as an object `{ "url": "", "method": "" }` to specify a different method. The choice between HTTP and WebSocket depends on your specific requirements.  The most common choice is a standard HTTP hook, but a WebSocket URL can be used if desired, as it is supported for internal communication with Cognigy.AI. | No |
+
+#### Advanced Configuration Request
+
+The advanced configuration provides a range of features to enhance call handling and management. It includes notifications, interaction hooks, header manipulation and transcription capabilities.
+
+In the example below,
+we enable the [Answering Machine Detection](references/verbs/amd.md) feature
+using the `amd` parameter
+and use the `actionHook` parameter to send the events to the [Webhook](https://webhook.site/) site.
+Via `timeout`, we define a maximum ringing time. If the call is not answered within this time, Voice Gateway stops calling (see the [NO_ANSWER](references/events/NO_ANSWER.md) event).
+We include tags in the `tag` parameter to send custom information about the user,
+such as a custom object, as well as `headers` to send custom headers.
 
 ### Response
 

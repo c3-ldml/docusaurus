@@ -10,7 +10,7 @@ tags:
 
 # Global Resources
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.97-blue.svg)](../../../../../release-notes/4.97.md)
+<a href="Added"><img src="https://img.shields.io/badge/Added_in-v4.97-blue" alt="Version badge" /></a>
 
 _Global Resources_ are Cognigy.AI resources that you can assign to and share across different Projects in your organization. Global resources work similarly to their counterparts at Project level and have a similar [user interface as other resources](../../../../overview/user-interface/resource-pages.md).
 

@@ -33,10 +33,10 @@ Before that date, we strongly recommend migrating from the third-party AudioCode
 1. In the left-side menu of the Cognigy.AI interface, select the Project where you want to create a Voice Gateway Endpoint.
 2. In the left-side menu of the Project, go to **Deploy > Endpoints**.
 3. On the **Endpoints** page, click **+ New Endpoint**.
-4. In the **New Endpoint** section, do the following:<br>
-    1. Select the **Voice Gateway** Endpoint type.<br>
-    2. Add a unique name.<br>
-    3. Select a relevant voice Flow from the list.<br>
+4. In the **New Endpoint** section, do the following:<br />
+    1. Select the **Voice Gateway** Endpoint type.<br />
+    2. Add a unique name.<br />
+    3. Select a relevant voice Flow from the list.<br />
 5. Click **Save**.
 6. In the Endpoint, go to the **AudioCodes Compatibility Mode** section.
 7. Activate the **Enable AudioCodes Compatibility Mode** setting. This setting allows the Voice Gateway to treat your Flow with the AudioCodes Node as if it were a Flow with Voice Gateway Nodes, ensuring that the voice AI Agent works smoothly without interruptions.

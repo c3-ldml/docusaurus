@@ -7,14 +7,14 @@ hidden: false
 
 # Recent Calls
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../release-notes/4.60.md)
+<a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.60-blue" alt="Version badge" /></a>
 
 *Recent Calls* are calls of your [account](accounts.md). Voice Gateway provides general data about the calls, such as the Date, Direction, From, To, SIP Trunk, and Call Duration. 
 
 Account, Date, Direction, and Status can filter these calls. Note that you can only filter by a maximum of the last 30 days.
 
 <figure>
-  <img class="image-center"  src="../../../_assets/voice-gateway/VG-webapp-recent-calls.png" width="60%" />
+  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-recent-calls.png" width="60%" />
   <figcaption>Recent Calls</figcaption>
 </figure>
 
@@ -56,14 +56,18 @@ Additionally, Voice Gateway provides PCAP files, which can be downloaded in the 
 
 ## Call Tracing (Beta)
 
-!!! note
-    This feature is in Beta. The data displayed on the Tracing tab does not have persistent storage and may be lost at any time.
+:::note
 
-For inbound calls, you can analyze the captured media stream (log) to diagnose and troubleshoot voice quality issues by clicking the **Tracing** tab and viewing the report. This feature provides valuable insights into the duration of different actions during the call, such as speech recognition and connections. By reviewing the report, you can identify any delays or issues that occurred during these actions, helping you pinpoint potential areas of improvement in terms of performance and efficiency.
+  This feature is in Beta. The data displayed on the Tracing tab does not have persistent storage and may be lost at any time.
 
-To view details of the log step, click the duration indicator of this log.
+  For inbound calls, you can analyze the captured media stream (log) to diagnose and troubleshoot voice quality issues by clicking the **Tracing** tab and viewing the report. This feature provides valuable insights into the duration of different actions during the call, such as speech recognition and connections. By reviewing the report, you can identify any delays or issues that occurred during these actions, helping you pinpoint potential areas of improvement in terms of performance and efficiency.
 
-<img class="image-center"  src="../../../_assets/voice-gateway/tracing-details.png"  width="100%" />
+  To view details of the log step, click the duration indicator of this log.
+
+:::
+
+
+<img class="image-center"  src="../../../static/img/_assets/voice-gateway/tracing-details.png"  width="100%" />
 
 ## Call Recordings
 
@@ -77,7 +81,7 @@ When call recording is enabled, you can use the embedded media player to listen 
 
 With the included media player controls, scan the audio and download the recording locally.
 
-<img class="image-center"  src="../../../_assets/voice-gateway/audio-player.png"  width="100%" />
+<img class="image-center"  src="../../../static/img/_assets/voice-gateway/audio-player.png"  width="100%" />
 
 When you click highlighted STT and DTMF events, a new window will open, presenting the speech-to-text result along with specific parameters:
 
@@ -87,6 +91,6 @@ When you click highlighted STT and DTMF events, a new window will open, presenti
 - **Transcript** — the actual text generated from the speech. For example, `Today is Wednesday evening, ten-thirty PM`.
 - **Latency** — the time delay in processing the speech and providing the transcription result. Voice Gateway is waiting for a response from the transcript server.
 
-You can delete a call recording by clicking ![delete](../../_assets/voice-gateway/delete.svg). Note that this action will delete your file both from Voice Gateway and remote storage, for example, Amazon S3.
+You can delete a call recording by clicking ![delete](../../../static/img/_assets/voice-gateway/delete.svg). Note that this action will delete your file both from Voice Gateway and remote storage, for example, Amazon S3.
 
-To download a call recording, click ![download](../../_assets/voice-gateway/dowload.svg).
+To download a call recording, click ![download](../../../static/img/_assets/voice-gateway/dowload.svg).

@@ -5,14 +5,18 @@ description: "Version compatibility matrix for Cognigy Voice Gateway and Infrast
 hidden: false
 ---
 
+import onPremCompatibilityMatrixNote from '@site/docs/_includes/installation/_on-prem-compatibility-matrix-note.md';
+
+
+
 # Voice Gateway: Version Compatibility Matrix
 
 This matrix outlines the compatibility of Cognigy Voice Gateway versions with Cognigy infrastructure components,
 such as Kubernetes, MongoDB, and Redis.
 
-{! _includes/installation/on-prem-compatibility-matrix-note.md !}
+<onPremCompatibilityMatrixNote />
 
-| Voice Gateway /<br> Infra component | Kubernetes | PostgreSQL | Redis   | MySQL | Traefik | InfluxDB | Jaeger | Helm          |
+| Voice Gateway /<br /> Infra component | Kubernetes | PostgreSQL | Redis   | MySQL | Traefik | InfluxDB | Jaeger | Helm          |
 |-------------------------------------|------------|------------|---------|-------|---------|----------|--------|---------------|
 | 4.100                               | 1.23-1.32  | 14.12      | 7.4[^*] | 8.0   | 3.1.6   | 1.8      | 1.61   | 3.9 or higher |
 | 4.99                                | 1.23-1.32  | 14.12      | 7.4[^*] | 8.0   | 3.1.6   | 1.8      | 1.61   | 3.9 or higher |

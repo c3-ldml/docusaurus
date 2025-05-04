@@ -6,7 +6,7 @@ hidden: false
 
 # Accounts
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../release-notes/4.60.md)
+<a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.60-blue" alt="Version badge" /></a>
 
 *Accounts* are containers for resources such as [applications](applications.md), [carriers](carriers.md), and [speech services](speech-services.md) that are used to create and manage voice applications.
 
@@ -21,7 +21,7 @@ To create an account, in the left-side menu of the Voice Gateway Self-Service Po
 A user with the Account scope can view and edit only the account to which they belong.
 
 <figure>
-  <img class="image-center"  src="../../../_assets/voice-gateway/VG-webapp-accounts.png"  width="60%" />
+  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-accounts.png"  width="60%" />
   <figcaption>Accounts</figcaption>
 </figure>
 

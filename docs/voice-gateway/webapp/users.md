@@ -9,7 +9,7 @@ hidden: false
 _Users_ allow you to manage members in your account: create new members, edit, or delete existing ones. 
 
 <figure>
-  <img class="image-center"  src="../../../_assets/voice-gateway/VG-webapp-users.png"  width="60%" />
+  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-users.png"  width="60%" />
   <figcaption>Users</figcaption>
 </figure>
 
@@ -23,7 +23,7 @@ Depending on Cognigy Voice Gateway installation, members can have the following 
 
 ### Account
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../release-notes/4.62.md)
+<a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.62-blue" alt="Version badge" /></a>
 
 This scope includes basic operations with Voice Gateway entities, such as creating, editing, and deleting entities. 
 

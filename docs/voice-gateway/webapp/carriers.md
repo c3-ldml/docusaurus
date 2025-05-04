@@ -6,7 +6,7 @@ hidden: false
 
 # Carriers
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.80-blue.svg)](../../release-notes/4.80.md)
+<a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.80-blue" alt="Version badge" /></a>
 
 *Carriers* allow you to connect your SIP Trunk with Voice Gateway. 
 
@@ -15,11 +15,15 @@ There are two options on how the SIP Trunk can be added:
 - by going through the form and filling out all the fields.
 - by clicking **Select a predefined carrier** and selecting one of the pre-configured carriers. That will pre-fill all the fields with standard values.
 
-!!! warning
-    Users with an Account scope can only edit carriers they have created, as well as carriers created by other users with the same scope. They can still use and view carriers shared by Service providers or Admins.
+:::warning
+
+  Users with an Account scope can only edit carriers they have created, as well as carriers created by other users with the same scope. They can still use and view carriers shared by Service providers or Admins.
+
+:::
+
 
 <figure>
-  <img class="image-center"  src="../../../_assets/voice-gateway/VG-webapp-carriers.png"  width="60%" />
+  <img class="image-center"  src="../../../static/img/_assets/voice-gateway/VG-webapp-carriers.png"  width="60%" />
   <figcaption>Carriers</figcaption>
 </figure>
 
@@ -27,7 +31,7 @@ There are two options on how the SIP Trunk can be added:
 
 | Settings                    | Description                                                                                                                                                                                                 | Scope                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| Register status             | The current registration state of the Voice Gateway Carrier (client) with the SIP trunk provider (server). <br> This option is activated if ypu set up [Outbound Authentication](#outbound-authentication). | Account, Service Provider, Admin |
+| Register status             | The current registration state of the Voice Gateway Carrier (client) with the SIP trunk provider (server). <br /> This option is activated if ypu set up [Outbound Authentication](#outbound-authentication). | Account, Service Provider, Admin |
 | Name                        | SIP Trunk Name.                                                                                                                                                                                             | Account, Service Provider, Admin |
 | Select a predefined carrier | Pre-configured list of SIP Trunks.                                                                                                                                                                          | Account, Service Provider, Admin |
 | Active                      | Enable or disable the carrier.                                                                                                                                                                              | Account, Service Provider, Admin |
@@ -50,7 +54,7 @@ To set up the outbound authentication process, follow these steps:
 2. Go to the **Outbound Authentication** section and activate its setting.
 3. Fill in the following fields:
     - **Username** — the name of the user required for outbound call authentication.
-    - **Password** — the user password required for outbound call authentication.<br> These credentials are used by the SIP client to authenticate with the SIP trunk provider when making outbound calls.
+    - **Password** — the user password required for outbound call authentication.<br /> These credentials are used by the SIP client to authenticate with the SIP trunk provider when making outbound calls.
 4. Activate the **Require SIP Register** setting. This setting indicates whether the SIP trunk provider requires SIP registration before allowing outbound calls. SIP registration is the process where the SIP client registers its location and availability with the SIP server.
 5. In the **SIP Realm** field, specify the domain associated with the SIP server's, for example, `sip.nexmo.com`.
 6. _(Optional)_ In the **SIP From User** field, specify the user of the SIP From header, indicating the message's sender. This field can contain the name or telephone number of the Voice Gateway Carrier.
@@ -76,7 +80,7 @@ To set up an SIP for outgoing calls, follow these steps:
 1. In the left-side menu of the Voice Gateway Self-Service Portal, select **Carriers**.
 2. Select the carrier you want to use for outbound communication.
 3. Go to the **SIP Gateways** section.
-4. Select an existing gateway you want to use for outbound communication or create a new one by clicking ![plus](../../_assets/voice-gateway/VG_plus_button.svg).
+4. Select an existing gateway you want to use for outbound communication or create a new one by clicking ![plus](../../../static/img/_assets/voice-gateway/VG_plus_button.svg).
 5. In the **Network Address** field, enter the Network Address, for example `12.345.678.9`.
 6. Enter the Port number in the **Port** field. The assigned Port is 5060 by default. For SIPS and SIP/TLS, set the Port to 5061.
 7. Select the **Outbound** option.
