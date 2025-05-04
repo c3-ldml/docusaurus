@@ -9,6 +9,10 @@ tags:
   - OpenAI models
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 import applyModel from '@site/docs/_includes/ai/generative-ai/_apply-model.md';
 
 
@@ -31,17 +35,15 @@ You can add a model using one of the following interfaces:
 - [GUI](#add-a-model-via-gui)
 - [API](#add-a-model-via-api)
 
-### Add a Model via GUI
-
-You can add a model provided by OpenAI to Cognigy.AI in **Build > LLM**. To add the model, you will need the following parameters:
-
-=== "Standard Model"
+<Tabs>
+  <TabItem value="tab1" label="Standard Model" default>
 
     | Parameter | Description                                                                                                                                                                                  |
     |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | apiKey    | Add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account. |
 
-=== "Custom Model"
+  </TabItem>
+  <TabItem value="tab2" label="Custom Model">
 
     | Parameter  | Description                                                                                                                                                                                                                                                                                                                                              |
     |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -49,6 +51,12 @@ You can add a model provided by OpenAI to Cognigy.AI in **Build > LLM**. To add 
     | Model Name | Enter the name of the model that you want to use as a custom model. To find model names, refer to the [Azure OpenAI Service models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models) documentation.<br />                                                                                                                             |
     | apiKey     | Add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.                                                                                                                                                             |
     
+
+  </TabItem>
+</Tabs>
+### Add a Model via GUI
+
+You can add a model provided by OpenAI to Cognigy.AI in **Build > LLM**. To add the model, you will need the following parameters:
 
 Apply changes. Check if the connection was set up by clicking **Test**.
 

@@ -5,6 +5,10 @@ description: "Auto Translation allows you to automatically translate messages be
 hidden: false
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 import CompatibilityWithMTProviders from '@site/docs/_includes/ai/resource/translation-and-localization/_compatibility-with-machine-translation-providers.md';
 import ConfigureMTProvider from '@site/docs/_includes/ai/resource/translation-and-localization/_configure-a-machine-translation-provider.md';
 import SwitchLocale from '@site/docs/_includes/ai/localization/_switch-a-locale.md';
@@ -32,15 +36,19 @@ Cognigy.AI has integrated _Automatic Translation_ capabilities to streamline the
 
 ## Configure a Machine Translation Provider
 
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
+    You can add, edit, and delete Locales in **Manage > Localization**. Also, you can copy their Reference ID.
+
+  </TabItem>
+  <TabItem value="tab2" label="API">
+    You can view, create, edit, and delete Locales using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--Locales-v2.0).
+
+  </TabItem>
+</Tabs>
 <ConfigureMTProvider />
 
 ## How to Use Automatic Translation
-
-=== "GUI"
-    You can add, edit, and delete Locales in **Manage > Localization**. Also, you can copy their Reference ID.
-
-=== "API"
-    You can view, create, edit, and delete Locales using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--Locales-v2.0).
 
 ### Machine Translation for Flow Localization
 

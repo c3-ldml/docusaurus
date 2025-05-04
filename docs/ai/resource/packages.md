@@ -10,6 +10,10 @@ tags:
 ---
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 
 # Packages
 
@@ -33,15 +37,19 @@ Packages can include the following Project resources:
 
 - Importing Packages from a newer version of Cognigy.AI into an older version may cause unexpected errors.
 - Cognigy.AI skips unsupported resources while importing a Package. For example, deprecated Endpoints or LLMs with outdated configuration schemas.
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
+     You can export and import Packages in **Manage > Packaging**. You can also export a resource as a Package from the respective resource page by selecting ![vertical-ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Export as Package**.
+
+  </TabItem>
+  <TabItem value="tab2" label="API">
+     You can view, create, and delete Packages using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Packages) as well as download and upload them.
+
+  </TabItem>
+</Tabs>
 - If you export a Package from a Project with [Extensions](extensions.md), you must install the respective Extensions in the target Project as well before importing the Package.
 
 ## Working with Packages
-
-=== "GUI"
-     You can export and import Packages in **Manage > Packaging**. You can also export a resource as a Package from the respective resource page by selecting ![vertical-ellipsis](../../../static/img/_assets/icons/vertical-ellipsis.svg) **> Export as Package**.
-
-=== "API"
-     You can view, create, and delete Packages using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Packages) as well as download and upload them.
 
 :::warning[Package Import]
 

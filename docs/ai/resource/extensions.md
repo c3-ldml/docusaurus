@@ -9,6 +9,10 @@ tags:
 ---
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 
 # Extensions
 
@@ -23,20 +27,25 @@ _Extensions_ are [Nodes](nodes/overview.md) for specific use cases that you can 
 - Extensions have a default 20-second timeout. You can change the timeout by doing the following:
     - For dedicated SaaS installations, contact [Cognigy technical support](../../help/get-help.md) to change the timeout.
     - For on-premises installations, change the environment variable as described in the [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml).
-- Extensions can make up to 10 API calls per execution.
-
-## Working with Extensions
-
-=== "GUI"
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
     In **Manage > Extensions**, you can install, update, and uninstall Extensions from the Marketplace or [custom Extensions](#custom-extensions). Also, you can [mark your custom Extensions as trusted](#extension-performance).
 
     The Extension Marketplace is also available on [Cognigy's website](https://www.cognigy.com/marketplace#/).
 
-=== "CLI"
+  </TabItem>
+  <TabItem value="tab2" label="CLI">
     You can pull Extensions using the [Cognigy.AI CLI](https://github.com/Cognigy/cognigy-cli).
 
-=== "API"
+  </TabItem>
+  <TabItem value="tab3" label="API">
     You can view, delete, upload, and update Extensions using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Extensions-v2.0). Also, you can [mark your custom Extensions as trusted](#extension-performance).
+
+  </TabItem>
+</Tabs>
+- Extensions can make up to 10 API calls per execution.
+
+## Working with Extensions
 
 After you have installed an Extension, you can add it as a Node in the [Flow editor](flows/editor.md).
 

@@ -9,6 +9,10 @@ tags:
     - Locales
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 import SwitchLocale from '@site/docs/_includes/ai/localization/_switch-a-locale.md';
 
 # Localization
@@ -17,15 +21,19 @@ Cognigy.AI offers a robust localization feature for easy customization and conte
 
 ## Restrictions
 
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
+    You can add, edit, and delete Locales in **Manage > Localization**. Also, you can copy their Reference ID.
+
+  </TabItem>
+  <TabItem value="tab2" label="API">
+    You can view, create, edit, and delete Locales using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--Locales-v2.0).
+
+  </TabItem>
+</Tabs>
 - You can't change the primary Locale after you've selected it.
 
 ## How to Use
-
-=== "GUI"
-    You can add, edit, and delete Locales in **Manage > Localization**. Also, you can copy their Reference ID.
-
-=== "API"
-    You can view, create, edit, and delete Locales using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--Locales-v2.0).
 
 ### Localize a Flow
 

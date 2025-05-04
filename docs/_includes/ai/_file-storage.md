@@ -1,6 +1,7 @@
 
 
-=== "Azure Blob Storage Container"
+<Tabs>
+  <TabItem value="tab1" label="Azure Blob Storage Container" default>
     1. Make sure that you have access to [Azure Blob Storage Container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) and at least one container has been created, or [create a new one](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container). Note that the container must be publicly available; otherwise, users cannot upload files via the chat interface.
     2. Open the [Azure portal](https://portal.azure.com/#home). 
     3. In the **Azure services** section, select **Storage Accounts**.
@@ -20,7 +21,8 @@
         - **Account Key** — enter the key that you copied and saved previously.
     13. Click **Create**, then **Save**.
 
-=== "Amazon S3 Bucket"
+  </TabItem>
+  <TabItem value="tab2" label="Amazon S3 Bucket">
     1. Make sure that you have access to [Amazon S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) and that at least one bucket has been created, or [create a new one](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html). Note that the bucket must be publicly available; otherwise, users cannot upload files via the chat interface.
     2. Open the [Amazon S3 console](https://console.aws.amazon.com/s3/).
     3. On the **Amazon S3** page, go to the **General purpose buckets** tab.
@@ -43,7 +45,8 @@
         - **Bucket Name** — enter the name of the bucket that you copied and saved previously.
     15. Click **Create**, then **Save**.
 
-=== "Google Cloud Storage Bucket"
+  </TabItem>
+  <TabItem value="tab3" label="Google Cloud Storage Bucket">
     1. Make sure that you have access to [Google Cloud Storage](https://cloud.google.com/storage/docs/) and that at least one bucket has been created, or [create a new one](https://cloud.google.com/storage/docs/creating-buckets). Note that the bucket must be [publicly available](https://cloud.google.com/storage/docs/access-control/making-data-public); otherwise, users cannot upload files via the chat interface.
     2. Open the [Google Cloud console](https://console.cloud.google.com/).
     3. In the left-side menu, select **Cloud Storage > Buckets**.
@@ -68,3 +71,8 @@
         - **Client Email** — enter the email address that you copied and saved previously.
         - **Private Key** — enter the key that you copied and saved previously.
     14. Click **Create**, then **Save**.
+  </TabItem>
+</Tabs>
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+

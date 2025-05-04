@@ -6,6 +6,10 @@ hidden: false
 tags: ['Knowledge Store', 'Knowledge Management', 'Knowledge Sources', 'Information Retrieval', 'Knowledge Organization']
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Knowledge Store
 
 A _Knowledge Store_ provides a centralized and structured environment for managing and categorizing [Knowledge Sources](knowledge-source/knowledge-source.md). Knowledge Stores help streamline the knowledge management process by grouping related Knowledge Sources, making it easier to search and retrieve relevant information during Run-time. You can select Knowledge Stores in [Search Extract Output Nodes](../../build/node-reference/other-nodes/search-extract-output.md) to retrieve information from Knowledge Sources for your AI Agents.
@@ -17,18 +21,23 @@ A _Knowledge Store_ provides a centralized and structured environment for managi
 ## Restrictions
 
 - For versions 4.77 and earlier, you can create up to ten Knowledge Stores per Project.
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
+    You can view, create, edit, and delete Knowledge Stores in **Build > Knowledge**. Also, you can copy Knowledge Stores' Reference ID and export Knowledge Stores as Packages.
+
+  </TabItem>
+  <TabItem value="tab2" label="API">
+    You can view, create, edit, and delete Knowledge Stores using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--KnowledgeStores).
+
+  </TabItem>
+  <TabItem value="tab3" label="CLI">
+    You can create Knowledge Stores using the [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI/blob/main/KNOWLEDGE-AI-README.md).
+
+  </TabItem>
+</Tabs>
 - All Knowledge Stores within a Project use the same embedding model. After you [configure the embedding model of your first Knowledge Store](overview.md), all other Knowledge Stores will use the same embedding model. If you want to switch to a different embedding model, delete all existing Knowledge Stores in the current Project and create new ones, or [create a new Project](../../build/projects.md#create-a-project).
 
 ## Working with Knowledge Stores
-
-=== "GUI"
-    You can view, create, edit, and delete Knowledge Stores in **Build > Knowledge**. Also, you can copy Knowledge Stores' Reference ID and export Knowledge Stores as Packages.
-
-=== "API"
-    You can view, create, edit, and delete Knowledge Stores using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--KnowledgeStores).
-
-=== "CLI"
-    You can create Knowledge Stores using the [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI/blob/main/KNOWLEDGE-AI-README.md).
 
 ## More Information
 

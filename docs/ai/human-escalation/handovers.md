@@ -10,6 +10,10 @@ tags:
    - user inactivity detection and handling
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Handover Providers
 
 _Handover Providers_ connect AI Agents to contact centers, enabling seamless handoffs from automated conversations to human agents.
@@ -32,12 +36,16 @@ Cognigy.AI offers a range of tools to manage this escalation effectively:
     - [Set Handover Inactivity](../build/node-reference/service/set-handover-inactivity.md) — defines timeouts for inactive handovers.
 - Features:
     - [User Inactivity Detection](user-inactivity-detection.md) — triggers actions based on user silence.
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
+    You can create, edit, and delete handover providers in **Deploy > Handover Providers**.
+
+  </TabItem>
+  <TabItem value="tab2" label="API">
+     You can view, edit, and delete handover providers using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#post-/v2.0/handover/provider).
+
+  </TabItem>
+</Tabs>
     - [Real-Time Queue Notifications](../../live-agent/conversation/conversation-queue/real-time-queue-notifications.md) — provides live updates on queue status (applicable only to Cognigy Live Agent).
 
 ## Working with Handover Providers
-
-=== "GUI"
-    You can create, edit, and delete handover providers in **Deploy > Handover Providers**.
-
-=== "API"
-     You can view, edit, and delete handover providers using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#post-/v2.0/handover/provider).

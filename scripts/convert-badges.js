@@ -22,7 +22,7 @@ function findMarkdownFiles(dir) {
 function convertBadge(match, altText, badgeUrl, linkUrl) {
   // Remove .svg extension and replace spaces with underscores
   const cleanUrl = badgeUrl.replace('.svg', '').replace(/ /g, '_');
-  return `<a href={${JSON.stringify(linkUrl)}}><img src={${JSON.stringify(cleanUrl)}} alt={${JSON.stringify(altText)}} /></a>`;
+  return `<a href="${linkUrl}"><img src="${cleanUrl}" alt="${altText}" /></a>`;
 }
 
 // Main function to process files

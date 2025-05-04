@@ -10,6 +10,10 @@ tags:
 ---
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 
 # Functions
 
@@ -22,17 +26,21 @@ You can access the `parameters` and `api` objects from the Function's arguments.
 ## Limitations
 
 - The maximum run-time of a Function instance is 15 minutes. For on-premises installations, you can change this limit via the `FUNCTION_EXECUTION_MAX_EXECUTION_TIME_IN_MINUTES` environment variable in the `values.yaml` file.
-- You can define a Function only in JavaScript or TypeScript.
-
-## Working with Functions
-
-=== "GUI"
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
     You can view, create, edit, and delete Functions in **Build > Functions**. To define, trigger, and monitor a Function, use the **Code** and **Instances** tabs.
 
     Also, you can trigger a Function from the Flow editor by using the [Trigger Function Node](node-reference/service/trigger-function.md).
 
-=== "API"
+  </TabItem>
+  <TabItem value="tab2" label="API">
     You can view, create, edit, and delete Functions using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Functions-v2.0). Using this API, you can also monitor, trigger, and stop a Function instance.
+
+  </TabItem>
+</Tabs>
+- You can define a Function only in JavaScript or TypeScript.
+
+## Working with Functions
 
 ## Examples
 

@@ -4,6 +4,10 @@ slug: "gpt-conversation"
 hidden: false
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # GPT Conversation (Research preview)
 
 <a href="../../../../release-notes/4.48.md" /><img src="https://img.shields.io/badge/Added in-v4.48.0-blue.svg" alt="Version badge" />
@@ -116,11 +120,8 @@ Thank you.
 
 ### Specific example
 
-In the Transaction mode, you can use the [Lookup](../logic/lookup.md) or [If](../logic/if.md) to continue a flow logic. 
-
-For both Nodes, you need to specify the action in the **Available Actions** field of the GPT Conversation Node. To do this, select the Node:
-
-=== "Lookup"
+<Tabs>
+  <TabItem value="tab1" label="Lookup" default>
 
       1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it. 
       2. After the GPT Conversation Node, add the **Lookup** Node. 
@@ -140,7 +141,8 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
       5. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
       6. Test this Flow via the Interaction Panel.
 
-=== "IF"
+  </TabItem>
+  <TabItem value="tab2" label="IF">
 
       1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it.
       2. After the GPT Conversation Node, add the IF Node.
@@ -154,6 +156,12 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
          </figure>
       4. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
       5. Test this Flow via the Interaction Panel.
+
+  </TabItem>
+</Tabs>
+In the Transaction mode, you can use the [Lookup](../logic/lookup.md) or [If](../logic/if.md) to continue a flow logic. 
+
+For both Nodes, you need to specify the action in the **Available Actions** field of the GPT Conversation Node. To do this, select the Node:
 
 ## More Information
 

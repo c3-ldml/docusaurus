@@ -6,6 +6,10 @@ hidden: false
 tags: ['Knowledge Chunks', 'Chunk Metadata', 'Data Processing', 'Information Units']
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Knowledge Chunk
 
 A _Knowledge Chunk_ is a knowledge unit extracted from a [Knowledge Source](../knowledge-source/knowledge-source.md). Knowledge Chunks are smaller, self-contained pieces of information that Knowledge AI can process and send to AI Agents.
@@ -51,15 +55,19 @@ You can find examples of common Chunk metadata by key in the following table:
 | `image` | Graphics that illustrate the information in the Knowledge Chunk.   | `image: https://docs.cognigy.com/ai/images/xApp/architecture.png`                          |
 | `video` | Multimedia content that helps comprehend the Knowledge Chunk text. | `video: https://www.youtube.com/watch?v=U87psHIQF3w`                                       |
 
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
+    You can view, create, edit, and delete Knowledge Chunks using the [Chunk editor](knowledge-chunk-editor.md).
+
+  </TabItem>
+  <TabItem value="tab2" label="API">
+    You can view, create, edit, and delete Knowledge Chunks using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--KnowledgeChunks).
+
+  </TabItem>
+</Tabs>
 For example, for the `url: https://docs.cognigy.com/ai/build/node-reference/other-nodes/search-extract-output/` Chunk metadata stored in the Input object, where `url` is the key, retrieve this information by using `input.knowledgeSearch.topK[0].chunkMetaData.url`.
 
 ## Working with Knowledge Chunks
-
-=== "GUI"
-    You can view, create, edit, and delete Knowledge Chunks using the [Chunk editor](knowledge-chunk-editor.md).
-
-=== "API"
-    You can view, create, edit, and delete Knowledge Chunks using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--KnowledgeChunks).
 
 ## More information
 

@@ -9,6 +9,10 @@ tags:
   - Google Vertex AI models
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 import applyModel from '@site/docs/_includes/ai/generative-ai/_apply-model.md';
 
 
@@ -31,11 +35,8 @@ You can add a model using one of the following interfaces:
 - [GUI](#add-a-model-via-gui)
 - [API](#add-a-model-via-api)
 
-### Add a Model via GUI
-
-To add a model provided by Google Vertex AI to Cognigy.AI, follow these steps:
-
-=== "Standard Model"
+<Tabs>
+  <TabItem value="tab1" label="Standard Model" default>
 
     | Parameter    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
     |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -44,7 +45,8 @@ To add a model provided by Google Vertex AI to Cognigy.AI, follow these steps:
     | API Endpoint | Add a [service endpoint](https://cloud.google.com/vertex-ai/docs/reference/rest#service-endpoint) for the model. For example, `us-central1-aiplatform.googleapis.com`. Note that the endpoint should be specified without `https://` or `http://`.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
     | Publisher    | Add an owner's name of the model. If not specified, `Google` will be used by default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-=== "Custom Model"
+  </TabItem>
+  <TabItem value="tab2" label="Custom Model">
 
     | Parameter    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
     |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -54,6 +56,12 @@ To add a model provided by Google Vertex AI to Cognigy.AI, follow these steps:
     | Location     | Add a [region](https://cloud.google.com/vertex-ai/docs/general/locations) for the model. For example, `us-central1`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
     | API Endpoint | Add a [service endpoint](https://cloud.google.com/vertex-ai/docs/reference/rest#service-endpoint) for the model. For example, `us-central1-aiplatform.googleapis.com`. Note that the endpoint should be specified without `https://` or `http://`.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
     | Publisher    | Add an owner's name of the model. If not specified, `Google` will be used by default.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+
+  </TabItem>
+</Tabs>
+### Add a Model via GUI
+
+To add a model provided by Google Vertex AI to Cognigy.AI, follow these steps:
 
 <addModelViaApi />
 

@@ -5,6 +5,10 @@ hidden: false
 tags: ['Knowledge Sources', 'Knowledge Management', 'Content Management', 'Metadata', 'Knowledge Chunks', 'Document Processing']
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Knowledge Source
 
 A _Knowledge Source_ is the structured and easily accessible information that Knowledge AI extracts from documents and can provide to AI Agents. You can use different types of documents to create Knowledge Sources, for example, user manuals, articles, FAQs, and others. Knowledge AI breaks the information inside the documents into smaller units, known as [_Knowledge Chunks_](../knowledge-chunk/knowledge-chunk.md). Additionally, you can add more information as [Source metadata](#source-metadata), such as source links and authors, and [_Knowledge Source Tags_](knowledge-source-tags.md) to Knowledge Sources to improve the experience your customers have with AI Agents.
@@ -62,19 +66,24 @@ You can find examples of Source metadata in the following table:
 | `url`   | This key defines a URL as the document's source. If a user requests the information source, the AI Agent can provide the link to the document's source in the response message. | no        | <span style="white-space: nowrap;">`url: https://www.cognigy.com`</span> |
 | `tags`  | This key defines [Knowledge Source Tags](knowledge-source-tags.md). To add more than Knowledge Source Tag, use an array. You can add up to 10 Knowledge Source Tags.            | no        | `[cognigy, xapps, architecture]`                                         |
 
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
+    You can view, create, edit, and delete Knowledge Sources in **Build > Knowledge**. Also, you can copy Knowledge Sources' Reference ID, disable and export Knowledge Sources, and [download them as CTXT file](#download-knowledge-sources-as-ctxt).
+
+  </TabItem>
+  <TabItem value="tab2" label="API">
+    You can view, create, edit, and delete Knowledge Sources using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--KnowledgeSources). You can also use the API to upload files as Knowledge Source.
+
+  </TabItem>
+  <TabItem value="tab3" label="CLI">
+    You can ingest documents to create Knowledge Sources and view the resulting number of tokens using the [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI/blob/main/KNOWLEDGE-AI-README.md)
+
+
+  </TabItem>
+</Tabs>
 You can add any Source metadata to a Knowledge Source and give AI Agents access to the Source metadata through `input.knowledgeSearch.topK[0].sourceMetaData.{key}`. For example, if you add the Source metadata `author: Cognigy`, where `author` is the key, and store it in the Input object, retrieve this information by using `input.knowledgeSearch.topK[0].sourceMetaData.author`.
 
 ## Working with Knowledge Sources
-
-=== "GUI"
-    You can view, create, edit, and delete Knowledge Sources in **Build > Knowledge**. Also, you can copy Knowledge Sources' Reference ID, disable and export Knowledge Sources, and [download them as CTXT file](#download-knowledge-sources-as-ctxt).
-
-=== "API"
-    You can view, create, edit, and delete Knowledge Sources using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--KnowledgeSources). You can also use the API to upload files as Knowledge Source.
-
-=== "CLI"
-    You can ingest documents to create Knowledge Sources and view the resulting number of tokens using the [Cognigy.AI CLI](https://github.com/Cognigy/Cognigy-CLI/blob/main/KNOWLEDGE-AI-README.md)
-
 
 ## Download Knowledge Sources as CTXT
 

@@ -9,6 +9,10 @@ tags:
   - Plugin
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Webchat Plugins
 
 <a href="../release-notes/4.93.md" /><img src="https://img.shields.io/badge/Updated in-v4.93(Beta)-purple.svg" alt="Version badge" />
@@ -45,11 +49,8 @@ To test a plugin from the plugin collection, follow these steps:
         1. Select the **Webchat** Endpoint.
         2. In the Webchat Endpoint settings, paste the URL into the **Webchat Plugins** field under the **Webchat Layout** section.
 
-## Set Up Plugins in Your Code
-
-You can set up plugins in your code in the embedding code of your [Webchat v3](v3/embedding.md) or [Webchat v2](v2/embedding.md). To add the plugins in your code, proceed as follows:
-
-=== "Plugin from Collection"
+<Tabs>
+  <TabItem value="tab1" label="Plugin from Collection" default>
     1. Open the [Cognigy GitHub repository](https://github.com/Cognigy/WebchatPlugins/tree/master) and select the plugin you want to use.
     2. On the [Releases](https://github.com/Cognigy/WebchatPlugins/releases) page, copy the URL of the JavaScript file from the **Assets** section of the plugin you selected. For example, the URL for the Google Firebase Authentication Webchat Plugin is `https://github.com/Cognigy/WebchatPlugins/releases/download/google-firebase-authentication100/google-firebase-authentication.webchat-plugin.js`.
     3. Add the plugin using a `<script>` tag after loading `webchat.js` and before calling `initWebchat()` in your HTML code, for example:
@@ -77,7 +78,8 @@ You can set up plugins in your code in the embedding code of your [Webchat v3](v
     </html>
     ```
 
-=== "Custom Plugin"
+  </TabItem>
+  <TabItem value="tab2" label="Custom Plugin">
     1. Open the [Cognigy GitHub repository](https://github.com/Cognigy/WebchatPlugins/tree/master).
     2. Clone and modify the plugin source code as needed.
     3. Build your plugin by running the `npm ci && npm run build` command.
@@ -106,6 +108,12 @@ You can set up plugins in your code in the embedding code of your [Webchat v3](v
     </body>
     </html>
     ```
+
+  </TabItem>
+</Tabs>
+## Set Up Plugins in Your Code
+
+You can set up plugins in your code in the embedding code of your [Webchat v3](v3/embedding.md) or [Webchat v2](v2/embedding.md). To add the plugins in your code, proceed as follows:
 
 ## Trigger Plugins
 

@@ -139,7 +139,7 @@ export default function DocSidebar(props: Props): React.ReactElement | null {
     setSelectedSidebar(value);
     // Navigate to the intro page of the selected product
     const introPath = value === 'cognigy' ? '/ai/about-cognigy-ai' : 
-                     value === 'voice' ? '/voice/intro' : 
+                     value === 'voice' ? '/voice-gateway/overview' : 
                      '/webchat/cognigy-webchat';
     window.location.href = introPath;
   };

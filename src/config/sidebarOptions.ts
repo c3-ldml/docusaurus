@@ -13,7 +13,7 @@ export const sidebarOptions: SidebarOption[] = [
   {
     value: 'voice',
     label: 'Voice Gateway',
-    href: '/voice/intro'
+    href: '/voice-gateway/overview'
   },
   {
     value: 'webchat',

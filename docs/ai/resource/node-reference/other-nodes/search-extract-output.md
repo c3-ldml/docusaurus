@@ -6,6 +6,10 @@ hidden: false
 ---
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 
 import OrderPropertyDeprecation from '@site/docs/_includes/release-notes/_order-property-deprecation.md';
 import Tags from '@site/docs/_includes/ai/knowledge-ai/_tags.md';
@@ -31,11 +35,8 @@ For more information, refer to the [list of supported providers](../../../empowe
 
 ## Parameters
 
-### Mode
-
-There are three modes that offer different levels of data extraction and presentation:
-
-=== "Search & Extract & Output"
+<Tabs>
+  <TabItem value="tab1" label="Search & Extract & Output" default>
 
     Performs a search, extracts an answer, and outputs the result as text or adaptive card.
 
@@ -49,7 +50,8 @@ There are three modes that offer different levels of data extraction and present
 
     For this mode, select models from the [list of supported providers](../../../empower/llms/model-support-by-feature.md) that cover the `LLM Prompt Node`, `Answer Extraction`, and `Knowledge Search` cases.
 
-=== "Search & Extract"
+  </TabItem>
+  <TabItem value="tab2" label="Search & Extract">
 
     Performs a search, extracts an answer, but doesn't perform an automatic output. Our customers can then manually create the output they desire.
 
@@ -61,7 +63,8 @@ There are three modes that offer different levels of data extraction and present
 
     For this mode, select models from the [list of supported providers](../../../empower/llms/model-support-by-feature.md) that cover both the `LLM Prompt Node`, `Answer Extraction`, and `Knowledge Search` cases.
 
-=== "Search Only"
+  </TabItem>
+  <TabItem value="tab3" label="Search Only">
 
     Performs a knowledge search and retrieves information without extraction or automatic output.
 
@@ -71,6 +74,12 @@ There are three modes that offer different levels of data extraction and present
     2. The search response is stored in the Input or Context objects.
 
     For this mode, select models from the [list of supported providers](../../../empower/llms/model-support-by-feature.md) that cover the `Knowledge Search` case.
+
+  </TabItem>
+</Tabs>
+### Mode
+
+There are three modes that offer different levels of data extraction and presentation:
 
 ### Knowledge Store
 

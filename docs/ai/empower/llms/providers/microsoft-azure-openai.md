@@ -9,6 +9,10 @@ tags:
   - Microsoft Azure OpenAI models
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 import applyModel from '@site/docs/_includes/ai/generative-ai/_apply-model.md';
 
 
@@ -33,11 +37,8 @@ You can add a model using one of the following interfaces:
 - [GUI](#add-a-model-via-gui)
 - [API](#add-a-model-via-api)
 
-### Add a Model via GUI
-
-You can add a model provided by Azure OpenAI to Cognigy.AI in **Build > LLM**. To add the model, you will need the following parameters:
-
-=== "Standard Model"
+<Tabs>
+  <TabItem value="tab1" label="Standard Model" default>
 
     | Parameter       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
     |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -48,7 +49,8 @@ You can add a model provided by Azure OpenAI to Cognigy.AI in **Build > LLM**. T
     | Custom URL      | This parameter is optional. To control the connection between your clusters and the Azure OpenAI provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the URL in the following pattern: `https://<resource-name>.openai.azure.com/openai/deployments/<deployment-name>/<model-type>?api-version=<api-version>`. When a Custom URL is added, the **Resource Name**, **Deployment Name**, and **API Version** fields will be ignored.                                                                                                                             |
 
 
-=== "Custom Model"
+  </TabItem>
+  <TabItem value="tab2" label="Custom Model">
 
     | Parameter       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
     |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -59,6 +61,12 @@ You can add a model provided by Azure OpenAI to Cognigy.AI in **Build > LLM**. T
     | Deployment Name | Enter the [deployment name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model). To find this value, go to the **Microsoft Azure** home page. Under **Azure services**, click **Azure OpenAI**. In the left-side menu, under **Azure AI Services**, select **Azure Open AI**. Select a resource from the **Name** column. On the resource page, go to **Resource Management > Model deployments**. On the **Model deployments** page, click **Manage Deployments**. On the **Deployments** page, copy the desired deployment name from the **Deployment name** column. |
     | API Version     | Enter the [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format. Note that the version may have an extended format, for example, `YYYY-MM-DD-preview`.                                                                                                                                                                                                                                                                                                                                                         |
     | Custom URL      | This parameter is optional. To control the connection between your clusters and the Azure OpenAI provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the URL in the following pattern: `https://<resource-name>.openai.azure.com/openai/deployments/<deployment-name>/<model-type>?api-version=<api-version>`. When a Custom URL is added, the **Resource Name**, **Deployment Name**, and **API Version** fields will be ignored.                                                                                                                             |
+
+  </TabItem>
+</Tabs>
+### Add a Model via GUI
+
+You can add a model provided by Azure OpenAI to Cognigy.AI in **Build > LLM**. To add the model, you will need the following parameters:
 
 Apply changes. Check if the connection was set up by clicking **Test**.
 

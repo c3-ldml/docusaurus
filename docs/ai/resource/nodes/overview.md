@@ -8,6 +8,10 @@ tags:
 ---
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 
 # Nodes
 
@@ -15,22 +19,25 @@ _Nodes_ are the fundamental building blocks of [Flows](../flows/overview.md). No
 
 Cognigy.AI provides a wide range of [Node types](../node-reference/overview.md) to allow diverse conversational experiences.
 
-Some Node types, for example, [If Nodes](../node-reference/logic/if.md) and [Lookup Nodes](../node-reference/logic/lookup.md), include child Nodes to control the Flow execution logic. Child Nodes function as a decision branch in the Flow, allowing different outcomes depending on the user input.
-
-## Working with Nodes
-
-=== "GUI"
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
     You can create and delete Nodes in the [Flow editor](../flows/editor.md). To edit a Node, open the Node editor by clicking the Node in the Flow editor. Node editors include settings specific to each Node type. In the Flow editor, you can also right-click a Node to copy, cut, and paste the Node as well as add comments to it.
 
-    <CollapsibleSection title="Use Hotkeys for Managing Nodes">
+    :::tip[Use Hotkeys for Managing Nodes]
 
     To speed up building your AI Agent, use [keyboard shortcuts](../../administer/hotkeys.md).
 
-    === "API"
+    :::
+
+  </TabItem>
+  <TabItem value="tab2" label="API">
     You can view, create, edit, and delete Nodes using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#tag--Charts-v2.0). You can also search and move Nodes and add Locales to them. For Nodes that support Generative AI output, you can generate this kind of output through the API as well.
 
-</CollapsibleSection>
+  </TabItem>
+</Tabs>
+Some Node types, for example, [If Nodes](../node-reference/logic/if.md) and [Lookup Nodes](../node-reference/logic/lookup.md), include child Nodes to control the Flow execution logic. Child Nodes function as a decision branch in the Flow, allowing different outcomes depending on the user input.
 
+## Working with Nodes
 
 ### Set a Node as an Entrypoint
 

@@ -99,7 +99,7 @@ const config: Config = {
             },
             {
               label: 'Voice Gateway',
-              to: '/voice/intro',
+              to: '/voice-gateway/overview',
             },
             {
               label: 'Webchat',

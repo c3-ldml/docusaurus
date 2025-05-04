@@ -9,6 +9,10 @@ tags:
 ---
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 
 # Flows
 
@@ -25,22 +29,27 @@ Flows include:
 - [States](../../test/interaction-panel/state.md) — control over Intents.
 - [Slot Fillers](../../empower/nlu/slot-fillers.md) — automatic information extraction from user input.
 
-You can also connect different [Flows](../../empower/nlu/attachments/attached-flows.md) and switch between them with a [Go To Node](../node-reference/logic/go-to.md) to create more complex conversational experiences.
-
-## Working with Flows
-
-=== "GUI"
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
     You can create, clone, and delete Flows in **Build > Flows**. Also, you can export Flows as a Package, copy their Reference ID. To build and configure Flows, use the [Flow editor](editor.md).
 
     You can create Flows using [Generative AI](../../empower/generative-ai.md#generate-flows) to automatically generate Nodes with predefined configurations and content. For this approach, you need to add a [large language model](../../empower/generative-ai.md#prerequisites) (LLM).
 
     To test Flows, click ![interaction-panel-icon](../../../../static/img/_assets/icons/interaction-panel.svg) and use the [Interaction Panel](../../test/interaction-panel/overview.md).
 
-=== "API"
+  </TabItem>
+  <TabItem value="tab2" label="API">
     You can view, create, and edit Flows using the [Cognigy API](https://api-dev.cognigy.ai/openapi#tag--Charts-v2.0).
 
-=== "CLI"
+  </TabItem>
+  <TabItem value="tab3" label="CLI">
     You can manage Flows using the [Cognigy CLI](https://github.com/Cognigy/Cognigy-CLI).
+
+  </TabItem>
+</Tabs>
+You can also connect different [Flows](../../empower/nlu/attachments/attached-flows.md) and switch between them with a [Go To Node](../node-reference/logic/go-to.md) to create more complex conversational experiences.
+
+## Working with Flows
 
 ### Settings
 

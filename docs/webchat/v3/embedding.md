@@ -5,6 +5,10 @@ description: "Embedding Cognigy Webchat v3 into your website allows you to provi
 hidden: false
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Webchat 3: Embedding
 
 <a href="../../release-notes/4.82.md" /><img src="https://img.shields.io/badge/Updated in-v4.83-blue.svg" alt="Version badge" />
@@ -105,11 +109,8 @@ To override this setting for languages that use [RTL (right-to-left)](features.m
 add the attribute `dir="rtl"` to the `<html>` tag on the web page where the widget is placed. 
 For example, for a web page in Arabic, use `<html lang="ar" dir="rtl">`.
 
-## Test your Webchat
-
-After implementing the code, open your web page in a browser to test the functionality.
-
-=== "LTR (Left-to-Right) Layout"
+<Tabs>
+  <TabItem value="tab1" label="LTR (Left-to-Right) Layout" default>
 
     ```html
     <html lang="en">
@@ -145,7 +146,8 @@ After implementing the code, open your web page in a browser to test the functio
     </html>
     ```
 
-=== "RTL (Right-to-Left) Layout"
+  </TabItem>
+  <TabItem value="tab2" label="RTL (Right-to-Left) Layout">
       
     ```html
     <html lang="ar" dir="rtl">
@@ -180,6 +182,12 @@ After implementing the code, open your web page in a browser to test the functio
     </body>
     </html>
     ```
+
+  </TabItem>
+</Tabs>
+## Test your Webchat
+
+After implementing the code, open your web page in a browser to test the functionality.
 
 ## What's Next?
 

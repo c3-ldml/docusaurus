@@ -5,6 +5,10 @@ hidden: false
 ---
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 # Email Notification
 
 <a href="../../../../release-notes/4.49.md" /><img src="https://img.shields.io/badge/Updated in-v4.49-blue.svg" alt="Version badge" />
@@ -24,11 +28,8 @@ The Email Notification Node allows you to send quick and easy emails during sess
 
 ## Authentication
 
-This Node supports both Basic Auth and OAuth2 authentication methods.
-
-If you have on-premises installation, you need to add the following parameters to the `values.yaml` file:
-
-=== "OAuth2 (recommended)"
+<Tabs>
+  <TabItem value="tab1" label="OAuth2 (recommended)" default>
     object:
     
     ```yaml
@@ -53,7 +54,8 @@ If you have on-premises installation, you need to add the following parameters t
     ```
     Cognigy.AI caches connections by default, and for OAuth2 connections, Cognigy.AI also caches the refresh and access tokens. To update the refresh token or access token, create a [Snapshot](../../../deploy/snapshots.md).
 
-=== "Basic Auth"
+  </TabItem>
+  <TabItem value="tab2" label="Basic Auth">
     object:
 
     ```yaml
@@ -73,6 +75,12 @@ If you have on-premises installation, you need to add the following parameters t
     EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method, for example, 'tls' for default TLS on port 443, 'starttls' to upgrade an insecure connection on the same port, or 'none' to connect without TLS>"
     ```
 
+
+  </TabItem>
+</Tabs>
+This Node supports both Basic Auth and OAuth2 authentication methods.
+
+If you have on-premises installation, you need to add the following parameters to the `values.yaml` file:
 
 ## Parameters
 

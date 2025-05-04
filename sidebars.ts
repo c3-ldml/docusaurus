@@ -527,20 +527,166 @@ const sidebars: SidebarsConfig = {
           ]
         }
       ]
+    },
+    {
+      type: 'category',
+      label: 'Administer',
+      items: [
+        {
+          type: 'category',
+          label: 'User Menu',
+          items: [
+            'ai/administer/user-menu/overview',
+            'ai/administer/user-menu/my-profile',
+            'ai/administer/hotkeys'
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Access Management',
+          items: [
+            {
+              type: 'category',
+              label: 'Admin Center',
+              items: [
+                'ai/administer/access/admin-center/overview',
+                'ai/administer/access/admin-center/dashboard',
+                'ai/administer/access/admin-center/access-control',
+                'ai/administer/access/admin-center/audit-events',
+                {
+                  type: 'category',
+                  label: 'Global Resources',
+                  items: [
+                    'ai/administer/access/admin-center/global-resources/overview',
+                    'ai/administer/access/admin-center/global-resources/global-llms',
+                    'ai/administer/access/admin-center/global-resources/global-connections'
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Project and Members',
+              items: [
+                'ai/administer/access/project-settings',
+                'ai/administer/access/members'
+              ]
+            },
+            'ai/administer/access/management-ui'
+          ]
+        },
+        'ai/administer/limitations',
+        'ai/administer/billing'
+      ]
     }
   ],
 
   // Voice Gateway sidebar
   voiceSidebar: [
-    'voice/intro',
-    'voice/setup/installation',
+    'voice-gateway/index',
     {
       type: 'category',
-      label: 'Verbs',
+      label: 'Overview',
       items: [
-        'voice/verbs/overview',
-      ],
+        'voice-gateway/overview',
+        'voice-gateway/getting-started',
+        'voice-gateway/technical-capabilities',
+        'voice-gateway/migrate-from-ac-to-vg',
+        'voice-gateway/glossary'
+      ]
     },
+    {
+      type: 'category',
+      label: 'Self-Service Portal',
+      items: [
+        'voice-gateway/webapp/overview',
+        'voice-gateway/webapp/users',
+        'voice-gateway/webapp/accounts',
+        'voice-gateway/webapp/applications',
+        'voice-gateway/webapp/recent-calls',
+        'voice-gateway/webapp/alerts',
+        'voice-gateway/webapp/carriers',
+        {
+          type: 'category',
+          label: 'Speech Services',
+          items: [
+            'voice-gateway/webapp/speech-services',
+            'voice-gateway/webapp/streaming'
+          ]
+        },
+        'voice-gateway/webapp/phone-numbers',
+        'voice-gateway/webapp/outbound-call-routing'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Outbound Calls',
+      items: [
+        'voice-gateway/creating-outbound-calls',
+        'voice-gateway/call-statuses'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'References',
+      items: [
+        {
+          type: 'category',
+          label: 'Voice Gateway Verbs',
+          items: [
+            'voice-gateway/references/verbs/overview',
+            'voice-gateway/references/verbs/amd',
+            'voice-gateway/references/verbs/config',
+            'voice-gateway/references/verbs/dial',
+            'voice-gateway/references/verbs/dub',
+            'voice-gateway/references/verbs/dtmf',
+            'voice-gateway/references/verbs/gather',
+            'voice-gateway/references/verbs/hangup',
+            'voice-gateway/references/verbs/listen',
+            'voice-gateway/references/verbs/play',
+            'voice-gateway/references/verbs/say',
+            'voice-gateway/references/verbs/sip-refer',
+            'voice-gateway/references/verbs/sip-request',
+            'voice-gateway/references/verbs/transcribe'
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Voice Gateway Events',
+          items: [
+            'voice-gateway/references/events/overview',
+            'voice-gateway/references/events/ANSWERING_MACHINE_DETECTION',
+            'voice-gateway/references/events/CALL_CREATED',
+            'voice-gateway/references/events/CALL_COMPLETED',
+            'voice-gateway/references/events/CALL_FAILED',
+            'voice-gateway/references/events/CALL_IN_PROGRESS',
+            'voice-gateway/references/events/CALL_RECONNECTED',
+            'voice-gateway/references/events/RECOGNIZED_DTMF',
+            'voice-gateway/references/events/RECOGNIZED_SPEECH',
+            'voice-gateway/references/events/TRANSFER_DIAL_ERROR',
+            'voice-gateway/references/events/TRANSFER_DIAL_SUCCESS',
+            'voice-gateway/references/events/TRANSFER_REFER_ERROR',
+            'voice-gateway/references/events/TRANSFER_REFER_SUCCESS',
+            'voice-gateway/references/events/USER_BUSY',
+            'voice-gateway/references/events/USER_INPUT_TIMEOUT',
+            'voice-gateway/references/events/NO_ANSWER'
+          ]
+        },
+        'voice-gateway/references/sip-response-codes',
+        'voice-gateway/references/tts-and-stt-vendors',
+        'voice-gateway/references/sip-trunk-providers'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'On-Premises Installation',
+      items: [
+        'voice-gateway/installation/overview',
+        'voice-gateway/installation/browser-requirements',
+        'voice-gateway/installation/version-compatibility-matrix',
+        'voice-gateway/installation/installation-process'
+      ]
+    }
   ],
 
   // Webchat sidebar
