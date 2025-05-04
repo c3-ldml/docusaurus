@@ -123,7 +123,7 @@ To change the appearance of this message and make it more accessible, as well as
 4. Click **Save Node**.
 
 <figure>
-    <img class="image-center" src="../../../../_assets/live-agent/conversation/real-time-queue-notifications.png" width="100%" />
+    <img class="image-center" src="../../../../static/img/_assets/live-agent/conversation/real-time-queue-notifications.png" width="100%" />
     <figcaption>Configuration of Real-Time Queue Notifications</figcaption>
 </figure>
 

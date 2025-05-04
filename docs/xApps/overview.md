@@ -5,7 +5,6 @@ hidden: false
 ---
 import Pricing from '@site/docs/_includes/ai/xApp/_pricing.md';
 
-
 # xApps Overview
 
 <a href="Added"><img src="https://img.shields.io/badge/Added_in-v4.51-blue" alt="Version badge" /></a>
@@ -47,12 +46,12 @@ The Shell Page has a set of configurable built-in screens. These default screens
 The xApp Screens are shown when the xApp Page is launched, fails to launch, encounters an Error, and is halted.
 
 <figure>
-    <img class="image-center" src="../../../_assets/xApps/success-screen.png" width="80%" />
+    <img class="image-center" src="../../../static/img/_assets/xApps/success-screen.png" width="80%" />
     <figcaption>xApp Success Screen</figcaption>
 </figure>
 
 <figure>
-    <img class="image-center" src="../../../_assets/xApps/error-screen.png" width="80%" />
+    <img class="image-center" src="../../../static/img/_assets/xApps/error-screen.png" width="80%" />
     <figcaption>xApp Error Screen</figcaption>
 </figure>
 
@@ -61,7 +60,7 @@ The xApp Screens are shown when the xApp Page is launched, fails to launch, enco
 The Intermediate Screens are displayed to the end user while no xApp Page is configured to be displayed. The default Intermediate Screen can be replaced with a custom-built xApp Page.
 
 <figure>
-    <img class="image-center" src="../../../_assets/xApps/intermediate-screen.png" width="80%" />
+    <img class="image-center" src="../../../static/img/_assets/xApps/intermediate-screen.png" width="80%" />
     <figcaption>Intermediate Screen</figcaption>
 </figure>
 
@@ -70,7 +69,7 @@ The Intermediate Screens are displayed to the end user while no xApp Page is con
 The Connection Screens are shown while the real-time connection to the backend is re-established. The default Connection Screen can be replaced with a custom-built xApp Page.
 
 <figure>
-    <img class="image-center" src="../../../_assets/xApps/connection-screen.png" width="80%" />
+    <img class="image-center" src="../../../static/img/_assets/xApps/connection-screen.png" width="80%" />
     <figcaption>Connection Screen</figcaption>
 </figure>
 
@@ -79,7 +78,7 @@ The Connection Screens are shown while the real-time connection to the backend i
 The PIN Screen prompts the end user to enter the xApp Session PIN. The user needs to provide the correct PIN to access the xApp Pages. Requesting a PIN to enter the session is optional.
 
 <figure>
-    <img class="image-center" src="../../../_assets/xApps/pin-screen.png" width="80%" />
+    <img class="image-center" src="../../../static/img/_assets/xApps/pin-screen.png" width="80%" />
     <figcaption>xApp Pin Screen</figcaption>
 </figure>
 

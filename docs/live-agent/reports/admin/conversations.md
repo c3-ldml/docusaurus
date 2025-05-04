@@ -18,7 +18,7 @@ and the number of successfully resolved customer requests.
 To learn more about metrics, refer to [Report Metrics](overview.md#report-metrics).
 
 <figure>
-<img src="../../../../../_assets/live-agent/LA_conversations_report.png" width="100%" alt="Live Agent conversations report" />
+<img src="../../../../../static/img/_assets/live-agent/LA_conversations_report.png" width="100%" alt="Live Agent conversations report" />
   <figcaption>Conversations report</figcaption>
 </figure>
 

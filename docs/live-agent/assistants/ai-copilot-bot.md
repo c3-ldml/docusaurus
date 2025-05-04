@@ -25,7 +25,7 @@ For instance, if the human agent requires additional expertise during the conver
 they can activate a specialized AI Copilot Bot, such as one for technical support or order processing.
 
 <figure>
-   <img class="image-center" src="../../../_assets/live-agent/conversation/la_ai_copilot_bot.png" width="60%" alt="Live Agent AI Copilot Bot Overview" />
+   <img class="image-center" src="../../../static/img/_assets/live-agent/conversation/la_ai_copilot_bot.png" width="60%" alt="Live Agent AI Copilot Bot Overview" />
 </figure>
 
 ## Before you Begin

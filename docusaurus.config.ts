@@ -72,6 +72,7 @@ const config: Config = {
         alt: 'Cognigy Logo',
         src: 'img/logo.svg',
         srcDark: 'img/logo-white.svg',
+        href: '/',
       },
       items: [
         {
@@ -81,7 +82,6 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          type: 'doc',
           href: 'https://api-trial.cognigy.ai/openapi',
           position: 'left',
           label: 'API',
@@ -91,6 +91,12 @@ const config: Config = {
           docId: 'release-notes/index',
           position: 'left',
           label: 'Release Notes',
+        },
+        {
+          type: 'doc',
+          docId: 'help/index',
+          position: 'left',
+          label: 'Support',
         },
         
         {
@@ -121,7 +127,11 @@ const config: Config = {
             {
               label: 'Live Agent',
               to: '/live-agent/index',
-            }
+            },
+            {
+              label: 'Insights',
+              to: '/insights/index',
+            },
             {
               label: 'xApps',
               to: '/xapps/index',

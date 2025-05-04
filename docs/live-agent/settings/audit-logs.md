@@ -60,6 +60,6 @@ A window will open displaying the details of the changes.
 For an `update` action, the **Before** section presents the original values or configuration, while the **After** section displays the new values after the update.
 
 <figure>
-<img src="../../../_assets/live-agent/LA-audit-logs-update-inbox-changes.png" width="100%" alt="Audit Logs Changes" />
+<img src="../../../static/img/_assets/live-agent/LA-audit-logs-update-inbox-changes.png" width="100%" alt="Audit Logs Changes" />
   <figcaption>Audit Logs Changes</figcaption>
 </figure>

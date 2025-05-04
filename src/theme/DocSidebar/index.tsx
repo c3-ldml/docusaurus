@@ -9,6 +9,7 @@ import voiceGatewayIcon from '@site/static/img/_assets/icons/voice-gateway.svg';
 import webchatIcon from '@site/static/img/_assets/icons/webchat.svg';
 import xappsIcon from '@site/static/img/_assets/icons/xapps-logo.svg';
 import liveAgentIcon from '@site/static/img/_assets/icons/live-agent-icon.svg';
+import insightsIcon from '@site/static/img/_assets/icons/insights-icon.svg';
 
 interface CustomDropdownProps {
   options: {
@@ -138,34 +139,48 @@ export default function DocSidebar(props: Props): React.ReactElement | null {
     {
       label: 'Live Agent',
       value: 'live-agent',
-      description: 'Embed and customize chat widgets for your website',
+      description: 'Seamlessly hand over conversations to human agents',
       icon: liveAgentIcon
+    },
+    {
+      label: 'Insights',
+      value: 'insights',
+      description: 'Analyze and optimize your conversational agents',
+      icon: insightsIcon
     },
     {
       label: 'xApps',
       value: 'xapps',
-      description: 'Flexible micro-web applications for customer self-service.',
+      description: 'Build and deploy micro-web applications',
       icon: xappsIcon
     }
   ];
 
-  const handleSidebarChange = (value: string) => {
-    setSelectedSidebar(value);
-    // Navigate to the intro page of the selected product
-    const introPath = value === 'cognigy' ? '/ai/about-cognigy-ai' : 
-                     value === 'voice' ? '/voice-gateway/overview' : 
-                     '/webchat/cognigy-webchat';
-    window.location.href = introPath;
-  };
-
   // Update selectedSidebar when pathname changes
   useEffect(() => {
     setSelectedSidebar(
-      pathname.startsWith('/voice/') ? 'voice' : 
+      pathname.startsWith('/voice-gateway/') ? 'voice' : 
       pathname.startsWith('/webchat/') ? 'webchat' : 
+      pathname.startsWith('/live-agent/') ? 'live-agent' :
+      pathname.startsWith('/insights/') ? 'insights' :
+      pathname.startsWith('/xapps/') ? 'xapps' :
       'cognigy'
     );
   }, [pathname]);
+
+  const handleSidebarChange = (value: string) => {
+    setSelectedSidebar(value);
+    // Navigate to the intro page of the selected product
+    const introPath = 
+      value === 'cognigy' ? '/ai/about-cognigy-ai' : 
+      value === 'voice' ? '/voice-gateway/overview' : 
+      value === 'webchat' ? '/webchat/cognigy-webchat-overview' :
+      value === 'live-agent' ? '/live-agent/overview' :
+      value === 'insights' ? '/insights/overview' :
+      value === 'xapps' ? '/xapps/cognigy-xapps' :
+      '/ai/about-cognigy-ai';
+    window.location.href = introPath;
+  };
 
   const toggleCategory = (categoryLabel: string) => {
     setExpandedCategories(prev =>

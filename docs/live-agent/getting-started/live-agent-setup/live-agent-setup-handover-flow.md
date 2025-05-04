@@ -40,7 +40,7 @@ To create a Live Agent Flow, follow these steps:
 3. Start the conversation by typing `Hi` and clicking the **Send** button.
 
     <figure>
-        <img src="../../../../_assets/live-agent/LA-webchat-hi.png" width="100%" alt="Webchat Screen" />
+        <img src="../../../../static/img/_assets/live-agent/LA-webchat-hi.png" width="100%" alt="Webchat Screen" />
         <figcaption>Webchat Screen</figcaption>
     </figure>
 
@@ -51,14 +51,14 @@ To create a Live Agent Flow, follow these steps:
 7. In the **Reply** section, send a message to the user as a human agent.
 
     <figure>
-       <img src="../../../../_assets/live-agent/LA-conversation-example.png" width="100%" alt="Live Agent Conversation" />
+       <img src="../../../../static/img/_assets/live-agent/LA-conversation-example.png" width="100%" alt="Live Agent Conversation" />
        <figcaption>Live Agent Conversation</figcaption>
     </figure>
 
 8. This message should also appear in the Cognigy.AI Webchat window.
 
     <figure>
-        <img class="image-center" src="../../../../_assets/live-agent/LA-webchat.png" width="100%" alt="Cognigy.AI Webchat" />
+        <img class="image-center" src="../../../../static/img/_assets/live-agent/LA-webchat.png" width="100%" alt="Cognigy.AI Webchat" />
         <figcaption>Cognigy.AI Webchat</figcaption>
     </figure>
 

@@ -73,7 +73,7 @@ To locate the ID, follow these steps:
 3. The Inbox settings will be displayed, and you will see the address line of your browser as follows: `https://liveagent-<your-environment>/app/accounts/<account-id>/settings/inboxes/<inbox-id>`. For example, in the URL `https://liveagent-dev.cognigy.ai/app/accounts/2/settings/inboxes/32852`, the Account ID is 2.
 
 <figure>
-    <img src="../../../../_assets/live-agent/getting-started/LA_Inbox_URL.png" width="80%" />
+    <img src="../../../../static/img/_assets/live-agent/getting-started/LA_Inbox_URL.png" width="80%" />
 </figure>
 
 When you have found the Account ID, you can enter it in the **Handover Settings** of your Endpoint in Cognigy.AI.

@@ -7,7 +7,7 @@ hidden: false
 # Architecture
 
 <figure>
- <img class="image-center" src="../../../../_assets/live-agent/LA-diagram.svg" alt="Live Agent Architecture" width="100%" />
+ <img class="image-center" src="../../../../static/img/_assets/live-agent/LA-diagram.svg" alt="Live Agent Architecture" width="100%" />
   <figcaption>Live Agent Architecture Diagram</figcaption>
 </figure>
 

@@ -20,7 +20,7 @@ To create a new Inbox for the Agent, follow these steps:
 Once the Inbox is created, the **Default Inbox ID** button will be disabled.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/live-agent/getting-started/project-wide-live-agent-setting-with-inbox-id.png" width="100%" />
+  <img class="image-center" src="../../../../static/img/_assets/live-agent/getting-started/project-wide-live-agent-setting-with-inbox-id.png" width="100%" />
   <figcaption>Inbox already created for the Agent</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ The **Create Project Inbox** button could also be disabled for the following rea
 The Cognigy Live Agent feature is not enabled, or a Live Agent account is not set up at the organizational level.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/live-agent/getting-started/project-wide-live-agent-settings-not-configured.png" width="100%"/>
+  <img class="image-center" src="../../../../static/img/_assets/live-agent/getting-started/project-wide-live-agent-settings-not-configured.png" width="100%"/>
 </figure>
 
 **Example 2**
@@ -47,7 +47,7 @@ The Cognigy Live Agent feature is not enabled, or a Live Agent account is not se
 You don't have permissions to create an Inbox for Live Agent.
 
 <figure>
-  <img class="image-center" src="../../../../_assets/live-agent/getting-started/project-wide-live-agent-setting-no-permissions.png" width="100%"/>
+  <img class="image-center" src="../../../../static/img/_assets/live-agent/getting-started/project-wide-live-agent-setting-no-permissions.png" width="100%"/>
 </figure>
 
 If you have both **Theming** enabled and the Cognigy Live Agent feature disabled, The **Live Agent Settings** section on both the **Admin Center** and **Agent Settings** pages will not be displayed.

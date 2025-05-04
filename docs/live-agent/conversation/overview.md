@@ -13,7 +13,7 @@ _Conversations_ are chats between a human agent and a customer, initiated by the
 The conversation is handed over to a human agent when the AI Agent cannot assist with a question due to its complexity or lack of information. During the conversation, the human agent may use additional virtual assistants to help answer the question.
 
 <figure>
-<img class="image-center" src="../../../_assets/live-agent/conversation/conversation-panel.png" width="80%" alt="Conversation Page" />
+<img class="image-center" src="../../../static/img/_assets/live-agent/conversation/conversation-panel.png" width="80%" alt="Conversation Page" />
   <figcaption>Conversation Page</figcaption>
 </figure>
 
@@ -22,7 +22,7 @@ The conversation is handed over to a human agent when the AI Agent cannot assist
 The conversation life cycle involves starting a conversation, keeping it open for active engagement, possibly putting it on hold temporarily, and finally closing or resolving it.
 
 <figure>
-<img class="image-center" src="../../../_assets/live-agent/conversation/conversation-statuses.png" width="60%" alt="Live Agent Conversation Statuses" />
+<img class="image-center" src="../../../static/img/_assets/live-agent/conversation/conversation-statuses.png" width="60%" alt="Live Agent Conversation Statuses" />
   <figcaption>Conversation Statuses</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ These details include the following conversation information:
 - [Conversation Information](#conversation-information)
 
 <figure>
-<img class="image-center" src="../../../_assets/live-agent/conversation/conversation-details.png" width="80%" alt="Live Agent Conversation Details" />
+<img class="image-center" src="../../../static/img/_assets/live-agent/conversation/conversation-details.png" width="80%" alt="Live Agent Conversation Details" />
   <figcaption>Conversation Details</figcaption>
 </figure>
 

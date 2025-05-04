@@ -87,7 +87,7 @@ it will also be implemented that the link to the xApp will be shared with the cu
 17. Click **Save Node**.
 
     <figure>
-        <img class="image-center" src="../../../_assets/xApps/build/multichannel/basic-xApp-flow.png" width="100%" />
+        <img class="image-center" src="../../../static/img/_assets/xApps/build/multichannel/basic-xApp-flow.png" width="100%" />
     </figure>
 
 ## Configure Voice Channel Support
@@ -118,7 +118,7 @@ Once you create the xApp, test your Flow via the Interaction Panel.
 3. Follow the conversation prompts and observe the Flow's behavior.
 
 <figure>
-    <img class="image-center" src="../../../_assets/xApps/build/multichannel/test-voice-channel-flow.png" width="100%" />
+    <img class="image-center" src="../../../static/img/_assets/xApps/build/multichannel/test-voice-channel-flow.png" width="100%" />
 </figure>
 
 Note that the voice fallback text will be used instead of buttons.

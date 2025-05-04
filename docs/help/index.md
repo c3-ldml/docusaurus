@@ -1,6 +1,6 @@
 ---
 title: "Help"
-slug: /
+slug: "/help"
 description: "Get help and support for Cognigy products"
 hide:
   - feedback

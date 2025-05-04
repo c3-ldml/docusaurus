@@ -86,7 +86,7 @@ Head over to [File Upload Antivirus Scan Helm Values](../live-agent/installation
 Under the profile menu, there is a link called Cognigy.AI that heads over to the Cognigy.AI. If it is not present, head over to [URLs Helm values](../live-agent/installation/helm-values/helm-values.md#urls) for configuring it.
 
 <figure>
-<img src="../../../_assets/live-agent/LA-link-cognigy.ai-platform.png" width="100%" alt="Link to Cognigy.AI" />
+<img src="../../../static/img/_assets/live-agent/LA-link-cognigy.ai-platform.png" width="100%" alt="Link to Cognigy.AI" />
   <figcaption>Link to Cognigy.AI</figcaption>
 </figure>
 

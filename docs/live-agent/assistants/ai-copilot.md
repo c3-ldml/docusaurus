@@ -39,7 +39,7 @@ To test AI Copilot, follow these steps:
 4. After that, send a message as the user in Webchat.
 
 <figure>
-    <img class="image-center" src="../../../../_assets/live-agent/la-agent-assist-webchat.png" width="50%" />
+    <img class="image-center" src="../../../../static/img/_assets/live-agent/la-agent-assist-webchat.png" width="50%" />
 </figure>
 
 Once the human agent receives this message, the testing behavior will vary depending on how you configured the Endpoint beforehand.
@@ -47,7 +47,7 @@ Once the human agent receives this message, the testing behavior will vary depen
 This Workspace is accessible from the right side of the conversation chat.
       
 <figure>
- <img class="image-center" src="../../../../_assets/live-agent/la-agent-assist-workspace.png" width="90%" />
+ <img class="image-center" src="../../../../static/img/_assets/live-agent/la-agent-assist-workspace.png" width="90%" />
 </figure>
 
 If the testing is successful, the AI Copilot setup is complete.

@@ -31,7 +31,7 @@ tags:
 - [Tables](#tables)
 
 <figure>
-<img class="image-center" src="../../../../_assets/live-agent/LA_Supervisor_overview_1.png" width="80%" alt="Live Agent Supervisor overview" />
+<img class="image-center" src="../../../../static/img/_assets/live-agent/LA_Supervisor_overview_1.png" width="80%" alt="Live Agent Supervisor overview" />
   <figcaption>Overview report</figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ However, if the agent is offline, any changes you attempt to make to their statu
 Additionally, you can filter the data in the table according to the agent's status.
 
 <figure>
-<img src="../../../_assets/live-agent/LA_Supervisor_overview_2.png" width="100%" alt="Live Agent Supervisor overview 2" />
+<img src="../../../static/img/_assets/live-agent/LA_Supervisor_overview_2.png" width="100%" alt="Live Agent Supervisor overview 2" />
   <figcaption>Conversations by Agents chart</figcaption>
 </figure>
 

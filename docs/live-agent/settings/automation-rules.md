@@ -100,7 +100,7 @@ When AI Copilot is active, and a new conversation is created with the Open statu
 - Add an action: Assign the conversation to the Sales team by selecting it from the dropdown menu. Make sure the Sales team is created before executing this action.
 
 <figure>
-    <img class="image-center" src="../../../_assets/live-agent/add-automation-rule.png" width="80%" />
+    <img class="image-center" src="../../../static/img/_assets/live-agent/add-automation-rule.png" width="80%" />
 </figure>
 
 ## Edit an Automation Rule

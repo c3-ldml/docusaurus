@@ -13,7 +13,7 @@ The Live Agent system is built around role-based assignments for human agents, s
 Cognigy Live Agent helps businesses deliver exceptional customer support experiences while optimizing operational efficiency and scalability. It empowers businesses to better meet the needs of their customers and drive satisfaction and loyalty in the process.
 
 <figure>
-    <img src="../../../_assets/live-agent/LA-overview.png" alt="Live Agent Overview" width="80%" />
+    <img src="../../../static/img/_assets/live-agent/LA-overview.png" alt="Live Agent Overview" width="80%" />
 </figure>
 
 

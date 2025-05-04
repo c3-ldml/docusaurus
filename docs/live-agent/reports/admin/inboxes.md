@@ -20,7 +20,7 @@ The Inboxes Report is beneficial for optimizing communication channels, improvin
 To learn more about metrics, refer to [Report Metrics](overview.md#report-metrics).
 
 <figure>
-<img src="../../../../../_assets/live-agent/LA_Inbox_report.png" width="100%" alt="Live Agent Inbox report" />
+<img src="../../../../../static/img/_assets/live-agent/LA_Inbox_report.png" width="100%" alt="Live Agent Inbox report" />
   <figcaption>Inboxes report</figcaption>
 </figure>
 

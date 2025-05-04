@@ -834,6 +834,252 @@ const sidebars: SidebarsConfig = {
     }
   ],
 
+  // Live Agent sidebar
+  liveAgentSidebar: [
+    'live-agent/index',
+    {
+      type: 'category',
+      label: 'Overview',
+      items: [
+        'live-agent/overview',
+        {
+          type: 'category',
+          label: 'Getting Started',
+          items: [
+            'live-agent/getting-started/overview',
+            {
+              type: 'category',
+              label: 'Live Agent Setup',
+              items: [
+                'live-agent/getting-started/live-agent-setup/live-agent-setup-org',
+                'live-agent/getting-started/live-agent-setup/live-agent-setup-inbox',
+                {
+                  type: 'category',
+                  label: 'Handover Setup',
+                  items: [
+                    'live-agent/getting-started/live-agent-setup/live-agent-setup-handover',
+                    'live-agent/getting-started/live-agent-setup/live-agent-setup-handover-endpoint',
+                    'live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow',
+                  ]
+                },
+                'live-agent/getting-started/live-agent-setup/live-agent-setup-agents',
+                'live-agent/getting-started/live-agent-setup/live-agent-setup-additional-inbox',
+              ]
+            },
+            'live-agent/glossary',
+          ]
+        }
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Conversations',
+      items: [
+        'live-agent/conversation/overview',
+        'live-agent/conversation/assign-conversations',
+        {
+          type: 'category',
+          label: 'Conversation Queue',
+          items: [
+            'live-agent/conversation/conversation-queue/overview',
+            'live-agent/conversation/conversation-queue/real-time-queue-notifications',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Conversation Routing',
+          items: [
+            'live-agent/conversation/conversation-routing/overview',
+            'live-agent/conversation/conversation-routing/manual-mode',
+            'live-agent/conversation/conversation-routing/automatic-mode',
+          ]
+        },
+        'live-agent/conversation/send-reply',
+        'live-agent/conversation/search-and-filter',
+        'live-agent/conversation/other-operations',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Assistants',
+      items: [
+        'live-agent/assistants/overview',
+        'live-agent/assistants/ai-copilot-whisper',
+        'live-agent/assistants/ai-copilot',
+        'live-agent/assistants/ai-copilot-bot',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Analytics Tools',
+      items: [
+        {
+          type: 'category',
+          label: 'Reports',
+          items: [
+            'live-agent/reports/overview',
+            'live-agent/reports/supervisor-overview',
+            {
+              type: 'category',
+              label: 'Administrator Reports',
+              items: [
+                'live-agent/reports/admin/overview',
+                'live-agent/reports/admin/conversations',
+                'live-agent/reports/admin/agents',
+                'live-agent/reports/admin/labels',
+                'live-agent/reports/admin/inboxes',
+                'live-agent/reports/admin/teams',
+              ]
+            }
+          ]
+        },
+        'live-agent/tools/odata-endpoint',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Settings',
+      items: [
+        'live-agent/settings/overview',
+        'live-agent/settings/agents',
+        'live-agent/settings/teams',
+        'live-agent/settings/inboxes',
+        'live-agent/settings/labels',
+        'live-agent/settings/skills',
+        'live-agent/settings/automation-rules',
+        'live-agent/settings/canned-responses',
+        'live-agent/settings/attachments',
+        'live-agent/settings/audit-logs',
+        'live-agent/settings/account-settings',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Access Management',
+      items: [
+        'live-agent/roles',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'User Profile and Notifications',
+      items: [
+        'live-agent/notifications',
+        'live-agent/profile-settings',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'On-Premises Installation',
+      items: [
+        'live-agent/installation/browser-requirements',
+        'live-agent/installation/deployment/version-compatibility-matrix',
+        {
+          type: 'category',
+          label: 'Deployment',
+          items: [
+            'live-agent/installation/deployment/architecture',
+            'live-agent/installation/deployment/prerequisites',
+            'live-agent/installation/deployment/installation-using-helm',
+            'live-agent/installation/deployment/cognigy-live-agent-oauth',
+            {
+              type: 'category',
+              label: 'Helm Values',
+              items: [
+                'live-agent/installation/helm-values/helm-values',
+                'live-agent/installation/helm-values/database',
+                'live-agent/installation/helm-values/redis',
+                'live-agent/installation/helm-values/storage',
+                'live-agent/installation/helm-values/smtp',
+                'live-agent/installation/helm-values/email-templates',
+              ]
+            }
+          ]
+        },
+        'live-agent/installation/deployment/installation-updates',
+        {
+          type: 'category',
+          label: 'Upgrade and Migration Guides',
+          items: [
+            'live-agent/installation/migration/overview',
+            'live-agent/installation/migration/helm-dependencies',
+            'live-agent/installation/migration/redis-sentinel',
+          ]
+        }
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Miscellaneous',
+      items: [
+        'live-agent/FAQs',
+      ]
+    }
+  ],
+
+  // Insights sidebar
+  insightsSidebar: [
+    'insights/index',
+    {
+      type: 'category',
+      label: 'Overview',
+      items: [
+        'insights/overview',
+        'insights/glossary',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Reports',
+      items: [
+        'insights/reports/overview',
+        'insights/reports/engagement',
+        'insights/reports/nlu-performance',
+        'insights/reports/live-agent',
+        'insights/reports/goals',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Explorers',
+      items: [
+        'insights/explorers/step',
+        'insights/explorers/transcript',
+        'insights/explorers/message',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Filter and Sort',
+      items: [
+        'insights/global-filters',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Data Management',
+      items: [
+        {
+          type: 'category',
+          label: 'Pre-Aggregation',
+          items: [
+            'insights/data-management/pre-aggregation',
+            'insights/data-management/time-zone-with-pre-aggregation',
+          ]
+        },
+        'insights/data-management/time-zone',
+        'insights/data-management/ttl',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Download Reports',
+      items: [
+        'insights/download-reports',
+      ]
+    }
+  ],
+
   // Support sidebar
   supportSidebar: [
     'help/index',

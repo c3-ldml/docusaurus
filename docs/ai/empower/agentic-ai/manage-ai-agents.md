@@ -128,11 +128,6 @@ To create an AI Agent, select one of the following options:
 
 :::
 
-
-
-
-
-
 </Tabs>
 - [Hire from the Job Market](#hire-from-the-job-market)
 

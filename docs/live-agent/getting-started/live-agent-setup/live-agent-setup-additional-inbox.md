@@ -16,7 +16,7 @@ To add another Inbox in Live Agent, follow these steps:
 2. In the upper-right corner, click the **+ Add Inbox** button. Live Agent will show you a screen to set up your Inbox.
 
     <figure>
-        <img src="../../../../_assets/live-agent/getting-started/LA_Inbox_setup.png" width="80%" alt="Live Agent Inbox Setup" />
+        <img src="../../../../static/img/_assets/live-agent/getting-started/LA_Inbox_setup.png" width="80%" alt="Live Agent Inbox Setup" />
       <figcaption></figcaption>
     </figure>
 
@@ -25,7 +25,7 @@ To add another Inbox in Live Agent, follow these steps:
     - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
 
         <figure>
-            <img src="../../../../_assets/live-agent/getting-started/LA_Config_URL.png" width="80%" />
+            <img src="../../../../static/img/_assets/live-agent/getting-started/LA_Config_URL.png" width="80%" />
         </figure>
 
 4. Click the **Create Cognigy.AI Inbox** button. Once you have successfully set up the Inbox, you are prompted in the next step to assign your Agents to the new Inbox. 
@@ -51,7 +51,7 @@ For example, in the URL `https://liveagent-dev.cognigy.ai/app/accounts/2/setting
 and the Inbox ID is `32852`.
 
 <figure>
-    <img src="../../../../_assets/live-agent/getting-started/LA_Inbox_URL.png" width="80%" />
+    <img src="../../../../static/img/_assets/live-agent/getting-started/LA_Inbox_URL.png" width="80%" />
 </figure>
 
 ## Configure a Flow for Handover to the Additional Inbox
@@ -61,7 +61,7 @@ To configure a Flow for a Handover to a Live Agent, follow these steps:
 1. In the Cognigy.AI interface, open the Flow that contains the Handover Node.
 
     <figure>
-        <img src="../../../../_assets/live-agent/Flow_handover_node_config.png" width="80%" />
+        <img src="../../../../static/img/_assets/live-agent/Flow_handover_node_config.png" width="80%" />
     </figure>
 
 2. Click the **Handover to Agent** Node to open the Node Editor.

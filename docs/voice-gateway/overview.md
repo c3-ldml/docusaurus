@@ -12,4 +12,4 @@ Voice Gateway provides users with voice-based services, such as phone calls, voi
 
 Voice Gateway is installed in addition to the main product [Cognigy.AI](../index.md) and cannot be used independently. If you want to use Voice Gateway, contact [Cognigy technical support](../help/get-help.md) to get access. 
 
-<img src="../../../static/img/_assets/voice-gateway/VG_architecture.png" alt="Voice Gateway Overview" />
+<img src={require('@site/static/img/_assets/voice-gateway/VG_architecture.png').default} alt="Voice Gateway Overview" />

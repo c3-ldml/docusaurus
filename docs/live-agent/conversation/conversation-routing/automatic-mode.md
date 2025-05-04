@@ -34,7 +34,7 @@ Live Agent provides an auto-assignment system for conversations based on _round-
 When set up, the action lists users and assigns conversations one by one. For example, if your Customer Support team consists of three users, the first conversation goes to Alex, the second to David, and the third to Sara. When the fourth conversation arrives, the cycle starts again, and it will be assigned to Alex.
 
 <figure>
-    <img class="image-center" src="../../../../_assets/live-agent/conversation/round-robin.png" width="50%" />
+    <img class="image-center" src="../../../../static/img/_assets/live-agent/conversation/round-robin.png" width="50%" />
     <figcaption>Round-robin approach</figcaption>
 </figure>
 

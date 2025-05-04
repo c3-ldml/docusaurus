@@ -16,7 +16,7 @@ tags:
 Within Live Agent, you can assign agents, teams, priority, labels, and change inboxes.
 
 <figure>
-<img class="image-center" src="../../../_assets/live-agent/conversation/conversation-actions.png" width="80%" alt="Live Agent Conversation Actions" />
+<img class="image-center" src="../../../static/img/_assets/live-agent/conversation/conversation-actions.png" width="80%" alt="Live Agent Conversation Actions" />
   <figcaption>Conversation Actions</figcaption>
 </figure>
 
