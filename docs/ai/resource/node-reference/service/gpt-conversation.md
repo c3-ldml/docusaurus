@@ -7,6 +7,7 @@ hidden: false
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import Video from '@site/src/components/Video/Video';
 
 # GPT Conversation (Research preview)
 

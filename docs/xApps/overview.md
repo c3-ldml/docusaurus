@@ -4,6 +4,7 @@ slug: "overview"
 hidden: false 
 ---
 import Pricing from '@site/docs/_includes/ai/xApp/_pricing.md';
+import Video from '@site/src/components/Video/Video';
 
 # xApps Overview
 

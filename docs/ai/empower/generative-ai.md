@@ -6,6 +6,7 @@ hidden: false
 
 import deprecationOfIndividualDesignTimeFeatures from '@site/docs/_includes/ai/generative-ai/_deprecation-of-individual-design-time-features.md';
 import termsOfUse from '@site/docs/_includes/ai/_terms-of-use.md';
+import Video from '@site/src/components/Video/Video';
 
 # Generative AI
 

@@ -8,7 +8,7 @@ tags:
   - Question
 ---
 import CollapsibleSection from '@site/src/components/CollapsibleSection';
-
+import Video from '@site/src/components/Video/Video';
 
 # Question
 
