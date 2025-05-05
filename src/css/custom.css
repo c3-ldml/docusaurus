@@ -15,6 +15,7 @@
   --ifm-color-primary-lightest: #4d8eff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-height: 6rem; /* Default is 3.75rem */
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,6 +28,41 @@
   --ifm-color-primary-lighter: #80aeff;
   --ifm-color-primary-lightest: #99beff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-navbar-height: 6rem; /* Default is 3.75rem */
+}
+
+/* Layout modifications */
+#__docusaurus {
+  display: flex;
+  min-height: 100vh;
+}
+
+#__docusaurus > nav {
+  position: fixed;
+  top: 0;
+  left: 300px;
+  width: calc(100vw - 300px);
+  height: var(--ifm-navbar-height);
+  z-index: var(--ifm-z-index-fixed);
+  background-color: var(--ifm-background-color);
+}
+
+#__docusaurus_skipToContent_fallback > div > div > aside > div > div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: var(--ifm-background-color);
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+  z-index: calc(var(--ifm-z-index-fixed) + 1);
+}
+
+#__docusaurus_skipToContent_fallback > div > div > main {
+  margin-left: 300px;
+  margin-top: var(--ifm-navbar-height);
+  flex: 1;
+  padding: 2rem;
 }
 
 /* Tab content padding */
