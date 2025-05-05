@@ -12,6 +12,8 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
+import {MDXProvider} from '@mdx-js/react';
+import {useMDXComponents} from '@mdx-js/react';
 
 interface GridItem {
   icon: string;
@@ -21,23 +23,10 @@ interface GridItem {
     text: string;
     href: string;
   }[];
-  key?: number;
 }
 
 interface Props {
   items: GridItem[];
-}
-
-function ArrowIcon() {
-  return (
-    <svg
-      className={styles.arrowIcon}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-    >
-      <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z" />
-    </svg>
-  );
 }
 
 function GridCard({icon, title, description, links}: GridItem) {
@@ -59,11 +48,10 @@ function GridCard({icon, title, description, links}: GridItem) {
           <strong>{title}</strong>
         </div>
         <hr className={styles.divider} />
-        <p className={styles.cardDescription}>{description}</p>
+        <div className={styles.cardDescription} dangerouslySetInnerHTML={{ __html: description }} />
         <div className={styles.linkList}>
           {links.map((link, index) => (
             <Link key={index} className={styles.linkItem} to={link.href}>
-              <ArrowIcon />
               {link.text}
             </Link>
           ))}
@@ -75,10 +63,12 @@ function GridCard({icon, title, description, links}: GridItem) {
 
 export function GridCards({items}: Props): ReactNode {
   return (
-    <div className="row" style={{ margin: '0 0' }}>
-      {items.map((item, index) => (
-        <GridCard key={index} {...item} />
-      ))}
-    </div>
+    <MDXProvider>
+      <div className="row" style={{ margin: '0 0' }}>
+        {items.map((item, index) => (
+          <GridCard key={index} {...item} />
+        ))}
+      </div>
+    </MDXProvider>
   );
 } 

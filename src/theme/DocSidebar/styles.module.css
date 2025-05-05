@@ -21,7 +21,6 @@
 .sidebarSwitcher {
   padding: 1rem;
   background-color: var(--ifm-background-color);
-  border-bottom: 1px solid var(--ifm-color-emphasis-200);
   position: sticky;
   top: 0;
   z-index: 1;
