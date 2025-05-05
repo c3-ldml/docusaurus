@@ -41,7 +41,10 @@ Set up the essential characteristics that define your AI Agent's behavior and ro
 5. Ensure security settings are configured properly.
 6. Assign a job and click **Create** to test.
 
-<ReactPlayer playing controls url="https://docscognigyassets.blob.core.windows.net/assets/" />
+<Video
+    src="https://docscognigyassets.blob.core.windows.net/assets/ai/ai-agents/create-ai-agent.mp4"
+    width="70%"
+/>
 
 ## Assign a Job to your AI Agent
 
