@@ -5,16 +5,17 @@ hidden: false
 ---
 import resetFilters from '@site/docs/_includes/insights/_reset-filters.md';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 import excludeFilters from '@site/docs/_includes/insights/_exclude-filters.md';
 
 
 # Step Explorer
 
-The _Step Explorer_ is an analytics tool in Cognigy Insights that lets you visualize how customers navigate through a conversation. You can explore the conversation steps and identify key paths, as well as points where customers disengage. This tool helps you evaluate and improve your AI Agent, potentially increasing understanding, orders, bookings, or reducing support requests.
-
-To open the Step Explorer, use one of the following options:
-
-=== "Via Cognigy.AI"
+<Tabs>
+  <TabItem value="tab1" label="Via Cognigy.AI" default>
     1. In the left-side menu of the Cognigy.AI interface, select a Project.
     2. Within the Project, navigate to Insights using one of the following options:
         - In the left-side menu of the Project, select **Insights**.
@@ -22,8 +23,15 @@ To open the Step Explorer, use one of the following options:
         The Cognigy Insights Overview report will be displayed.
     3. In the left-side menu of the Insights interface, select **Step Explorer**.
 
-=== "Via Insights"
+  </TabItem>
+  <TabItem value="tab2" label="Via Insights">
     1. In the left-side menu of the Insights interface, select **Step Explorer**.
+
+  </TabItem>
+</Tabs>
+The _Step Explorer_ is an analytics tool in Cognigy Insights that lets you visualize how customers navigate through a conversation. You can explore the conversation steps and identify key paths, as well as points where customers disengage. This tool helps you evaluate and improve your AI Agent, potentially increasing understanding, orders, bookings, or reducing support requests.
+
+To open the Step Explorer, use one of the following options:
 
 The Step Explorer interface will be displayed.
 Each column on the Step Explorer page represents a Node or Intent [annotated](#before-you-begin) in the Cognigy.AI Flow.

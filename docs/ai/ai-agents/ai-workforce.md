@@ -96,7 +96,7 @@ Cognigy.AI offers a comprehensive suite of human assistants, each tailored to me
 
 #### AI Copilot
 
-[Cognigy AI Copilot](../../ai-copilot/index.md) is an intelligent assistant that helps human agents work more effectively. 
+[Cognigy AI Copilot](../../ai-copilot/index.mdx) is an intelligent assistant that helps human agents work more effectively. 
 It provides real-time suggestions, handles routine tasks, and manages extra workload during busy times.
 With an easy-to-use interface and customizable widgets,
 such as tools for quick knowledge searches or sentiment analysis, it offers human agents fast access to key information.

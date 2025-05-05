@@ -129,6 +129,10 @@ const config: Config = {
               to: '/live-agent/index',
             },
             {
+              label: 'Agent Copilot',
+              to: '/agent-copilot/index',
+            },
+            {
               label: 'Insights',
               to: '/insights/index',
             },

@@ -5,6 +5,10 @@ hidden: false
 ---
 import resetFilters from '@site/docs/_includes/insights/_reset-filters.md';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 import excludeFilters from '@site/docs/_includes/insights/_exclude-filters.md';
 
 
@@ -12,11 +16,8 @@ import excludeFilters from '@site/docs/_includes/insights/_exclude-filters.md';
 
 The Message Explorer is an analytics tool in Cognigy Insights that helps you search for specific customer or AI Agent messages within a conversation. It shows messages the user has sent before and after the selected one to provide further context. It complements the [Transcript Explorer](transcript.md), which provides more session-related details and user profile data.
 
-The Message Explorer shows the entire conversation as context around a specific message. This helps you understand user reactions and motivations. It can answer questions such as "What triggers specific types of responses?" and "How often do customers react similarly?"
-
-To open the Message Explorer interface, use one of the following options:
-
-=== "Via Cognigy.AI"
+<Tabs>
+  <TabItem value="tab1" label="Via Cognigy.AI" default>
     1. In the left-side menu of the Cognigy.AI interface, select a Project.
     2. Within the Project, navigate to Insights using one of the following options:
         - In the left-side menu of the Project, select **Insights**. 
@@ -24,8 +25,15 @@ To open the Message Explorer interface, use one of the following options:
         The Cognigy Insights Overview report will be displayed by default. 
     3. In the left-side menu of the Insights interface, select **Message Explorer**.
          
-=== "Via Insights"
+  </TabItem>
+  <TabItem value="tab2" label="Via Insights">
     1. In the left-side menu of the Insights interface, select **Message Explorer**.
+
+  </TabItem>
+</Tabs>
+The Message Explorer shows the entire conversation as context around a specific message. This helps you understand user reactions and motivations. It can answer questions such as "What triggers specific types of responses?" and "How often do customers react similarly?"
+
+To open the Message Explorer interface, use one of the following options:
 
 The Message Explorer interface will be displayed.
 

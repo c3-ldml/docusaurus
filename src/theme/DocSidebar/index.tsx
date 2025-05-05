@@ -9,6 +9,7 @@ import voiceGatewayIcon from '@site/static/img/_assets/icons/voice-gateway.svg';
 import webchatIcon from '@site/static/img/_assets/icons/webchat.svg';
 import xappsIcon from '@site/static/img/_assets/icons/xapps-logo.svg';
 import liveAgentIcon from '@site/static/img/_assets/icons/live-agent-icon.svg';
+import agentCopilotIcon from '@site/static/img/_assets/icons/agent-copilot-icon.svg';
 import insightsIcon from '@site/static/img/_assets/icons/insights-icon.svg';
 
 interface CustomDropdownProps {
@@ -141,6 +142,12 @@ export default function DocSidebar(props: Props): React.ReactElement | null {
       value: 'live-agent',
       description: 'Seamlessly hand over conversations to human agents',
       icon: liveAgentIcon
+    },
+    {
+      label: 'Agent Copilot',
+      value: 'agent-copilot',
+      description: 'Empower your agents to provide faster customer support',
+      icon: agentCopilotIcon
     },
     {
       label: 'Insights',

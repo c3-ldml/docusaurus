@@ -1016,7 +1016,65 @@ const sidebars: SidebarsConfig = {
       ]
     }
   ],
-
+  // Agent Copilot sidebar
+  'AI Copilot': [
+    {
+      type: 'doc',
+      id: 'ai-copilot/index',
+    },
+    {
+      type: 'category',
+      label: 'Overview',
+      items: [
+        'ai-copilot/overview',
+        'ai-copilot/getting-started',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Integrate, Configure, and Embed',
+      items: [
+        'ai-copilot/contact-center-integration',
+        'ai-copilot/configuration',
+        'ai-copilot/plug-and-play-widgets',
+        'ai-copilot/embedding',
+      ],
+    },
+    {
+      type: 'doc',
+      id: 'ai-copilot/chat',
+      label: 'Chat AI Copilot',
+    },
+    {
+      type: 'category',
+      label: 'Voice AI Copilot',
+      items: [
+        'ai-copilot/voice/voice-overview',
+        'ai-copilot/voice/transfer-node',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'On-Premises Installation',
+      items: [
+        'ai-copilot/installation/overview',
+        'ai-copilot/installation/browser-requirements',
+        'ai-copilot/architecture',
+        'ai-copilot/installation/version-compatibility-matrix',
+        'ai-copilot/installation/prerequisites',
+        'ai-copilot/installation/installation-process',
+        {
+          type: 'category',
+          label: 'Upgrade and Migration Guides',
+          items: [
+            'ai-copilot/installation/migration/overview',
+            'ai-copilot/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration',
+            'ai-copilot/installation/migration/ai-copilot-new-dns-names-migration',
+          ],
+        },
+      ],
+    },
+  ],
   // Insights sidebar
   insightsSidebar: [
     'insights/index',

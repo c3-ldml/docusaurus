@@ -5,6 +5,10 @@ description: "Live Agent Attachments are files or documents that are sent or rec
 hidden: false 
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Attachments
 
 <a href="Updated"><img src="https://img.shields.io/badge/Updated_in-v4.70-blue" alt="Version badge" /></a>
@@ -59,11 +63,8 @@ To view all reviewed and sent attachments, follow these steps:
 
 You will see the list of all attachments that were sent by end users and human agents.
 
-## Download an Attachment
-
-To download an attachment within Live Agent, you can do this either in a conversation or on the **Attachments** page.
-
-=== "Attachment Page"
+<Tabs>
+  <TabItem value="tab1" label="Attachment Page" default>
 
     1. Go to Live Agent.
     2. On the left side of the screen, select **Settings**.
@@ -71,7 +72,8 @@ To download an attachment within Live Agent, you can do this either in a convers
     4. Go to the file you want to download.
     5. In the **ACTIONS** column, click **Download**.  
 
-=== "Conversation Page"
+  </TabItem>
+  <TabItem value="tab2" label="Conversation Page">
 
     1. Go to Live Agent.
     2. On the left side of the screen, select **Conversations**.
@@ -79,6 +81,12 @@ To download an attachment within Live Agent, you can do this either in a convers
     4. Select your conversation.
     5. Find the attachment in the conversation, click **Download**.
 
+
+  </TabItem>
+</Tabs>
+## Download an Attachment
+
+To download an attachment within Live Agent, you can do this either in a conversation or on the **Attachments** page.
 
 The file will be opened in a new tab of your browser. Click your file to save it to your local device.
 

@@ -5,6 +5,10 @@ hidden: false
 ---
 import timeZoneOdataAndInsights from '@site/docs/_includes/insights/_time-zone-odata-and-insights.md';
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 import newFramework from '@site/docs/_includes/insights/_new-framework.md';
 
 
@@ -32,14 +36,12 @@ You can include 2 extra custom time zones (recommended), with a maximum of 5.
 If a previously set time zone is not supported, it will be reset to the default time zone or the nearest supported time zone.
 In the Insights interface, you will see the corresponding warning.
 
-## Custom Time Zone
-
-The configuration of additional time zones depends on the type of your installation:
-
-=== "Dedicated SaaS"
+<Tabs>
+  <TabItem value="tab1" label="Dedicated SaaS" default>
      Contact your customer success manager to add preferable custom time zones.
 
-=== "On-Premises"
+  </TabItem>
+  <TabItem value="tab2" label="On-Premises">
 
     If you are using an on-premises environment, you can specify a custom time zone.
     Note that each time zone selection necessitates a separate set of pre-aggregations, which can increase the system load.
@@ -47,6 +49,12 @@ The configuration of additional time zones depends on the type of your installat
     We recommend selecting 2–3 time zones, with UTC included, as the ideal configuration. The maximum allowed limit is 5 time zones, and UTC must always be included in your value.
     
     Before installation or an upgrade, we strongly advise aligning the list of supported time zones with the customer's preferences. To do this, specify `CUBEJS_SCHEDULED_REFRESH_TIMEZONES=<time-zone-1>,<time-zone-1>,<time-zone-3>` in the `values.yaml` file. For example, `CUBEJS_SCHEDULED_REFRESH_TIMEZONES=UTC,CET,ACST`.
+
+  </TabItem>
+</Tabs>
+## Custom Time Zone
+
+The configuration of additional time zones depends on the type of your installation:
 
 ## Change Time Zone Settings
 
