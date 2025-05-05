@@ -33,6 +33,7 @@ After the AI Agent asks a question and the user answers, the answer is validated
 <Video
   src="https://www.youtube.com/embed/iGc3fekZQOw"
   title="YouTube video player"
+  width="70%"
 />
 
 

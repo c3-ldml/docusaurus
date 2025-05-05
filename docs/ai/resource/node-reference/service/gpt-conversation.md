@@ -108,6 +108,7 @@ This video shows a live example of how the GPT Conversation Node can generate te
   src="https://www.youtube.com/embed/WKJO4_JfIFs"
   title="YouTube video player"
   startTime={12}
+  width="70%"
 />
 
 At 0:12 seconds, the user receives the expected answer from the AI Agent in the form of generated Conversational AI text.

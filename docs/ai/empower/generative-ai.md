@@ -26,6 +26,7 @@ To know more about the benefits of integrating Conversational AI with Generative
 <Video 
   src="https://www.youtube.com/embed/g_ntrz52BLM"
   title="Webinar: Conversational AI with Generative AI"
+  width="70%"
 />
 
 ## Prerequisites

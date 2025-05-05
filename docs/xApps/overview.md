@@ -27,6 +27,7 @@ Watch this webinar to get a quick overview of what xApps are, how they work, and
 <Video
   src="https://www.youtube.com/embed/4qvZGG6qK6w"
   title="Design Multimodal Customer Journeys with Cognigy xApps"
+  width="70%"
 />
 
 ## Compatibility

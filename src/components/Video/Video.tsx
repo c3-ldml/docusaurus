@@ -4,16 +4,14 @@ import styles from './Video.module.css';
 interface VideoProps {
   src: string;
   title: string;
-  width?: number;
-  height?: number;
+  width?: string | number;
   startTime?: number;
 }
 
 export default function Video({ 
   src, 
   title, 
-  width = 701, 
-  height = 438, 
+  width = '100%', 
   startTime = 0 
 }: VideoProps) {
   // Extract video ID from YouTube URL
@@ -23,13 +21,9 @@ export default function Video({
   const embedUrl = `https://www.youtube.com/embed/${videoId}?start=${startTime}`;
 
   return (
-    <div className={styles.videoContainer}>
+    <div className={styles.videoContainer} style={{ width }}>
       <iframe
         className={styles.video}
-        style={{
-          width: '100%',
-          height: '100%'
-        }}
         src={embedUrl}
         title={title}
         frameBorder="0"
