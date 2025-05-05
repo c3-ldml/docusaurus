@@ -21,11 +21,11 @@ function convertFigures(content) {
     // Create the require statement
     const requireStatement = `require('${src}').default`;
     
-    // Build the new img element
+    // Build the new img element with center alignment
     let newImg = `<img src={${requireStatement}}`;
     if (alt) newImg += ` ${alt}`;
     if (width) newImg += ` ${width}`;
-    newImg += ' />';
+    newImg += ' style={{ display: "block", margin: "0 auto" }} />';
     
     return newImg;
   });

@@ -176,6 +176,40 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    function () {
+      return {
+        name: 'ignore-specific-files',
+        configureWebpack() {
+          return {
+            module: {
+              rules: [
+                {
+                  test: /\.(sh|psd|ctxt|txt)$/,
+                  type: 'asset/resource',
+                  generator: {
+                    emit: false
+                  }
+                },
+                {
+                  test: /\.md$/,
+                  include: [
+                    /static\/img\/_assets\/ai\/empower/,
+                    /static\/img\/_assets/
+                  ],
+                  type: 'asset/resource',
+                  generator: {
+                    emit: false
+                  }
+                }
+              ]
+            }
+          };
+        },
+      };
+    },
+  ],
 };
 
 export default config;

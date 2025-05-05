@@ -1,0 +1,134 @@
+---
+title: "Logic Nodes" 
+slug: "logic" 
+hidden: false 
+---
+
+import {GridCards} from '@site/src/components/GridCards';
+
+# Logic
+
+Logic Nodes allow you to customize your Flow's behavior. You can use them to control which parts of the Flow should run based on conditions or integrate with other Flows.
+
+<GridCards items={[
+  {
+    icon: "➕",
+    title: "Add To Context",
+    description: "Use the Add To Context Node to store information in the [Context](../../../test/interaction-panel/context.mdx) object and use this information throughout the session.",
+    links: [
+      {text: "Documentation", href: "add-to-context.mdx"}
+    ]
+  },
+  {
+    icon: "▶️",
+    title: "Execute Flow",
+    description: "Use the Execute Flow Node to execute another Flow and return to the initial Flow afterward.",
+    links: [
+      {text: "Documentation", href: "execute-flow.mdx"}
+    ]
+  },
+  {
+    icon: "➡️",
+    title: "Go To",
+    description: "Use the Go To Node to switch between Flows or between Nodes.",
+    links: [
+      {text: "Documentation", href: "go-to.mdx"}
+    ]
+  },
+  {
+    icon: "⚖️",
+    title: "If",
+    description: "The If Node evaluates a condition statement and triggers either the Then or Else child Nodes.",
+    links: [
+      {text: "Documentation", href: "if.mdx"}
+    ]
+  },
+  {
+    icon: "⏱️",
+    title: "Interval",
+    description: "Use the Interval Node to add a minimal interval before other Nodes are executed.",
+    links: [
+      {text: "Documentation", href: "interval.mdx"}
+    ]
+  },
+  {
+    icon: "🔀",
+    title: "Lookup",
+    description: "The Lookup Node acts as a switch between different options. Based on the input value, the Node executes one of the options.",
+    links: [
+      {text: "Documentation", href: "lookup.mdx"}
+    ]
+  },
+  {
+    icon: "1️⃣",
+    title: "Once",
+    description: "Once Nodes limit the Flow execution after them to once per session, for example, for greetings or database requests.",
+    links: [
+      {text: "Documentation", href: "once.mdx"}
+    ]
+  },
+  {
+    icon: "➖",
+    title: "Remove From Context",
+    description: "The Remove From Context Node removes information from the [Context](../../../test/interaction-panel/context.mdx) object.",
+    links: [
+      {text: "Documentation", href: "remove-from-context.mdx"}
+    ]
+  },
+  {
+    icon: "🔄",
+    title: "Set State",
+    description: "The Set State Node changes the Flow's [State](../../../test/interaction-panel/state.mdx).",
+    links: [
+      {text: "Documentation", href: "set-state.mdx"}
+    ]
+  },
+  {
+    icon: "🔄",
+    title: "Reset State",
+    description: "The Reset State Node resets the Flow's [State](../../../test/interaction-panel/state.mdx).",
+    links: [
+      {text: "Documentation", href: "reset-state.mdx"}
+    ]
+  },
+  {
+    icon: "😴",
+    title: "Sleep",
+    description: "The Sleep Node pauses the Flow execution for a period you define.",
+    links: [
+      {text: "Documentation", href: "sleep.mdx"}
+    ]
+  },
+  {
+    icon: "⏹️",
+    title: "Stop and Return",
+    description: "The Stop and Return Node stops the Flow execution and returns to the Start Node.",
+    links: [
+      {text: "Documentation", href: "stop-and-return.mdx"}
+    ]
+  },
+  {
+    icon: "🌐",
+    title: "Switch Locale",
+    description: "The Switch Locale Node changes [Locales](../../translation-and-localization/localization.mdx) during a conversation, for example, based on language detection or user region.",
+    links: [
+      {text: "Documentation", href: "switch-locale.mdx"}
+    ]
+  },
+  {
+    icon: "💭",
+    title: "Think",
+    description: "Use the Think Node to inject a text into the Start Node, for example, to restart the Flow, with specific data, text, or Intent.",
+    links: [
+      {text: "Documentation", href: "think.mdx"}
+    ]
+  },
+  {
+    icon: "⏳",
+    title: "Wait for Input",
+    description: "The Wait for Input Node halts the Flow execution until the user input is received.",
+    links: [
+      {text: "Documentation", href: "wait-for-input.mdx"}
+    ]
+  }
+]} />

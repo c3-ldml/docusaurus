@@ -1,0 +1,29 @@
+---
+title: "Update Profile" 
+slug: "update-profile" 
+hidden: false 
+---
+
+# Update Profile
+
+<img src={require('../../../../../static/img/_assets/ai/resource/node-reference/analytics/update-profile.png').default} width="50%" />
+
+## Description
+
+This Node updates users' Contact Profiles.
+The available Profile Schema fields correspond to all defined fields in the Project's [Profile Schema](../../../analyze/contact-profiles.mdx#profile-schema). 
+If an invalid field is used, no action is taken.
+
+## Parameters
+
+| Parameter            | Type          | Description                                                                                                                                                                                                                                                                                  |
+|----------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Profile Schema Field | Selector      | Identify the field in the user's Contact Profile that needs to be updated. The predefined Profile Schema fields are described in [Contact Profiles](../../../analyze/contact-profiles.mdx); you can also create a [custom field](../../../analyze/contact-profiles.mdx#create-a-custom-field). |
+| Value                | CognigyScript | The value of the field.                                                                                                                                                                                                                                                                      |
+
+## More Information
+
+- [Activate Profile](activate-profile.mdx)
+- [Deactivate Profile](deactivate-profile.mdx)
+- [Delete Profile](delete-profile.mdx)
+- [Merge Profile](merge-profile.mdx)

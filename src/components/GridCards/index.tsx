@@ -41,11 +41,21 @@ function ArrowIcon() {
 }
 
 function GridCard({icon, title, description, links}: GridItem) {
+  // Extract the image path from the markdown string
+  const imagePath = icon.match(/!\[.*?\]\((.*?)\)/)?.[1] || '';
+  
+  // Only try to load SVG files
+  const isSvg = imagePath.toLowerCase().endsWith('.svg');
+  
   return (
     <div className="col col--6" style={{ padding: '0 1rem', marginBottom: '3rem' }}>
       <div className={styles.gridCard}>
         <div className={styles.cardTitle}>
-          <span>{icon}</span>
+          {isSvg ? (
+            <img src={require('@site/static' + imagePath.replace('../../../../static', '')).default} alt={title} style={{ width: '24px', height: '24px', marginRight: '8px' }} />
+          ) : (
+            <span>{icon}</span>
+          )}
           <strong>{title}</strong>
         </div>
         <hr className={styles.divider} />

@@ -1,0 +1,34 @@
+---
+title: "Global Connections"
+slug: "global-connections"
+description: "Global Connections are Cognigy.AI Connections at organization level."
+hidden: false
+tags:
+    - Global resources
+    - Global Connections
+    - Admin Center
+---
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Global Connections
+
+<a href="Added"><img src="https://img.shields.io/badge/Added_in-v4.97-blue" alt="Version badge" /></a>
+
+<Tabs>
+  <TabItem value="tab1" label="GUI" default>
+
+    You can view, edit, and delete global Connections in the [Admin Center](../overview.mdx) under **Resources > Connections** as well as copy their Reference ID.
+
+  </TabItem>
+  <TabItem value="tab2" label="API">
+
+    You can view, edit, and delete global Connections using the [Cognigy.AI API](https://api-dev.cognigy.ai/openapi#tag--Connections-v2.0). To do so, set the `resourceLevel` parameter to `organisation` in the JSON body.
+
+  </TabItem>
+</Tabs>
+_Global Connections_ are [Connections](../../../../build/connections.mdx) established when you create [global LLMs](../../../../empower/llms/overview.mdx).
+
+## Working with Global LLMs

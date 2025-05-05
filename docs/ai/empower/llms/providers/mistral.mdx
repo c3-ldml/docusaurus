@@ -1,0 +1,68 @@
+---
+title: "Mistral AI"
+slug: "mistral-ai"
+description: "To start using an Mistral AI LLM with Cognigy.AI features, add the LLM and apply it to the corresponding use case."
+hidden: false
+tags:
+  - llms
+  - mistral
+  - mistral models
+---
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+import applyModel from '@site/docs/_includes/ai/generative-ai/_apply-model.mdx';
+import addModelViaApi from '@site/docs/_includes/ai/generative-ai/_add-model-via-api.mdx';
+
+# Mistral AI
+
+To start using a Mistral AI model with Cognigy.AI features, follow these steps:
+
+1. [Add a Model](#add-a-model)
+2. [Apply the Model](#apply-the-model)
+
+## Add a Model
+
+You can add a model using one of the following interfaces:
+
+- [GUI](#add-a-model-via-gui)
+- [API](#add-a-model-via-api)
+
+<Tabs>
+  <TabItem value="tab1" label="Standard Model" default>
+
+    | Parameter  | Description                                                                                                                                                                   |
+    |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | API Key    | Add the API Key that you [generated](https://docs.mistral.ai/getting-started/quickstart/) under **API > API Keys** in your [Mistral AI](https://console.mistral.ai/) account. |
+
+  </TabItem>
+  <TabItem value="tab2" label="Custom Model">
+
+    | Parameter  | Description                                                                                                                                                                    |
+    |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Model Type | Select **Completion**.                                                                                                                                                         |
+    | Model Name | Enter the name of the model that you want to use as a custom model. To find model names, refer to the [Mistral AI models](https://docs.mistral.ai/models-overview) documentation. |
+    | API Key    | Add the API Key that you [generated](https://docs.mistral.ai/getting-started/quickstart/) under **API > API Keys** in your [Mistral AI](https://console.mistral.ai/) account.  |
+
+  </TabItem>
+</Tabs>
+### Add a Model via GUI
+
+You can add a model provided by Mistral AI to Cognigy.AI in **Build > LLM**. To add the model, you will need the following parameters:
+
+Apply changes. Check if the connection was set up by clicking **Test**.
+
+<addModelViaApi />
+
+## Apply the Model
+
+<applyModel />
+
+## More Information
+
+- [Other LLM Operations](../other-operations.mdx)
+- [Overview](../overview.mdx)
+- [All LLM Providers](all-providers.mdx)
+- [Model support by feature](../model-support-by-feature.mdx)

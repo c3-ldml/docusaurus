@@ -1,0 +1,67 @@
+---
+title: "Voice Gateway Verbs"
+slug: "vg-verbs"
+hidden: false
+---
+
+# Voice Gateway Verbs
+
+To create a voice agent,
+you need to build a Flow on the Cognigy.AI side using [Voice Nodes](../../../ai/build/node-reference/voice/voice-gateway/overview.mdx).
+These Nodes provide the basic verbs required for your voice agent. If you require additional verbs that are not available in the Voice Nodes, you can add them using a [Code Node](#custom-verbs-in-a-code-node). 
+For incoming calls, you can use Voice Nodes and a Code Node. However, for outgoing calls, you must specify all parameters in the call request body, as described in the [Advanced Configuration Request](../../creating-outbound-calls.mdx#advanced-configuration-request) section.
+
+## List of Verbs
+
+The table presents the list of supported verbs.
+
+| Verb                                        | Description                                                                                                                                                                                                  | Node Analogue                                                                                                                                |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [Answering Machine Detection (.mdx)](.mdx.mdx) | This verb can be enabled on outbound calls to provide an indication of whether a call has been answered by a person or a machine. To use this feature, provide the `.mdx` property in a [dial](dial.mdx) verb. | [Transfer](../../../ai/build/node-reference/voice/voice-gateway/transfer.mdx) (**Dial > Answering Machine Detection** settings)               |
+| [Config](config.mdx)                         | This verb lets the developer modify the default speech settings for the current session or to collect speech or DTMF input in the background while other verbs are executed.                              | [Set Session Config](../../../ai/build/node-reference/voice/voice-gateway/set-session-config.mdx)                                                |
+| [Dial](dial.mdx)                             | This verb initiates a new call by connecting to a telephone number, registered SIP user, or SIP URI.                                                                                                     | [Transfer](../../../ai/build/node-reference/voice/voice-gateway/transfer.mdx) (**Dial** settings)                                                 |
+| [Dub](dub.mdx)                               | This verb adds a background audio track to the conversation.                                                                                                                                                | [Set Session Config](../../../ai/build/node-reference/voice/voice-gateway/set-session-config.mdx)                                              |
+| [DTMF](dtmf.mdx)                             | This verb generates a string of DTMF digit signals, which are transmitted as RTP payloads according to [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833).                                            | [DTMF](../../../ai/build/node-reference/voice/voice-gateway/dtmf.mdx)                                                                         |
+| [Gather](gather.mdx)                         | This verb collects DTMF or speech input.                                                                                                                                                                     | -                                                                                                                                            |
+| [Hangup](hangup.mdx)                         | This verb terminates the call and ends the session.                                                                                                                                                          | [Hangup](../../../ai/build/node-reference/voice/voice-gateway/hangup.mdx)                                                                     |
+| [Listen](listen.mdx)                         | This verb sends real-time audio streams to your application over a WebSocket connection for processing. The [Call Recording](../../webapp/recent-calls.mdx#call-recordings) feature relies on this verb.      | [Call Recording](../../../ai/build/node-reference/voice/voice-gateway/call-recording.mdx)                                                     |
+| [Play](play.mdx)                             | This verb streams recorded audio to a call.                                                                                                                                                                  | [Play](../../../ai/build/node-reference/voice/voice-gateway/play.mdx)                                                                         |
+| [Say](say.mdx)                               | This verb sends synthesized speech to the remote party. The text provided may be either plain text or use SSML tags.                                                                                         | [Say](../../../ai/build/node-reference/basic/say.mdx)                                                                           |
+| [SIP:request](sip-request.mdx)               | This verb sends a SIP `INFO`, `NOTIFY`, or `MESSAGE` request on an established call, which is an in-dialog request.                                                                                          | [Send Metadata](../../../ai/build/node-reference/voice/voice-gateway/send-metadata.mdx)                                                       |
+| [SIP:refer](sip-refer.mdx)                   | This verb transfers a call and disconnect.                                                                                                                                                                   | [Transfer](../../../ai/build/node-reference/voice/voice-gateway/transfer.mdx) (**Refer** settings)                                            |
+| [Transcribe](transcribe.mdx)                 | This verb generates real-time transcriptions of speech.                                                                                                                                                      | [Set Session Config](../../../ai/build/node-reference/voice/voice-gateway/set-session-config.mdx)  (**Recognizer - Speech-To-Text** settings) |
+
+## Custom Verbs in a Code Node
+
+The example shows how a [Code Node](../../../ai/build/node-reference/basic/code/overview.mdx) can send a customized [`dial`](dial.mdx) verb with an Answering Machine Detection
+(`.mdx`) action hook.
+
+```javascript
+api.output(null, {
+    "_cognigy": {
+        "_voice-gateway2": {
+            "json": {
+                "verb": "dial",
+                "actionHook": "dial",
+                "callerId": "+49XXXXXXXXXXX",
+                "target": [
+                    {
+                        "type": "phone",
+                        "number": "+49XXXXXXXXXXX",
+                    }
+                ],
+                ".mdx": {
+                    "actionHook": ".mdx",
+                    "recognizer": {
+                        "vendor": "microsoft",
+                        "language": "en-US",
+                    }
+                }
+            }
+        }
+    }
+})
+```
+## More Information
+
+- [Voice Gateway Events](../events/overview.mdx)

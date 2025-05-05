@@ -8,7 +8,7 @@ tags: ['Source Tags', 'Knowledge Filtering', 'Search Refinement', 'Content Organ
 
 # Knowledge Source Tags
 
-_Knowledge Source Tags_, also known as Source Tags, are labels that you can add to your [Knowledge Sources](knowledge-source.md) to improve how your AI Agents reply to your customers. With Source Tags, Knowledge AI's search engine can focus on specific Knowledge Sources and provide AI Agents targeted results.
+_Knowledge Source Tags_, also known as Source Tags, are labels that you can add to your [Knowledge Sources](knowledge-source.mdx) to improve how your AI Agents reply to your customers. With Source Tags, Knowledge AI's search engine can focus on specific Knowledge Sources and provide AI Agents targeted results.
 
 Source Tags have the following benefits:
 
@@ -19,8 +19,8 @@ Source Tags have the following benefits:
 
 ## Prerequisites
 
-- You have created a [Knowledge Store](../knowledge-store.md).
-- You have created a [Knowledge Source](knowledge-source.md).
+- You have created a [Knowledge Store](../knowledge-store.mdx).
+- You have created a [Knowledge Source](knowledge-source.mdx).
 
 ## Limitations
 
@@ -30,11 +30,11 @@ Source Tags have the following benefits:
 ## Naming Guidelines
 
 - Include only lowercase and alpha-numerical (a-z, 0-9) characters, underscores, and hyphens.
-- You can include [CognigyScript](../../../build/cognigyscript.md) in Source Tag names. In this case, make sure the CognigyScript input is lowercase with the `.toLowerCase()` method, for example, `{{"{{input.text.toLowerCase()}}"}}`. Using CognigyScript as a Source Tag name allows your AI Agent to filter Knowledge Sources dynamically according to the user input.
+- You can include [CognigyScript](../../../build/cognigyscript.mdx) in Source Tag names. In this case, make sure the CognigyScript input is lowercase with the `.toLowerCase()` method, for example, `{{"{{input.text.toLowerCase()}}"}}`. Using CognigyScript as a Source Tag name allows your AI Agent to filter Knowledge Sources dynamically according to the user input.
 
 ## Working with Source Tags
 
-To configure Source Tags, you need to first add them to a Knowledge Source in **Build > Knowledge** or directly to the [CTXT file](../knowledge-source/text-formats/ctxt.md). Then, you need to add the Source Tag to the [Search Extract Output Node](../knowledge-search-and-extraction/search-extract-output.md) in the [Flow editor](../../../build/flows/editor.md#exploring-the-flow-editor). You can test the knowledge query results in the [Interaction Panel](../../../test/interaction-panel/overview.md).
+To configure Source Tags, you need to first add them to a Knowledge Source in **Build > Knowledge** or directly to the [CTXT file](../knowledge-source/text-formats/ctxt.mdx). Then, you need to add the Source Tag to the [Search Extract Output Node](../knowledge-search-and-extraction/search-extract-output.mdx) in the [Flow editor](../../../build/flows/editor.mdx#exploring-the-flow-editor). You can test the knowledge query results in the [Interaction Panel](../../../test/interaction-panel/overview.mdx).
 
 ## Examples
 
@@ -305,8 +305,8 @@ Top-3 Key Results for:
 
 ## More Information
 
-- [Knowledge Source](knowledge-source.md)
-- [Knowledge Store](../knowledge-store.md)
-- [CTXT file](text-formats/ctxt.md)
-- [Search Extract Output Node](../../../build/node-reference/other-nodes/search-extract-output.md)
-- [Interaction Panel](../../../test/interaction-panel/overview.md)
+- [Knowledge Source](knowledge-source.mdx)
+- [Knowledge Store](../knowledge-store.mdx)
+- [CTXT file](text-formats/ctxt.mdx)
+- [Search Extract Output Node](../../../build/node-reference/other-nodes/search-extract-output.mdx)
+- [Interaction Panel](../../../test/interaction-panel/overview.mdx)

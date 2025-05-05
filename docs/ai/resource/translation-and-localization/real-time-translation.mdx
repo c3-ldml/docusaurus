@@ -1,0 +1,52 @@
+---
+title: "Real Time Translation"
+slug: "real-time-translation"
+description: "Real Time Translation allows you to translate messages in real-time during conversations."
+hidden: false
+---
+
+import CompatibilityWithMTProviders from '@site/docs/_includes/ai/resource/translation-and-localization/_compatibility-with-machine-translation-providers.mdx';
+import ConfigureMTProvider from '@site/docs/_includes/ai/resource/translation-and-localization/_configure-a-machine-translation-provider.mdx';
+
+# Real Time Translation
+
+_Real-Time Translation_ instantly translates languages during conversations, eliminating the need for pre-translation, as in typical [localization](localization.mdx) scenarios.
+
+With real-time translation, you don't need human agents for every language nor to pre-localize your Flow. You can focus on a few key languages while still serving customers in many others.
+
+## Key Features
+
+- [Multilingual AI](#users-and-ai-agents). Your [voice](../../overview/getting-started-with-voice-agent.mdx) and [chat](../../overview/getting-started-with-digital-agent.mdx) AI Agents can switch languages in real time, even if you only have configured your Flow in English. With this approach, you can reach a greater audience in their native language with low effort.
+- [Real-time translation between users and human agents](#users-and-human-agents). Users and human agents with different can write in different languages in their after a [handover](../../human-escalation/handovers.mdx), but they'll receive messages translated into their own language in real time.
+
+## Prerequisites
+
+- You have configured a [machine translation provider](#configure-a-machine-translation-provider).
+
+<CompatibilityWithMTProviders />
+
+## Configure a Machine Translation Provider
+
+<ConfigureMTProvider />
+
+## How to Use Real-Time Translation
+
+You can configure the real-time translation feature in the [Real Time Translation](../../deploy/endpoints/real-time-translation-settings.mdx) settings in the Endpoint editor. All Endpoints, including voice Endpoints, such as Voice Gateway, support real-time translation.
+
+### Users and AI Agents
+
+Real-time translation between a user and an AI Agent works for text-based and voice conversations.
+
+### Users and Human Agents
+
+Real-time translation between a user and a human agent works for text-based conversations after a user triggers a [Handover to Agent Node](../node-reference/service/handover-to-agent.mdx) in the [Flow](../flows/overview.mdx). Conversations with real-time translation between the user and the human agent are recorded for compliance purposes.
+
+After the human agent takes over the conversation, the user can keep writing in their original language while the human agent receives real-time translation of the user's input. The human agent can respond in their language, and the user receives real-time translation of the human agent's response. The following image shows real-time translation example, where the user is writing in German and the human agent is responding in English.
+
+<img src={require('../../../../static/img/_assets/ai/resource/translation-and-localization/real-time-translation.png').default} width="70%" />
+
+## More Information
+
+- [Real-Time Translation Settings](../../deploy/endpoints/real-time-translation-settings.mdx)
+- [Automatic Translation](auto-translation.mdx)
+- [Localization](localization.mdx)

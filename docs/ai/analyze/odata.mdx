@@ -10,7 +10,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Video from '@site/src/components/Video/Video';
 
-import understoodMessages from '@site/docs/_includes/ai/_understood-messages.md';
+import understoodMessages from '@site/docs/_includes/ai/_understood-messages.mdx';
 
 # Cognigy.AI: OData Analytics Endpoint
 
@@ -33,7 +33,7 @@ Watch this video to get a quick overview of what the OData Analytics endpoint is
   width="70%"
 />
 
-To analyze your AI Agent's performance, you can use the [built-in Insights reports](../../insights/overview.md) as an alternative to OData or in addition to it.
+To analyze your AI Agent's performance, you can use the [built-in Insights reports](../../insights/overview.mdx) as an alternative to OData or in addition to it.
 
 ## Restrictions
 
@@ -43,12 +43,12 @@ To analyze your AI Agent's performance, you can use the [built-in Insights repor
 
 ## Data Protection
 
-You can control data available through the OData endpoint at both the [Endpoint](../deploy/endpoints/overview.md) and [Flow](../build/flows/overview.md) levels:
+You can control data available through the OData endpoint at both the [Endpoint](../deploy/endpoints/overview.mdx) and [Flow](../build/flows/overview.mdx) levels:
 
-- **Endpoint**. Go to the [Data Protection & Analytics](../deploy/endpoints/data-protection-and-analytics.md) section within the Endpoint, which manages data associated with your connections to channels such as webchat, Slack, and WhatsApp.
+- **Endpoint**. Go to the [Data Protection & Analytics](../deploy/endpoints/data-protection-and-analytics.mdx) section within the Endpoint, which manages data associated with your connections to channels such as webchat, Slack, and WhatsApp.
     - If you disable the **Collect Analytics** setting, no analytics data will be logged or available in OData.
     - If you enable the **Mask Sensitive Analytics** setting, the `inputText` and `inputData` fields will be masked.
-- **Node**. Add a [Blind Mode](../build/node-reference/analytics/blind-mode.md) Node to your Flow. This Node disables or masks analytics data available in the OData Endpoint.
+- **Node**. Add a [Blind Mode](../build/node-reference/analytics/blind-mode.mdx) Node to your Flow. This Node disables or masks analytics data available in the OData Endpoint.
 
 ## Supported Versions
 
@@ -68,8 +68,8 @@ The OData endpoint is located on a different domain than your Cognigy User Inter
 
 ### Authentication
 
-To connect to the OData endpoint, you need to have the `odata` [global role](../../ai/administer/access/admin-center/access-control.md#global-roles)
-and an [API Key](../../ai/administer/user-menu/my-profile.md#create-api-keys).
+To connect to the OData endpoint, you need to have the `odata` [global role](../../ai/administer/access/admin-center/access-control.mdx#global-roles)
+and an [API Key](../../ai/administer/user-menu/my-profile.mdx#create-api-keys).
 
 OData Endpoint URL format:
 
@@ -78,7 +78,7 @@ OData Endpoint URL format:
 - `odata domain` — the base domain of the OData service. It is the root URL where your OData service is hosted.
 - `api-version` — the version of the API you are interacting with. Currently, Cognigy.AI supports v2.4.
 - `collection` — a specific collection within the OData service you want to access. A collection is similar to a database table or a set of entities.
-- `your-api-key` — an API key that provides authentication and authorization for accessing the API. You need to get this key from your [profile](../../ai/administer/user-menu/my-profile.md#create-api-keys).
+- `your-api-key` — an API key that provides authentication and authorization for accessing the API. You need to get this key from your [profile](../../ai/administer/user-menu/my-profile.mdx#create-api-keys).
 
 OData Endpoint URL example:
 
@@ -261,7 +261,7 @@ refer to the extensive collection of resources at [OData.org](https://www.odata.
 The OData endpoint provides access to several data collections containing information about your interactions and workflows.
 The set of collections varies depending on which version you are using:
 
-Each collection can be filtered by its fields, which are often retrieved directly from the [Input](../test/interaction-panel/input.md) object results.
+Each collection can be filtered by its fields, which are often retrieved directly from the [Input](../test/interaction-panel/input.mdx) object results.
 
 ### Analytics
 
@@ -270,7 +270,7 @@ project identifiers, Flow specifics, and essential performance metrics.
 When a chat or voice AI Agent session happens in Cognigy.AI, it creates an Analytics record for the interaction. 
 Each interaction is logged as a single record. The information is saved only after the entire session is finished.
 You can change this data
-by using the [Overwrite Analytics Node](../build/node-reference/analytics/overwrite-analytics.md).
+by using the [Overwrite Analytics Node](../build/node-reference/analytics/overwrite-analytics.mdx).
 
 **Requests**
 
@@ -297,7 +297,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | inputText          | The input text.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | String   | Hello World!                                                     |
 | inputData          | The input data object as a string.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | String   | `{"key":"value"}`                                                |
 | state              | The state of the Flow at input.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | String   | default                                                          |
-| mode               | A [Mode](../test/interaction-panel/input.md#properties) of the input.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | String   | TextOnly                                                         |
+| mode               | A [Mode](../test/interaction-panel/input.mdx#properties) of the input.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | String   | TextOnly                                                         |
 | userType           | The type of the connecting user. Either `external` for external user or `admin` for admin user.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | String   | external                                                         |
 | channel            | The channel through which the record was received.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | String   | facebook                                                         |
 | flowLanguage       | The language of the Flow.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | String   | en-EN                                                            |
@@ -390,7 +390,7 @@ When retrieving this collection, the endpoint will return the following fields:
 The Steps collection provides a list of all entities,
 which are either Nodes or Intents, assigned as analytics steps within any Flow. 
 These steps are created in Cognigy.AI
-by setting a value in the [Analytics Step](../analyze/collecting-data.md#analytics-data-flow) field.
+by setting a value in the [Analytics Step](../analyze/collecting-data.mdx#analytics-data-flow) field.
 For a step to appear in this OData collection, it must have been triggered at least once by a session within the Flow.
 Each step is logged as a single record.
 
@@ -504,7 +504,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 **Description**
 
-The LiveAgentEscalations collection contains records from [Cognigy Live Agent](../../live-agent/overview.md) and includes the related data about handovers to Live Agent.
+The LiveAgentEscalations collection contains records from [Cognigy Live Agent](../../live-agent/overview.mdx) and includes the related data about handovers to Live Agent.
 Each handover (escalation) is logged as a single record.
 
 **Request**
@@ -541,7 +541,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### Goals
 
-The Goals collection contains records from [Goals](goals-and-tasks/overview.md).
+The Goals collection contains records from [Goals](goals-and-tasks/overview.mdx).
 Each goal is logged as a single record.
 
 **Request**
@@ -562,7 +562,7 @@ Each goal is logged as a single record.
 
 ### GoalSteps
 
-The GoalSteps collection contains records about a specific goal step from [Goals](goals-and-tasks/overview.md).
+The GoalSteps collection contains records about a specific goal step from [Goals](goals-and-tasks/overview.mdx).
 Each goal is logged as a single record.
 
 **Request**
@@ -582,7 +582,7 @@ Each goal is logged as a single record.
 
 ### GoalStepMetrics
 
-The GoalStepMetrics collection contains records about specific goal-related events from [Goals](goals-and-tasks/overview.md).
+The GoalStepMetrics collection contains records about specific goal-related events from [Goals](goals-and-tasks/overview.mdx).
 Each metric is logged as a single record.
 
 **Request**
@@ -602,7 +602,7 @@ Each metric is logged as a single record.
 
 ### GoalEvents
 
-The GoalEvents collection contains records about specific goal-related events from [Goals](goals-and-tasks/overview.md).
+The GoalEvents collection contains records about specific goal-related events from [Goals](goals-and-tasks/overview.mdx).
 Each event is logged as a single record.
 
 **Request**
@@ -618,7 +618,7 @@ Each event is logged as a single record.
 | sessionId         | The Session ID.                                                                                                                                                                                            | String     | session-2a38246e-0395-49a5-876d-dd5133fd5418                     |
 | projectId         | The ID of the Project related to the record.                                                                                                                                                               | String     | 5a91d194fde28b0011ce2422                                         |
 | organisationId    | The ID of the Cognigy.AI organization associated with the record.                                                                                                                                          | String     | 5eb4a49d426cd3d05f2892a9                                         |
-| expiresAt         | The [expiration date](../administer/access/management-ui.md) for the goal record. After that time, the goal record will be removed from the Analytics database. | Timestamp  | null                                                             |
+| expiresAt         | The [expiration date](../administer/access/management-ui.mdx) for the goal record. After that time, the goal record will be removed from the Analytics database. | Timestamp  | null                                                             |
 | localeName        | The name of the locale.                                                                                                                                                                                    | String     | English                                                          |
 | endpointName      | The name of the Cognigy.AI Endpoint.                                                                                                                                                                       | String     | LA Chatbot                                                       |
 | endpointType      | The type of the Endpoint.                                                                                                                                                                                  | String     | webchat2                                                         |
@@ -650,5 +650,5 @@ If you want to use another tool not listed in the table, verify its compatibilit
 
 ## More Information
 
-- [Collecting Data](collecting-data.md)
-- [Insights](insights.md)
+- [Collecting Data](collecting-data.mdx)
+- [Insights](insights.mdx)
