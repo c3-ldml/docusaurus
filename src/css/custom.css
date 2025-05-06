@@ -62,7 +62,14 @@
   margin-left: 300px;
   margin-top: var(--ifm-navbar-height);
   flex: 1;
-  padding: 2rem;
+  width: calc(100vw - 300px);
+  height: calc(100vh - var(--ifm-navbar-height));
+}
+
+#__docusaurus_skipToContent_fallback > div > div > main > div {
+  margin: 2rem;
+  height: calc(100% - 4rem);
+  width: calc(100% - 4rem);
 }
 
 /* Tab content padding */
